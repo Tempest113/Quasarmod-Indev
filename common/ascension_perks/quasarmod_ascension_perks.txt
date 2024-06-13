@@ -29,7 +29,7 @@ ap_hyperquasaric_megaconstruction = {
 			if = { limit = { NOT = { has_technology = tech_hyperquasaric_megashipyard } } add_research_option = tech_hyperquasaric_megashipyard }
 			if = { limit = { NOT = { has_technology = tech_hyperquasaric_teraforge } } add_research_option = tech_hyperquasaric_teraforge }
 
-			#if = { limit = { NOT = { has_technology =
+			#if = { limit = { NOT = { has_technology = test
 		}
 	}
 }
