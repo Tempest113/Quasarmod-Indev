@@ -1,0 +1,527 @@
+namespace = blackhole_manipulation
+
+# eventname.10xxx = injector related event
+
+# eventname.20xxx = harvester related event
+
+#################################
+# Black Hole Injector Activated #
+#################################
+
+situation_event = {
+	id = blackhole_manipulation.1
+	title = blackhole_manipulation.1.name	
+	desc = blackhole_manipulation.1.desc
+	picture = GFX_evt_black_hole
+	location = root
+
+	is_triggered_only = yes
+
+	option = {
+		name = blackhole_manipulation.1.a
+	}
+}
+
+##################################
+# Black Hole Harvester Activated #
+###############################.###
+
+situation_event = {
+	id = blackhole_manipulation.2
+	title = blackhole_manipulation.2.name
+	desc = blackhole_manipulation.2.desc
+	picture = GFX_evt_astral_rift_microverse
+	location = root
+
+	is_triggered_only = yes
+
+	option = {
+		name = blackhole_manipulation.2.a
+	}
+}
+
+#################################
+# Black Hole Injection Complete #
+#################################
+
+planet_event = {
+	 id = blackhole_manipulation.101
+	 #title = blackhole_manipulation.101.name
+	 #desc = blackhole_manipulation.101.desc
+	 #picture = GFX_evt_astral_rift_microverse
+	 is_triggered_only = yes
+	 hide_window = yes
+
+	 immediate = {
+		 change_pc = pc_core_quasar
+		 solar_system = {
+			 set_star_class = sc_quasar
+			 every_system_planet = {
+				 remove_planet_flag = has_megastructure
+
+				 limit = {
+					 nor = {
+						 is_planet_class = pc_core_quasar
+						 is_planet_class = pc_core_black_hole
+					 }
+				 }
+				 change_pc = pc_molten
+			 }
+
+			 every_system_megastructure = {
+				 limit = {
+					 nor = {
+						 is_megastructure_type = lgate_base
+						 is_megastructure_type = gateway_final
+						 is_megastructure_type = gateway_restored
+						 is_megastructure_type = ehof_pgate_gateway
+						 is_megastructure_type = hyper_relay
+						 is_megastructure_type = hyper_relay_restored
+					 }
+				 }
+				 remove_megastructure = this
+			 }
+
+			 star = {
+				 giga_clear_has_mega_flag = yes
+				 change_pc = pc_core_quasar
+				 set_planet_size = 10
+			 }
+		 }
+
+		 space_owner = {
+			 country_event = {
+				 id = blackhole_manipulation.102
+			 }
+		 }
+	 }
+ }
+
+ # Injection Complete Notification
+
+country_event = {
+	id = blackhole_manipulation.102
+	title = blackhole_manipulation.102.name
+	desc = blackhole_manipulation.102.desc
+	picture = GFX_evt_astral_rift_microverse
+	hide_window = no
+	is_triggered_only = yes
+
+	option = {
+		name = blackhole_manipulation.102.a
+	}
+}
+
+##############################
+# Quasar Harvesting Complete #
+##############################
+
+planet_event = {
+	id = blackhole_manipulation.201
+	#title = blackhole_manipulation.201.name
+	#desc = blackhole_manipulation.201.desc
+	#picture = GFX_evt_black_hole
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		change_pc = pc_core_black_hole
+		solar_system = {
+			set_star_class = sc_birch
+			every_system_planet = {
+                remove_planet_flag = has_megastructure
+
+				limit = {
+					nor = {
+						is_planet_class = pc_core_quasar
+						is_planet_class = pc_core_black_hole
+					}
+				}
+				change_pc = pc_barren
+			}
+
+			every_system_megastructure = {
+				limit = {
+					nor = {
+						is_megastructure_type = lgate_base
+						is_megastructure_type = gateway_final
+						is_megastructure_type = gateway_restored
+						is_megastructure_type = ehof_pgate_gateway
+						is_megastructure_type = hyper_relay
+						is_megastructure_type = hyper_relay_restored
+					}
+				}
+				remove_megastructure = this
+			}
+
+			star = {
+				giga_clear_has_mega_flag = yes
+				change_pc = pc_core_black_hole
+				set_planet_size = 20
+			}
+		}
+
+		space_owner = {
+			country_event = {
+				id = blackhole_manipulation.202
+			}
+		}
+	}
+}
+
+# Harvesting Complete Notification
+
+country_event = {
+	id = blackhole_manipulation.202
+	title = blackhole_manipulation.202.name
+	desc = blackhole_manipulation.202.desc
+	picture = GFX_evt_black_hole
+	hide_window = no
+	is_triggered_only = yes
+
+	option = {
+		name = blackhole_manipulation.202.a
+	}
+}
+
+###########################################
+### Megastructure Stage Complete Events ###
+###########################################
+
+namespace = blackhole_manipulation_mega_stage_complete
+
+### Gargantuan Matrioshka Brain ###
+
+# Construction Site Built
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.1
+	title = blackhole_manipulation_mega_stage_complete.1.name
+	desc = blackhole_manipulation_mega_stage_complete.1.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:core_mbrain
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.1.a
+	}
+}
+
+# Hawking Capacitors Built
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.2
+	title = blackhole_manipulation_mega_stage_complete.2.name
+	desc = blackhole_manipulation_mega_stage_complete.2.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system#core_mbrain
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.2.a
+	}
+}
+
+# Main Databank Built
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.3
+	title = blackhole_manipulation_mega_stage_complete.3.name
+	desc = blackhole_manipulation_mega_stage_complete.3.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system#core_mbrain
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.3.a
+	}
+}
+
+# Central Processor Built
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.4
+	title = blackhole_manipulation_mega_stage_complete.4.name
+	desc = blackhole_manipulation_mega_stage_complete.4.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system#core_mbrain
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.4.a
+	}
+}
+
+# Quantum Calculators Built
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.5
+	title = blackhole_manipulation_mega_stage_complete.5.name
+	desc = blackhole_manipulation_mega_stage_complete.5.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system#core_mbrain
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.5.a
+	}
+}
+
+# Gargantuan Matrioshka Brain Finished - it is done, you can finally go outside, not that you will
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.6
+	title = blackhole_manipulation_mega_stage_complete.6.name
+	desc = blackhole_manipulation_mega_stage_complete.6.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system#core_mbrain
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.6.a
+	}
+}
+
+
+### Supermassive Black Hole Manipulator ###
+
+# Construction Site Built
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.101
+	title = blackhole_manipulation_mega_stage_complete.101.name
+	desc = blackhole_manipulation_mega_stage_complete.101.desc
+	picture = GFX_evt_black_hole
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_planet
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.101.a
+	}
+}
+
+# Black Hole Manipulator Frame Built
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.201
+	title = blackhole_manipulation_mega_stage_complete.201.name
+	desc = blackhole_manipulation_mega_stage_complete.201.desc
+	picture = GFX_evt_black_hole
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_planet
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.201.a
+	}
+}
+
+# Black Hole Manipulator Tetradimensional Supports Built
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.301
+	title = blackhole_manipulation_mega_stage_complete.301.name
+	desc = blackhole_manipulation_mega_stage_complete.301.desc
+	picture = GFX_evt_black_hole
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_planet
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.301.a
+	}
+}
+
+# Black Hole Manipulator Plasma Redirection Array Built
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.401
+	title = blackhole_manipulation_mega_stage_complete.401.name
+	desc = blackhole_manipulation_mega_stage_complete.401.desc
+	picture = GFX_evt_black_hole
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_planet
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.401.a
+	}
+}
+
+# Black Hole Manipulator Worker Drone Habitation Ring built
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.501
+	title = blackhole_manipulation_mega_stage_complete.501.name
+	desc = blackhole_manipulation_mega_stage_complete.501.desc
+	picture = GFX_evt_black_hole
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_planet
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.501.a
+	}
+}
+
+# Black Hole Manipulator Radiation Shielding Built
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.601
+	title = blackhole_manipulation_mega_stage_complete.601.name
+	desc = blackhole_manipulation_mega_stage_complete.601.desc
+	picture = GFX_evt_black_hole
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_planet
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.601.a
+	}
+}
+
+
+### Hyperquasaric Teraforge ###
+
+# Construction Site Built
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.1001
+	title = blackhole_manipulation_mega_stage_complete.1001.name
+	desc = blackhole_manipulation_mega_stage_complete.1001.desc
+	picture = GFX_evt_astral_rift_microverse
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.1001.a
+	}
+}
+
+# Hyperquasaric Teraforge Inner Ring Built
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.1002
+	title = blackhole_manipulation_mega_stage_complete.1002.name
+	desc = blackhole_manipulation_mega_stage_complete.1002.desc
+	picture = GFX_evt_astral_rift_microverse
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.1002.a
+		#custom_tooltip = blackhole_manipulation_mega_stage_complete.1002.a.tooltip
+	}
+}
+
+# Hyperquasaric Teraforge Mass Collectors Built
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.1003
+	title = blackhole_manipulation_mega_stage_complete.1003.name
+	desc = blackhole_manipulation_mega_stage_complete.1003.desc
+	picture = GFX_evt_astral_rift_microverse
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.1003.a
+	}
+}
+
+# Hyperquasaric Teraforge Alloy Processing Built
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.1004
+	title = blackhole_manipulation_mega_stage_complete.1004.name
+	desc = blackhole_manipulation_mega_stage_complete.1004.desc
+	picture = GFX_evt_astral_rift_microverse
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.1004.a
+	}
+}
+
+# Hyperquasaric Teraforge Finished
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.1005
+	title = blackhole_manipulation_mega_stage_complete.1005.name
+	desc = blackhole_manipulation_mega_stage_complete.1005.desc
+	picture = GFX_evt_astral_rift_microverse
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.1005.a
+	}
+}
+
+
+### Hyperquasaric Megashipyard ###
+
+# Construction Site Built
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.2001
+	title = blackhole_manipulation_mega_stage_complete.2001.name
+	desc = blackhole_manipulation_mega_stage_complete.2001.desc
+	picture = GFX_evt_space_hangar
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.2001.a
+	}
+}
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.2002
+	title = blackhole_manipulation_mega_stage_complete.2002.name
+	desc = blackhole_manipulation_mega_stage_complete.2002.desc
+	picture = GFX_evt_space_hangar
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.2002.a
+	}
+}
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.2003
+	title = blackhole_manipulation_mega_stage_complete.2003.name
+	desc = blackhole_manipulation_mega_stage_complete.2003.desc
+	picture = GFX_evt_space_hangar
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.2003.a
+	}
+}
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.2004
+	title = blackhole_manipulation_mega_stage_complete.2004.name
+	desc = blackhole_manipulation_mega_stage_complete.2004.desc
+	picture = GFX_evt_space_hangar
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.2004.a
+	}
+}
+
+# Hyperquasaric Shipyard Finished
+country_event = {
+	id = blackhole_manipulation_mega_stage_complete.2005
+	title = blackhole_manipulation_mega_stage_complete.2005.name
+	desc = blackhole_manipulation_mega_stage_complete.2005.desc
+	picture = GFX_evt_space_hangar
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = blackhole_manipulation_mega_stage_complete.2005.a
+	}
+}

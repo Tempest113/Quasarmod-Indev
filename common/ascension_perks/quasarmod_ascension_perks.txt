@@ -1,0 +1,35 @@
+ap_hyperquasaric_megaconstruction = {
+	modifier = {
+		country_megastructure_build_cap_add = 1
+		megastructure_build_speed_mult = 0.20
+		country_resource_max_add = 25000
+	}
+
+	possible = {
+		custom_tooltip = { fail_text = "requires_ap_gigastructural_constructs"      	has_gigastructural_constructs = yes }
+		custom_tooltip = { fail_text = "requires_ap_giga_stellar_manipulation"			has_ascension_perk = ap_giga_stellar_manipulation }
+		custom_tooltip = { fail_text = "requires_tetraengineering"				    has_technology = giga_tech_tetradimensional_engineering }
+		custom_tooltip = { fail_text = "requires_dark_matter"						has_technology = tech_mine_dark_matter }
+		custom_tooltip = { fail_text = "requires_advanced_stellar_manipulation"		has_technology = tech_gigas_stellar_manip_2 }
+		}
+
+	potential = {
+		host_has_dlc = Utopia
+		is_ai = no
+		NOR = {
+			has_ascension_perk = ap_hyperquasaric_megaconstruction
+		}
+	}
+
+	on_enabled = {
+		custom_tooltip = "ap_hyperquasaric_megaconstruction_add_research"
+		hidden_effect = {
+			if = { limit = { NOT = { has_technology = tech_supermassive_blackhole_manipulator } } add_research_option = tech_supermassive_blackhole_manipulator }
+			if = { limit = { NOT = { has_technology = tech_core_mbrain } } add_research_option = tech_core_mbrain }
+			if = { limit = { NOT = { has_technology = tech_hyperquasaric_megashipyard } } add_research_option = tech_hyperquasaric_megashipyard }
+			if = { limit = { NOT = { has_technology = tech_hyperquasaric_teraforge } } add_research_option = tech_hyperquasaric_teraforge }
+
+			#if = { limit = { NOT = { has_technology =
+		}
+	}
+}

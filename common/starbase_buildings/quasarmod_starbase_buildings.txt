@@ -1,0 +1,50 @@
+quasarshipyard__shipyard_uplink = {
+    icon = "GFX_spaceport_module_colossus_assembly_yard"
+    construction_days = 0
+    ai_weight = { weight = 1500 }
+
+    potential = {
+        exists = owner
+        solar_system = { any_system_megastructure = { is_megastructure_type = hyperquasaric_megashipyard_4 } }
+        is_orbital_ring = no
+        not = { has_starbase_building = quasarshipyard__shipyard_uplink }
+    }
+
+    possible = {
+        custom_tooltip = { fail_text = "requires_citadel"
+            OR = {
+                has_starbase_size >= starbase_citadel
+                has_starbase_size >= acot_precusor_starbase
+                has_starbase_size >= acot_precusor_sigma_starbase
+                has_starbase_size >= acot_precusor_phanon_starcitadel
+                has_starbase_size >= acot_precusor_theta_starcitadel
+            }
+        }
+        #custom_tooltip = { fail_text = "already_have_teraforge_uplink"	NOT = { has_starbase_building = teraforge_shipyard_uplink } }
+        custom_tooltip = {
+            fail_text = "requires_shipyard"
+            OR = {
+                has_starbase_module = shipyard
+                has_starbase_module = acot_starbase_shipyard
+                has_starbase_module = acot_sigma_starbase_shipyard
+                has_starbase_module = acot_phanon_starbase_shipyard
+                has_starbase_module = acot_theta_starbase_shipyard
+            }
+        }
+    }
+
+    resources = {
+        category = starbase_modules
+    }
+
+    ship_modifier = {
+        ship_starting_experience_add = 250
+    }
+
+    custom_tooltip = sm_quasarshipyard__shipyard_uplink_modifier
+
+    station_modifier = {
+        starbase_shipyard_capacity_add = 250 #i really want to change this to 249 for the sake of neatness, seeing 251 shipyard slots isn't nearly as nice as seeing 250, alas...
+        starbase_shipyard_build_speed_mult = 2.5
+    }
+}

@@ -1,0 +1,12 @@
+quasarmod_enabled = { always = yes }
+
+quasarmod_ap_taken = { has_ascension_perk = ap_hyperquasaric_megaconstruction}
+
+planet_has_quasarmod_teraforge_uplink = {
+    or = {
+        has_building = building_teraforge_uplink_base
+        has_building = building_teraforge_uplink_alloys
+        has_building = building_teraforge_uplink_consumer_goods
+
+    }
+}

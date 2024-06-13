@@ -1,0 +1,247 @@
+####################
+### Core M Brain ###
+####################
+
+matrioshka_brain_0_core ={
+    entity = "giga_consite_7_7_entity"
+    construction_entity = "giga_consite_7_7_entity"
+    entity_offset = { x = -150 y = -7 }
+    prerequisites = { tech_core_mbrain }
+    show_prereqs = no
+    #portrait = GFX_megastructure_construction_background
+
+    build_time = 360
+    resources = {
+        category = giga_gigastructures
+        cost = {
+            alloys = 100000 #20000
+            influence = 300 #400
+            unity = @giga_tera_start_unity_cost
+        }
+        upkeep = { energy = 5 }
+    }
+
+    potential = {
+        has_ascension_perk = ap_hyperquasaric_megaconstruction
+        has_technology = tech_core_mbrain
+    }
+
+    possible = {
+        custom_tooltip = { fail_text = "requires_inside_border" is_inside_border = from }
+        custom_tooltip = { fail_text = "requires_no_existing_megastructure"		has_no_non_gate_megastructure = yes }
+    }
+
+    placement_rules = {
+        planet_possible = {
+            custom_tooltip = { fail_text = "requires_no_existing_megastructure" planet_has_no_megastructure = yes }
+            custom_tooltip = { fail_text = "requires_no_anomaly" has_anomaly = no }
+            custom_tooltip = {
+                fail_text = "blackhole_manipulator_fail_tooltip"
+                is_planet_class = pc_core_black_hole
+            }
+        }
+    }
+
+    on_build_complete = {
+        save_event_target_as = core_mbrain
+        from = { country_event = { id = blackhole_manipulation_mega_stage_complete.1 } }
+        fromfrom.planet = {
+            if = { limit = { exists = orbital_station } orbital_station = { dismantle = yes } }
+            giga_set_has_mega_flag = yes
+        }
+    }
+}
+
+matrioshka_brain_1_core ={     # Equivalent to the Solar Capacitor stage
+    entity = "core_mbrain_stage_1_entity"
+    # entity = "o_class_brain_1_dupe"
+    construction_entity = "core_mbrain_stage_1_entity"
+    # construction_entity = "o_class_brain_1_dupe"
+    scales_with_planet = no
+    portrait = GFX_megastructure_construction_background
+    upgrade_from = { matrioshka_brain_0_core }
+
+    build_time = 1800
+    resources = {
+        category = giga_gigastructures
+        cost = {
+            alloys = 150000 #337500
+            unity = @giga_tera_unity_cost
+        }
+        produces = {
+            physics_research =500 #2500
+            society_research = 500 #2500
+            engineering_research = 500 #2500
+        }
+        upkeep = {
+            alloys = 100
+        }
+    }
+
+    on_build_complete = {
+        giga_remove_system_planets = yes
+        giga_remove_system_debris =  yes
+        save_event_target_as = giga_system
+        fromfrom.planet = {
+            save_event_target_as = giga_planet
+            #set_planet_size = 12
+        }
+        from = { country_event = { id = blackhole_manipulation_mega_stage_complete.2 } }
+    }
+}
+
+matrioshka_brain_2_core ={     # Equivalent to the Main Databank stage
+    #entity = "o_class_brain_2_dupe"
+    # construction_entity
+    entity = "core_mbrain_stage_2_entity"
+    construction_entity = "core_mbrain_stage_2_construction_entity"
+    scales_with_planet = no
+    portrait = GFX_megastructure_construction_background
+    upgrade_from = { matrioshka_brain_1_core }
+
+    build_time = 3600
+    resources = {
+        category = giga_gigastructures
+        cost = {
+            alloys = 250000 #393750
+            unity = @giga_tera_unity_cost
+        }
+        produces = {
+            physics_research = 2500 #12500
+            society_research =  2500 #12500
+            engineering_research = 2500 #12500
+        }
+        upkeep = {
+            alloys = 250
+        }
+    }
+    on_build_complete = {
+        save_event_target_as = giga_system
+        if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+        from = { country_event = { id = blackhole_manipulation_mega_stage_complete.3 } }
+    }
+}
+
+matrioshka_brain_3_core ={     # Equivalent to the Central Processor stage
+    # entity = "o_class_brain_3_dupe"
+    # construction_entity = "o_class_brain_3_dupe_construction_entity"
+    entity = "core_mbrain_stage_3_entity"
+    construction_entity = "core_mbrain_stage_3_construction_entity"
+    scales_with_planet = no
+    portrait = GFX_megastructure_construction_background
+    upgrade_from = { matrioshka_brain_2_core }
+
+
+    build_time = 5400
+    resources = {
+        category = giga_gigastructures
+        cost = {
+            alloys = 350000 #450000
+            unity = @giga_tera_unity_cost
+        }
+        produces = {
+            physics_research = 7500 #37500
+            society_research = 7500 #37500
+            engineering_research = 7500 #37500
+        }
+        upkeep = {
+            alloys = 500
+        }
+    }
+
+    on_build_complete = {
+        save_event_target_as = giga_system
+        if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+        from = { country_event = { id = blackhole_manipulation_mega_stage_complete.4 } }
+    }
+}
+
+matrioshka_brain_4_core ={     # Equivalent to the Quantum Calculators stage
+    # entity = "o_class_brain_4_dupe"
+    # construction_entity = "o_class_brain_4_dupe_construction_entity"
+    entity = "core_mbrain_stage_4_entity"
+    construction_entity = "core_mbrain_stage_4_construction_entity"
+    scales_with_planet = no
+    portrait = GFX_megastructure_construction_background
+    upgrade_from = { matrioshka_brain_3_core }
+
+    build_time = 8100
+    resources = {
+        category = giga_gigastructures
+        cost = {
+            alloys = 450000 #506250
+            unity = @giga_tera_unity_cost
+        }
+        produces = {
+            physics_research = 20000 #100000
+            society_research = 20000 #100000
+            engineering_research = 20000  #100000
+        }
+        upkeep = {
+            alloys = 1000
+        }
+        upkeep = {
+            trigger = { NOT = { has_global_flag = giga_disable_influence_upkeep } }
+            influence = 5
+        }
+    }
+
+    on_build_complete = {
+        save_event_target_as = giga_system
+        if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+        from = { country_event = { id = blackhole_manipulation_mega_stage_complete.5 } }
+    }
+}
+
+matrioshka_brain_5_core ={     # Equivalent to the final stage of the M Brain (ignoring VR segments)
+    entity = "core_mbrain_stage_5_entity"
+    # entity = "o_class_brain_5_dupe"
+    construction_entity = "core_mbrain_stage_5_construction_entity"
+    # construction_entity = "o_Class_brain_5_dupe_construction_entity"
+    scales_with_planet = no
+    portrait = GFX_megastructure_construction_background
+    upgrade_from = { matrioshka_brain_4_core }
+    prerequisites = { tech_core_mbrain }
+    show_prereqs = no
+
+    build_time = 10800
+    resources = {
+        category = giga_gigastructures
+        cost = {
+            alloys = 500000 #562500
+            unity = @giga_tera_unity_cost
+        }
+        produces = {
+            physics_research = 50000 #250000
+            society_research = 50000 #250000
+            engineering_research = 50000 #250000
+        }
+        upkeep = {
+            alloys = 2000
+        }
+        upkeep = {
+            trigger = { NOT = { has_global_flag = giga_disable_influence_upkeep } }
+            influence = 3
+        }
+    }
+
+    on_build_complete = {
+        save_event_target_as = giga_system
+        if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+        from = { country_event = { id = blackhole_manipulation_mega_stage_complete.6 } }
+        #solar_system = {
+        #    spawn_planet = {
+        #        class = pc_ringworld_habitable
+        #        size = 250
+        #        init_effect = {
+        #             set_planet_entity = { entity = habitable_ring_circle }
+        #        }
+        #    }
+        #}
+    }
+
+    country_modifier = {
+        # building_giga_matrioshka_brain_uplink_country_max = 50
+        uplink
+    }
+}

@@ -1,0 +1,64 @@
+namespace = quasarmod_utility
+
+event  = {
+    id = quasarmod_utility.1
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        set_global_flag = quasarmod_enabled
+    }
+}
+
+ship_event = {
+    id = quasarmod_utility.2
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = {
+                is_ship_size = giga_planet_behemoth
+                not = {
+                    has_ship_flag = giga_planet
+
+                }
+            }
+            create_fleet = {
+                name = "Behemoth Planetcraft"
+                settings = {
+                    spawn_debris = no
+                    is_boss = yes
+                    can_change_composition = no
+                }
+                effect = {
+                    set_owner = prev
+                    create_ship = {
+                        name = "Behemoth Planetcraft"
+                        random_existing_design = giga_planet_behemoth
+                        effect = {
+                            set_ship_flag = random
+                            add_modifier = {
+                                modifier = printed_celestial_warship
+                                days = -1
+                            }
+                            set_name = {
+                                key = "war_planet_printed_ship_name"
+                            }
+                        }
+                    }
+                    set_formation_scale = 10
+                    set_location = {
+                        target = fromfrom
+                        distance = 20
+                        angle = 0
+                    }
+                }
+            }
+
+            delete_ship = this
+        }
+    }
+}
+
+# messed this up BAD, made every single ship that gets built turn into a planetcraft, oops...

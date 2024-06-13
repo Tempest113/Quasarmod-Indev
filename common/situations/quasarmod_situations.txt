@@ -1,0 +1,159 @@
+##################################
+# Black Hole Injection Situation #
+##################################
+
+situation_blackhole_injection = {
+    picture = GFX_evt_black_hole
+    category = positive
+    complete_icon = GFX_situation_outcome_positive
+    complete_icon_frame = GFX_situation_outcome_frame_green
+    start_value = 0
+    on_start = {
+        situation_event = {
+            id = blackhole_manipulation.1
+        }
+    }
+
+    stages = {
+        stage_1 = {
+            icon = GFX_situation_stage_1
+            icon_background = GFX_situation_stage_frame_blue
+            end = 120
+        }
+    }
+
+    approach = {
+        name = situation_blackhole_injection_low
+        icon = GFX_situation_approach_balance_sheet
+        icon_background = GFX_situation_approach_bg_red
+        on_select = {
+            custom_tooltip = situation_blackhole_injection_low_effect
+        }
+        resources = {
+            category = situations
+            upkeep = { sr_stellar_plasma = 525
+
+            }
+        }
+
+    }
+
+    approach = {
+        name = situation_blackhole_injection_standard
+        icon = GFX_situation_approach_balance_sheet
+        icon_background = GFX_situation_approach_bg_yellow
+        default = yes
+        on_select = {
+            custom_tooltip = situation_blackhole_injection_standard_effect
+        }
+        resources = {
+            category = situations
+            upkeep = { sr_stellar_plasma = 1050
+
+            }
+        }
+
+    }
+
+    approach = {
+        name = situation_blackhole_injection_high
+        icon = GFX_situation_approach_balance_sheet
+        icon_background = GFX_situation_approach_bg_green
+        on_select = {
+            custom_tooltip = situation_blackhole_injection_high_effect
+        }
+        resources = {
+            category = situations
+            upkeep = { sr_stellar_plasma = 2100
+
+            }
+        }
+
+    }
+
+    monthly_progress = {
+        base = 1
+
+        modifier = {
+            add = -0.5
+            desc = string_current_approach
+            current_situation_approach = situation_blackhole_injection_low
+        }
+
+        modifier = {
+            add = 1
+            desc = string_current_approach
+            current_situation_approach = situation_blackhole_injection_high
+        }
+
+        modifier = {
+            multiply = 0
+            desc = quasarmod_no_plasma
+            owner = {
+                has_deficit = sr_stellar_plasma
+            }
+        }
+    }
+
+    on_progress_complete = {
+        target = {
+            planet_event = {
+                id = blackhole_manipulation.101
+            }
+        }
+        destroy_situation = this
+    }
+}
+
+###############################
+# Quasar Harvesting Situation #
+###############################
+
+situation_blackhole_harvesting = {
+    picture = GFX_evt_astral_rift_microverse
+    category = positive
+    complete_icon = GFX_situation_outcome_positive
+    complete_icon_frame = GFX_situation_outcome_frame_green
+    start_value = 0
+    on_start = {
+        situation_event = {
+            id = blackhole_manipulation.2
+        }
+    }
+
+    stages = {
+        stage_1 = {
+            icon = GFX_situation_stage_1
+            icon_background = GFX_situation_stage_frame_blue
+            end = 120
+        }
+    }
+
+    approach = {
+        name = situation_blackhole_harvesting_standard
+        icon = GFX_situation_approach_balance_sheet
+        icon_background = GFX_situation_approach_bg_green
+        default = yes
+        on_select = {
+            custom_tooltip = situation_blackhole_harvesting_standard_effect
+        }
+        resources = {
+            category = situations
+            produces = { sr_stellar_plasma = 1050
+            }
+        }
+    }
+
+    monthly_progress = {
+        base = 1
+    }
+
+    on_progress_complete = {
+        target = {
+            planet_event = {
+                id = blackhole_manipulation.201
+            }
+        }
+        destroy_situation = this
+    }
+}

@@ -1,0 +1,231 @@
+###########################
+# Hyperquasaric Teraforge #
+###########################
+
+quasaric_teraforge_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -150 y = -7 }
+	prerequisites = { tech_hyperquasaric_teraforge }
+	show_prereqs = no
+
+	build_time = 360
+	resources = {
+		category = giga_gigastructures
+		cost = {
+			alloys = 100000 #20000
+			influence = 300 #200
+			unity = @giga_tera_start_unity_cost
+		}
+		upkeep = { energy = 5 } 
+	}
+
+	potential = { 
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		has_technology = tech_hyperquasaric_teraforge
+	}
+
+	possible = {
+		custom_tooltip = { fail_text = "requires_inside_border" is_inside_border = from }
+		custom_tooltip = { fail_text = "requires_no_existing_megastructure"		has_no_non_gate_megastructure = yes }
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = { fail_text = "requires_no_existing_megastructure" 			planet_has_no_megastructure = yes }
+			custom_tooltip = { fail_text = "requires_no_anomaly"							has_anomaly = no }
+			custom_tooltip = { fail_text = "teraforge_fail_tooltip"				    	is_planet_class = pc_core_quasar }
+		}
+	}
+
+
+	on_build_complete = {
+		save_event_target_as = giga_system
+		fromfrom.planet = {
+			save_event_target_as = giga_planet
+			if = { limit = { exists = orbital_station } orbital_station = { dismantle = yes } }
+			giga_set_has_mega_flag = yes
+		}
+		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.1001 } }
+	}
+}
+
+quasaric_teraforge_1 = {
+	entity = "quasaric_teraforge_1_entity"
+	construction_entity = "quasaric_teraforge_1_entity"
+	scales_with_planet = no
+	portrait = GFX_megastructure_construction_background
+	upgrade_from = { quasaric_teraforge_0 }
+
+	build_time = 1800
+	resources = {
+		category = giga_gigastructures
+		cost = {
+			alloys = 175000
+			unity = @giga_tera_unity_cost
+		}
+		upkeep = {
+			engineering_research = 750
+			minerals = 6300 #20000
+		}
+
+		produces = { alloys = 3000 }#20000 }
+	}
+
+	on_build_complete = {
+		giga_remove_system_planets = yes
+		giga_remove_system_debris =  yes
+		save_event_target_as = giga_system
+		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.1002 } }
+		star = {
+			set_planet_entity = { entity = "quasar_small_disk_entity" }
+			set_name = "Compressed Hyperquasar"
+		}
+	}
+}
+
+quasaric_teraforge_2 = {
+	entity = "quasaric_teraforge_2_entity"
+	construction_entity = "quasaric_teraforge_2_construction_entity"
+	scales_with_planet = no
+	portrait = GFX_megastructure_construction_background
+	upgrade_from = { quasaric_teraforge_1 }
+
+	build_time = 3600
+	resources = {
+		category = giga_gigastructures
+		cost = {
+			alloys = 300000
+			unity = @giga_tera_unity_cost
+		}
+		upkeep = {
+			engineering_research = 1500
+			minerals = 26400 #40000
+		}
+
+		produces = { alloys = 12000 } #40000 }
+	}
+
+	on_build_complete = {
+		save_event_target_as = giga_system
+		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.1003 } }
+
+	}
+}
+
+quasaric_teraforge_3 = {
+	entity = "quasaric_teraforge_3_entity"
+	construction_entity = "quasaric_teraforge_3_construction_entity"
+	scales_with_planet = no
+	portrait = GFX_megastructure_construction_background
+	upgrade_from = { quasaric_teraforge_2 }
+
+	build_time = 5400
+	resources = {
+		category = giga_gigastructures
+		cost = {
+			alloys = 450000
+			unity = @giga_tera_unity_cost
+		}
+		upkeep = {
+			engineering_research = 2250
+			minerals = 42000 #60000
+		}
+
+		produces = { alloys = 20000 }#60000 }
+	}
+
+	on_build_complete = {
+		save_event_target_as = giga_system
+		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.1004 } }
+	}
+}
+
+quasaric_teraforge_4 = {
+	entity = "quasaric_teraforge_4_entity"
+	construction_entity = "quasaric_teraforge_4_construction_entity"
+	scales_with_planet = no
+	portrait = GFX_megastructure_construction_background
+	upgrade_from = { quasaric_teraforge_3 }
+	prerequisites = { tech_hyperquasaric_teraforge}
+	show_prereqs = no
+	
+	build_time = 7200
+	resources = {
+		category = giga_gigastructures
+		cost = {
+			alloys = 500000
+			unity = @giga_tera_unity_cost
+		}
+		upkeep = { 
+			trigger = { NOT = { has_global_flag = giga_disable_influence_upkeep } }
+			influence = 1
+		}
+
+		upkeep = {
+			engineering_research = 3000
+			minerals = 73500 #80000
+		}
+
+		produces = { alloys = 35000 }#80000 }
+	}
+
+	country_modifier = {
+		#country_alloys_produces_mult = 0.075
+		army_damage_mult = 0.5
+		ship_weapon_damage = 0.15
+		ship_armor_mult = 0.15
+		building_quasarmod_teraforge_uplink_country_max = 10
+	}
+
+	on_build_complete = {
+		save_event_target_as = giga_system
+		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.1005 } }
+	}
+}
+# quasaric_teraforge_5 = {
+# 	entity = "quasaric_teraforge_5_entity"
+# 	construction_entity = "quasaric_teraforge_5_construction_entity"
+# 	scales_with_planet = no
+# 	portrait = GFX_megastructure_construction_background
+# 	upgrade_from = { quasaric_teraforge_4 }
+# 	prerequisites = { tech_hyperquasaric_megashipyard}
+# 	show_prereqs = no
+#
+# 	build_time = 3600
+# 	resources = {
+# 		category = giga_gigastructures
+# 		cost = {
+# 			alloys = 250000 #10000
+# 			unity = @giga_tera_unity_cost
+# 		}
+# 		upkeep = {
+# 			trigger = { NOT = { has_global_flag = giga_disable_influence_upkeep } }
+# 			influence = 1
+# 		}
+#
+# 		upkeep = {
+# 			engineering_research = 3500
+# 			energy = 75000
+# 		}
+#
+# 		produces = { minerals = 45000 }
+# 	}
+#
+# 	country_modifier = {
+# 		country_naval_cap_add = 3000
+# 		country_resource_max_add = 80000
+# 		starbase_shipyard_build_speed_mult = 1
+# 	}
+#
+# 	on_build_complete = {
+# 		save_event_target_as = giga_system
+# 		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+# 		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.1006 } }
+# 	}
+# }

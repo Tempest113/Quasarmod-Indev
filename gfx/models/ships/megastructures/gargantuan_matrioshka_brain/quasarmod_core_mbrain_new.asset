@@ -1,0 +1,130 @@
+entity = {
+    name = "o_class_brain_1_dupe"
+    scale = 7.0
+    cull_radius = 3000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+    locator = { name = "loc102" position = { 0 0 0 } rotation = { 0 0 0 } scale = 30 }
+
+    default_state = "idle"
+    state = { name = "idle" }
+
+    attach = { loc102 = "matrioshka_brain_p1_entity"}
+    attach = { loc102 = "matrioshka_brain_p1_energy_entity"}
+
+
+}
+
+entity = {
+    name = "o_class_brain_2_dupe"
+    scale = 7.0
+    cull_radius = 3000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+
+    default_state = "idle"
+    state = { name = "idle" }
+
+
+    attach = { loc101 = "matrioshka_brain_p2_entity"}
+}
+
+entity = {
+    name = "o_class_brain_2_dupe_construction_entity"
+    scale = 7.0
+    cull_radius = 3000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } scale = 30 }
+
+    default_state = "idle"
+    state = { name = "idle" }
+
+
+    attach = { loc101 = "matrioshka_brain_p2_real_entity"}
+}
+
+
+entity = {
+    name = "o_class_brain_3_dupe"
+    scale = 7.0
+    cull_radius = 3000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+
+    default_state = "idle"
+    state = { name = "idle" }
+
+    attach = { loc101 = "matrioshka_brain_p3_entity"}
+    attach = { loc101 = "matrioshka_brain_p2_entity"}
+}
+
+entity = {
+    name = "o_class_brain_3_dupe_construction_entity"
+    scale = 7.0
+    cull_radius = 3000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+
+    default_state = "idle"
+    state = { name = "idle" }
+
+    attach = { loc101 = "matrioshka_brain_p3_entity"}
+}
+
+entity = {
+    name = "o_class_brain_4_dupe"
+    scale = 7.0
+    cull_radius = 3000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+
+    default_state = "idle"
+    state = { name = "idle" }
+
+    attach = { loc101 = "matrioshka_brain_p4_entity"}
+    attach = { loc101 = "matrioshka_brain_p3_entity"}
+    attach = { loc101 = "matrioshka_brain_p2_entity"}
+}
+
+entity = {
+    name = "o_class_brain_4_dupe_construction_entity"
+    scale = 7.0
+    cull_radius = 3000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+
+    default_state = "idle"
+    state = { name = "idle" }
+
+    attach = { loc101 = "matrioshka_brain_p4_entity"}
+
+}
+
+entity = {
+    name = "o_class_brain_5_dupe"
+    scale = 7.0
+    cull_radius = 3000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+
+    default_state = "idle"
+    state = { name = "idle" }
+
+    attach = { loc101 = "matrioshka_brain_p4_entity"}
+    attach = { loc101 = "matrioshka_brain_p3_entity"}
+    attach = { loc101 = "matrioshka_brain_p2_entity"}
+    attach = { loc101 = "matrioshka_brain_p5_entity"}
+}
+
+entity = {
+    name = "o_Class_brain_5_dupe_construction_entity"
+    scale = 7.0
+    cull_radius = 3000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+
+    default_state = "idle"
+    state = { name = "idle" }
+
+    attach = { loc101 = "matrioshka_brain_p5_entity"}
+}

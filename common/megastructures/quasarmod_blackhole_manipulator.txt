@@ -1,0 +1,288 @@
+#######################################
+# Supermassive Black Hole Manipulator #
+#######################################
+
+blackhole_manipulator_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	entity_offset = { x = -150 y = -7 }
+	prerequisites = { tech_supermassive_blackhole_manipulator }
+	show_prereqs = no
+	construction_blocks_and_blocked_by = none
+
+	build_time = 360
+	resources = {
+		category = giga_gigastructures
+		cost = {
+			alloys = 20000
+			influence = 300
+			unity = @giga_tera_start_unity_cost
+		}
+		upkeep = { energy = 5 }
+	}
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		has_technology = tech_supermassive_blackhole_manipulator
+	}
+
+	possible = {
+		custom_tooltip = { fail_text = "requires_inside_border" is_inside_border = from }
+		custom_tooltip = { fail_text = "requires_no_existing_megastructure"		has_no_non_gate_megastructure = yes }
+	}
+
+	on_build_complete = {
+		save_event_target_as = giga_system
+		fromfrom.planet = {
+			save_event_target_as = giga_planet
+			if = { limit = { exists = orbital_station } orbital_station = { dismantle = yes } }
+			giga_set_has_mega_flag = yes
+		}
+		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.101 } }
+	}
+	
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = { fail_text = "requires_no_existing_megastructure" planet_has_no_megastructure = yes }
+			custom_tooltip = { fail_text = "requires_no_anomaly" has_anomaly = no }
+			custom_tooltip = {
+				fail_text = "blackhole_manipulator_fail_tooltip"
+				OR = { is_planet_class = pc_core_quasar
+					is_planet_class = pc_core_black_hole
+				}
+			}
+		}
+	}
+}
+
+blackhole_manipulator_1 = {
+	entity = "blackhole_manipulator_1_entity"
+	construction_entity = "blackhole_manipulator_1_entity"
+	scales_with_planet = no
+	portrait = GFX_megastructure_construction_background
+	upgrade_from = { blackhole_manipulator_0 }
+
+	build_time = 500
+	resources = {
+		category = giga_gigastructures
+		cost = {
+			alloys = 50000
+			unity = @giga_tera_unity_cost	
+		}
+		upkeep = {
+			energy = 25
+			alloys = 10
+		}
+	}
+
+	on_build_complete = {
+		save_event_target_as = giga_system
+		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.201 } }
+
+		if = {
+			limit = {
+				fromfrom.planet = { is_planet_class = pc_core_quasar }
+			}
+			fromfrom.planet = { set_planet_entity = { entity = quasar_small_disk_entity } }
+		}
+	}
+}
+
+blackhole_manipulator_2 = {
+	entity = "blackhole_manipulator_2_entity"
+	construction_entity = "blackhole_manipulator_2_construction_entity"
+	scales_with_planet = no
+	portrait = GFX_megastructure_construction_background
+	upgrade_from = { blackhole_manipulator_1 }
+	
+	build_time = 800
+	resources = {
+		category = giga_gigastructures
+		cost = { 
+			alloys = 100000
+			unity = @giga_tera_unity_cost
+		}
+		upkeep = {
+			energy = 50
+			alloys = 20
+		}
+	}
+
+	on_build_complete = {
+		save_event_target_as = giga_system
+		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.301 } }
+	}
+}
+
+blackhole_manipulator_3 = {
+	entity = "blackhole_manipulator_3_entity"
+	construction_entity = "blackhole_manipulator_3_construction_entity"
+	scales_with_planet = no
+	portrait = GFX_megastructure_construction_background
+	upgrade_from = { blackhole_manipulator_2 }
+
+	build_time = 1100
+	resources = {
+		category = giga_gigastructures
+		cost = {
+			alloys = 150000
+			unity = @giga_tera_unity_cost
+		}
+		upkeep = {
+			energy = 100
+			alloys = 40
+		}
+	}
+
+	on_build_complete = {
+		if = { limit = { star = { is_star_class = sc_quasar } } star = { set_planet_entity = { entity = "core_quasar_compressed_entity" }  set_planet_size = 8 } }
+		else_if = {
+			limit = { star = { is_star_class = sc_birch } } star = { set_planet_size = 15 } 
+		}
+		save_event_target_as = giga_system
+		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.401 } }
+	}
+}
+
+
+blackhole_manipulator_4 = {
+	entity = "blackhole_manipulator_4_entity"
+	construction_entity = "blackhole_manipulator_4_construction_entity"
+	scales_with_planet = no
+	portrait = GFX_megastructure_construction_background
+	upgrade_from = { blackhole_manipulator_3 }
+
+	build_time = 1400
+	resources = {
+		category = giga_gigastructures
+		cost = {
+			alloys = 200000
+			unity = @giga_tera_unity_cost
+		}
+		upkeep = {
+			energy = 200
+			alloys = 80
+		}
+	}
+
+	on_build_complete = {
+		save_event_target_as = giga_system
+		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.501 } }
+	}
+}
+
+blackhole_manipulator_5 = {
+	entity = "blackhole_manipulator_5_entity"
+	construction_entity = "blackhole_manipulator_5_construction_entity"
+	scales_with_planet = no
+	portrait = GFX_megastructure_construction_background
+	upgrade_from = { blackhole_manipulator_4 }
+
+	build_time = 1700
+	resources = {
+		category = giga_gigastructures
+		cost = {
+			alloys = 250000
+			unity = @giga_tera_unity_cost
+		}
+		upkeep = {
+			energy = 400
+			alloys = 160
+		}
+	}
+
+	on_build_complete = {
+		save_event_target_as = giga_system
+		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.601 } }
+	}
+
+}
+
+# Injector
+
+blackhole_manipulator_a6 = {
+	entity = "blackhole_manipulator_5_entity"
+	construction_entity = "blackhole_manipulator_5_construction_entity"
+	scales_with_planet = no
+	portrait = GFX_megastructure_construction_background
+	upgrade_from = { blackhole_manipulator_5 }
+	upgrade_desc = hide
+
+	build_time = 1
+	resources = {
+		category = giga_gigastructures
+		cost = {
+			energy = 1000
+			unity = 5000
+		}
+		upkeep = {
+			energy = 400
+			alloys = 160
+		}
+	}
+
+	possible = {
+		custom_tooltip = { fail_text = "requires_built_on_giga_inactive_core"
+		root = {
+			star = { is_star_class = sc_birch }
+			}
+		}
+	}
+
+	on_build_complete = {
+		fromfrom.solar_system =  { save_event_target_as = blackhole_manip_system}
+		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = blackhole_manip_system } }
+		from = { start_situation = {
+			type = situation_blackhole_injection
+			target = root.fromfrom.planet
+			}
+		}
+	}
+}
+
+# Harvester
+
+blackhole_manipulator_b6 = {
+	entity = "blackhole_manipulator_5_entity"
+	construction_entity = "blackhole_manipulator_5_construction_entity"
+	scales_with_planet = no
+	portrait = GFX_megastructure_construction_background
+	upgrade_from = { blackhole_manipulator_5 }
+	upgrade_desc = hide
+
+	build_time = 1
+	resources = {
+		category = giga_gigastructures
+		cost = {
+			energy = 1000
+			unity = 5000
+		}
+		upkeep = {
+			energy = 400
+			alloys = 160
+		}
+	}
+
+	possible = {
+		custom_tooltip = { fail_text = "requires_built_on_giga_active_core"
+		root = {
+			star = { is_star_class = sc_quasar }
+			}
+		}
+	}
+
+	on_build_complete = {
+		fromfrom.solar_system =  { save_event_target_as = blackhole_manip_system}
+		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = blackhole_manip_system } }
+		from = { start_situation = {
+			type = situation_blackhole_harvesting
+			target = root.fromfrom.planet
+			}
+		}
+	}
+}

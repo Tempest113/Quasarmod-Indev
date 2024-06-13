@@ -1,0 +1,188 @@
+# Stage One
+entity = {
+    name = hyperquasaric_megashipyard_1_entity
+    cull_radius = 1000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+    locator = { name = "loc102" position = { 0 0 0 } rotation = { -30 0 0 } }
+
+    attach = { "loc101" = "HAY_pumps" }
+    attach = { "loc101" = "Decompressor_beam_ring" }
+    attach = { "loc102" = "nidavellir_first_ring" }
+
+}
+
+# Stage Two
+entity = {
+    name = "hyperquasaric_megashipyard_2_entity"
+    cull_radius = 2000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+    locator = { name = "loc102" position = { 0 0 0 } rotation = { -30 0 0 } }
+
+    attach = { "loc101" = "HAY_pumps" }
+    attach = { "loc101" = "Decompressor_beam_ring" }
+    attach = { "loc102" = "nidavellir_first_ring" }
+    attach = { "loc102" = "nidavellir_second_ring" }
+}
+
+# Stage Three
+entity = {
+    name = "hyperquasaric_megashipyard_3_entity"
+    cull_radius = 3000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+    locator = { name = "loc102" position = { 0 0 0 } rotation = { -30 0 0 } }
+
+    attach = { "loc101" = "HAY_pumps" }
+    attach = { "loc101" = "Decompressor_beam_ring" }
+    attach = { "loc101" = "fuckin_pillar_thing" }
+    attach = { "loc101" = "HAY_outer_ring" }
+    attach = { "loc102" = "nidavellir_first_ring" }
+    attach = { "loc102" = "nidavellir_second_ring" }
+
+}
+
+#Stage Four
+entity = {
+    name = "hyperquasaric_megashipyard_4_entity"
+    cull_radius = 3000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+    locator = { name = "loc102" position = { 0 0 0 } rotation = { -30 0 0 } }
+
+    attach = { "loc101" = "HAY_pumps" }
+    attach = { "loc101" = "fuckin_pillar_thing" }
+    attach = { "loc101" = "HAY_shipyards" }
+    attach = { "loc101" = "HAY_outer_ring" }
+    attach = { "loc101" = "Decompressor_beam_ring" }
+    attach = { "loc102" = "nidavellir_first_ring" }
+    attach = { "loc102" = "nidavellir_second_ring" }
+    attach = { "loc102" = "nidavellir_third_ring" }
+
+}
+
+
+# Parts
+entity = {
+    name = "nidavellir_first_ring"
+    cull_radius = 500
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { -30 0 90 } }
+    attach = { "loc101" = "nidavellir_ring_1_entity" }
+    scale = 52
+
+}
+
+entity = {
+    name = "nidavellir_second_ring"
+    cull_radius = 500
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { -30 0 90 } }
+    attach = { "loc101" = "nidavellir_ring_2_entity" }
+    scale = 52
+
+}
+
+entity = {
+    name = "nidavellir_third_ring"
+    cull_radius = 500
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { -30 0 90 } }
+    attach = { "loc101" = "nidavellir_ring_3_entity" }
+    scale = 52
+
+}
+
+entity = {
+    name = "HAY_pumps"
+    cull_radius = 5000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+
+    attach = { "loc101" = "giga_shipyard_pump_ring_entity" }
+
+    scale = 7.25
+}
+
+entity = {
+    name = "fuckin_pillar_thing"
+    cull_radius = 5000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+
+    attach = { "loc101" = "giga_shipyard_beam_entity" }
+
+    scale = 7.25
+}
+
+entity = {
+    name = "HAY_outer_ring"
+    cull_radius = 5000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+
+    attach = { "loc101" = "giga_shipyard_outer_ring_entity" }
+
+    scale = 7.25
+}
+
+entity = {
+    name = "HAY_shipyards"
+    cull_radius = 5000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+
+    attach = { "loc101" = "giga_shipyard_yards_tilted_entity" }
+
+    scale = 7.25
+}
+
+entity = {
+    name = "Decompressor_beam_ring"
+    cull_radius = 5000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+    attach = { "loc101" = "giga_shipyard_tractor_ring_entity" }
+
+    scale = 7.25
+}
+
+
+
+
+
+
+entity = {
+    name = "deleteme"
+    cull_radius = 500
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { -30 0 90 } }
+    locator = { name = "lens1" position = { 0 0 35 } rotation = { 0 0 0 } }
+    locator = { name = "lens12" position = { 0 0 41 } rotation = { 180 0 0 } }
+    locator = { name = "lens2" position = { 0 0 50.3 } rotation = { 0 0 0 } }
+    locator = { name = "lens22" position = { 0 0 59 } rotation = { 180 0 0 } }
+    locator = { name = "lens3" position = { 0 0 69 } rotation = { 0 0 0 } }
+    locator = { name = "lens32" position = { 0 0 82 } rotation = { 180 0 0 } }
+    locator = { name = "lens4" position = { 0 0 91.1 } rotation = { 0 0 0 } }
+    locator = { name = "lens42" position = { 0 0 108.1 } rotation = { 180 0 0 } }
+
+    attach = { "loc101" = "nidavellir_ring_1_entity" }
+    attach = { "loc101" = "nidavellir_ring_2_entity" }
+    attach = { "loc101" = "nidavellir_ring_3_entity" }
+    scale = 52
+    # scale = 7.5
+}
+
+entity = {
+    name = "deleteme2"
+    cull_radius = 5000
+
+    locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+
+    attach = { "loc101" = "giga_shipyard_pump_ring_entity" }
+    attach = { "loc101" = "giga_shipyard_yards_tilted_entity" }
+    attach = { "loc101" = "giga_shipyard_outer_ring_entity" }
+    attach = { "loc101" = "giga_shipyard_beam_entity" }
+    attach = { "loc101" = "giga_shipyard_tractor_ring_entity" }
+    attach = { "loc101" = "bestagon_swarm_entity" }
+
+    scale = 7.25
+}

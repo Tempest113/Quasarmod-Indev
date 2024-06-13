@@ -1,0 +1,72 @@
+tech_hyperquasaric_teraforge = {
+	cost = @giga_tier8cost1
+	area = engineering
+	tier = 5
+	category = { industry }
+	is_rare = yes
+	weight = 0
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+	}
+
+	prereqfor_desc = {
+		custom = { title = "header_04_lud_insane" desc = "header_04_lud_insane_desc" }
+		custom = { title = "TECH_UNLOCK_HYPERQUASARIC_TERAFORGE_TITLE" desc = "TECH_UNLOCK_HYPERQUASARIC_TERAFORGE_DESC" }
+	}
+}
+
+tech_hyperquasaric_megashipyard = {
+	cost = @giga_tier7cost3
+	area = society
+	tier = 5
+	category = { military_theory }
+	is_rare = yes
+	weight = @giga_tier7weight3
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+	}
+
+	prereqfor_desc = {
+		custom = { title = "header_02_tetra" desc = "header_02_tetra_desc" }
+		custom = { title = "TECH_UNLOCK_HYPERQUASARIC_MEGASHIPYARD_TITLE" desc = "TECH_UNLOCK_HYPERQUASARIC_MEGASHIPYARD_DESC" }
+	}
+}
+
+
+tech_supermassive_blackhole_manipulator ={
+	cost = @giga_tier7cost3
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	is_rare = yes
+	weight = 0
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+	}
+
+	prereqfor_desc = {
+		custom = { title = "header_02_tetra"	desc = "header_02_tetra_desc" }
+		custom = { title = "TECH_UNLOCK_BLACKHOLE_MANIPULATOR_TITLE" desc = "TECH_UNLOCK_BLACKHOLE_MANIPULATOR_DESC" }
+	}
+}
+
+tech_core_mbrain ={
+	cost = @giga_tier8cost1
+	area = physics
+	tier = 5
+	category = { computing }
+	is_rare = yes
+	weight = 0
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+	}
+
+	prereqfor_desc = {
+		custom = { title = "header_04_lud_insane" desc = "header_04_lud_insane_desc" }
+		custom = { title = "TECH_UNLOCK_GARGANTUAN_MBRAIN_TITLE" desc = "TECH_UNLOCK_GARGANTUAN_MBRAIN_DESC" }
+	}
+}
