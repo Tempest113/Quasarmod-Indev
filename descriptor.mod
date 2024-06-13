@@ -6,8 +6,7 @@ tags={
 	"Technologies"
 	"Gigastructures"
 }
-name="Gigas Hyperquasaric Megaconstruction - Indev"
+name="Quasarmod-Indev"
 picture="thumbnail.png"
-supported_version="3.11.*"
+supported_version="3.12.*"
 remote_file_id="3259978897"
-path = mod/quasarmod-indev/Quasarmod-Indev
