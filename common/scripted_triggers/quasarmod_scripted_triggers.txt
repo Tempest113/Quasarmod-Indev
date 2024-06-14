@@ -10,3 +10,11 @@ planet_has_quasarmod_teraforge_uplink = {
 
     }
 }
+
+owner_owns_core_mbrain = {
+    owner = {
+        any_owned_megastructure = {
+            is_megastructure_type = matrioshka_brain_5_core
+        }
+    }
+}
