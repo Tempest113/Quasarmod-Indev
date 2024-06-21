@@ -60,5 +60,4 @@ ship_event = {
         }
     }
 }
-
 # messed this up BAD, made every single ship that gets built turn into a planetcraft, oops...
