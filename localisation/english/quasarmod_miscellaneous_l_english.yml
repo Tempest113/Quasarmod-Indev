@@ -1,7 +1,7 @@
 ﻿l_english:
 
  ############
- # Tooltips #
+ # Misc #
  ############
 
  requires_ap_giga_stellar_manipulation: "£trigger_no£ Requires the §YStellar Manipulation§! ascension perk."
@@ -32,3 +32,5 @@
 
  mod_building_teraforge_uplink_consumer_goods_max: "Max Quasaric Factory Uplinks"
  mod_planet_building_teraforge_uplink_consumer_goods_build_speed_mult: "Quasaric Factory Uplink build speed"
+
+ requires_mbrain_uplink:0 "£trigger_no£ Requires a ['building:building_giga_matrioshka_brain_uplink'] building."

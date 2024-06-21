@@ -1,5 +1,5 @@
 building_quasarmod_teraforge_uplink_country_max = {
-    icon = mod_job_organic_battery_add
+    icon = mod_job_alloy_drone_add
     category = country
     good = yes
 }

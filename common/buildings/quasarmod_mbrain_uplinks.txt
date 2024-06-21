@@ -155,6 +155,10 @@ building_giga_matrioshka_brain_uplink_research = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
+
         }
         planet_researchers_produces_mult = @production_mult
         planet_researchers_upkeep_mult = @upkeep_mult
@@ -163,6 +167,9 @@ building_giga_matrioshka_brain_uplink_research = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
         }
         multiplier = value:giga_job_scaling_plus_base
         planet_researchers_energy_upkeep_add = 2
@@ -209,6 +216,10 @@ building_giga_matrioshka_brain_uplink_unity = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
+
         }
         planet_administrators_produces_mult = @production_mult
         planet_administrators_upkeep_mult = @upkeep_mult
@@ -260,6 +271,10 @@ building_giga_matrioshka_brain_uplink_sanctuary = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
+
         }
         job_bio_trophy_add = 50
         planet_bio_trophies_produces_mult = @production_mult
@@ -269,6 +284,10 @@ building_giga_matrioshka_brain_uplink_sanctuary = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
+
         }
         multiplier = value:giga_planet_density_count_bio_trophies
         planet_jobs_complex_drone_produces_mult = 0.0025
@@ -277,6 +296,10 @@ building_giga_matrioshka_brain_uplink_sanctuary = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
+
         }
         planet_bio_trophies_energy_upkeep_add = 0.5
         multiplier = value:giga_job_scaling_plus_base
@@ -433,6 +456,9 @@ building_giga_matrioshka_brain_uplink_entertainment = {
         potential = {
             exists = owner
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
             owner = {
                 is_gestalt = no
                 nand = {
@@ -451,6 +477,9 @@ building_giga_matrioshka_brain_uplink_entertainment = {
         potential = {
             exists = owner
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
             owner = {
                 is_gestalt = no
                 nand = {
@@ -468,6 +497,9 @@ building_giga_matrioshka_brain_uplink_entertainment = {
             owner_owns_core_mbrain = yes
             exists = owner
             owner = { is_machine_empire = yes }
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
         }
         planet_bio_trophies_society_research_produces_add = 1
         planet_stability_add = 5
@@ -475,6 +507,9 @@ building_giga_matrioshka_brain_uplink_entertainment = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
             exists = owner
             owner = { is_machine_empire = yes }
         }
@@ -487,6 +522,9 @@ building_giga_matrioshka_brain_uplink_entertainment = {
         potential = {
             exists = owner
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
             owner = {
                 is_fallen_empire_materialist = yes
                 has_civic = civic_disinterested_gamers
@@ -614,6 +652,9 @@ building_giga_matrioshka_brain_uplink_training = {
     triggered_country_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
             exists = owner
             owner = {
                 is_gestalt = no
@@ -625,6 +666,9 @@ building_giga_matrioshka_brain_uplink_training = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
             exists = owner
             owner = {
                 is_gestalt = no
@@ -639,7 +683,10 @@ building_giga_matrioshka_brain_uplink_training = {
 
     triggered_country_modifier = {
         potential = {
-        owner_owns_core_mbrain = yes
+            owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
             exists = owner
             owner = {
                 is_gestalt = yes
@@ -651,6 +698,9 @@ building_giga_matrioshka_brain_uplink_training = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
             exists = owner
             owner = {
                 is_gestalt = yes
@@ -689,6 +739,9 @@ building_giga_matrioshka_brain_uplink_diplomacy = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
         }
         inline_script = {
             script = planet/virtual/giga_diplomat_job_swap
@@ -726,6 +779,9 @@ building_giga_matrioshka_brain_uplink_hell = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
         }
         job_giga_virtual_hell_inmate_add = 20
     }
@@ -762,6 +818,9 @@ building_giga_matrioshka_brain_uplink_livestock = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
         }
         job_giga_virtual_livestock_add = 50
     }
@@ -797,6 +856,9 @@ building_giga_matrioshka_brain_uplink_amalgamation = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
         }
         job_giga_virtual_organic_battery_add = 50
     }
@@ -841,6 +903,9 @@ building_giga_matrioshka_brain_uplink_foundry = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
         }
         planet_metallurgists_produces_mult = @production_mult
         planet_metallurgists_upkeep_mult = @upkeep_mult
@@ -849,6 +914,9 @@ building_giga_matrioshka_brain_uplink_foundry = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
         }
         multiplier = value:giga_job_scaling_plus_base
         planet_metallurgists_energy_upkeep_add = 2
@@ -895,6 +963,9 @@ building_giga_matrioshka_brain_uplink_factory = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
         }
         planet_artisans_produces_mult = @production_mult
         planet_artisans_upkeep_mult = @upkeep_mult
@@ -903,6 +974,9 @@ building_giga_matrioshka_brain_uplink_factory = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
         }
         multiplier = value:giga_job_scaling_plus_base
         planet_artisans_energy_upkeep_add = 1
@@ -970,6 +1044,9 @@ building_giga_matrioshka_brain_uplink_refinery = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
         }
         planet_chemists_produces_mult = @production_mult
         planet_chemists_upkeep_mult = @upkeep_mult
@@ -984,6 +1061,9 @@ building_giga_matrioshka_brain_uplink_refinery = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
         }
         multiplier = value:giga_job_scaling_plus_base
         planet_chemists_energy_upkeep_add = 2
@@ -1035,6 +1115,9 @@ building_giga_matrioshka_brain_uplink_anti_deviancy = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
         }
         planet_jobs_produces_mult = 0.1
         job_patrol_drone_add = 8
@@ -1042,6 +1125,9 @@ building_giga_matrioshka_brain_uplink_anti_deviancy = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
         }
         planet_crime_no_happiness_add = -1
         multiplier = value:giga_mbrain_anti_deviancy
@@ -1181,6 +1267,9 @@ building_giga_matrioshka_brain_uplink_robot = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
             exists = owner
             owner = { is_regular_empire = yes }
         }
@@ -1198,6 +1287,9 @@ building_giga_matrioshka_brain_uplink_robot = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
             exists = owner
             owner = {
                 is_regular_empire = yes
@@ -1216,6 +1308,9 @@ building_giga_matrioshka_brain_uplink_robot = {
         potential = {
             owner_owns_core_mbrain = yes
             exists = owner
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
             owner = {
                 is_regular_empire = yes
                 is_individual_machine = no
@@ -1237,6 +1332,9 @@ building_giga_matrioshka_brain_uplink_robot = {
         potential = {
             owner_owns_core_mbrain = yes
             exists = owner
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
             owner = {
                 is_regular_empire = yes
                 is_individual_machine = no
@@ -1258,7 +1356,11 @@ building_giga_matrioshka_brain_uplink_robot = {
 
     triggered_planet_modifier = {
         potential = {
-owner_owns_core_mbrain = yes            exists = owner
+            owner_owns_core_mbrain = yes
+            exists = owner
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
             owner = { is_gestalt = yes }
         }
 
@@ -1305,6 +1407,9 @@ building_giga_matrioshka_brain_uplink_virtual = {
     triggered_planet_modifier = {
         potential = {
             owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
         }
         giga_virtual_colony_size = -1
         multiplier = value:giga_matrioshka_brain_uplink_multiplicative_value|fraction|0.5|building|building_giga_matrioshka_brain_uplink_virtual|
@@ -1312,7 +1417,11 @@ building_giga_matrioshka_brain_uplink_virtual = {
 
     triggered_planet_modifier = {
         potential = {
-        owner_owns_core_mbrain = yes        }
+            owner_owns_core_mbrain = yes
+            planet = {
+                has_planet_flag = connected_to_core_mbrain
+            }
+        }
         planet_pops_energy_upkeep_mult = 0.5
     }
 }

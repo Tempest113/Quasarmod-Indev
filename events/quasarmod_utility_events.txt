@@ -61,3 +61,40 @@ ship_event = {
     }
 }
 # messed this up BAD, made every single ship that gets built turn into a planetcraft, oops...
+
+country_event = {
+    id = quasarmod_utility.3
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        every_owned_planet = {
+            if = {
+                limit = {
+                    OR = {
+                        owner = { not = { any_owned_megastructure = { is_megastructure_type = matrioshka_brain_5_core} } }
+                        NOR = {
+                            has_building = building_giga_matrioshka_brain_uplink_research
+                            has_building = building_giga_matrioshka_brain_uplink_unity
+                            has_building = building_giga_matrioshka_brain_uplink_sanctuary
+                            has_building = building_giga_matrioshka_brain_uplink_entertainment
+                            has_building = building_giga_matrioshka_brain_uplink_training
+                            has_building = building_giga_matrioshka_brain_uplink_diplomacy
+                            has_building = building_giga_matrioshka_brain_uplink_hell
+                            has_building = building_giga_matrioshka_brain_uplink_livestock
+                            has_building = building_giga_matrioshka_brain_uplink_amalgamation
+                            has_building = building_giga_matrioshka_brain_uplink_foundry
+                            has_building = building_giga_matrioshka_brain_uplink_factory
+                            has_building = building_giga_matrioshka_brain_uplink_refinery
+                            has_building = building_giga_matrioshka_brain_uplink_anti_deviancy
+                            has_building = building_giga_matrioshka_brain_uplink_robot
+                            has_building = building_giga_matrioshka_brain_uplink_virtual  }
+                    }
+                    is_colony = yes
+                }
+                remove_modifier = quasarmod_connected_to_core_mbrain_mod
+                remove_planet_flag = connected_to_core_mbrain
+            }
+        }
+    }
+}

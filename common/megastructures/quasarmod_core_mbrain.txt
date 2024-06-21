@@ -241,7 +241,6 @@ matrioshka_brain_5_core ={     # Equivalent to the final stage of the M Brain (i
     }
 
     country_modifier = {
-        # building_giga_matrioshka_brain_uplink_country_max = 50
-        uplink
+        building_giga_matrioshka_brain_uplink_country_max = 50
     }
 }

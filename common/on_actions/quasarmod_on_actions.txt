@@ -7,3 +7,7 @@ on_ship_built = {
      events = { quasarmod_utility.2 }
 
 }
+
+on_monthly_pulse_country = {
+     events = { quasarmod_utility.3 }
+}

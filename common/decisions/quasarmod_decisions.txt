@@ -1,0 +1,107 @@
+decision_quasarmod_establish_core_mbrain_uplink = {
+    icon = decision_glitchy_matrix
+    enactment_time = 30
+    owned_planets_only = yes
+    show_tech_unlock_if = { always = no }
+    prerequisites = { giga_tech_matrioshka_brain_1 }
+    potential = {
+        planet = {
+            is_colony = yes
+            NOT = {
+                has_planet_flag = connected_to_core_mbrain
+            }
+        }
+        planet.owner = {
+            any_owned_megastructure = {
+                is_megastructure_type = matrioshka_brain_5_core
+            }
+        }
+    }
+    allow = {
+        has_upgraded_capital = yes
+        custom_tooltip_fail = {
+            text = requires_mbrain_uplink
+            OR = {
+            has_building = building_giga_matrioshka_brain_uplink_research
+            has_building = building_giga_matrioshka_brain_uplink_unity
+            has_building = building_giga_matrioshka_brain_uplink_sanctuary
+            has_building = building_giga_matrioshka_brain_uplink_entertainment
+            has_building = building_giga_matrioshka_brain_uplink_training
+            has_building = building_giga_matrioshka_brain_uplink_diplomacy
+            has_building = building_giga_matrioshka_brain_uplink_hell
+            has_building = building_giga_matrioshka_brain_uplink_livestock
+            has_building = building_giga_matrioshka_brain_uplink_amalgamation
+            has_building = building_giga_matrioshka_brain_uplink_foundry
+            has_building = building_giga_matrioshka_brain_uplink_factory
+            has_building = building_giga_matrioshka_brain_uplink_refinery
+            has_building = building_giga_matrioshka_brain_uplink_anti_deviancy
+            has_building = building_giga_matrioshka_brain_uplink_robot
+            has_building = building_giga_matrioshka_brain_uplink_virtual
+        }
+        }
+    }
+    abort_trigger = {
+        NOR = {
+            has_building = building_giga_matrioshka_brain_uplink_research
+            has_building = building_giga_matrioshka_brain_uplink_unity
+            has_building = building_giga_matrioshka_brain_uplink_sanctuary
+            has_building = building_giga_matrioshka_brain_uplink_entertainment
+            has_building = building_giga_matrioshka_brain_uplink_training
+            has_building = building_giga_matrioshka_brain_uplink_diplomacy
+            has_building = building_giga_matrioshka_brain_uplink_hell
+            has_building = building_giga_matrioshka_brain_uplink_livestock
+            has_building = building_giga_matrioshka_brain_uplink_amalgamation
+            has_building = building_giga_matrioshka_brain_uplink_foundry
+            has_building = building_giga_matrioshka_brain_uplink_factory
+            has_building = building_giga_matrioshka_brain_uplink_refinery
+            has_building = building_giga_matrioshka_brain_uplink_anti_deviancy
+            has_building = building_giga_matrioshka_brain_uplink_robot
+            has_building = building_giga_matrioshka_brain_uplink_virtual
+        }
+    }
+
+    effect = {
+        add_modifier = {
+            modifier = quasarmod_connected_to_core_mbrain_mod
+            days = -1
+            clear_on_owner_change = yes
+        }
+        set_planet_flag = connected_to_core_mbrain
+    }
+}
+
+decision_quasarmod_sever_core_mbrain_uplink = {
+    icon = decision_glitchy_matrix
+    enactment_time = 30
+    owned_planets_only = yes
+    show_tech_unlock_if = { always = no }
+    prerequisites = { giga_tech_matrioshka_brain_1 }
+    potential = {
+        planet = {
+            is_colony = yes
+            has_planet_flag = connected_to_core_mbrain
+        }
+        planet.owner = {
+            any_owned_megastructure = {
+                is_megastructure_type = matrioshka_brain_5_core
+            }
+        }
+    }
+    allow = {
+        planet = {
+            has_modifier = quasarmod_connected_to_core_mbrain_mod
+        }
+    }
+    abort_trigger = {
+        planet = {
+            not = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
+            }
+        }
+    }
+
+    effect = {
+        remove_modifier = quasarmod_connected_to_core_mbrain_mod
+        remove_planet_flag = connected_to_core_mbrain
+    }
+}

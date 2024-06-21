@@ -88,6 +88,14 @@
  matrioshka_brain_5_core: "Gargantuan Matrioshka Brain"
  matrioshka_brain_5_core_DESC: "A fully operational Gargantuan Matrioshka Brain, including the outermost layer consisting of the cross-referential archives which coordinate the other components, boosting efficiency to its maximum."
 
+ decision_quasarmod_establish_core_mbrain_uplink: "Establish $matrioshka_brain_5_core$ Uplink"
+ decision_quasarmod_establish_core_mbrain_uplink_desc: "Establish a connection to our §Y$matrioshka_brain_5_core$§! in the galactic core, massively increasing the potency of all $building_giga_matrioshka_brain_uplink$ buildings on the planet."
+ decision_quasarmod_sever_core_mbrain_uplink: "Sever $matrioshka_brain_5_core$ Uplink"
+ decision_quasarmod_sever_core_mbrain_uplink_desc: "Sever this planets connection to our $matrioshka_brain_5_core$."
+ quasarmod_connected_to_core_mbrain_mod: "Gargantuan Matrioshka Brain Uplink"
+ quasarmod_connected_to_core_mbrain_mod_desc: "This planet is connected to a $matrioshka_brain_5_core$ via advanced tachyon relays, this increase in available processing power results in a massive increase in potency for our $building_giga_matrioshka_brain_uplink$ buildings."
+ mod_planet_giga_matrioshka_brain_uplinks_energy_upkeep_mult: "Matrioshka Brain Uplink Energy Credits Upkeep"
+
 
 
  ##############################
