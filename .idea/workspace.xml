@@ -35,6 +35,7 @@
     <option name="showScratchesAndConsoles" value="false" />
     <option name="showVisibilityIcons" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -45,6 +46,18 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2551724&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.file-colors&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2551724",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.file-colors"
+>>>>>>> 4571a352cd7e2229c2a684c217d46267cfc3700c
   }
 }</component>
   <component name="RecentsManager">

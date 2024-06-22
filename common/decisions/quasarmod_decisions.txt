@@ -37,7 +37,7 @@ decision_quasarmod_establish_core_mbrain_uplink = {
             has_building = building_giga_matrioshka_brain_uplink_anti_deviancy
             has_building = building_giga_matrioshka_brain_uplink_robot
             has_building = building_giga_matrioshka_brain_uplink_virtual
-        }
+            }
         }
     }
     abort_trigger = {

@@ -29,7 +29,7 @@ tech_hyperquasaric_megashipyard = {
 	}
 
 	prereqfor_desc = {
-		custom = { title = "header_02_tetra" desc = "header_02_tetra_desc" }
+		custom = { title = "header_04_lud_insane" desc = "header_04_lud_insane_desc" }
 		custom = { title = "TECH_UNLOCK_HYPERQUASARIC_MEGASHIPYARD_TITLE" desc = "TECH_UNLOCK_HYPERQUASARIC_MEGASHIPYARD_DESC" }
 	}
 }
