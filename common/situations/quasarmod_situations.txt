@@ -88,7 +88,7 @@ situation_blackhole_injection = {
 
         modifier = {
             multiply = 0
-            desc = quasarmod_no_plasma
+            desc = sr_stellar_plasma_deficit
             owner = {
                 has_deficit = sr_stellar_plasma
             }

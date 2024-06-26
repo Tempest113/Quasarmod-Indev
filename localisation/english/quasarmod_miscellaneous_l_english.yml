@@ -20,8 +20,6 @@
 
  already_have_quasarshipyard_uplink:"$TRIGGER_FAIL$There's already a Hyperquasaric Megashipyard Uplink here."
 
- quasarmod_no_plasma: "Stellar Plasma Deficit"
-
  mod_building_quasarmod_teraforge_uplink_country_max: "Max Hyperquasaric Teraforge Uplink Buildings"
 
  mod_building_teraforge_uplink_base_max: "Max Hyperquasaric Teraforge Uplinks"
