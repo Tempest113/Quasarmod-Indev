@@ -4,7 +4,7 @@
  # Misc #
  ############
 
- requires_ap_giga_stellar_manipulation: "£trigger_no£ Requires the §YStellar Manipulation§! ascension perk."
+ requires_ap_stellar_manipulation: "£trigger_no£ Requires the §YStellar Manipulation§! ascension perk."
 
  ap_hyperquasaric_megaconstruction_add_research: "Research options gained:\n£physics_research£§Y$tech_supermassive_blackhole_manipulator$§!\n£physics_research£§Y$tech_core_mbrain$§!\n£society_research£§Y$tech_hyperquasaric_megashipyard$§!\n£engineering_research£§Y$tech_hyperquasaric_teraforge$§!"
 
