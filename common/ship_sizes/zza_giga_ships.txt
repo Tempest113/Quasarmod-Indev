@@ -1,3 +1,5 @@
+# File has zza_ prefix to allow easy overwrite by playable katzenartig imperium
+
 giga_massive_planet = {
     graphical_culture = no
     max_speed = 100
