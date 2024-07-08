@@ -154,6 +154,11 @@ matrioshka_brain_3_core ={     # Equivalent to the Central Processor stage
         if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
         from = { country_event = { id = blackhole_manipulation_mega_stage_complete.4 } }
     }
+
+    country_modifier = {
+        building_giga_matrioshka_brain_uplink_country_max = 12
+    }
+
 }
 
 matrioshka_brain_4_core ={     # Equivalent to the Quantum Calculators stage
@@ -180,10 +185,6 @@ matrioshka_brain_4_core ={     # Equivalent to the Quantum Calculators stage
         upkeep = {
             alloys = 1000
         }
-        upkeep = {
-            trigger = { NOT = { has_global_flag = giga_disable_influence_upkeep } }
-            influence = 5
-        }
     }
 
     on_build_complete = {
@@ -191,6 +192,11 @@ matrioshka_brain_4_core ={     # Equivalent to the Quantum Calculators stage
         if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
         from = { country_event = { id = blackhole_manipulation_mega_stage_complete.5 } }
     }
+
+    country_modifier = {
+        building_giga_matrioshka_brain_uplink_country_max = 25
+    }
+
 }
 
 matrioshka_brain_5_core ={     # Equivalent to the final stage of the M Brain (ignoring VR segments)

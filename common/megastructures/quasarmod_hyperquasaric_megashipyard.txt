@@ -166,7 +166,7 @@ hyperquasaric_megashipyard_4 = {
         }
         upkeep = {
             trigger = { NOT = { has_global_flag = giga_disable_influence_upkeep } }
-            influence = 1
+            influence = 3
         }
 
         upkeep = {
