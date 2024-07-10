@@ -738,17 +738,15 @@ building_giga_matrioshka_brain_uplink_diplomacy = {
 
     # Quasarmod Additions
 
-    triggered_planet_modifier = {
-        potential = {
+    inline_script = {
+        script = planet/virtual/giga_diplomat_job_swap
+        jobs = 8
+        condition = "
             owner_owns_core_mbrain = yes
             planet = {
                 has_planet_flag = connected_to_core_mbrain
             }
-        }
-        inline_script = {
-            script = planet/virtual/giga_diplomat_job_swap
-            jobs = 8
-        }
+        "
     }
 }
 
