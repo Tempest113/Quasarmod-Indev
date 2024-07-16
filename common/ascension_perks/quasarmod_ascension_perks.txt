@@ -21,7 +21,7 @@ ap_hyperquasaric_megaconstruction = {
 		}
 	}
 
-	#test
+	#test, yet again
 
 	on_enabled = {
 		custom_tooltip = "ap_hyperquasaric_megaconstruction_add_research"
