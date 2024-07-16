@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="db69e055-2762-41d8-8c68-736972e1cf5e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/buildings/quasarmod_mbrain_uplinks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/buildings/quasarmod_mbrain_uplinks.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,16 +26,16 @@
     <option name="showScratchesAndConsoles" value="false" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Program Files (x86)/Steam/steamapps/workshop/content/281990/1121692237/common/buildings/giga_matrioshka_brain_uplinks.txt",
-    "two.files.diff.last.used.file": "C:/Program Files (x86)/Steam/steamapps/workshop/content/281990/1121692237/common/buildings/giga_matrioshka_brain_uplinks.txt"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Program Files (x86)/Steam/steamapps/workshop/content/281990/1121692237/common/buildings/giga_matrioshka_brain_uplinks.txt&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Program Files (x86)/Steam/steamapps/workshop/content/281990/1121692237/common/buildings/giga_matrioshka_brain_uplinks.txt&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
