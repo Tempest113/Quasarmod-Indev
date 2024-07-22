@@ -1,0 +1,54 @@
+
+agx_quasarcraft = {
+    set_global_flag = giga_quasarcraft_constructed
+	create_fleet = {
+		name = "The Quasarcraft"
+		settings = {
+			spawn_debris = no
+			can_change_composition = no
+			is_boss = yes
+		}
+		effect = {
+		    set_fleet_flag = quasarcraft_fleet
+			set_owner = prev
+			create_ship = {
+				name = "The Quasarcraft"
+				graphical_culture = root.from
+				random_existing_design = agx_quasarcraft
+				effect = {
+					set_disable_at_health = 0.02
+					ship_event = {
+						id = quasarmod_utility.6
+					}
+				}
+			}
+            }
+		}
+	}
+
+qsc_wormhole_spawn = {
+	change_variable = {
+		which = qsc_wormholes_count
+		value = 1
+	}
+	create_fleet = {
+		name = "Quasaric Obliteration Portal"
+		settings = {
+			spawn_debris = no
+			is_boss = yes
+		}
+		effect = {
+			set_fleet_flag = qsc_wormhole_fleet
+			set_owner = prev
+			set_location = event_target:quasarcraft_owner
+			create_ship = {
+				name = "Quasaric Wormhole"
+				graphical_culture = root.from
+				design = "Macrospacial Breach"
+				effect = {
+					set_disable_at_health = 0.02
+				}
+			}
+		}
+	}
+}

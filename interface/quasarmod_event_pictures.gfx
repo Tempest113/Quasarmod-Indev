@@ -1,0 +1,31 @@
+spriteTypes = {
+
+
+	spriteType = {
+		name = "GFX_evt_glc_menu"
+		texturefile = "gfx/event_pictures/ring_destruction.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_evt_quasarcraft_storm"
+		texturefile = "gfx/event_pictures/quasarcraft_storm.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_phenkka_quasar"
+		texturefile = "gfx/event_pictures/phenkka_quasar.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_mega_qsc_bg"
+		texturefile = "gfx/interface/planetview/mega_phenkka_quasar.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}

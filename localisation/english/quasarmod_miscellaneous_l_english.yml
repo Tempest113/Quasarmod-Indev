@@ -4,31 +4,3 @@
  # Misc #
  ############
 
- requires_ap_stellar_manipulation: "£trigger_no£ Requires the §YStellar Manipulation§! ascension perk."
-
- ap_hyperquasaric_megaconstruction_add_research: "Research options gained:\n£physics_research£§Y$tech_supermassive_blackhole_manipulator$§!\n£physics_research£§Y$tech_core_mbrain$§!\n£society_research£§Y$tech_hyperquasaric_megashipyard$§!\n£engineering_research£§Y$tech_hyperquasaric_teraforge$§!"
-
- requires_advanced_stellar_manipulation: "£trigger_no£ Requires the £engineering_research£ §Y$tech_gigas_stellar_manip_2$§! technology."
-
- blackhole_manipulator_fail_tooltip: "£trigger_no£ Must build around a supermassive black hole."
- teraforge_fail_tooltip: "£trigger_no£ Must build around an active hyperquasar."
-
- requires_built_on_giga_active_core: "£trigger_no£ Can only harvest plasma from an active hyperquasar"
- requires_built_on_giga_inactive_core: "£trigger_no£ Can only inject plasma into an inactive supermassive black hole"
-
- requires_ap_blackhole_manipulation: "£trigger_no£ Requires the §YSupermassive Black Hole Manipulation§! ascension perk."
-
- already_have_quasarshipyard_uplink:"$TRIGGER_FAIL$There's already a Hyperquasaric Megashipyard Uplink here."
-
- mod_building_quasarmod_teraforge_uplink_country_max: "Max Hyperquasaric Teraforge Uplink Buildings"
-
- mod_building_teraforge_uplink_base_max: "Max Hyperquasaric Teraforge Uplinks"
- mod_planet_building_teraforge_uplink_base_build_speed_mult: "Hyperquasaric Teraforge Uplink build speed"
-
- mod_building_teraforge_uplink_alloys_max: "Max Quasaric Alloy Plants"
- mod_planet_building_teraforge_uplink_alloys_build_speed_mult: "Quasaric Alloy Plants build speed"
-
- mod_building_teraforge_uplink_consumer_goods_max: "Max Quasaric Factory Uplinks"
- mod_planet_building_teraforge_uplink_consumer_goods_build_speed_mult: "Quasaric Factory Uplink build speed"
-
- requires_mbrain_uplink:0 "£trigger_no£ Requires a ['building:building_giga_matrioshka_brain_uplink'] building."

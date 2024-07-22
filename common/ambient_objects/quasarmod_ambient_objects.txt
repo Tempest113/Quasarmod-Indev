@@ -1,0 +1,6 @@
+ambient_object = {
+	name = "quasarcraft_storm"
+	entity = "quasarcraft_storm_entity"
+	selectable = no
+	show_name = no
+}

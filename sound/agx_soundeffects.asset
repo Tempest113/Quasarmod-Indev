@@ -1,0 +1,14 @@
+soundeffect = {
+	name = qsc_planet_lance_sfx
+	sounds = { sound = qsc_planet_lance }
+	volume = 1
+	max_audible = 2
+	max_audible_behaviour = fail
+}
+
+category = {
+	name = "weapons"
+	soundeffects = {
+		qsc_planet_lance_sfx
+	}
+}

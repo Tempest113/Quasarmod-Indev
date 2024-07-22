@@ -38,7 +38,7 @@ blackhole_manipulator_0 = {
 			if = { limit = { exists = orbital_station } orbital_station = { dismantle = yes } }
 			giga_set_has_mega_flag = yes
 		}
-		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.101 } }
+		from = { country_event = { id = quasarmod_megastage_dialogue.101 } }
 	}
 	
 	placement_rules = {
@@ -46,7 +46,7 @@ blackhole_manipulator_0 = {
 			custom_tooltip = { fail_text = "requires_no_existing_megastructure" planet_has_no_megastructure = yes }
 			custom_tooltip = { fail_text = "requires_no_anomaly" has_anomaly = no }
 			custom_tooltip = {
-				fail_text = "blackhole_manipulator_fail_tooltip"
+				fail_text = "requires_inactive_core_fail_tooltip"
 				OR = { is_planet_class = pc_core_quasar
 					is_planet_class = pc_core_black_hole
 				}
@@ -78,7 +78,7 @@ blackhole_manipulator_1 = {
 	on_build_complete = {
 		save_event_target_as = giga_system
 		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.201 } }
+		from = { country_event = { id = quasarmod_megastage_dialogue.102 } }
 
 		if = {
 			limit = {
@@ -112,7 +112,7 @@ blackhole_manipulator_2 = {
 	on_build_complete = {
 		save_event_target_as = giga_system
 		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.301 } }
+		from = { country_event = { id = quasarmod_megastage_dialogue.103 } }
 	}
 }
 
@@ -143,7 +143,7 @@ blackhole_manipulator_3 = {
 		}
 		save_event_target_as = giga_system
 		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.401 } }
+		from = { country_event = { id = quasarmod_megastage_dialogue.104 } }
 	}
 }
 
@@ -171,7 +171,7 @@ blackhole_manipulator_4 = {
 	on_build_complete = {
 		save_event_target_as = giga_system
 		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.501 } }
+		from = { country_event = { id = quasarmod_megastage_dialogue.105 } }
 	}
 }
 
@@ -198,7 +198,7 @@ blackhole_manipulator_5 = {
 	on_build_complete = {
 		save_event_target_as = giga_system
 		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.601 } }
+		from = { country_event = { id = quasarmod_megastage_dialogue.106 } }
 	}
 
 }

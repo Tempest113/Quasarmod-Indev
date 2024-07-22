@@ -1,0 +1,25 @@
+entity = {
+	name = "quasarcraft_storm_entity"
+	locator = { name = "core" position = { 0 -5 0 } scale = 10 }
+	locator = { name = "psi" position = { 0 -5 0 } scale = 30 }
+	locator = { name = "root" scale = 2 }
+	locator = { name = "rift" position = { 0 -5 0 } scale = 0.01 }
+	scale = 20
+
+	default_state = "idle"
+	state = { name = "idle" 		state_time = 5
+		event = { time = 0 node = "core" particle = "psi_storm_1_effect" keep_particle = yes trigger_once = yes }
+		start_event = { 
+			trigger_once = yes 
+			sound = { soundeffect = "sfx_amb_psi_storm_1" } 
+        }
+    }
+	
+	attach = { psi = "psi_storm_1_entity" }
+	#attach = { core = "space_storm_1_entity" }
+	#attach = { core = "space_storm_2_entity" }
+	#attach = { rift = "extra_dimensional_crisis_core_system_effect_entity" }
+
+	cull_radius = 20000
+}
+

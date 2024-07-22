@@ -1,0 +1,504 @@
+namespace = quasarmod_dialogue
+
+# eventname.10xxx = injector related event
+
+# eventname.20xxx = harvester related event
+
+##################################
+# Black Hole Manipulation Notifs #
+##################################
+
+# Injection Begun
+situation_event = {
+	id = quasarmod_dialogue.1
+	title = quasarmod_dialogue.1.name
+	desc = quasarmod_dialogue.1.desc
+	picture = GFX_evt_black_hole
+	location = root
+
+	is_triggered_only = yes
+
+	option = {
+		name = quasarmod_dialogue.1.a
+	}
+}
+
+# Injection Complete
+country_event = {
+	id = quasarmod_dialogue.102
+	title = quasarmod_dialogue.102.name
+	desc = quasarmod_dialogue.102.desc
+	picture = GFX_evt_astral_rift_microverse
+	hide_window = no
+	is_triggered_only = yes
+
+	option = {
+		name = quasarmod_dialogue.102.a
+	}
+}
+
+# Harvesting Begun
+situation_event = {
+	id = quasarmod_dialogue.2
+	title = quasarmod_dialogue.2.name
+	desc = quasarmod_dialogue.2.desc
+	picture = GFX_evt_astral_rift_microverse
+	location = root
+
+	is_triggered_only = yes
+
+	option = {
+		name = quasarmod_dialogue.2.a
+	}
+}
+
+#Harvesting Complete
+country_event = {
+	id = quasarmod_dialogue.202
+	title = quasarmod_dialogue.202.name
+	desc = quasarmod_dialogue.202.desc
+	picture = GFX_evt_black_hole
+	hide_window = no
+	is_triggered_only = yes
+
+	option = {
+		name = quasarmod_dialogue.202.a
+	}
+}
+
+###########################################
+### Megastructure Stage Complete Events ###
+###########################################
+
+namespace = quasarmod_megastage_dialogue
+
+###################################
+   #Gargantuan Matrioshka Brain#
+###################################
+
+# Construction Site Built
+country_event = {
+	id = quasarmod_megastage_dialogue.1
+	title = quasarmod_megastage_dialogue.1.name
+	desc = quasarmod_megastage_dialogue.1.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:core_mbrain
+
+	option = {
+		name = quasarmod_megastage_dialogue.1.a
+	}
+}
+
+# Hawking Capacitors Built
+country_event = {
+	id = quasarmod_megastage_dialogue.2
+	title = quasarmod_megastage_dialogue.2.name
+	desc = quasarmod_megastage_dialogue.2.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system#core_mbrain
+
+	option = {
+		name = quasarmod_megastage_dialogue.2.a
+	}
+}
+
+# Main Databank Built
+country_event = {
+	id = quasarmod_megastage_dialogue.3
+	title = quasarmod_megastage_dialogue.3.name
+	desc = quasarmod_megastage_dialogue.3.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system#core_mbrain
+
+	option = {
+		name = quasarmod_megastage_dialogue.3.a
+	}
+}
+
+# Central Processor Built
+country_event = {
+	id = quasarmod_megastage_dialogue.4
+	title = quasarmod_megastage_dialogue.4.name
+	desc = quasarmod_megastage_dialogue.4.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system#core_mbrain
+
+	option = {
+		name = quasarmod_megastage_dialogue.4.a
+	}
+}
+
+# Quantum Calculators Built
+country_event = {
+	id = quasarmod_megastage_dialogue.5
+	title = quasarmod_megastage_dialogue.5.name
+	desc = quasarmod_megastage_dialogue.5.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system#core_mbrain
+
+	option = {
+		name = quasarmod_megastage_dialogue.5.a
+	}
+}
+
+# Gargantuan Matrioshka Brain Finished - it is done, you can finally go outside, not that you will
+country_event = {
+	id = quasarmod_megastage_dialogue.6
+	title = quasarmod_megastage_dialogue.6.name
+	desc = quasarmod_megastage_dialogue.6.desc
+	picture = GFX_evt_sapient_AI
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system#core_mbrain
+
+	option = {
+		name = quasarmod_megastage_dialogue.6.a
+	}
+}
+
+############################################
+  # Supermassive Black Hole Manipulator #
+############################################
+
+# Construction Site Built
+country_event = {
+	id = quasarmod_megastage_dialogue.101
+	title = quasarmod_megastage_dialogue.101.name
+	desc = quasarmod_megastage_dialogue.101.desc
+	picture = GFX_evt_black_hole
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_planet
+
+	option = {
+		name = quasarmod_megastage_dialogue.101.a
+	}
+}
+
+# Black Hole Manipulator Frame Built
+country_event = {
+	id = quasarmod_megastage_dialogue.102
+	title = quasarmod_megastage_dialogue.102.name
+	desc = quasarmod_megastage_dialogue.102.desc
+	picture = GFX_evt_black_hole
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_planet
+
+	option = {
+		name = quasarmod_megastage_dialogue.102.a
+	}
+}
+
+# Black Hole Manipulator Tetradimensional Supports Built
+country_event = {
+	id = quasarmod_megastage_dialogue.103
+	title = quasarmod_megastage_dialogue.103.name
+	desc = quasarmod_megastage_dialogue.103.desc
+	picture = GFX_evt_black_hole
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_planet
+
+	option = {
+		name = quasarmod_megastage_dialogue.103.a
+	}
+}
+
+# Black Hole Manipulator Plasma Redirection Array Built
+country_event = {
+	id = quasarmod_megastage_dialogue.104
+	title = quasarmod_megastage_dialogue.104.name
+	desc = quasarmod_megastage_dialogue.104.desc
+	picture = GFX_evt_black_hole
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_planet
+
+	option = {
+		name = quasarmod_megastage_dialogue.104.a
+	}
+}
+
+# Black Hole Manipulator Worker Drone Habitation Ring built
+country_event = {
+	id = quasarmod_megastage_dialogue.105
+	title = quasarmod_megastage_dialogue.105.name
+	desc = quasarmod_megastage_dialogue.105.desc
+	picture = GFX_evt_black_hole
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_planet
+
+	option = {
+		name = quasarmod_megastage_dialogue.105.a
+	}
+}
+
+# Black Hole Manipulator Radiation Shielding Built
+country_event = {
+	id = quasarmod_megastage_dialogue.106
+	title = quasarmod_megastage_dialogue.106.name
+	desc = quasarmod_megastage_dialogue.106.desc
+	picture = GFX_evt_black_hole
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_planet
+
+	option = {
+		name = quasarmod_megastage_dialogue.106.a
+	}
+}
+
+
+### Hyperquasaric Teraforge ###
+
+# Construction Site Built
+country_event = {
+	id = quasarmod_megastage_dialogue.201
+	title = quasarmod_megastage_dialogue.201.name
+	desc = quasarmod_megastage_dialogue.201.desc
+	picture = GFX_evt_astral_rift_microverse
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = quasarmod_megastage_dialogue.201.a
+	}
+}
+
+# Hyperquasaric Teraforge Inner Ring Built
+country_event = {
+	id = quasarmod_megastage_dialogue.202
+	title = quasarmod_megastage_dialogue.202.name
+	desc = quasarmod_megastage_dialogue.202.desc
+	picture = GFX_evt_astral_rift_microverse
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = quasarmod_megastage_dialogue.202.a
+	}
+}
+
+# Hyperquasaric Teraforge Mass Collectors Built
+country_event = {
+	id = quasarmod_megastage_dialogue.203
+	title = quasarmod_megastage_dialogue.203.name
+	desc = quasarmod_megastage_dialogue.203.desc
+	picture = GFX_evt_astral_rift_microverse
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = quasarmod_megastage_dialogue.203.a
+	}
+}
+
+# Hyperquasaric Teraforge Alloy Processing Built
+country_event = {
+	id = quasarmod_megastage_dialogue.204
+	title = quasarmod_megastage_dialogue.204.name
+	desc = quasarmod_megastage_dialogue.204.desc
+	picture = GFX_evt_astral_rift_microverse
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = quasarmod_megastage_dialogue.204.a
+	}
+}
+
+# Hyperquasaric Teraforge Finished
+country_event = {
+	id = quasarmod_megastage_dialogue.205
+	title = quasarmod_megastage_dialogue.205.name
+	desc = quasarmod_megastage_dialogue.205.desc
+	picture = GFX_evt_astral_rift_microverse
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = quasarmod_megastage_dialogue.205.a
+	}
+}
+
+####################################
+   # Hyperquasaric Megashipyard #
+####################################
+
+# Construction Site Built
+country_event = {
+	id = quasarmod_megastage_dialogue.301
+	title = quasarmod_megastage_dialogue.301.name
+	desc = quasarmod_megastage_dialogue.301.desc
+	picture = GFX_evt_space_hangar
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = quasarmod_megastage_dialogue.301.a
+	}
+}
+
+# Hyperquasaric Megashipyard Accretion Harvester Built
+country_event = {
+	id = quasarmod_megastage_dialogue.302
+	title = quasarmod_megastage_dialogue.302.name
+	desc = quasarmod_megastage_dialogue.302.desc
+	picture = GFX_evt_space_hangar
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = quasarmod_megastage_dialogue.302.a
+	}
+}
+
+# Hyperquasaric Megashipyard Purification Ring Built
+country_event = {
+	id = quasarmod_megastage_dialogue.303
+	title = quasarmod_megastage_dialogue.303.name
+	desc = quasarmod_megastage_dialogue.303.desc
+	picture = GFX_evt_space_hangar
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = quasarmod_megastage_dialogue.303.a
+	}
+}
+
+# Hyperquasaric Megashipyard Distribution Ring Built
+country_event = {
+	id = quasarmod_megastage_dialogue.304
+	title = quasarmod_megastage_dialogue.304.name
+	desc = quasarmod_megastage_dialogue.304.desc
+	picture = GFX_evt_space_hangar
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = quasarmod_megastage_dialogue.304.a
+	}
+}
+
+# Hyperquasaric Shipyard Finished
+country_event = {
+	id = quasarmod_megastage_dialogue.305
+	title = quasarmod_megastage_dialogue.305.name
+	desc = quasarmod_megastage_dialogue.305.desc
+	picture = GFX_evt_space_hangar
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_system
+
+	option = {
+		name = quasarmod_megastage_dialogue.305.a
+	}
+}
+
+################################
+   # Gargantuan Quasarcraft #
+################################
+
+# disabled since the AP has been removed - Might make an event for this mods AP though
+# country_event = {
+# 	id = giga_qsc_dialog.2801
+# 	title = "giga_qsc_dialog.2801.name"
+# 	desc = "giga_qsc_dialog.2801.desc"
+# 	picture = GFX_evt_phenkka_quasar
+# 	show_sound = event_dyson_sphere_build_start
+# 	is_triggered_only = yes
+# 	option = { name = "giga_qsc_dialog.2801.a" }
+# }
+
+# Construction Site Built
+country_event = {
+	id = quasarmod_megastage_dialogue.401
+	title = "quasarmod_megastage_dialogue.401.name"
+	desc = "quasarmod_megastage_dialogue.401.desc"
+	picture = GFX_evt_phenkka_quasar
+	show_sound = event_dyson_sphere_build_start
+	is_triggered_only = yes
+	location = event_target:giga_qsc_planet
+	option = { name = "quasarmod_megastage_dialogue.401.a" }
+}
+
+# Gargantuan Quasarcraft Heart Complete
+country_event = {
+	id = quasarmod_megastage_dialogue.402
+	title = "quasarmod_megastage_dialogue.402.name"
+	desc = "quasarmod_megastage_dialogue.402.desc"
+	picture = GFX_evt_phenkka_quasar
+	show_sound = event_dyson_sphere_build_upgrade_panel
+	is_triggered_only = yes
+	location = event_target:giga_qsc_planet
+	option = { name = "quasarmod_megastage_dialogue.402.a" }
+}
+
+# # Gargantuan Quasarcraft Ring Complete
+country_event = {
+	id = quasarmod_megastage_dialogue.403
+	title = "quasarmod_megastage_dialogue.403.name"
+	desc = "quasarmod_megastage_dialogue.403.desc"
+	picture = GFX_evt_phenkka_quasar
+	show_sound = event_dyson_sphere_build_upgrade_panel
+	is_triggered_only = yes
+	location = event_target:giga_qsc_planet
+	option = { name = "quasarmod_megastage_dialogue.403.a" }
+}
+
+# # Gargantuan Quasarcraft idfk Complete
+country_event = {
+	id = quasarmod_megastage_dialogue.404
+	title = "quasarmod_megastage_dialogue.404.name"
+	desc = "quasarmod_megastage_dialogue.404.desc"
+	picture = GFX_evt_phenkka_quasar
+	show_sound = event_dyson_sphere_build_upgrade_panel
+	is_triggered_only = yes
+	location = event_target:giga_qsc_planet
+	option = { name = "quasarmod_megastage_dialogue.404.a" }
+}
+
+# # Gargantuan Quasarcraft i also have no idea Complete
+country_event = {
+	id = quasarmod_megastage_dialogue.405
+	title = "quasarmod_megastage_dialogue.405.name"
+	desc = "quasarmod_megastage_dialogue.405.desc"
+	picture = GFX_evt_phenkka_quasar
+	show_sound = event_dyson_sphere_build_upgrade_panel
+	is_triggered_only = yes
+	location = event_target:giga_qsc_planet
+	option = { name = "quasarmod_megastage_dialogue.405.a" }
+}
+
+# Complete
+country_event = {
+	id = quasarmod_megastage_dialogue.406
+	title = "quasarmod_megastage_dialogue.406.name"
+	desc = "quasarmod_megastage_dialogue.406.desc"
+	picture = GFX_evt_phenkka_quasar
+	show_sound = event_dyson_sphere_build_complete
+	is_triggered_only = yes
+	option = { name = "quasarmod_megastage_dialogue.406.a" }
+}

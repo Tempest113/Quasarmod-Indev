@@ -1,0 +1,80 @@
+entity = {
+	name = "qsc_pl_muzzle_entity"
+	scale = 10
+
+	locator = {
+		name = "root"
+	}
+
+	default_state = "idle"
+	state = {
+		name = "idle"
+		state_time = 1
+		event = {
+			time = 0
+			particle = "qsc_warp_muzzle"
+			trigger_once = yes
+			keep_particle = no
+			sound = { soundeffect = "qsc_planet_lance_sfx" }
+		}
+	}
+	playback_rate = 2
+}
+
+entity = {
+	name = "qsc_pl_explosion_shield_entity"
+	scale = 10
+
+	locator = {
+		name = "root"
+	}
+
+	default_state = "idle"
+	state = {
+		name = "idle"
+		state_time = 1
+		event = {
+			time = 0
+			particle = "paluush_planetcraft_lance"
+			trigger_once = yes
+			keep_particle = no
+			sound = { soundeffect = "qsc_planet_lance_sfx" }
+		}
+		event = {
+			time = 0
+			particle = "paluush_planetcraft_lance"
+			trigger_once = yes
+			keep_particle = no
+		}
+	}
+	playback_rate = 2
+}
+
+entity = {
+	name = "qsc_pl_explosion_entity"
+	scale = 10
+
+	locator = {
+		name = "root"
+	}
+
+	default_state = "idle"
+	state = {
+		name = "idle"
+		state_time = 1
+		event = {
+			time = 0
+			particle = "paluush_planetcraft_lance"
+			trigger_once = yes
+			keep_particle = no
+			sound = { soundeffect = "qsc_planet_lance_sfx" }
+		}
+		event = {
+			time = 0
+			particle = "paluush_planetcraft_lance"
+			trigger_once = yes
+			keep_particle = no
+		}
+	}
+	playback_rate = 2
+}

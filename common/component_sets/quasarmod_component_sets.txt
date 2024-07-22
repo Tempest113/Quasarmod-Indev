@@ -1,0 +1,102 @@
+component_set = {
+	key = "QSC_LASER"
+	icon = "GFX_qsc_starsplitter"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "QSC_ENERGY_LANCE"
+	icon = "GFX_qsc_skyripper"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "QSC_LASER_L"
+	icon = "GFX_qsc_jupiter"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "QSC_STRIKE_FORCE"
+	icon = "GFX_qsc_strike_force"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "QSC_TITANIC_GUN"
+
+	icon = "GFX_qsc_titanic"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "QSC_PLANET_LANCE"
+
+	icon = "GFX_qsc_attraction"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "QSC_ENDSINGER"
+	icon = "GFX_ship_part_planet_lance_blokkat"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AGX_QSC_REACTOR"
+	icon = "GFX_qsc_reactor"
+	icon_frame = 1
+	required_component_set = yes
+}
+
+component_set = {
+	key = "AGX_QSC_THRUSTER"
+	icon = "GFX_qsc_drive"
+	icon_frame = 1
+	required_component_set = yes
+}
+
+component_set = {
+	key = "AGX_QSC_SENSOR"
+	icon = "GFX_compound_sensor"
+	icon_frame = 1
+	required_component_set = yes
+}
+
+component_set = {
+	key = "AGX_QSC_COMPUTER"
+	icon = "GFX_ship_part_reactor_planet"
+	icon_frame = 1
+	required_component_set = yes
+}
+
+component_set = {
+	key = "AGX_QSC_DRIVE"
+	icon = "GFX_qsc_drive"
+	icon_frame = 1
+	required_component_set = yes
+}
+
+component_set = {
+	key = "QUASARWORM_MINION_1"
+	icon = "GFX_ship_part_strike_craft_bomber_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "QUASARWORM_PARTICLES_1"
+	icon = "GFX_ship_part_swarmer_missile_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "QUASARWORM_LANCE_1"
+	icon = "GFX_ship_part_planet_lance"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "QUASARWORM_SPRAY_1"
+	icon = "GFX_ship_part_planet_lance"
+	icon_frame = 1
+}

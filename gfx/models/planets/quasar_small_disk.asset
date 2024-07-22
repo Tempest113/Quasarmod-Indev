@@ -1,4 +1,4 @@
-# This file is a mess, i understand that and i apologize, most of what i did here was testing, and when things started working i didn't want to try and "clean up" and risk breaking everything
+# This file is a mess, i know. Most of what i did here was testing, and when things started working i didn't want to try and "clean up" and risk breaking everything
 
 entity = {
     name = "quasar_small_disk_entity"
@@ -41,7 +41,7 @@ entity = {
 
 
     attach = { planet =				"quasar_black_hole_entity" }
-    attach = { gravlens =			"giga_microquasar_2_grav_lens_entity" }
+    attach = { gravlens =		    "giga_microquasar_2_grav_lens_entity" }
     attach = { gravlens =			"giga_microquasar_2_grav_animation_entity" }
 
     attach = { outbursts =			"giga_microquasar_2_outbursts_entity" }

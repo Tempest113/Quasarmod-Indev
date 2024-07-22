@@ -1,0 +1,272 @@
+#Redo QSO
+quasarcraft_0 = {
+	entity = "quasarcraft_0_entity"
+	construction_entity = "quasarcraft_0_construction_entity"
+	portrait = "GFX_mega_qsc_bg"
+	place_entity_on_planet_plane = no
+	prerequisites = { tech_quasarcraft_1 }
+	upgrade_from = { quasi_stellar_obliterator_5 }
+
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 750000
+			influence = 1000
+		}
+		upkeep = { alloys = 1250 energy = 150000 }
+	}
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		has_technology = tech_quasarcraft_1
+	}
+
+	possible = {
+		custom_tooltip = { fail_text = "requires_inside_border"								is_inside_border = from }
+		custom_tooltip = { fail_text = "requires_surveyed_system"							giga_system_is_surveyed = yes }
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = { fail_text = "requires_no_anomaly"					has_anomaly = no }
+			custom_tooltip = { fail_text = "requires_quasar_fail_tooltip"			is_planet_class = pc_core_quasar }
+		}
+	}
+
+	ai_weight = { factor = 0 }
+
+	on_build_complete = {
+		save_event_target_as = giga_system
+		set_global_flag = quasarcraft_construction
+		fromfrom.planet = {
+			save_event_target_as = giga_planet
+			if = { limit = { exists = orbital_station } orbital_station = { dismantle = yes } }
+			set_planet_flag = megastructure
+			set_planet_flag = has_megastructure
+			set_planet_flag = cant_build_here
+			set_planet_flag = cant_target_this_planet
+		}
+
+		from = {
+			country_event = { id = quasarmod_megastage_dialogue.401 }	# Notification
+		}
+	}
+}
+
+quasarcraft_0_alt = {
+	entity = "quasarcraft_0_entity"
+	construction_entity = "quasarcraft_0_construction_entity"
+	portrait = "GFX_mega_qsc_bg"
+	place_entity_on_planet_plane = no
+	prerequisites = { tech_quasarcraft_1 }
+
+	build_time = 3600
+	resources = {
+		category = giga_gigastructures
+		cost = {
+			alloys = 1250000
+			influence = 1000
+		}
+		upkeep = { alloys = 1250 energy = 150000 }
+	}
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		has_technology = tech_quasarcraft_1
+	}
+
+	possible = {
+		custom_tooltip = { fail_text = "requires_inside_border"								is_inside_border = from }
+		custom_tooltip = { fail_text = "requires_surveyed_system"							giga_system_is_surveyed = yes }
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = { fail_text = "requires_no_anomaly"					has_anomaly = no }
+			custom_tooltip = { fail_text = "requires_quasar_fail_tooltip"			is_planet_class = pc_core_quasar }
+		}
+	}
+
+	ai_weight = { factor = 0 }
+
+	on_build_complete = {
+		save_event_target_as = giga_system
+		set_global_flag = quasarcraft_construction
+		fromfrom.planet = {
+			save_event_target_as = giga_planet
+			if = { limit = { exists = orbital_station } orbital_station = { dismantle = yes } }
+			set_planet_flag = megastructure
+			set_planet_flag = has_megastructure
+			set_planet_flag = cant_build_here
+			set_planet_flag = cant_target_this_planet
+		}
+		from = {
+			country_event = { id = quasarmod_megastage_dialogue.401 }	# Notification
+		}
+	}
+}
+
+#MSCore
+quasarcraft_1 = {
+	entity = "quasarcraft_1_entity"
+	construction_entity = "quasarcraft_1_construction_entity"
+	portrait = "GFX_mega_qsc_bg"
+	upgrade_from = {
+		quasarcraft_0
+		quasarcraft_0_alt
+	}
+
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = { alloys = 1000000 }
+		upkeep = { alloys = 2500 }
+	}
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		has_technology = tech_quasarcraft_2
+	}
+
+	on_build_complete = {
+        from = {
+			country_event = { id = quasarmod_megastage_dialogue.402 }	# Notification
+		}
+	}
+}
+
+#Halo
+quasarcraft_2 = {
+	entity = "quasarcraft_2_entity"
+	construction_entity = "quasarcraft_2_construction_entity"
+	portrait = "GFX_mega_qsc_bg"
+	upgrade_from = { quasarcraft_1 }
+
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1250000
+			volatile_motes = 5000
+			exotic_gases = 5000
+			rare_crystals = 5000
+		}
+		upkeep = { alloys = 7500 }
+	}
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		has_technology = tech_quasarcraft_3
+	}
+	on_build_complete = {
+        from = {
+			country_event = { id = quasarmod_megastage_dialogue.403 }	# Notification
+		}
+	}
+}
+
+#Halo.gun
+quasarcraft_3 = {
+	entity = "quasarcraft_3_entity"
+	construction_entity = "quasarcraft_3_construction_entity"
+	portrait = "GFX_mega_qsc_bg"
+	upgrade_from = { quasarcraft_2 }
+
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1500000
+			volatile_motes = 5000
+			exotic_gases = 5000
+			rare_crystals = 5000
+		}
+		upkeep = { alloys = 9001 }
+	}
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		has_technology = tech_quasarcraft_4
+	}
+
+	on_build_complete = {
+        from = {
+			country_event = { id = quasarmod_megastage_dialogue.404 }	# Notification
+		}
+	}
+}
+
+#Engine
+quasarcraft_4 = {
+	entity = "quasarcraft_4_entity"
+	construction_entity = "quasarcraft_4_construction_entity"
+	portrait = "GFX_mega_qsc_bg"
+	upgrade_from = { quasarcraft_3 }
+
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1500000
+			volatile_motes = 7500
+			exotic_gases = 7500
+			rare_crystals = 7500
+		}
+		upkeep = { alloys = 12000 }
+	}
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		has_technology = tech_quasarcraft_5
+	}
+
+	on_build_complete = {
+		from = { 
+		    set_country_flag = qso_intensity_med 
+			country_event = { id = quasarmod_megastage_dialogue.405 }
+		}
+	}
+}
+
+quasarcraft_5 = {
+	entity = "quasarcraft_5_entity"
+	construction_entity = "quasarcraft_5_construction_entity"
+	portrait = "GFX_mega_qsc_bg"
+	upgrade_from = { quasarcraft_4 }
+
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000000
+			volatile_motes = 10000
+			exotic_gases = 10000
+			rare_crystals = 10000
+			unity = 50000
+		}
+		upkeep = {
+			alloys = 5000
+			energy = 1000
+		}
+		produces = { sr_magical_neutronium = 10 }
+	}
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		has_technology = tech_quasarcraft_6
+	}
+
+	on_build_complete = {
+		star = { change_pc = pc_giga_empty_space }
+		set_star_class = sc_empty_space
+		from = {
+		    country_event = { id = quasarmod_megastage_dialogue.406 }
+		}
+		fromfrom = {
+			agx_quasarcraft = yes
+		}
+		last_created_fleet = { set_location = fromfrom }
+		remove_megastructure = fromfrom
+	}
+}

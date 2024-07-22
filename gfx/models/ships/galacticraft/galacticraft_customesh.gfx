@@ -1,0 +1,52 @@
+objectTypes = {
+	pdxmesh = {
+		name = "glc_colwing_mesh"
+		file = "gfx/models/ships/galacticraft/colwing.mesh"
+	}
+	pdxmesh = {
+		name = "glc_mscore_mesh"
+		file = "gfx/models/ships/glc_exc_parts/MSCore.mesh"
+		animation = { id = "idle" 			type = "mega_shipyard_01_stage_3_idle_animation" }
+	}
+	pdxmesh = {
+		name = "glc_titstern_mesh"
+		file = "gfx/models/ships/glc_exc_parts/ArthTitStern.mesh"
+	}
+	pdxmesh = {
+		name = "glc_warpqc_mesh"
+		file = "gfx/models/ships/glc_exc_parts/WarpdQuasar.mesh"
+	}	
+	pdxmesh = {
+		name = "glc_warpqc2_mesh"
+		file = "gfx/models/ships/glc_exc_parts/WarpdQuasarB.mesh"
+	}	
+	pdxmesh = {
+		name = "qsc_qcb1_mesh"
+		file = "gfx/models/ships/glc_exc_parts/QC-B1.mesh"
+	}	
+	pdxmesh = {
+		name = "qsc_qcb2_mesh"
+		file = "gfx/models/ships/glc_exc_parts/QC-B2.mesh"
+	}
+	pdxmesh = {
+		name = "qsc_qcb3_mesh"
+		file = "gfx/models/ships/glc_exc_parts/QC-B3.mesh"
+	}
+    pdxmesh = {
+		name = "qsc_qcbloc_mesh"
+		file = "gfx/models/ships/glc_exc_parts/QC-B-loc.mesh"
+	}
+    pdxmesh = {
+		name = "qsc_qcbeng_mesh"
+		file = "gfx/models/ships/glc_exc_parts/QC-B-Eng.mesh"
+	}	
+	pdxmesh = {
+		name = "qsc_qcb_xltur_mesh"
+		file = "gfx/models/ships/glc_exc_parts/QC-B-XLTUR.mesh"
+		animation = { id = "idle" 			type = "mega_shipyard_01_stage_3_idle_animation" }
+	}
+	pdxmesh = {
+		name = "qsc_weapon_loc_mesh"
+		file = "gfx/models/ships/glc_exc_parts/QC-B-WLoc.mesh"
+	}
+}

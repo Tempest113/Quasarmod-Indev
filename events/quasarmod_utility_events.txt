@@ -1,5 +1,6 @@
 namespace = quasarmod_utility
 
+# Set quasarmod_enabled global flag
 event  = {
     id = quasarmod_utility.1
     hide_window = yes
@@ -10,6 +11,7 @@ event  = {
     }
 }
 
+# Replace Planetcraft built at the Teraforge with a version that shouldn't have the fleet splitting bug
 ship_event = {
     id = quasarmod_utility.2
     hide_window = yes
@@ -28,7 +30,7 @@ ship_event = {
                 name = "Behemoth Planetcraft"
                 settings = {
                     spawn_debris = no
-                    is_boss = yes
+                    #is_boss = yes
                     can_change_composition = no
                 }
                 effect = {
@@ -60,8 +62,8 @@ ship_event = {
         }
     }
 }
-# messed this up BAD, made every single ship that gets built turn into a planetcraft, oops...
 
+# Monthly pulse event to remove the core mbrain flag/modifier under certain conditions
 country_event = {
     id = quasarmod_utility.3
     hide_window = yes
@@ -97,4 +99,229 @@ country_event = {
             }
         }
     }
+}
+
+# Harvesting Complete - turn Quasar into inactive SMBH
+planet_event = {
+    id = quasarmod_utility.4
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        change_pc = pc_core_black_hole
+        solar_system = {
+            set_star_class = sc_birch
+            every_system_planet = {
+                remove_planet_flag = has_megastructure
+
+                limit = {
+                    nor = {
+                        is_planet_class = pc_core_quasar
+                        is_planet_class = pc_core_black_hole
+                    }
+                }
+                change_pc = pc_barren
+            }
+
+            every_system_megastructure = {
+                limit = {
+                    nor = {
+                        is_megastructure_type = lgate_base
+                        is_megastructure_type = gateway_final
+                        is_megastructure_type = gateway_restored
+                        is_megastructure_type = ehof_pgate_gateway
+                        is_megastructure_type = hyper_relay
+                        is_megastructure_type = hyper_relay_restored
+                    }
+                }
+                remove_megastructure = this
+            }
+
+            star = {
+                giga_clear_has_mega_flag = yes
+                change_pc = pc_core_black_hole
+                set_planet_size = 20
+                #test fix for EHOF bug - consider not removing star flags to prevent spam of new core systems (this needs to be tested)
+                if = {
+                    limit = {
+                        solar_system = {
+                            or = {
+                                has_star_flag = giga_core_02
+                                has_star_flag = giga_qso_core
+                            }
+                        }
+                    }
+                    solar_system = {
+                        remove_star_flag = giga_core_02
+                        remove_star_flag = giga_qso_core
+                        set_star_flag = giga_core_01
+                        set_star_flag = giga_birch_core
+                    }
+                }
+            }
+        }
+
+        space_owner = {
+            country_event = {
+                id = quasarmod_dialogue.202
+            }
+        }
+    }
+}
+
+# Harvesting Complete - turn inactive SMBH into Quasar
+planet_event = {
+    id = quasarmod_utility.5
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        change_pc = pc_core_quasar
+        solar_system = {
+            set_star_class = sc_quasar
+            every_system_planet = {
+                remove_planet_flag = has_megastructure
+
+                limit = {
+                    nor = {
+                        is_planet_class = pc_core_quasar
+                        is_planet_class = pc_core_black_hole
+                    }
+                }
+                change_pc = pc_molten
+            }
+
+            every_system_megastructure = {
+                limit = {
+                    nor = {
+                        is_megastructure_type = lgate_base
+                        is_megastructure_type = gateway_final
+                        is_megastructure_type = gateway_restored
+                        is_megastructure_type = ehof_pgate_gateway
+                        is_megastructure_type = hyper_relay
+                        is_megastructure_type = hyper_relay_restored
+                    }
+                }
+                remove_megastructure = this
+            }
+
+            star = {
+                giga_clear_has_mega_flag = yes
+                change_pc = pc_core_quasar
+                set_planet_size = 10
+                #test fix for EHOF bug
+                if = {
+                    limit = {
+                        solar_system = {
+                            or = {
+                                has_star_flag = giga_core_01
+                                has_star_flag = giga_birch_core
+                            }
+                        }
+                    }
+                    solar_system = {
+                        set_star_flag = giga_core_02
+                        set_star_flag = giga_qso_core
+                        remove_star_flag = giga_core_01
+                        remove_star_flag = giga_birch_core
+                    }
+                }
+
+            }
+        }
+
+        space_owner = {
+            country_event = {
+                id = quasarmod_dialogue.102
+            }
+        }
+    }
+}
+
+# Set Quasarcraft Lives Variable
+ship_event = {
+    id = quasarmod_utility.6
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        save_global_event_target_as = quasarcraft_owner
+        set_variable = {
+            which = qsc_ship_life_count
+            value = 750
+        }
+    }
+}
+
+# Destroy Quasarcraft if no lives
+ship_event = {
+    id = quasarmod_utility.7
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_ship_size = agx_quasarcraft
+        check_variable = {
+            which = qsc_ship_life_count
+            value > 0
+        }
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                check_variable = {
+                    which = qsc_ship_life_count
+                    value > 0
+                }
+            }
+            repair_ship = yes
+            set_disabled = no
+            subtract_variable = {
+                which = qsc_ship_life_count
+                value = 1
+            }
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    which = qsc_ship_life_count
+                    value = 0
+                }
+            }
+            destroy_ship = ROOT
+            root.owner = {
+                country_event = { id = quasarmod_utility.9 }
+            }
+        }
+    }
+}
+
+# Quasarcraft Wormhole Stuff
+ship_event = {
+    id = quasarmod_utility.8
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = { is_ship_size = quasarcraft_wormhole }
+            destroy_ship = ROOT
+            change_variable = {
+                which = qsc_wormholes_count
+                value = -1
+            }
+        }
+    }
+}
+
+# Quasarcraft Destroyed (How on Earth?)
+country_event = {
+    id = quasarmod_utility.9
+    title = "quasarmod_utility.9.name"
+    desc = "quasarmod_utility.9.desc"
+    picture = GFX_evt_supernova
+    show_sound = event_dyson_sphere_build_complete
+    is_triggered_only = yes
+    option = { name = "quasarmod_utility.9.a" }
 }

@@ -1,0 +1,370 @@
+weapon_component_template = {
+	key = "QSC_LASER"
+	icon = "GFX_qsc_starsplitter"
+	icon_frame = 1
+	size = small
+	type = instant
+	projectile_gfx = "projectile_titan_lance_aeternum"
+	prerequisites = { "tech_quasarcraft_6" }
+	power = -20000
+	component_set = "QSC_LASER"
+	tags = { weapon_type_energy weapon_type_anticompound }
+	size_restriction = { agx_quasarcraft }
+	should_ai_use = no
+	
+	damage = 500000
+	windup = 0
+	total_fire_time = 5
+	range = 1000
+	accuracy = 0.33
+	tracking = 0.2
+	resources = {
+		category = ship_components
+		upkeep = {
+			sr_magical_neutronium = 1
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "QSC_LASER_L"
+	icon = "GFX_qsc_jupiter"
+	icon_frame = 1
+	size = large
+	type = instant
+	projectile_gfx = "giga_omega_laser"
+	prerequisites = { "tech_quasarcraft_6" }
+	power = -50000
+	component_set = "QSC_LASER_L"
+	tags = { weapon_type_energy weapon_type_anticompound}
+	size_restriction = { agx_quasarcraft }
+	should_ai_use = no
+	
+	damage = 15000000
+	windup = 3
+	total_fire_time = 50
+	shield_damage = 2
+	range = 1000
+	accuracy = 0.5
+	tracking = 0.5
+	resources = {
+		category = ship_components
+		upkeep = {
+			sr_magical_neutronium = 1
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "QSC_ENERGY_LANCE"
+	size = extra_large
+	type = instant
+
+	icon = "GFX_qsc_skyripper"
+	icon_frame = 1
+
+	use_ship_kill_target = no
+	power = -100000
+
+	prerequisites = { "tech_quasarcraft_6" }
+	component_set = "QSC_ENERGY_LANCE"
+	projectile_gfx = "projectile_titan_lance_aeternum"
+	tags = { weapon_type_energy weapon_type_anticompound }
+	size_restriction = { agx_quasarcraft }
+	
+	should_ai_use = no
+	
+	damage = 25000000
+	windup = 20
+	total_fire_time = 5
+	range = 1000
+	accuracy = 0.6
+	tracking = 0.75
+	resources = {
+		category = ship_components
+		upkeep = {
+			sr_magical_neutronium = 1
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "QSC_TITANIC_GUN"
+	size = titanic
+	component_set = "QSC_TITANIC_GUN"
+	prerequisites = { "tech_quasarcraft_6" }
+
+	power = -500000
+
+	type = instant
+	icon = "GFX_qsc_titanic"
+	icon_frame = 1
+	projectile_gfx = "giga_super_omega_laser_blokkat"
+	tags = { weapon_type_energy weapon_type_anticompound }
+	size_restriction = { agx_quasarcraft }
+
+	use_ship_kill_target = no
+
+	damage = 500000000
+    total_fire_time = 5
+	windup = 15
+	range = 1000
+	tracking = 0.8
+	accuracy = 0.8
+}
+
+strike_craft_component_template = {
+	key = "QSC_STRIKE_FORCE"
+	size = LARGE
+	entity = "qsc_strike_force_entity"
+
+	projectile_gfx = "strike_craft_laser_3"
+	tags = { weapon_type_energy weapon_type_kinetic weapon_type_anticompound }
+
+	power = -100000
+	resources = {
+		category = ship_components
+		upkeep = {
+			energy = 100
+			alloys = 50
+		}
+	}
+
+	count = 1
+	regeneration_per_day = 0.25
+	launch_time = 0.1
+
+	damage = 500000
+	cooldown = 1
+	range = 500
+	engagement_range = 1000
+	accuracy = 1.00
+	tracking = 1.00
+
+	health = 15000000
+	armor = 15000000
+	shield = 15000000
+	evasion = 0.9
+
+	speed = 2000
+	rotation_speed = 0.8
+	acceleration = 1
+
+	ship_behavior = "fighters_behavior"
+
+	icon = "GFX_qsc_strike_force"
+	icon_frame = 1
+	component_set = "QSC_STRIKE_FORCE"
+	prerequisites = { "tech_quasarcraft_6" }
+	size_restriction = { agx_quasarcraft }
+}
+
+weapon_component_template = {
+	key = "QSC_PLANET_LANCE"
+	size = titanic
+	component_set = "QSC_PLANET_LANCE"
+	type = instant
+	icon = "GFX_qsc_attraction"
+	icon_frame = 1
+	power = -10000000
+	projectile_gfx = "qsc_planet_lance"
+	ai_tag_weight = 0
+	tags = { weapon_type_energy weapon_type_anticompound }
+	size_restriction = { agx_quasarcraft }
+	prerequisites = { "tech_quasarcraft_6" }
+
+	use_ship_kill_target = no
+
+	damage = 50000000000
+	# 50 billion
+    total_fire_time = 10
+	windup = 20
+	range = 1000
+	tracking = 1
+	accuracy = 1
+	resources = {
+		category = ship_components
+		upkeep = {
+			sr_magical_neutronium = 5
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "QSC_ENDSINGER"
+	size = planet_killer
+	type = planet_killer
+	use_ship_kill_target = no
+	can_destroy_stars = yes
+
+	prerequisites = { "tech_quasarcraft_6" }
+
+	windup = { min = 0 max = 0 }
+	total_fire_time = 10
+
+	range = 2000
+
+	icon = GFX_ship_part_planet_killer_blokkat_harvester
+	icon_frame = 1
+
+	size_restriction = { agx_quasarcraft }
+	component_set = "QSC_ENDSINGER"
+
+	planet_destruction_gfx = "qsc_wkr_effect_gfx"
+}
+
+####################################################
+
+weapon_component_template = {
+	key = "QUASARWORM_GUN_ENTITY"
+	size = titanic
+	entity = "invisible_turret_entity"
+	type = instant
+	hidden = yes
+	icon = "GFX_ship_part_planet_lance_white"
+	icon_frame = 1
+	power = 0
+	projectile_gfx = "quasi_stellar_lance"
+	ai_tag_weight = 0
+	size_restriction = { quasarcraft_wormhole }
+	tags = { weapon_type_energy weapon_type_anticompound }
+
+	firing_arc = 360
+	min_range = 10
+	use_ship_kill_target = no
+
+	damage = { min = 100000000 max = 100000000 }
+	windup = { min = 1 max = 1 }
+	range = 1000
+	tracking = 0.8
+	accuracy = 0.8
+	total_fire_time = 50
+	armor_penetration = 1.00
+	shield_penetration = 1.00
+}
+
+strike_craft_component_template = {
+	key = "QUASARWORM_MINION_1"
+	size = LARGE
+	entity = "quasarworm_minion_entity"
+	power = 0
+	ship_behavior = "fighters_behavior"
+	weapon_type = instant
+	projectile_gfx = "gamma_laser_s"
+	icon = "GFX_ship_part_strike_craft_bomber_3"
+	icon_frame = 1
+	component_set = "QUASARWORM_MINION_1"
+	size_restriction = { quasarcraft_wormhole }
+	tags = { weapon_type_energy weapon_type_anticompound }
+
+	prerequisites = { "tech_quasarcraft_6" }
+
+	count = 10
+	regeneration_per_day = 100
+	launch_time = 0.25
+
+	damage = { min = 1000000 max = 5000000 }
+	cooldown = 1.0
+	range = 100
+	accuracy = 1.0
+	tracking = 0.70
+	health = 10000
+	armor = 0
+	shield = 5000
+	evasion = 0.80
+	speed = 600
+	rotation_speed = 0.4
+	acceleration = 0.75
+	shield_penetration = 1
+ 	armor_damage = 2
+                    hull_damage = 1.5
+}
+
+weapon_component_template = {
+	key = "QUASARWORM_PARTICLES_1"
+	size = titanic
+	entity = "invisible_turret_entity"
+	icon = "GFX_ship_part_swarmer_missile_2"
+	icon_frame = 1
+	type = missile
+	component_set = "QUASARWORM_PARTICLES_1"
+	prerequisites = { "tech_quasarcraft_6" }
+	projectile_gfx = "quasiworm_torpedo"
+	tags = { weapon_type_explosive weapon_type_anticompound }
+	size_restriction = { quasarcraft_wormhole }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+
+	damage = { min = 10000000 max = 10000000 }
+	windup = { min = 5 max = 15 }
+	total_fire_time = 25
+	range = 1000
+	accuracy = 1.00
+	tracking = 0.50
+	missile_speed = 400
+	missile_evasion = 0.60
+	missile_health = 10000.00
+	shield_penetration = 1.00
+	missile_retarget_range = 200
+}
+
+weapon_component_template = {
+	key = "QUASARWORM_LANCE_1"
+	size = large
+	entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_ship_part_planet_lance"
+	icon_frame = 1
+	power = -0
+	component_set = "QUASARWORM_LANCE_1"
+	projectile_gfx = "giga_omega_laser"
+	tags = { weapon_type_energy weapon_type_anticompound }
+	size_restriction = { quasarcraft_wormhole }
+	prerequisites = { "tech_quasarcraft_6" }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+
+	firing_arc = 10
+	min_range = 10.0
+	use_ship_kill_target = no
+
+	damage = { min = 2500000 max = 7500000 }
+	windup = { min = 5 max = 10 }
+	range = 1000
+	tracking = 0.25
+	accuracy = 0.33
+	total_fire_time = 10
+	shield_penetration = 0.50
+	armor_damage = 1.50
+                    hull_damage = 1.25
+}
+
+weapon_component_template = {
+	key = "QUASARWORM_SPRAY_1"
+	size = small
+	entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_ship_part_planet_lance"
+	icon_frame = 1
+	power = 0
+	component_set = "QUASARWORM_SPRAY_1"
+	projectile_gfx = "giga_super_omega_laser_aet"
+	tags = { weapon_type_energy weapon_type_anticompound }
+	size_restriction = { quasarcraft_wormhole }
+	prerequisites = { "tech_quasarcraft_6" }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+
+	firing_arc = 360
+	min_range = 10.0
+	use_ship_kill_target = no
+
+	damage = { min = 100000 max = 500000 }
+	windup = { min = 1 max = 1 }
+	range = 1000
+	tracking = 0.10
+	accuracy = 0.25
+	total_fire_time = 1
+	shield_damage = 3.00
+	armor_damage = 0.75
+}

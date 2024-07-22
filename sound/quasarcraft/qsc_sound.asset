@@ -1,0 +1,6 @@
+sound = {
+	name = "qsc_planet_lance"
+	file = "qsc_planet_lance.wav"
+	always_load = yes  
+	volume = 0.5
+}

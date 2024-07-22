@@ -1,0 +1,69 @@
+# Quasarcraft Wormhole
+ship_design = {
+	name = "Macrospacial Breach"
+	is_event_design = yes
+	ship_size = quasarcraft_wormhole
+	section = {
+		template = "quasarcraft_wormhole_01_key"
+		slot = "mid"
+		component = { slot = "TITANIC_01"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_02"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_03"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_04"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_05"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_06"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_07"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_08"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_09"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_10"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_11"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_12"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_13"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_14"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_15"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_16"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_17"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_18"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_19"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "TITANIC_20"			template = "QUASARWORM_GUN_ENTITY" }
+		component = { slot = "SC_01"			template = "QUASARWORM_MINION_1" }
+		component = { slot = "SC_02"			template = "QUASARWORM_MINION_1" }
+		component = { slot = "SC_03"			template = "QUASARWORM_MINION_1" }
+		component = { slot = "SC_04"			template = "QUASARWORM_MINION_1" }
+		component = { slot = "SC_05"			template = "QUASARWORM_MINION_1" }
+	}
+    section = {
+		template = "quasarcraft_wormhole_02_key"
+		slot = "mid2"
+		component = { slot = "MISSILE_01"			template = "QUASARWORM_PARTICLES_1" }
+		component = { slot = "MISSILE_02"			template = "QUASARWORM_PARTICLES_1" }
+		component = { slot = "MISSILE_03"			template = "QUASARWORM_PARTICLES_1" }
+		component = { slot = "MISSILE_04"			template = "QUASARWORM_PARTICLES_1" }
+		component = { slot = "MISSILE_05"			template = "QUASARWORM_PARTICLES_1" }
+		component = { slot = "LARGE_01"			template = "QUASARWORM_LANCE_1" }
+		component = { slot = "LARGE_02"			template = "QUASARWORM_LANCE_1" }
+		component = { slot = "LARGE_03"			template = "QUASARWORM_LANCE_1" }
+		component = { slot = "LARGE_04"			template = "QUASARWORM_LANCE_1" }
+		component = { slot = "LARGE_05"			template = "QUASARWORM_LANCE_1" }
+		component = { slot = "LARGE_06"			template = "QUASARWORM_LANCE_1" }
+		component = { slot = "LARGE_07"			template = "QUASARWORM_LANCE_1" }
+		component = { slot = "LARGE_08"			template = "QUASARWORM_LANCE_1" }
+		component = { slot = "LARGE_09"			template = "QUASARWORM_LANCE_1" }
+		component = { slot = "LARGE_10"			template = "QUASARWORM_LANCE_1" }
+		component = { slot = "SMALL_01"			template = "QUASARWORM_SPRAY_1" }
+		component = { slot = "SMALL_02"			template = "QUASARWORM_SPRAY_1" }
+		component = { slot = "SMALL_03"			template = "QUASARWORM_SPRAY_1" }
+		component = { slot = "SMALL_04"			template = "QUASARWORM_SPRAY_1" }
+		component = { slot = "SMALL_05"			template = "QUASARWORM_SPRAY_1" }
+		component = { slot = "SMALL_06"			template = "QUASARWORM_SPRAY_1" }
+		component = { slot = "SMALL_07"			template = "QUASARWORM_SPRAY_1" }
+		component = { slot = "SMALL_08"			template = "QUASARWORM_SPRAY_1" }
+		component = { slot = "SMALL_09"			template = "QUASARWORM_SPRAY_1" }
+		component = { slot = "SMALL_10"			template = "QUASARWORM_SPRAY_1" }
+	}
+	required_component = "QSC_REACTOR"
+	required_component = "QSC_DRIVE"
+	required_component = "QSC_THRUSTER"
+	required_component = "QSC_SENSOR"
+	required_component = "QSC_COMPUTER"
+}

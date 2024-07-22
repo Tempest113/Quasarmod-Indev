@@ -119,5 +119,35 @@
  hyperquasaric_megashipyard_4_DESC: "An active Hyperquasaric Megashipyard, capable of both building and handling the logistics of a fleet larger than any ever built before."
 
  sm_quasarshipyard__shipyard_uplink: "Hyperquasaric Megashipyard Uplink"
- sm_quasarshipyard__shipyard_uplink_desc:0 "An uplink connecting the starbase to the hyperquasaric teraforge. Grants 250 shipyard slots and the ability to construct celestial warships."
- sm_quasarshipyard__shipyard_uplink_modifier:0 "Ship Modifier:\n    Ship Starting Experience: +§G250§! \nStarbase Modifier:\n   Shipyard Capacity: §G+250§!\n   Ship Build Speed: §G+250%§!\nShipyards: §YCelestial Warship Construction Enabled§!"
+ sm_quasarshipyard__shipyard_uplink_desc: "An uplink connecting the starbase to the hyperquasaric teraforge. Grants 250 shipyard slots and the ability to construct celestial warships."
+ sm_quasarshipyard__shipyard_uplink_modifier: "Ship Modifier:\n    Ship Starting Experience: +§G250§! \nStarbase Modifier:\n   Shipyard Capacity: §G+250§!\n   Ship Build Speed: §G+250%§!\nShipyards: §YCelestial Warship Construction Enabled§!"
+
+
+
+ ##########################
+ # Gargantuan Quasarcraft #
+ ##########################
+
+ quasarcraft_0: "§MQuasarcraft Foundation§!"
+ quasarcraft_0_DESC: "The foundation upon which we shall assemble the greatest armament the galaxy has ever seen."
+ quasarcraft_0_MEGASTRUCTURE_DETAILS: ""
+
+ quasarcraft_0_alt: "$gc_tera$§MQuasarcraft Foundation§!"
+ quasarcraft_0_alt_DESC: "An altered form of the Quasi-Stellar-Obliterator's major components, computers, and power banks; Pre-fabbed directly for use as the foundation for the grandest warship this galaxy will ever see."
+ quasarcraft_0_alt_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_weaponry$\nConstructs a mobilized terastructural warship using a §YHyperquasar§!, capable of unleashing untold annihilation with it's quasaric weaponry and the ultimate hyperweapon - §RThe Endsinger.§!"
+ quasarcraft_0_alt_CONSTRUCTION_INFO_DELAYED: "$giga_list_additional_data$ - The §MQuasarcraft§! is capable of destroying either singular §YPlanets§!, §YSolar Systems§! or entire §YStar Clusters§!. It is a roving hyperweapon of untold destruction, and your enemies might seek to disrupt it's construction process."
+
+ quasarcraft_1: "§MQuasi-Stellar Superstructure§!"
+ quasarcraft_1_DESC: "The modified core of the former Quasi-Stellar Obliterator, the new core focuses on diversion of power evenly across a massive hull, filled to the brim with important circuitry and armaments."
+
+ quasarcraft_2: "§MQuasarcraft Halo§!"
+ quasarcraft_2_DESC: "The great ring of the §MQuasarcraft§!, with integrated gravity adjusters and hyperdimensional hull stabilization, the halo will play the paramount role of the artillery foundation."
+
+ quasarcraft_3: "§MQuasarcraft Armaments Ring§!"
+ quasarcraft_3_DESC: "The grandest armament, befitting the king of the celestial warships. The §MQuasarcraft§! will rend utter destruction upon our foes."
+
+ quasarcraft_4: "§MQuasaric EHOF§!"
+ quasarcraft_4_DESC: "The gargantuan wormhole projector that serves as the backbone of the Quasarcraft's transportation, it will facilitate transportation via Micro-Wormholes throughout the universe."
+
+ quasarcraft_5: "§MThe Quasarcraft§!"
+ quasarcraft_5_DESC: "The now completed Quasarcraft, ready to purge all that is evil from the universe."

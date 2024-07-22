@@ -18,3 +18,15 @@ owner_owns_core_mbrain = {
         }
     }
 }
+
+can_destroy_planet_with_endsinger = {
+    custom_tooltip = {
+        fail_text = is_your_megastructure_system
+        NOT = {
+            solar_system = {
+                has_star_flag = crisis_sphere_system@from.owner
+                any_system_megastructure = { has_megastructure_flag = crisis_sphere }
+            }
+        }
+    }
+}

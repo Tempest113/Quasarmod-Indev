@@ -31,7 +31,7 @@ hyperquasaric_megashipyard_0 = {
         planet_possible = {
             custom_tooltip = { fail_text = "requires_no_existing_megastructure" 			planet_has_no_megastructure = yes }
             custom_tooltip = { fail_text = "requires_no_anomaly"							has_anomaly = no }
-            custom_tooltip = { fail_text = "teraforge_fail_tooltip"				    	is_planet_class = pc_core_quasar }
+            custom_tooltip = { fail_text = "requires_quasar_fail_tooltip"				    	is_planet_class = pc_core_quasar }
         }
     }
 
@@ -43,7 +43,7 @@ hyperquasaric_megashipyard_0 = {
             if = { limit = { exists = orbital_station } orbital_station = { dismantle = yes } }
             giga_set_has_mega_flag = yes
         }
-        from = { country_event = { id = blackhole_manipulation_mega_stage_complete.2001 } }
+        from = { country_event = { id = quasarmod_megastage_dialogue.301 } }
     }
 }
 
@@ -71,7 +71,7 @@ hyperquasaric_megashipyard_1 = {
         giga_remove_system_debris =  yes
         save_event_target_as = giga_system
         if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-        from = { country_event = { id = blackhole_manipulation_mega_stage_complete.2002 } }
+        from = { country_event = { id = quasarmod_megastage_dialogue.302 } }
         star = {
             set_planet_entity = { entity = "quasar_small_disk_entity" }
             set_name = "Compressed Hyperquasar"
@@ -108,7 +108,7 @@ hyperquasaric_megashipyard_2 = {
     on_build_complete = {
         save_event_target_as = giga_system
         if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-        from = { country_event = { id = blackhole_manipulation_mega_stage_complete.2003 } }
+        from = { country_event = { id = quasarmod_megastage_dialogue.303 } }
 
     }
 }
@@ -144,7 +144,7 @@ hyperquasaric_megashipyard_3 = {
     on_build_complete = {
         save_event_target_as = giga_system
         if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-        from = { country_event = { id = blackhole_manipulation_mega_stage_complete.2004 } }
+        from = { country_event = { id = quasarmod_megastage_dialogue.304 } }
     }
 }
 
@@ -186,6 +186,6 @@ hyperquasaric_megashipyard_4 = {
     on_build_complete = {
         save_event_target_as = giga_system
         if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-        from = { country_event = { id = blackhole_manipulation_mega_stage_complete.2005 } }
+        from = { country_event = { id = quasarmod_megastage_dialogue.305 } }
     }
 }
