@@ -8,9 +8,9 @@ quasarmod_quasarcraft = {
 	formation_priority = 256
 	combat_disengage_chance = -42.69
 	modifier = {
-		ship_hull_regen_add_static = 45000000
-		ship_armor_regen_add_static = 45000000
-		ship_shield_regen_add_static = 45000000
+		ship_hull_regen_add_static = 22500000
+		ship_armor_regen_add_static = 22500000
+		ship_shield_regen_add_static = 22500000
 		# ship_hull_regen_add_perc = 50
 		# ship_armor_regen_add_perc = 50
 		# ship_shield_regen_add_perc = 50
@@ -22,6 +22,7 @@ quasarmod_quasarcraft = {
 	max_hitpoints = 200000000
 	size_multiplier = 500
 	fleet_slot_size = 256
+
 	section_slots = {
 		"main1" =			    { locator = "root" }
 		"main2" =				{ locator = "root" }
@@ -30,6 +31,7 @@ quasarmod_quasarcraft = {
 		"jupiters" =				{ locator = "root" }
 		"celfab" =	            { locator = "root" }
 	}
+
 	num_target_locators = 0
 	icon = ship_size_atk_system
 	ship_class_icon_frame = 28
