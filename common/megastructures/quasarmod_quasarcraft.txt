@@ -23,7 +23,7 @@ quasarcraft_0 = {
 	}
 
 	possible = {
-		custom_tooltip = { fail_text = "requires_inside_border"								is_inside_border = from }
+		custom_tooltip = { fail_text = "requires_inside_border"							is_inside_border = from }
 		custom_tooltip = { fail_text = "requires_surveyed_system"							giga_system_is_surveyed = yes }
 	}
 
@@ -61,14 +61,15 @@ quasarcraft_0_alt = {
 	place_entity_on_planet_plane = no
 	prerequisites = { tech_quasarcraft_1 }
 
-	build_time = 3600
+	build_time = 1800
 	resources = {
 		category = giga_gigastructures
 		cost = {
-			alloys = 1250000
-			influence = 1000
+			alloys = 200000
+			influence = 300
+			unity = @giga_tera_start_unity_cost
 		}
-		upkeep = { alloys = 1250 energy = 150000 }
+		upkeep = { energy = 5 }
 	}
 
 	potential = {
@@ -77,14 +78,15 @@ quasarcraft_0_alt = {
 	}
 
 	possible = {
-		custom_tooltip = { fail_text = "requires_inside_border"								is_inside_border = from }
-		custom_tooltip = { fail_text = "requires_surveyed_system"							giga_system_is_surveyed = yes }
+		custom_tooltip = { fail_text = "requires_inside_border"					is_inside_border = from }
+		custom_tooltip = { fail_text = "requires_surveyed_system"					giga_system_is_surveyed = yes }
 	}
 
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = { fail_text = "requires_no_anomaly"					has_anomaly = no }
 			custom_tooltip = { fail_text = "requires_quasar_fail_tooltip"			is_planet_class = pc_core_quasar }
+			custom_tooltip = { fail_text = "requires_no_existing_megastructure" 	planet_has_no_megastructure = yes }
 		}
 	}
 
@@ -104,6 +106,11 @@ quasarcraft_0_alt = {
 		from = {
 			country_event = { id = quasarmod_megastage_dialogue.401 }	# Notification
 		}
+		fromfrom.planet = {
+			set_planet_size = 5
+			set_planet_entity = { entity = "quasar_small_disk_no_jets" }
+		}
+
 	}
 }
 
@@ -119,15 +126,19 @@ quasarcraft_1 = {
 
 	build_time = 3600
 	resources = {
-		category = megastructures
-		cost = { alloys = 1000000 }
-		upkeep = { alloys = 2500 }
+		category = giga_gigastructures
+		cost = { alloys = 450000 unity = @giga_tera_unity_cost }
+		upkeep = { alloys = 50 }
 	}
 
 	potential = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
-		has_technology = tech_quasarcraft_2
 	}
+
+	prerequisites = {
+		tech_quasarcraft_2
+	}
+
 
 	on_build_complete = {
         from = {
@@ -145,20 +156,25 @@ quasarcraft_2 = {
 
 	build_time = 3600
 	resources = {
-		category = megastructures
+		category = giga_gigastructures
 		cost = {
-			alloys = 1250000
-			volatile_motes = 5000
-			exotic_gases = 5000
-			rare_crystals = 5000
+			alloys = 700000
+			volatile_motes = 2500
+			exotic_gases = 2500
+			rare_crystals = 2500
+			unity = @giga_tera_unity_cost
 		}
-		upkeep = { alloys = 7500 }
+		upkeep = { alloys = 100 }
 	}
 
 	potential = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
-		has_technology = tech_quasarcraft_3
 	}
+
+	prerequisites = {
+		tech_quasarcraft_3
+	}
+
 	on_build_complete = {
         from = {
 			country_event = { id = quasarmod_megastage_dialogue.403 }	# Notification
@@ -175,20 +191,25 @@ quasarcraft_3 = {
 
 	build_time = 3600
 	resources = {
-		category = megastructures
+		category = giga_gigastructures
 		cost = {
-			alloys = 1500000
+			alloys = 925000
 			volatile_motes = 5000
 			exotic_gases = 5000
 			rare_crystals = 5000
+			unity = @giga_tera_unity_cost
 		}
-		upkeep = { alloys = 9001 }
+		upkeep = { alloys = 250 }
 	}
 
 	potential = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
-		has_technology = tech_quasarcraft_4
 	}
+
+	prerequisites = {
+		tech_quasarcraft_4
+	}
+
 
 	on_build_complete = {
         from = {
@@ -206,19 +227,23 @@ quasarcraft_4 = {
 
 	build_time = 3600
 	resources = {
-		category = megastructures
+		category = giga_gigastructures
 		cost = {
-			alloys = 1500000
+			alloys = 1250000
 			volatile_motes = 7500
 			exotic_gases = 7500
 			rare_crystals = 7500
+			unity = @giga_tera_unity_cost
 		}
-		upkeep = { alloys = 12000 }
+		upkeep = { alloys = 500 }
 	}
 
 	potential = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
-		has_technology = tech_quasarcraft_5
+	}
+
+	prerequisites = {
+		tech_quasarcraft_5
 	}
 
 	on_build_complete = {
@@ -237,25 +262,29 @@ quasarcraft_5 = {
 
 	build_time = 3600
 	resources = {
-		category = megastructures
+		category = giga_gigastructures
 		cost = {
-			alloys = 4000000
+			alloys = 1500000
 			volatile_motes = 10000
 			exotic_gases = 10000
 			rare_crystals = 10000
-			unity = 50000
+			unity = @giga_tera_unity_cost
 		}
 		upkeep = {
-			alloys = 5000
-			energy = 1000
+			alloys = 1000
+			energy = 500
 		}
 		produces = { sr_magical_neutronium = 10 }
 	}
 
 	potential = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
-		has_technology = tech_quasarcraft_6
 	}
+
+	prerequisites = {
+		tech_quasarcraft_6
+	}
+
 
 	on_build_complete = {
 		star = { change_pc = pc_giga_empty_space }

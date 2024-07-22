@@ -33,7 +33,7 @@ ship_section_template = {
 	component_slot = { name = "TITANIC_GUN_22"		template = "giga_invisible_titanic_fixed"			locatorname = "coregun3" }
 	component_slot = { name = "TITANIC_GUN_23"		template = "giga_invisible_titanic_fixed"			locatorname = "coregun" }
 	component_slot = { name = "TITANIC_GUN_24"		template = "giga_invisible_titanic_fixed"			locatorname = "coregun" }
-	component_slot = { name = "TITANIC_GUN_25"		template = "giga_invisible_titanic_fixed"			locatorname = "coregun2" }
+	#component_slot = { name = "TITANIC_GUN_25"		template = "giga_invisible_titanic_fixed"			locatorname = "coregun2" }
 	# component_slot = { name = "TITANIC_GUN_26"		template = "giga_invisible_titanic_fixed"			locatorname = "coregun2" }
 	# component_slot = { name = "TITANIC_GUN_27"		template = "giga_invisible_titanic_fixed"			locatorname = "coregun5" }
 	# component_slot = { name = "TITANIC_GUN_28"		template = "giga_invisible_titanic_fixed"			locatorname = "coregun5" }

@@ -110,30 +110,31 @@ spriteType = {
 	name = GFX_blackhole_manipulator_5_outliner_icon
 	textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
 	}
+
+	# Quasarcraft
+	spriteType = {
+		name = GFX_quasarcraft_0_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
+	}
+	spriteType = {
+		name = GFX_quasarcraft_1_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
+	}
+	spriteType = {
+		name = GFX_quasarcraft_2_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
+	}
+	spriteType = {
+		name = GFX_quasarcraft_3_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
+	}
+	spriteType = {
+		name = GFX_quasarcraft_4_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
+	}
+	spriteType = {
+		name = GFX_quasarcraft_5_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
+	}
 }
 
-# Quasarcraft
-spriteType = {
-	name = GFX_quasarcraft_0_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
-}
-spriteType = {
-	name = GFX_quasarcraft_1_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
-}
-spriteType = {
-	name = GFX_quasarcraft_2_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
-}
-spriteType = {
-	name = GFX_quasarcraft_3_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
-}
-spriteType = {
-	name = GFX_quasarcraft_4_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
-}
-spriteType = {
-	name = GFX_quasarcraft_5_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
-}

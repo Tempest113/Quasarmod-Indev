@@ -1,3 +1,18 @@
+#overwrite of gigas quasar disk entity so it isn't a flashbang
+entity = {
+	name = "giga_microquasar_2_disk_mesh"
+	pdxmesh = "giga_protoplanetary_disk_03_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 }
+
+	game_data = {
+		uv_animation_speed   = -0.005
+		uv_animation_direction  = { 0.4 0.4 }
+		bloom_factor = 0.35
+	}
+}
+
 entity = {
 	name = "qsc_mscore_entity"
 	pdxmesh = "glc_mscore_mesh"
@@ -21,12 +36,10 @@ entity = {
 	scale = 3
 }
 
-
-
 entity = {
 	name = "qsc_quasar_entity"
 	scale = 15
-	cull_radius = 99999
+	cull_radius = 100
 
 	playback_rate = 2.5
 	default_state = "idle"
@@ -57,15 +70,15 @@ entity = {
 	attach = { gravlens =			"giga_microquasar_2_grav_animation_entity" }
 
 	attach = { outbursts =			"giga_microquasar_2_outbursts_entity" }
-	attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
-	attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
-	attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
-	attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
-	attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
-	attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
-	attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
-	attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
-	attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
+	#attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
+	#attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
+	#attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
+	#attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
+	#attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
+	#attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
+	#attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
+	#attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
+	# attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
 	attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
 	attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
 	attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
@@ -77,7 +90,7 @@ entity = {
 	attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
 
 	attach = { rings =				"giga_protoplanetary_disk_blue_cloud_entity" }
-	attach = { planet_008 =			"giga_microquasar_2_disk_mesh" }
+	#attach = { planet_008 =			"giga_microquasar_2_disk_mesh" }
 	attach = { planet_013 =			"giga_microquasar_2_disk_mesh" }
 	attach = { bh_rings_10 =		"giga_microquasar_2_rings_1_entity" }
 	attach = { bh_rings_14 =		"giga_microquasar_2_rings_1_entity" }
@@ -96,7 +109,7 @@ entity = {
 
 entity = {
 	name = "qsc_qso_entity"
-	cull_radius = 10000
+	cull_radius = 1000
 
 	locator = { name = "loc101" position = { 0 0 -900 } rotation = { 0 0 30 } }
 	locator = { name = "loc1012" position = { 0 0 -900 } rotation = { 0 0 90 } }
@@ -275,7 +288,7 @@ entity = {
 
 entity = {
 	name = "qsc_scc_wing_entity"
-	cull_radius = 10000
+	cull_radius = 1000
 	
 	locator = { name = "L1" position = { 334.5 -100 -334.5 } rotation = { -65 -60 0 } scale = 5 }
 	locator = { name = "L2" position = { 455 50 125 } rotation = { -115 0 135 } scale = 5 }
@@ -501,7 +514,7 @@ entity = {
 #The Beginning
 entity = {
 	name = "quasarcraft_0_entity"
-	cull_radius = 50000
+	cull_radius = 5000
 	pdxmesh = "molluscoid_01_corvette_frame_mesh"
 
 	locator = { name = "qso" position = { 0 0 0 } rotation = { 0 0 0 } scale = 0.5 }	
@@ -511,12 +524,12 @@ entity = {
 	
 	attach = { "qso" = "qsc_qso_entity" }
 	
-	scale = 3
+	scale = 1
 }
 
 entity = {
 	name = "quasarcraft_0_construction_entity"
-	cull_radius = 50000
+	cull_radius = 5000
 	pdxmesh = "molluscoid_01_corvette_frame_mesh"
 
 	locator = { name = "qso" position = { 0 0 0 } rotation = { 0 0 0 } scale = 0.5 }	
@@ -526,13 +539,13 @@ entity = {
 	
 	attach = { "qso" = "qsc_qso_entity" }
 	
-	scale = 3
+	scale = 1
 }
 
 #The Core Refitted
 entity = {
 	name = "quasarcraft_1_entity"
-	cull_radius = 50000
+	cull_radius = 5000
 	pdxmesh = "molluscoid_01_corvette_frame_mesh"
 
 	locator = { name = "mscore" position = { 0 0 0 } rotation = { 180 0 0 } scale = 7.5 }
@@ -546,12 +559,12 @@ entity = {
 	attach = { "qso" = "qsc_qso_entity" }
 	attach = { "citadel" = "qsc_citadel_entity" }
 	
-	scale = 3
+	scale = 1
 }
 
 entity = {
 	name = "quasarcraft_1_construction_entity"
-	cull_radius = 50000
+	cull_radius = 5000
 	pdxmesh = "molluscoid_01_corvette_frame_mesh"
 
 	locator = { name = "mscore" position = { 0 0 0 } rotation = { 180 0 0 } scale = 7.5 }
@@ -563,12 +576,12 @@ entity = {
 	attach = { "mscore" = "qsc_mscore_entity" }
 	attach = { "citadel" = "qsc_citadel_entity" }
 	
-	scale = 3
+	scale = 1
 }
 
 entity = {
 	name = "quasarcraft_2_entity"
-	cull_radius = 50000
+	cull_radius = 5000
 	pdxmesh = "molluscoid_01_corvette_frame_mesh"
 
 	locator = { name = "mscore" position = { 0 0 0 } rotation = { 180 0 0 } scale = 7.5 }
@@ -586,12 +599,12 @@ entity = {
 	attach = { "crucible" = "qsc_qc1_entity" }
 	attach = { "halo" = "qsc_qc2_entity" }
 	
-	scale = 3
+	scale = 1
 }
 
 entity = {
 	name = "quasarcraft_2_construction_entity"
-	cull_radius = 50000
+	cull_radius = 5000
 	pdxmesh = "molluscoid_01_corvette_frame_mesh"
 	
 	locator = { name = "halo" scale = 7.5 }
@@ -601,12 +614,12 @@ entity = {
 	
 	attach = { "halo" = "qsc_qc2_entity" }
 	
-	scale = 3
+	scale = 1
 }
 
 entity = {
 	name = "quasarcraft_3_entity"
-	cull_radius = 50000
+	cull_radius = 5000
 	pdxmesh = "molluscoid_01_corvette_frame_mesh"
 
 	locator = { name = "mscore" position = { 0 0 0 } rotation = { 180 0 0 } scale = 7.5 }
@@ -633,12 +646,12 @@ entity = {
 	attach = { "celfab3" = "qsc_printer_array" }
 	attach = { "celfab4" = "qsc_printer_array" }
 	
-	scale = 3
+	scale = 1
 }
 
 entity = {
 	name = "quasarcraft_3_construction_entity"
-	cull_radius = 50000
+	cull_radius = 5000
 	pdxmesh = "molluscoid_01_corvette_frame_mesh"
 
 	locator = { name = "armament" scale = 7.5 }
@@ -655,12 +668,12 @@ entity = {
 	attach = { "celfab3" = "qsc_printer_array" }
 	attach = { "celfab4" = "qsc_printer_array" }
 	
-	scale = 3
+	scale = 1
 }
 
 entity = {
 	name = "quasarcraft_4_entity"
-	cull_radius = 50000
+	cull_radius = 5000
 	pdxmesh = "molluscoid_01_corvette_frame_mesh"
 
 	locator = { name = "quasar" position = { 0 0 0 } rotation = { 0 0 0 } scale = 1 }
@@ -691,12 +704,12 @@ entity = {
 	attach = { "celfab3" = "qsc_printer_array" }
 	attach = { "celfab4" = "qsc_printer_array" }
 	
-	scale = 3
+	scale = 1
 }
 
 entity = {
 	name = "quasarcraft_4_construction_entity"
-	cull_radius = 50000
+	cull_radius = 5000
 	pdxmesh = "qsc_qcbloc_mesh"
 
 	locator = { name = "engine" position = { 0 0 600 } rotation = { 0 0 0 } scale = 3 }	
@@ -706,13 +719,13 @@ entity = {
 	
 	attach = { "engine" = "qsc_qc_engine_entity" }
 	
-	scale = 3
+	scale = 1
 }
 
 entity = {
 	name = "quasarcraft_5_entity"
 	pdxmesh = "qsc_qcbloc_mesh"
-	cull_radius = 10000
+	cull_radius = 1000
 	
 	locator = { name = "root" }
 	                                       #x #z #y             #z #x #y
@@ -741,18 +754,18 @@ entity = {
 	attach = { "celfab3" = "qsc_printer_array" }
 	attach = { "celfab4" = "qsc_printer_array" }
 	
-	scale = 3
+	scale = 1
 }
 
 entity = {
 	name = "quasarcraft_5_construction_entity"
 	pdxmesh = "qsc_qcbloc_mesh"
-	cull_radius = 10000
+	cull_radius = 1000
 	
 	locator = { name = "root" }
 	                                       #x #z #y             #z #x #y
 	
-	scale = 3
+	scale = 1
 }
 
 entity = {
@@ -782,7 +795,7 @@ entity = {
 entity = {
 	name = "qsc_01_entity"
 	pdxmesh = "qsc_qcbloc_mesh"
-	cull_radius = 10000
+	cull_radius = 1000
 	
 	locator = { name = "root" }
 	                                       #x #z #y             #z #x #y
@@ -826,7 +839,7 @@ entity = {
 entity = {
 	name = "qsc_01_ship_entity"
 	pdxmesh = "qsc_qcbloc_mesh"
-	cull_radius = 10000
+	#cull_radius = 100 #10000
 	
 	locator = { name = "root" }
 	                                       #x #z #y             #z #x #y
@@ -864,7 +877,7 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "juggernaut_mammalian_idle" } }
 	}
 	
-	scale = 3
+	scale = 1
 }
 
 ###################################################################
