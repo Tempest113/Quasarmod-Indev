@@ -525,7 +525,7 @@ country_event = {
 			every_fleet_in_system = {
 				limit = {
 						NOT = {
-							is_ship_size = agx_quasarcraft
+							is_ship_size = quasarmod_quasarcraft
 						}
 					 owner = { NOR = { is_immune_to_giga_hyperweapon = yes } } } 
 				destroy_fleet = this 

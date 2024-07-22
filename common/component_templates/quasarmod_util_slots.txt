@@ -10,7 +10,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_quasarcraft_6" }
 	component_set = "power_core"
-	size_restriction = { agx_quasarcraft }
+	size_restriction = { quasarmod_quasarcraft }
 
 }
 
@@ -30,7 +30,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_quasarcraft_6" }
 	component_set = "thruster_components"
-	size_restriction = { agx_quasarcraft }
+	size_restriction = { quasarmod_quasarcraft }
 }
 
 utility_component_template = {
@@ -50,7 +50,7 @@ utility_component_template = {
 		ship_jumpdrive_cooldown_mult = -1
 	}
 
-	size_restriction = { agx_quasarcraft }
+	size_restriction = { quasarmod_quasarcraft }
 	prerequisites = { "tech_quasarcraft_6" }
 	component_set = "ftl_components"
 }
@@ -67,7 +67,7 @@ utility_component_template = {
 	ship_behavior = "quasarcraft"
 
 	class_restriction = { shipclass_military }
-	size_restriction = { agx_quasarcraft }
+	size_restriction = { quasarmod_quasarcraft }
 	component_set = "combat_computers"
 
 	prerequisites = { "tech_quasarcraft_6" }
@@ -92,7 +92,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_quasarcraft_6" }
 	component_set = "sensor_components"
-	size_restriction = { agx_quasarcraft }
+	size_restriction = { quasarmod_quasarcraft }
 }
 
 utility_component_template = {
@@ -102,7 +102,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = -5000000
 
-	size_restriction = { agx_quasarcraft }
+	size_restriction = { quasarmod_quasarcraft }
 	component_set = "ship_aura_components"
 
 	hostile_aura = {
@@ -141,7 +141,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = -5000000
 
-	size_restriction = { agx_quasarcraft }
+	size_restriction = { quasarmod_quasarcraft }
 	component_set = "ship_aura_components"
 
 	friendly_aura = {
@@ -181,7 +181,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = -5000000
 
-	size_restriction = { agx_quasarcraft }
+	size_restriction = { quasarmod_quasarcraft }
 	component_set = "ship_aura_components"
 
 	friendly_aura = {
@@ -221,7 +221,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = -5000000
 
-	size_restriction = { agx_quasarcraft }
+	size_restriction = { quasarmod_quasarcraft }
 	component_set = "ship_aura_components"
 
 	hostile_aura = {

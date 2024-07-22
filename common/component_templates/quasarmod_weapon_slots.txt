@@ -9,7 +9,7 @@ weapon_component_template = {
 	power = -20000
 	component_set = "QSC_LASER"
 	tags = { weapon_type_energy weapon_type_anticompound }
-	size_restriction = { agx_quasarcraft }
+	size_restriction = { quasarmod_quasarcraft }
 	should_ai_use = no
 	
 	damage = 500000
@@ -37,7 +37,7 @@ weapon_component_template = {
 	power = -50000
 	component_set = "QSC_LASER_L"
 	tags = { weapon_type_energy weapon_type_anticompound}
-	size_restriction = { agx_quasarcraft }
+	size_restriction = { quasarmod_quasarcraft }
 	should_ai_use = no
 	
 	damage = 15000000
@@ -70,7 +70,7 @@ weapon_component_template = {
 	component_set = "QSC_ENERGY_LANCE"
 	projectile_gfx = "projectile_titan_lance_aeternum"
 	tags = { weapon_type_energy weapon_type_anticompound }
-	size_restriction = { agx_quasarcraft }
+	size_restriction = { quasarmod_quasarcraft }
 	
 	should_ai_use = no
 	
@@ -101,7 +101,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "giga_super_omega_laser_blokkat"
 	tags = { weapon_type_energy weapon_type_anticompound }
-	size_restriction = { agx_quasarcraft }
+	size_restriction = { quasarmod_quasarcraft }
 
 	use_ship_kill_target = no
 
@@ -156,7 +156,7 @@ strike_craft_component_template = {
 	icon_frame = 1
 	component_set = "QSC_STRIKE_FORCE"
 	prerequisites = { "tech_quasarcraft_6" }
-	size_restriction = { agx_quasarcraft }
+	size_restriction = { quasarmod_quasarcraft }
 }
 
 weapon_component_template = {
@@ -170,7 +170,7 @@ weapon_component_template = {
 	projectile_gfx = "qsc_planet_lance"
 	ai_tag_weight = 0
 	tags = { weapon_type_energy weapon_type_anticompound }
-	size_restriction = { agx_quasarcraft }
+	size_restriction = { quasarmod_quasarcraft }
 	prerequisites = { "tech_quasarcraft_6" }
 
 	use_ship_kill_target = no
@@ -207,7 +207,7 @@ weapon_component_template = {
 	icon = GFX_ship_part_planet_killer_blokkat_harvester
 	icon_frame = 1
 
-	size_restriction = { agx_quasarcraft }
+	size_restriction = { quasarmod_quasarcraft }
 	component_set = "QSC_ENDSINGER"
 
 	planet_destruction_gfx = "qsc_wkr_effect_gfx"

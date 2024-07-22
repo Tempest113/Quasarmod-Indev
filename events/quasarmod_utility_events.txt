@@ -260,7 +260,7 @@ ship_event = {
     is_triggered_only = yes
 
     trigger = {
-        is_ship_size = agx_quasarcraft
+        is_ship_size = quasarmod_quasarcraft
         check_variable = {
             which = qsc_ship_life_count
             value > 0

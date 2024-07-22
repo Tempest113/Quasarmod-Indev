@@ -1,5 +1,5 @@
 
-agx_quasarcraft = {
+quasarmod_quasarcraft = {
     set_global_flag = giga_quasarcraft_constructed
 	create_fleet = {
 		name = "The Quasarcraft"
@@ -14,7 +14,7 @@ agx_quasarcraft = {
 			create_ship = {
 				name = "The Quasarcraft"
 				graphical_culture = root.from
-				random_existing_design = agx_quasarcraft
+				random_existing_design = quasarmod_quasarcraft
 				effect = {
 					set_disable_at_health = 0.02
 					ship_event = {

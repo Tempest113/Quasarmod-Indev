@@ -3,7 +3,7 @@
 
 ship_section_template = {
 	key = "quasarcraft_main_01_key"
-	ship_size = agx_quasarcraft
+	ship_size = quasarmod_quasarcraft
 	fits_on_slot = "main1"
 	entity = "qsc_01_locators_entity"
 	icon = "GFX_ship_part_core_mid"
@@ -45,7 +45,7 @@ ship_section_template = {
 
 ship_section_template = {
 	key = "quasarcraft_main_02_key"
-	ship_size = agx_quasarcraft
+	ship_size = quasarmod_quasarcraft
 	fits_on_slot = "main2"
 	entity = "qsc_01_locators_entity"
 	icon = "GFX_ship_part_core_mid"
@@ -89,7 +89,7 @@ ship_section_template = {
 
 ship_section_template = {
 	key = "quasarcraft_halo1_key"
-	ship_size = agx_quasarcraft
+	ship_size = quasarmod_quasarcraft
 	fits_on_slot = "halo1"
 	entity = "qsc_01_locators_entity"
 	icon = "GFX_ship_part_core_mid"
@@ -132,7 +132,7 @@ ship_section_template = {
 
 ship_section_template = {
 	key = "quasarcraft_halo2_key"
-	ship_size = agx_quasarcraft
+	ship_size = quasarmod_quasarcraft
 	fits_on_slot = "halo2"
 	entity = "qsc_01_locators_entity"
 	icon = "GFX_ship_part_core_mid"
@@ -174,7 +174,7 @@ ship_section_template = {
 
 ship_section_template = {
 	key = "quasarcraft_jupiters_key"
-	ship_size = agx_quasarcraft
+	ship_size = quasarmod_quasarcraft
 	fits_on_slot = "jupiters"
 	entity = "qsc_01_locators_entity"
 	icon = "GFX_ship_part_core_mid"
@@ -216,7 +216,7 @@ ship_section_template = {
 
 ship_section_template = {
 	key = "quasarcraft_celfab_key"
-	ship_size = agx_quasarcraft
+	ship_size = quasarmod_quasarcraft
 	fits_on_slot = "celfab"
 	entity = "qsc_01_locators_entity"
 	icon = "GFX_ship_part_core_mid"

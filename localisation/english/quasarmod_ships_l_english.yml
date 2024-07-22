@@ -1,8 +1,8 @@
 ﻿l_english:
 
  # Main Ship
- agx_quasarcraft: "Gargantuan Quasarcraft"
- agx_quasarcraft_plural: "Gargantuan Quasarcraft"
+ quasarmod_quasarcraft: "Gargantuan Quasarcraft"
+ quasarmod_quasarcraft_plural: "Gargantuan Quasarcraft"
  quasarcraft_main_01_key: "Forward Quasaric Projector"
  quasarcraft_main_02_key: "Main Quasaric Body"
  quasarcraft_halo1_key: "Halo Armaments - First Demicircle"
@@ -23,13 +23,13 @@
 
  # Quasarcraft Components/Actions
  QSC_LASER: "Quasaric Sunsplitter"
- QSC_LASER_DESC: "Similiar to the Nicoll-Dyson Beam, the Sunsplitter focuses the diverted power of the Hyperquasar into a beam, which is then split into a myriad of rays by a star-sized prism."
+ QSC_LASER_DESC: "Similar to the Nicoll-Dyson Beam, the Sunsplitter focuses the diverted power of the Hyperquasar into a beam, which is then split into a myriad of rays by a star-sized prism."
  QSC_LASER_L: "Jupiter Annihilator"
  QSC_LASER_L_DESC: "These massive lances mounted on the Quasarcraft's Jupiter Arrays rain hell upon your foes, shattering the atoms of their very being."
  QSC_ENERGY_LANCE: "Quasaric Skyripper"
- QSC_ENERGY_LANCE_DESC: "The Skyripper cannons are designed to deter larger, stronger vessels such as Systemcrafts or Herculeans, focusing Quasaric Energy on a macro-scale, enough to shred stars by themselves."
+ QSC_ENERGY_LANCE_DESC: "The Skyripper cannons are designed to deter larger, stronger vessels such as a Systemcraft, focusing Quasaric Energy on a macro-scale, enough to shred stars by themselves."
  QSC_STRIKE_FORCE: "Celestial Strike Forces"
- QSC_STRIKE_FORCE_DESC: "No capital ship fights alone. The Celestial Strike Forces emerge from their grand hangars to deter any hope of infiltrating the king of the celestial warships. A myriad of planetcrafts freshly fabricated, armed and ready. Automated as well."
+ QSC_STRIKE_FORCE_DESC: "No capital ship fights alone. The Celestial Strike Forces emerge from their grand hangars to deter any hope of infiltrating the king of the celestial warships. A myriad of $giga_planet_behemoth_plural$ freshly fabricated, armed and ready. Automated as well."
  QSC_TITANIC_GUN: "Quasi-Stellar Obliterator"
  QSC_TITANIC_GUN_DESC: "An immense weapon based on the old QSO weapon, but adapted for use as a ship weapon. A firearm of fear to strike terror into the collective conscious of the enemy."
  QSC_PLANET_LANCE: "Quasarcraft's Eye"

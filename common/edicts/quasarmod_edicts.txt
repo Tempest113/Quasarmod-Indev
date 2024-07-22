@@ -7,7 +7,7 @@ qsc_quasarcraft_mifs = {
 
 	potential = {
 		any_owned_ship = {
-			is_ship_size = agx_quasarcraft
+			is_ship_size = quasarmod_quasarcraft
 		}
 	}
 
@@ -26,7 +26,7 @@ qsc_quasarcraft_power = {
 
 	potential = {
 		any_owned_ship = {
-			is_ship_size = agx_quasarcraft
+			is_ship_size = quasarmod_quasarcraft
 		}
 	}
 

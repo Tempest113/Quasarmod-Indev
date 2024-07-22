@@ -98,6 +98,7 @@
  # Modifiers #
  #############
 
+ # Buildings
  mod_building_quasarmod_teraforge_uplink_country_max: "Max Hyperquasaric Teraforge Uplink Buildings"
  mod_building_teraforge_uplink_base_max: "Max Hyperquasaric Teraforge Uplinks"
  mod_planet_building_teraforge_uplink_base_build_speed_mult: "Hyperquasaric Teraforge Uplink build speed"
@@ -105,3 +106,18 @@
  mod_planet_building_teraforge_uplink_alloys_build_speed_mult: "Quasaric Alloy Plants build speed"
  mod_building_teraforge_uplink_consumer_goods_max: "Max Quasaric Factory Uplinks"
  mod_planet_building_teraforge_uplink_consumer_goods_build_speed_mult: "Quasaric Factory Uplink build speed"
+
+ # Ships
+ mod_shipsize_quasarmod_quasarcraft_build_speed_mult: "$quasarmod_quasarcraft$ Build Speed"
+ mod_shipsize_quasarmod_quasarcraft_hull_mult: "$quasarmod_quasarcraft$ Hull Points"
+ mod_shipsize_quasarmod_quasarcraft_hull_add: "$mod_shipsize_quasarmod_quasarcraft_hull_mult$"
+ mod_shipsize_quasarmod_quasarcraft_evasion_mult: "$quasarmod_quasarcraft$ Evasion"
+ mod_shipsize_quasarmod_quasarcraft_disengage_chance_mult: "$quasarmod_quasarcraft$ Disengage Chance"
+ mod_shipsize_quasarmod_quasarcraft_tracking_mult: "$quasarmod_quasarcraft$ Tracking"
+
+ mod_shipsize_quasarcraft_wormhole_build_speed_mult: "$quasarcraft_wormhole$ Build Speed"
+ mod_shipsize_quasarcraft_wormhole_hull_mult: "$quasarcraft_wormhole$ Hull Points"
+ mod_shipsize_quasarcraft_wormhole_hull_add: "$mod_shipsize_quasarcraft_wormhole_hull_mult$"
+ mod_shipsize_quasarcraft_wormhole_evasion_mult: "$quasarcraft_wormhole$ Evasion"
+ mod_shipsize_quasarcraft_wormhole_disengage_chance_mult: "$quasarcraft_wormhole$ Disengage Chance"
+ mod_shipsize_quasarcraft_wormhole_tracking_mult: "$quasarcraft_wormhole$ Tracking"

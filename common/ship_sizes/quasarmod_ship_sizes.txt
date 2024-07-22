@@ -1,4 +1,4 @@
-agx_quasarcraft = {
+quasarmod_quasarcraft = {
 	graphical_culture = no
 	entity = "qsc_01_ship_entity"
 	max_speed = 250
@@ -58,6 +58,7 @@ agx_quasarcraft = {
 		produces = {
 			sr_solar_energy = 25
 			sr_magical_neutronium = 50
+			sr_stellar_plasma = 25
 			energy = 12500
 		}
 		upkeep = {
