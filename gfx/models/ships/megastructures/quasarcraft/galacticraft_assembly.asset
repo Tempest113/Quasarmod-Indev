@@ -1,0 +1,1258 @@
+entity = {
+	name = "blokkat_ringworld_noblackhole_entity"
+	cull_radius = 1000
+	pdxmesh = "molluscoid_01_corvette_frame_mesh"
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc102" position = { 0 0 0 } rotation = { 0 0 -20 } }
+	locator = { name = "loc103" position = { 0 0 0 } rotation = { 0 0 20 } }
+
+	locator = { name = "connector1" position = { 0 0 235 } rotation = { 0 0 0 } }
+	locator = { name = "connector2" position = { 0 0 -235 } rotation = { 180 0 0 } }
+	
+	locator = { name = "inner3" position = { 0 0 0 } rotation = { 45 0 0 } }
+	locator = { name = "inner4" position = { 0 0 0 } rotation = { -45 0 0 } }
+
+	default_state = "idle"
+	state = { name = "idle" }
+
+	attach = { loc101 = "blokkat_ringworld_new_entity" }
+	attach = { loc102 = "blokkat_ringworld_new_entity" }
+	attach = { loc103 = "blokkat_ringworld_new_entity" }
+
+	attach = { connector1 = "blokkat_ringworld_connector_entity" }
+	attach = { connector2 = "blokkat_ringworld_connector_entity" }
+
+	attach = { inner3 = "blokkat_inner_ring_connector_2_entity" }
+	attach = { inner4 = "blokkat_inner_ring_connector_2_entity" }
+
+	scale = 3.5
+}
+
+entity = {
+	name = "birch_world_glc_entity"
+	scale = 0.85
+	cull_radius = 500
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 10
+		event = { time = 0 particle = "dyson_sphere_electricity_effect" keep_particle = yes trigger_once = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "dyson_sphere_bass_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "dyson_sphere_bass_hum_partial" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "dyson_sphere_treble_hum" } }
+	}
+
+	locator = { name = "root"	position = { 0 	0  0 } }
+    locator = { name = "roote"	position = { 0 	0  0 } rotation = { 0 90 0 } }
+
+	attach = { "root" = "birch_sphere_circular_entity" }
+	attach = { "root" = "penta_rays_entity" }
+	attach = { "root" = "hexa_rays_entity" }
+	attach = { "roote" = "penta_rays_entity" }
+	attach = { "roote" = "hexa_rays_entity" }
+
+	game_data = {
+		size = 250
+        shader_type = ship
+        emissive_recolor_crunch = 5
+    }
+}
+
+entity = {
+	name = "giga_alderson_glc_entity"
+	scale = 0.001
+	
+	locator = { name = "l01"	position = { -1800 0 0 }			rotation = { 270 0 0 } }
+	locator = { name = "l02"	position = { 1272.5 0 1272.5 }		rotation = { 45 0 0 } }
+	locator = { name = "l03"	position = { 1800 0 0 }				rotation = { 90 0 0 } }
+	locator = { name = "l04"	position = { 1272.5 0 -1272.5 }		rotation = { 135 0 0 } }
+	locator = { name = "l05"	position = { 0 0 -1800 }			rotation = { 180 0 0 } }
+	locator = { name = "l06"	position = { -1272.5 0 -1272.5 }	rotation = { 225 0 0 } }
+	locator = { name = "l07"	position = { 0 0 1800 }				rotation = { 0 0 0 } }
+	locator = { name = "l08"	position = { -1272.5 0 1272.5 }		rotation = { 315 0 0 } }
+	attach = { l01 = "giga_alderson_frame_part_01_entity" }
+	attach = { l01 = "giga_alderson_ecu_01_entity" }
+	attach = { 101 = "giga_alderson_clouds_01_entity" }
+	attach = { l02 = "giga_alderson_frame_part_01_entity" }
+	attach = { l02 = "giga_alderson_gaia_01_entity" }
+	attach = { 102 = "giga_alderson_clouds_01_entity" }
+	attach = { l03 = "giga_alderson_frame_part_01_entity" }
+	attach = { l03 = "giga_alderson_pc_01_entity" }
+	attach = { 103 = "giga_alderson_clouds_01_entity" }
+	attach = { l04 = "giga_alderson_frame_part_01_entity" }
+	attach = { l04 = "giga_alderson_ecu_01_entity" }
+	attach = { 104 = "giga_alderson_clouds_01_entity" }
+	attach = { l05 = "giga_alderson_frame_part_01_entity" }
+	attach = { l05 = "giga_alderson_gaia_01_entity" }
+	attach = { 105 = "giga_alderson_clouds_01_entity" }
+	attach = { l06 = "giga_alderson_frame_part_01_entity" }
+	attach = { l06 = "giga_alderson_gaia_01_entity" }
+	attach = { 106 = "giga_alderson_clouds_01_entity" }
+	attach = { l07 = "giga_alderson_frame_part_01_entity" }
+	attach = { l07 = "giga_alderson_gaia_01_entity" }
+	attach = { 107 = "giga_alderson_clouds_01_entity" }
+	attach = { l08 = "giga_alderson_frame_part_01_entity" }
+	attach = { l08 = "giga_alderson_pc_01_entity" }
+	attach = { 108 = "giga_alderson_clouds_01_entity" }
+}
+
+entity = {
+	name = "quasistellar_obliterator_glc_entity"
+	cull_radius = 10000
+
+	locator = { name = "loc101" position = { 0 0 -900 } rotation = { 0 0 30 } }
+	locator = { name = "loc1012" position = { 0 0 -900 } rotation = { 0 0 90 } }
+	locator = { name = "loc102" position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc103" position = { 0 125 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc104" position = { 0 1650 0 } rotation = { 0 -90 0 } }
+	locator = { name = "loc105" position = { 0 -1650 0 } rotation = { 0 90 180 } }
+
+	locator = { name = "loc106" position = { 0 125 100 } rotation = { 0 40 0 } }
+	locator = { name = "loc107" position = { 0 -125 100 } rotation = { 0 -40 180 } }
+
+	locator = { name = "loc110" position = { 0 0 -1650 } rotation = { 0 0 30 } }
+	locator = { name = "loc1102" position = { 0 0 -1650 } rotation = { 0 0 -30 } }
+
+	locator = { name = "loc111" position = { 0 1000 0 } rotation = { 0 100 0 } }
+	locator = { name = "loc112" position = { 0 -1000 0 } rotation = { 0 -100 180 } }
+
+	locator = { name = "loc113" position = { 0 0 -2400 } rotation = { 0 -90 0 } }
+
+	locator = { name = "loc114" position = { 0 -1000 0 } rotation = { 10 -75 35 } }
+	locator = { name = "loc115" position = { 0 -1000 0 } rotation = { -10 -75 -35 } }
+
+	locator = { name = "loc116" position = { 0 1000 0 } rotation = { 10 75 -215 } }
+	locator = { name = "loc117" position = { 0 1000 0 } rotation = { -10 75 215 } }
+
+	locator = { name = "loc118" position = { 0 0 1200 } rotation = { 90 0 0 } }
+
+	locator = { name = "loc119" position = { 0 0 -300 } rotation = { 0 90 0 } }
+	locator = { name = "loc120" position = { 0 0 -300 } rotation = { 0 90 180 } }
+
+	locator = { name = "loc121" position = { 0 0 -1650 } rotation = { 90 0 0 } }
+	locator = { name = "loc122" position = { 0 0 -2900 } rotation = { -90 0 0 } }
+
+	locator = { name = "loc123" position = { 0 0 0 } rotation = { 0 0 0 } }
+
+	locator = { name = "loc124" position = { 0 0 -4200 } rotation = { 0 0 0 } }
+
+	locator = { name = "loc125" position = { 0 0 -9650 } rotation = { 0 0 0 } }
+
+	locator = { name = "loc126" position = { 0 0 -300 } rotation = { 0 0 -60 } }
+	locator = { name = "loc127" position = { 0 0 -300 } rotation = { 0 0 60 } }
+
+	locator = { name = "loc128" position = { 0 0 -300 } rotation = { 180 0 -60 } }
+	locator = { name = "loc129" position = { 0 0 -300 } rotation = { 180 0 60 } }
+
+	attach = { "loc101" = "quasistellar_gun_tilted_entity" }
+	attach = { "loc1012" = "quasistellar_gun_tilted_entity" }
+	attach = { "loc102" = "quasistellar_cover_entity" }
+	attach = { "loc103" = "quasistellar_beams_entity" }
+	attach = { "loc104" = "quasistellar_lens_entity" }
+	attach = { "loc105" = "quasistellar_lens_entity" }
+
+	attach = { "loc110" = "quasistellar_chunk_arc_tilted_entity" }
+	attach = { "loc1102" = "quasistellar_chunk_arc_tilted_entity" }
+
+	attach = { "loc111" = "quasistellar_chunk_arc_two_tilted_entity" }
+	attach = { "loc112" = "quasistellar_chunk_arc_two_tilted_entity" }
+
+	attach = { "loc113" = "quasistellar_focus_6_entity" }
+
+	attach = { "loc114" = "quasistellar_chunk_arc_one_tilted_entity" }
+	attach = { "loc115" = "quasistellar_chunk_arc_one_tilted_entity" }
+
+	attach = { "loc116" = "quasistellar_chunk_arc_one_tilted_entity" }
+	attach = { "loc117" = "quasistellar_chunk_arc_one_tilted_entity" }
+
+	attach = { "loc118" = "quasistellar_focus_ring_back_rotated_entity" }
+
+	attach = { "loc119" = "quasistellar_focus_ring_entity" }
+	attach = { "loc120" = "quasistellar_focus_ring_entity" }
+
+	attach = { "loc121" = "quasistellar_focus_ring_front_entity" }
+
+	attach = { "loc122" = "quasistellar_focus_ring_front_two_entity" }
+
+	attach = { "loc123" = "quasistellar_back_ring_tilted_big_entity" }
+
+	attach = { "loc124" = "quasistellar_small_laser_front_entity" }
+
+	attach = { "loc125" = "quasistellar_big_laser_tilted_entity" }
+
+	attach = { "loc126" = "quasistellar_focus_ring_entity" }
+	attach = { "loc127" = "quasistellar_focus_ring_entity" }
+
+	attach = { "loc128" = "quasistellar_focus_ring_entity" }
+	attach = { "loc129" = "quasistellar_focus_ring_entity" }
+
+	playback_rate = 0.05
+
+	scale = 0.2
+}
+
+entity = {
+	name = "glc_quasar_entity"
+	scale = 15
+	cull_radius = 99999
+
+	playback_rate = 2.5
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+	}
+	locator = { name = "planet"				position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 1.0 }
+	locator = { name = "gravlens"			position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 1.75 }
+	locator = { name = "outbursts"			position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 0.4 }
+	locator = { name = "pulsar1"			position = { 0 6 0 }		rotation = { 0 0 0 }	scale = 1.0 }
+	locator = { name = "pulsar2"			position = { 0 -6 0 }		rotation = { 0 0 0 }	scale = 1.0 }
+
+	locator = { name = "bh_rings_10"		position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 0.65 }
+	locator = { name = "bh_rings_14"		position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 0.9 }
+	locator = { name = "flip_bh_rings_10"	position = { 0 0 0 }		rotation = { 0 180 0 }	scale = 0.65 }
+	locator = { name = "flip_bh_rings_14"	position = { 0 0 0 }		rotation = { 0 180 0 }	scale = 0.9 }
+
+	locator = { name = "planet_008"			position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 0.052 }
+	locator = { name = "planet_013"			position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 0.085 }
+	locator = { name = "flip_planet_008"	position = { 0 -0.25 0 }	rotation = { 0 180 0 }	scale = 0.052 }
+	locator = { name = "flip_planet_013"	position = { 0 0.25 0 }		rotation = { 0 180 0 }	scale = 0.085 }
+
+	locator = { name = "rings"				position = { 0 -1.25 0 }	rotation = { 0 0 0 }	scale = 0.5 }
+	locator = { name = "flip_rings"			position = { 0 1.25 0 }		rotation = { 0 180 0 }	scale = 0.5 }
+
+	attach = { planet =				"quasar_black_hole_entity" }
+	attach = { gravlens =			"giga_microquasar_2_grav_lens_entity" }
+	attach = { gravlens =			"giga_microquasar_2_grav_animation_entity" }
+
+	attach = { outbursts =			"giga_microquasar_2_outbursts_entity" }
+	attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
+	attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
+	attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
+	attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
+	attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
+	attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
+	attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
+	attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
+	attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
+	attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
+	attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
+	attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
+	attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
+	attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
+	attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
+	attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
+	attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
+	attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
+
+	attach = { rings =				"giga_protoplanetary_disk_blue_cloud_entity" }
+	attach = { planet_008 =			"giga_microquasar_2_disk_mesh" }
+	attach = { planet_013 =			"giga_microquasar_2_disk_mesh" }
+	attach = { bh_rings_10 =		"giga_microquasar_2_rings_1_entity" }
+	attach = { bh_rings_14 =		"giga_microquasar_2_rings_1_entity" }
+
+	attach = { flip_rings =			"giga_protoplanetary_disk_blue_cloud_entity" }
+	attach = { flip_planet_008 =	"giga_microquasar_2_disk_mesh" }
+	attach = { flip_planet_013 =	"giga_microquasar_2_disk_mesh" }
+	attach = { flip_bh_rings_10 =	"giga_microquasar_2_rings_1_entity" }
+	attach = { flip_bh_rings_14 =	"giga_microquasar_2_rings_1_entity" }
+
+	game_data = {
+		size = 250
+		bloom_factor = 5
+	}
+}
+
+entity = {
+	name = "psionic_avatar_section_entity"
+	pdxmesh = "space_cloud_mesh"
+	scale = 6
+	
+	default_state = idle	
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3 animation_speed = 1.0 
+			event = { time = 0 node = "star_mid" particle = "cloud_entity_center_particle" keep_particle = yes trigger_once = yes }
+			
+		#event = { time = 0 node = "left_shoulder" particle = "cloud_entity_arm_big_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "left_arm_1" particle = "cloud_entity_arm_big_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "left_arm_2" particle = "cloud_entity_arm_big_particle" keep_particle = yes trigger_once = yes }
+		#event = { time = 0 node = "left_arm_tip" particle = "cloud_entity_arm_small_particle" keep_particle = yes trigger_once = yes }
+		
+		#event = { time = 0 node = "right_shoulder" particle = "cloud_entity_arm_big_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "right_arm_1" particle = "cloud_entity_arm_big_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "right_arm_2" particle = "cloud_entity_arm_big_particle" keep_particle = yes trigger_once = yes }
+		#event = { time = 0 node = "right_arm_tip" particle = "cloud_entity_arm_small_particle" keep_particle = yes trigger_once = yes }
+		
+		#event = { time = 0 node = "top_shoulder" particle = "cloud_entity_arm_big_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "top_arm_1" particle = "cloud_entity_arm_big_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "top_arm_2" particle = "cloud_entity_arm_big_particle" keep_particle = yes trigger_once = yes }
+		#event = { time = 0 node = "top_arm_tip" particle = "cloud_entity_arm_small_particle" keep_particle = yes trigger_once = yes }
+		
+		#event = { time = 0 node = "left_leg_shoulder" particle = "cloud_entity_arm_big_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "left_leg_1" particle = "cloud_entity_arm_big_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "left_leg_2" particle = "cloud_entity_arm_big_particle" keep_particle = yes trigger_once = yes }
+		#event = { time = 0 node = "left_leg_tip" particle = "cloud_entity_arm_small_particle" keep_particle = yes trigger_once = yes }
+		
+		#event = { time = 0 node = "right_leg_shoulder" particle = "cloud_entity_arm_big_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "right_leg_1" particle = "cloud_entity_arm_big_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "right_leg_2" particle = "cloud_entity_arm_big_particle" keep_particle = yes trigger_once = yes }
+		#event = { time = 0 node = "right_leg_tip" particle = "cloud_entity_arm_small_particle" keep_particle = yes trigger_once = yes }
+	
+		start_event = { trigger_once = yes sound = { soundeffect = "space_cloud_idle" } }
+	}
+	game_data = {
+		size = 15
+	}
+}
+
+entity = {
+	name = "glc_pbeacon_entity"
+	scale = 1
+	cull_radius = 500
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 25
+		event = { time = 0 node = "arm_01" particle = "ship_light_purple_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "arm_02" particle = "ship_light_purple_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "arm_03" particle = "ship_light_purple_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "arm_04" particle = "ship_light_purple_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "arm_05" particle = "ship_light_purple_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "arm_06" particle = "ship_light_purple_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 1.00  node = "arm_01" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 2.05  node = "arm_02" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 3.30  node = "arm_03" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 4.50  node = "arm_04" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 5.00  node = "arm_05" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 6.05  node = "arm_06" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 7.30  node = "arm_01" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 8.50  node = "arm_02" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 9.00  node = "arm_03" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 10.05 node = "arm_04" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 11.30 node = "arm_05" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 12.50 node = "arm_06" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 13.00 node = "arm_01" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 14.05 node = "arm_02" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 15.30 node = "arm_03" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 16.50 node = "arm_04" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 17.00 node = "arm_05" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 18.05 node = "arm_06" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 19.30 node = "arm_01" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 20.50 node = "arm_02" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 21.00 node = "arm_03" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 22.05 node = "arm_04" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 23.30 node = "arm_05" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 24.50 node = "arm_06" particle = "giga_psychic_beacon_lightning_effect_small" keep_particle = yes trigger_once = no }
+		event = { time = 2.00 node = "lightning_center" particle = "giga_psychic_beacon_lightning_effect" keep_particle = yes trigger_once = no sound = { soundeffect = mega_shipyard_electricity_amb } }
+		event = { time = 6.05 node = "lightning_center" particle = "giga_psychic_beacon_lightning_effect" keep_particle = yes trigger_once = no sound = { soundeffect = mega_shipyard_electricity_amb } }
+		event = { time = 10.3 node = "lightning_center" particle = "giga_psychic_beacon_lightning_effect" keep_particle = yes trigger_once = no sound = { soundeffect = mega_shipyard_electricity_amb } }
+		event = { time = 14.5 node = "lightning_center" particle = "giga_psychic_beacon_lightning_effect" keep_particle = yes trigger_once = no sound = { soundeffect = mega_shipyard_electricity_amb } }
+		event = { time = 16.5 node = "lightning_center" particle = "giga_psychic_beacon_lightning_effect" keep_particle = yes trigger_once = no sound = { soundeffect = mega_shipyard_electricity_amb } }
+		event = { time = 19.5 node = "lightning_center" particle = "giga_psychic_beacon_lightning_effect" keep_particle = yes trigger_once = no sound = { soundeffect = mega_shipyard_electricity_amb } }
+		event = { time = 21.5 node = "lightning_center" particle = "giga_psychic_beacon_lightning_effect" keep_particle = yes trigger_once = no sound = { soundeffect = mega_shipyard_electricity_amb } }
+		event = { time = 22.5 node = "lightning_center" particle = "giga_psychic_beacon_lightning_effect" keep_particle = yes trigger_once = no sound = { soundeffect = mega_shipyard_electricity_amb } }
+		event = { time = 24.5 node = "lightning_center" particle = "giga_psychic_beacon_lightning_effect" keep_particle = yes trigger_once = no sound = { soundeffect = mega_shipyard_electricity_amb } }
+	}
+
+	locator = { name = "root"	position = { 0 	0  0 } }
+	locator = { name = "root2"	position = { 0 	0  0 } }
+	locator = { name = "shroud" position = { 0 0 0 } }
+
+	attach = { "root" = "giga_psychic_beacon_p3_entity" }
+	attach = { "root2" = "giga_psychic_beacon_p3_effect_entity" }
+	attach = { "shroud" = "psionic_avatar_section_entity" }
+	attach = { "shroud" = "psionic_avatar_entity" }
+	
+	game_data = {
+		size = 250
+        shader_type = ship
+        emissive_recolor_crunch = 5
+    }
+}
+
+entity = {
+	name = "glc_ia_entity"
+	pdxmesh = "interstellar_assembly_01_stage_1_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.2  
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_interstellar_assembly_hum" } }
+	}
+	
+	meshsettings = {
+		name = "body_1Shape"
+		index = 0
+		texture_diffuse = "molluscoid_01_interstellar_assembly_diffuse.dds"
+		texture_normal = "molluscoid_01_interstellar_assembly_normal.dds"
+		texture_specular = "molluscoid_01_interstellar_assembly_specular.dds"
+		shader = "PdxMeshShip"
+	}
+	locator = { name = "hologram" position = { 0 -10 0 } rotation = { 0 0 0 } }
+	locator = { name = "ring" position = { 0 -10 0 } rotation = { 0 0 0 } }
+	
+	attach = { hologram = "hologram_effect_entity" }
+	attach = { ring = "interstellar_assembly_effect_2_entity" }
+}
+
+entity = {
+	name = "glc_ia2_entity"
+	pdxmesh = "interstellar_assembly_01_stage_1_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.2  
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_interstellar_assembly_hum" } }
+	}
+	
+	meshsettings = {
+		name = "body_1Shape"
+		index = 0
+		texture_diffuse = "mammalian_01_interstellar_assembly_diffuse.dds"
+		texture_normal = "mammalian_01_interstellar_assembly_normal.dds"
+		texture_specular = "mammalian_01_interstellar_assembly_specular.dds"
+		shader = "PdxMeshShip"
+	}
+}
+
+entity = {
+	name = "glc_hay_entity"
+	cull_radius = 500
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+    locator = { name = "smbhring" position = { 0 0 600 } scale = 0.4}
+	attach = { "loc101" = "giga_shipyard_yards_tilted_entity" }
+	attach = { "loc101" = "giga_shipyard_outer_ring_entity" }
+	attach = { "smbhring" = "glc_ringworld_entity" }
+	scale = 1.25
+}
+
+entity = {
+	name = "glc_qso_arms_entity"
+	cull_radius = 500
+
+	locator = { name = "loc101" position = { -15 15 0 } rotation = { 0 0 60 } }
+	locator = { name = "loc102" position = { 15 15 0 } rotation = { 0 0 300 } }
+	locator = { name = "loc103" position = { -15 -15 0 } rotation = { 0 0 120 } }
+	locator = { name = "loc104" position = { 15 -15 0 } rotation = { 0 0 240 } }
+	locator = { name = "ring" position = { 0 0 0 } rotation = { 0 0 0 } scale = 0.001}
+	attach = { "loc101" = "gatebuilder_01_mothership_section_entity" }
+	attach = { "loc102" = "gatebuilder_01_mothership_section_entity" }
+	attach = { "loc103" = "gatebuilder_01_mothership_section_entity" }
+	attach = { "loc104" = "gatebuilder_01_mothership_section_entity" }
+	attach = { "ring" = "glc_ringworld_entity" }
+	scale = 2.5
+}
+
+entity = {
+	name = "glc_ringworld_section_entity"
+	cull_radius = 500.0
+	pdxmesh = "ringworld_tech_01_mesh"
+	
+	state = { name = "construction"
+	start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+	}
+	
+	locator = { name = "locator1" 	position = { -225 	0 	-60.289 	} rotation ={ -30 0 0} 	}
+	locator = { name = "locator2" 	position = {  225 	0 	-60.289		} rotation ={ 30 0 0}	}
+	
+	attach = { locator1 = "ringworld_tech_entity_01_entity" }
+	attach = { locator2 = "ringworld_tech_entity_01_entity" }
+}
+
+entity = {
+	name = "glc_ringworld_entity"
+	cull_radius = 500.0
+	
+	locator = { name = "loc11" 	position = { 300 0 300 } rotation ={ 45 0 0 } 	}
+	locator = { name = "loc10" 	position = { 300 0 -300 } rotation ={ 135 0 0 }	}
+	locator = { name = "loc01" 	position = { -300 0 -300 } rotation ={ 225 0 0 } 	}
+	locator = { name = "loc00" 	position = { -300 0 300 } rotation ={ 315 0 0 }	}
+	
+	attach = { loc11 = "glc_ringworld_section_entity" }
+	attach = { loc10 = "glc_ringworld_section_entity" }
+	attach = { loc01 = "glc_ringworld_section_entity" }
+	attach = { loc00 = "glc_ringworld_section_entity" }
+}
+
+entity = {
+	name = "glc_technosphere_entity"
+	pdxmesh = "technosphere_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "closed" animation_blend_time = 0 looping = no next_state = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "technosphere_idle" } }
+		
+		chance = {
+			if_current_state = {
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+	}	
+}
+
+entity = {
+	name = "glc_newring_entity"
+	cull_radius = 500.0
+	
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc102" position = { 0 0 0 } rotation = { 0 0 -20 } }
+	locator = { name = "loc103" position = { 0 0 0 } rotation = { 0 0 20 } }
+	locator = { name = "ccring1" position = { 0 100 0 } rotation = { 0 0 0 } scale = 0.5 }
+	locator = { name = "ccring2" position = { 0 50 0 } rotation = { 0 0 0 } scale = 0.65 }
+	
+
+	locator = { name = "connector1" position = { 0 0 300 } rotation = { 0 0 0 } scale = 1.5}
+	locator = { name = "connector2" position = { 0 0 -300 } rotation = { 180 0 0 } scale = 1.5}
+	
+	locator = { name = "inner3" position = { 0 0 0 } rotation = { 45 0 0 } scale = 1.5}
+	locator = { name = "inner4" position = { 0 0 0 } rotation = { -45 0 0 } scale = 1.5}
+	
+	locator = { name = "orb1" position = { 200 0 200 } rotation = { 0 0 0 } scale = 0.75 }
+	locator = { name = "orb2" position = { 200 0 -200 } rotation = { 0 0 0 } scale = 0.75 }
+	locator = { name = "orb3" position = { -200 0 200 } rotation = { 0 0 0 } scale = 0.75 }
+	locator = { name = "orb4" position = { -200 0 -200 } rotation = { 0 0 0 } scale = 0.75 } 	
+	
+	attach = { loc101 = "glc_ringworld_entity" }
+	attach = { loc102 = "glc_ringworld_entity" }
+	attach = { loc103 = "glc_ringworld_entity" }
+	
+	attach = { ccring1 = "glc_ringworld_entity" }
+	attach = { ccring2 = "glc_ringworld_entity" }
+
+	attach = { connector1 = "blokkat_ringworld_connector_entity" }
+	attach = { connector2 = "blokkat_ringworld_connector_entity" }
+
+	attach = { inner3 = "blokkat_inner_ring_connector_2_entity" }
+	attach = { inner4 = "blokkat_inner_ring_connector_2_entity" }
+	
+	attach = { orb1 = "glc_technosphere_entity" }
+	attach = { orb2 = "glc_technosphere_entity" }
+	attach = { orb3 = "glc_technosphere_entity" }
+	attach = { orb4 = "glc_technosphere_entity" }
+	
+	scale = 2.25
+}
+
+entity = {
+	name = "glc_nemjugg_entity"
+	pdxmesh = "nemesis_01_juggernaut_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"		
+	
+		event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_04" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = amb_nemesis_juggernaut_hum } }
+		event = { trigger_once = yes sound = { soundeffect = amb_nemesis_juggernaut_hum_treble } }
+	}
+}	
+
+entity = {
+	name = "glc_mshipy_entity"
+	locator = { name = "mshipp1" position = { 0 0 0 } rotation { 180 0 0 } scale = 3 }
+	locator = { name = "nemejugg" position = { 0 -10 -200 } scale = 3 }
+	locator = { name = "mamcol" position = { 0 0 -150 } rotation { 270 0 0 } scale = 3 }
+	locator = { name = "humtit" position = { 0 0 -75 } scale = 4 }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 6.5 }
+	state = { name = "death" state_time = 6.6 looping = no 
+		event = { time = 6.5 node = "part1" particle = "juggernaut_explosion_particle" sound = { soundeffect = ship_destroyed } }
+	}
+	
+	attach = { mshipp1 = "mammalian_01_mega_shipyard_01_stage_1_section_entity" }
+	#attach = { nemejugg = "glc_nemjugg_entity" }
+	attach = { mamcol = "glc_mam_colossus_entity" }
+	attach = { humtit = "humanoid_01_titan_bow_entity" }
+}
+
+entity = {
+	name = "glc_fe_escort_entity"
+	pdxmesh = "fallen_empire_01_warship_small_mesh"
+	scale = 1
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }	
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_fallen_empire_warship_01" } }
+	}			
+}
+
+entity = {
+	name = "glc_fe_bc_entity"
+	pdxmesh = "fallen_empire_01_warship_large_mesh"
+	scale = 1
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_fallen_empire_warship_01" } }
+	}	
+}
+
+entity = {
+	name = "glc_maniring_entity"
+	locator = { name = "11" position = { 0 0 500 } rotation = { 0 180 270 } scale = 10 }
+	locator = { name = "12" position = { 355.5 0 355.5 } rotation = { 315 180 270 } scale = 10 }
+	locator = { name = "13" position = { 500 0 0 } rotation = { 270 180 270 } scale = 10 }
+	locator = { name = "14" position = { 355.5 0 -355.5 } rotation = { 225 180 270 } scale = 10 }
+	locator = { name = "15" position = { 0 0 -500 } rotation = { 180 180 270 } scale = 10 }
+	locator = { name = "16" position = { -355.5 0 -355.5 } rotation = { 135 180 270 } scale = 10 }
+	locator = { name = "17" position = { -500 0 0 } rotation = { 90 180 270 } scale = 10 }
+	locator = { name = "18" position = { -355.5 0 355.5 } rotation = { 45 180 270 } scale = 10 }
+	locator = { name = "21" position = { 0 0 250 } rotation = { 0 180 270 } scale = 7 }
+	locator = { name = "22" position = { 250 0 0 } rotation = { 270 180 270 } scale = 7 }
+	locator = { name = "23" position = { 0 0 -250 } rotation = { 180 180 270 } scale = 7 }
+	locator = { name = "24" position = { -250 0 0 } rotation = { 90 180 270 } scale = 7 }
+	locator = { name = "31" position = { 225 0 225 } rotation = { 0 0 0 } scale = 7 }
+	locator = { name = "32" position = { 225 0 -225 } rotation = { 0 0 0 } scale = 7 }
+	locator = { name = "33" position = { -225 0 225 } rotation = { 0 0 0 } scale = 7 }
+	locator = { name = "34" position = { -225 0 -225 } rotation = { 0 0 0 } scale = 7 }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 6.5 }
+	state = { name = "death" state_time = 6.6 looping = no 
+		event = { time = 6.5 node = "part1" particle = "juggernaut_explosion_particle" sound = { soundeffect = ship_destroyed } }
+	}
+	
+	attach = { 11 = "glc_fe_escort_entity" }
+	attach = { 12 = "glc_fe_escort_entity" }
+	attach = { 13 = "glc_fe_escort_entity" }
+	attach = { 14 = "glc_fe_escort_entity" }
+	attach = { 15 = "glc_fe_escort_entity" }
+	attach = { 16 = "glc_fe_escort_entity" }
+	attach = { 17 = "glc_fe_escort_entity" }
+	attach = { 18 = "glc_fe_escort_entity" }
+	attach = { 21 = "glc_fe_bc_entity" }
+	attach = { 22 = "glc_fe_bc_entity" }
+	attach = { 23 = "glc_fe_bc_entity" }
+	attach = { 24 = "glc_fe_bc_entity" }
+	attach = { 31 = "fallen_empire_01_mining_station_entity" }
+	attach = { 32 = "fallen_empire_01_mining_station_entity" }
+	attach = { 33 = "fallen_empire_01_mining_station_entity" }
+	attach = { 34 = "fallen_empire_01_mining_station_entity" }	
+}
+
+entity = {
+	name = "glc_matdec_entity"
+	pdxmesh = "matter_decompressor_01_stage_4_mesh"
+	
+		meshsettings = {
+			name = "body4Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_matter_decompressor_diffuse.dds"
+			texture_normal = "mammalian_01_matter_decompressor_normal.dds"
+			texture_specular = "mammalian_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_pulse" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_conveyor" } }
+	}
+		
+		locator = { name = "core" position = { 0 50 0 } }
+		locator = { name = "platform1" position = { 0 -10 -100 } }
+		locator = { name = "platform2" position = { 90 -10 40 } }
+		locator = { name = "platform3" position = { -90 -10 40 } }
+}
+
+
+entity = {
+	name = "glc_ndb2_entity"
+	locator = { name = "MatDecL" position = { 300 0 0 } rotation = { 0 90 0 } scale = 5 }
+	locator = { name = "MatDecR" position = { -300 0 0 } rotation = { 0 90 0 } scale = 5 }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 6.5 }
+	state = { name = "death" state_time = 6.6 looping = no 
+		event = { time = 6.5 node = "part1" particle = "juggernaut_explosion_particle" sound = { soundeffect = ship_destroyed } }
+	}
+	
+	attach = { MatDecL = "glc_matdec_entity" }
+	attach = { MatDecR = "glc_matdec_entity" }
+}
+
+entity = {
+	name = "glc_solgun_entity"             #x #z #y             #z #x #y
+	locator = { name = "bstar" position = { 0 0 0 } rotation = { 0 0 0 } scale = 5 }
+	locator = { name = "gun" position = { 0 0 -45 } rotation = { 0 90 0 } scale = 3 }
+	locator = { name = "ringx" position = { 0 0 0 } rotation = { 90 0 0 } scale = 0.15 }
+	locator = { name = "ringy" position = { 0 0 0 } rotation = { 0 90 0 } scale = 0.15 }
+	locator = { name = "ringz" position = { 0 0 0 } rotation = { 0 0 90 } scale = 0.15 }
+	locator = { name = "stellarite" position = { 0 0 -65 } rotation = { 0 180 0 } scale = 5 }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 6.5 }
+	
+	attach = { bstar = "b_star_class_star_entity" }
+	attach = { gun = "fallen_empire_01_mining_station_entity" }
+	attach = { ringx = "glc_ringworld_entity" }
+	attach = { ringy = "glc_ringworld_entity" }
+	attach = { ringz = "glc_ringworld_entity" }
+	attach = { stellarite = "stellarite_ship_section_entity" }
+}
+
+entity = {
+	name = "glc_ndb_entity"
+	locator = { name = "ndbL" position = { 550 0 0 } rotation = { 0 0 0 } scale = 2 }
+	locator = { name = "ndbR" position = { -550 0 0 } rotation = { 0 0 0 } scale = 2 }
+	locator = { name = "ringconL1" position = { 750 0 250 } rotation = { 135 0 0 } scale = 1 }
+	locator = { name = "ringconL2" position = { 750 0 550 } rotation = { 45 0 0 } scale = 1 }
+	locator = { name = "ringconR1" position = { -750 0 250 } rotation = { 135 0 0 } scale = 1 }
+	locator = { name = "ringconR2" position = { -750 0 550 } rotation = { 45 0 0 } scale = 1 }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 6.5 }
+	
+	attach = { ndbL = "glc_solgun_entity" }
+	attach = { ndbR = "glc_solgun_entity" }
+}
+
+entity = {
+	name = "glc_colwing_entity"
+    pdxmesh = "glc_colwing_mesh"
+}
+
+entity = {
+	name = "glc_matdec2_entity"
+	pdxmesh = "matter_decompressor_01_stage_3_mesh"
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_matter_decompressor_diffuse.dds"
+			texture_normal = "mammalian_01_matter_decompressor_normal.dds"
+			texture_specular = "mammalian_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		
+	locator = { name = "star" position = { 0 0 7 } scale = 0.75 }
+	locator = { name = "thrust" position { 0 0 -22.5 } scale = 0.33 }	
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { time = 0	node = "thrust"		particle = "giga_systemcraft_large1_idle_particle"		keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+	
+	state = { name = "moving" state_time = 5
+		event = { sound = { soundeffect = juggernaut_fungoid_move } }
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		event = { time = 0	node = "thrust"		particle = "giga_systemcraft_large1_moving_particle"	keep_particle = yes trigger_once = yes }
+		event = { time = 0	node = "thrust"		particle = "giga_systemcraft_large2_particle"			keep_particle = yes trigger_once = yes }
+		
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+
+	attach = { star = "b_star_class_star_entity" }
+	attach = { thrust = "giga_systemcraft_large1_idle_particle" }
+}
+
+entity = {
+	name = "glc_gateway_entity"
+	pdxmesh = "gateway_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "megastructure_gate_way_station_hum" stop_on_state_change = yes } }
+		start_event = { trigger_once = yes sound = { soundeffect = "megastructure_gate_way_portal_hum" stop_on_state_change = yes } }
+		
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 7.63 node = "root" particle = "dreadnought_explosion_particle" keep_particle = yes }
+		event = { time = 2.1 node = "root" particle = "gateway_portal_death_residue_effect" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "megastructure_gate_way_station_death" stop_on_state_change = yes } }
+	}
+	
+		meshsettings = {
+			name = "gateway_bottomShapeShape"
+			index = 0
+			texture_diffuse = "mammalian_01_gateway_diffuse.dds"
+			texture_normal = "mammalian_01_gateway_normal.dds"
+			texture_specular = "mammalian_01_gateway_specular.dds"
+			shader = "PdxMeshShip"
+		}
+}
+
+entity = {
+	name = "glc_rear2_half_entity"
+	locator = { name = "mshipy" position = { 0 0 525 } rotation = { 0 0 0 } scale = 5 }
+	locator = { name = "humtit" position = { 0 0 625 } rotation = { 180 0 0 } scale = 7.5 }
+	locator = { name = "wormcont"  position = { 0 0 250 } rotation = { 0 90 0 } }
+	locator = { name = "wormgate"  position = { 0 0 295 } rotation = { 0 90 0 } scale = 3 }
+	locator = { name = "wormworm"  position = { 0 0 250 } rotation = { 0 90 0 } scale = 0.5}
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 6.5 
+	}	
+	attach = { mshipy = "mammalian_01_mega_shipyard_01_stage_1_section_entity" }
+	attach = { humtit = "humanoid_01_titan_bow_entity"	}
+	attach = { wormcont  = "system_printer_megaart_entity" }
+	attach = { wormgate  = "glc_gateway_entity" }	
+	attach = { wormworm  = "dimensional_horror_hull_entity" }		
+}
+
+entity = {
+	name = "glc_rear2_entity"
+	locator = { name = "ring" position = { 0 0 0 } rotation = { 0 0 0 } scale = 1.25 }
+	locator = { name = "colwing" position = { 0 0 450 } rotation = { 0 0 0 } scale = 1.75 }
+	locator = { name = "matdecL" position = { 300 0 450 } rotation = { 0 180 30 } scale = 7 }
+	locator = { name = "matdecR" position = { -300 0 450 } rotation = { 0 180 90 } scale = 7 }
+	locator = { name = "mshipy" position = { 0 0 525 } rotation = { 0 0 0 } scale = 5 }
+	locator = { name = "humtit" position = { 0 0 625 } rotation = { 180 0 0 } scale = 7.5 }
+	locator = { name = "nova" position = { 0 0 525 } rotation = { 0 0 0 } scale = 1 }
+	locator = { name = "sysassL" position = { 300 0 250 } rotation = { 90 0 0 } scale = 0.33 }
+	locator = { name = "sysassR" position = { -300 0 250 } rotation = { 90 0 0 } scale = 0.33 }
+	locator = { name = "wormcont"  position = { 0 0 250 } rotation = { 0 90 0 } }
+	locator = { name = "wormgate"  position = { 0 0 295 } rotation = { 0 90 0 } scale = 3 }
+	locator = { name = "wormworm"  position = { 0 0 250 } rotation = { 0 90 0 } scale = 0.5}
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 6.5 
+	}	
+	#attach = { ring = "glc_ringworld_entity" }
+	attach = { colwing = "glc_colwing_entity" }
+	attach = { matdecL = "glc_matdec2_entity" }
+	attach = { matdecR = "glc_matdec2_entity" }
+	attach = { mshipy = "mammalian_01_mega_shipyard_01_stage_1_section_entity" }
+	attach = { humtit = "humanoid_01_titan_bow_entity"	}
+	attach = { nova = "nova_rings_entity" }
+	attach = { nova = "nova_outbursts_entity" }
+	attach = { nova = "nova_flash_entity" }
+	attach = { sysassL = "war_system_printer_5_entity" }
+	attach = { sysassR = "war_system_printer_5_entity" }
+	attach = { wormcont  = "system_printer_megaart_entity" }
+	attach = { wormgate  = "glc_gateway_entity" }	
+	attach = { wormworm  = "dimensional_horror_hull_entity" }		
+}
+
+
+entity = {
+	name = "galacticraft_construction_1_0_entity"
+	cull_radius = 50000
+	pdxmesh = "molluscoid_01_corvette_frame_mesh"
+
+	locator = { name = "loc041qsoarms" position = { 0 0 -500 } rotation = { 0 0 0 } scale = 3}
+	locator = { name = "loc042qsogate" position = { 0 0 0 } rotation = { 0 0 0 } scale = 10}
+	
+	default_state = "idle"
+	state = { name = "idle" }
+
+	attach = { loc042qsogate = "mammalian_01_gateway_entity" }	
+	attach = { loc041qsoarms = "glc_qso_arms_entity" }
+	
+	scale = 3
+}
+
+entity = {
+	name = "galacticraft_construction_1_1_ship_entity"
+	cull_radius = 50000
+	pdxmesh = "molluscoid_01_corvette_frame_mesh"
+
+	locator = { name = "loc04qso" position = { 0 0 -0 } rotation = { 0 0 0 } }	
+	locator = { name = "loc041qsoarms" position = { 0 0 -500 } rotation = { 0 0 0 } scale = 3}
+	locator = { name = "loc042qsogate" position = { 0 0 0 } rotation = { 0 0 0 } scale = 10}
+	locator = { name = "loc05quasar" position = { 0 0 0 } rotation = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle" }
+
+	attach = { loc04qso = "quasistellar_obliterator_glc_entity" }
+	attach = { loc042qsogate = "mammalian_01_gateway_entity" }	
+	attach = { loc041qsoarms = "glc_qso_arms_entity" }
+    attach = { loc05quasar = "glc_quasar_entity" }
+	
+	scale = 3
+}
+
+entity = {
+	name = "galacticraft_construction_2_0_entity"
+	cull_radius = 50000
+	pdxmesh = "molluscoid_01_corvette_frame_mesh"
+
+	locator = { name = "loc01blokm" position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc021magiassem" position = { 0 0 0 } rotation = { 0 0 0 } scale = 50 }
+	
+	default_state = "idle"
+	state = { name = "idle" }
+
+	attach = { loc01blokm = "glc_newring_entity" }
+	attach = { loc021magiassem = "glc_ia2_entity" }
+	
+	scale = 3
+}
+
+entity = {
+	name = "galacticraft_construction_2_1_entity"
+	cull_radius = 50000
+	pdxmesh = "molluscoid_01_corvette_frame_mesh"
+
+	locator = { name = "loc01blokm" position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc02birch" position = { 0 0 0 } rotation = { 0 0 0 } scale = 3}
+	locator = { name = "loc021magiassem" position = { 0 0 0 } rotation = { 0 0 0 } scale = 50}
+	
+	default_state = "idle"
+	state = { name = "idle" }
+
+	attach = { loc01blokm = "glc_newring_entity" }
+	attach = { loc02birch = "birch_world_glc_entity" }
+	attach = { loc021magiassem = "glc_ia2_entity" }
+	
+	scale = 3
+}
+
+entity = {
+	name = "galacticraft_construction_2_2_entity"
+	cull_radius = 50000
+	pdxmesh = "molluscoid_01_corvette_frame_mesh"
+
+	locator = { name = "loc01blokm" position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc02birch" position = { 0 0 0 } rotation = { 0 0 0 } scale = 3}
+	locator = { name = "loc021magiassem" position = { 0 0 0 } rotation = { 0 0 0 } scale = 50}
+	locator = { name = "loc04qso" position = { 0 0 -1000 } rotation = { 0 0 0 } }	
+	locator = { name = "loc041qsoarms" position = { 0 0 -1500 } rotation = { 0 0 0 } scale = 3}
+	locator = { name = "loc042qsogate" position = { 0 0 -1000 } rotation = { 0 0 0 } scale = 5}
+	locator = { name = "loc05quasar" position = { 0 0 -1000 } rotation = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle" }
+
+	attach = { loc01blokm = "glc_newring_entity" }
+	attach = { loc02birch = "birch_world_glc_entity" }
+	attach = { loc021magiassem = "glc_ia2_entity" }
+	attach = { loc04qso = "quasistellar_obliterator_glc_entity" }
+	attach = { loc042qsogate = "mammalian_01_gateway_entity" }	
+	attach = { loc041qsoarms = "glc_qso_arms_entity" }
+    attach = { loc05quasar = "glc_quasar_entity" }	
+	
+	scale = 3
+}
+
+entity = {
+	name = "galacticraft_construction_3_0_entity"
+	cull_radius = 50000
+	pdxmesh = "molluscoid_01_corvette_frame_mesh"
+
+	locator = { name = "loc01blokm" position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc02birch" position = { 0 0 0 } rotation = { 0 0 0 } scale = 3}
+	locator = { name = "loc021magiassem" position = { 0 0 0 } rotation = { 0 0 0 } scale = 50}
+	locator = { name = "loc022beacon" position = { 0 600 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc03disk" position = { 0 0 0 } rotation = { 337.5 0 0 } scale = 300}
+	locator = { name = "loc04qso" position = { 0 0 -1000 } rotation = { 0 0 0 } }	
+	locator = { name = "loc041qsoarms" position = { 0 0 -1500 } rotation = { 0 0 0 } scale = 3}
+	locator = { name = "loc042qsogate" position = { 0 0 -1000 } rotation = { 0 0 0 } scale = 10}
+	locator = { name = "loc05quasar" position = { 0 0 -1000 } rotation = { 0 0 0 } }
+	locator = { name = "loc06ehof" position = { 0 0 1000 } rotation = { 60 0 0 } scale = 35}
+	locator = { name = "loc061smbh" position = { 0 0 1000 } rotation = { 0 0 0 } scale = 0.1}
+	locator = { name = "loc07hay" position = { 0 0 0 } rotation = { 0 0 0 } scale = 1.4}			
+	locator = { name = "loc09maniring" position = { 0 -600 0 } rotation = { 0 0 0 } scale = 1}	
+	locator = { name = "loc10ndb" position = { 0 0 -1000 } rotation = { 0 0 0 } scale = 1}	
+	
+	default_state = "idle"
+	state = { name = "idle" }
+
+	attach = { loc01blokm = "glc_newring_entity" }
+	attach = { loc02birch = "birch_world_glc_entity" }
+	attach = { loc021magiassem = "glc_ia2_entity" }
+	attach = { loc022beacon = "giga_psychic_beacon_p3_entity" }
+	attach = { loc03disk = "giga_alderson_glc_entity" }
+	attach = { loc04qso = "quasistellar_obliterator_glc_entity" }
+	attach = { loc042qsogate = "mammalian_01_gateway_entity" }	
+	attach = { loc041qsoarms = "glc_qso_arms_entity" }
+    attach = { loc05quasar = "glc_quasar_entity" }
+	attach = { loc06ehof = "phase4_wormhole_active_entity" }
+	attach = { loc061smbh = "core_black_hole_entity" }	
+	attach = { loc07hay = "glc_hay_entity" }
+	attach = { loc09maniring = "glc_maniring_entity" }	
+	attach = { loc10ndb = "glc_ndb_entity" }
+	
+	scale = 3
+}
+
+entity = {
+	name = "galacticraft_construction_3_1_entity"
+	cull_radius = 50000
+	pdxmesh = "molluscoid_01_corvette_frame_mesh"
+
+	locator = { name = "loc01blokm" position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc02birch" position = { 0 0 0 } rotation = { 0 0 0 } scale = 3}
+	locator = { name = "loc021magiassem" position = { 0 0 0 } rotation = { 0 0 0 } scale = 50}
+	locator = { name = "loc022beacon" position = { 0 600 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc03disk" position = { 0 0 0 } rotation = { 337.5 0 0 } scale = 300}
+	locator = { name = "loc04qso" position = { 0 0 -1000 } rotation = { 0 0 0 } }	
+	locator = { name = "loc041qsoarms" position = { 0 0 -1500 } rotation = { 0 0 0 } scale = 3}
+	locator = { name = "loc042qsogate" position = { 0 0 -1000 } rotation = { 0 0 0 } scale = 10}
+	locator = { name = "loc05quasar" position = { 0 0 -1000 } rotation = { 0 0 0 } }
+	locator = { name = "loc06ehof" position = { 0 0 1000 } rotation = { 60 0 0 } scale = 35}
+	locator = { name = "loc061smbh" position = { 0 0 1000 } rotation = { 0 0 0 } scale = 0.1}
+	locator = { name = "loc07hay" position = { 0 0 0 } rotation = { 0 0 0 } scale = 1.4}			
+	locator = { name = "loc09maniring" position = { 0 -600 0 } rotation = { 0 0 0 } scale = 1}	
+	locator = { name = "loc10ndb" position = { 0 0 -1000 } rotation = { 0 0 0 } scale = 1}
+	locator = { name = "loc11rear" position = { 0 0 900 } rotation = { 0 0 0 } scale = 3}	
+	
+	default_state = "idle"
+	state = { name = "idle" }
+
+	attach = { loc01blokm = "glc_newring_entity" }
+	attach = { loc02birch = "birch_world_glc_entity" }
+	attach = { loc021magiassem = "glc_ia2_entity" }
+	attach = { loc022beacon = "giga_psychic_beacon_p3_entity" }
+	attach = { loc03disk = "giga_alderson_glc_entity" }
+	attach = { loc04qso = "quasistellar_obliterator_glc_entity" }
+	attach = { loc042qsogate = "mammalian_01_gateway_entity" }	
+	attach = { loc041qsoarms = "glc_qso_arms_entity" }
+    attach = { loc05quasar = "glc_quasar_entity" }
+	attach = { loc06ehof = "phase4_wormhole_active_entity" }
+	attach = { loc061smbh = "core_black_hole_entity" }	
+	attach = { loc07hay = "glc_hay_entity" }
+	attach = { loc09maniring = "glc_maniring_entity" }	
+	attach = { loc10ndb = "glc_ndb_entity" }
+    attach = { loc11rear = "glc_rear2_half_entity" }
+	
+	scale = 3
+}
+
+entity = {
+	name = "galacticraft_construction_4_0_entity"
+	cull_radius = 50000
+	pdxmesh = "molluscoid_01_corvette_frame_mesh"
+
+	locator = { name = "loc01blokm" position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc02birch" position = { 0 0 0 } rotation = { 0 0 0 } scale = 3}
+	locator = { name = "loc021magiassem" position = { 0 0 0 } rotation = { 0 0 0 } scale = 50}
+	locator = { name = "loc022beacon" position = { 0 600 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc03disk" position = { 0 0 0 } rotation = { 337.5 0 0 } scale = 300}
+	locator = { name = "loc04qso" position = { 0 0 -1000 } rotation = { 0 0 0 } }	
+	locator = { name = "loc041qsoarms" position = { 0 0 -1500 } rotation = { 0 0 0 } scale = 3}
+	locator = { name = "loc042qsogate" position = { 0 0 -1000 } rotation = { 0 0 0 } scale = 10}
+	locator = { name = "loc05quasar" position = { 0 0 -1000 } rotation = { 0 0 0 } }
+	locator = { name = "loc06ehof" position = { 0 0 1000 } rotation = { 60 0 0 } scale = 35}
+	locator = { name = "loc061smbh" position = { 0 0 1000 } rotation = { 0 0 0 } scale = 0.1}
+	locator = { name = "loc07hay" position = { 0 0 0 } rotation = { 0 0 0 } scale = 1.4}			
+	locator = { name = "loc09maniring" position = { 0 -600 0 } rotation = { 0 0 0 } scale = 1}	
+	locator = { name = "loc10ndb" position = { 0 0 -1000 } rotation = { 0 0 0 } scale = 1}
+	locator = { name = "loc11rear" position = { 0 0 900 } rotation = { 0 0 0 } scale = 3}	
+	
+	default_state = "idle"
+	state = { name = "idle" }
+
+	attach = { loc01blokm = "glc_newring_entity" }
+	attach = { loc02birch = "birch_world_glc_entity" }
+	attach = { loc021magiassem = "glc_ia2_entity" }
+	attach = { loc022beacon = "giga_psychic_beacon_p3_entity" }
+	attach = { loc03disk = "giga_alderson_glc_entity" }
+	attach = { loc04qso = "quasistellar_obliterator_glc_entity" }
+	attach = { loc042qsogate = "mammalian_01_gateway_entity" }	
+	attach = { loc041qsoarms = "glc_qso_arms_entity" }
+    attach = { loc05quasar = "glc_quasar_entity" }
+	attach = { loc06ehof = "phase4_wormhole_active_entity" }
+	attach = { loc061smbh = "core_black_hole_entity" }	
+	attach = { loc07hay = "glc_hay_entity" }
+	attach = { loc09maniring = "glc_maniring_entity" }	
+	attach = { loc10ndb = "glc_ndb_entity" }
+    attach = { loc11rear = "glc_rear2_entity" }
+	
+	scale = 3
+}
+
+entity = {
+	name = "galacticraft_v1_full_entity"
+	cull_radius = 50000
+	pdxmesh = "molluscoid_01_corvette_frame_mesh"
+
+	locator = { name = "loc01blokm" position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc02birch" position = { 0 0 0 } rotation = { 0 0 0 } scale = 4}
+	locator = { name = "loc021magiassem" position = { 0 0 0 } rotation = { 0 0 0 } scale = 50}
+	locator = { name = "loc022beacon" position = { 0 600 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc03disk" position = { 0 0 0 } rotation = { 337.5 0 0 } scale = 300}
+	locator = { name = "loc04qso" position = { 0 0 -1000 } rotation = { 0 0 0 } }	
+	locator = { name = "loc041qsoarms" position = { 0 0 -1500 } rotation = { 0 0 0 } scale = 3}
+	locator = { name = "loc042qsogate" position = { 0 0 -1000 } rotation = { 0 0 0 } scale = 5}
+	locator = { name = "loc05quasar" position = { 0 0 -1000 } rotation = { 0 0 0 } }
+	locator = { name = "loc06ehof" position = { 0 0 1000 } rotation = { 60 0 0 } scale = 35}
+	locator = { name = "loc061smbh" position = { 0 0 1000 } rotation = { 0 0 0 } scale = 0.1}
+	locator = { name = "loc07hay" position = { 0 0 0 } rotation = { 0 0 0 } scale = 1.4}			
+	locator = { name = "loc09maniring" position = { 0 -600 0 } rotation = { 0 0 0 } scale = 1}	
+	locator = { name = "loc10ndb" position = { 0 0 -1000 } rotation = { 0 0 0 } scale = 1}		
+	
+	default_state = "idle"
+	state = { name = "idle" }
+
+	attach = { loc01blokm = "glc_newring_entity" }
+	attach = { loc02birch = "birch_world_glc_entity" }
+	attach = { loc021magiassem = "glc_ia_entity" }
+	attach = { loc022beacon = "glc_pbeacon_entity" }
+	attach = { loc03disk = "giga_alderson_glc_entity" }
+	attach = { loc04qso = "quasistellar_obliterator_glc_entity" }
+	attach = { loc041qsoarms = "glc_qso_arms_entity" }
+	attach = { loc042qsogate = "mammalian_01_gateway_entity" }
+    attach = { loc05quasar = "glc_quasar_entity" }
+	attach = { loc06ehof = "phase4_wormhole_active_entity" }
+	attach = { loc061smbh = "core_black_hole_entity" }	
+	attach = { loc07hay = "glc_hay_entity" }
+	attach = { loc08mship = "glc_mshipy_entity" }
+	attach = { loc09maniring = "glc_maniring_entity" }	
+	attach = { loc10rear = "glc_rear_entity" }	
+	attach = { loc11ndb = "glc_ndb2_entity" }
+	
+	scale = 3
+}
+
+entity = {
+	name = "galacticraft_v2_full_entity"
+	cull_radius = 50000
+	pdxmesh = "molluscoid_01_corvette_frame_mesh"
+
+	locator = { name = "loc01blokm" position = { 0 0 -1000 } rotation = { 0 0 0 } }
+	locator = { name = "loc02birch" position = { 0 0 -1000 } rotation = { 0 0 0 } scale = 3}
+	locator = { name = "loc021magiassem" position = { 0 0 -1000 } rotation = { 0 0 0 } scale = 50}
+	locator = { name = "loc022beacon" position = { 0 600 -1000 } rotation = { 0 0 0 } }
+	locator = { name = "loc03disk" position = { 0 0 -1000 } rotation = { 337.5 0 0 } scale = 300}
+	locator = { name = "loc04qso" position = { 0 0 -2000 } rotation = { 0 0 0 } }	
+	locator = { name = "loc041qsoarms" position = { 0 0 -2500 } rotation = { 0 0 0 } scale = 3}
+	locator = { name = "loc042qsogate" position = { 0 0 -2000 } rotation = { 0 0 0 } scale = 10}
+	locator = { name = "loc05quasar" position = { 0 0 -2000 } rotation = { 0 0 0 } }
+	locator = { name = "loc06ehof" position = { 0 0 0 } rotation = { 60 0 0 } scale = 35}
+	locator = { name = "loc061smbh" position = { 0 0 0 } rotation = { 0 0 0 } scale = 0.1}
+	locator = { name = "loc07hay" position = { 0 0 -1000 } rotation = { 0 0 0 } scale = 1.4}			
+	locator = { name = "loc09maniring" position = { 0 -600 -1000 } rotation = { 0 0 0 } scale = 1}	
+	locator = { name = "loc10ndb" position = { 0 0 -2000 } rotation = { 0 0 0 } scale = 1}	
+	locator = { name = "loc11rear" position = { 0 0 -100 } rotation = { 0 0 0 } scale = 3}
+	
+	default_state = "idle"
+	state = { name = "idle" }
+
+	attach = { loc01blokm = "glc_newring_entity" }
+	attach = { loc02birch = "birch_world_glc_entity" }
+	attach = { loc021magiassem = "glc_ia2_entity" }
+	attach = { loc022beacon = "giga_psychic_beacon_p3_entity" }
+	attach = { loc03disk = "giga_alderson_glc_entity" }
+	attach = { loc04qso = "quasistellar_obliterator_glc_entity" }
+	attach = { loc042qsogate = "mammalian_01_gateway_entity" }	
+	attach = { loc041qsoarms = "glc_qso_arms_entity" }
+    attach = { loc05quasar = "glc_quasar_entity" }
+	attach = { loc06ehof = "phase4_wormhole_active_entity" }
+	attach = { loc061smbh = "core_black_hole_entity" }	
+	attach = { loc07hay = "glc_hay_entity" }
+	attach = { loc09maniring = "glc_maniring_entity" }	
+	attach = { loc10ndb = "glc_ndb_entity" }
+	attach = { loc11rear = "glc_rear2_entity" }	
+	
+	scale = 3
+}
+
+entity = {
+	name = "galacticraft_test_full_entity"
+	cull_radius = 5000
+	pdxmesh = "molluscoid_01_corvette_frame_mesh"
+
+	locator = { name = "loc01blokm" position = { 0 0 -1000 } rotation = { 0 0 0 } }
+	locator = { name = "loc02birch" position = { 0 0 -1000 } rotation = { 0 0 0 } scale = 3}
+	locator = { name = "loc021magiassem" position = { 0 0 -1000 } rotation = { 0 0 0 } scale = 50}
+	locator = { name = "loc022beacon" position = { 0 600 -1000 } rotation = { 0 0 0 } }
+	locator = { name = "loc03disk" position = { 0 0 -1000 } rotation = { 337.5 0 0 } scale = 300}
+	locator = { name = "loc04qso" position = { 0 0 -2000 } rotation = { 0 0 0 } }	
+	locator = { name = "loc041qsoarms" position = { 0 0 -2500 } rotation = { 0 0 0 } scale = 3}
+	locator = { name = "loc042qsogate" position = { 0 0 -2000 } rotation = { 0 0 0 } scale = 10}
+	locator = { name = "loc05quasar" position = { 0 0 -2000 } rotation = { 0 0 0 } }
+	locator = { name = "loc06ehof" position = { 0 0 0 } rotation = { 60 0 0 } scale = 35}
+	locator = { name = "loc061smbh" position = { 0 0 0 } rotation = { 0 0 0 } scale = 0.1}
+	locator = { name = "loc07hay" position = { 0 0 -1000 } rotation = { 0 0 0 } scale = 1.4}			
+	locator = { name = "loc09maniring" position = { 0 -600 -1000 } rotation = { 0 0 0 } scale = 1}	
+	locator = { name = "loc10ndb" position = { 0 0 -2000 } rotation = { 0 0 0 } scale = 1}	
+	locator = { name = "loc11rear" position = { 0 0 -100 } rotation = { 0 0 0 } scale = 3}
+	
+	locator = { name = "qso" position = { 0 0 -2500 } rotation = { 0 0 0 } }
+	locator = { name = "ndb1" position = { 750 0 -2000 } rotation = { 0 0 0 } }
+	locator = { name = "ndb2" position = { -750 0 -2000 } rotation = { 0 0 0 } }
+	locator = { name = "disk1" position = { 1000 20 -1000 } rotation = { 90 0 0 } }
+	locator = { name = "disk2" position = { -1000 20 -1000 } rotation = { -90 0 0 } }
+	locator = { name = "disk3" position = { 1000 0 -1000 } rotation = { 90 0 0 } }
+	locator = { name = "disk4" position = { -1000 0 -1000 } rotation = { -90 0 0 } }
+	locator = { name = "disk5" position = { 1000 -20 -1000 } rotation = { 90 0 0 } }
+	locator = { name = "disk6" position = { -1000 -20 -1000 } rotation = { -90 0 0 } }
+	locator = { name = "sc1" position = { 500 0 500 } rotation = { 0 0 0 } }
+	locator = { name = "sc2" position = { 500 0 500 } rotation = { 0 0 0 } }
+	locator = { name = "sc3" position = { -500 0 500 } rotation = { 0 0 0 } }
+	locator = { name = "sc4" position = { -500 0 500 } rotation = { 0 0 0 } }
+	locator = { name = "rear1" position = { 100 0 1000 } rotation = { 0 0 0 } }
+	locator = { name = "rear2" position = { -100 0 1000 } rotation = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle" }
+
+	attach = { loc01blokm = "glc_newring_entity" }
+	attach = { loc02birch = "birch_world_glc_entity" }
+	attach = { loc021magiassem = "glc_ia2_entity" }
+	attach = { loc022beacon = "giga_psychic_beacon_p3_entity" }
+	attach = { loc03disk = "giga_alderson_glc_entity" }
+	attach = { loc04qso = "quasistellar_obliterator_glc_entity" }
+	attach = { loc042qsogate = "mammalian_01_gateway_entity" }	
+	attach = { loc041qsoarms = "glc_qso_arms_entity" }
+    attach = { loc05quasar = "glc_quasar_entity" }
+	attach = { loc06ehof = "phase4_wormhole_active_entity" }
+	attach = { loc061smbh = "core_black_hole_entity" }	
+	attach = { loc07hay = "glc_hay_entity" }
+	attach = { loc09maniring = "glc_maniring_entity" }	
+	attach = { loc10ndb = "glc_ndb_entity" }
+	attach = { loc11rear = "glc_rear2_entity" }	
+	
+	scale = 0.5
+}

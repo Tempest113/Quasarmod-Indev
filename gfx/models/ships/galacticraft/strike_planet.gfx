@@ -1,7 +1,0 @@
-objectTypes = {
-    pdxmesh = {
-		name = "planet_fighter_mesh"
-		file = "gfx/models/ships/galacticraft/strike_planet.mesh"
-		scale = 1.0
-	}
-}
