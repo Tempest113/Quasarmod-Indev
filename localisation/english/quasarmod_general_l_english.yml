@@ -8,7 +8,7 @@
 
  ap_hyperquasaric_megaconstruction: "Hyperquasaric Megaconstruction"
  ap_hyperquasaric_megaconstruction_desc: "The size and scale of our ambitions are rapidly outgrowing our ability to achieve them, we must reach a level of resource exploitation larger than has ever been seen in the history of our galaxy if we wish to ensure our unending prosperity."
- ap_hyperquasaric_megaconstruction_add_research: "Research options gained:\n£physics_research£§Y$tech_supermassive_blackhole_manipulator$§!\n£physics_research£§Y$tech_core_mbrain$§!\n£society_research£§Y$tech_hyperquasaric_megashipyard$§!\n£engineering_research£§Y$tech_hyperquasaric_teraforge$§!"
+ ap_hyperquasaric_megaconstruction_add_research: "Research options gained:\n£physics_research£§Y$tech_smbh_manipulator$§!\n£physics_research£§Y$tech_core_mbrain$§!\n£society_research£§Y$tech_hyperquasaric_megashipyard$§!\n£engineering_research£§Y$tech_hyperquasaric_teraforge$§!"
 
  ##############
  # Technology #
@@ -30,8 +30,8 @@
 
  # SMBH Manipulator
 
- tech_supermassive_blackhole_manipulator: "Supermassive Black Hole Manipulation"
- tech_supermassive_blackhole_manipulator_desc: "Perhaps one of the largest megastructures we will build for the next several hundred years: The Supermassive Black Hole Manipulator, a gargantuan terastructure which will allow us to bend the galactic core to our very will"
+ tech_smbh_manipulator: "Supermassive Black Hole Manipulation"
+ tech_smbh_manipulator_desc: "Perhaps one of the largest megastructures we will build for the next several hundred years: The Supermassive Black Hole Manipulator, a gargantuan terastructure which will allow us to bend the galactic core to our very will"
  TECH_UNLOCK_BLACKHOLE_MANIPULATOR_TITLE: "§SUnlocks Megastructure:§! Supermassive Black Hole Manipulator"
  #TECH_UNLOCK_BLACKHOLE_MANIPULATOR_TITLE: "§SUnlocks Feature:§! Supermassive Black Hole Manipulation \n§SUnlocks Megastructure:§! Supermassive Black Hole Manipulator"
  TECH_UNLOCK_BLACKHOLE_MANIPULATOR_DESC: "The supermassive black hole residing within the galactic core no longer suits our needs, we shall reshape it to better serve our empire."

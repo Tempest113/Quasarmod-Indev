@@ -40,7 +40,7 @@ hyperquasaric_teraforge_0 = {
 		planet_possible = {
 			custom_tooltip = { fail_text = "requires_no_existing_megastructure" 			planet_has_no_megastructure = yes }
 			custom_tooltip = { fail_text = "requires_no_anomaly"							has_anomaly = no }
-			custom_tooltip = { fail_text = "requires_quasar_fail_tooltip"				    	is_planet_class = pc_core_quasar }
+			custom_tooltip = { fail_text = "requires_quasar_fail_tooltip"				    is_planet_class = pc_core_quasar }
 		}
 	}
 

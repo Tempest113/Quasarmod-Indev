@@ -34,7 +34,7 @@ tech_hyperquasaric_megashipyard = {
 	}
 }
 
-tech_supermassive_blackhole_manipulator ={
+tech_smbh_manipulator ={
 	cost = @giga_tier7cost3
 	area = physics
 	tier = 5
