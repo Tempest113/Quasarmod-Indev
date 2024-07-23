@@ -2,7 +2,7 @@
 # Hyperquasaric Teraforge #
 ###########################
 
-quasaric_teraforge_0 = {
+hyperquasaric_teraforge_0 = {
 	entity = "construction_platform_entity"
 	construction_entity = "construction_platform_entity"
 	place_entity_on_planet_plane = no
@@ -14,11 +14,16 @@ quasaric_teraforge_0 = {
 	resources = {
 		category = giga_gigastructures
 		cost = {
-			alloys = 100000 #20000
-			influence = 300 #200
+			alloys = 100000
+			influence = 300
 			unity = @giga_tera_start_unity_cost
 		}
 		upkeep = { energy = 5 } 
+	}
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
 	}
 
 	potential = { 
@@ -51,12 +56,23 @@ quasaric_teraforge_0 = {
 	}
 }
 
-quasaric_teraforge_1 = {
-	entity = "quasaric_teraforge_1_entity"
-	construction_entity = "quasaric_teraforge_1_entity"
+hyperquasaric_teraforge_1 = {
+	entity = "hyperquasaric_teraforge_1_entity"
+	construction_entity = "hyperquasaric_teraforge_1_entity"
 	scales_with_planet = no
 	portrait = GFX_megastructure_construction_background
-	upgrade_from = { quasaric_teraforge_0 }
+	upgrade_from = { hyperquasaric_teraforge_0 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+	possible = {
+		from = {
+			has_technology = tech_hyperquasaric_teraforge
+		}
+	}
 
 	build_time = 1800
 	resources = {
@@ -67,10 +83,10 @@ quasaric_teraforge_1 = {
 		}
 		upkeep = {
 			engineering_research = 750
-			minerals = 6300 #20000
+			minerals = 6300
 		}
 
-		produces = { alloys = 3000 }#20000 }
+		produces = { alloys = 3000 }
 	}
 
 	on_build_complete = {
@@ -86,12 +102,23 @@ quasaric_teraforge_1 = {
 	}
 }
 
-quasaric_teraforge_2 = {
-	entity = "quasaric_teraforge_2_entity"
-	construction_entity = "quasaric_teraforge_2_construction_entity"
+hyperquasaric_teraforge_2 = {
+	entity = "hyperquasaric_teraforge_2_entity"
+	construction_entity = "hyperquasaric_teraforge_2_construction_entity"
 	scales_with_planet = no
 	portrait = GFX_megastructure_construction_background
-	upgrade_from = { quasaric_teraforge_1 }
+	upgrade_from = { hyperquasaric_teraforge_1 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+	possible = {
+		from = {
+			has_technology = tech_hyperquasaric_teraforge
+		}
+	}
 
 	build_time = 3600
 	resources = {
@@ -105,7 +132,7 @@ quasaric_teraforge_2 = {
 			minerals = 26400 #40000
 		}
 
-		produces = { alloys = 12000 } #40000 }
+		produces = { alloys = 12000 }
 	}
 
 	on_build_complete = {
@@ -116,12 +143,23 @@ quasaric_teraforge_2 = {
 	}
 }
 
-quasaric_teraforge_3 = {
-	entity = "quasaric_teraforge_3_entity"
-	construction_entity = "quasaric_teraforge_3_construction_entity"
+hyperquasaric_teraforge_3 = {
+	entity = "hyperquasaric_teraforge_3_entity"
+	construction_entity = "hyperquasaric_teraforge_3_construction_entity"
 	scales_with_planet = no
 	portrait = GFX_megastructure_construction_background
-	upgrade_from = { quasaric_teraforge_2 }
+	upgrade_from = { hyperquasaric_teraforge_2 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+	possible = {
+		from = {
+			has_technology = tech_hyperquasaric_teraforge
+		}
+	}
 
 	build_time = 5400
 	resources = {
@@ -132,10 +170,10 @@ quasaric_teraforge_3 = {
 		}
 		upkeep = {
 			engineering_research = 2250
-			minerals = 42000 #60000
+			minerals = 42000
 		}
 
-		produces = { alloys = 20000 }#60000 }
+		produces = { alloys = 20000 }
 	}
 
 	on_build_complete = {
@@ -145,15 +183,24 @@ quasaric_teraforge_3 = {
 	}
 }
 
-quasaric_teraforge_4 = {
-	entity = "quasaric_teraforge_4_entity"
-	construction_entity = "quasaric_teraforge_4_construction_entity"
+hyperquasaric_teraforge_4 = {
+	entity = "hyperquasaric_teraforge_4_entity"
+	construction_entity = "hyperquasaric_teraforge_4_construction_entity"
 	scales_with_planet = no
 	portrait = GFX_megastructure_construction_background
-	upgrade_from = { quasaric_teraforge_3 }
-	prerequisites = { tech_hyperquasaric_teraforge}
-	show_prereqs = no
-	
+	upgrade_from = { hyperquasaric_teraforge_3 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+	possible = {
+		from = {
+			has_technology = tech_hyperquasaric_teraforge
+		}
+	}
+
 	build_time = 7200
 	resources = {
 		category = giga_gigastructures
@@ -168,14 +215,13 @@ quasaric_teraforge_4 = {
 
 		upkeep = {
 			engineering_research = 3000
-			minerals = 73500 #80000
+			minerals = 73500
 		}
 
-		produces = { alloys = 35000 }#80000 }
+		produces = { alloys = 35000 }
 	}
 
 	country_modifier = {
-		#country_alloys_produces_mult = 0.075
 		army_damage_mult = 0.5
 		ship_weapon_damage = 0.15
 		ship_armor_mult = 0.15
@@ -188,44 +234,3 @@ quasaric_teraforge_4 = {
 		from = { country_event = { id = quasarmod_megastage_dialogue.205 } }
 	}
 }
-# quasaric_teraforge_5 = {
-# 	entity = "quasaric_teraforge_5_entity"
-# 	construction_entity = "quasaric_teraforge_5_construction_entity"
-# 	scales_with_planet = no
-# 	portrait = GFX_megastructure_construction_background
-# 	upgrade_from = { quasaric_teraforge_4 }
-# 	prerequisites = { tech_hyperquasaric_megashipyard}
-# 	show_prereqs = no
-#
-# 	build_time = 3600
-# 	resources = {
-# 		category = giga_gigastructures
-# 		cost = {
-# 			alloys = 250000 #10000
-# 			unity = @giga_tera_unity_cost
-# 		}
-# 		upkeep = {
-# 			trigger = { NOT = { has_global_flag = giga_disable_influence_upkeep } }
-# 			influence = 1
-# 		}
-#
-# 		upkeep = {
-# 			engineering_research = 3500
-# 			energy = 75000
-# 		}
-#
-# 		produces = { minerals = 45000 }
-# 	}
-#
-# 	country_modifier = {
-# 		country_naval_cap_add = 3000
-# 		country_resource_max_add = 80000
-# 		starbase_shipyard_build_speed_mult = 1
-# 	}
-#
-# 	on_build_complete = {
-# 		save_event_target_as = giga_system
-# 		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-# 		from = { country_event = { id = quasarmod_megastage_dialogue.1006 } }
-# 	}
-# }

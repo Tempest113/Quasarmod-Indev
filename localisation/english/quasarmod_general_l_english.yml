@@ -75,6 +75,17 @@
  allow_quasarcraft_p5: "Unlocks the Final Stage of the §MQuasarcraft§!, and the ship itself in the Designer."
  desc_quasarcraft_p5: "§RDesign the Quasarcraft BEFORE finishing the final stage!§!"
 
+ ##########
+ # Edicts #
+ ##########
+
+ edict_qsc_quasarcraft_controls: "§MEndsinger Control Panel§!"
+ edict_qsc_quasarcraft_controls_desc: "This Edict allows you to access the §MQuasarcraft's Endsinger§! functions without having to fire the weapon. Useful for using the §BM.I.F.S.§!"
+ edict_qsc_quasarcraft_mifs: "§BEndsinger: Multi-Instance Fire Support§!"
+ edict_qsc_quasarcraft_mifs_desc: "Opens the Endsinger's §BM.I.F.S.§! Menu directly."
+ edict_qsc_quasarcraft_power: "§GEndsinger: Power Level Controls§!"
+ edict_qsc_quasarcraft_power_desc: "Opens the §MEndsinger's§! power level control panel, allowing you to directly change the power of the Endsinger without firing."
+
  ##################
  # Tooltips/Fails #
  ##################
@@ -93,6 +104,7 @@
 
  no_qsc_wormholes: "You cannot dispel your fleet-support wormholes if you do not have any!"
  wormholes_already_out: "You already have deployed a batch of wormholes, dispel them first!"
+ cannot_target_empty_space: "$TRIGGER_FAIL$ Cannot target Empty Space."
 
  #############
  # Modifiers #

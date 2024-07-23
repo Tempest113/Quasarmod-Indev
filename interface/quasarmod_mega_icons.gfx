@@ -10,23 +10,23 @@ spriteType = {
 # Hyperquasaric Teraforge
 
 spriteType = {
-	name = GFX_quasaric_teraforge_0_outliner_icon
+	name = GFX_hyperquasaric_teraforge_0_outliner_icon
 	textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
 	}
 spriteType = {
-	name = GFX_quasaric_teraforge_1_outliner_icon
+	name = GFX_hyperquasaric_teraforge_1_outliner_icon
 	textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
 	}
 spriteType = {
-	name = GFX_quasaric_teraforge_2_outliner_icon
+	name = GFX_hyperquasaric_teraforge_2_outliner_icon
 	textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
 	}
 spriteType = {
-	name = GFX_quasaric_teraforge_3_outliner_icon
+	name = GFX_hyperquasaric_teraforge_3_outliner_icon
 	textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
 	}
 spriteType = {
-	name = GFX_quasaric_teraforge_4_outliner_icon
+	name = GFX_hyperquasaric_teraforge_4_outliner_icon
 	textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
 	}
 spriteType = {

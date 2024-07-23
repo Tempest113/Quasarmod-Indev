@@ -12,8 +12,7 @@ weapon_component_template = {
 	size_restriction = { quasarmod_quasarcraft }
 	should_ai_use = no
 	
-	damage = 500000
-	windup = 0
+	damage = { min = 450000 max = 550000 }
 	total_fire_time = 5
 	range = 1000
 	accuracy = 0.33
@@ -40,8 +39,8 @@ weapon_component_template = {
 	size_restriction = { quasarmod_quasarcraft }
 	should_ai_use = no
 	
-	damage = 15000000
-	windup = 3
+	damage = { min = 15000000 max = 20000000 }
+	windup = { min = 2 max = 5 }
 	total_fire_time = 50
 	shield_damage = 2
 	range = 1000
@@ -74,8 +73,8 @@ weapon_component_template = {
 	
 	should_ai_use = no
 	
-	damage = 25000000
-	windup = 20
+	damage = { min = 20000000 max = 30000000 }
+	windup = { min = 15 max = 25 }
 	total_fire_time = 5
 	range = 1000
 	accuracy = 0.6
@@ -105,9 +104,9 @@ weapon_component_template = {
 
 	use_ship_kill_target = no
 
-	damage = 500000000
+	damage = { min = 450000000 max = 550000000 }
     total_fire_time = 5
-	windup = 15
+	windup = { min = 10 max = 15}
 	range = 1000
 	tracking = 0.8
 	accuracy = 0.8
@@ -116,6 +115,7 @@ weapon_component_template = {
 strike_craft_component_template = {
 	key = "QSC_STRIKE_FORCE"
 	size = LARGE
+	weapon_type = point_defence
 	entity = "qsc_strike_force_entity"
 
 	projectile_gfx = "strike_craft_laser_3"
@@ -134,7 +134,7 @@ strike_craft_component_template = {
 	regeneration_per_day = 0.25
 	launch_time = 0.1
 
-	damage = 500000
+	damage = { min = 450000 max = 550000 }
 	cooldown = 1
 	range = 500
 	engagement_range = 1000
@@ -175,10 +175,10 @@ weapon_component_template = {
 
 	use_ship_kill_target = no
 
-	damage = 50000000000
+	damage = { min = 45000000000 max = 55000000000 }
 	# 50 billion
     total_fire_time = 10
-	windup = 20
+	windup = { min = 15 max = 25 }
 	range = 1000
 	tracking = 1
 	accuracy = 1

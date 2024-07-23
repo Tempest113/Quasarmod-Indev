@@ -27,6 +27,12 @@ quasarcraft_0 = {
 		custom_tooltip = { fail_text = "requires_surveyed_system"							giga_system_is_surveyed = yes }
 	}
 
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = { fail_text = "requires_no_anomaly"					has_anomaly = no }
@@ -82,6 +88,12 @@ quasarcraft_0_alt = {
 		custom_tooltip = { fail_text = "requires_surveyed_system"					giga_system_is_surveyed = yes }
 	}
 
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = { fail_text = "requires_no_anomaly"					has_anomaly = no }
@@ -102,13 +114,14 @@ quasarcraft_0_alt = {
 			set_planet_flag = has_megastructure
 			set_planet_flag = cant_build_here
 			set_planet_flag = cant_target_this_planet
+			set_planet_size = 5
+			set_planet_entity = { entity = "quasar_small_disk_no_jets" }
 		}
 		from = {
 			country_event = { id = quasarmod_megastage_dialogue.401 }	# Notification
 		}
 		fromfrom.planet = {
-			set_planet_size = 5
-			set_planet_entity = { entity = "quasar_small_disk_no_jets" }
+
 		}
 
 	}
@@ -137,6 +150,11 @@ quasarcraft_1 = {
 
 	prerequisites = {
 		tech_quasarcraft_2
+	}
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
 	}
 
 
@@ -175,6 +193,12 @@ quasarcraft_2 = {
 		tech_quasarcraft_3
 	}
 
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+
 	on_build_complete = {
         from = {
 			country_event = { id = quasarmod_megastage_dialogue.403 }	# Notification
@@ -210,6 +234,10 @@ quasarcraft_3 = {
 		tech_quasarcraft_4
 	}
 
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
 
 	on_build_complete = {
         from = {
@@ -244,6 +272,11 @@ quasarcraft_4 = {
 
 	prerequisites = {
 		tech_quasarcraft_5
+	}
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
 	}
 
 	on_build_complete = {
@@ -285,6 +318,10 @@ quasarcraft_5 = {
 		tech_quasarcraft_6
 	}
 
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
 
 	on_build_complete = {
 		star = { change_pc = pc_giga_empty_space }

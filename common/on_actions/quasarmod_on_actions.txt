@@ -12,7 +12,7 @@ on_monthly_pulse_country = {
      events = { quasarmod_utility.3 }
 }
 
-on_destroy_planet_with_endsinger = {
+on_destroy_planet_with_QSC_ENDSINGER = {
      events = {
           qsc_endsinger.1
      }

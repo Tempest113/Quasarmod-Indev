@@ -10,6 +10,11 @@ matrioshka_brain_0_core = {
     show_prereqs = no
     portrait = GFX_megastructure_construction_background
 
+    outliner_trigger = {
+        exists = owner
+        NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+    }
+
     build_time = 360
     resources = {
         category = giga_gigastructures
@@ -59,6 +64,17 @@ matrioshka_brain_1_core = {
     portrait = GFX_megastructure_construction_background
     upgrade_from = { matrioshka_brain_0_core }
 
+    outliner_trigger = {
+        exists = owner
+        NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+    }
+
+    possible = {
+        from = {
+            has_technology = tech_core_mbrain
+        }
+    }
+
     build_time = 1800
     resources = {
         category = giga_gigastructures
@@ -95,6 +111,17 @@ matrioshka_brain_2_core = {
     portrait = GFX_megastructure_construction_background
     upgrade_from = { matrioshka_brain_1_core }
 
+    outliner_trigger = {
+        exists = owner
+        NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+    }
+
+    possible = {
+        from = {
+            has_technology = tech_core_mbrain
+        }
+    }
+
     build_time = 3600
     resources = {
         category = giga_gigastructures
@@ -125,6 +152,16 @@ matrioshka_brain_3_core = {
     portrait = GFX_megastructure_construction_background
     upgrade_from = { matrioshka_brain_2_core }
 
+    outliner_trigger = {
+        exists = owner
+        NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+    }
+
+    possible = {
+        from = {
+            has_technology = tech_core_mbrain
+        }
+    }
 
     build_time = 5400
     resources = {
@@ -161,6 +198,17 @@ matrioshka_brain_4_core = {
     scales_with_planet = no
     portrait = GFX_megastructure_construction_background
     upgrade_from = { matrioshka_brain_3_core }
+
+    outliner_trigger = {
+        exists = owner
+        NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+    }
+
+    possible = {
+        from = {
+            has_technology = tech_core_mbrain
+        }
+    }
 
     build_time = 8100
     resources = {
@@ -199,6 +247,17 @@ matrioshka_brain_5_core = {
     upgrade_from = { matrioshka_brain_4_core }
     prerequisites = { tech_core_mbrain }
     show_prereqs = no
+
+    outliner_trigger = {
+        exists = owner
+        NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+    }
+
+    possible = {
+        from = {
+            has_technology = tech_core_mbrain
+        }
+    }
 
     build_time = 10800
     resources = {
