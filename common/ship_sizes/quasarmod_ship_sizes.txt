@@ -1,3 +1,4 @@
+#I genuinely have zero fucking idea why this doesn't want to show the skull and systemcraft icon when i've eveb tested with identical code to the old code except for 1 change, the error log is empty and nothing is calling the old code
 quasarmod_quasarcraft = {
 	graphical_culture = no
 	entity = "qsc_01_ship_entity"
@@ -6,7 +7,8 @@ quasarmod_quasarcraft = {
 	rotation_speed = 0.1
 	collision_radius = 256
 	formation_priority = 256
-	combat_disengage_chance = -42.69
+	combat_disengage_chance = 0
+	default_behavior = quasarcraft
 	modifier = {
 		ship_hull_regen_add_static = 22500000
 		ship_armor_regen_add_static = 22500000
@@ -15,6 +17,7 @@ quasarmod_quasarcraft = {
 		ship_armor_add = 200000000
 		ship_shield_add = 200000000
 		ship_starting_experience_add = 5000
+		ship_cloaking_strength_add = -10000
 	}
 	max_hitpoints = 200000000
 	size_multiplier = 500
@@ -55,7 +58,6 @@ quasarmod_quasarcraft = {
 	resources = {
 		category = ships
 		produces = {
-			sr_solar_energy = 25
 			sr_magical_neutronium = 50
 			sr_stellar_plasma = 25
 			energy = 12500

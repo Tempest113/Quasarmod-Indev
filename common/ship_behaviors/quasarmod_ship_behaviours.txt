@@ -23,7 +23,7 @@ ship_behavior = {
 	desc = "QUASARCRAFT_BEHAVIOR_DESC"
 }
 
-#why the fuck was this even here?
+#why the hell was this even here?
 
 # ship_behavior = {
 # 	name = "stellarite_default"

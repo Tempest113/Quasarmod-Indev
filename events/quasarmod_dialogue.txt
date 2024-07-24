@@ -1,12 +1,10 @@
 namespace = quasarmod_dialogue
-
 # eventname.10xxx = injector related event
-
 # eventname.20xxx = harvester related event
 
-##################################
-# Black Hole Manipulation Notifs #
-##################################
+###############################
+### General Dialogue Events ###
+###############################
 
 # Injection Begun
 situation_event = {
@@ -64,6 +62,17 @@ country_event = {
 	option = {
 		name = quasarmod_dialogue.202.a
 	}
+}
+
+# Quasarcraft Destroyed (How on Earth?)
+country_event = {
+	id = quasarmod_dialogue.9
+	title = "quasarmod_dialogue.9.name"
+	desc = "quasarmod_dialogue.9.desc"
+	picture = GFX_evt_supernova
+	show_sound = event_dyson_sphere_build_complete
+	is_triggered_only = yes
+	option = { name = "quasarmod_dialogue.9.a" }
 }
 
 ###########################################

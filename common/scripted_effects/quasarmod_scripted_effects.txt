@@ -1,5 +1,5 @@
 
-quasarmod_quasarcraft = {
+quasarcraft_spawn = {
     set_global_flag = giga_quasarcraft_constructed
 	create_fleet = {
 		name = "The Quasarcraft"
@@ -22,9 +22,9 @@ quasarmod_quasarcraft = {
 					}
 				}
 			}
-            }
 		}
 	}
+}
 
 qsc_wormhole_spawn = {
 	change_variable = {
@@ -36,6 +36,7 @@ qsc_wormhole_spawn = {
 		settings = {
 			spawn_debris = no
 			is_boss = yes
+			can_change_composition = no
 		}
 		effect = {
 			set_fleet_flag = qsc_wormhole_fleet

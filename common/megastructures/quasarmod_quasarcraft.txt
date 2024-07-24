@@ -330,7 +330,7 @@ quasarcraft_5 = {
 		    country_event = { id = quasarmod_megastage_dialogue.406 }
 		}
 		fromfrom = {
-			quasarmod_quasarcraft = yes
+			quasarcraft_spawn = yes
 		}
 		last_created_fleet = { set_location = fromfrom }
 		remove_megastructure = fromfrom

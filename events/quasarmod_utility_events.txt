@@ -248,7 +248,7 @@ ship_event = {
         save_global_event_target_as = quasarcraft_owner
         set_variable = {
             which = qsc_ship_life_count
-            value = 750
+            value = 200
         }
     }
 }
@@ -291,7 +291,7 @@ ship_event = {
             }
             destroy_ship = ROOT
             root.owner = {
-                country_event = { id = quasarmod_utility.9 }
+                country_event = { id = quasarmod_dialogue.9 }
             }
         }
     }
@@ -313,15 +313,4 @@ ship_event = {
             }
         }
     }
-}
-
-# Quasarcraft Destroyed (How on Earth?)
-country_event = {
-    id = quasarmod_utility.9
-    title = "quasarmod_utility.9.name"
-    desc = "quasarmod_utility.9.desc"
-    picture = GFX_evt_supernova
-    show_sound = event_dyson_sphere_build_complete
-    is_triggered_only = yes
-    option = { name = "quasarmod_utility.9.a" }
 }
