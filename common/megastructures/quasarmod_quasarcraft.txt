@@ -1,4 +1,4 @@
-#Redo QSO
+#QSO Upgrade
 quasarcraft_0 = {
 	entity = "quasarcraft_0_entity"
 	construction_entity = "quasarcraft_0_construction_entity"
@@ -60,6 +60,7 @@ quasarcraft_0 = {
 	}
 }
 
+#From Scratch
 quasarcraft_0_alt = {
 	entity = "quasarcraft_0_entity"
 	construction_entity = "quasarcraft_0_construction_entity"

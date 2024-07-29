@@ -1,4 +1,4 @@
-#I genuinely have zero fucking idea why this doesn't want to show the skull and systemcraft icon when i've eveb tested with identical code to the old code except for 1 change, the error log is empty and nothing is calling the old code
+#I genuinely have zero fucking idea why this doesn't want to show the skull and systemcraft icon when i've even tested with identical code to the old code except for 1 change, the error log is empty and nothing is calling the old code
 quasarmod_quasarcraft = {
 	graphical_culture = no
 	entity = "qsc_01_ship_entity"
@@ -22,7 +22,6 @@ quasarmod_quasarcraft = {
 	max_hitpoints = 200000000
 	size_multiplier = 500
 	fleet_slot_size = 256
-
 	section_slots = {
 		"main1" =			    { locator = "root" }
 		"main2" =				{ locator = "root" }
@@ -31,13 +30,12 @@ quasarmod_quasarcraft = {
 		"jupiters" =				{ locator = "root" }
 		"celfab" =	            { locator = "root" }
 	}
-
 	num_target_locators = 0
 	icon = ship_size_atk_system
 	ship_class_icon_frame = 28
 	prerequisites = { "tech_quasarcraft_6" }
 	enable_default_design = yes
-	class = shipclass_military
+	class = shipclass_military_special
 	can_disable = yes
 	can_have_federation_design = no
 	possible_construction = { always = no }

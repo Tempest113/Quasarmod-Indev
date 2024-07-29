@@ -8,7 +8,7 @@
 
  ap_hyperquasaric_megaconstruction: "Hyperquasaric Megaconstruction"
  ap_hyperquasaric_megaconstruction_desc: "The size and scale of our ambitions are rapidly outgrowing our ability to achieve them, we must reach a level of resource exploitation larger than has ever been seen in the history of our galaxy if we wish to ensure our unending prosperity."
- ap_hyperquasaric_megaconstruction_add_research: "Research options gained:\n£physics_research£§Y$tech_smbh_manipulator$§!\n£physics_research£§Y$tech_core_mbrain$§!\n£society_research£§Y$tech_hyperquasaric_megashipyard$§!\n£engineering_research£§Y$tech_hyperquasaric_teraforge$§!"
+ ap_hyperquasaric_megaconstruction_add_research: "Research options gained:\n£physics_research£§Y$tech_smbh_manipulator$§!\n£physics_research£§Y$tech_core_mbrain$§!\n£society_research£§Y$tech_hyperquasaric_megashipyard$§!\n£society_research£§Y$tech_quasarcraft_1$\n£engineering_research£§Y$tech_hyperquasaric_teraforge$§!"
 
  ##############
  # Technology #
@@ -46,14 +46,14 @@
  # Quasarcraft
 
  tech_quasarcraft_1: "An Armament of Galactic Proportions"
- tech_quasarcraft_1_desc: "With the advent of mightier foes, even such things like the Systemcraft are no longer strong enough. Our finest minds have thus began dreaming, and it is time to create a weapon to not only pierce the heavens, but to dominate the heavens. So begins the §MQuasarcraft Project.§!"
+ tech_quasarcraft_1_desc: "With the advent of mightier foes, even our most powerful ships are no longer strong enough. Our finest minds have thus began dreaming, we shall create a weapon to pierce the heavens. So begins the §MQuasarcraft Project.§!"
  allow_quasarcraft_p0: "Unlocks the foundation of the §MQuasarcraft§!"
- desc_quasarcraft_p0: "The Quasi-Stellar Obliterator can now be refitted to suit the construction of the Quasarcraft."
+ desc_quasarcraft_p0: "We can now build the $quasarcraft_0$"
 
  tech_quasarcraft_2: "Quasaric Fortress Core"
  tech_quasarcraft_2_desc: "To lay the foundation upon which we will build the ultimate armament, we must first tear down the old. By refitting our §MQuasi-Stellar Obliterator§!, we can create not only a more defended facility, but an impenetrable fortress, a fully functional battlestation."
  allow_quasarcraft_p1: "Unlocks the First Stage of the §MQuasarcraft§!"
- desc_quasarcraft_p1: "Construction can commence on refitting the core of the QS-O."
+ desc_quasarcraft_p1: "The $quasarcraft_1$ can now be constructed."
 
  tech_quasarcraft_3: "Galactic Halo"
  tech_quasarcraft_3_desc: "Our core already has great defence against enemy attacks, but we must also take into account our offense. To this effect, a great myriad of the strongest weaponry we can envision will be fitted onto a grand ring surrounding the core. A halo, if one wills."
@@ -66,7 +66,7 @@
  desc_quasarcraft_p3: "The Halo can now be fitted with its armaments."
 
  tech_quasarcraft_5: "Quasaric Event Horizon Offsetting"
- tech_quasarcraft_5_desc: "Now that all of the main armaments have been installed, the question arises, 'How are we supposed to be able to transport such mass across the galaxy?' The answer lies in the past - the §HEvent Horizen Offset Facility§!. Using advancements made in both fields, we will construct a gigastructural EHOF on the back of the §MQuasarcraft§!, which will expand wormholes to allow the mobile terastructure to 'jump' immense distances."
+ tech_quasarcraft_5_desc: "Now that all of the main armaments have been installed, the question arises, 'How are we supposed to be able to transport such mass across the galaxy?' The answer lies in the past - the §HEvent Horizon Offset Facility§!. Using advancements made in both fields, we will construct a gigastructural EHOF on the back of the §MQuasarcraft§!, which will expand wormholes to allow the mobile terastructure to 'jump' immense distances."
  allow_quasarcraft_p4: "Unlocks the Fourth Stage of the §MQuasarcraft§!"
  desc_quasarcraft_p4: "The Q-EHOF can now be installed onto the §MQuasarcraft§!"
 

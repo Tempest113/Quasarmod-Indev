@@ -17,7 +17,7 @@ tech_hyperquasaric_teraforge = {
 }
 
 tech_hyperquasaric_megashipyard = {
-	cost = @giga_tier7cost3
+	cost = @giga_tier8cost1
 	area = society
 	tier = 5
 	category = { military_theory }
@@ -70,21 +70,22 @@ tech_core_mbrain ={
 	}
 }
 
-
 # Quasarcraft Techs
 tech_quasarcraft_1 = {
-	cost = 1000000
-	area = physics
+	cost = @giga_tier8cost1
+	area = society
 	tier = 5
-	category = { particles }
+	category = { military_theory }
 	is_rare = yes
 	weight = 0
 	prereqfor_desc = {
-		custom = {
-			title = "allow_quasarcraft_p0"
-			desc = "desc_quasarcraft_p0"
-		}
+		custom = { title = "allow_quasarcraft_p0" desc = "desc_quasarcraft_p0" }
 	}
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+	}
+
 	ai_weight = {
 		factor = 30
 		modifier = {
@@ -97,7 +98,7 @@ tech_quasarcraft_1 = {
 }
 
 tech_quasarcraft_2 = {
-	cost = 2500000
+	cost = @giga_tier8cost1
 	area = physics
 	tier = 5
 	category = { particles }
@@ -109,7 +110,12 @@ tech_quasarcraft_2 = {
 		hide_prereq_for_desc = component
 		hide_prereq_for_desc = feature
 		hide_prereq_for_desc = resource
-		custom = { title = "allow_quasarcraft_p1"	desc = "desc_quasarcraft_p1" }
+		custom = { title = "allow_quasarcraft_p1" desc = "desc_quasarcraft_p1" }
+	}
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		has_technology = tech_quasarcraft_1
 	}
 
 	weight_modifier = {
@@ -146,10 +152,10 @@ tech_quasarcraft_2 = {
 }
 
 tech_quasarcraft_3 = {
-	cost = 5000000
-	area = physics
+	cost = @giga_tier8cost2
+	area = engineering
 	tier = 5
-	category = { particles }
+	category = { voidcraft }
 	is_rare = yes
 	prerequisites = { "tech_quasarcraft_2" }
 	weight = 100
@@ -159,6 +165,11 @@ tech_quasarcraft_3 = {
 		hide_prereq_for_desc = feature
 		hide_prereq_for_desc = resource
 		custom = { title = "allow_quasarcraft_p2"	desc = "desc_quasarcraft_p2" }
+	}
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		has_technology = tech_quasarcraft_2
 	}
 
 	weight_modifier = {
@@ -194,7 +205,7 @@ tech_quasarcraft_3 = {
 }
 
 tech_quasarcraft_4 = {
-	cost = 7500000
+	cost = @giga_tier8cost2
 	area = physics
 	tier = 5
 	category = { particles }
@@ -207,6 +218,11 @@ tech_quasarcraft_4 = {
 		hide_prereq_for_desc = feature
 		hide_prereq_for_desc = resource
 		custom = { title = "allow_quasarcraft_p3"	desc = "desc_quasarcraft_p3" }
+	}
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		has_technology = tech_quasarcraft_3
 	}
 
 	weight_modifier = {
@@ -243,16 +259,21 @@ tech_quasarcraft_4 = {
 }
 
 tech_quasarcraft_5 = {
-	cost = 15000000
-	area = engineering
+	cost = @giga_tier8cost3
+	area = physics
 	tier = 5
-	category = { voidcraft }
+	category = { field_manipulation }
 	is_rare = yes
 	prerequisites = { "tech_quasarcraft_4" }
 	weight = 100
 
 	prereqfor_desc = {
 		custom = { title = "allow_quasarcraft_p4"	desc = "desc_quasarcraft_p4" }
+	}
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		has_technology = tech_quasarcraft_4
 	}
 
 	weight_modifier = {
@@ -289,13 +310,18 @@ tech_quasarcraft_5 = {
 }
 
 tech_quasarcraft_6 = {
-	cost = 15000000
+	cost = @giga_tier8cost3
 	area = engineering
 	tier = 5
 	category = { voidcraft }
 	is_rare = yes
 	prerequisites = { "tech_quasarcraft_5" }
 	weight = 100
+
+	potential = {
+		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		has_technology = tech_quasarcraft_5
+	}
 
 	prereqfor_desc = {
 		hide_prereq_for_desc = ship
