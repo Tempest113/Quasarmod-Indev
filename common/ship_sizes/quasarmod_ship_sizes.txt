@@ -35,7 +35,7 @@ quasarmod_quasarcraft = {
 	ship_class_icon_frame = 28
 	prerequisites = { "tech_quasarcraft_6" }
 	enable_default_design = yes
-	class = shipclass_military_special
+	class = shipclass_military
 	can_disable = yes
 	can_have_federation_design = no
 	possible_construction = { always = no }
