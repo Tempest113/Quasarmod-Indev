@@ -7,7 +7,6 @@ planet_has_quasarmod_teraforge_uplink = {
         has_building = building_teraforge_uplink_base
         has_building = building_teraforge_uplink_alloys
         has_building = building_teraforge_uplink_consumer_goods
-
     }
 }
 
@@ -34,6 +33,7 @@ can_destroy_planet_with_QSC_ENDSINGER = {
         not = {
             planet = {
                 giga_is_empty_space = yes
+                merg_is_empty_space = yes
             }
         }
     }
