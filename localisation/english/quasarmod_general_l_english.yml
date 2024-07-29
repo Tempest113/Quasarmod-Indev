@@ -46,41 +46,41 @@
  # Quasarcraft
 
  tech_quasarcraft_1: "An Armament of Galactic Proportions"
- tech_quasarcraft_1_desc: "With the advent of mightier foes, even our most powerful ships are no longer strong enough. Our finest minds have thus began dreaming, we shall create a weapon to pierce the heavens. So begins the §MQuasarcraft Project.§!"
- allow_quasarcraft_p0: "Unlocks the foundation of the §MQuasarcraft§!"
+ tech_quasarcraft_1_desc: "With the advent of mightier foes, even our most powerful ships are no longer strong enough. Our finest minds have thus began dreaming, we shall create a weapon to pierce the heavens. So begins the Quasarcraft Project."
+ allow_quasarcraft_p0: "Unlocks the foundation of the Quasarcraft"
  desc_quasarcraft_p0: "We can now build the $quasarcraft_0$"
 
  tech_quasarcraft_2: "Quasaric Fortress Core"
- tech_quasarcraft_2_desc: "To lay the foundation upon which we will build the ultimate armament, we must first tear down the old. By refitting our §MQuasi-Stellar Obliterator§!, we can create not only a more defended facility, but an impenetrable fortress, a fully functional battlestation."
- allow_quasarcraft_p1: "Unlocks the First Stage of the §MQuasarcraft§!"
+ tech_quasarcraft_2_desc: "To lay the foundation upon which we will build the ultimate armament, we must first tear down the old. By refitting our Quasi-Stellar Obliterator, we can create not only a more defended facility, but an impenetrable fortress, a fully functional battlestation."
+ allow_quasarcraft_p1: "Unlocks the First Stage of the Quasarcraft"
  desc_quasarcraft_p1: "The $quasarcraft_1$ can now be constructed."
 
  tech_quasarcraft_3: "Galactic Halo"
  tech_quasarcraft_3_desc: "Our core already has great defence against enemy attacks, but we must also take into account our offense. To this effect, a great myriad of the strongest weaponry we can envision will be fitted onto a grand ring surrounding the core. A halo, if one wills."
- allow_quasarcraft_p2: "Unlocks the Second Stage of the §MQuasarcraft§!"
+ allow_quasarcraft_p2: "Unlocks the Second Stage of the Quasarcraft"
  desc_quasarcraft_p2: "The Halo of the Quasarcraft can now be constructed."
 
  tech_quasarcraft_4: "Trillion Suns Wrath"
- tech_quasarcraft_4_desc: "The development of the weaponry for the §MQuasarcraft§! has been staggering, in terms of the raw power available. Our great minds have thus designed several truly gargantuan weapons that use the enhanced power of the Quasar, even retrofitting the old QSO weapons into something anew, and creating an incredibly powerful prototype component blueprint known only as... §RThe Endsinger.§!"
- allow_quasarcraft_p3: "Unlocks the Third Stage of the §MQuasarcraft§!"
+ tech_quasarcraft_4_desc: "The development of the weaponry for the Quasarcraft has been staggering, in terms of the raw power available. Our great minds have thus designed several truly gargantuan weapons that use the enhanced power of the Quasar, even retrofitting the old QSO weapons into something anew, and creating an incredibly powerful prototype component blueprint known only as... §RThe Endsinger.§!"
+ allow_quasarcraft_p3: "Unlocks the Third Stage of the Quasarcraft"
  desc_quasarcraft_p3: "The Halo can now be fitted with its armaments."
 
  tech_quasarcraft_5: "Quasaric Event Horizon Offsetting"
- tech_quasarcraft_5_desc: "Now that all of the main armaments have been installed, the question arises, 'How are we supposed to be able to transport such mass across the galaxy?' The answer lies in the past - the §HEvent Horizon Offset Facility§!. Using advancements made in both fields, we will construct a gigastructural EHOF on the back of the §MQuasarcraft§!, which will expand wormholes to allow the mobile terastructure to 'jump' immense distances."
- allow_quasarcraft_p4: "Unlocks the Fourth Stage of the §MQuasarcraft§!"
- desc_quasarcraft_p4: "The Q-EHOF can now be installed onto the §MQuasarcraft§!"
+ tech_quasarcraft_5_desc: "Now that all of the main armaments have been installed, the question arises, 'How are we supposed to be able to transport such mass across the galaxy?' The answer lies in the past - the §HEvent Horizon Offset Facility§!. Using advancements made in both fields, we will construct a gigastructural EHOF on the back of the Quasarcraft, which will expand wormholes to allow the mobile terastructure to 'jump' immense distances."
+ allow_quasarcraft_p4: "Unlocks the Fourth Stage of the Quasarcraft"
+ desc_quasarcraft_p4: "The Q-EHOF can now be installed onto the Quasarcraft"
 
- tech_quasarcraft_6: "§RThe Gargantuan Quasarcraft§!"
- tech_quasarcraft_6_desc: "The final designs and necessary facilities of the §MQuasarcraft§! are being finalized, and now the blueprint becomes available to us to design as we please. Engineers can barely contain their excitement, for the dream is almost fully realized."
- allow_quasarcraft_p5: "Unlocks the Final Stage of the §MQuasarcraft§!, and the ship itself in the Designer."
+ tech_quasarcraft_6: "A Weapon to Pierce The Heavens"
+ tech_quasarcraft_6_desc: "The final designs and necessary facilities of the Quasarcraft are being finalized, and now the blueprint becomes available to us to design as we please. Engineers can barely contain their excitement, for the dream is almost fully realized."
+ allow_quasarcraft_p5: "Unlocks the Final Stage of the Quasarcraft, and the ship itself in the Designer."
  desc_quasarcraft_p5: "§RDesign the Quasarcraft BEFORE finishing the final stage!§!"
 
  ##########
  # Edicts #
  ##########
 
- edict_qsc_quasarcraft_controls: "§MEndsinger Control Panel§!"
- edict_qsc_quasarcraft_controls_desc: "This Edict allows you to access the §MQuasarcraft's Endsinger§! functions without having to fire the weapon. Useful for using the §BM.I.F.S.§!"
+ edict_qsc_quasarcraft_controls: "Endsinger Control Panel"
+ edict_qsc_quasarcraft_controls_desc: "This Edict allows you to access the Quasarcraft's §MEndsinger§! functions without having to fire the weapon. Useful for using the §BM.I.F.S.§!"
  edict_qsc_quasarcraft_mifs: "§BEndsinger: Multi-Instance Fire Support§!"
  edict_qsc_quasarcraft_mifs_desc: "Opens the Endsinger's §BM.I.F.S.§! Menu directly."
  edict_qsc_quasarcraft_power: "§GEndsinger: Power Level Controls§!"

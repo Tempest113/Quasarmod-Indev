@@ -152,10 +152,11 @@ planet_event = {
                         }
                     }
                     solar_system = {
+                        # set_star_flag = giga_core_01
+                        # set_star_flag = giga_birch_core
                         remove_star_flag = giga_core_02
                         remove_star_flag = giga_qso_core
-                        set_star_flag = giga_core_01
-                        set_star_flag = giga_birch_core
+
                     }
                 }
             }
@@ -220,8 +221,8 @@ planet_event = {
                         }
                     }
                     solar_system = {
-                        set_star_flag = giga_core_02
-                        set_star_flag = giga_qso_core
+                        # set_star_flag = giga_core_02
+                        # set_star_flag = giga_qso_core
                         remove_star_flag = giga_core_01
                         remove_star_flag = giga_birch_core
                     }

@@ -106,11 +106,11 @@
  # Gargantuan Quasarcraft
 
  giga_qsc_dialog.2801.name: "Galactic Warfare"
- giga_qsc_dialog.2801.desc: "Ever since the completion of the §HQuasi-Stellar Obliterator§!, the scale of the horrors we face has only gotten greater. \n\nHelpless were we to watch as powers beyond our home 'land' became so great that even our stop-gap upgrades to things such as the §HSystemcraft§! became nought more than ants against the tide.\n\n§RNo longer.§!\n\nOur very brightest minds have dreamt up something far grander than anything devised before. Something spoken of like a myth, a legend. But now... blueprints are being drafted. For nothing other than what is currently dubbed:\n\n§MThe Gargantuan Quasarcraft!§!"
+ giga_qsc_dialog.2801.desc: "Ever since the completion of the §HQuasi-Stellar Obliterator§!, the scale of the horrors we face has only gotten greater. \n\nHelpless were we to watch as powers beyond our home 'land' became so great that even our stop-gap upgrades to things such as the §HSystemcraft§! became nought more than ants against the tide.\n\n§RNo longer.§!\n\nOur very brightest minds have dreamt up something far grander than anything devised before. Something spoken of like a myth, a legend. But now... blueprints are being drafted. For nothing other than what is currently dubbed:\n\n§RThe Gargantuan Quasarcraft§!"
  giga_qsc_dialog.2801.a: "And thus begins our mightiest ambition."
 
  quasarmod_megastage_dialogue.401.name: "The Great Ambition"
- quasarmod_megastage_dialogue.401.desc: "We have just finished the construction site of what is most certainly our mightiest warship yet - §MThe Quasarcraft!§!\n\nThough once a pipe dream, this foundation is the first step to making that dream reality."
+ quasarmod_megastage_dialogue.401.desc: "We have just finished the construction site of what is most certainly our mightiest warship yet - The Quasarcraft\n\nThough once a pipe dream, this foundation is the first step to making that dream reality."
  quasarmod_megastage_dialogue.401.a: "Let the great ambition be fulfilled, to the end!"
 
  quasarmod_megastage_dialogue.402.name: "The Galactic Heart"
