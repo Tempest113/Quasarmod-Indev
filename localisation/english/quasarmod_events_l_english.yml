@@ -105,16 +105,12 @@
 
  # Gargantuan Quasarcraft
 
- giga_qsc_dialog.2801.name: "Galactic Warfare"
- giga_qsc_dialog.2801.desc: "Ever since the completion of the §HQuasi-Stellar Obliterator§!, the scale of the horrors we face has only gotten greater. \n\nHelpless were we to watch as powers beyond our home 'land' became so great that even our stop-gap upgrades to things such as the §HSystemcraft§! became nought more than ants against the tide.\n\n§RNo longer.§!\n\nOur very brightest minds have dreamt up something far grander than anything devised before. Something spoken of like a myth, a legend. But now... blueprints are being drafted. For nothing other than what is currently dubbed:\n\n§RThe Gargantuan Quasarcraft§!"
- giga_qsc_dialog.2801.a: "And thus begins our mightiest ambition."
-
  quasarmod_megastage_dialogue.401.name: "The Great Ambition"
  quasarmod_megastage_dialogue.401.desc: "We have just finished the construction site of what is most certainly our mightiest warship yet - The Quasarcraft\n\nThough once a pipe dream, this foundation is the first step to making that dream reality."
  quasarmod_megastage_dialogue.401.a: "Let the great ambition be fulfilled, to the end!"
 
  quasarmod_megastage_dialogue.402.name: "The Galactic Heart"
- quasarmod_megastage_dialogue.402.desc: "The central core of the §HQuasi-Stellar Obliterator§! has been refitted, not only to provide even more power to the future platform, but to increase optimization of both the Obliterator's own processes and our future additions."
+ quasarmod_megastage_dialogue.402.desc: "The central core of the §H$quasarmod_quasarcraft$§! has been completed, it will soon play host to the most powerful weapons platform to ever exist."
  quasarmod_megastage_dialogue.402.a: "And thus the great heart of the galaxy beats within in our grasp."
 
  quasarmod_megastage_dialogue.403.name: "The Gargantuan Ring"
@@ -122,7 +118,7 @@
  quasarmod_megastage_dialogue.403.a: "Power! Unlimited Power!!!"
 
  quasarmod_megastage_dialogue.404.name: "One-Ringed Angel"
- quasarmod_megastage_dialogue.404.desc: "The power of a trillion suns, washing away the stains of time... Or, to put it more bluntly: Our enemies. The weaponry onboard the §MQuasarcraft§! dwarfs anything built before it."
+ quasarmod_megastage_dialogue.404.desc: "The power of a trillion suns, washing away the stains of time... Or, to put it more bluntly: Our enemies. The weaponry onboard the Quasarcraft dwarfs anything built before it."
  quasarmod_megastage_dialogue.404.a: "In the end, they won't even matter."
 
  quasarmod_megastage_dialogue.405.name: "Providence"
@@ -130,7 +126,7 @@
  quasarmod_megastage_dialogue.405.a: "Our foes will be just a burning memory."
 
  quasarmod_megastage_dialogue.406.name: "§MThe Gargantuan of the Heavens§!"
- quasarmod_megastage_dialogue.406.desc: "After all this time, it is finally complete. The greatest weapon the galaxy has ever known.\n\n §MThe Gargantuan Quasarcraft.§!\n\nIt has shifted from its position in the galactic core, the feed of the vessel's first movement bringing tears to our engineer's eyes. It is said the mountains don't give back what they take, but this 'mountain' we have surpassed has instilled a ferocious pride throughout our empire. Admirals are already clamoring for the fabled spot of the Quasaric Commander. \n\nThe §MQuasarcraft§! is on standby, awaiting orders."
+ quasarmod_megastage_dialogue.406.desc: "After all this time, it is finally complete. The greatest weapon the galaxy has ever known.\n\n The Gargantuan Quasarcraft.\n\nIt has shifted from its position in the galactic core, the feed of the vessel's first movement bringing tears to our engineer's eyes. It is said the mountains don't give back what they take, but this 'mountain' we have surpassed has instilled a ferocious pride throughout our empire. Admirals are already clamoring for the fabled spot of the Quasaric Commander. \n\nThe Quasarcraft is on standby, awaiting orders."
  quasarmod_megastage_dialogue.406.a: "We are the Alpha and the Omega, your beginning and your end."
 
  # Quasarcraft Destroyed
@@ -149,7 +145,7 @@
  qsc_endsinger.7: "§GPower Level Control Panel§!"
  qsc_endsinger.8: "§HExit§!"
  qsc_endsinger.400.title: "§BMulti-Instance Fire Support§!"
- qsc_endsinger.400.desc: "You have selected the §BMulti-Instance Fire Support§! feature. This will split the output of the hyperweapon through several wormholes that may be positioned as you choose. Although the power of the §YQuasaric EHOF§! means these wormholes have no expiry, this also means that the §MQuasarcraft§! will be severely hampered in terms of firepower for the time being. You may use this selection screen to confirm or dispel existing wormholes."
+ qsc_endsinger.400.desc: "You have selected the §BMulti-Instance Fire Support§! feature. This will split the output of the hyperweapon through several wormholes that may be positioned as you choose. Although the power of the §YQuasaric EHOF§! means these wormholes have no expiry, this also means that the Quasarcraft will be severely hampered in terms of firepower for the time being. You may use this selection screen to confirm or dispel existing wormholes."
  qsc_endsinger.401: "§BConfirm M.I.F.S.§!"
  qsc_endsinger.402: "§RDispel Existing Wormholes§!"
  qsc_endsinger.403: "§HReturn to Scale Selection§!"

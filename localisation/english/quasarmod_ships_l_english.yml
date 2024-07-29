@@ -58,7 +58,6 @@
  QSC_AURA_DEATHFIELD: "Quasaric Presence"
  QSC_AURA_DEATHFIELD_DESC: "The aspects of the Quasarcraft's immense size can quite simply be used to crush less resilient vessels with emitted ambient energy and manipulated gravity."
 
-
  FLEETORDER_DESTROY_PLANET_WITH_QSC_ENDSINGER: "Singing the end of $PLANET|Y$"
  MESSAGE_DESC_FOR_QSC_ENDSINGER: "$PLANET|Y$'s existence was ended by"
  QSC_ENDSINGER_ACTION: "Fire Endsinger"

@@ -314,6 +314,7 @@ tech_quasarcraft_6 = {
 	area = engineering
 	tier = 5
 	category = { voidcraft }
+	is_dangerous = yes
 	is_rare = yes
 	prerequisites = { "tech_quasarcraft_5" }
 	weight = 100
@@ -360,7 +361,7 @@ tech_quasarcraft_6 = {
 			factor = 50.25
 			has_trait_in_council = {
 			TRAIT = leader_trait_expertise_voidcraft
-		}
+			}
 		}
 		modifier = { factor = 0 has_utopia = no }
 	}

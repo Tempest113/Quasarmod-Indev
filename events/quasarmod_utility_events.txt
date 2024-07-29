@@ -108,59 +108,7 @@ planet_event = {
     hide_window = yes
 
     immediate = {
-        change_pc = pc_core_black_hole
-        solar_system = {
-            set_star_class = sc_birch
-            every_system_planet = {
-                remove_planet_flag = has_megastructure
-
-                limit = {
-                    nor = {
-                        is_planet_class = pc_core_quasar
-                        is_planet_class = pc_core_black_hole
-                    }
-                }
-                change_pc = pc_barren
-            }
-
-            every_system_megastructure = {
-                limit = {
-                    nor = {
-                        is_megastructure_type = lgate_base
-                        is_megastructure_type = gateway_final
-                        is_megastructure_type = gateway_restored
-                        is_megastructure_type = ehof_pgate_gateway
-                        is_megastructure_type = hyper_relay
-                        is_megastructure_type = hyper_relay_restored
-                    }
-                }
-                remove_megastructure = this
-            }
-
-            star = {
-                giga_clear_has_mega_flag = yes
-                change_pc = pc_core_black_hole
-                set_planet_size = 20
-                #test fix for EHOF bug - consider not removing star flags to prevent spam of new core systems (this needs to be tested)
-                if = {
-                    limit = {
-                        solar_system = {
-                            or = {
-                                has_star_flag = giga_core_02
-                                has_star_flag = giga_qso_core
-                            }
-                        }
-                    }
-                    solar_system = {
-                        # set_star_flag = giga_core_01
-                        # set_star_flag = giga_birch_core
-                        remove_star_flag = giga_core_02
-                        remove_star_flag = giga_qso_core
-
-                    }
-                }
-            }
-        }
+        convert_to_inactive_core = yes
 
         space_owner = {
             country_event = {
@@ -177,59 +125,7 @@ planet_event = {
     hide_window = yes
 
     immediate = {
-        change_pc = pc_core_quasar
-        solar_system = {
-            set_star_class = sc_quasar
-            every_system_planet = {
-                remove_planet_flag = has_megastructure
-
-                limit = {
-                    nor = {
-                        is_planet_class = pc_core_quasar
-                        is_planet_class = pc_core_black_hole
-                    }
-                }
-                change_pc = pc_molten
-            }
-
-            every_system_megastructure = {
-                limit = {
-                    nor = {
-                        is_megastructure_type = lgate_base
-                        is_megastructure_type = gateway_final
-                        is_megastructure_type = gateway_restored
-                        is_megastructure_type = ehof_pgate_gateway
-                        is_megastructure_type = hyper_relay
-                        is_megastructure_type = hyper_relay_restored
-                    }
-                }
-                remove_megastructure = this
-            }
-
-            star = {
-                giga_clear_has_mega_flag = yes
-                change_pc = pc_core_quasar
-                set_planet_size = 10
-                #test fix for EHOF bug
-                if = {
-                    limit = {
-                        solar_system = {
-                            or = {
-                                has_star_flag = giga_core_01
-                                has_star_flag = giga_birch_core
-                            }
-                        }
-                    }
-                    solar_system = {
-                        # set_star_flag = giga_core_02
-                        # set_star_flag = giga_qso_core
-                        remove_star_flag = giga_core_01
-                        remove_star_flag = giga_birch_core
-                    }
-                }
-
-            }
-        }
+        convert_to_hyperquasar = yes
 
         space_owner = {
             country_event = {
