@@ -1,0 +1,17 @@
+projectile_gfx_ballistic = {
+	name = "strikeplanet_mondkanone"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "mondkanone_projectile_hit_entity"
+	shield_hit_entity = "mondkanone_projectile_hit_entity"
+	muzzle_flash_entity = "mondkanone_projectile_muzzle_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+	
+	#ballistic specific
+	entity = "mondkanone_projectile_entity"
+	speed = 450.0			#preferred speed of the projectile
+	max_duration = 1.0	
+}

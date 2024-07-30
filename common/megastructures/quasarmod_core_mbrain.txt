@@ -2,13 +2,18 @@
 ### Core M Brain ###
 ####################
 
-matrioshka_brain_0_core ={
+matrioshka_brain_0_core = {
     entity = "giga_consite_7_7_entity"
     construction_entity = "giga_consite_7_7_entity"
     entity_offset = { x = -150 y = -7 }
     prerequisites = { tech_core_mbrain }
     show_prereqs = no
-    #portrait = GFX_megastructure_construction_background
+    portrait = GFX_megastructure_construction_background
+
+    outliner_trigger = {
+        exists = owner
+        NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+    }
 
     build_time = 360
     resources = {
@@ -36,7 +41,7 @@ matrioshka_brain_0_core ={
             custom_tooltip = { fail_text = "requires_no_existing_megastructure" planet_has_no_megastructure = yes }
             custom_tooltip = { fail_text = "requires_no_anomaly" has_anomaly = no }
             custom_tooltip = {
-                fail_text = "blackhole_manipulator_fail_tooltip"
+                fail_text = "requires_inactive_core_fail_tooltip"
                 is_planet_class = pc_core_black_hole
             }
         }
@@ -44,7 +49,7 @@ matrioshka_brain_0_core ={
 
     on_build_complete = {
         save_event_target_as = core_mbrain
-        from = { country_event = { id = blackhole_manipulation_mega_stage_complete.1 } }
+        from = { country_event = { id = quasarmod_megastage_dialogue.1 } }
         fromfrom.planet = {
             if = { limit = { exists = orbital_station } orbital_station = { dismantle = yes } }
             giga_set_has_mega_flag = yes
@@ -52,14 +57,23 @@ matrioshka_brain_0_core ={
     }
 }
 
-matrioshka_brain_1_core ={     # Equivalent to the Solar Capacitor stage
+matrioshka_brain_1_core = {
     entity = "core_mbrain_stage_1_entity"
-    # entity = "o_class_brain_1_dupe"
     construction_entity = "core_mbrain_stage_1_entity"
-    # construction_entity = "o_class_brain_1_dupe"
     scales_with_planet = no
     portrait = GFX_megastructure_construction_background
     upgrade_from = { matrioshka_brain_0_core }
+
+    outliner_trigger = {
+        exists = owner
+        NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+    }
+
+    possible = {
+        from = {
+            has_technology = tech_core_mbrain
+        }
+    }
 
     build_time = 1800
     resources = {
@@ -86,18 +100,27 @@ matrioshka_brain_1_core ={     # Equivalent to the Solar Capacitor stage
             save_event_target_as = giga_planet
             #set_planet_size = 12
         }
-        from = { country_event = { id = blackhole_manipulation_mega_stage_complete.2 } }
+        from = { country_event = { id = quasarmod_megastage_dialogue.2 } }
     }
 }
 
-matrioshka_brain_2_core ={     # Equivalent to the Main Databank stage
-    #entity = "o_class_brain_2_dupe"
-    # construction_entity
+matrioshka_brain_2_core = {
     entity = "core_mbrain_stage_2_entity"
     construction_entity = "core_mbrain_stage_2_construction_entity"
     scales_with_planet = no
     portrait = GFX_megastructure_construction_background
     upgrade_from = { matrioshka_brain_1_core }
+
+    outliner_trigger = {
+        exists = owner
+        NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+    }
+
+    possible = {
+        from = {
+            has_technology = tech_core_mbrain
+        }
+    }
 
     build_time = 3600
     resources = {
@@ -118,19 +141,27 @@ matrioshka_brain_2_core ={     # Equivalent to the Main Databank stage
     on_build_complete = {
         save_event_target_as = giga_system
         if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-        from = { country_event = { id = blackhole_manipulation_mega_stage_complete.3 } }
+        from = { country_event = { id = quasarmod_megastage_dialogue.3 } }
     }
 }
 
-matrioshka_brain_3_core ={     # Equivalent to the Central Processor stage
-    # entity = "o_class_brain_3_dupe"
-    # construction_entity = "o_class_brain_3_dupe_construction_entity"
+matrioshka_brain_3_core = {
     entity = "core_mbrain_stage_3_entity"
     construction_entity = "core_mbrain_stage_3_construction_entity"
     scales_with_planet = no
     portrait = GFX_megastructure_construction_background
     upgrade_from = { matrioshka_brain_2_core }
 
+    outliner_trigger = {
+        exists = owner
+        NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+    }
+
+    possible = {
+        from = {
+            has_technology = tech_core_mbrain
+        }
+    }
 
     build_time = 5400
     resources = {
@@ -152,7 +183,7 @@ matrioshka_brain_3_core ={     # Equivalent to the Central Processor stage
     on_build_complete = {
         save_event_target_as = giga_system
         if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-        from = { country_event = { id = blackhole_manipulation_mega_stage_complete.4 } }
+        from = { country_event = { id = quasarmod_megastage_dialogue.4 } }
     }
 
     country_modifier = {
@@ -161,14 +192,23 @@ matrioshka_brain_3_core ={     # Equivalent to the Central Processor stage
 
 }
 
-matrioshka_brain_4_core ={     # Equivalent to the Quantum Calculators stage
-    # entity = "o_class_brain_4_dupe"
-    # construction_entity = "o_class_brain_4_dupe_construction_entity"
+matrioshka_brain_4_core = {
     entity = "core_mbrain_stage_4_entity"
     construction_entity = "core_mbrain_stage_4_construction_entity"
     scales_with_planet = no
     portrait = GFX_megastructure_construction_background
     upgrade_from = { matrioshka_brain_3_core }
+
+    outliner_trigger = {
+        exists = owner
+        NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+    }
+
+    possible = {
+        from = {
+            has_technology = tech_core_mbrain
+        }
+    }
 
     build_time = 8100
     resources = {
@@ -190,7 +230,7 @@ matrioshka_brain_4_core ={     # Equivalent to the Quantum Calculators stage
     on_build_complete = {
         save_event_target_as = giga_system
         if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-        from = { country_event = { id = blackhole_manipulation_mega_stage_complete.5 } }
+        from = { country_event = { id = quasarmod_megastage_dialogue.5 } }
     }
 
     country_modifier = {
@@ -199,16 +239,25 @@ matrioshka_brain_4_core ={     # Equivalent to the Quantum Calculators stage
 
 }
 
-matrioshka_brain_5_core ={     # Equivalent to the final stage of the M Brain (ignoring VR segments)
+matrioshka_brain_5_core = {
     entity = "core_mbrain_stage_5_entity"
-    # entity = "o_class_brain_5_dupe"
     construction_entity = "core_mbrain_stage_5_construction_entity"
-    # construction_entity = "o_Class_brain_5_dupe_construction_entity"
     scales_with_planet = no
     portrait = GFX_megastructure_construction_background
     upgrade_from = { matrioshka_brain_4_core }
     prerequisites = { tech_core_mbrain }
     show_prereqs = no
+
+    outliner_trigger = {
+        exists = owner
+        NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+    }
+
+    possible = {
+        from = {
+            has_technology = tech_core_mbrain
+        }
+    }
 
     build_time = 10800
     resources = {
@@ -234,16 +283,7 @@ matrioshka_brain_5_core ={     # Equivalent to the final stage of the M Brain (i
     on_build_complete = {
         save_event_target_as = giga_system
         if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-        from = { country_event = { id = blackhole_manipulation_mega_stage_complete.6 } }
-        #solar_system = {
-        #    spawn_planet = {
-        #        class = pc_ringworld_habitable
-        #        size = 250
-        #        init_effect = {
-        #             set_planet_entity = { entity = habitable_ring_circle }
-        #        }
-        #    }
-        #}
+        from = { country_event = { id = quasarmod_megastage_dialogue.6 } }
     }
 
     country_modifier = {

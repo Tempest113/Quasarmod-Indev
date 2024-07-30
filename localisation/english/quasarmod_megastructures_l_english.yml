@@ -4,21 +4,21 @@
  # Hyperquasaric Teraforge #
  ###########################
 
- quasaric_teraforge_0: "$gc_tera$Hyperquasaric Teraforge Site"
- quasaric_teraforge_0_DESC: "This construction site will act as the staging ground for the largest source of alloys and ships in galactic history."
- quasaric_teraforge_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_advanced_resource_production$ \nUses a §MHyperquasar§! to forge £minerals£ §YMinerals§! into £alloys£ §YAlloys§! and increases overall §YAlloy Production§! - $giga_list_removes_system_planets$\n§LA massive forge built around a Hyperquasar, utilizing its energies to produce alloys.§!"
+ hyperquasaric_teraforge_0: "$gc_tera$Hyperquasaric Teraforge Site"
+ hyperquasaric_teraforge_0_DESC: "This construction site will act as the staging ground for the largest source of alloys and ships in galactic history."
+ hyperquasaric_teraforge_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_advanced_resource_production$ \nUses a §MHyperquasar§! to forge £minerals£ §YMinerals§! into £alloys£ §YAlloys§! and increases overall §YAlloy Production§! - $giga_list_removes_system_planets$\n§LA massive forge built around a Hyperquasar, utilizing its energies to produce alloys.§!"
 
- quasaric_teraforge_1: "Hyperquasaric Teraforge Inner Ring"
- quasaric_teraforge_1_DESC: "This gargantuan ring will act serve as the foundation for the rest of the structure to be built upon, as well as generating a magnetic field powerful enough to protect the terastructure from the accretion disk of the quasar which it encircles." #quasars accretion disk which can reach temperatures exceeding 1 billion kelvin.
+ hyperquasaric_teraforge_1: "Hyperquasaric Teraforge Inner Ring"
+ hyperquasaric_teraforge_1_DESC: "This gargantuan ring will act serve as the foundation for the rest of the structure to be built upon, as well as generating a magnetic field powerful enough to protect the terastructure from the accretion disk of the quasar which it encircles." #quasars accretion disk which can reach temperatures exceeding 1 billion kelvin.
 
- quasaric_teraforge_2: "Hyperquasaric Teraforge Mass Collectors"
- quasaric_teraforge_2_DESC: "Employing advanced gravitational manipulation technology, these structures extract raw materials from the quasar. Their sole purpose is to supply the alloy processors with the essential materials used in alloy production."
+ hyperquasaric_teraforge_2: "Hyperquasaric Teraforge Mass Collectors"
+ hyperquasaric_teraforge_2_DESC: "Employing advanced gravitational manipulation technology, these structures extract raw materials from the quasar. Their sole purpose is to supply the alloy processors with the essential materials used in alloy production."
 
- quasaric_teraforge_3: "Hyperquasaric Teraforge Alloy Processing"
- quasaric_teraforge_3_DESC: "Within the teraforges alloy processing arrays, advanced nanoforges and fusion smelters transform raw minerals captured from the hyperquasar into pristine, ultra-dense neutronium alloys, harnessing the quasar's energy to forge alloys of a higher quality than anywhere else in the galaxy."
+ hyperquasaric_teraforge_3: "Hyperquasaric Teraforge Alloy Processing"
+ hyperquasaric_teraforge_3_DESC: "Within the teraforges alloy processing arrays, advanced nanoforges and fusion smelters transform raw minerals captured from the hyperquasar into pristine, ultra-dense neutronium alloys, harnessing the quasar's energy to forge alloys of a higher quality than anywhere else in the galaxy."
 
- quasaric_teraforge_4: "Hyperquasaric Teraforge"
- quasaric_teraforge_4_DESC: "An active Hyperquasaric Teraforge. Its immensely powerful mass harvesters siphon incredible amounts of raw materials from the quasar, providing the material required to forge an amount of alloys so large that we could construct entire planets out of pure neutronium if we so choose."
+ hyperquasaric_teraforge_4: "Hyperquasaric Teraforge"
+ hyperquasaric_teraforge_4_DESC: "An active Hyperquasaric Teraforge. Its immensely powerful mass harvesters siphon incredible amounts of raw materials from the quasar, providing the material required to forge an amount of alloys so large that we could construct entire planets out of pure neutronium if we so choose."
 
  quasaric_teraforge_5: "Hyperquasaric Megashipyard"
  quasaric_teraforge_5_DESC: "An active Hyperquasaric Megashipyard. While we had to sacrifice a significant amount of alloy processing power, the Hyperquasaric Megashipyard is undoubtedly a worthy upgrade to the Teraforge. Grants +250 shipyard capacity, +250% ship build speed and -25% build cost."
@@ -119,5 +119,35 @@
  hyperquasaric_megashipyard_4_DESC: "An active Hyperquasaric Megashipyard, capable of both building and handling the logistics of a fleet larger than any ever built before."
 
  sm_quasarshipyard__shipyard_uplink: "Hyperquasaric Megashipyard Uplink"
- sm_quasarshipyard__shipyard_uplink_desc:0 "An uplink connecting the starbase to the hyperquasaric teraforge. Grants 250 shipyard slots and the ability to construct celestial warships."
- sm_quasarshipyard__shipyard_uplink_modifier:0 "Ship Modifier:\n    Ship Starting Experience: +§G250§! \nStarbase Modifier:\n   Shipyard Capacity: §G+250§!\n   Ship Build Speed: §G+250%§!\nShipyards: §YCelestial Warship Construction Enabled§!"
+ sm_quasarshipyard__shipyard_uplink_desc: "An uplink connecting the starbase to the hyperquasaric teraforge. Grants 250 shipyard slots and the ability to construct celestial warships."
+ sm_quasarshipyard__shipyard_uplink_modifier: "Ship Modifier:\n    Ship Starting Experience: +§G250§! \nStarbase Modifier:\n   Shipyard Capacity: §G+250§!\n   Ship Build Speed: §G+250%§!\nShipyards: §YCelestial Warship Construction Enabled§!"
+
+
+
+ ##########################
+ # Gargantuan Quasarcraft #
+ ##########################
+
+ quasarcraft_0: "Quasarcraft Foundation"
+ quasarcraft_0_DESC: "The foundation upon which we shall assemble the greatest armament the galaxy has ever seen."
+ quasarcraft_0_MEGASTRUCTURE_DETAILS: ""
+
+ quasarcraft_0_alt: "$gc_tera$Quasarcraft Foundation"
+ quasarcraft_0_alt_DESC: "An altered form of the Quasi-Stellar-Obliterator's major components, computers, and power banks; Prefabricated directly for use as the foundation for the grandest warship this galaxy will ever see."
+ quasarcraft_0_alt_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_weaponry$\nConstructs a mobilized terastructural warship using a §YHyperquasar§!, capable of unleashing untold annihilation with it's quasaric weaponry and the ultimate hyperweapon - §RThe Endsinger.§!"
+ quasarcraft_0_alt_CONSTRUCTION_INFO_DELAYED: "$giga_list_additional_data$ - The Quasarcraft is capable of destroying either singular §YPlanets§!, §YSolar Systems§! or entire §YStar Clusters§!. It is a roving hyperweapon of untold destruction, and your enemies might seek to disrupt it's construction process."
+
+ quasarcraft_1: "Quasi-Stellar Superstructure"
+ quasarcraft_1_DESC: "The modified core of the former Quasi-Stellar Obliterator, the new core focuses on diversion of power evenly across a massive hull, filled to the brim with important circuitry and armaments."
+
+ quasarcraft_2: "Quasarcraft Halo"
+ quasarcraft_2_DESC: "The great ring of the Quasarcraft, with integrated gravity adjusters and hyperdimensional hull stabilization, the halo will play the paramount role of the artillery foundation."
+
+ quasarcraft_3: "Quasarcraft Armaments Ring"
+ quasarcraft_3_DESC: "The grandest armament, befitting the king of the celestial warships. The Quasarcraft will rend utter destruction upon our foes."
+
+ quasarcraft_4: "Quasaric EHOF"
+ quasarcraft_4_DESC: "The gargantuan wormhole projector that serves as the backbone of the Quasarcraft's transportation, it will facilitate transportation via Micro-Wormholes throughout the universe."
+
+ quasarcraft_5: "The Quasarcraft"
+ quasarcraft_5_DESC: "The now completed Quasarcraft, ready to purge all that is evil from the universe."

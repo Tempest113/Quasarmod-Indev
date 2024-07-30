@@ -3,7 +3,7 @@
 ####################################
 
 entity = {
-	name = "quasaric_teraforge_1_entity"
+	name = "hyperquasaric_teraforge_1_entity"
 	cull_radius = 5000
 
 	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
@@ -14,7 +14,7 @@ entity = {
 }
 
 entity = {
-	name = "quasaric_teraforge_2_entity"
+	name = "hyperquasaric_teraforge_2_entity"
 	cull_radius = 5000
 
 	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
@@ -26,7 +26,7 @@ entity = {
 }
 
 entity = {
-	name = "quasaric_teraforge_2_construction_entity"
+	name = "hyperquasaric_teraforge_2_construction_entity"
 	cull_radius = 5000
 
 	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
@@ -37,7 +37,7 @@ entity = {
 }
 
 entity = {
-	name = "quasaric_teraforge_3_entity"
+	name = "hyperquasaric_teraforge_3_entity"
 	cull_radius = 5000
 
 	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
@@ -53,7 +53,7 @@ entity = {
 
 
 entity = {
-	name = "quasaric_teraforge_3_construction_entity"
+	name = "hyperquasaric_teraforge_3_construction_entity"
 	cull_radius = 5000
 
 	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
@@ -65,7 +65,7 @@ entity = {
 }
 
 entity = {
-	name = "quasaric_teraforge_4_entity"
+	name = "hyperquasaric_teraforge_4_entity"
 	cull_radius = 5000
 
 	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
@@ -75,19 +75,19 @@ entity = {
 	attach = { "loc101" = "giga_shipyard_outer_ring_entity" }
 	attach = { "loc101" = "giga_shipyard_beam_entity" }
 	attach = { "loc101" = "giga_shipyard_tractor_ring_entity" }
-	attach = { "loc101" = "bestagon_swarm_entity" }
+	attach = { "loc101" = "hexagon_swarm_entity" }
 
 	scale = 7.25
 }
 
 entity = {
-	name = "quasaric_teraforge_4_construction_entity"
+	name = "hyperquasaric_teraforge_4_construction_entity"
 	cull_radius = 5000
 
 	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
 
 	#attach = { "loc101" = "giga_shipyard_yards_tilted_entity" }
-	attach = { "loc101" = "bestagon_swarm_entity" }
+	attach = { "loc101" = "hexagon_swarm_entity" }
 
 	scale = 7.25
 }
@@ -104,7 +104,7 @@ entity = {
 	attach = { "loc101" = "giga_shipyard_outer_ring_entity" }
 	attach = { "loc101" = "giga_shipyard_beam_entity" }
 	attach = { "loc101" = "giga_shipyard_tractor_ring_entity" }
-	attach = { "loc101" = "bestagon_swarm_entity" }
+	attach = { "loc101" = "hexagon_swarm_entity" }
 
 	scale = 7.25
 }
@@ -116,7 +116,7 @@ entity = {
 	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 } }
 
 	attach = { "loc101" = "giga_shipyard_yards_tilted_entity" }
-	#attach = { "loc101" = "bestagon_swarm_entity" }
+	#attach = { "loc101" = "hexagon_swarm_entity" }
 
 	scale = 7.25
 }
@@ -124,8 +124,8 @@ entity = {
 
 # Star lifter shield, wanted to see how it looks covering the quasar in the last stage of the teraforge, make sure to ask for other people's opinions
 entity = {
-	name = "bestagon_swarm_entity"
-	pdxmesh = "bestagon_swarm_mesh"
+	name = "hexagon_swarm_entity"
+	pdxmesh = "hexagon_swarm_mesh"
 	scale = 32
 
 	game_data = {

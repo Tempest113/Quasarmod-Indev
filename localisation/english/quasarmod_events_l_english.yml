@@ -1,139 +1,189 @@
 ﻿l_english:
 
+ # This file, as the name would imply, handles teh loc for events specifically
+
  ###########################################
  ### Megastructure Stage Complete Events ###
  ###########################################
 
  # Gargantuan Matrioshka Brain
 
- blackhole_manipulation_mega_stage_complete.1.name: "Gargantuan Matrioshka Brain Construction"
- blackhole_manipulation_mega_stage_complete.1.desc: "We are now ready to begin the colossal task of constructing a Gargantuan Matrioshka Brain. The first step will be the construction of the hawking capacitors around the black hole, which will increase the rate at which hawking radiation is emitted. As each layer is added, more and more research will be generated. Keep in mind that the efficiency of the Gargantuan Matrioshka Brain will skyrocket once we finish the last layer. The planetary bodies of the system will be dismantled in order to make room for the terastructure."
- blackhole_manipulation_mega_stage_complete.1.a: "Wonderful."
+ quasarmod_megastage_dialogue.1.name: "Gargantuan Matrioshka Brain Construction"
+ quasarmod_megastage_dialogue.1.desc: "We are now ready to begin the colossal task of constructing a Gargantuan Matrioshka Brain. The first step will be the construction of the hawking capacitors around the black hole, which will increase the rate at which hawking radiation is emitted. As each layer is added, more and more research will be generated. Keep in mind that the efficiency of the Gargantuan Matrioshka Brain will skyrocket once we finish the last layer. The planetary bodies of the system will be dismantled in order to make room for the terastructure."
+ quasarmod_megastage_dialogue.1.a: "Wonderful."
 
- blackhole_manipulation_mega_stage_complete.2.name: "Gargantuan Matrioshka Brain - Hawking Capacitors Built"
- blackhole_manipulation_mega_stage_complete.2.desc: "The hawking capacitors and Chrono-Accelerators are now in place around [giga_planet.GetName], and are actively collecting energy. We shall now construct the first computing layer, the main databank. It will serve as a huge storage unit constantly gathering and analyzing new data from all four corners of the galaxy."
- blackhole_manipulation_mega_stage_complete.2.a: "Excellent."
+ quasarmod_megastage_dialogue.2.name: "Gargantuan Matrioshka Brain - Hawking Capacitors Built"
+ quasarmod_megastage_dialogue.2.desc: "The hawking capacitors and Chrono-Accelerators are now in place around [giga_planet.GetName], and are actively collecting energy. We shall now construct the first computing layer, the main databank. It will serve as a huge storage unit constantly gathering and analyzing new data from all four corners of the galaxy."
+ quasarmod_megastage_dialogue.2.a: "Excellent."
 
- blackhole_manipulation_mega_stage_complete.3.name: "Gargantuan Matrioshka Brain - Main Databank Built"
- blackhole_manipulation_mega_stage_complete.3.desc: "The main databank has been constructed, and is already vastly improving our research efforts. However, its abilities are still very restricted and more layers are required to reach peak efficiency. We may now begin the construction of the central processor, which will house the most powerful computers in the galaxy, powered by the heat emitted by the main databank."
- blackhole_manipulation_mega_stage_complete.3.a: "Good. We are getting there."
+ quasarmod_megastage_dialogue.3.name: "Gargantuan Matrioshka Brain - Main Databank Built"
+ quasarmod_megastage_dialogue.3.desc: "The main databank has been constructed, and is already vastly improving our research efforts. However, its abilities are still very restricted and more layers are required to reach peak efficiency. We may now begin the construction of the central processor, which will house the most powerful computers in the galaxy, powered by the heat emitted by the main databank."
+ quasarmod_megastage_dialogue.3.a: "Good. We are getting there."
 
- blackhole_manipulation_mega_stage_complete.4.name: "Gargantuan Matrioshka Brain - Central Processor Built"
- blackhole_manipulation_mega_stage_complete.4.desc: "The central processor is finished. It is a gigantic network of sentient computers linked together like a gigantic neural net, possessing incredible computing power. It uses the heat from the main databank to function, and also treats the data collected by said databank. The next layer will consist of the quantum calculators, which will work alongside the central processor to understand the mysteries of the universe."
- blackhole_manipulation_mega_stage_complete.4.a: "Another step towards a glorious future."
+ quasarmod_megastage_dialogue.4.name: "Gargantuan Matrioshka Brain - Central Processor Built"
+ quasarmod_megastage_dialogue.4.desc: "The central processor is finished. It is a gigantic network of sentient computers linked together like a gigantic neural net, possessing incredible computing power. It uses the heat from the main databank to function, and also treats the data collected by said databank. The next layer will consist of the quantum calculators, which will work alongside the central processor to understand the mysteries of the universe."
+ quasarmod_megastage_dialogue.4.a: "Another step towards a glorious future."
 
- blackhole_manipulation_mega_stage_complete.5.name: "Gargantuan Matrioshka Brain - Quantum Calculators Built"
- blackhole_manipulation_mega_stage_complete.5.desc: "The quantum calculators are up and running. These two gigantic rings use the thermal energy generated by the central processor, and they are actively working to find the answers to the most complicated questions in every field of science. The last step in constructing the Gargantuan Matrioshka Brain will be to build the Cross-referential archive, which will be a huge network of computers linking every single computer of the Gargantuan Matrioshka Brain together in an organized fashion, boosting its efficiency immensely."
- blackhole_manipulation_mega_stage_complete.5.a: "Another step towards a glorious future."
+ quasarmod_megastage_dialogue.5.name: "Gargantuan Matrioshka Brain - Quantum Calculators Built"
+ quasarmod_megastage_dialogue.5.desc: "The quantum calculators are up and running. These two gigantic rings use the thermal energy generated by the central processor, and they are actively working to find the answers to the most complicated questions in every field of science. The last step in constructing the Gargantuan Matrioshka Brain will be to build the Cross-referential archive, which will be a huge network of computers linking every single computer of the Gargantuan Matrioshka Brain together in an organized fashion, boosting its efficiency immensely."
+ quasarmod_megastage_dialogue.5.a: "Another step towards a glorious future."
 
- blackhole_manipulation_mega_stage_complete.6.name: "Gargantuan Matrioshka Brain Finished"
- blackhole_manipulation_mega_stage_complete.6.desc: "Today is a glorious day for our empire. Our most skilled engineers and workers have constructed technological marvel only the greatest empires could ever dream of. This Gargantuan Matrioshka Brain, equipped with the most powerful computers ever designed in this galaxy, shall help us uncover the last mysteries of the universe."
- blackhole_manipulation_mega_stage_complete.6.a: "Wonderful."
+ quasarmod_megastage_dialogue.6.name: "Gargantuan Matrioshka Brain Finished"
+ quasarmod_megastage_dialogue.6.desc: "Today is a glorious day for our empire. Our most skilled engineers and workers have constructed technological marvel only the greatest empires could ever dream of. This Gargantuan Matrioshka Brain, equipped with the most powerful computers ever designed in this galaxy, shall help us uncover the last mysteries of the universe."
+ quasarmod_megastage_dialogue.6.a: "Wonderful."
 
  # Supermassive Black Hole Manipulator
 
- blackhole_manipulation_mega_stage_complete.101.name: "Supermassive Black Hole Manipulator Construction"
- blackhole_manipulation_mega_stage_complete.101.desc: "With the completion of the construction site, we are now ready to begin the colossal task of constructing a Supermassive Black Hole Manipulator in [giga_system.GetName]. Upon this scaffold, we shall construct a massive frame for the rest of the structure to rest upon, completely encircling the black hole below.\n\nSoon, the very heart of the galaxy will bend to our will."
- blackhole_manipulation_mega_stage_complete.101.a: "Wonderful."
+ quasarmod_megastage_dialogue.101.name: "Supermassive Black Hole Manipulator Construction"
+ quasarmod_megastage_dialogue.101.desc: "With the completion of the construction site, we are now ready to begin the colossal task of constructing a Supermassive Black Hole Manipulator in [giga_system.GetName]. Upon this scaffold, we shall construct a massive frame for the rest of the structure to rest upon, completely encircling the black hole below.\n\nSoon, the very heart of the galaxy will bend to our will."
+ quasarmod_megastage_dialogue.101.a: "Wonderful."
 
- blackhole_manipulation_mega_stage_complete.201.name: "Black Hole Manipulator Frame Built"
- blackhole_manipulation_mega_stage_complete.201.desc: "Construction of the Black Hole Manipulator Frame in the [giga_system.GetName] system has concluded. With a circumference of nearly six billion kilometers, this grandiose frame will one day support one of the largest terastructures the galaxy has ever seen. We must now begin work on the rest of the structure."
- blackhole_manipulation_mega_stage_complete.201.a: "Excellent."
+ quasarmod_megastage_dialogue.102.name: "Black Hole Manipulator Frame Built"
+ quasarmod_megastage_dialogue.102.desc: "Construction of the Black Hole Manipulator Frame in the [giga_system.GetName] system has concluded. With a circumference of nearly six billion kilometers, this grandiose frame will one day support one of the largest terastructures the galaxy has ever seen. We must now begin work on the rest of the structure."
+ quasarmod_megastage_dialogue.102.a: "Excellent."
 
- blackhole_manipulation_mega_stage_complete.301.name: "Tetradimensional Supports Built" #Black Hole Manipulator Tetradimensional Supports Built
- blackhole_manipulation_mega_stage_complete.301.desc: "We have successfully constructed the tetradimensional supports of the Supermassive Black Hole Manipulator, reaching a diameter larger than most solar systems, there is nothing in this galaxy which could possibly hope to disrupt this truly massive support system from completing its task of upholding what is perhaps the largest structure ever built in our galaxy."
- blackhole_manipulation_mega_stage_complete.301.a: "Marvelous."
+ quasarmod_megastage_dialogue.103.name: "Tetradimensional Supports Built" #Black Hole Manipulator Tetradimensional Supports Built
+ quasarmod_megastage_dialogue.103.desc: "We have successfully constructed the tetradimensional supports of the Supermassive Black Hole Manipulator, reaching a diameter larger than most solar systems, there is nothing in this galaxy which could possibly hope to disrupt this truly massive support system from completing its task of upholding what is perhaps the largest structure ever built in our galaxy."
+ quasarmod_megastage_dialogue.103.a: "Marvelous."
 
- blackhole_manipulation_mega_stage_complete.401.name: "Plasma Redirection Array Built" #Black Hole Manipulator Plasma Redirection Array Built
- blackhole_manipulation_mega_stage_complete.401.desc: "Construction of the plasma redirection array for the supermassive black hole manipulator in the [giga_system.GetName] system has been finalized, gargantuan plasma pumps and harvesters capable of moving entire stars worth of mass in only a matter of months now sit idly above the black hole below, waiting for us to complete the rest of the structure."
- blackhole_manipulation_mega_stage_complete.401.a: "Great."
+ quasarmod_megastage_dialogue.104.name: "Plasma Redirection Array Built" #Black Hole Manipulator Plasma Redirection Array Built
+ quasarmod_megastage_dialogue.104.desc: "Construction of the plasma redirection array for the supermassive black hole manipulator in the [giga_system.GetName] system has been finalized, gargantuan plasma pumps and harvesters capable of moving entire stars worth of mass in only a matter of months now sit idly above the black hole below, waiting for us to complete the rest of the structure."
+ quasarmod_megastage_dialogue.104.a: "Great."
 
- blackhole_manipulation_mega_stage_complete.501.name: "Worker Drone Habitation Ring Built" #Black Hole Manipulator Worker Drone Habitation Ring Built
- blackhole_manipulation_mega_stage_complete.501.desc: "With the completion of the worker drone habitation ring, the Supermassive Black Hole Manipulator is almost complete. Now all that awaits is the installation of the radiation shielding and we will be able to bend the heart of the galaxy to our whim."
- blackhole_manipulation_mega_stage_complete.501.a: "Good, we are almost there."
+ quasarmod_megastage_dialogue.105.name: "Worker Drone Habitation Ring Built" #Black Hole Manipulator Worker Drone Habitation Ring Built
+ quasarmod_megastage_dialogue.105.desc: "With the completion of the worker drone habitation ring, the Supermassive Black Hole Manipulator is almost complete. Now all that awaits is the installation of the radiation shielding and we will be able to bend the heart of the galaxy to our whim."
+ quasarmod_megastage_dialogue.105.a: "Good, we are almost there."
 
- blackhole_manipulation_mega_stage_complete.601.name: "Radiation Shielding Built" #Black Hole Manipulator Radiation Shielding Built
- blackhole_manipulation_mega_stage_complete.601.desc: "Construction of the Black Hole Manipulator's radiation shielding has come to an end, we are now able to safely activate and use the Supermassive Black Hole Manipulator without risking damage to life throughout the galaxy. While this colossal terastructure is a true marvel of engineering, it will pale in comparison to our future projects."
- blackhole_manipulation_mega_stage_complete.601.a: "Let us begin."
+ quasarmod_megastage_dialogue.106.name: "Radiation Shielding Built" #Black Hole Manipulator Radiation Shielding Built
+ quasarmod_megastage_dialogue.106.desc: "Construction of the Black Hole Manipulator's radiation shielding has come to an end, we are now able to safely activate and use the Supermassive Black Hole Manipulator without risking damage to life throughout the galaxy. While this colossal terastructure is a true marvel of engineering, it will pale in comparison to our future projects."
+ quasarmod_megastage_dialogue.106.a: "Let us begin."
 
  # Hyperquasaric Teraforge
 
- blackhole_manipulation_mega_stage_complete.1001.name: "Hyperquasaric Teraforge Construction"
- blackhole_manipulation_mega_stage_complete.1001.desc: "With the completion of the construction site in the [giga_system.GetName] system, we are now ready to begin the colossal undertaking that is the construction of a Hyperquasaric Teraforge, perhaps the largest shipyard and source of military grade alloys in our corner of the universe."
- blackhole_manipulation_mega_stage_complete.1001.a: "Excellent."
+ quasarmod_megastage_dialogue.201.name: "Hyperquasaric Teraforge Construction"
+ quasarmod_megastage_dialogue.201.desc: "With the completion of the construction site in the [giga_system.GetName] system, we are now ready to begin the colossal undertaking that is the construction of a Hyperquasaric Teraforge, perhaps the largest shipyard and source of military grade alloys in our corner of the universe."
+ quasarmod_megastage_dialogue.201.a: "Excellent."
 
- blackhole_manipulation_mega_stage_complete.1002.name: "Teraforge Inner Ring Built"
- blackhole_manipulation_mega_stage_complete.1002.desc: "The second stage of the Hyperquasaric Teraforge, the inner ring, has been completed without issues and the structure is now generating a magnetic field large enough and powerful enough that the accretion disk of the quasar has shrunk considerably, protecting the future stages of the terastructure from the immense heat and radiation that they would otherwise be subjected to."
- blackhole_manipulation_mega_stage_complete.1002.a: "Wonderful."
+ quasarmod_megastage_dialogue.202.name: "Teraforge Inner Ring Built"
+ quasarmod_megastage_dialogue.202.desc: "The second stage of the Hyperquasaric Teraforge, the inner ring, has been completed without issues and the structure is now generating a magnetic field large enough and powerful enough that the accretion disk of the quasar has shrunk considerably, protecting the future stages of the terastructure from the immense heat and radiation that they would otherwise be subjected to."
+ quasarmod_megastage_dialogue.202.a: "Wonderful."
 
- blackhole_manipulation_mega_stage_complete.1003.name: "Teraforge Mass Collectors Built"
- blackhole_manipulation_mega_stage_complete.1003.desc: "The Hyperquasaric Teraforge Mass Collectors have been constructed successfully. They are currently operating at a reduced capacity, as more of the structure is completed and more alloy processing overhead is made available, the harvesters will increase the rate at which matter is collected, and in turn the rate at which we can produce alloys will also increase."
- blackhole_manipulation_mega_stage_complete.1003.a: "Great."
+ quasarmod_megastage_dialogue.203.name: "Teraforge Mass Collectors Built"
+ quasarmod_megastage_dialogue.203.desc: "The Hyperquasaric Teraforge Mass Collectors have been constructed successfully. They are currently operating at a reduced capacity, as more of the structure is completed and more alloy processing overhead is made available, the harvesters will increase the rate at which matter is collected, and in turn the rate at which we can produce alloys will also increase."
+ quasarmod_megastage_dialogue.203.a: "Great."
 
- blackhole_manipulation_mega_stage_complete.1004.name: "Teraforge Alloy Processing Built"
- blackhole_manipulation_mega_stage_complete.1004.desc: "The construction of the penultimate of the Hyperquasaric Teraforge has come to a conclusion. The colossal alloy processors, capable of refining an entire planets worth of mass in a matter of days are already refining huge amounts of minerals into a yet unseen amount of alloys."
- blackhole_manipulation_mega_stage_complete.1004.a: "We are so close."
+ quasarmod_megastage_dialogue.204.name: "Teraforge Alloy Processing Built"
+ quasarmod_megastage_dialogue.204.desc: "The construction of the penultimate of the Hyperquasaric Teraforge has come to a conclusion. The colossal alloy processors, capable of refining an entire planets worth of mass in a matter of days are already refining huge amounts of minerals into a yet unseen amount of alloys."
+ quasarmod_megastage_dialogue.204.a: "We are so close."
 
- blackhole_manipulation_mega_stage_complete.1005.name: "Hyperquasaric Teraforge Complete"
- blackhole_manipulation_mega_stage_complete.1005.desc: "The Hyperquasaric Teraforge in the [giga_system.GetName] system has been activated and is now harvesting the accretion disk and refining its resources into an unprecedented amount of alloys. But what will we use these alloys for? Ships? Megastructures? It does not matter, for our resources are now effectively bottomless."
- blackhole_manipulation_mega_stage_complete.1005.a: "Let us begin."
+ quasarmod_megastage_dialogue.205.name: "Hyperquasaric Teraforge Complete"
+ quasarmod_megastage_dialogue.205.desc: "The Hyperquasaric Teraforge in the [giga_system.GetName] system has been activated and is now harvesting the accretion disk and refining its resources into an unprecedented amount of alloys. But what will we use these alloys for? Ships? Megastructures? It does not matter, for our resources are now effectively bottomless."
+ quasarmod_megastage_dialogue.205.a: "Let us begin."
 
  # Hyperquasaric Megashipyard
 
- blackhole_manipulation_mega_stage_complete.2001.name: "Hyperquasaric Megashipyard Construction"
- blackhole_manipulation_mega_stage_complete.2001.desc: "The Hyperquasaric Megashipyard Construction Site in the [giga_system.GetName] system is complete. We will soon be cement ourselves as the owners of the most powerful navy in galactic history, surpassing even the empires of old."
- blackhole_manipulation_mega_stage_complete.2001.a: "Understood."
+ quasarmod_megastage_dialogue.301.name: "Hyperquasaric Megashipyard Construction"
+ quasarmod_megastage_dialogue.301.desc: "The Hyperquasaric Megashipyard Construction Site in the [giga_system.GetName] system is complete. We will soon be cement ourselves as the owners of the most powerful navy in galactic history, surpassing even the empires of old."
+ quasarmod_megastage_dialogue.301.a: "Understood."
 
- blackhole_manipulation_mega_stage_complete.2002.name: "Hyperquasaric Megashipyard Accretion Harvester Built"
- blackhole_manipulation_mega_stage_complete.2002.desc: "We have successfully constructed the Accretion Harvester stage of the Hyperquasaric Megashipyard in the [giga_system.GetName] system. We should move swiftly on to the next stage."
- blackhole_manipulation_mega_stage_complete.2002.a: "Moving on."
+ quasarmod_megastage_dialogue.302.name: "Hyperquasaric Megashipyard Accretion Harvester Built"
+ quasarmod_megastage_dialogue.302.desc: "We have successfully constructed the Accretion Harvester stage of the Hyperquasaric Megashipyard in the [giga_system.GetName] system. We should move swiftly on to the next stage."
+ quasarmod_megastage_dialogue.302.a: "Moving on."
 
- blackhole_manipulation_mega_stage_complete.2003.name: "Hyperquasaric Megashipyard Purification Ring Built"
- blackhole_manipulation_mega_stage_complete.2003.desc: "We have finished the construction of the Hyperquasaric Megashipyard Purification Ring in the [giga_system.GetName] system. We are now more than half way towards having a completed Hyperquasaric Megashipyard."
- blackhole_manipulation_mega_stage_complete.2003.a: "Great."
+ quasarmod_megastage_dialogue.303.name: "Hyperquasaric Megashipyard Purification Ring Built"
+ quasarmod_megastage_dialogue.303.desc: "We have finished the construction of the Hyperquasaric Megashipyard Purification Ring in the [giga_system.GetName] system. We are now more than half way towards having a completed Hyperquasaric Megashipyard."
+ quasarmod_megastage_dialogue.303.a: "Great."
 
- blackhole_manipulation_mega_stage_complete.2004.name: "Hyperquasaric Megashipyard Distribution Ring Built"
- blackhole_manipulation_mega_stage_complete.2004.desc: "The Hyperquasaric Megashipyard Distribution Ring in the [giga_system.GetName] system has been finished, now that we have the means of handling such a vast amount of materials, we can move on to building the actual shipyards and naval logistics/storage ringZ."
- blackhole_manipulation_mega_stage_complete.2004.a: "We are so close."
+ quasarmod_megastage_dialogue.304.name: "Hyperquasaric Megashipyard Distribution Ring Built"
+ quasarmod_megastage_dialogue.304.desc: "The Hyperquasaric Megashipyard Distribution Ring in the [giga_system.GetName] system has been finished, now that we have the means of handling such a vast amount of materials, we can move on to building the actual shipyards and naval logistics/storage ringZ."
+ quasarmod_megastage_dialogue.304.a: "We are so close."
 
- blackhole_manipulation_mega_stage_complete.2005.name: "Hyperquasaric Megashipyard Complete"
- blackhole_manipulation_mega_stage_complete.2005.desc: "The Hyperquasaric Megashipyard in the [giga_system.GetName] system is complete! We now possess the ability to create an armada so large that we will not only blot out the stars, but the galaxy itself."
- blackhole_manipulation_mega_stage_complete.2005.a: "It is beautiful."
- blackhole_manipulation_mega_stage_complete.2005.a.tooltip: "Who are you fighting to need so many ships?"
+ quasarmod_megastage_dialogue.305.name: "Hyperquasaric Megashipyard Complete"
+ quasarmod_megastage_dialogue.305.desc: "The Hyperquasaric Megashipyard in the [giga_system.GetName] system is complete! We now possess the ability to create an armada so large that we will not only blot out the stars, but the galaxy itself."
+ quasarmod_megastage_dialogue.305.a: "It is beautiful."
+ quasarmod_megastage_dialogue.305.a.tooltip: "Who are you fighting to need so many ships?"
 
- ################
- # Other Events #
- ################
+ # Gargantuan Quasarcraft
+
+ quasarmod_megastage_dialogue.401.name: "The Great Ambition"
+ quasarmod_megastage_dialogue.401.desc: "We have just finished the construction site of what is most certainly our mightiest warship yet - The Quasarcraft\n\nThough once a pipe dream, this foundation is the first step to making that dream reality."
+ quasarmod_megastage_dialogue.401.a: "Let the great ambition be fulfilled, to the end!"
+
+ quasarmod_megastage_dialogue.402.name: "The Galactic Heart"
+ quasarmod_megastage_dialogue.402.desc: "The central core of the §H$quasarmod_quasarcraft$§! has been completed, it will soon play host to the most powerful weapons platform to ever exist."
+ quasarmod_megastage_dialogue.402.a: "And thus the great heart of the galaxy beats within in our grasp."
+
+ quasarmod_megastage_dialogue.403.name: "The Gargantuan Ring"
+ quasarmod_megastage_dialogue.403.desc: "Our engineers have finished the first stages of the §H"Armaments Halo"§!, filled with power dividers to supplant countless cannons and lasers with Quasaric Energy, fueling the destructive power of our ultimate battle 'station'."
+ quasarmod_megastage_dialogue.403.a: "Power! Unlimited Power!!!"
+
+ quasarmod_megastage_dialogue.404.name: "One-Ringed Angel"
+ quasarmod_megastage_dialogue.404.desc: "The power of a trillion suns, washing away the stains of time... Or, to put it more bluntly: Our enemies. The weaponry onboard the Quasarcraft dwarfs anything built before it."
+ quasarmod_megastage_dialogue.404.a: "In the end, they won't even matter."
+
+ quasarmod_megastage_dialogue.405.name: "Providence"
+ quasarmod_megastage_dialogue.405.desc: "No matter where in the cosmos, we will be able to find and pass judgement upon those who would wish to do us and our allies harm.\n\n§R(ATTENTION! Design the Quasarcraft in the Ship Designer BEFORE activating the next stage!)§!"
+ quasarmod_megastage_dialogue.405.a: "Our foes will be just a burning memory."
+
+ quasarmod_megastage_dialogue.406.name: "§MThe Gargantuan of the Heavens§!"
+ quasarmod_megastage_dialogue.406.desc: "After all this time, it is finally complete. The greatest weapon the galaxy has ever known.\n\n The Gargantuan Quasarcraft.\n\nIt has shifted from its position in the galactic core, the feed of the vessel's first movement bringing tears to our engineer's eyes. It is said the mountains don't give back what they take, but this 'mountain' we have surpassed has instilled a ferocious pride throughout our empire. Admirals are already clamoring for the fabled spot of the Quasaric Commander. \n\nThe Quasarcraft is on standby, awaiting orders."
+ quasarmod_megastage_dialogue.406.a: "We are the Alpha and the Omega, your beginning and your end."
+
+ # Quasarcraft Destroyed
+ quasarmod_dialogue.9.name: "Hope's End"
+ quasarmod_dialogue.9.desc: "It's gone...the mightiest of weapons, and our last hope of exterminating the great horrors...has been destroyed."
+ quasarmod_dialogue.9.a: "Impossible!"
+
+ # Endsinger Event Loc
+ qsc_endsinger.1.title: "§MThe Endsinger's Quasaric Melody§!"
+ qsc_endsinger.1.desc: "You have just used the Endsinger to mark a planet and its system for potential expulsion. To conduct the orchestra of annihilation, pick from one of the following options.\n\n§MStar Cluster§! will not only obliterate the targeted system, but any systems directly connected to it. (§RWARNING: THIS MAY BE BUGGY AND CAUSE CRASHES IF USED IN CERTAIN SITUATIONS§!!)\n\n§YStellar System§! will destroy the system that the Endsinger was fired upon, without requiring the star itself to have been picked initially.\n\n§RPlanetary§! will simply completely expunge the body the Endsinger was targeting from existence, a most precise application of our ultimate war machine.\n\n§BMulti-Instance Fire Support§! will split the output of our majestic Quasar into several wormholes, however it will cause the main §MQuasarcraft's§! weaponry to be much less effective for this time."
+ qsc_endsinger.2: "§MStar Cluster§!"
+ qsc_endsinger.3: "§YStellar System§!"
+ qsc_endsinger.4: "§RPlanetary§!"
+ qsc_endsinger.5: "§HCancel§!"
+ qsc_endsinger.6: "§BMulti-Instance Fire Support§!"
+ qsc_endsinger.7: "§GPower Level Control Panel§!"
+ qsc_endsinger.8: "§HExit§!"
+ qsc_endsinger.400.title: "§BMulti-Instance Fire Support§!"
+ qsc_endsinger.400.desc: "You have selected the §BMulti-Instance Fire Support§! feature. This will split the output of the hyperweapon through several wormholes that may be positioned as you choose. Although the power of the §YQuasaric EHOF§! means these wormholes have no expiry, this also means that the Quasarcraft will be severely hampered in terms of firepower for the time being. You may use this selection screen to confirm or dispel existing wormholes."
+ qsc_endsinger.401: "§BConfirm M.I.F.S.§!"
+ qsc_endsinger.402: "§RDispel Existing Wormholes§!"
+ qsc_endsinger.403: "§HReturn to Scale Selection§!"
+
+
+ qsc_endsinger.500.title: "§GPower Level Control Panel§!"
+ qsc_endsinger.500.desc: "This menu allows you to change the power level of the §MEndsinger,§! changing what it does to systems and planets it is fired upon.\n\nOn §YNormal§! power mode, the §MEndsinger§! will entirely annihilate planets and systems it is fired against, turning them into empty space and dust. If such devastation is not your intention, the next entry is for you.\n\nOn §PLow-Power§! mode, the §MEndsinger§! will put far less power into it's destructive wrath, shattering planets instead of utterly obliterating them. Not only that, but the star and hyperlanes will be preserved, allowing for future operations such as using the G.L.U.E."
+ qsc_endsinger.500.lowpower: "§HCurrent Mode:§! §PLow-Power§!"
+ qsc_endsinger.500.normalpower: "§HCurrent Mode:§! §YNormal Power§!"
+ qsc_endsinger.500.increase: "§HIncrease Power Output§!"
+ qsc_endsinger.500.decrease: "§HDecrease Power Output§!"
+ qsc_already_normal: "The §MEndsinger§! is already on its normal setting!"
+ qsc_already_low: "The §MEndsinger§! is already on low power mode!"
+
+ ############################
+ # SMBH Manipulation Events #
+ ############################
 
  # Black Hole Injector Complete
 
- blackhole_manipulation.1.name: "Mass Injector: Online"
- blackhole_manipulation.1.desc: "After many years of construction, we have completed and activated the Supermassive Black Hole Manipulator and we are now injecting incredible amounts of stellar plasma into [target.GetName] \n \nIt will only be a matter of time before an accretion disk begins to form around the equator."
- blackhole_manipulation.1.a: "Hopefully we have enough stellar plasma to keep up..."
+ quasarmod_dialogue.1.name: "Mass Injector: Online"
+ quasarmod_dialogue.1.desc: "After many years of construction, we have completed and activated the Supermassive Black Hole Manipulator and we are now injecting incredible amounts of stellar plasma into [target.GetName] \n \nIt will only be a matter of time before an accretion disk begins to form around the equator."
+ quasarmod_dialogue.1.a: "Hopefully we have enough stellar plasma to keep up..."
 
  # Injection Complete Notification
 
- blackhole_manipulation.102.name: "Injection Complete"
- blackhole_manipulation.102.desc: "After several years of stellar plasma injection we have successfully managed to create an artificial accretion disk around [root.from.GetName] as well as increase the speed of it's rotation to more closely match previously observed quasars in other, distant galaxies."
- blackhole_manipulation.102.a: "Perfect."
+ quasarmod_dialogue.102.name: "Injection Complete"
+ quasarmod_dialogue.102.desc: "After several years of stellar plasma injection we have successfully managed to create an artificial accretion disk around [root.from.GetName] as well as increase the speed of it's rotation to more closely match previously observed quasars in other, distant galaxies."
+ quasarmod_dialogue.102.a: "Perfect."
 
  # Black Hole Harvester Complete
 
- blackhole_manipulation.2.name: "Mass Harvester: Online"
- blackhole_manipulation.2.desc: "After many years of construction, we have completed and activated the Supermassive Black Hole Manipulator and we are now harvesting incredible amounts of stellar plasma from [target.GetName] \n \nIt will only be a matter of time before the violence and immense heat of the accretion disk surrounding the quasar is little more than a faded memory."
- blackhole_manipulation.2.a: "I wonder how many O-Class stars we could create with all this stellar plasma..."
+ quasarmod_dialogue.2.name: "Mass Harvester: Online"
+ quasarmod_dialogue.2.desc: "After many years of construction, we have completed and activated the Supermassive Black Hole Manipulator and we are now harvesting incredible amounts of stellar plasma from [target.GetName] \n \nIt will only be a matter of time before the violence and immense heat of the accretion disk surrounding the quasar is little more than a faded memory."
+ quasarmod_dialogue.2.a: "I wonder how many O-Class stars we could create with all this stellar plasma..."
 
  # Harvesting Complete Notification
 
- blackhole_manipulation.202.name: "Harvesting Complete"
- blackhole_manipulation.202.desc: "After several years of constant harvesting we have successfully managed to completely harvest the accretion disk of [root.from.GetName] as well as slow it's rotation to a point that it is now considered safe for us to begin work on other projects around the now \"dead\" black hole. \n \n§RNOTE TO PLAYER: If the system icon does not change from the quasar icon to the inactive icon, run the \"reload_graphical_map\" command, or save and reload your game.§!"
- blackhole_manipulation.202.a: "Perfect."
-
-# Crisis Ascension Perk Picked
-
-#blackhole_manipulation_crisis.201.name: "The Vultaum And The Simulation"
-#blackhole_manipulation_crisis.201.desc: "Upon uncovering the story behind how the Vultaum attempted to escape our universe, which they believed to be a simulation, we initially believed them to be foolish, chasing an idea that was little more than ritualistic suicide. \n \nThe discovery of the relic dubbed the §YVultaum Reality Perforator§! has lead us to doubt our initial assessment of the Vultaum and their \"foolish\" attempt at escaping their apparently simulated universe.\n \nAfter observing the effects this so called \"Reality Perforator\" has on our local universe, even if only temporarily, we know that the Vultaum succeeded in some capacity at manipulating the universe at its most fundamental level, in order to better understand the universe we live in, whether it is a simulation or not, and to better understand the relic itself, we must conduct extensive research on the §YVultaum Reality Perforator§!."
-#blackhole_manipulation_crisis.201.a: "We must research the relic at once"
-
-#blackhole_manipulation_crisis.202.name: "Relic Study Results"
-#blackhole_manipulation_crisis.202.desc: "Our study of the Vultaum Reality Perforator has come to a conclusion. "
+ quasarmod_dialogue.202.name: "Harvesting Complete"
+ quasarmod_dialogue.202.desc: "After several years of constant harvesting we have successfully managed to completely harvest the accretion disk of [root.from.GetName] as well as slow it's rotation to a point that it is now considered safe for us to begin work on other projects around the now \"dead\" black hole. \n \n§RNOTE TO PLAYER: If the system icon does not change from the quasar icon to the inactive icon, run the \"reload_graphical_map\" command, or save and reload your game.§!"
+ quasarmod_dialogue.202.a: "Perfect."

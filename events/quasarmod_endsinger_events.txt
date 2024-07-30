@@ -1,0 +1,640 @@
+namespace = qsc_endsinger
+######### ENDSINGER MENU ##################
+country_event = {
+	id = qsc_endsinger.2 #brings up the menu
+	title = "qsc_endsinger.1.title"
+	desc = "qsc_endsinger.1.desc"
+	show_sound = event_mystic_reveal
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = root.species
+		room = quasarcraft_bridge_room
+	}
+	option = { name = "qsc_endsinger.2" hidden_effect = { country_event = { id = qsc_endsinger.300 } } } #cluster
+	option = { name = "qsc_endsinger.3" hidden_effect = { country_event = { id = qsc_endsinger.200 } } } #star
+	option = { name = "qsc_endsinger.4" hidden_effect = { country_event = { id = qsc_endsinger.100 } } } #planet
+	option = { name = "qsc_endsinger.6" hidden_effect = { country_event = { id = qsc_endsinger.400 } } } #fleet
+	option = { name = "qsc_endsinger.7" hidden_effect = { country_event = { id = qsc_endsinger.500 } } } #power mode
+	option = { name = "qsc_endsinger.5" hidden_effect = { country_event = { id = qsc_endsinger.3 } } } #cancel
+}
+
+planet_event = { #sets the planet as the target on firing and the QSC as the firing fleet, then calls the menu event on the QSC owner's country
+	id = qsc_endsinger.1
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		set_planet_flag = endsinger_target_planet
+			solar_system = {
+					set_star_flag = endsinger_target_star
+			}
+		from = {
+			save_event_target_as = quasarcraft_firing
+		}
+		from.owner = {
+			country_event = { id = qsc_endsinger.2 }
+		}
+	}
+}
+
+country_event = {
+	id = qsc_endsinger.500
+	is_triggered_only = yes
+	title = "qsc_endsinger.500.title"
+	desc = "qsc_endsinger.500.desc"
+	show_sound = event_energy_field
+	diplomatic = yes
+	picture_event_data = {
+		portrait = root.species
+		room = galactic_target_room
+	}
+	#Current selection display
+	option = { name = "qsc_endsinger.500.lowpower"	trigger = { has_country_flag = endsinger_lowpower }	hidden_effect = { country_event = { id = qsc_endsinger.500 } } }
+	option = { name = "qsc_endsinger.500.normalpower"	trigger = { NOT = {has_country_flag = endsinger_lowpower} }	hidden_effect = { country_event = { id = qsc_endsinger.500 } } }
+
+
+	#Increase
+	option = {
+		name = "qsc_endsinger.500.increase"
+		allow = { custom_tooltip = {fail_text = qsc_already_normal has_country_flag = endsinger_lowpower }}
+		hidden_effect = {
+			country_event = { id = qsc_endsinger.500 }
+			if = {
+				limit = { has_country_flag = endsinger_lowpower }
+				remove_country_flag = endsinger_lowpower
+			}
+		}
+	}
+
+	#Lower
+	option = {
+		name = "qsc_endsinger.500.decrease"
+		allow = { custom_tooltip = {fail_text = qsc_already_low NOT = {has_country_flag = endsinger_lowpower}}}
+		hidden_effect = {
+			country_event = { id = qsc_endsinger.500 }
+			if = {
+				limit = { NOT = {has_country_flag = endsinger_lowpower} }
+				set_country_flag = endsinger_lowpower
+			}
+		}
+	}
+	option = { name = "qsc_endsinger.403" hidden_effect = { country_event = { id = qsc_endsinger.2 }}} #BACK
+	option = { name = "qsc_endsinger.8" } #Exit
+}
+
+country_event = {
+	id = qsc_endsinger.400 #fleet confirm, destroy, cancel
+	title = "qsc_endsinger.400.title"
+	desc = "qsc_endsinger.400.desc"
+	show_sound = event_air_raid_siren
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = root.species
+		room = galactic_fire_support_room
+	}
+	option = { allow = { custom_tooltip = { fail_text = wormholes_already_out NOT = { has_country_flag = quasarcraft_fleet_support}}} name = "qsc_endsinger.401" hidden_effect = { country_event = { id = qsc_endsinger.401 }}} #confirm
+	option = { allow = { custom_tooltip = { fail_text = no_qsc_wormholes has_country_flag = quasarcraft_fleet_support }} name = "qsc_endsinger.402" hidden_effect = { country_event = { id = qsc_endsinger.402}}} #dispel
+	option = { name = "qsc_endsinger.403" hidden_effect = { country_event = { id = qsc_endsinger.2 }}} #back
+	option = { name = "qsc_endsinger.5" hidden_effect = { country_event = { id = qsc_endsinger.3 }}} #cancel
+}
+
+country_event = {
+	id = qsc_endsinger.3 #cancel
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		every_system = {
+			limit = { has_star_flag = endsinger_target_star }
+			every_system_planet = {
+				limit = { has_planet_flag = endsinger_target_planet }
+				remove_planet_flag = endsinger_target_planet
+			}
+			remove_star_flag = endsinger_target_star
+		}
+	}
+}
+
+###############################################################################################
+#######QSC ENDSINGER FIRING MODES########
+###############################################################################################
+
+#Planet
+country_event = { #blast
+	id = qsc_endsinger.100
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		every_system = {
+			limit = { has_star_flag = endsinger_target_star }
+			remove_star_flag = endsinger_target_star
+			every_system_planet = {
+				limit = { has_planet_flag = endsinger_target_planet }
+				remove_planet_flag = endsinger_target_planet
+				if = {
+					limit = { is_colony = yes }
+					add_threat = { who = root amount = 3 } # Threat
+					owner = {
+						add_static_war_exhaustion = {
+							attacker = root
+							location = prev
+							value_for_planet_destruction = 1
+						}
+					}
+
+					if = {
+						limit = { NOT = { has_global_flag = qso_opinions } }
+						set_timed_global_flag = { flag = qso_opinions days = 30 }
+						if = {
+							limit = {
+								exists = owner
+								owner = {
+									NOR = {
+										is_country_type = ai_empire
+										is_country_type = swarm
+										is_country_type = extradimensional
+										is_country_type = extradimensional_2
+										is_country_type = extradimensional_3
+									}
+								}
+							}
+							owner = { add_opinion_modifier = { who = root modifier = opinion_broke_our_planet } }
+							every_country = {
+								limit = {
+									NOR = {
+										is_same_value = prev.owner
+										is_country_type = primitive
+										has_overlord = root
+										has_defensive_pact = root
+										is_country = root
+										is_in_federation_with = root
+										has_valid_civic = civic_fanatic_purifiers
+										has_valid_civic = civic_hive_devouring_swarm
+										has_valid_civic = civic_machine_terminator
+									}
+								}
+								add_opinion_modifier = { who = root modifier = opinion_broke_planet }
+							}
+						}
+						else = {
+							owner = { add_opinion_modifier = { who = root modifier = opinion_broke_our_empty_planet } }
+							every_country = {
+								limit = {
+									NOR = {
+										is_same_value = prev.owner
+										is_country_type = primitive
+										has_overlord = root
+										has_defensive_pact = root
+										is_country = root
+										is_in_federation_with = root
+										has_valid_civic = civic_fanatic_purifiers
+										has_valid_civic = civic_hive_devouring_swarm
+										has_valid_civic = civic_machine_terminator
+									}
+								}
+								add_opinion_modifier = { who = root modifier = opinion_broke_empty_planet }
+							}
+						}
+					}
+				}
+
+				if = {
+					limit = { is_planet_class = pc_ai }
+					if = {
+						limit = { NOT = { has_planet_flag = machine_lair } }
+						planet_event = { id = giga_qso.111 } # contingency planet
+						every_country = { country_event = { id = giga_qso.110 } } # message
+					}
+					else = {
+						planet_event = { id = giga_qso.113 } # contingency planet
+						every_country = { country_event = { id = giga_qso.112 } } # message to everyone
+					}
+				}
+
+				if = {
+					limit = { is_planet_class = pc_infested }
+					planet_event = { id = giga_qso.115 } # Infested world
+				}
+
+				if = {
+					limit = {
+						has_planet_flag = gigaflusion
+						has_global_flag = katzenartig_imperium_happened
+						NOT = { has_global_flag = katzenartig_imperium_defeated }
+						any_country = { is_country_type = katzen_submarines } 
+					}
+					ROOT = { set_country_flag = player_country_cracked_flusion }
+				}	
+
+				if = {
+					limit = {
+						NOT = { root = { has_country_flag = endsinger_lowpower }}
+						OR = {
+							planet_size < 25
+							giga_habitable_structure = yes
+							is_planet_class = pc_ice_asteroid
+							is_planet_class = pc_asteroid
+							is_planet_class = pc_crystal_asteroid
+						}
+					}
+					giga_remove_planet = yes # The planet is too small, or is artificial, instantly obliterated
+				}
+				else = { set_planet_size = 23 }
+
+				if = {
+					limit = { NOT = { has_planet_flag = quasistellar_impact } }
+					set_planet_flag = quasistellar_impact
+					if = { #check if its a gaseous body
+						limit = {
+							is_planet_class = pc_gas_giant
+							giga_brown_dwarf = yes
+						}
+						change_pc = pc_metallic_hydrogen
+					}
+					else = { change_pc = pc_shattered }	
+				}
+				create_ambient_object = {
+					type = "star_explosion"
+					play_animation_once = yes
+					location = this
+					scale = 0.15
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 0
+						angle = random
+					}
+				}
+				# Automatically declare war (lol)
+				if = {
+					limit = {
+						exists = owner
+						owner = {
+							NOR = {
+								is_at_war_with = root
+								is_country_type = ai_empire
+								is_country_type = swarm
+								is_country_type = extradimensional
+								is_country_type = extradimensional_2
+								is_country_type = extradimensional_3
+							}
+						}
+					}
+					owner = {
+						declare_war = {
+							target = root
+							attacker_war_goal = "wg_end_threat_hyperweapon"
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+# Stars and clusters use the same event for efficiency, so the event that sets the cluster flag is used to determine whether or not cluster mode is used
+country_event = {
+	id = qsc_endsinger.200
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = endsinger_target_star
+					has_star_flag = endsinger_target_cluster
+				}
+			}
+			remove_star_flag = endsinger_target_star
+			remove_star_flag = endsinger_target_cluster
+
+			every_system_planet = {
+				if = {
+					limit = { is_colony = yes }
+					add_threat = { who = root amount = 4 } # Threat
+					owner = {
+						add_static_war_exhaustion = {
+							attacker = root
+							location = prev
+							value_for_planet_destruction = 1
+						}
+					}
+
+					if = {
+						limit = { NOT = { has_global_flag = qso_opinions } }
+						set_timed_global_flag = { flag = qso_opinions days = 30 }
+						if = {
+							limit = {
+								exists = owner
+								owner = {
+									NOR = {
+										is_country_type = ai_empire
+										is_country_type = swarm
+										is_country_type = extradimensional
+										is_country_type = extradimensional_2
+										is_country_type = extradimensional_3
+									}
+								}
+							}
+							owner = { add_opinion_modifier = { who = root modifier = opinion_broke_our_system } }
+							every_country = {
+								limit = {
+									NOR = {
+										is_same_value = prev.owner
+										is_country_type = primitive
+										has_overlord = root
+										has_defensive_pact = root
+										is_country = root
+										is_in_federation_with = root
+										has_valid_civic = civic_fanatic_purifiers
+										has_valid_civic = civic_hive_devouring_swarm
+										has_valid_civic = civic_machine_terminator
+									}
+								}
+								add_opinion_modifier = { who = root modifier = opinion_broke_system }
+							}
+						}
+						else = {
+							owner = { add_opinion_modifier = { who = root modifier = opinion_broke_our_empty_system } }
+							every_country = {
+								limit = {
+									NOR = {
+										is_same_value = prev.owner
+										is_country_type = primitive
+										has_overlord = root
+										has_defensive_pact = root
+										is_country = root
+										is_in_federation_with = root
+										has_valid_civic = civic_fanatic_purifiers
+										has_valid_civic = civic_hive_devouring_swarm
+										has_valid_civic = civic_machine_terminator
+									}
+								}
+								add_opinion_modifier = { who = root modifier = opinion_broke_empty_system }
+							}
+						}
+					}
+				}
+
+				if = {
+					limit = { is_planet_class = pc_ai }
+					if = {
+						limit = { NOT = { has_planet_flag = machine_lair } }
+						planet_event = { id = giga_qso.111 } # contingency planet
+						every_country = { country_event = { id = giga_qso.110 } } # message
+					}
+					else = {
+						planet_event = { id = giga_qso.113 } # contingency planet
+						every_country = { country_event = { id = giga_qso.112 } } # message to everyone
+					}
+				}
+
+				if = {
+					limit = { is_planet_class = pc_infested }
+					planet_event = { id = giga_qso.115 } # Infested world
+				}
+
+				if = {
+					limit = { root = {has_country_flag = endsinger_lowpower } NOT = {is_star = yes}}
+					destroy_colony = yes
+					change_pc = pc_shattered
+				}
+
+				if = {
+					limit = { NOR = {is_star = yes root = {has_country_flag = endsinger_lowpower}}}
+					giga_remove_planet = yes
+				}
+			}
+
+			# Automatically declare war (lol)
+			if = {
+				limit = {
+					exists = owner
+					owner = {
+						NOR = {
+							is_at_war_with = root
+							is_country_type = ai_empire
+							is_country_type = swarm
+							is_country_type = extradimensional
+							is_country_type = extradimensional_2
+							is_country_type = extradimensional_3
+						}
+					}
+				}
+				owner = {
+					declare_war = {
+						target = root
+						attacker_war_goal = "wg_end_threat_hyperweapon"
+					}
+				}
+			}
+
+			star = {
+				solar_system = {
+					if = {
+						limit = {
+							NOT = { root = {has_country_flag = endsinger_lowpower}}
+						}
+					set_name = {
+						key = "NAME_Giga_Void_System"
+						variable_string = "[PREV.GetName]"
+					}
+					}
+					if = {
+						limit = { NOT = { root = { has_country_flag = endsinger_lowpower } } }
+						set_star_class = sc_empty_space
+					}
+					if = {
+						limit = {
+							any_system_planet = { has_planet_flag = gigaflusion }
+							has_global_flag = katzenartig_imperium_happened
+							NOT = { has_global_flag = katzenartig_imperium_defeated }
+							any_country = { is_country_type = katzen_submarines } 
+						}
+						ROOT = { set_country_flag = player_country_cracked_flusion }
+					}
+					every_system_planet = {
+						limit = { is_star = yes}
+						if = {
+							limit = { NOR = { is_planet_class = pc_core_quasar root = { has_country_flag = endsinger_lowpower }}}
+							clear_deposits = yes
+							change_pc = pc_giga_empty_space
+							set_name = "Empty Space"
+							add_modifier = {
+								modifier = blokkat_can_repair_system
+								days = -1
+							}
+						}
+						planet_event = { id = giga_o_star.2001 }
+						create_ambient_object = {
+							type = "star_explosion"
+							play_animation_once = yes
+							location = this
+						}
+						last_created_ambient_object = {
+							set_location = {
+								target = prev
+								distance = 0
+								angle = random
+							}
+						}
+					} 
+				}
+				create_ambient_object = { type = "nebula_L8_entity" location = this }
+				create_ambient_object = { type = "nebula_L10_entity" location = this }
+				create_ambient_object = {
+					type = "destroyed_system"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_ambient_object_flag = destroyed_system_effect
+					set_location = {
+						target = prev
+						distance = 0
+						angle = random
+					}
+				}
+			}
+
+			every_system_megastructure = {
+				limit = {
+					NOR = {
+						mega_blokkats_wont_stripmine = yes
+						is_megastructure_type = blokkat_harvester_charged_mothership
+						is_megastructure_type = blokkat_harvester_charged
+						is_megastructure_type = blokkat_harvester_charging_up_mothership
+						is_megastructure_type = blokkat_harvester_charging_up
+					}
+				}
+				remove_megastructure = this
+			}
+
+			set_asteroid_belt = { radius = 0 }
+			if = {
+				limit = { NOT = { root = { has_country_flag = endsinger_lowpower } } }
+			every_neighbor_system = { remove_hyperlane_safe = { from = prev to = this } }
+			}
+			every_fleet_in_system = {
+				limit = {
+						NOT = {
+							is_ship_size = quasarmod_quasarcraft
+						}
+					 owner = { NOR = { is_immune_to_giga_hyperweapon = yes } } } 
+				destroy_fleet = this 
+			}
+			giga_remove_system_debris = yes
+		}
+	}
+}
+
+
+# Selects the system and neighbors for the star destruction script above
+country_event = {
+	id = qsc_endsinger.300
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		every_system = {
+			limit = {
+				has_star_flag = endsinger_target_star
+			}
+			set_star_flag = endsinger_target_cluster
+			every_neighbor_system = {
+				limit = {
+					NOT = {
+						any_system_planet = {
+							OR = {
+								has_planet_flag = cant_target_this_planet
+								has_planet_flag = cant_build_here
+								has_planet_flag = cant_target_this
+							}
+						}
+					}
+				}
+				set_star_flag = endsinger_target_cluster
+			}
+		}
+		country_event = {
+			id = qsc_endsinger.200
+			days = 10
+		}
+	}
+}
+
+##################################### FLEET ############################
+
+country_event = {
+	id = qsc_endsinger.401 #add flag, modifier, spawn wormholes
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		set_country_flag = quasarcraft_fleet_support
+		set_variable = {
+			which = qsc_wormholes_count
+			value = 0
+		}
+		while = {
+			limit = { check_variable = {which = qsc_wormholes_count value < 5}}
+			qsc_wormhole_spawn = yes
+		}
+		every_system = {
+			limit = { has_star_flag = endsinger_target_star }
+			every_system_planet = {
+				limit = { has_planet_flag = endsinger_target_planet }
+				remove_planet_flag = endsinger_target_planet
+			}
+			remove_star_flag = endsinger_target_star
+		}
+		event_target:quasarcraft_owner = {
+			hidden_effect = {
+				add_modifier = {
+					modifier = "quasarcraft_wormholes"
+					days = -1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = qsc_endsinger.402 #remove flag, modifier, and destroy wormholes
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		remove_country_flag = quasarcraft_fleet_support
+		every_owned_ship = {
+			limit = {
+				is_ship_size = quasarcraft_wormhole
+			}
+			destroy_ship = this
+		}
+		set_variable = {
+			which = qsc_wormholes_count
+			value = 0
+		}
+		event_target:quasarcraft_owner = {
+			hidden_effect = {
+				remove_modifier = quasarcraft_wormholes
+			}
+		}
+		every_system = {
+			limit = { has_star_flag = endsinger_target_star }
+			every_system_planet = {
+				limit = { has_planet_flag = endsinger_target_planet }
+				remove_planet_flag = endsinger_target_planet
+			}
+			remove_star_flag = endsinger_target_star
+		}
+	}
+}

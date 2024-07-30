@@ -1,8 +1,8 @@
 objectTypes = {
 
     pdxmesh = {
-        name = "bestagon_swarm_mesh"
-        file = "gfx/models/ships/megastructures/hyperquasaric_teraforge/bestagon_swarm.mesh"
+        name = "hexagon_swarm_mesh"
+        file = "gfx/models/ships/megastructures/hyperquasaric_teraforge/hexagon_swarm.mesh"
         scale = 1.0
 
         meshsettings = {

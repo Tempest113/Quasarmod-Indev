@@ -1,0 +1,119 @@
+# This file is a mess, i know. Most of what i did here was testing, and when things started working i didn't want to try and "clean up" and risk breaking everything
+
+entity = {
+    name = "quasar_small_disk_entity"
+    scale = 220
+    cull_radius = 99999
+
+    playback_rate = 2.5
+    default_state = "idle"
+    state = { name = "idle" state_time = 5
+        event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+    }
+    locator = { name = "planet"				position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 1.0 }
+    locator = { name = "gravlens"			position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 1.75 }
+    locator = { name = "outbursts"			position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 1.6 }
+    locator = { name = "pulsar1"			position = { 0 4 0 }		rotation = { 0 0 0 }	scale = 4.0 }
+    locator = { name = "pulsar2"			position = { 0 -4 0 }		rotation = { 0 0 0 }	scale = 4.0 }
+
+    locator = { name = "bh_rings_10"		position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 1.3 }
+    locator = { name = "bh_rings_14"		position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 1.8 }
+    locator = { name = "flip_bh_rings_10"	position = { 0 0 0 }		rotation = { 0 180 0 }	scale = 1.3 }
+    locator = { name = "flip_bh_rings_14"	position = { 0 0 0 }		rotation = { 0 180 0 }	scale = 1.8 }
+
+    locator = { name = "planet_008"			position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 0.104 }
+    locator = { name = "planet_013"			position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 0.169 }
+    locator = { name = "flip_planet_008"	position = { 0 -0.25 0 }	rotation = { 0 180 0 }	scale = 0.104 }
+    locator = { name = "flip_planet_013"	position = { 0 0.25 0 }		rotation = { 0 180 0 }	scale = 0.169 }
+
+    locator = { name = "rings"				position = { 0 -1.25 0 }	rotation = { 0 0 0 } }
+    locator = { name = "flip_rings"			position = { 0 1.25 0 }		rotation = { 0 180 0 } }
+
+    #small shit
+    locator = { name = "small_disk"         position = { 0 0 0 }                rotation = { 0 0 0 }      scale = 0.08 }
+    locator = { name = "small_disk_flip_1"  position = { 0 -0.25 0 }            rotation = { 0 180 0 }    scale = 0.08 }
+    locator = { name = "small_disk_flip_2"  position = { 0 0.25 0 }             rotation = { 0 180 0 }    scale = 0.08 }
+    locator = { name = "small_rings"		position = { 0 -1.25 0 }	        rotation = { 0 0 0 }      scale = 0.15 }
+    locator = { name = "small_flip_rings"	position = { 0 1.25 0 }		        rotation = { 0 180 0 }    scale = 0.15 }
+
+    attach = { planet =				"quasar_black_hole_entity" }
+    attach = { gravlens =		    "giga_microquasar_2_grav_lens_entity" }
+    attach = { gravlens =			"giga_microquasar_2_grav_animation_entity" }
+
+    attach = { outbursts =			"giga_microquasar_2_outbursts_entity" }
+    attach = { pulsar1 =			"giga_microquasar_2_puls_entity" }
+    attach = { pulsar2 =			"giga_microquasar_2_puls_entity" }
+
+    attach = { small_rings =		"giga_protoplanetary_disk_blue_cloud_entity" }
+    attach = { small_disk =			"giga_microquasar_2_disk_mesh" }
+    attach = { small_disk =			"giga_microquasar_2_disk_mesh" }
+    attach = { bh_rings_10 =		"giga_microquasar_2_rings_1_entity" }
+    attach = { bh_rings_14 =		"giga_microquasar_2_rings_1_entity" }
+
+    attach = { small_flip_rings =	"giga_protoplanetary_disk_blue_cloud_entity" }
+    attach = { small_disk_flip_1 =	"giga_microquasar_2_disk_mesh" }
+    attach = { small_disk_flip_2 =	"giga_microquasar_2_disk_mesh" }
+    attach = { flip_bh_rings_10 =	"giga_microquasar_2_rings_1_entity" }
+    attach = { flip_bh_rings_14 =	"giga_microquasar_2_rings_1_entity" }
+
+    game_data = {
+        size = 250
+        bloom_factor = 5
+    }
+}
+
+
+entity = {
+    name = "quasar_small_disk_no_jets"
+    scale = 220
+    cull_radius = 99999
+
+    playback_rate = 2.5
+    default_state = "idle"
+    state = { name = "idle" state_time = 5
+        event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+    }
+    locator = { name = "planet"				position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 1.0 }
+    locator = { name = "gravlens"			position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 1.75 }
+    locator = { name = "outbursts"			position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 1.6 }
+    locator = { name = "pulsar1"			position = { 0 4 0 }		rotation = { 0 0 0 }	scale = 4.0 }
+    locator = { name = "pulsar2"			position = { 0 -4 0 }		rotation = { 0 0 0 }	scale = 4.0 }
+
+    locator = { name = "bh_rings_10"		position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 1.3 }
+    locator = { name = "bh_rings_14"		position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 1.8 }
+    locator = { name = "flip_bh_rings_10"	position = { 0 0 0 }		rotation = { 0 180 0 }	scale = 1.3 }
+    locator = { name = "flip_bh_rings_14"	position = { 0 0 0 }		rotation = { 0 180 0 }	scale = 1.8 }
+
+    locator = { name = "planet_008"			position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 0.104 }
+    locator = { name = "planet_013"			position = { 0 0 0 }		rotation = { 0 0 0 }	scale = 0.169 }
+    locator = { name = "flip_planet_008"	position = { 0 -0.25 0 }	rotation = { 0 180 0 }	scale = 0.104 }
+    locator = { name = "flip_planet_013"	position = { 0 0.25 0 }		rotation = { 0 180 0 }	scale = 0.169 }
+
+    locator = { name = "rings"				position = { 0 -1.25 0 }	rotation = { 0 0 0 } }
+    locator = { name = "flip_rings"			position = { 0 1.25 0 }		rotation = { 0 180 0 } }
+
+    #small shit
+    locator = { name = "small_disk"         position = { 0 0 0 }                rotation = { 0 0 0 }      scale = 0.08 }
+    locator = { name = "small_disk_flip_1"  position = { 0 -0.25 0 }            rotation = { 0 180 0 }    scale = 0.08 }
+    locator = { name = "small_disk_flip_2"  position = { 0 0.25 0 }             rotation = { 0 180 0 }    scale = 0.08 }
+    locator = { name = "small_rings"		position = { 0 -1.25 0 }	        rotation = { 0 0 0 }      scale = 0.15 }
+    locator = { name = "small_flip_rings"	position = { 0 1.25 0 }		        rotation = { 0 180 0 }    scale = 0.15 }
+
+    attach = { planet =				"quasar_black_hole_entity" }
+    attach = { gravlens =		    "giga_microquasar_2_grav_lens_entity" }
+    attach = { gravlens =			"giga_microquasar_2_grav_animation_entity" }
+    attach = { bh_rings_10 =		"giga_microquasar_2_rings_1_entity" }
+    attach = { bh_rings_14 =		"giga_microquasar_2_rings_1_entity" }
+    attach = { small_flip_rings =	"giga_protoplanetary_disk_blue_cloud_entity" }
+    attach = { small_disk_flip_1 =	"giga_microquasar_2_disk_mesh" }
+    attach = { small_rings =		"giga_protoplanetary_disk_blue_cloud_entity" }
+    attach = { small_disk =			"giga_microquasar_2_disk_mesh" }
+    attach = { small_disk_flip_2 =	"giga_microquasar_2_disk_mesh" }
+    attach = { flip_bh_rings_10 =	"giga_microquasar_2_rings_1_entity" }
+    attach = { flip_bh_rings_14 =	"giga_microquasar_2_rings_1_entity" }
+
+    game_data = {
+        size = 250
+        bloom_factor = 5
+    }
+}

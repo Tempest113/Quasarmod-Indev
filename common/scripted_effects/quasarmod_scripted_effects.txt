@@ -1,0 +1,166 @@
+
+quasarcraft_spawn = {
+    set_global_flag = giga_quasarcraft_constructed
+	create_fleet = {
+		name = "The Quasarcraft"
+		settings = {
+			spawn_debris = no
+			can_change_composition = no
+			is_boss = yes
+		}
+		effect = {
+		    set_fleet_flag = quasarcraft_fleet
+			set_owner = prev
+			create_ship = {
+				name = "The Quasarcraft"
+				graphical_culture = root.from
+				random_existing_design = quasarmod_quasarcraft
+				effect = {
+					set_disable_at_health = 0.02
+					ship_event = {
+						id = quasarmod_utility.6
+					}
+				}
+			}
+		}
+	}
+}
+
+qsc_wormhole_spawn = {
+	change_variable = {
+		which = qsc_wormholes_count
+		value = 1
+	}
+	create_fleet = {
+		name = "Quasaric Obliteration Portal"
+		settings = {
+			spawn_debris = no
+			is_boss = yes
+			can_change_composition = no
+		}
+		effect = {
+			set_fleet_flag = qsc_wormhole_fleet
+			set_owner = prev
+			set_location = event_target:quasarcraft_owner
+			create_ship = {
+				name = "Quasaric Wormhole"
+				graphical_culture = root.from
+				design = "Macrospacial Breach"
+				effect = {
+					set_disable_at_health = 0.02
+				}
+			}
+		}
+	}
+}
+
+convert_to_inactive_core = {
+	change_pc = pc_core_black_hole
+	solar_system = {
+		set_star_class = sc_birch
+		every_system_planet = {
+			remove_planet_flag = has_megastructure
+
+			limit = {
+				nor = {
+					is_planet_class = pc_core_quasar
+					is_planet_class = pc_core_black_hole
+				}
+			}
+			change_pc = pc_barren
+		}
+
+		every_system_megastructure = {
+			limit = {
+				nor = {
+					is_megastructure_type = lgate_base
+					is_megastructure_type = gateway_final
+					is_megastructure_type = gateway_restored
+					is_megastructure_type = ehof_pgate_gateway
+					is_megastructure_type = hyper_relay
+					is_megastructure_type = hyper_relay_restored
+				}
+			}
+			remove_megastructure = this
+		}
+
+		star = {
+			giga_clear_has_mega_flag = yes
+			change_pc = pc_core_black_hole
+			set_planet_size = 20
+			#test fix for EHOF bug - consider not removing star flags to prevent spam of new core systems (this needs to be tested)
+			if = {
+				limit = {
+					solar_system = {
+						or = {
+							has_star_flag = giga_core_02
+							has_star_flag = giga_qso_core
+						}
+					}
+				}
+				solar_system = {
+					# set_star_flag = giga_core_01
+					# set_star_flag = giga_birch_core
+					remove_star_flag = giga_core_02
+					remove_star_flag = giga_qso_core
+
+				}
+			}
+		}
+	}
+}
+
+convert_to_hyperquasar = {
+	change_pc = pc_core_quasar
+	solar_system = {
+		set_star_class = sc_quasar
+		every_system_planet = {
+			remove_planet_flag = has_megastructure
+
+			limit = {
+				nor = {
+					is_planet_class = pc_core_quasar
+					is_planet_class = pc_core_black_hole
+				}
+			}
+			change_pc = pc_molten
+		}
+
+		every_system_megastructure = {
+			limit = {
+				nor = {
+					is_megastructure_type = lgate_base
+					is_megastructure_type = gateway_final
+					is_megastructure_type = gateway_restored
+					is_megastructure_type = ehof_pgate_gateway
+					is_megastructure_type = hyper_relay
+					is_megastructure_type = hyper_relay_restored
+				}
+			}
+			remove_megastructure = this
+		}
+
+		star = {
+			giga_clear_has_mega_flag = yes
+			change_pc = pc_core_quasar
+			set_planet_size = 10
+			#test fix for EHOF bug
+			if = {
+				limit = {
+					solar_system = {
+						or = {
+							has_star_flag = giga_core_01
+							has_star_flag = giga_birch_core
+						}
+					}
+				}
+				solar_system = {
+					# set_star_flag = giga_core_02
+					# set_star_flag = giga_qso_core
+					remove_star_flag = giga_core_01
+					remove_star_flag = giga_birch_core
+				}
+			}
+		}
+	}
+}

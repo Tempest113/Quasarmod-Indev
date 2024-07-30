@@ -1,0 +1,9 @@
+objectTypes = {
+
+	pdxparticle = {
+		name = "qsc_warp_muzzle"
+		type = "qsc_warp_muzzle_file"
+	
+		scale = 0.25
+	}
+}

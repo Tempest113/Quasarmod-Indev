@@ -6,10 +6,15 @@ blackhole_manipulator_0 = {
 	entity = "construction_platform_entity"
 	construction_entity = "construction_platform_entity"
 	entity_offset = { x = -150 y = -7 }
-	prerequisites = { tech_supermassive_blackhole_manipulator }
+	prerequisites = { tech_smbh_manipulator }
 	show_prereqs = no
 	construction_blocks_and_blocked_by = none
 
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
 	build_time = 360
 	resources = {
 		category = giga_gigastructures
@@ -23,12 +28,12 @@ blackhole_manipulator_0 = {
 
 	potential = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
-		has_technology = tech_supermassive_blackhole_manipulator
+		has_technology = tech_smbh_manipulator
 	}
 
 	possible = {
 		custom_tooltip = { fail_text = "requires_inside_border" is_inside_border = from }
-		custom_tooltip = { fail_text = "requires_no_existing_megastructure"		has_no_non_gate_megastructure = yes }
+		custom_tooltip = { fail_text = "requires_no_existing_megastructure"		planet_has_no_megastructure = yes }
 	}
 
 	on_build_complete = {
@@ -38,7 +43,7 @@ blackhole_manipulator_0 = {
 			if = { limit = { exists = orbital_station } orbital_station = { dismantle = yes } }
 			giga_set_has_mega_flag = yes
 		}
-		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.101 } }
+		from = { country_event = { id = quasarmod_megastage_dialogue.101 } }
 	}
 	
 	placement_rules = {
@@ -46,8 +51,9 @@ blackhole_manipulator_0 = {
 			custom_tooltip = { fail_text = "requires_no_existing_megastructure" planet_has_no_megastructure = yes }
 			custom_tooltip = { fail_text = "requires_no_anomaly" has_anomaly = no }
 			custom_tooltip = {
-				fail_text = "blackhole_manipulator_fail_tooltip"
-				OR = { is_planet_class = pc_core_quasar
+				fail_text = "requires_inactive_core_fail_tooltip"
+				OR = {
+					is_planet_class = pc_core_quasar
 					is_planet_class = pc_core_black_hole
 				}
 			}
@@ -61,6 +67,17 @@ blackhole_manipulator_1 = {
 	scales_with_planet = no
 	portrait = GFX_megastructure_construction_background
 	upgrade_from = { blackhole_manipulator_0 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+	possible = {
+		from = {
+			has_technology = tech_smbh_manipulator
+		}
+	}
 
 	build_time = 500
 	resources = {
@@ -78,7 +95,7 @@ blackhole_manipulator_1 = {
 	on_build_complete = {
 		save_event_target_as = giga_system
 		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.201 } }
+		from = { country_event = { id = quasarmod_megastage_dialogue.102 } }
 
 		if = {
 			limit = {
@@ -95,6 +112,17 @@ blackhole_manipulator_2 = {
 	scales_with_planet = no
 	portrait = GFX_megastructure_construction_background
 	upgrade_from = { blackhole_manipulator_1 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+	possible = {
+		from = {
+			has_technology = tech_smbh_manipulator
+		}
+	}
 	
 	build_time = 800
 	resources = {
@@ -112,7 +140,7 @@ blackhole_manipulator_2 = {
 	on_build_complete = {
 		save_event_target_as = giga_system
 		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.301 } }
+		from = { country_event = { id = quasarmod_megastage_dialogue.103 } }
 	}
 }
 
@@ -122,6 +150,17 @@ blackhole_manipulator_3 = {
 	scales_with_planet = no
 	portrait = GFX_megastructure_construction_background
 	upgrade_from = { blackhole_manipulator_2 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+	possible = {
+		from = {
+			has_technology = tech_smbh_manipulator
+		}
+	}
 
 	build_time = 1100
 	resources = {
@@ -143,7 +182,7 @@ blackhole_manipulator_3 = {
 		}
 		save_event_target_as = giga_system
 		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.401 } }
+		from = { country_event = { id = quasarmod_megastage_dialogue.104 } }
 	}
 }
 
@@ -154,6 +193,17 @@ blackhole_manipulator_4 = {
 	scales_with_planet = no
 	portrait = GFX_megastructure_construction_background
 	upgrade_from = { blackhole_manipulator_3 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+	possible = {
+		from = {
+			has_technology = tech_smbh_manipulator
+		}
+	}
 
 	build_time = 1400
 	resources = {
@@ -171,7 +221,7 @@ blackhole_manipulator_4 = {
 	on_build_complete = {
 		save_event_target_as = giga_system
 		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.501 } }
+		from = { country_event = { id = quasarmod_megastage_dialogue.105 } }
 	}
 }
 
@@ -181,6 +231,17 @@ blackhole_manipulator_5 = {
 	scales_with_planet = no
 	portrait = GFX_megastructure_construction_background
 	upgrade_from = { blackhole_manipulator_4 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+	possible = {
+		from = {
+			has_technology = tech_smbh_manipulator
+		}
+	}
 
 	build_time = 1700
 	resources = {
@@ -198,7 +259,7 @@ blackhole_manipulator_5 = {
 	on_build_complete = {
 		save_event_target_as = giga_system
 		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-		from = { country_event = { id = blackhole_manipulation_mega_stage_complete.601 } }
+		from = { country_event = { id = quasarmod_megastage_dialogue.106 } }
 	}
 
 }
@@ -212,6 +273,11 @@ blackhole_manipulator_a6 = {
 	portrait = GFX_megastructure_construction_background
 	upgrade_from = { blackhole_manipulator_5 }
 	upgrade_desc = hide
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
 
 	build_time = 1
 	resources = {
@@ -232,14 +298,19 @@ blackhole_manipulator_a6 = {
 			star = { is_star_class = sc_birch }
 			}
 		}
+		from = {
+			has_technology = tech_smbh_manipulator
+		}
+
 	}
 
 	on_build_complete = {
 		fromfrom.solar_system =  { save_event_target_as = blackhole_manip_system}
 		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = blackhole_manip_system } }
-		from = { start_situation = {
-			type = situation_blackhole_injection
-			target = root.fromfrom.planet
+		from = {
+			start_situation = {
+				type = situation_blackhole_injection
+				target = root.fromfrom.planet
 			}
 		}
 	}
@@ -254,6 +325,11 @@ blackhole_manipulator_b6 = {
 	portrait = GFX_megastructure_construction_background
 	upgrade_from = { blackhole_manipulator_5 }
 	upgrade_desc = hide
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
 
 	build_time = 1
 	resources = {
@@ -274,14 +350,18 @@ blackhole_manipulator_b6 = {
 			star = { is_star_class = sc_quasar }
 			}
 		}
+		from = {
+			has_technology = tech_smbh_manipulator
+		}
 	}
 
 	on_build_complete = {
 		fromfrom.solar_system =  { save_event_target_as = blackhole_manip_system}
 		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = blackhole_manip_system } }
-		from = { start_situation = {
-			type = situation_blackhole_harvesting
-			target = root.fromfrom.planet
+		from = { 
+			start_situation = {
+				type = situation_blackhole_harvesting
+				target = root.fromfrom.planet
 			}
 		}
 	}

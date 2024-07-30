@@ -1,0 +1,41 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_qsc_reactor"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_qsc_reactor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_qsc_drive"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_qsc_ve.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_qsc_titanic"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_qsc_nee.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_qsc_jupiter"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_qsc_ja.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_qsc_starsplitter"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_qsc_ss.dds"
+	}
+
+	spriteType = {
+		name = "GFX_qsc_skyripper"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_qsc_sr.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_qsc_attraction"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_qsc_tma.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_qsc_strike_force"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_qsc_csf.dds"
+	}
+}

@@ -1,0 +1,135 @@
+﻿l_english:
+
+# This file handles general loc such as ascension perks, technologies, edicts, modifiers or tooltips
+
+ ##################
+ # Ascension Perk #
+ ##################
+
+ ap_hyperquasaric_megaconstruction: "Hyperquasaric Megaconstruction"
+ ap_hyperquasaric_megaconstruction_desc: "The size and scale of our ambitions are rapidly outgrowing our ability to achieve them, we must reach a level of resource exploitation larger than has ever been seen in the history of our galaxy if we wish to ensure our unending prosperity."
+ ap_hyperquasaric_megaconstruction_add_research: "Research options gained:\n£physics_research£§Y$tech_smbh_manipulator$§!\n£physics_research£§Y$tech_core_mbrain$§!\n£society_research£§Y$tech_hyperquasaric_megashipyard$§!\n£society_research£§Y$tech_quasarcraft_1$\n£engineering_research£§Y$tech_hyperquasaric_teraforge$§!"
+
+ ##############
+ # Technology #
+ ##############
+
+ # Teraforge
+
+ tech_hyperquasaric_teraforge: "Hyperquasaric Megafoundries"
+ tech_hyperquasaric_teraforge_desc: "Our ambitions are rapidly outgrowing our ability to produce the resources necessary to realize them, the cataclysmic power of an active hyperquasar may be able to help us with that."
+ TECH_UNLOCK_HYPERQUASARIC_TERAFORGE_TITLE: "§SUnlocks Megastructure:§! Hyperquasaric Teraforge"
+ TECH_UNLOCK_HYPERQUASARIC_TERAFORGE_DESC: "A truly gargantuan alloy processing facility residing in the galactic core,\nreaching approximately 100 AU in diameter and harnessing the power of an active Hyperquasar, the Hyperquasaric Teraforge is the largest source of alloys in our corner of the universe."
+
+ # Megashipyard
+
+ tech_hyperquasaric_megashipyard: "Hyperquasaric Shipbuilding Facilities"
+ tech_hyperquasaric_megashipyard_desc: "Our ambitions are rapidly outgrowing our ability to produce the resources necessary to realize them, the cataclysmic power of an active hyperquasar may be able to help us with that"
+ TECH_UNLOCK_HYPERQUASARIC_MEGASHIPYARD_TITLE: "§SUnlocks Megastructure:§! Hyperquasaric Megashipyard"
+ TECH_UNLOCK_HYPERQUASARIC_MEGASHIPYARD_DESC: "A truly gargantuan alloy processing facility residing in the galactic core,\nreaching approximately 100 AU in diameter and harnessing the power of an active Hyperquasar, the Hyperquasaric Teraforge is the largest source of alloys in our corner of the universe."
+
+ # SMBH Manipulator
+
+ tech_smbh_manipulator: "Supermassive Black Hole Manipulation"
+ tech_smbh_manipulator_desc: "Perhaps one of the largest megastructures we will build for the next several hundred years: The Supermassive Black Hole Manipulator, a gargantuan terastructure which will allow us to bend the galactic core to our very will"
+ TECH_UNLOCK_BLACKHOLE_MANIPULATOR_TITLE: "§SUnlocks Megastructure:§! Supermassive Black Hole Manipulator"
+ #TECH_UNLOCK_BLACKHOLE_MANIPULATOR_TITLE: "§SUnlocks Feature:§! Supermassive Black Hole Manipulation \n§SUnlocks Megastructure:§! Supermassive Black Hole Manipulator"
+ TECH_UNLOCK_BLACKHOLE_MANIPULATOR_DESC: "The supermassive black hole residing within the galactic core no longer suits our needs, we shall reshape it to better serve our empire."
+
+ # Core MBrain
+
+ tech_core_mbrain: "Hyperscale Black Hole Computation"
+ tech_core_mbrain_desc: "Despite the fact that we have constructed the largest computational devices in history, our simulations and experiments are growing ever more complex and even the largest computers our galaxy has ever seen are struggling to keep up. We must go bigger."
+ TECH_UNLOCK_GARGANTUAN_MBRAIN_TITLE: "§SUnlocks Megastructure:§! Gargantuan Matrioshka Brain"
+ TECH_UNLOCK_GARGANTUAN_MBRAIN_DESC: "The most powerful computer to ever exist within the history of our galaxy, capable of mapping and accurately simulating hundreds of billions of star systems at once, we can effectively simulate an entire small universe with relative ease.\nThe existential and philosophical implications of such a fact will rock our society for generations to come."
+
+ # Quasarcraft
+
+ tech_quasarcraft_1: "An Armament of Galactic Proportions"
+ tech_quasarcraft_1_desc: "With the advent of mightier foes, even our most powerful ships are no longer strong enough. Our finest minds have thus began dreaming, we shall create a weapon to pierce the heavens. So begins the Quasarcraft Project."
+ allow_quasarcraft_p0: "Unlocks the foundation of the Quasarcraft"
+ desc_quasarcraft_p0: "We can now build the $quasarcraft_0$"
+
+ tech_quasarcraft_2: "Quasaric Fortress Core"
+ tech_quasarcraft_2_desc: "To lay the foundation upon which we will build the ultimate armament, we must first tear down the old. By refitting our Quasi-Stellar Obliterator, we can create not only a more defended facility, but an impenetrable fortress, a fully functional battlestation."
+ allow_quasarcraft_p1: "Unlocks the First Stage of the Quasarcraft"
+ desc_quasarcraft_p1: "The $quasarcraft_1$ can now be constructed."
+
+ tech_quasarcraft_3: "Galactic Halo"
+ tech_quasarcraft_3_desc: "Our core already has great defence against enemy attacks, but we must also take into account our offense. To this effect, a great myriad of the strongest weaponry we can envision will be fitted onto a grand ring surrounding the core. A halo, if one wills."
+ allow_quasarcraft_p2: "Unlocks the Second Stage of the Quasarcraft"
+ desc_quasarcraft_p2: "The Halo of the Quasarcraft can now be constructed."
+
+ tech_quasarcraft_4: "Trillion Suns Wrath"
+ tech_quasarcraft_4_desc: "The development of the weaponry for the Quasarcraft has been staggering, in terms of the raw power available. Our great minds have thus designed several truly gargantuan weapons that use the enhanced power of the Quasar, even retrofitting the old QSO weapons into something anew, and creating an incredibly powerful prototype component blueprint known only as... §RThe Endsinger.§!"
+ allow_quasarcraft_p3: "Unlocks the Third Stage of the Quasarcraft"
+ desc_quasarcraft_p3: "The Halo can now be fitted with its armaments."
+
+ tech_quasarcraft_5: "Quasaric Event Horizon Offsetting"
+ tech_quasarcraft_5_desc: "Now that all of the main armaments have been installed, the question arises, 'How are we supposed to be able to transport such mass across the galaxy?' The answer lies in the past - the §HEvent Horizon Offset Facility§!. Using advancements made in both fields, we will construct a gigastructural EHOF on the back of the Quasarcraft, which will expand wormholes to allow the mobile terastructure to 'jump' immense distances."
+ allow_quasarcraft_p4: "Unlocks the Fourth Stage of the Quasarcraft"
+ desc_quasarcraft_p4: "The Q-EHOF can now be installed onto the Quasarcraft"
+
+ tech_quasarcraft_6: "A Weapon to Pierce The Heavens"
+ tech_quasarcraft_6_desc: "The final designs and necessary facilities of the Quasarcraft are being finalized, and now the blueprint becomes available to us to design as we please. Engineers can barely contain their excitement, for the dream is almost fully realized."
+ allow_quasarcraft_p5: "Unlocks the Final Stage of the Quasarcraft, and the ship itself in the Designer."
+ desc_quasarcraft_p5: "§RDesign the Quasarcraft BEFORE finishing the final stage!§!"
+
+ ##########
+ # Edicts #
+ ##########
+
+ edict_qsc_quasarcraft_controls: "Endsinger Control Panel"
+ edict_qsc_quasarcraft_controls_desc: "This Edict allows you to access the Quasarcraft's §MEndsinger§! functions without having to fire the weapon. Useful for using the §BM.I.F.S.§!"
+ edict_qsc_quasarcraft_mifs: "§BEndsinger: Multi-Instance Fire Support§!"
+ edict_qsc_quasarcraft_mifs_desc: "Opens the Endsinger's §BM.I.F.S.§! Menu directly."
+ edict_qsc_quasarcraft_power: "§GEndsinger: Power Level Controls§!"
+ edict_qsc_quasarcraft_power_desc: "Opens the §MEndsinger's§! power level control panel, allowing you to directly change the power of the Endsinger without firing."
+
+ ##################
+ # Tooltips/Fails #
+ ##################
+
+ requires_ap_stellar_manipulation: "$TRIGGER_FAIL$ Requires the §Y$ap_stellar_manipulation$§! ascension perk."
+ requires_ap_hyperquasaric_megaconstruction: "$TRIGGER_FAIL$ Requires the §Y$ap_hyperquasaric_megaconstruction$§! ascension perk."
+ requires_advanced_stellar_manipulation: "$TRIGGER_FAIL$ Requires the £engineering_research£ §Y$tech_gigas_stellar_manip_2$§! technology."
+
+ requires_inactive_core_fail_tooltip: "$TRIGGER_FAIL$ Must build around a supermassive black hole."
+ requires_quasar_fail_tooltip: "$TRIGGER_FAIL$ Must build around an active hyperquasar."
+ requires_built_on_giga_active_core: "$TRIGGER_FAIL$ Can only harvest plasma from an active hyperquasar"
+ requires_built_on_giga_inactive_core: "$TRIGGER_FAIL$ Can only inject plasma into an inactive supermassive black hole"
+
+ requires_mbrain_uplink: "$TRIGGER_FAIL$ Requires a ['building:building_giga_matrioshka_brain_uplink'] building."
+ already_have_quasarshipyard_uplink:"$TRIGGER_FAIL$ There's already a Hyperquasaric Megashipyard Uplink here."
+
+ no_qsc_wormholes: "$TRIGGER_FAIL$ There are no wormholes to disband."
+ wormholes_already_out: "$TRIGGER_FAIL$ Must disband wormholes first."
+ cannot_target_empty_space: "$TRIGGER_FAIL$ Cannot target Empty Space."
+
+ #############
+ # Modifiers #
+ #############
+
+ # Buildings
+ mod_building_quasarmod_teraforge_uplink_country_max: "Max Hyperquasaric Teraforge Uplink Buildings"
+ mod_building_teraforge_uplink_base_max: "Max Hyperquasaric Teraforge Uplinks"
+ mod_planet_building_teraforge_uplink_base_build_speed_mult: "Hyperquasaric Teraforge Uplink build speed"
+ mod_building_teraforge_uplink_alloys_max: "Max Quasaric Alloy Plants"
+ mod_planet_building_teraforge_uplink_alloys_build_speed_mult: "Quasaric Alloy Plants build speed"
+ mod_building_teraforge_uplink_consumer_goods_max: "Max Quasaric Factory Uplinks"
+ mod_planet_building_teraforge_uplink_consumer_goods_build_speed_mult: "Quasaric Factory Uplink build speed"
+
+ # Ships
+ mod_shipsize_quasarmod_quasarcraft_build_speed_mult: "$quasarmod_quasarcraft$ Build Speed"
+ mod_shipsize_quasarmod_quasarcraft_hull_mult: "$quasarmod_quasarcraft$ Hull Points"
+ mod_shipsize_quasarmod_quasarcraft_hull_add: "$mod_shipsize_quasarmod_quasarcraft_hull_mult$"
+ mod_shipsize_quasarmod_quasarcraft_evasion_mult: "$quasarmod_quasarcraft$ Evasion"
+ mod_shipsize_quasarmod_quasarcraft_disengage_chance_mult: "$quasarmod_quasarcraft$ Disengage Chance"
+ mod_shipsize_quasarmod_quasarcraft_tracking_mult: "$quasarmod_quasarcraft$ Tracking"
+
+ mod_shipsize_quasarcraft_wormhole_build_speed_mult: "$quasarcraft_wormhole$ Build Speed"
+ mod_shipsize_quasarcraft_wormhole_hull_mult: "$quasarcraft_wormhole$ Hull Points"
+ mod_shipsize_quasarcraft_wormhole_hull_add: "$mod_shipsize_quasarcraft_wormhole_hull_mult$"
+ mod_shipsize_quasarcraft_wormhole_evasion_mult: "$quasarcraft_wormhole$ Evasion"
+ mod_shipsize_quasarcraft_wormhole_disengage_chance_mult: "$quasarcraft_wormhole$ Disengage Chance"
+ mod_shipsize_quasarcraft_wormhole_tracking_mult: "$quasarcraft_wormhole$ Tracking"

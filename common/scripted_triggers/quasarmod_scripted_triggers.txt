@@ -7,7 +7,6 @@ planet_has_quasarmod_teraforge_uplink = {
         has_building = building_teraforge_uplink_base
         has_building = building_teraforge_uplink_alloys
         has_building = building_teraforge_uplink_consumer_goods
-
     }
 }
 
@@ -15,6 +14,27 @@ owner_owns_core_mbrain = {
     owner = {
         any_owned_megastructure = {
             is_megastructure_type = matrioshka_brain_5_core
+        }
+    }
+}
+
+can_destroy_planet_with_QSC_ENDSINGER = {
+    custom_tooltip = {
+        fail_text = is_your_megastructure_system
+        NOT = {
+            solar_system = {
+                has_star_flag = crisis_sphere_system@from.owner
+                any_system_megastructure = { has_megastructure_flag = crisis_sphere }
+            }
+        }
+    }
+    custom_tooltip = {
+        fail_text = cannot_target_empty_space
+        not = {
+            planet = {
+                giga_is_empty_space = yes
+                merg_is_empty_space = yes
+            }
         }
     }
 }

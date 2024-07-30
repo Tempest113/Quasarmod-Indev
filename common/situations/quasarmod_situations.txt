@@ -10,7 +10,7 @@ situation_blackhole_injection = {
     start_value = 0
     on_start = {
         situation_event = {
-            id = blackhole_manipulation.1
+            id = quasarmod_dialogue.1
         }
     }
 
@@ -98,7 +98,7 @@ situation_blackhole_injection = {
     on_progress_complete = {
         target = {
             planet_event = {
-                id = blackhole_manipulation.101
+                id = quasarmod_utility.5
             }
         }
         destroy_situation = this
@@ -117,7 +117,7 @@ situation_blackhole_harvesting = {
     start_value = 0
     on_start = {
         situation_event = {
-            id = blackhole_manipulation.2
+            id = quasarmod_dialogue.2
         }
     }
 
@@ -151,7 +151,7 @@ situation_blackhole_harvesting = {
     on_progress_complete = {
         target = {
             planet_event = {
-                id = blackhole_manipulation.201
+                id = quasarmod_utility.4
             }
         }
         destroy_situation = this

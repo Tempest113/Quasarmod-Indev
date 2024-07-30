@@ -1,5 +1,6 @@
 namespace = quasarmod_utility
 
+# Set quasarmod_enabled global flag
 event  = {
     id = quasarmod_utility.1
     hide_window = yes
@@ -10,6 +11,7 @@ event  = {
     }
 }
 
+# Replace Planetcraft built at the Teraforge with a version that shouldn't have the fleet splitting bug
 ship_event = {
     id = quasarmod_utility.2
     hide_window = yes
@@ -28,7 +30,7 @@ ship_event = {
                 name = "Behemoth Planetcraft"
                 settings = {
                     spawn_debris = no
-                    is_boss = yes
+                    #is_boss = yes
                     can_change_composition = no
                 }
                 effect = {
@@ -60,8 +62,8 @@ ship_event = {
         }
     }
 }
-# messed this up BAD, made every single ship that gets built turn into a planetcraft, oops...
 
+# Monthly pulse event to remove the core mbrain flag/modifier under certain conditions
 country_event = {
     id = quasarmod_utility.3
     hide_window = yes
@@ -94,6 +96,117 @@ country_event = {
                 }
                 remove_modifier = quasarmod_connected_to_core_mbrain_mod
                 remove_planet_flag = connected_to_core_mbrain
+            }
+        }
+    }
+}
+
+# Harvesting Complete - turn Quasar into inactive SMBH
+planet_event = {
+    id = quasarmod_utility.4
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        convert_to_inactive_core = yes
+
+        space_owner = {
+            country_event = {
+                id = quasarmod_dialogue.202
+            }
+        }
+    }
+}
+
+# Harvesting Complete - turn inactive SMBH into Quasar
+planet_event = {
+    id = quasarmod_utility.5
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        convert_to_hyperquasar = yes
+
+        space_owner = {
+            country_event = {
+                id = quasarmod_dialogue.102
+            }
+        }
+    }
+}
+
+# Set Quasarcraft Lives Variable
+ship_event = {
+    id = quasarmod_utility.6
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        save_global_event_target_as = quasarcraft_owner
+        set_variable = {
+            which = qsc_ship_life_count
+            value = 200
+        }
+    }
+}
+
+# Destroy Quasarcraft if no lives
+ship_event = {
+    id = quasarmod_utility.7
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_ship_size = quasarmod_quasarcraft
+        check_variable = {
+            which = qsc_ship_life_count
+            value > 0
+        }
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                check_variable = {
+                    which = qsc_ship_life_count
+                    value > 0
+                }
+            }
+            repair_ship = yes
+            set_disabled = no
+            subtract_variable = {
+                which = qsc_ship_life_count
+                value = 1
+            }
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    which = qsc_ship_life_count
+                    value = 0
+                }
+            }
+            destroy_ship = ROOT
+            root.owner = {
+                country_event = { id = quasarmod_dialogue.9 }
+            }
+        }
+    }
+}
+
+# Quasarcraft Wormhole Stuff
+ship_event = {
+    id = quasarmod_utility.8
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = { is_ship_size = quasarcraft_wormhole }
+            destroy_ship = ROOT
+            change_variable = {
+                which = qsc_wormholes_count
+                value = -1
             }
         }
     }
