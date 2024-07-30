@@ -24,7 +24,7 @@ ap_hyperquasaric_megaconstruction = {
 	on_enabled = {
 		custom_tooltip = "ap_hyperquasaric_megaconstruction_add_research"
 		hidden_effect = {
-			if = { limit = { NOT = { has_technology = tech_smbh_manipulator } } add_research_option = tech_smbh_manipulator }
+			if = { limit = { NOT = { has_technology = tech_supermassive_blackhole_manipulator } } add_research_option = tech_supermassive_blackhole_manipulator }
 			if = { limit = { NOT = { has_technology = tech_core_mbrain } } add_research_option = tech_core_mbrain }
 			if = { limit = { NOT = { has_technology = tech_hyperquasaric_megashipyard } } add_research_option = tech_hyperquasaric_megashipyard }
 			if = { limit = { NOT = { has_technology = tech_hyperquasaric_teraforge } } add_research_option = tech_hyperquasaric_teraforge }
