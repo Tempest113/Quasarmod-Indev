@@ -73,7 +73,6 @@ utility_component_template = {
 	prerequisites = { "tech_quasarcraft_6" }
 }
 
-
 utility_component_template = {
 	key = "QSC_SENSOR"
 	size = medium
