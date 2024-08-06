@@ -45,6 +45,8 @@ quasarcraft_0 = {
 	on_build_complete = {
 		save_event_target_as = giga_system
 		set_global_flag = quasarcraft_construction
+		giga_remove_system_planets = yes
+		giga_remove_system_debris =  yes
 		fromfrom.planet = {
 			save_event_target_as = giga_planet
 			if = { limit = { exists = orbital_station } orbital_station = { dismantle = yes } }
@@ -65,7 +67,7 @@ quasarcraft_0_alt = {
 	entity = "quasarcraft_0_entity"
 	construction_entity = "quasarcraft_0_construction_entity"
 	portrait = "GFX_mega_qsc_bg"
-	place_entity_on_planet_plane = no
+	place_entity_on_planet_plane = yes
 	prerequisites = { tech_quasarcraft_1 }
 
 	build_time = 1800
@@ -108,6 +110,7 @@ quasarcraft_0_alt = {
 	on_build_complete = {
 		save_event_target_as = giga_system
 		set_global_flag = quasarcraft_construction
+		set_asteroid_belt = { radius = 0 }
 		fromfrom.planet = {
 			save_event_target_as = giga_planet
 			if = { limit = { exists = orbital_station } orbital_station = { dismantle = yes } }

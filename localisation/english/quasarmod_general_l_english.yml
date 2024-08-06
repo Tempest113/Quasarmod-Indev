@@ -8,7 +8,7 @@
 
  ap_hyperquasaric_megaconstruction: "Hyperquasaric Megaconstruction"
  ap_hyperquasaric_megaconstruction_desc: "The size and scale of our ambitions are rapidly outgrowing our ability to achieve them, we must reach a level of resource exploitation larger than has ever been seen in the history of our galaxy if we wish to ensure our unending prosperity."
- ap_hyperquasaric_megaconstruction_add_research: "Research options gained:\n£physics_research£§Y$tech_supermassive_blackhole_manipulator$§!\n£physics_research£§Y$tech_core_mbrain$§!\n£society_research£§Y$tech_hyperquasaric_megashipyard$§!\n£society_research£§Y$tech_quasarcraft_1$\n£engineering_research£§Y$tech_hyperquasaric_teraforge$§!"
+ ap_hyperquasaric_megaconstruction_add_research: "\nResearch options gained:\n£physics_research£§Y$tech_supermassive_blackhole_manipulator$§!\n£physics_research£§Y$tech_core_mbrain$§!\n£society_research£§Y$tech_hyperquasaric_megashipyard$§!\n£society_research£§Y$tech_quasarcraft_1$§!\n£engineering_research£§Y$tech_hyperquasaric_teraforge$§!"
 
  ##############
  # Technology #
@@ -90,21 +90,22 @@
  # Tooltips/Fails #
  ##################
 
- requires_ap_stellar_manipulation: "$TRIGGER_FAIL$ Requires the §Y$ap_stellar_manipulation$§! ascension perk."
- requires_ap_hyperquasaric_megaconstruction: "$TRIGGER_FAIL$ Requires the §Y$ap_hyperquasaric_megaconstruction$§! ascension perk."
- requires_advanced_stellar_manipulation: "$TRIGGER_FAIL$ Requires the £engineering_research£ §Y$tech_gigas_stellar_manip_2$§! technology."
+ requires_ap_stellar_manipulation: "$TRIGGER_FAIL$Requires the §Y$ap_stellar_manipulation$§! ascension perk."
+ requires_ap_hyperquasaric_megaconstruction: "$TRIGGER_FAIL$Requires the §Y$ap_hyperquasaric_megaconstruction$§! ascension perk."
+ requires_advanced_stellar_manipulation: "$TRIGGER_FAIL$Requires the £engineering_research£ §Y$tech_gigas_stellar_manip_2$§! technology."
+ requires_discovered_giga_core: "$TRIGGER_FAIL$Requires the discovery of the §YGalactic Core§! or an $ehof_ehofp4$ to find one."
 
- requires_inactive_core_fail_tooltip: "$TRIGGER_FAIL$ Must build around a supermassive black hole."
- requires_quasar_fail_tooltip: "$TRIGGER_FAIL$ Must build around an active hyperquasar."
- requires_built_on_giga_active_core: "$TRIGGER_FAIL$ Can only harvest plasma from an active hyperquasar"
- requires_built_on_giga_inactive_core: "$TRIGGER_FAIL$ Can only inject plasma into an inactive supermassive black hole"
+ requires_inactive_core_fail_tooltip: "$TRIGGER_FAIL$Must build around a supermassive black hole."
+ requires_quasar_fail_tooltip: "$TRIGGER_FAIL$Must build around an active hyperquasar."
+ requires_built_on_giga_active_core: "$TRIGGER_FAIL$Can only harvest plasma from an active hyperquasar"
+ requires_built_on_giga_inactive_core: "$TRIGGER_FAIL$Can only inject plasma into an inactive supermassive black hole"
 
- requires_mbrain_uplink: "$TRIGGER_FAIL$ Requires a ['building:building_giga_matrioshka_brain_uplink'] building."
- already_have_quasarshipyard_uplink:"$TRIGGER_FAIL$ There's already a Hyperquasaric Megashipyard Uplink here."
+ requires_mbrain_uplink: "$TRIGGER_FAIL$Requires a ['building:building_giga_matrioshka_brain_uplink'] building."
+ already_have_quasarshipyard_uplink:"$TRIGGER_FAIL$There's already a Hyperquasaric Megashipyard Uplink here."
 
- no_qsc_wormholes: "$TRIGGER_FAIL$ There are no wormholes to disband."
- wormholes_already_out: "$TRIGGER_FAIL$ Must disband wormholes first."
- cannot_target_empty_space: "$TRIGGER_FAIL$ Cannot target Empty Space."
+ no_qsc_wormholes: "$TRIGGER_FAIL$There are no wormholes to disband."
+ wormholes_already_out: "$TRIGGER_FAIL$Must disband wormholes first."
+ cannot_target_empty_space: "$TRIGGER_FAIL$Cannot target Empty Space."
 
  #############
  # Modifiers #

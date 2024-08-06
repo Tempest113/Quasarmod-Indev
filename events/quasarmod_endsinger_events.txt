@@ -54,7 +54,6 @@ country_event = {
 	option = { name = "qsc_endsinger.500.lowpower"	trigger = { has_country_flag = endsinger_lowpower }	hidden_effect = { country_event = { id = qsc_endsinger.500 } } }
 	option = { name = "qsc_endsinger.500.normalpower"	trigger = { NOT = {has_country_flag = endsinger_lowpower} }	hidden_effect = { country_event = { id = qsc_endsinger.500 } } }
 
-
 	#Increase
 	option = {
 		name = "qsc_endsinger.500.increase"

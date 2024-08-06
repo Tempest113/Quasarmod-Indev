@@ -86,6 +86,7 @@ hyperquasaric_megashipyard_1 = {
         giga_remove_system_debris =  yes
         save_event_target_as = giga_system
         if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+        set_asteroid_belt = { radius = 0 }
         from = { country_event = { id = quasarmod_megastage_dialogue.302 } }
         star = {
             set_planet_entity = { entity = "quasar_small_disk_entity" }

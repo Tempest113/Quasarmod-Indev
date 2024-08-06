@@ -11,7 +11,28 @@ ap_hyperquasaric_megaconstruction = {
 		custom_tooltip = { fail_text = "requires_tetraengineering"				    has_technology = giga_tech_tetradimensional_engineering }
 		custom_tooltip = { fail_text = "requires_dark_matter"						has_technology = tech_mine_dark_matter }
 		custom_tooltip = { fail_text = "requires_advanced_stellar_manipulation"		has_technology = tech_gigas_stellar_manip_2 }
+		custom_tooltip = {
+			fail_text = "requires_discovered_giga_core"
+			OR = {
+				has_country_flag = found_qso_candidate
+				has_country_flag = found_birch_candidate
+				OR = {
+					AND = {
+						any_system = { is_star_class = sc_birch }
+						NOT = { any_system = { is_star_class = sc_quasar } }
+						has_megastructure = ehof_megastructure_phase4
+						any_system_within_border = { cohesive_system = yes }
+					}
+					AND = {
+						any_system = { is_star_class = sc_quasar }
+						NOT = { any_system = { is_star_class = sc_birch } }
+						has_megastructure = ehof_megastructure_phase4
+						any_system_within_border = { cohesive_system = yes }
+					}
+				}
+			}
 		}
+	}
 
 	potential = {
 		host_has_dlc = Utopia

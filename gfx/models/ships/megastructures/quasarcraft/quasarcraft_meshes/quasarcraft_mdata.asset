@@ -537,7 +537,7 @@ entity = {
 	
 	attach = { "qso" = "qsc_qso_entity" }
 	
-	scale = 1
+	scale = 1.3
 }
 
 entity = {
@@ -552,7 +552,7 @@ entity = {
 	
 	attach = { "qso" = "qsc_qso_entity" }
 	
-	scale = 1
+	scale = 1.3
 }
 
 #The Core Refitted
@@ -572,7 +572,7 @@ entity = {
 	attach = { "qso" = "qsc_qso_entity" }
 	attach = { "citadel" = "qsc_citadel_entity" }
 	
-	scale = 1
+	scale = 1.3
 }
 
 entity = {
@@ -589,7 +589,7 @@ entity = {
 	attach = { "mscore" = "qsc_mscore_entity" }
 	attach = { "citadel" = "qsc_citadel_entity" }
 	
-	scale = 1
+	scale = 1.3
 }
 
 entity = {
@@ -612,7 +612,7 @@ entity = {
 	attach = { "crucible" = "qsc_qc1_entity" }
 	attach = { "halo" = "qsc_qc2_entity" }
 	
-	scale = 1
+	scale = 1.3
 }
 
 entity = {
@@ -659,7 +659,7 @@ entity = {
 	attach = { "celfab3" = "qsc_printer_array" }
 	attach = { "celfab4" = "qsc_printer_array" }
 	
-	scale = 1
+	scale = 1.3
 }
 
 entity = {
@@ -681,7 +681,7 @@ entity = {
 	attach = { "celfab3" = "qsc_printer_array" }
 	attach = { "celfab4" = "qsc_printer_array" }
 	
-	scale = 1
+	scale = 1.3
 }
 
 entity = {
@@ -717,7 +717,7 @@ entity = {
 	attach = { "celfab3" = "qsc_printer_array" }
 	attach = { "celfab4" = "qsc_printer_array" }
 	
-	scale = 1
+	scale = 1.3
 }
 
 entity = {
@@ -732,7 +732,7 @@ entity = {
 	
 	attach = { "engine" = "qsc_qc_engine_entity" }
 	
-	scale = 1
+	scale = 1.3
 }
 
 entity = {
@@ -767,7 +767,7 @@ entity = {
 	attach = { "celfab3" = "qsc_printer_array" }
 	attach = { "celfab4" = "qsc_printer_array" }
 	
-	scale = 1
+	scale = 1.3
 }
 
 entity = {
@@ -778,7 +778,7 @@ entity = {
 	locator = { name = "root" }
 	                                       #x #z #y             #z #x #y
 	
-	scale = 1
+	scale = 1.3
 }
 
 entity = {
@@ -890,7 +890,7 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "juggernaut_mammalian_idle" } }
 	}
 	
-	scale = 1
+	scale = 1.3
 }
 
 ###################################################################
