@@ -90,16 +90,6 @@ tech_quasarcraft_1 = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
 		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
 	}
-
-	ai_weight = {
-		factor = 30
-		modifier = {
-			factor = 50
-			has_trait_in_council = {
-				TRAIT = leader_trait_expertise_particles
-			}
-		}
-	}
 }
 
 tech_quasarcraft_2 = {
@@ -109,7 +99,7 @@ tech_quasarcraft_2 = {
 	category = { particles }
 	is_rare = yes
 	prerequisites = { "tech_quasarcraft_1" }
-	weight = 100
+	weight = @giga_tier7weight1
 	prereqfor_desc = {
 		hide_prereq_for_desc = ship
 		hide_prereq_for_desc = component
@@ -125,34 +115,11 @@ tech_quasarcraft_2 = {
 	}
 
 	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_trait_in_council = {
-				TRAIT = leader_trait_expertise_particles
-			}
-		}
+		inline_script = technology/tech_weight_boni/militarist_tech_weight_bonus
 
-		modifier = {
-			factor = 1.5
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = 2
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_quasarcraft_2 }
-			}
-		}
-	}
-
-	ai_weight = {
-		factor = 30
-		modifier = {
-			factor = 50.25
-			has_trait_in_council = {
-				TRAIT = leader_trait_expertise_voidcraft
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_quasarcraft_2
 		}
 	}
 }
@@ -164,7 +131,7 @@ tech_quasarcraft_3 = {
 	category = { voidcraft }
 	is_rare = yes
 	prerequisites = { "tech_quasarcraft_2" }
-	weight = 100
+	weight = @giga_tier7weight1
 	prereqfor_desc = {
 		hide_prereq_for_desc = ship
 		hide_prereq_for_desc = component
@@ -180,33 +147,11 @@ tech_quasarcraft_3 = {
 	}
 
 	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_trait_in_council = {
-				TRAIT = leader_trait_expertise_particles
-			}
-		}
-		modifier = {
-			factor = 1.5
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = 2
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_quasarcraft_3 }
-			}
-		}
-	}
+		inline_script = technology/tech_weight_boni/militarist_tech_weight_bonus
 
-	ai_weight = {
-		factor = 30
-		modifier = {
-			factor = 50.25
-			has_trait_in_council = {
-				TRAIT = leader_trait_expertise_particles
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_quasarcraft_3
 		}
 	}
 }
@@ -218,7 +163,7 @@ tech_quasarcraft_4 = {
 	category = { particles }
 	is_rare = yes
 	prerequisites = { "tech_quasarcraft_3" }
-	weight = 100
+	weight = @giga_tier7weight2
 	prereqfor_desc = {
 		hide_prereq_for_desc = ship
 		hide_prereq_for_desc = component
@@ -234,34 +179,11 @@ tech_quasarcraft_4 = {
 	}
 
 	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_trait_in_council = {
-				TRAIT = leader_trait_expertise_particles
-			}
-		}
-		modifier = {
-			factor = 1.5
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = 2
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_quasarcraft_5 }
-			}
-		}
-	}
+		inline_script = technology/tech_weight_boni/militarist_tech_weight_bonus
 
-	ai_weight = {
-		factor = 30
-		modifier = {
-			factor = 50.25
-			has_trait_in_council = {
-				TRAIT = leader_trait_expertise_particles
-			}
-
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_quasarcraft_4
 		}
 	}
 }
@@ -273,7 +195,7 @@ tech_quasarcraft_5 = {
 	category = { field_manipulation }
 	is_rare = yes
 	prerequisites = { "tech_quasarcraft_4" }
-	weight = 100
+	weight = @giga_tier7weight2
 
 	prereqfor_desc = {
 		custom = { title = "allow_quasarcraft_p4"	desc = "desc_quasarcraft_p4" }
@@ -286,35 +208,12 @@ tech_quasarcraft_5 = {
 	}
 
 	weight_modifier = {
-		modifier = { factor = 1.25
-			has_trait_in_council = {
-				TRAIT = leader_trait_expertise_voidcraft
-			}
-		}
-		modifier = { factor = 0 has_utopia = no }
-		modifier = {
-			factor = 1.5
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = 2
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_quasarcraft_6 }
-			}
-		}
-	}
+		inline_script = technology/tech_weight_boni/militarist_tech_weight_bonus
 
-	ai_weight = {
-		factor = 30
-		modifier = {
-			factor = 50.25
-			has_trait_in_council = {
-			TRAIT = leader_trait_expertise_particles
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_quasarcraft_5
 		}
-		modifier = { factor = 0 has_utopia = no }
 	}
 }
 
@@ -326,7 +225,7 @@ tech_quasarcraft_6 = {
 	is_dangerous = yes
 	is_rare = yes
 	prerequisites = { "tech_quasarcraft_5" }
-	weight = 100
+	weight = @giga_tier7weight3
 
 	potential = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
@@ -344,35 +243,11 @@ tech_quasarcraft_6 = {
 	}
 
 	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_trait_in_council = {
-				TRAIT = leader_trait_expertise_voidcraft
-}
-		}
-		modifier = { factor = 0 has_utopia = no }
-		modifier = {
-			factor = 1.5
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = 2
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_quasarcraft_6 }
-			}
-		}
-	}
+		inline_script = technology/tech_weight_boni/militarist_tech_weight_bonus
 
-	ai_weight = {
-		factor = 30
-		modifier = {
-			factor = 50.25
-			has_trait_in_council = {
-			TRAIT = leader_trait_expertise_voidcraft
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_quasarcraft_6
 		}
-		modifier = { factor = 0 has_utopia = no }
 	}
 }
