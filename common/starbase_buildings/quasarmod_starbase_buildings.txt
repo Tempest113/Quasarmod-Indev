@@ -1,4 +1,4 @@
-quasarshipyard__shipyard_uplink = {
+quasarshipyard_shipyard_uplink = {
     icon = "GFX_spaceport_module_colossus_assembly_yard"
     construction_days = 0
     ai_weight = { weight = 1500 }
@@ -7,7 +7,7 @@ quasarshipyard__shipyard_uplink = {
         exists = owner
         solar_system = { any_system_megastructure = { is_megastructure_type = hyperquasaric_megashipyard_4 } }
         is_orbital_ring = no
-        not = { has_starbase_building = quasarshipyard__shipyard_uplink }
+        not = { has_starbase_building = quasarshipyard_shipyard_uplink }
     }
 
     possible = {
@@ -41,7 +41,7 @@ quasarshipyard__shipyard_uplink = {
         ship_starting_experience_add = 250
     }
 
-    custom_tooltip = sm_quasarshipyard__shipyard_uplink_modifier
+    custom_tooltip = sm_quasarshipyard_shipyard_uplink_modifier
 
     station_modifier = {
         starbase_shipyard_capacity_add = 250 #i really want to change this to 249 for the sake of neatness, seeing 251 shipyard slots isn't nearly as nice as seeing 250, alas...

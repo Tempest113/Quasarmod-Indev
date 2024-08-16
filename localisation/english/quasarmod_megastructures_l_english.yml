@@ -118,9 +118,9 @@
  hyperquasaric_megashipyard_4: "Hyperquasaric Megashipyard"
  hyperquasaric_megashipyard_4_DESC: "An active Hyperquasaric Megashipyard, capable of both building and handling the logistics of a fleet larger than any ever built before."
 
- sm_quasarshipyard__shipyard_uplink: "Hyperquasaric Megashipyard Uplink"
- sm_quasarshipyard__shipyard_uplink_desc: "An uplink connecting the starbase to the hyperquasaric teraforge. Grants 250 shipyard slots and the ability to construct celestial warships."
- sm_quasarshipyard__shipyard_uplink_modifier: "Ship Modifier:\n    Ship Starting Experience: +§G250§! \nStarbase Modifier:\n   Shipyard Capacity: §G+250§!\n   Ship Build Speed: §G+250%§!\nShipyards: §YCelestial Warship Construction Enabled§!"
+ sm_quasarshipyard_shipyard_uplink: "Hyperquasaric Megashipyard Uplink"
+ sm_quasarshipyard_shipyard_uplink_desc: "An uplink connecting the starbase to the hyperquasaric teraforge. Grants 250 shipyard slots and the ability to construct celestial warships."
+ sm_quasarshipyard_shipyard_uplink_modifier: "Ship Modifier:$TABBED_NEW_LINE$ Ship Starting Experience: §G+250§! \nStarbase Modifier:$TABBED_NEW_LINE$Shipyard Capacity: §G+250§!$TABBED_NEW_LINE$Ship Build Speed: §G+250%§!\nShipyards: §YCelestial Warship Construction Enabled§!"
 
 
 

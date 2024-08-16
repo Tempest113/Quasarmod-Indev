@@ -37,7 +37,7 @@ ap_hyperquasaric_megaconstruction = {
 	potential = {
 		host_has_dlc = Utopia
 		is_ai = no
-		NOR = {
+		NOT = {
 			has_ascension_perk = ap_hyperquasaric_megaconstruction
 		}
 		NAND = {

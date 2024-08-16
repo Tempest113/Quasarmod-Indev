@@ -37,7 +37,7 @@ giga_massive_planet = {
     required_component_set = "ftl_components"
     required_component_set = "sensor_components"
     required_component_set = "combat_computers"
-
+    potential_construction = { NOT = { has_global_flag = warmoon_disabled } }
     prerequisites = { "giga_tech_war_moon_1" }
 
     resources = {
@@ -53,7 +53,7 @@ giga_massive_planet = {
 
     possible_construction = {
         starbase = {
-            has_starbase_building = quasarshipyard__shipyard_uplink
+            has_starbase_building = quasarshipyard_shipyard_uplink
         }
     }
 
@@ -91,6 +91,7 @@ giga_planet_behemoth = {
     is_designable = yes
     combat_disengage_chance = 0
     prerequisites = { "giga_tech_war_planet" }
+    potential_construction = { NOT = { has_global_flag = warplanet_disabled } }
     class = shipclass_military
 
     ship_roles = { gunship artillery }
@@ -114,7 +115,7 @@ giga_planet_behemoth = {
 
     possible_construction = {
         starbase = {
-            has_starbase_building = quasarshipyard__shipyard_uplink
+            has_starbase_building = quasarshipyard_shipyard_uplink
         }
     }
 
