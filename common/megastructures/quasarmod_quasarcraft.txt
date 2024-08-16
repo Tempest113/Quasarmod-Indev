@@ -96,7 +96,6 @@ quasarcraft_0_alt = {
 		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
 	}
 
-
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = { fail_text = "requires_no_anomaly"					has_anomaly = no }
@@ -124,10 +123,6 @@ quasarcraft_0_alt = {
 		from = {
 			country_event = { id = quasarmod_megastage_dialogue.401 }	# Notification
 		}
-		fromfrom.planet = {
-
-		}
-
 	}
 }
 

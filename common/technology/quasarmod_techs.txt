@@ -8,6 +8,7 @@ tech_hyperquasaric_teraforge = {
 
 	potential = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		NOT = { has_global_flag = quasarmod_teraforge_disabled }
 	}
 
 	prereqfor_desc = {
@@ -26,6 +27,7 @@ tech_hyperquasaric_megashipyard = {
 
 	potential = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		NOT = { has_global_flag = quasarmod_shipyard_disabled }
 	}
 
 	prereqfor_desc = {
@@ -44,6 +46,7 @@ tech_supermassive_blackhole_manipulator ={
 
 	potential = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		NOT = { has_global_flag = quasarmod_manipulator_disabled }
 	}
 
 	prereqfor_desc = {
@@ -62,6 +65,7 @@ tech_core_mbrain ={
 
 	potential = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		NOT = { has_global_flag = quasarmod_mbrain_disabled }
 	}
 
 	prereqfor_desc = {
@@ -84,6 +88,7 @@ tech_quasarcraft_1 = {
 
 	potential = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
 	}
 
 	ai_weight = {
@@ -116,6 +121,7 @@ tech_quasarcraft_2 = {
 	potential = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
 		has_technology = tech_quasarcraft_1
+		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
 	}
 
 	weight_modifier = {
@@ -170,6 +176,7 @@ tech_quasarcraft_3 = {
 	potential = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
 		has_technology = tech_quasarcraft_2
+		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
 	}
 
 	weight_modifier = {
@@ -223,6 +230,7 @@ tech_quasarcraft_4 = {
 	potential = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
 		has_technology = tech_quasarcraft_3
+		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
 	}
 
 	weight_modifier = {
@@ -274,6 +282,7 @@ tech_quasarcraft_5 = {
 	potential = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
 		has_technology = tech_quasarcraft_4
+		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
 	}
 
 	weight_modifier = {
@@ -322,6 +331,7 @@ tech_quasarcraft_6 = {
 	potential = {
 		has_ascension_perk = ap_hyperquasaric_megaconstruction
 		has_technology = tech_quasarcraft_5
+		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
 	}
 
 	prereqfor_desc = {

@@ -1,4 +1,4 @@
-
+# Used In Game
 quasarcraft_spawn = {
     set_global_flag = giga_quasarcraft_constructed
 	create_fleet = {
@@ -103,7 +103,6 @@ convert_to_inactive_core = {
 					# set_star_flag = giga_birch_core
 					remove_star_flag = giga_core_02
 					remove_star_flag = giga_qso_core
-
 				}
 			}
 		}
@@ -163,4 +162,22 @@ convert_to_hyperquasar = {
 			}
 		}
 	}
+}
+
+# Testing
+
+quasarmod_disable_everything = {
+	set_global_flag = quasarmod_teraforge_disabled
+	set_global_flag = quasarmod_manipulator_disabled
+	set_global_flag = quasarmod_shipyard_disabled
+	set_global_flag = quasarmod_mbrain_disabled
+	set_global_flag = quasarmod_quasarcraft_disabled
+}
+
+quasarmod_enable_everything = {
+	remove_global_flag = quasarmod_teraforge_disabled
+	remove_global_flag = quasarmod_manipulator_disabled
+	remove_global_flag = quasarmod_shipyard_disabled
+	remove_global_flag = quasarmod_mbrain_disabled
+	remove_global_flag = quasarmod_quasarcraft_disabled
 }

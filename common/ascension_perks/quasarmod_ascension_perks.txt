@@ -40,6 +40,13 @@ ap_hyperquasaric_megaconstruction = {
 		NOR = {
 			has_ascension_perk = ap_hyperquasaric_megaconstruction
 		}
+		NAND = {
+			has_global_flag = quasarmod_teraforge_disabled
+			has_global_flag = quasarmod_manipulator_disabled
+			has_global_flag = quasarmod_shipyard_disabled
+			has_global_flag = quasarmod_mbrain_disabled
+			has_global_flag = quasarmod_quasarcraft_disabled
+		}
 	}
 
 	on_enabled = {
