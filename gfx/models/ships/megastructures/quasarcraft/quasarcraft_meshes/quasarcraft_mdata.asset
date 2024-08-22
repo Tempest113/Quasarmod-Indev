@@ -536,9 +536,9 @@ entity = {
 	state = { name = "idle" }
 	
 	attach = { "qso" = "qsc_qso_entity" }
-	
-	#scale = 1.3
-	scale = 3
+
+	scale = 1.3
+	# scale = 3
 }
 
 entity = {
@@ -553,8 +553,8 @@ entity = {
 	
 	attach = { "qso" = "qsc_qso_entity" }
 
-	#scale = 1.3
-	scale = 3
+	scale = 1.3
+	# scale = 3
 }
 
 #Mega Entities
@@ -573,9 +573,9 @@ entity = {
 	attach = { "mscore" = "qsc_mscore_entity" }
 	attach = { "qso" = "qsc_qso_entity" }
 	attach = { "citadel" = "qsc_citadel_entity" }
-	
-	#scale = 1.3
-	scale = 3
+
+	scale = 1.3
+	# scale = 3
 }
 
 entity = {
@@ -592,8 +592,8 @@ entity = {
 	attach = { "mscore" = "qsc_mscore_entity" }
 	attach = { "citadel" = "qsc_citadel_entity" }
 
-	#scale = 1.3
-	scale = 3
+	scale = 1.3
+	# scale = 3
 }
 
 entity = {
@@ -616,8 +616,8 @@ entity = {
 	attach = { "crucible" = "qsc_qc1_entity" }
 	attach = { "halo" = "qsc_qc2_entity" }
 
-	#scale = 1.3
-	scale = 3
+	scale = 1.3
+	# scale = 3
 }
 
 entity = {
@@ -632,8 +632,8 @@ entity = {
 	
 	attach = { "halo" = "qsc_qc2_entity" }
 
-	#scale = 1.3
-	scale = 3
+	scale = 1.3
+	# scale = 3
 }
 
 entity = {
@@ -665,8 +665,8 @@ entity = {
 	attach = { "celfab3" = "qsc_printer_array" }
 	attach = { "celfab4" = "qsc_printer_array" }
 
-	#scale = 1.3
-	scale = 3
+	scale = 1.3
+	# scale = 3
 }
 
 entity = {
@@ -688,8 +688,8 @@ entity = {
 	attach = { "celfab3" = "qsc_printer_array" }
 	attach = { "celfab4" = "qsc_printer_array" }
 
-	#scale = 1.3
-	scale = 3
+	scale = 1.3
+	# scale = 3
 }
 
 entity = {
@@ -725,8 +725,8 @@ entity = {
 	attach = { "celfab3" = "qsc_printer_array" }
 	attach = { "celfab4" = "qsc_printer_array" }
 
-	#scale = 1.3
-	scale = 3
+	scale = 1.3
+	# scale = 3
 }
 
 entity = {
@@ -741,8 +741,8 @@ entity = {
 	
 	attach = { "engine" = "qsc_qc_engine_entity" }
 
-	#scale = 1.3
-	scale = 3
+	scale = 1.3
+	# scale = 3
 }
 
 entity = {
@@ -777,8 +777,8 @@ entity = {
 	attach = { "celfab3" = "qsc_printer_array" }
 	attach = { "celfab4" = "qsc_printer_array" }
 
-	#scale = 1.3
-	scale = 3
+	scale = 1.3
+	# scale = 3
 }
 
 entity = {
@@ -789,8 +789,8 @@ entity = {
 	locator = { name = "root" }
 	                                       #x #z #y             #z #x #y
 
-	#scale = 1.3
-	scale = 3
+	scale = 1.3
+	# scale = 3
 }
 
 entity = {
