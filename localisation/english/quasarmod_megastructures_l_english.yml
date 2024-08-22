@@ -6,7 +6,7 @@
 
  hyperquasaric_teraforge_0: "$gc_tera$Hyperquasaric Teraforge Site"
  hyperquasaric_teraforge_0_DESC: "This construction site will act as the staging ground for the largest source of alloys and ships in galactic history."
- hyperquasaric_teraforge_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_advanced_resource_production$ \nUses a §MHyperquasar§! to forge £minerals£ §YMinerals§! into £alloys£ §YAlloys§! and increases overall §YAlloy Production§! - $giga_list_removes_system_planets$\n§LA massive forge built around a Hyperquasar, utilizing its energies to produce alloys.§!"
+ hyperquasaric_teraforge_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_advanced_resource_production$ \nUses a §MHyperquasar§! to forge £minerals£ §Y$minerals$§! into £alloys£ §Y$alloys$§! and increases overall §YAlloy Production§! - $giga_list_removes_system_planets$\n§LA massive forge built around a Hyperquasar, utilizing its energies to produce alloys.§!"
 
  hyperquasaric_teraforge_1: "Hyperquasaric Teraforge Inner Ring"
  hyperquasaric_teraforge_1_DESC: "This gargantuan ring will act serve as the foundation for the rest of the structure to be built upon, as well as generating a magnetic field powerful enough to protect the terastructure from the accretion disk of the quasar which it encircles." #quasars accretion disk which can reach temperatures exceeding 1 billion kelvin.
@@ -40,7 +40,7 @@
 
  blackhole_manipulator_0: "$gc_tera$Supermassive Black Hole Manipulator Site"
  blackhole_manipulator_0_DESC: "This construction site will act as the staging ground for one of our most recent and largest stellar manipulation projects, the Supermassive Black Hole Manipulator."
- blackhole_manipulator_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_miscellaneous$ \nCan change the type of supermassive black hole in the galactic core by harvesting or injecting £sr_stellar_plasma£ §YStellar Plasma§!"
+ blackhole_manipulator_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_miscellaneous$ \nCan change the type of supermassive black hole in the galactic core by harvesting or injecting £sr_stellar_plasma£ §Y$sr_stellar_plasma$§!"
 
  blackhole_manipulator_1: "Black Hole Manipulator Frame"
  blackhole_manipulator_1_DESC: "This gargantuan frame will soon support a mass injection and harvesting array so incredibly large that entire stars worth of mass will be moved every day. Also capable from generating an immense magnetic field, the frame restricts the accretion disk of the quasar to a more manageable size."
@@ -90,8 +90,10 @@
 
  decision_quasarmod_establish_core_mbrain_uplink: "Establish $matrioshka_brain_5_core$ Uplink"
  decision_quasarmod_establish_core_mbrain_uplink_desc: "Establish a connection to our §Y$matrioshka_brain_5_core$§! in the galactic core, massively increasing the potency of all $building_giga_matrioshka_brain_uplink$ buildings on the planet."
+
  decision_quasarmod_sever_core_mbrain_uplink: "Sever $matrioshka_brain_5_core$ Uplink"
  decision_quasarmod_sever_core_mbrain_uplink_desc: "Sever this planets connection to our $matrioshka_brain_5_core$."
+ 
  quasarmod_connected_to_core_mbrain_mod: "Gargantuan Matrioshka Brain Uplink"
  quasarmod_connected_to_core_mbrain_mod_desc: "This planet is connected to a $matrioshka_brain_5_core$ via advanced tachyon relays, this increase in available processing power results in a massive increase in potency for our $building_giga_matrioshka_brain_uplink$ buildings."
  mod_planet_giga_matrioshka_brain_uplinks_energy_upkeep_mult: "Matrioshka Brain Uplink Energy Credits Upkeep"
