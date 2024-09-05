@@ -3,3 +3,19 @@ quasarmod_connected_to_core_mbrain_mod = {
     icon_frame = 1
     planet_giga_matrioshka_brain_uplinks_energy_upkeep_mult = 0.25
 }
+
+quasarcraft_wormholes = {
+    ship_fire_rate_mult = -1.25
+    weapon_type_energy_weapon_damage_mult = -0.75
+    weapon_type_explosive_weapon_damage_mult = -0.75
+    weapon_type_kinetic_weapon_damage_mult = -0.75
+}
+
+qsc_destroyed_nearby = {
+    icon = "gfx/interface/icons/planet_modifiers/pm_unstable_tectonics.dds"
+    icon_frame = 3
+
+    planet_jobs_food_produces_mult = -0.5
+    pop_environment_tolerance = -0.5
+    pop_happiness = -0.25
+}

@@ -12,9 +12,9 @@ quasarcraft_0 = {
 		category = megastructures
 		cost = {
 			alloys = 750000
-			influence = 1000
+			influence = 300
 		}
-		upkeep = { alloys = 1250 energy = 150000 }
+		upkeep = { energy = 5 }
 	}
 
 	potential = {
@@ -31,7 +31,6 @@ quasarcraft_0 = {
 		exists = owner
 		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
 	}
-
 
 	placement_rules = {
 		planet_possible = {
@@ -74,7 +73,7 @@ quasarcraft_0_alt = {
 	resources = {
 		category = giga_gigastructures
 		cost = {
-			alloys = 200000
+			alloys = 750000
 			influence = 300
 			unity = @giga_tera_start_unity_cost
 		}
@@ -139,7 +138,7 @@ quasarcraft_1 = {
 	build_time = 3600
 	resources = {
 		category = giga_gigastructures
-		cost = { alloys = 450000 unity = @giga_tera_unity_cost }
+		cost = { alloys = 1250000 unity = @giga_tera_unity_cost }
 		upkeep = { alloys = 50 }
 	}
 
@@ -171,11 +170,11 @@ quasarcraft_2 = {
 	portrait = "GFX_mega_qsc_bg"
 	upgrade_from = { quasarcraft_1 }
 
-	build_time = 3600
+	build_time = 4800
 	resources = {
 		category = giga_gigastructures
 		cost = {
-			alloys = 700000
+			alloys = 1500000
 			volatile_motes = 2500
 			exotic_gases = 2500
 			rare_crystals = 2500
@@ -212,11 +211,11 @@ quasarcraft_3 = {
 	portrait = "GFX_mega_qsc_bg"
 	upgrade_from = { quasarcraft_2 }
 
-	build_time = 3600
+	build_time = 5400
 	resources = {
 		category = giga_gigastructures
 		cost = {
-			alloys = 925000
+			alloys = 1750000
 			volatile_motes = 5000
 			exotic_gases = 5000
 			rare_crystals = 5000
@@ -252,11 +251,11 @@ quasarcraft_4 = {
 	portrait = "GFX_mega_qsc_bg"
 	upgrade_from = { quasarcraft_3 }
 
-	build_time = 3600
+	build_time = 7200
 	resources = {
 		category = giga_gigastructures
 		cost = {
-			alloys = 1250000
+			alloys = 2000000
 			volatile_motes = 7500
 			exotic_gases = 7500
 			rare_crystals = 7500
@@ -292,11 +291,11 @@ quasarcraft_5 = {
 	portrait = "GFX_mega_qsc_bg"
 	upgrade_from = { quasarcraft_4 }
 
-	build_time = 3600
+	build_time = 10400
 	resources = {
 		category = giga_gigastructures
 		cost = {
-			alloys = 1500000
+			alloys = 2250000
 			volatile_motes = 10000
 			exotic_gases = 10000
 			rare_crystals = 10000
@@ -335,3 +334,4 @@ quasarcraft_5 = {
 		remove_megastructure = fromfrom
 	}
 }
+

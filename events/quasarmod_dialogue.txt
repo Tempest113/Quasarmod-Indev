@@ -72,7 +72,14 @@ country_event = {
 	picture = GFX_evt_supernova
 	show_sound = event_dyson_sphere_build_complete
 	is_triggered_only = yes
-	option = { name = "quasarmod_dialogue.9.a" }
+	option = {
+		name = "quasarmod_dialogue.9.a"
+		from = {
+			add_resource = {
+				influence = -250
+			}
+		}
+	}
 }
 
 ###########################################

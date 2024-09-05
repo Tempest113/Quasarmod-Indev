@@ -24,12 +24,15 @@
  quasaric_teraforge_5_DESC: "An active Hyperquasaric Megashipyard. While we had to sacrifice a significant amount of alloy processing power, the Hyperquasaric Megashipyard is undoubtedly a worthy upgrade to the Teraforge. Grants +250 shipyard capacity, +250% ship build speed and -25% build cost."
 
  building_teraforge_uplink_base: "Hyperquasaric Teraforge Uplink"
+ building_teraforge_uplink_base_plural: "Hyperquasaric Teraforge Uplinks"
  building_teraforge_uplink_base_desc: "Upon being upgraded and specialized, the Hyperquasaric Teraforge Uplink will provide powerful buffs to industry across the entire planet."
 
  building_teraforge_uplink_alloys: "Quasaric Alloy Plants"
+ building_teraforge_uplink_alloys_plural: "Quasaric Alloy Plants"
  building_teraforge_uplink_alloys_desc: "By allowing planetside industry to coordinate with and outsource work to the Hyperquasaric Teraforge, alloy production on the planet can be greatly increased."
 
  building_teraforge_uplink_consumer_goods: "Quasaric Factory Uplink"
+ building_teraforge_uplink_consumer_goods_plural: "Quasaric Factory Uplinks"
  building_teraforge_uplink_consumer_goods_desc: "While the primary focus of the Hyperquasaric Teraforge is alloy production, allowing planetary industry to repurpose even 1% of the structure towards assisting in planetside consumer goods production, output can be massively increased."
 
 

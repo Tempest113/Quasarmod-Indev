@@ -186,6 +186,7 @@ ship_event = {
                     value = 0
                 }
             }
+            quasarcraft_destruction_effects = yes
             destroy_ship = ROOT
             root.owner = {
                 country_event = { id = quasarmod_dialogue.9 }
@@ -207,6 +208,41 @@ ship_event = {
             change_variable = {
                 which = qsc_wormholes_count
                 value = -1
+            }
+        }
+    }
+}
+
+# Quasarcraft add 12 lives per year (not done monthly since i'm not sure how performance intensive it would be)
+country_event = {
+    id = quasarmod_utility.9
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        any_owned_ship = {
+            is_ship_size = quasarmod_quasarcraft
+        }
+    }
+
+    immediate = {
+        every_owned_ship = {
+            if = {
+                limit = {
+                    is_ship_size = quasarmod_quasarcraft
+                }
+                if = {
+                    limit = {
+                        check_variable = {
+                            which = qsc_ship_life_count
+                            value < 200
+                        }
+                    }
+                    change_variable = {
+                        which = qsc_ship_life_count
+                        value = 12
+                    }
+                }
             }
         }
     }

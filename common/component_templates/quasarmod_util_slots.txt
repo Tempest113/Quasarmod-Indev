@@ -19,7 +19,7 @@ utility_component_template = {
 	size = small
 	icon = "GFX_qsc_drive"
 	icon_frame = 1
-	power = -10000000
+	power = -5000000
 	resources = {
 		category = ship_components
 	}
@@ -38,7 +38,7 @@ utility_component_template = {
 	size = small
 	icon = "GFX_qsc_drive"
 	icon_frame = 1
-	power = -10000000
+	power = -5000000
 	resources = {
 		category = ship_components
 	}
@@ -60,7 +60,7 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_planet"
 	icon_frame = 1
-	power = -1000000
+	power = -5000000
 	resources = {
 		category = ship_components
 	}

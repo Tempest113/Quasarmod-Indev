@@ -131,8 +131,8 @@
 
  # Quasarcraft Destroyed
  quasarmod_dialogue.9.name: "Hope's End"
- quasarmod_dialogue.9.desc: "It's gone...the mightiest of weapons, and our last hope of exterminating the great horrors...has been destroyed."
- quasarmod_dialogue.9.a: "Impossible!"
+ quasarmod_dialogue.9.desc: "The impossible has happened... The $quasarmod_quasarcraft$ has been destroyed.\n\nThe sword and shield of the empire, our weapon to pierce the heavens has been lost to forces beyond anything we have ever conceived. All we can do now is hope that our remaining forces will be enough to fend off the coming threat."
+ quasarmod_dialogue.9.a: "What do we do now?"
 
  # Endsinger Event Loc
  qsc_endsinger.1.title: "§MThe Endsinger's Quasaric Melody§!"

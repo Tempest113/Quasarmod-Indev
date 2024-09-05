@@ -105,20 +105,22 @@
 
  no_qsc_wormholes: "$TRIGGER_FAIL$There are no wormholes to disband."
  wormholes_already_out: "$TRIGGER_FAIL$Must disband wormholes first."
- cannot_target_empty_space: "$TRIGGER_FAIL$Cannot target Empty Space."
+ cannot_target_empty_space: "$TRIGGER_FAIL$Cannot target $sc_empty_space$"
 
  #############
  # Modifiers #
  #############
 
  # Buildings
- mod_building_quasarmod_teraforge_uplink_country_max: "Max Hyperquasaric Teraforge Uplink Buildings"
- mod_building_teraforge_uplink_base_max: "Max Hyperquasaric Teraforge Uplinks"
- mod_planet_building_teraforge_uplink_base_build_speed_mult: "Hyperquasaric Teraforge Uplink build speed"
- mod_building_teraforge_uplink_alloys_max: "Max Quasaric Alloy Plants"
- mod_planet_building_teraforge_uplink_alloys_build_speed_mult: "Quasaric Alloy Plants build speed"
- mod_building_teraforge_uplink_consumer_goods_max: "Max Quasaric Factory Uplinks"
- mod_planet_building_teraforge_uplink_consumer_goods_build_speed_mult: "Quasaric Factory Uplink build speed"
+ mod_building_quasarmod_teraforge_uplink_country_max: "Max $building_teraforge_uplink_base$ Buildings"
+ mod_building_teraforge_uplink_base_max: "Max $building_teraforge_uplink_base_plural$"
+ mod_planet_building_teraforge_uplink_base_build_speed_mult: "$building_teraforge_uplink_base$ build speed"
+
+ mod_building_teraforge_uplink_alloys_max: "Max $building_teraforge_uplink_alloys$"
+ mod_planet_building_teraforge_uplink_alloys_build_speed_mult: "$building_teraforge_uplink_alloys$ build speed"
+
+ mod_building_teraforge_uplink_consumer_goods_max: "Max $building_teraforge_uplink_consumer_goods_plural$"
+ mod_planet_building_teraforge_uplink_consumer_goods_build_speed_mult: "$building_teraforge_uplink_consumer_goods$ build speed"
 
  # Ships
  mod_shipsize_quasarmod_quasarcraft_build_speed_mult: "$quasarmod_quasarcraft$ Build Speed"
