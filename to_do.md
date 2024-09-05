@@ -13,3 +13,5 @@ Do qsc_destroyed_nearby loc
 Redo QSC destroyed event loc again (mention the nearby damage)
 
 Consider adding core flags to destroyed QSC quasar
+
+Add all of this to the changelog
