@@ -230,15 +230,19 @@ quasarcraft_destruction_effects = {
 			}
 			# Destroy all ships
 			every_fleet_in_system = {
-				every_owned_ship = {
-					reduce_hp = 100000000000
-				}
+				limit = { owner = { NOT = { is_immune_to_giga_hyperweapon = yes } } }
+				destroy_fleet = this
 			}
 
 			# Planet Damage
 			every_system_planet = {
 				limit = {
-					not = { is_star = yes }
+					NOR = {
+						is_star = yes
+						has_planet_flag = jupitwo
+						has_planet_flag = corrona
+					}
+
 				}
 				remove_planet = yes
 			}
@@ -264,26 +268,8 @@ quasarcraft_destruction_effects = {
 					}
 				}
 
-				# Ship Damage
-				every_fleet_in_system = {
-					every_owned_ship = {
-						random_list = {
-							9 = { reduce_hp = 12000 }
-							8 = { reduce_hp = 14000 }
-							7 = { reduce_hp = 16000 }
-							6 = { reduce_hp = 18000 }
-							5 = { reduce_hp = 20000 }
-							4 = { reduce_hp = 22000 }
-							3 = { reduce_hp = 24000 }
-							2 = { reduce_hp = 26000 }
-							1 = { reduce_hp = 28000 }
-						}
-					}
-				}
-
 				# Planet Damage
 				every_system_planet = {
-
 					# Opinion Modifiers (Irradiated our planet)
 					if = {
 						limit = {
@@ -312,7 +298,11 @@ quasarcraft_destruction_effects = {
 							is_planet_habitable = yes
 							giga_is_habitat = no
 							giga_is_ringworld = no
-							NOT = { has_planet_flag = paluushia }
+							giga_is_frozen = no
+							NOR = {
+								has_planet_flag = jupitwo
+								has_planet_flag = corrona
+							}
 						}
 						random_list = {
 							10 = {
@@ -337,7 +327,7 @@ quasarcraft_destruction_effects = {
 
 							1 = {
 								add_modifier = {
-									modifier = qsc_destroyed_nearby
+									modifier = quasarmod_qsc_destroyed_nearby
 								}
 								change_pc = pc_nuked
 								add_planet_devastation = 100
@@ -380,23 +370,39 @@ quasarcraft_destruction_effects = {
 							giga_is_frozen = yes
 						}
 						random_list = {
-							#nothing, you got lucky
 							5 = {}
-							1 = { change_pc = pc_melted_frozen add_modifier = { modifier = "qsc_destroyed_nearby" days = 3600 } }
+							1 = { change_pc = pc_melted_frozen add_modifier = { modifier = "quasarmod_qsc_destroyed_nearby" days = 3600 } }
 						}
 					}
 
+				}
+
+				# Ship Damage
+				every_fleet_in_system = {
+					every_owned_ship = {
+						random_list = {
+							9 = { reduce_hp = 12000 }
+							8 = { reduce_hp = 14000 }
+							7 = { reduce_hp = 16000 }
+							6 = { reduce_hp = 18000 }
+							5 = { reduce_hp = 20000 }
+							4 = { reduce_hp = 22000 }
+							3 = { reduce_hp = 24000 }
+							2 = { reduce_hp = 26000 }
+							1 = { reduce_hp = 28000 }
+						}
+					}
 				}
 
 				# 3 jumps, every_neighbor_system-ception
 				every_neighbor_system = {
 					if = {
 						limit = {
-							NOT = { any_system_planet = {has_planet_flag = qsc_no_more_damage } }
+							NOT = { any_system_planet = { has_planet_flag = qsc_no_more_damage } }
 							is_planet_habitable = yes
 						}
 						every_system_planet = {
-							add_modifier = { modifier = "gigablackhole_radiations" days = 3600 }
+							add_modifier = { modifier = "quasarmod_qsc_destroyed_nearby2" days = 3600 }
 						}
 					}
 				}
@@ -452,6 +458,10 @@ quasarcraft_destruction_effects = {
 			change_pc = pc_core_quasar
 			set_planet_size = 10
 		}
+	}
+
+	every_galaxy_planet = {
+		remove_planet_flag = qsc_no_more_damage
 	}
 }
 

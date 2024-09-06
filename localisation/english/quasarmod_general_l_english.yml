@@ -136,3 +136,13 @@
  mod_shipsize_quasarcraft_wormhole_evasion_mult: "$quasarcraft_wormhole$ Evasion"
  mod_shipsize_quasarcraft_wormhole_disengage_chance_mult: "$quasarcraft_wormhole$ Disengage Chance"
  mod_shipsize_quasarcraft_wormhole_tracking_mult: "$quasarcraft_wormhole$ Tracking"
+
+ # General Modifiers
+ quasarmod_qsc_destroyed_nearby: "Irradiated by Quasarcraft Destruction"
+ quasarmod_qsc_destroyed_nearby_desc: "The destruction of a Quasarcraft in the immediate proximity of [from.GetName] has bathed the planet with incredible amounts of radiation, it's a miracle that this planet is still capable of supporting life."
+
+ quasarmod_qsc_destroyed_nearby2: "Irradiated by Quasarcraft Destruction"
+ quasarmod_qsc_destroyed_nearby2_desc: "The destruction of a nearby Quasarcraft has bathed the planet with radiation, leading to massive damage to the environment of [from.GetName]."
+
+ quasarmod_lost_quasarcraft: "Lost a Quasarcraft"
+ quasarmod_lost_quasarcraft_desc: "A Quasarcraft owned by this empire was destroyed, causing a disaster spanning multiple systems. The damage caused by such an incident has caused the capabilities of the empire to be called into question."

@@ -9,8 +9,8 @@
  quasarcraft_halo2_key: "Halo Armaments - Second Demicircle"
  quasarcraft_jupiters_key: "Esoteric Jupiter Satellites"
  quasarcraft_celfab_key: "Celestial Fabri-Hangars"
- quasarcraft_wormholes: "Quasaric Wormhole Power-Split"
- quasarcraft_wormholes_DESC: "The Quasarcraft is currently splitting it's output into several wormholes, severely hampering it's own combat capability for the time being."
+ quasarmod_quasarcraft_wormholes: "Quasaric Wormhole Power-Split"
+ quasarmod_quasarcraft_wormholes_DESC: "The Quasarcraft is currently splitting it's output into several wormholes, severely hampering it's own combat capability for the time being."
 
  # Quasarcraft Wormholes
  quasarcraft_wormhole: "Quasaric Fleet-Annihilator Wormhole"

@@ -131,25 +131,31 @@
 
  # Quasarcraft Destroyed
  quasarmod_dialogue.9.name: "Hope's End"
- quasarmod_dialogue.9.desc: "The impossible has happened... The $quasarmod_quasarcraft$ has been destroyed.\n\nThe sword and shield of the empire, our weapon to pierce the heavens has been lost to forces beyond anything we have ever conceived. All we can do now is hope that our remaining forces will be enough to fend off the coming threat."
+ quasarmod_dialogue.9.desc: "The impossible has happened... The $quasarmod_quasarcraft$, the sword and shield of the empire has been defeated in the [event_target:qsc_destroyed_here.System.GetName] system.\n\nThe resulting damage following the ships destruction was catastrophic, [event_target:qsc_destroyed_here.GetName] as well as the Quasarcraft itself have been completely consumed by the $pc_core_quasar$ that once powered the ship.\n\nSystems adjacent to [event_target:qsc_destroyed_here.GetName] have been utterly destroyed by the subspace backlash following the Quasarcrafts destruction. Even systems beyond those adjacent to [event_target:qsc_destroyed_here.GetName] have been impacted, such a disaster caused by one of our own ships is surely going to hurt our diplomatic standing with those effected by the damage.\n\nAll we can do now is hope that our remaining forces will be enough to fend off the coming threat."
  quasarmod_dialogue.9.a: "What do we do now?"
 
  # Endsinger Event Loc
  qsc_endsinger.1.title: "§MThe Endsinger's Quasaric Melody§!"
- qsc_endsinger.1.desc: "You have just used the Endsinger to mark a planet and its system for potential expulsion. To conduct the orchestra of annihilation, pick from one of the following options.\n\n§MStar Cluster§! will not only obliterate the targeted system, but any systems directly connected to it. (§RWARNING: THIS MAY BE BUGGY AND CAUSE CRASHES IF USED IN CERTAIN SITUATIONS§!!)\n\n§YStellar System§! will destroy the system that the Endsinger was fired upon, without requiring the star itself to have been picked initially.\n\n§RPlanetary§! will simply completely expunge the body the Endsinger was targeting from existence, a most precise application of our ultimate war machine.\n\n§BMulti-Instance Fire Support§! will split the output of our majestic Quasar into several wormholes, however it will cause the main §MQuasarcraft's§! weaponry to be much less effective for this time."
+ qsc_endsinger.1.desc: "You have just used the Endsinger to mark a planet and its system for potential expulsion. To conduct the orchestra of annihilation, pick from one of the following options.\n\n§MStar Cluster§! will not only obliterate the targeted system, but any systems directly connected to it.\n\n§YSolar System§! will destroy the system that the Endsinger was fired upon, without requiring the star itself to have been picked initially.\n\n§EPlanet§! will simply completely expunge the body the Endsinger was targeting from existence, a most precise application of our ultimate war machine.\n\n§BMulti-Instance Fire Support§! will split the output of our majestic Quasar into several wormholes, however it will cause the main §MQuasarcraft's§! weaponry to be much less effective for this time.\n\n§RWARNING: Under certain conditions, the $qsc_endsinger.2$ targeting mode may cause bugs and/or crashes.§!"
  qsc_endsinger.2: "§MStar Cluster§!"
- qsc_endsinger.3: "§YStellar System§!"
- qsc_endsinger.4: "§RPlanetary§!"
+ qsc_endsinger.3: "§YSolar System§!"
+ qsc_endsinger.4: "§EPlanet§!"
  qsc_endsinger.5: "§HCancel§!"
  qsc_endsinger.6: "§BMulti-Instance Fire Support§!"
  qsc_endsinger.7: "§GPower Level Control Panel§!"
  qsc_endsinger.8: "§HExit§!"
  qsc_endsinger.400.title: "§BMulti-Instance Fire Support§!"
- qsc_endsinger.400.desc: "You have selected the §BMulti-Instance Fire Support§! feature. This will split the output of the hyperweapon through several wormholes that may be positioned as you choose. Although the power of the §YQuasaric EHOF§! means these wormholes have no expiry, this also means that the Quasarcraft will be severely hampered in terms of firepower for the time being. You may use this selection screen to confirm or dispel existing wormholes."
+ qsc_endsinger.400.desc: "You have selected the $qsc_endsinger.400.title$ feature. This will split the output of the hyperweapon through several wormholes that may be positioned as you choose. Although the power of the §YQuasaric EHOF§! means these wormholes have no expiry, this also means that the Quasarcraft will be severely hampered in terms of firepower for the time being. You may use this selection screen to confirm or dispel existing wormholes."
  qsc_endsinger.401: "§BConfirm M.I.F.S.§!"
  qsc_endsinger.402: "§RDispel Existing Wormholes§!"
  qsc_endsinger.403: "§HReturn to Scale Selection§!"
 
+ # Quasarcraft Self Destruction
+ qsc_self_destruct.1: "§RInitiate Self Destruct§!"
+ qsc_self_destruct.1.desc: "You have selected the $qsc_self_destruct.1$ feature. This will have the Quasarcraft disable all systems that are actively compressing the $pc_core_quasar$, allowing it to rapidly expand.\n\nThis will result in the immediate destruction of the ship and system it resides in, the complete erasure of adjacent systems and heavy damage to systems 2-3 jumps away from the point of detonation.\n\nThe subspace backlash of the detonation will also cause significant damage to nearby hyperlanes, resulting in them being rearranged or destroyed."
+
+ qsc_self_destruct.2: "§RInitiate Quasarcraft Self Destruction§!"
+ qsc_self_destruct.2.desc: "The Quasarcraft in the [event_target:quasarcraft_using_endsinger.System.GetName] system will initiate a self destruct sequence with immediate effect, allowing the $pc_core_quasar$ at its core to consume the ship and surrounding system, as well as dealing massive damage to nearby systems and hyperlanes."
 
  qsc_endsinger.500.title: "§GPower Level Control Panel§!"
  qsc_endsinger.500.desc: "This menu allows you to change the power level of the §MEndsinger,§! changing what it does to systems and planets it is fired upon.\n\nOn §YNormal§! power mode, the §MEndsinger§! will entirely annihilate planets and systems it is fired against, turning them into empty space and dust. If such devastation is not your intention, the next entry is for you.\n\nOn §PLow-Power§! mode, the §MEndsinger§! will put far less power into it's destructive wrath, shattering planets instead of utterly obliterating them. Not only that, but the star and hyperlanes will be preserved, allowing for future operations such as using the G.L.U.E."

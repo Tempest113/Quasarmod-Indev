@@ -74,10 +74,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = "quasarmod_dialogue.9.a"
-		from = {
+		root = {
 			add_resource = {
 				influence = -250
 			}
+			add_modifier = { modifier = quasarmod_lost_quasarcraft days = 3600 }
 		}
 	}
 }

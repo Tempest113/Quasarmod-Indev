@@ -186,6 +186,11 @@ ship_event = {
                     value = 0
                 }
             }
+            solar_system = {
+                star = {
+                    save_event_target_as = qsc_destroyed_here
+                }
+            }
             quasarcraft_destruction_effects = yes
             destroy_ship = ROOT
             root.owner = {
@@ -244,6 +249,19 @@ country_event = {
                     }
                 }
             }
+        }
+    }
+}
+
+# Save the qsc as an event target when using the endsinger, there's probably a better way to do this but it's what i thought of first
+planet_event = {
+    id = quasarmod_utility.10
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        from = {
+            save_global_event_target_as = quasarcraft_using_endsinger
         }
     }
 }
