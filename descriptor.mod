@@ -9,4 +9,3 @@ tags={
 name="Quasarmod-Indev"
 picture="thumbnail.png"
 supported_version="3.12.*"
-remote_file_id="3259978897"
