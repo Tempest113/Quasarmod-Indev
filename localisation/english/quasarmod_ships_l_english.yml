@@ -60,7 +60,7 @@
 
  FLEETORDER_DESTROY_PLANET_WITH_QSC_ENDSINGER: "Singing the end of $PLANET|Y$"
  MESSAGE_DESC_FOR_QSC_ENDSINGER: "$PLANET|Y$'s existence was ended by"
- QSC_ENDSINGER_ACTION: "Fire Endsinger"
+ QSC_ENDSINGER_ACTION: "Fire Endsinger at"
 
  aura_ship_quasar_snare: "Gravitic Snare"
  aura_quasar_eye: "Eye of Hawking"

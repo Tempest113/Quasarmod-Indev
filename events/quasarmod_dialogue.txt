@@ -64,22 +64,40 @@ country_event = {
 	}
 }
 
+##############################################
+### QUASARCRAFT DESTRUCTION FLAVOUR EVENTS ###
+##############################################
+
+namespace = qsc_destroyed
+
 # Quasarcraft Destroyed (How on Earth?)
 country_event = {
-	id = quasarmod_dialogue.9
-	title = "quasarmod_dialogue.9.name"
-	desc = "quasarmod_dialogue.9.desc"
+	id = qsc_destroyed.1
+	title = "qsc_destroyed.1.name"
+	desc = "qsc_destroyed.1.desc"
 	picture = GFX_evt_supernova
 	show_sound = event_dyson_sphere_build_complete
 	is_triggered_only = yes
 	option = {
-		name = "quasarmod_dialogue.9.a"
+		name = "qsc_destroyed.1.a"
 		root = {
 			add_resource = {
 				influence = -250
 			}
 			add_modifier = { modifier = quasarmod_lost_quasarcraft days = 3600 }
 		}
+	}
+}
+
+country_event = {
+	id = qsc_destroyed.2
+	title = "qsc_destroyed.2.name"
+	desc = "qsc_destroyed.2.desc"
+	picture = GFX_evt_supernova
+	show_sound = event_dyson_sphere_build_complete
+	is_triggered_only = yes
+	option = {
+		name = "qsc_destroyed.2.a"
 	}
 }
 

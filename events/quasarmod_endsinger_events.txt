@@ -12,11 +12,32 @@ country_event = {
 		room = quasarcraft_bridge_room
 	}
 	option = { name = "qsc_endsinger.2" hidden_effect = { country_event = { id = qsc_endsinger.300 } } } #cluster
+
 	option = { name = "qsc_endsinger.3" hidden_effect = { country_event = { id = qsc_endsinger.200 } } } #star
-	option = { name = "qsc_endsinger.4" hidden_effect = { country_event = { id = qsc_endsinger.100 } } } #planet
+
+	option = { #planet
+		name = "qsc_endsinger.4"
+
+		allow = {
+			custom_tooltip = {
+				text = qsc_planet_target_requires_no_star
+				event_target:planet_targeted_by_endsinger = { is_star = no }
+			}
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = qsc_endsinger.100
+			}
+		}
+	}
+
 	option = { name = "qsc_endsinger.6" hidden_effect = { country_event = { id = qsc_endsinger.400 } } } #fleet
+
 	option = { name = "qsc_endsinger.7" hidden_effect = { country_event = { id = qsc_endsinger.500 } } } #power mode
+
 	option = { name = "qsc_self_destruct.1" hidden_effect = { country_event = { id = qsc_self_destruct.1 } } }
+
 	option = { name = "qsc_endsinger.5" hidden_effect = { country_event = { id = qsc_endsinger.3 } } } #cancel
 }
 
@@ -228,7 +249,14 @@ country_event = { #blast
 						any_country = { is_country_type = katzen_submarines } 
 					}
 					ROOT = { set_country_flag = player_country_cracked_flusion }
-				}	
+				}
+
+				if = {
+					limit = {
+						is_star = yes
+					}
+					change_pc = pc_t_star_big
+				}
 
 				if = {
 					limit = {
@@ -240,6 +268,7 @@ country_event = { #blast
 							is_planet_class = pc_asteroid
 							is_planet_class = pc_crystal_asteroid
 						}
+						is_star = no
 					}
 					giga_remove_planet = yes # The planet is too small, or is artificial, instantly obliterated
 				}
@@ -255,7 +284,7 @@ country_event = { #blast
 						}
 						change_pc = pc_metallic_hydrogen
 					}
-					else = { change_pc = pc_shattered }	
+					else = { change_pc = pc_shattered }
 				}
 				create_ambient_object = {
 					type = "star_explosion"
@@ -403,13 +432,21 @@ country_event = {
 				}
 
 				if = {
-					limit = { root = {has_country_flag = endsinger_lowpower } NOT = {is_star = yes}}
+					limit = { root = { has_country_flag = endsinger_lowpower } NOT = { is_star = yes } }
 					destroy_colony = yes
 					change_pc = pc_shattered
 				}
 
 				if = {
-					limit = { NOR = {is_star = yes root = {has_country_flag = endsinger_lowpower}}}
+					limit = {
+						NOR = {
+							is_star = yes
+							quasarmod_is_core_class = yes
+							root = {
+								has_country_flag = endsinger_lowpower
+							}
+						}
+					}
 					giga_remove_planet = yes
 				}
 			}
@@ -441,15 +478,24 @@ country_event = {
 				solar_system = {
 					if = {
 						limit = {
-							NOT = { root = {has_country_flag = endsinger_lowpower}}
+							NOT = {
+								any_system_planet = { quasarmod_is_core_class = yes }
+								root = {
+									has_country_flag = endsinger_lowpower
+								}
+							}
 						}
-					set_name = {
-						key = "NAME_Giga_Void_System"
-						variable_string = "[PREV.GetName]"
-					}
+						set_name = { key = "NAME_Giga_Void_System" variable_string = "[PREV.GetName]" }
 					}
 					if = {
-						limit = { NOT = { root = { has_country_flag = endsinger_lowpower } } }
+						limit = {
+							NOR = {
+								any_system_planet = { quasarmod_is_core_class = yes }
+								root = {
+									has_country_flag = endsinger_lowpower
+								}
+							}
+						}
 						set_star_class = sc_empty_space
 					}
 					if = {
@@ -464,7 +510,7 @@ country_event = {
 					every_system_planet = {
 						limit = { is_star = yes}
 						if = {
-							limit = { NOR = { is_planet_class = pc_core_quasar root = { has_country_flag = endsinger_lowpower }}}
+							limit = { NOR = { quasarmod_is_core_class = yes root = { has_country_flag = endsinger_lowpower }}}
 							clear_deposits = yes
 							change_pc = pc_giga_empty_space
 							set_name = "Empty Space"
@@ -654,7 +700,23 @@ country_event = {
 	}
 	location = event_target:quasarcraft_using_endsinger
 
-	option = { name = "qsc_self_destruct.2" hidden_effect = { event_target:quasarcraft_using_endsinger = { solar_system = { quasarcraft_destruction_effects = yes } } } }
-	option = { name = "qsc_endsinger.5" hidden_effect = { country_event = { id = qsc_endsinger.3 } } } #cancel
+	# Detonate
+	option = {
+		name = "qsc_self_destruct.2"
+		hidden_effect = {
+			event_target:quasarcraft_using_endsinger = {
+				solar_system = {
+					quasarcraft_destruction_effects = yes
+				}
+			}
+			country_event = {
+				id = qsc_destroyed.2
+				days = 1
+			}
+		}
+	}
+
+	option = { name = "qsc_endsinger.403" hidden_effect = { country_event = { id = qsc_endsinger.2 } } } # Back
+	option = { name = "qsc_endsinger.5" hidden_effect = { country_event = { id = qsc_endsinger.3 } } } #Close UI
 
 }

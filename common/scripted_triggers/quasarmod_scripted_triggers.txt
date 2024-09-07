@@ -2,8 +2,15 @@ quasarmod_enabled = { always = yes }
 
 quasarmod_ap_taken = { has_ascension_perk = ap_hyperquasaric_megaconstruction}
 
+quasarmod_is_core_class = {
+    OR = {
+        is_planet_class = pc_core_quasar
+        is_planet_class = pc_core_black_hole
+    }
+}
+
 planet_has_quasarmod_teraforge_uplink = {
-    or = {
+    OR = {
         has_building = building_teraforge_uplink_base
         has_building = building_teraforge_uplink_alloys
         has_building = building_teraforge_uplink_consumer_goods
@@ -30,10 +37,18 @@ can_destroy_planet_with_QSC_ENDSINGER = {
     }
     custom_tooltip = {
         fail_text = cannot_target_empty_space
-        not = {
+        NOT = {
             planet = {
                 giga_is_empty_space = yes
                 merg_is_empty_space = yes
+            }
+        }
+    }
+    custom_tooltip = {
+        text = cannot_target_core_black_hole
+        NOT = {
+            planet = {
+                quasarmod_is_core_class = yes
             }
         }
     }

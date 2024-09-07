@@ -194,7 +194,7 @@ ship_event = {
             quasarcraft_destruction_effects = yes
             destroy_ship = ROOT
             root.owner = {
-                country_event = { id = quasarmod_dialogue.9 }
+                country_event = { id = qsc_destroyed.1 }
             }
         }
     }
@@ -260,6 +260,7 @@ planet_event = {
     is_triggered_only = yes
 
     immediate = {
+        save_global_event_target_as = planet_targeted_by_endsinger
         from = {
             save_global_event_target_as = quasarcraft_using_endsinger
         }
