@@ -35,21 +35,26 @@ can_destroy_planet_with_QSC_ENDSINGER = {
             }
         }
     }
+
     custom_tooltip = {
         fail_text = cannot_target_empty_space
         NOT = {
-            planet = {
-                giga_is_empty_space = yes
-                merg_is_empty_space = yes
-            }
+            giga_is_empty_space = yes
         }
     }
+
     custom_tooltip = {
-        text = cannot_target_core_black_hole
+        fail_text = cannot_target_core_black_hole
         NOT = {
-            planet = {
-                quasarmod_is_core_class = yes
-            }
+            quasarmod_is_core_class = yes
+        }
+    }
+
+    custom_tooltip = {
+        fail_text = cannot_target_aeternite_birch
+        NAND = {
+            owner = { is_aeternum = yes }
+            giga_is_birch_world = yes
         }
     }
 }

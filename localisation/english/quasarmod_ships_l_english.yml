@@ -2,7 +2,7 @@
 
  # Main Ship
  quasarmod_quasarcraft: "Gargantuan Quasarcraft"
- quasarmod_quasarcraft_plural: "Gargantuan Quasarcraft"
+ quasarmod_quasarcraft_plural: "$quasarmod_quasarcraft$"
  quasarcraft_main_01_key: "Forward Quasaric Projector"
  quasarcraft_main_02_key: "Main Quasaric Body"
  quasarcraft_halo1_key: "Halo Armaments - First Demicircle"
@@ -29,7 +29,7 @@
  QSC_ENERGY_LANCE: "Quasaric Skyripper"
  QSC_ENERGY_LANCE_DESC: "The Skyripper cannons are designed to deter larger, stronger vessels such as a Systemcraft, focusing Quasaric Energy on a macro-scale, enough to shred stars by themselves."
  QSC_STRIKE_FORCE: "Celestial Strike Forces"
- QSC_STRIKE_FORCE_DESC: "No capital ship fights alone. The Celestial Strike Forces emerge from their grand hangars to deter any hope of infiltrating the king of the celestial warships. A myriad of $giga_planet_behemoth_plural$ freshly fabricated, armed and ready. Automated as well."
+ QSC_STRIKE_FORCE_DESC: "No capital ship fights alone. The Celestial Strike Forces emerge from their grand hangars to deter any hope of infiltrating the king of the celestial warships. A myriad of automated $giga_planet_behemoth_plural$ freshly fabricated, armed and ready."
  QSC_TITANIC_GUN: "Quasi-Stellar Obliterator"
  QSC_TITANIC_GUN_DESC: "An immense weapon based on the old QSO weapon, but adapted for use as a ship weapon. A firearm of fear to strike terror into the collective conscious of the enemy."
  QSC_PLANET_LANCE: "Quasarcraft's Eye"
@@ -58,9 +58,9 @@
  QSC_AURA_DEATHFIELD: "Quasaric Presence"
  QSC_AURA_DEATHFIELD_DESC: "The aspects of the Quasarcraft's immense size can quite simply be used to crush less resilient vessels with emitted ambient energy and manipulated gravity."
 
- FLEETORDER_DESTROY_PLANET_WITH_QSC_ENDSINGER: "Singing the end of $PLANET|Y$"
- MESSAGE_DESC_FOR_QSC_ENDSINGER: "$PLANET|Y$'s existence was ended by"
- QSC_ENDSINGER_ACTION: "Fire Endsinger at"
+ FLEETORDER_DESTROY_PLANET_WITH_QSC_ENDSINGER: "Firing Endsinger at $PLANET|Y$"
+ MESSAGE_DESC_FOR_QSC_ENDSINGER: "$PLANET|Y$ was erased by"
+ QSC_ENDSINGER_ACTION: "Fire Endsinger"
 
  aura_ship_quasar_snare: "Gravitic Snare"
  aura_quasar_eye: "Eye of Hawking"

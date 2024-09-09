@@ -165,9 +165,9 @@ convert_to_hyperquasar = {
 }
 
 quasarcraft_destruction_effects = {
-	owner = {
-		save_event_target_as = quasarcraft_owner
-	}
+	# owner = {
+	# 	save_event_target_as = quasarcraft_owner
+	# }
 
 	solar_system = {
 		# Wipe out system
@@ -176,7 +176,19 @@ quasarcraft_destruction_effects = {
 			destroy_fleet = this
 		}
 
-		every_system_planet = { limit = { is_star = no is_astral_scar = no } remove_planet = yes }
+		# Remove everything that isn't a core, star or astral scar
+		every_system_planet = {
+			limit = {
+				is_star = no
+				is_astral_scar = no
+				quasarmod_is_core_class = no
+				# AND = {
+				# 	giga_is_birch_world = no
+				# 	owner = { is_aeternum = yes }
+				# }
+			}
+			remove_planet = yes
+		}
 		giga_remove_system_debris = yes
 		set_star_class = sc_quasar
 		every_system_megastructure = {
@@ -222,7 +234,7 @@ quasarcraft_destruction_effects = {
 		# One Jump
 		every_neighbor_system = {
 			limit = {
-				NOT = { any_system_planet = {has_planet_flag = qsc_no_more_damage } }
+				NOT = { any_system_planet = { has_planet_flag = qsc_no_more_damage } }
 				NOR = {
 					is_star_class = sc_blokkat_stripmined
 					any_ship_in_system = { owner = { is_country_type = blokkat_stripminers } }
@@ -239,6 +251,11 @@ quasarcraft_destruction_effects = {
 				limit = {
 					NOR = {
 						is_star = yes
+						quasarmod_is_core_class = yes
+						# AND = {
+						# 	giga_is_birch_world = yes
+						# 	owner = { is_aeternum = yes }
+						# }
 						has_planet_flag = jupitwo
 						has_planet_flag = corrona
 					}
@@ -246,9 +263,30 @@ quasarcraft_destruction_effects = {
 				}
 				remove_planet = yes
 			}
+
+			every_system_megastructure = {
+				limit = {
+					NOR = {
+						is_megastructure_type = lgate_base
+						is_megastructure_type = gateway_final
+						is_megastructure_type = gateway_restored
+						#is_megastructure_type = gateway_ruined
+						is_megastructure_type = ehof_pgate_gateway
+						#is_megastructure_type = ehof_pgate_unknown
+						is_megastructure_type = hyper_relay
+						is_megastructure_type = hyper_relay_restored
+						#is_megastructure_type = hyper_relay_ruined
+					}
+				}
+				remove_megastructure = this
+			}
+
 			every_system_planet = {
 				limit = {
-					is_star = yes
+					NOR = {
+						quasarmod_is_core_class = no
+						is_star = yes
+					}
 				}
 				solar_system = {
 					set_star_class = sc_empty_space

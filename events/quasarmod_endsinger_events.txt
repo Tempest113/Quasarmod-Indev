@@ -36,7 +36,7 @@ country_event = {
 
 	option = { name = "qsc_endsinger.7" hidden_effect = { country_event = { id = qsc_endsinger.500 } } } #power mode
 
-	option = { name = "qsc_self_destruct.1" hidden_effect = { country_event = { id = qsc_self_destruct.1 } } }
+	option = { name = "qsc_self_destruct.1" hidden_effect = { country_event = { id = qsc_self_destruct.1 } } } # self destruct
 
 	option = { name = "qsc_endsinger.5" hidden_effect = { country_event = { id = qsc_endsinger.3 } } } #cancel
 }
@@ -253,13 +253,6 @@ country_event = { #blast
 
 				if = {
 					limit = {
-						is_star = yes
-					}
-					change_pc = pc_t_star_big
-				}
-
-				if = {
-					limit = {
 						NOT = { root = { has_country_flag = endsinger_lowpower }}
 						OR = {
 							planet_size < 25
@@ -269,6 +262,7 @@ country_event = { #blast
 							is_planet_class = pc_crystal_asteroid
 						}
 						is_star = no
+						giga_is_birch_world = yes
 					}
 					giga_remove_planet = yes # The planet is too small, or is artificial, instantly obliterated
 				}
@@ -441,6 +435,7 @@ country_event = {
 					limit = {
 						NOR = {
 							is_star = yes
+							giga_is_birch_world = yes
 							quasarmod_is_core_class = yes
 							root = {
 								has_country_flag = endsinger_lowpower
@@ -706,6 +701,46 @@ country_event = {
 		hidden_effect = {
 			event_target:quasarcraft_using_endsinger = {
 				solar_system = {
+					if = {
+						limit = {
+							any_system_planet = {
+								AND = {
+									giga_is_birch_world = yes
+									owner = { is_aeternum = yes }
+								}
+							}
+						}
+
+						prevprev = {
+							save_global_event_target_as = aeternite_conqueror
+							country_event = {
+								id = giga_aeternum.4303
+								days = 15
+							}
+						}
+
+					}
+					every_neighbor_system = {
+						if = {
+							limit = {
+								any_system_planet = {
+									AND = {
+										giga_is_birch_world = yes
+										owner = { is_aeternum = yes }
+									}
+								}
+							}
+
+							prevprevprev = {
+								save_global_event_target_as = aeternite_conqueror
+								country_event = {
+									id = giga_aeternum.4303
+									days = 15
+								}
+							}
+						}
+					}
+
 					quasarcraft_destruction_effects = yes
 				}
 			}

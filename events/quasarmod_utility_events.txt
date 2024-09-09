@@ -263,6 +263,9 @@ planet_event = {
         save_global_event_target_as = planet_targeted_by_endsinger
         from = {
             save_global_event_target_as = quasarcraft_using_endsinger
+            owner = {
+                save_global_event_target_as = player_firing_endsinger
+            }
         }
     }
 }

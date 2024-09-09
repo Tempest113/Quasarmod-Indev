@@ -105,9 +105,10 @@
 
  no_qsc_wormholes: "$TRIGGER_FAIL$There are no wormholes to disband."
  wormholes_already_out: "$TRIGGER_FAIL$Must disband wormholes first."
- cannot_target_empty_space: "$TRIGGER_FAIL$Cannot target $sc_empty_space$"
+ cannot_target_empty_space: "$TRIGGER_FAIL$Cannot target $sc_empty_space$ with the Endsinger."
  cannot_target_core_black_hole: "$TRIGGER_FAIL$Cannot target a Supermassive Black Hole with the Endsinger."
  qsc_planet_target_requires_no_star: "Cannot target a star with Endsinger $qsc_endsinger.4$ targeting mode."
+ cannot_target_aeternite_birch: "$TRIGGER_FAIL$Cannot target the Aeternite $birch_world_3$ with the Endsinger."
 
  #############
  # Modifiers #
