@@ -15,7 +15,7 @@ matrioshka_brain_0_core = {
         NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
     }
 
-    build_time = 360
+    build_time = 1800
     resources = {
         category = giga_gigastructures
         cost = {
@@ -75,7 +75,7 @@ matrioshka_brain_1_core = {
         }
     }
 
-    build_time = 1800
+    build_time = 3600
     resources = {
         category = giga_gigastructures
         cost = {
@@ -122,7 +122,7 @@ matrioshka_brain_2_core = {
         }
     }
 
-    build_time = 3600
+    build_time = 4800
     resources = {
         category = giga_gigastructures
         cost = {

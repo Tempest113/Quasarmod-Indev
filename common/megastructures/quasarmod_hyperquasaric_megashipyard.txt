@@ -11,7 +11,7 @@ hyperquasaric_megashipyard_0 = {
         NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
     }
 
-    build_time = 360
+    build_time = 1800
     resources = {
         category = giga_gigastructures
         cost = {
@@ -69,7 +69,7 @@ hyperquasaric_megashipyard_1 = {
         }
     }
 
-    build_time = 2700
+    build_time = 3600
     resources = {
         category = giga_gigastructures
         cost = {
@@ -113,7 +113,7 @@ hyperquasaric_megashipyard_2 = {
         }
     }
 
-    build_time = 3600
+    build_time = 4800
     resources = {
         category = giga_gigastructures
         cost = {

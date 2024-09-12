@@ -10,7 +10,7 @@ hyperquasaric_teraforge_0 = {
 	prerequisites = { tech_hyperquasaric_teraforge }
 	show_prereqs = no
 
-	build_time = 360
+	build_time = 1800
 	resources = {
 		category = giga_gigastructures
 		cost = {
@@ -74,7 +74,7 @@ hyperquasaric_teraforge_1 = {
 		}
 	}
 
-	build_time = 1800
+	build_time = 3600
 	resources = {
 		category = giga_gigastructures
 		cost = {
@@ -121,7 +121,7 @@ hyperquasaric_teraforge_2 = {
 		}
 	}
 
-	build_time = 3600
+	build_time = 4800
 	resources = {
 		category = giga_gigastructures
 		cost = {
