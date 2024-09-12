@@ -8,4 +8,4 @@ tags={
 }
 name="Quasarmod-Indev"
 picture="thumbnail.png"
-supported_version="3.12.*"
+supported_version="v3.13.*"

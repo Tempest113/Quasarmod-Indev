@@ -165,10 +165,6 @@ convert_to_hyperquasar = {
 }
 
 quasarcraft_destruction_effects = {
-	# owner = {
-	# 	save_event_target_as = quasarcraft_owner
-	# }
-
 	solar_system = {
 		# Wipe out system
 		every_fleet_in_system = {
@@ -191,6 +187,8 @@ quasarcraft_destruction_effects = {
 		}
 		giga_remove_system_debris = yes
 		set_star_class = sc_quasar
+		set_star_flag = giga_core_02
+		set_star_flag = giga_qso_core
 		every_system_megastructure = {
 			limit = {
 				NOR = {

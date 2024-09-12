@@ -126,7 +126,7 @@
  quasarmod_megastage_dialogue.405.a: "Our foes will be just a burning memory."
 
  quasarmod_megastage_dialogue.406.name: "§MThe Gargantuan of the Heavens§!"
- quasarmod_megastage_dialogue.406.desc: "After all this time, it is finally complete. The greatest weapon the galaxy has ever known.\n\n The Gargantuan Quasarcraft.\n\nIt has shifted from its position in the galactic core, the feed of the vessel's first movement bringing tears to our engineer's eyes. It is said the mountains don't give back what they take, but this 'mountain' we have surpassed has instilled a ferocious pride throughout our empire. Admirals are already clamoring for the fabled spot of the Quasaric Commander. \n\nThe Quasarcraft is on standby, awaiting orders."
+ quasarmod_megastage_dialogue.406.desc: "After all this time, it is finally complete. The greatest weapon the galaxy has ever known.\n\nThe Gargantuan Quasarcraft.\n\nIt has shifted from its position in the galactic core, the feed of the vessel's first movement bringing tears to our engineer's eyes. It is said the mountains don't give back what they take, but this 'mountain' we have surpassed has instilled a ferocious pride throughout our empire. Admirals are already clamoring for the fabled spot of the Quasaric Commander. \n\nThe Quasarcraft is on standby, awaiting orders."
  quasarmod_megastage_dialogue.406.a: "We are the Alpha and the Omega, your beginning and your end."
 
  # Quasarcraft Destroyed
@@ -170,9 +170,9 @@
  qsc_already_normal: "The §MEndsinger§! is already on its normal setting!"
  qsc_already_low: "The §MEndsinger§! is already on low power mode!"
 
- ############################
- # SMBH Manipulation Events #
- ############################
+ ###########################
+ # General Dialogue Events #
+ ###########################
 
  # Black Hole Injector Complete
 
@@ -197,3 +197,9 @@
  quasarmod_dialogue.202.name: "Harvesting Complete"
  quasarmod_dialogue.202.desc: "After several years of constant harvesting we have successfully managed to completely harvest the accretion disk of [root.from.GetName] as well as slow it's rotation to a point that it is now considered safe for us to begin work on other projects around the now \"dead\" black hole. \n \n§RNOTE TO PLAYER: If the system icon does not change from the quasar icon to the inactive icon, run the \"reload_graphical_map\" command, or save and reload your game.§!"
  quasarmod_dialogue.202.a: "Perfect."
+
+# The destruction of Aiondia
+
+ quasarmod_dialogue.3.name: "The Destruction of Aiondia"
+ quasarmod_dialogue.3.desc: "After quite possibly one of the most devastating wars in galactic history, §YAiondia§! has fallen to the §Y[aeternite_conqueror.GetName]§!.\n\nFollowing a horrifying demonstration of their flagship $quasarmod_quasarcraft$s offensive capabilities, the §Y[aeternite_conqueror.GetName]§! has utterly annihilated the Aeternite defenders who, despite their incredible technologies, were not able to withstand the power of their quasar powered hyperweapon.\n\nWith the loss of their one and only permanent settlement, the Aeternites can no longer sustain their war effort, and whatever remains of their empire will soon disappear."
+ quasarmod_dialogue.3.a: "Another precursor empire bites the dust."

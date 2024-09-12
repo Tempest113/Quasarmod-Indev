@@ -269,3 +269,90 @@ planet_event = {
         }
     }
 }
+
+
+# Pretty much a duplicate of the base aeternum event with a few changes so i don't have to overwrite the base one
+country_event = {
+    id = quasarmod_utility.11
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        remove_global_flag = aeternum_awakening_ongoing
+        set_global_flag = aeternum_vanquished
+        event_target:birch_aeternum = { destroy_country = yes }
+        every_country = {
+            country_event = { id = quasarmod_dialogue.4 }
+            clear_aet_intel_modifier = yes
+        }
+        every_megastructure = {
+            limit = {
+                OR = {
+                    is_megastructure_type = aeternum_forge_0
+                    is_megastructure_type = aeternum_forge_1
+                }
+            }
+            planet = {
+                remove_planet_flag = has_aeternite_forge
+                giga_clear_has_mega_flag = { MEGA = prev }
+            }
+            remove_megastructure = THIS
+        }
+        event_target:aeternite_conqueror = { #Achievement
+            if = {
+                limit = {
+                    NOT = { has_global_flag = giga_achievements_disabled }
+                    NOT = {
+                        has_country_flag = giga_achievement_aet1
+                    }
+                    NOR = {
+                        has_global_flag = giga_core_aeternum_2
+                        has_global_flag = giga_core_aeternum_3
+                    }
+                }
+                set_country_flag = giga_achievement_aet1
+                set_timed_country_flag = { flag = giga_achievement_aet1_notification days = 30 }
+                giga_achievement_sound = yes
+            }
+            if = {
+                limit = {
+                    NOT = { has_global_flag = giga_achievements_disabled }
+                    NOT = {
+                        has_country_flag = giga_achievement_aet2
+                    }
+                    has_global_flag = giga_core_aeternum_2
+                }
+                set_country_flag = giga_achievement_aet1
+                set_country_flag = giga_achievement_aet2
+                set_timed_country_flag = { flag = giga_achievement_aet2_notification days = 30 }
+                giga_achievement_sound = yes
+            }
+            if = {
+                limit = {
+                    NOT = { has_global_flag = giga_achievements_disabled }
+                    NOT = {
+                        has_country_flag = giga_achievement_aet3
+                    }
+                    OR = {
+                        has_global_flag = giga_core_aeternum_3
+                        has_global_flag = giga_core_aeternum_4
+                    }
+                }
+                set_country_flag = giga_achievement_aet1
+                set_country_flag = giga_achievement_aet2
+                set_country_flag = giga_achievement_aet3
+                set_timed_country_flag = { flag = giga_achievement_aet3_notification days = 30 }
+                giga_achievement_sound = yes
+            }
+            if = {
+                limit = {
+                    NOT = { has_global_flag = giga_achievements_disabled }
+                    has_global_flag = premature_aeternum_awakening
+                }
+                set_country_flag = giga_achievement_aet5
+                set_timed_country_flag = { flag = giga_achievement_aet5_notification days = 30 }
+                giga_achievement_sound = yes
+            }
+        }
+    }
+}

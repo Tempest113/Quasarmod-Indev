@@ -224,6 +224,34 @@ country_event = { #blast
 				}
 
 				if = {
+					limit = {
+						solar_system = {
+							any_system_planet = {
+								AND = {
+									giga_is_birch_world = yes
+									owner = { is_aeternum = yes }
+								}
+							}
+						}
+					}
+
+					prevprev = {
+						save_global_event_target_as = aeternite_conqueror
+						country_event = {
+							id = giga_aeternum.4303
+							days = 15
+						}
+					}
+
+					every_country = {
+						limit = {
+							NOT = { is_country = event_target:aeternite_conqueror }
+						}
+						country_event = { id = quasarmod_dialogue.3 }
+					}
+				}
+
+				if = {
 					limit = { is_planet_class = pc_ai }
 					if = {
 						limit = { NOT = { has_planet_flag = machine_lair } }
@@ -335,6 +363,16 @@ country_event = {
 					has_star_flag = endsinger_target_star
 					has_star_flag = endsinger_target_cluster
 				}
+
+				# Commented out as it breaks the ability to kill aeternum with it, you can also use the logic that "The QSC is in the actual system so it just overpowers the subspace shield" or something
+				# NOT = {
+				# 	system_star = {
+				# 		OR = {
+				# 			has_planet_flag = cant_build_here
+				# 			has_planet_flag = cant_target_this_planet
+				# 		}
+				# 	}
+				# }
 			}
 			remove_star_flag = endsinger_target_star
 			remove_star_flag = endsinger_target_cluster
@@ -421,6 +459,37 @@ country_event = {
 				}
 
 				if = {
+					limit = {
+						solar_system = {
+							any_system_planet = {
+								AND = {
+									giga_is_birch_world = yes
+									owner = { is_aeternum = yes }
+								}
+							}
+						}
+					}
+
+					prevprev = {
+						save_global_event_target_as = aeternite_conqueror
+						country_event = {
+							id = quasarmod_utility.11
+							# id = giga_aeternum.4303
+							days = 15
+						}
+					}
+
+					every_country = {
+						limit = {
+							NOT = { is_country = event_target:aeternite_conqueror }
+						}
+						country_event = { id = quasarmod_dialogue.3 }
+					}
+
+				}
+
+
+				if = {
 					limit = { is_planet_class = pc_infested }
 					planet_event = { id = giga_qso.115 } # Infested world
 				}
@@ -435,7 +504,7 @@ country_event = {
 					limit = {
 						NOR = {
 							is_star = yes
-							giga_is_birch_world = yes
+							# giga_is_birch_world = yes
 							quasarmod_is_core_class = yes
 							root = {
 								has_country_flag = endsinger_lowpower
@@ -606,7 +675,7 @@ country_event = {
 		}
 		country_event = {
 			id = qsc_endsinger.200
-			days = 10
+			days = 1
 		}
 	}
 }
@@ -719,7 +788,14 @@ country_event = {
 							}
 						}
 
+						every_country = {
+							limit = {
+								NOT = { is_country = event_target:aeternite_conqueror }
+							}
+							country_event = { id = quasarmod_dialogue.3 }
+						}
 					}
+
 					every_neighbor_system = {
 						if = {
 							limit = {
@@ -738,9 +814,17 @@ country_event = {
 									days = 15
 								}
 							}
+
+							every_country = {
+								limit = {
+									NOT = { is_country = event_target:aeternite_conqueror }
+								}
+								country_event = { id = quasarmod_dialogue.3 }
+							}
 						}
 					}
 
+					save_global_event_target_as = quasarcraft_owner
 					quasarcraft_destruction_effects = yes
 				}
 			}

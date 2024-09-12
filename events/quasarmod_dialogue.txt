@@ -23,7 +23,7 @@ situation_event = {
 
 # Injection Complete
 country_event = {
-	id = quasarmod_dialogue.102
+	id = quasarmod_dialogue.102 # .102 since it's related to the one above
 	title = quasarmod_dialogue.102.name
 	desc = quasarmod_dialogue.102.desc
 	picture = GFX_evt_astral_rift_microverse
@@ -47,6 +47,49 @@ situation_event = {
 
 	option = {
 		name = quasarmod_dialogue.2.a
+	}
+}
+
+# The destruction of Aiondia
+country_event = {
+	id = quasarmod_dialogue.3
+	title = quasarmod_dialogue.3.name
+	desc = quasarmod_dialogue.3.desc
+	picture = GFX_evt_victorious_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = quasarmod_dialogue.3.a
+	}
+}
+
+# Pretty much a duplicate of the base aeternum event but it only fires once so i don't have to overwrite the base one
+# Made because the base event would fire twice when using the star cluster targeting mode for some reaosn
+country_event = {
+	id = quasarmod_dialogue.4
+	title = "giga_aeternum.4304.name"
+	desc = "giga_aeternum.4304.desc"
+	picture = GFX_evt_clocks
+	show_sound = event_radio_chatter
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "giga_aeternum.4304.a"
+		hidden_effect = {
+			if = {
+				limit = {
+					has_event_chain = aeternum_chain
+					NOR = {
+						has_special_project = INVESTIGATE_AETERNUM_FORGE
+						has_special_project = INVESTIGATE_AETERNUM_PLANETCRAFT
+						has_special_project = INVESTIGATE_AETERNUM_INTEL
+					}
+				}
+				end_event_chain = aeternum_chain
+			}
+		}
 	}
 }
 

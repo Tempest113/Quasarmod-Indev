@@ -50,11 +50,11 @@ can_destroy_planet_with_QSC_ENDSINGER = {
         }
     }
 
-    custom_tooltip = {
-        fail_text = cannot_target_aeternite_birch
-        NAND = {
-            owner = { is_aeternum = yes }
-            giga_is_birch_world = yes
-        }
-    }
+    # custom_tooltip = {
+    #     fail_text = cannot_target_aeternite_birch
+    #     NAND = {
+    #         owner = { is_aeternum = yes }
+    #         giga_is_birch_world = yes
+    #     }
+    # }
 }

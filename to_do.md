@@ -1,16 +1,20 @@
-To Do:
+3.13 To Do:
 
-Improve/Fix opinion modifiers for destroying/damaging planets in QSC destruction event (turns out people hate their planets being erased from existence, who would have thought?)
+~~Improve/Fix opinion modifiers for destroying/damaging planets in QSC destruction event (turns out people hate their planets being erased from existence, who would have thought?)~~ Later, this shit's annoying
 
-Look into excluding the aeternite core/maginot protected systems (subspace shielding)
+~~Look into excluding maginot protected systems (subspace shielding) Conflicts with being able to destroy Aeternum with the endsinger (sad times)~~
 
-Consider adding core flags to destroyed QSC quasar
+~~Consider adding core flags to destroyed QSC quasar~~
 
-Allow direct targeting of Aeternite birch (also have to add unique mechanics to planet/system targeting mode to fire the end of aeternum event)
+~~Allow direct targeting of Aeternite birch (also have to add unique mechanics to planet/system targeting mode to fire the end of aeternum event)~~ ~~(Look into preventing the double "end of aeternum event". not that it causes issues)~~
+
+~~Add galactic notif event for QSC self-destruction taking out Aiondia~~ Maybe add specific event for QSC self-destruction
+
+~~Add icons to the mega build menu~~
 
 Add all of this to the changelog
 
-~~Write flavour event for QSC self-destruction, similar to the QSC defeated event~~ - Consider rewriting/expanding on this event
+~~Write flavour event for QSC self-destruction, similar to the QSC defeated event~~
 
 ~~Prevent QSC self destruction from nuking aeternum~~
 
