@@ -7,7 +7,7 @@ tech_hyperquasaric_teraforge = {
 	weight = 0
 
 	potential = {
-		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		any_quasarmod_ap_taken = yes
 		NOT = { has_global_flag = quasarmod_teraforge_disabled }
 	}
 
@@ -26,7 +26,7 @@ tech_hyperquasaric_megashipyard = {
 	weight = @giga_tier7weight3
 
 	potential = {
-		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		any_quasarmod_ap_taken = yes
 		NOT = { has_global_flag = quasarmod_shipyard_disabled }
 	}
 
@@ -45,7 +45,8 @@ tech_smbh_manipulator ={
 	weight = 0
 
 	potential = {
-		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		# No or for this as the SMBH manipulator relies on stellar manip
+		quasarmod_ap_taken = yes
 		NOT = { has_global_flag = quasarmod_manipulator_disabled }
 	}
 
@@ -64,7 +65,7 @@ tech_core_mbrain ={
 	weight = 0
 
 	potential = {
-		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		any_quasarmod_ap_taken = yes
 		NOT = { has_global_flag = quasarmod_mbrain_disabled }
 	}
 
@@ -87,7 +88,7 @@ tech_quasarcraft_1 = {
 	}
 
 	potential = {
-		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		any_quasarmod_ap_taken = yes
 		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
 	}
 }
@@ -109,7 +110,7 @@ tech_quasarcraft_2 = {
 	}
 
 	potential = {
-		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		any_quasarmod_ap_taken = yes
 		has_technology = tech_quasarcraft_1
 		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
 	}
@@ -141,7 +142,7 @@ tech_quasarcraft_3 = {
 	}
 
 	potential = {
-		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		any_quasarmod_ap_taken = yes
 		has_technology = tech_quasarcraft_2
 		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
 	}
@@ -173,7 +174,7 @@ tech_quasarcraft_4 = {
 	}
 
 	potential = {
-		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		any_quasarmod_ap_taken = yes
 		has_technology = tech_quasarcraft_3
 		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
 	}
@@ -202,7 +203,7 @@ tech_quasarcraft_5 = {
 	}
 
 	potential = {
-		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		any_quasarmod_ap_taken = yes
 		has_technology = tech_quasarcraft_4
 		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
 	}
@@ -228,7 +229,7 @@ tech_quasarcraft_6 = {
 	weight = @giga_tier7weight3
 
 	potential = {
-		has_ascension_perk = ap_hyperquasaric_megaconstruction
+		any_quasarmod_ap_taken = yes
 		has_technology = tech_quasarcraft_5
 		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
 	}

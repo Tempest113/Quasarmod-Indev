@@ -182,7 +182,7 @@ entity = {
     attach = { "loc101" = "giga_shipyard_outer_ring_entity" }
     attach = { "loc101" = "giga_shipyard_beam_entity" }
     attach = { "loc101" = "giga_shipyard_tractor_ring_entity" }
-    attach = { "loc101" = "bestagon_swarm_entity" }
+    attach = { "loc101" = "hexagon_swarm_entity" }
 
     scale = 7.25
 }

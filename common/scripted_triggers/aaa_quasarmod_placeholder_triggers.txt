@@ -1,0 +1,3 @@
+# Irony this is a placeholder file please ignore it
+merg_is_empty_space = { always = no }
+stellar_manip_is_active = { always = no }

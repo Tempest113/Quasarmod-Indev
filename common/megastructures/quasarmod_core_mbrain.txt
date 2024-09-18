@@ -27,7 +27,7 @@ matrioshka_brain_0_core = {
     }
 
     potential = {
-        has_ascension_perk = ap_hyperquasaric_megaconstruction
+        any_quasarmod_ap_taken = yes
         has_technology = tech_core_mbrain
     }
 

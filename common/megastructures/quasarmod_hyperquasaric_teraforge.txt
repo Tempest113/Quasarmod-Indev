@@ -26,8 +26,8 @@ hyperquasaric_teraforge_0 = {
 		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
 	}
 
-	potential = { 
-		has_ascension_perk = ap_hyperquasaric_megaconstruction
+	potential = {
+		any_quasarmod_ap_taken = yes
 		has_technology = tech_hyperquasaric_teraforge
 	}
 

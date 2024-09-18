@@ -10,6 +10,10 @@
  ap_hyperquasaric_megaconstruction_desc: "The size and scale of our ambitions are rapidly outgrowing our ability to achieve them, we must reach a level of resource exploitation larger than has ever been seen in the history of our galaxy if we wish to ensure our unending prosperity."
  ap_hyperquasaric_megaconstruction_add_research: "\nResearch options gained:\n£physics_research£§Y$tech_smbh_manipulator$§!\n£physics_research£§Y$tech_core_mbrain$§!\n£society_research£§Y$tech_hyperquasaric_megashipyard$§!\n£society_research£§Y$tech_quasarcraft_1$§!\n£engineering_research£§Y$tech_hyperquasaric_teraforge$§!"
 
+ ap_hyperquasaric_megaconstruction_no_stellar_manip: "Hyperquasaric Megaconstruction"
+ ap_hyperquasaric_megaconstruction_no_stellar_manip_desc: "The size and scale of our ambitions are rapidly outgrowing our ability to achieve them, we must reach a level of resource exploitation larger than has ever been seen in the history of our galaxy if we wish to ensure our unending prosperity."
+ ap_hyperquasaric_megaconstruction_no_stellar_manip_add_research: "\nResearch options gained:\n£physics_research£§Y$tech_core_mbrain$§!\n£society_research£§Y$tech_hyperquasaric_megashipyard$§!\n£society_research£§Y$tech_quasarcraft_1$§!\n£engineering_research£§Y$tech_hyperquasaric_teraforge$§!"
+
  ##############
  # Technology #
  ##############
