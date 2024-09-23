@@ -159,7 +159,7 @@ blackhole_manipulator_3 = {
 		}
 	}
 
-	build_time = 2700
+	build_time = 2400
 	resources = {
 		category = giga_gigastructures
 		cost = {
@@ -201,7 +201,7 @@ blackhole_manipulator_4 = {
 		}
 	}
 
-	build_time = 2400
+	build_time = 2700
 	resources = {
 		category = giga_gigastructures
 		cost = {
