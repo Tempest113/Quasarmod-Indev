@@ -8,9 +8,10 @@ utility_component_template = {
 		category = ship_components
 	}
 
-	prerequisites = { "tech_quasarcraft_6" }
+	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "power_core"
 	size_restriction = { quasarmod_quasarcraft }
+	class_restriction = { shipclass_military }
 
 }
 
@@ -28,9 +29,10 @@ utility_component_template = {
 		ship_base_speed_mult = 1
 	}
 
-	prerequisites = { "tech_quasarcraft_6" }
+	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "thruster_components"
 	size_restriction = { quasarmod_quasarcraft }
+	class_restriction = { shipclass_military }
 }
 
 utility_component_template = {
@@ -50,9 +52,10 @@ utility_component_template = {
 		ship_jumpdrive_cooldown_mult = -1
 	}
 
-	size_restriction = { quasarmod_quasarcraft }
-	prerequisites = { "tech_quasarcraft_6" }
+	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "ftl_components"
+	size_restriction = { quasarmod_quasarcraft }
+	class_restriction = { shipclass_military }
 }
 
 utility_component_template = {
@@ -66,11 +69,11 @@ utility_component_template = {
 	}
 	ship_behavior = "quasarcraft"
 
-	class_restriction = { shipclass_military }
-	size_restriction = { quasarmod_quasarcraft }
+	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "combat_computers"
+	size_restriction = { quasarmod_quasarcraft }
+	class_restriction = { shipclass_military }
 
-	prerequisites = { "tech_quasarcraft_6" }
 }
 
 utility_component_template = {
@@ -89,9 +92,10 @@ utility_component_template = {
 		ship_tracking_add = 75
 	}
 
-	prerequisites = { "tech_quasarcraft_6" }
+	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "sensor_components"
 	size_restriction = { quasarmod_quasarcraft }
+	class_restriction = { shipclass_military }
 }
 
 utility_component_template = {
@@ -101,8 +105,10 @@ utility_component_template = {
 	icon_frame = 1
 	power = -5000000
 
-	size_restriction = { quasarmod_quasarcraft }
+	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "ship_aura_components"
+	size_restriction = { quasarmod_quasarcraft }
+	class_restriction = { shipclass_military }
 
 	hostile_aura = {
 		name = "aura_ship_quasar_snare"
@@ -140,8 +146,10 @@ utility_component_template = {
 	icon_frame = 1
 	power = -5000000
 
-	size_restriction = { quasarmod_quasarcraft }
+	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "ship_aura_components"
+	size_restriction = { quasarmod_quasarcraft }
+	class_restriction = { shipclass_military }
 
 	friendly_aura = {
 		name = "aura_quasar_eye"
@@ -180,8 +188,10 @@ utility_component_template = {
 	icon_frame = 1
 	power = -5000000
 
-	size_restriction = { quasarmod_quasarcraft }
+	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "ship_aura_components"
+	size_restriction = { quasarmod_quasarcraft }
+	class_restriction = { shipclass_military }
 
 	friendly_aura = {
 		name = "aura_quasar_speed"
@@ -220,8 +230,10 @@ utility_component_template = {
 	icon_frame = 1
 	power = -5000000
 
-	size_restriction = { quasarmod_quasarcraft }
+	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "ship_aura_components"
+	size_restriction = { quasarmod_quasarcraft }
+	class_restriction = { shipclass_military }
 
 	hostile_aura = {
 		name = "aura_quasar_dot"

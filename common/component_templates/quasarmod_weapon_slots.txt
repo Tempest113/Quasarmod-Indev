@@ -5,7 +5,7 @@ weapon_component_template = {
 	size = small
 	type = instant
 	projectile_gfx = "projectile_titan_lance_aeternum"
-	prerequisites = { "tech_quasarcraft_6" }
+	#prerequisites = { "tech_quasarcraft_6" }
 	power = -20000
 	component_set = "QSC_LASER"
 	tags = { weapon_type_energy weapon_type_anticompound }
@@ -33,7 +33,7 @@ weapon_component_template = {
 	size = large
 	type = instant
 	projectile_gfx = "giga_omega_laser"
-	prerequisites = { "tech_quasarcraft_6" }
+	#prerequisites = { "tech_quasarcraft_6" }
 	power = -50000
 	component_set = "QSC_LASER_L"
 	tags = { weapon_type_energy weapon_type_anticompound}
@@ -67,7 +67,7 @@ weapon_component_template = {
 	use_ship_kill_target = no
 	power = -100000
 
-	prerequisites = { "tech_quasarcraft_6" }
+	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "QSC_ENERGY_LANCE"
 	projectile_gfx = "projectile_titan_lance_aeternum"
 	tags = { weapon_type_energy weapon_type_anticompound }
@@ -94,7 +94,7 @@ weapon_component_template = {
 	key = "QSC_TITANIC_GUN"
 	size = titanic
 	component_set = "QSC_TITANIC_GUN"
-	prerequisites = { "tech_quasarcraft_6" }
+	#prerequisites = { "tech_quasarcraft_6" }
 
 	power = -500000
 
@@ -161,7 +161,7 @@ strike_craft_component_template = {
 	icon = "GFX_qsc_strike_force"
 	icon_frame = 1
 	component_set = "QSC_STRIKE_FORCE"
-	prerequisites = { "tech_quasarcraft_6" }
+	#prerequisites = { "tech_quasarcraft_6" }
 	size_restriction = { quasarmod_quasarcraft }
 }
 
@@ -178,7 +178,7 @@ weapon_component_template = {
 	ai_tag_weight = 0
 	tags = { weapon_type_energy weapon_type_anticompound }
 	size_restriction = { quasarmod_quasarcraft }
-	prerequisites = { "tech_quasarcraft_6" }
+	#prerequisites = { "tech_quasarcraft_6" }
 
 	use_ship_kill_target = no
 
@@ -204,7 +204,7 @@ weapon_component_template = {
 	use_ship_kill_target = no
 	can_destroy_stars = yes
 
-	prerequisites = { "tech_quasarcraft_6" }
+	#prerequisites = { "tech_quasarcraft_6" }
 
 	windup = { min = 0 max = 0 }
 	total_fire_time = 10
@@ -264,7 +264,7 @@ strike_craft_component_template = {
 	size_restriction = { quasarcraft_wormhole }
 	tags = { weapon_type_energy weapon_type_anticompound }
 
-	prerequisites = { "tech_quasarcraft_6" }
+	#prerequisites = { "tech_quasarcraft_6" }
 
 	count = 10
 	regeneration_per_day = 100
@@ -295,7 +295,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	component_set = "QUASARWORM_PARTICLES_1"
-	prerequisites = { "tech_quasarcraft_6" }
+	#prerequisites = { "tech_quasarcraft_6" }
 	projectile_gfx = "quasiworm_torpedo"
 	tags = { weapon_type_explosive weapon_type_anticompound }
 	size_restriction = { quasarcraft_wormhole }
@@ -327,7 +327,7 @@ weapon_component_template = {
 	projectile_gfx = "giga_omega_laser"
 	tags = { weapon_type_energy weapon_type_anticompound }
 	size_restriction = { quasarcraft_wormhole }
-	prerequisites = { "tech_quasarcraft_6" }
+	#prerequisites = { "tech_quasarcraft_6" }
 	ai_tags = { weapon_role_artillery }
 	ai_tag_weight = 0
 
@@ -358,7 +358,7 @@ weapon_component_template = {
 	projectile_gfx = "giga_super_omega_laser_aet"
 	tags = { weapon_type_energy weapon_type_anticompound }
 	size_restriction = { quasarcraft_wormhole }
-	prerequisites = { "tech_quasarcraft_6" }
+	#prerequisites = { "tech_quasarcraft_6" }
 	ai_tags = { weapon_role_artillery }
 	ai_tag_weight = 0
 
