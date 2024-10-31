@@ -32,6 +32,9 @@ country_event = {
 
 	option = {
 		name = quasarmod_dialogue.102.a
+		add_resource = {
+			alloys = 200000
+		}
 	}
 }
 
@@ -104,6 +107,9 @@ country_event = {
 
 	option = {
 		name = quasarmod_dialogue.202.a
+		add_resource = {
+			alloys = 3500000
+		}
 	}
 }
 

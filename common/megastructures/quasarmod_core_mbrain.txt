@@ -79,16 +79,17 @@ matrioshka_brain_1_core = {
     resources = {
         category = giga_gigastructures
         cost = {
-            alloys = 150000 #337500
+            alloys = 150000
             unity = @giga_tera_unity_cost
         }
         produces = {
-            physics_research =500 #2500
-            society_research = 500 #2500
-            engineering_research = 500 #2500
+            physics_research = 1250
+            society_research = 1250
+            engineering_research = 1250
         }
         upkeep = {
-            alloys = 100
+            alloys = 250
+            influence = 1
         }
     }
 
@@ -126,16 +127,17 @@ matrioshka_brain_2_core = {
     resources = {
         category = giga_gigastructures
         cost = {
-            alloys = 250000 #393750
+            alloys = 250000
             unity = @giga_tera_unity_cost
         }
         produces = {
-            physics_research = 2500 #12500
-            society_research =  2500 #12500
-            engineering_research = 2500 #12500
+            physics_research = 2500
+            society_research = 2500
+            engineering_research = 2500
         }
         upkeep = {
-            alloys = 250
+            alloys = 500
+            influence = 1.5
         }
     }
     on_build_complete = {
@@ -167,16 +169,17 @@ matrioshka_brain_3_core = {
     resources = {
         category = giga_gigastructures
         cost = {
-            alloys = 350000 #450000
+            alloys = 350000
             unity = @giga_tera_unity_cost
         }
         produces = {
-            physics_research = 7500 #37500
-            society_research = 7500 #37500
-            engineering_research = 7500 #37500
+            physics_research = 5000
+            society_research = 5000
+            engineering_research = 5000
         }
         upkeep = {
-            alloys = 500
+            alloys = 1000
+            influence = 2
         }
     }
 
@@ -214,16 +217,17 @@ matrioshka_brain_4_core = {
     resources = {
         category = giga_gigastructures
         cost = {
-            alloys = 450000 #506250
+            alloys = 450000
             unity = @giga_tera_unity_cost
         }
         produces = {
-            physics_research = 20000 #100000
-            society_research = 20000 #100000
-            engineering_research = 20000  #100000
+            physics_research = 12500
+            society_research = 12500
+            engineering_research = 12500
         }
         upkeep = {
-            alloys = 1000
+            alloys = 2500
+            influence = 2.5
         }
     }
 
@@ -267,12 +271,12 @@ matrioshka_brain_5_core = {
             unity = @giga_tera_unity_cost
         }
         produces = {
-            physics_research = 50000 #250000
-            society_research = 50000 #250000
-            engineering_research = 50000 #250000
+            physics_research = 25000
+            society_research = 25000
+            engineering_research = 25000
         }
         upkeep = {
-            alloys = 2000
+            alloys = 5000 #2000
         }
         upkeep = {
             trigger = { NOT = { has_global_flag = giga_disable_influence_upkeep } }
