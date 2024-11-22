@@ -1,0 +1,12 @@
+starbase_level_acot_precusor_starbase = {
+    ship_size = acot_precusor_starbase
+}
+starbase_level_acot_precusor_sigma_starbase = {
+    ship_size = acot_precusor_sigma_starbase
+}
+starbase_level_acot_precusor_phanon_starcitadel = {
+    ship_size = acot_precusor_phanon_starcitadel
+}
+starbase_level_acot_precusor_theta_starcitadel = {
+    ship_size = acot_precusor_theta_starcitadel
+}

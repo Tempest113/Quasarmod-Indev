@@ -33,7 +33,6 @@ blackhole_manipulator_0 = {
 
 	possible = {
 		custom_tooltip = { fail_text = "requires_inside_border" is_inside_border = from }
-		custom_tooltip = { fail_text = "requires_no_existing_megastructure"		planet_has_no_megastructure = yes }
 	}
 
 	on_build_complete = {

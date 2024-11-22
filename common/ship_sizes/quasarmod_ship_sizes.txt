@@ -40,6 +40,8 @@ quasarmod_quasarcraft = {
 	can_have_federation_design = no
 	possible_construction = { always = no }
 
+	construction_type = starbase_shipyard
+
 	is_civilian = no
 	is_designable = yes
 	components_add_to_cost = no

@@ -1,0 +1,44 @@
+acot_precusor_starbase = {
+    resources = { category = starbase_stations }
+    potential_construction = { always = no }
+    possible_construction = { always = no }
+    is_designable = no
+    enable_default_design = yes
+    prerequisites = { }
+    class = shipclass_starbase
+    icon_frame = 1
+    icon = ship_size_military_station
+}
+acot_precusor_sigma_starbase = {
+    resources = { category = starbase_stations }
+    potential_construction = { always = no }
+    possible_construction = { always = no }
+    is_designable = no
+    enable_default_design = yes
+    prerequisites = { }
+    class = shipclass_starbase
+    icon_frame = 1
+    icon = ship_size_military_station
+}
+acot_precusor_phanon_starcitadel = {
+    resources = { category = starbase_stations }
+    potential_construction = { always = no }
+    possible_construction = { always = no }
+    is_designable = no
+    enable_default_design = yes
+    prerequisites = { }
+    class = shipclass_starbase
+    icon_frame = 1
+    icon = ship_size_military_station
+}
+acot_precusor_theta_starcitadel = {
+    resources = { category = starbase_stations }
+    potential_construction = { always = no }
+    possible_construction = { always = no }
+    is_designable = no
+    enable_default_design = yes
+    prerequisites = { }
+    class = shipclass_starbase
+    icon_frame = 1
+    icon = ship_size_military_station
+}

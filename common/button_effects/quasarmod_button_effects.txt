@@ -11,6 +11,14 @@ quasarmod_manipulator_enabled = {
     effect = {
         custom_tooltip = "giga_menu_disabled"
         set_global_flag = quasarmod_manipulator_disabled
+
+        #The SMBH manipulator requires the stellar manipulator
+        if = {
+            limit = {
+                stellar_manip_is_active = yes
+            }
+            set_global_flag  =stellar_manip_manipulator_disabled
+        }
     }
 }
 
