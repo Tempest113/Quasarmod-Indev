@@ -2,7 +2,10 @@
 quasarmod_manipulator_enabled = {
     potential = {
         exists = from
-        NOT = { has_global_flag = quasarmod_manipulator_disabled }
+        from = {
+            has_country_flag = giga_menu_page_03
+            NOT = { has_global_flag = quasarmod_manipulator_disabled }
+        }
     }
 
     allow = { always = yes }
@@ -16,7 +19,10 @@ quasarmod_manipulator_enabled = {
 quasarmod_manipulator_disabled = {
     potential = {
         exists = from
-        has_global_flag = quasarmod_manipulator_disabled
+        from = {
+            has_country_flag = giga_menu_page_03
+            has_global_flag = quasarmod_manipulator_disabled
+        }
     }
 
     allow = { always = yes }
@@ -38,7 +44,11 @@ quasarmod_manipulator_disabled = {
 quasarmod_teraforge_enabled = {
     potential = {
         exists = from
-        NOT = { has_global_flag = quasarmod_teraforge_disabled }
+        from = {
+            has_country_flag = giga_menu_page_03
+            NOT = { has_global_flag = quasarmod_teraforge_disabled }
+        }
+
     }
 
     allow = { always = yes }
@@ -87,7 +97,11 @@ quasarmod_shipyard_enabled = {
 quasarmod_shipyard_disabled = {
     potential = {
         exists = from
-        has_global_flag = quasarmod_teraforge_disabled
+        from = {
+            has_country_flag = giga_menu_page_03
+            has_global_flag = quasarmod_teraforge_disabled
+        }
+
     }
 
     allow = { always = yes }
@@ -102,7 +116,11 @@ quasarmod_shipyard_disabled = {
 quasarmod_mbrain_enabled = {
     potential = {
         exists = from
-        NOT = { has_global_flag = quasarmod_mbrain_disabled }
+        from = {
+            has_country_flag = giga_menu_page_03
+            NOT = { has_global_flag = quasarmod_mbrain_disabled }
+        }
+
     }
 
     allow = { always = yes }
@@ -116,7 +134,11 @@ quasarmod_mbrain_enabled = {
 quasarmod_mbrain_disabled = {
     potential = {
         exists = from
-        has_global_flag = quasarmod_mbrain_disabled
+        from = {
+            has_country_flag = giga_menu_page_03
+            has_global_flag = quasarmod_mbrain_disabled
+        }
+
     }
 
     allow = { always = yes }
@@ -175,4 +197,21 @@ quasarmod_teraforge_tt = {
     potential = { exists = from from = { has_country_flag = giga_menu_page_03 } }
     allow = { always = yes }
     effect = { custom_tooltip = hyperquasaric_teraforge_0_MEGASTRUCTURE_DETAILS }
+}
+quasarmod_hyperquasaric_megashipyard_tt = {
+    potential = { exists = from from = { has_country_flag = giga_menu_page_03 } }
+    allow = { always = yes }
+    effect = { custom_tooltip = hyperquasaric_megashipyard_0_MEGASTRUCTURE_DETAILS }
+}
+
+quasarmod_smbh_manipulator_tt = {
+    potential = { exists = from from = { has_country_flag = giga_menu_page_03 } }
+    allow = { always = yes }
+    effect = { custom_tooltip = blackhole_manipulator_0_MEGASTRUCTURE_DETAILS }
+}
+
+quasarmod_core_mbrain_tt = {
+    potential = { exists = from from = { has_country_flag = giga_menu_page_03 } }
+    allow = { always = yes }
+    effect = { custom_tooltip = matrioshka_brain_0_core_MEGASTRUCTURE_DETAILS }
 }

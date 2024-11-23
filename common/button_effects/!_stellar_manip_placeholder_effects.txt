@@ -1,0 +1,193 @@
+# Irony this is a placeholder file please ignore it
+#Stellar Manipulator
+stellar_manip_manipulator_enabled = {
+    potential = {
+        exists = from
+        from = {
+            has_country_flag = giga_menu_page_02
+            NOT = { has_global_flag = stellar_manip_manipulator_disabled }
+        }
+    }
+
+    allow = {
+        custom_tooltip = {
+            fail_text = must_have_stellar_manip_mod
+            stellar_manip_is_active = yes
+        }
+    }
+
+
+    effect = {
+        custom_tooltip = "giga_menu_disabled"
+        set_global_flag = stellar_manip_manipulator_disabled
+
+        # Systemcraft assembler relies on the stellar manipulator
+        set_global_flag = stellar_manip_assembler_disabled
+
+        #The SMBH manipulator requires the stellar manipulator
+        if = {
+            limit = {
+                quasarmod_enabled = yes
+            }
+            set_global_flag = quasarmod_manipulator_disabled
+        }
+    }
+}
+
+stellar_manip_manipulator_disabled = {
+    potential = {
+        exists = from
+        from = {
+            has_country_flag = giga_menu_page_02
+            has_global_flag = stellar_manip_manipulator_disabled}
+    }
+
+    allow = {
+        custom_tooltip = {
+            fail_text = must_have_stellar_manip_mod
+            stellar_manip_is_active = yes
+        }
+    }
+
+
+    effect = {
+        custom_tooltip = "giga_menu_disabled"
+        remove_global_flag = stellar_manip_manipulator_disabled
+    }
+}
+
+#Systemcraft Assembler
+stellar_manip_assember_enabled = {
+    potential = {
+        exists = from
+        from = {
+            OR = {
+                has_country_flag = giga_menu_page_00
+                has_country_flag = giga_menu_page_01
+                has_country_flag = giga_menu_page_02
+                has_country_flag = giga_menu_page_03
+            }
+            NOT = { has_global_flag = stellar_manip_assembler_disabled }
+        }
+
+    }
+
+    allow = {
+        custom_tooltip = {
+            fail_text = must_have_stellar_manip_mod
+            stellar_manip_is_active = yes
+        }
+    }
+
+
+    effect = {
+        custom_tooltip = "stellar_manip_systemcraft_assmbler_disabled_tt"
+        set_global_flag = stellar_manip_assembler_disabled
+    }
+}
+
+stellar_manip_assember_disabled = {
+    potential = {
+        exists = from
+        from = {
+            OR = {
+                has_country_flag = giga_menu_page_00
+                has_country_flag = giga_menu_page_01
+                has_country_flag = giga_menu_page_02
+                has_country_flag = giga_menu_page_03
+            }
+            has_global_flag = stellar_manip_assembler_disabled
+        }
+
+    }
+
+    allow = {
+        custom_tooltip = {
+            fail_text = must_have_stellar_manip_mod
+            stellar_manip_is_active = yes
+        }
+    }
+
+
+    effect = {
+        custom_tooltip = "stellar_manip_systemcraft_assmbler_ensabled_tt"
+        remove_global_flag = stellar_manip_assembler_disabled
+        remove_global_flag = stellar_manip_manipulator_disabled # (This needs manipulators to be enabled)
+    }
+}
+
+# O Class Systemcraft
+stellar_manip_o_systemcraft_enabled = {
+    potential = {
+        exists = from
+
+        from = {
+            has_country_flag = giga_menu_page_03
+            NOT = { has_global_flag = stellar_manip_o_systemcraft_disabled }
+        }
+
+    }
+
+    allow = {
+        custom_tooltip = {
+            fail_text = must_have_stellar_manip_mod
+            stellar_manip_is_active = yes
+        }
+    }
+
+
+    effect = {
+        custom_tooltip = "giga_menu_disabled"
+        set_global_flag = stellar_manip_o_systemcraft_disabled
+    }
+}
+
+stellar_manip_o_systemcraft_disabled = {
+    potential = {
+        exists = from
+        from = {
+            has_country_flag = giga_menu_page_03
+            has_global_flag = stellar_manip_o_systemcraft_disabled
+        }
+    }
+
+    allow = {
+        custom_tooltip = {
+            fail_text = must_have_stellar_manip_mod
+            stellar_manip_is_active = yes
+        }
+    }
+
+
+    effect = {
+        custom_tooltip = "giga_menu_disabled"
+        remove_global_flag = stellar_manip_o_systemcraft_disabled
+    }
+}
+
+
+
+# Tooltips
+stellar_manip_stellar_manipulator_tt = {
+    potential = { exists = from from = { has_country_flag = giga_menu_page_02 } }
+    allow = {
+        custom_tooltip = {
+            fail_text = must_have_stellar_manip_mod
+            stellar_manip_is_active = yes
+        }
+    }
+
+    effect = { custom_tooltip = stellar_manipulator_0_MEGASTRUCTURE_DETAILS }
+}
+
+stellar_manip_o_systemcraft_tt = {
+    potential = { exists = from from = { has_country_flag = giga_menu_page_03 } }
+    allow = {
+        custom_tooltip = {
+            fail_text = must_have_stellar_manip_mod
+            stellar_manip_is_active = yes
+        }
+    }
+
+    effect = { custom_tooltip = giga_menu_o_systemcraft_tooltip }
+}

@@ -356,3 +356,19 @@ country_event = {
         }
     }
 }
+
+event = {
+    id = quasarmod_utility.12
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                stellar_manip_is_active = no
+            }
+            set_global_flag = stellar_manip_manipulator_disabled
+            set_global_flag = stellar_manip_assembler_disabled
+            set_global_flag = stellar_manip_o_systemcraft_disabled
+        }
+    }
+}

@@ -33,3 +33,9 @@ on_ship_disabled = {
           quasarmod_utility.8
      }
 }
+
+on_press_begin = {
+     events = {
+          quasarmod_utility.12
+     }
+}
