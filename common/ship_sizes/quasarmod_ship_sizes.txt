@@ -38,6 +38,7 @@ quasarmod_quasarcraft = {
 	class = shipclass_military
 	can_disable = yes
 	can_have_federation_design = no
+	potential_construction = { always = no }
 	possible_construction = { always = no }
 
 	construction_type = starbase_shipyard
@@ -59,8 +60,13 @@ quasarmod_quasarcraft = {
 		category = ships
 		produces = {
 			sr_magical_neutronium = 50
-			sr_stellar_plasma = 25
 			energy = 12500
+		}
+		produces = {
+			trigger = {
+				stellar_manip_is_active = yes
+			}
+			sr_stellar_plasma = 25
 		}
 		upkeep = {
 			alloys = 12000
@@ -89,6 +95,7 @@ quasarcraft_wormhole = {
 	num_target_locators = 0
 	is_space_station = no
 	icon = ship_size_space_monster
+	potential_construction = { always = no }
 	possible_construction = { always = no }
 	class = shipclass_military
 	is_designable = no
