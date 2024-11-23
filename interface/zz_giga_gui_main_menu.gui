@@ -5978,7 +5978,7 @@ guiTypes = {
 						borderSize = { x = 10 y = 0 }
 						font = "cg_16b"
 						text = "giga_menu_name_teraforge"
-						effect = "giga_page_03"
+						effect = "quasarmod_teraforge_tt"
 					}
 
 					effectButtonType = { name = "hyperquasaric_teraforge_disabled" spriteType = "GFX_giga_menu_disabled" position = { x = 380 y = 5 } no_clicksound = yes effect = "quasarmod_teraforge_disabled" }
