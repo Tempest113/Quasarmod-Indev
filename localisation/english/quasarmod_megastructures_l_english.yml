@@ -139,7 +139,7 @@
 
  quasarcraft_0_alt: "$gc_tera$Quasarcraft Foundation"
  quasarcraft_0_alt_DESC: "An altered form of the Quasi-Stellar-Obliterator's major components, computers, and power banks; Prefabricated directly for use as the foundation for the grandest warship this galaxy will ever see."
- quasarcraft_0_alt_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_weaponry$\nConverts an §YActive Hyperquasar§! into a terastructural warship, several dozen AU in diameter. Fielding a hyperweapon known as the Endsinger, the $quasarmod_quasarcraft$ is capable of destroying entire star clusters."
+ quasarcraft_0_alt_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_weaponry$\nConverts an §YActive Hyperquasar§! into a terastructural warship several dozen AU in diameter. Fielding a hyperweapon known as the Endsinger, the $quasarmod_quasarcraft$ is capable of destroying entire star clusters."
  quasarcraft_0_alt_CONSTRUCTION_INFO_DELAYED: "$giga_list_additional_data$ - The Quasarcraft is capable of destroying either singular §YPlanets§!, §YSolar Systems§! or entire §YStar Clusters§!. It is a roving hyperweapon of untold destruction, and your enemies might seek to disrupt it's construction process."
 
  quasarcraft_1: "Quasi-Stellar Superstructure"
