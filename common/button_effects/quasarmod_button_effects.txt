@@ -2,7 +2,6 @@
 quasarmod_manipulator_enabled = {
     potential = {
         exists = from
-        #from = { has_country_flag = giga_popout_open }
         NOT = { has_global_flag = quasarmod_manipulator_disabled }
     }
 
@@ -11,21 +10,12 @@ quasarmod_manipulator_enabled = {
     effect = {
         custom_tooltip = "giga_menu_disabled"
         set_global_flag = quasarmod_manipulator_disabled
-
-        #The SMBH manipulator requires the stellar manipulator
-        if = {
-            limit = {
-                stellar_manip_is_active = yes
-            }
-            set_global_flag  =stellar_manip_manipulator_disabled
-        }
     }
 }
 
 quasarmod_manipulator_disabled = {
     potential = {
         exists = from
-        #from = { has_country_flag = giga_popout_open }
         has_global_flag = quasarmod_manipulator_disabled
     }
 
@@ -34,6 +24,13 @@ quasarmod_manipulator_disabled = {
     effect = {
         custom_tooltip = "giga_menu_enabled"
         remove_global_flag = quasarmod_manipulator_disabled
+
+        if = {
+            limit = {
+                stellar_manip_is_active = yes
+            }
+            remove_global_flag = stellar_manip_manipulator_disabled
+        }
     }
 }
 
@@ -41,7 +38,6 @@ quasarmod_manipulator_disabled = {
 quasarmod_teraforge_enabled = {
     potential = {
         exists = from
-        #from = { has_country_flag = giga_popout_open }
         NOT = { has_global_flag = quasarmod_teraforge_disabled }
     }
 
@@ -56,8 +52,10 @@ quasarmod_teraforge_enabled = {
 quasarmod_teraforge_disabled = {
     potential = {
         exists = from
-        #from = { has_country_flag = giga_popout_open }
-        has_global_flag = quasarmod_teraforge_disabled
+        from = {
+            has_country_flag = giga_menu_page_03
+            has_global_flag = quasarmod_teraforge_disabled
+        }
     }
 
     allow = { always = yes }
@@ -72,8 +70,10 @@ quasarmod_teraforge_disabled = {
 quasarmod_shipyard_enabled = {
     potential = {
         exists = from
-        #from = { has_country_flag = giga_popout_open }
-        NOT = { has_global_flag = quasarmod_shipyard_disabled }
+        from = {
+            has_country_flag = giga_menu_page_03
+            NOT = { has_global_flag = quasarmod_shipyard_disabled }
+        }
     }
 
     allow = { always = yes }
@@ -87,7 +87,6 @@ quasarmod_shipyard_enabled = {
 quasarmod_shipyard_disabled = {
     potential = {
         exists = from
-        #from = { has_country_flag = giga_popout_open }
         has_global_flag = quasarmod_teraforge_disabled
     }
 
@@ -103,7 +102,6 @@ quasarmod_shipyard_disabled = {
 quasarmod_mbrain_enabled = {
     potential = {
         exists = from
-        #from = { has_country_flag = giga_popout_open }
         NOT = { has_global_flag = quasarmod_mbrain_disabled }
     }
 
@@ -118,7 +116,6 @@ quasarmod_mbrain_enabled = {
 quasarmod_mbrain_disabled = {
     potential = {
         exists = from
-        #from = { has_country_flag = giga_popout_open }
         has_global_flag = quasarmod_mbrain_disabled
     }
 
@@ -134,8 +131,10 @@ quasarmod_mbrain_disabled = {
 quasarmod_quasarcraft_enabled = {
     potential = {
         exists = from
-        #from = { has_country_flag = giga_popout_open }
-        NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
+        from = {
+            has_country_flag = giga_menu_page_03
+            NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
+        }
     }
 
     allow = { always = yes }
@@ -149,8 +148,10 @@ quasarmod_quasarcraft_enabled = {
 quasarmod_quasarcraft_disabled = {
     potential = {
         exists = from
-        #from = { has_country_flag = giga_popout_open }
-        has_global_flag = quasarmod_quasarcraft_disabled
+        from = {
+            has_country_flag = giga_menu_page_03
+            has_global_flag = quasarmod_quasarcraft_disabled
+        }
     }
 
     allow = { always = yes }
@@ -159,4 +160,19 @@ quasarmod_quasarcraft_disabled = {
         custom_tooltip = "giga_menu_enabled"
         remove_global_flag = quasarmod_quasarcraft_disabled
     }
+}
+
+
+
+# Tooltips
+quasarmod_quasarcraft_tt = {
+    potential = { exists = from from = { has_country_flag = giga_menu_page_03 } }
+    allow = { always = yes }
+    effect = { custom_tooltip = quasarcraft_0_alt_MEGASTRUCTURE_DETAILS }
+}
+
+quasarmod_teraforge_tt = {
+    potential = { exists = from from = { has_country_flag = giga_menu_page_03 } }
+    allow = { always = yes }
+    effect = { custom_tooltip = hyperquasaric_teraforge_0_MEGASTRUCTURE_DETAILS }
 }
