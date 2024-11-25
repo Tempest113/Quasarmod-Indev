@@ -45,9 +45,11 @@ tech_smbh_manipulator ={
 	weight = 0
 
 	potential = {
-		# No or for this as the SMBH manipulator relies on stellar manip
 		quasarmod_ap_taken = yes
-		NOT = { has_global_flag = quasarmod_manipulator_disabled }
+		NOR = {
+			has_global_flag = quasarmod_manipulator_disabled
+			has_global_flag = stellar_manip_manipulator_disabled
+		}
 	}
 
 	prereqfor_desc = {

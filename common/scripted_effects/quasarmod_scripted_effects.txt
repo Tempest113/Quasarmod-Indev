@@ -45,7 +45,7 @@ qsc_wormhole_spawn = {
 			create_ship = {
 				name = "Quasaric Wormhole"
 				graphical_culture = root.from
-				design = "Macrospacial Breach"
+				design = "NAME_Macrospacial_Breach"
 				effect = {
 					set_disable_at_health = 0.02
 				}
@@ -407,7 +407,10 @@ quasarcraft_destruction_effects = {
 						}
 						random_list = {
 							5 = {}
-							1 = { change_pc = pc_melted_frozen add_modifier = { modifier = "quasarmod_qsc_destroyed_nearby" days = 3600 } }
+							1 = {
+								change_pc = pc_melted_frozen
+								add_modifier = { modifier = "quasarmod_qsc_destroyed_nearby" days = 3600 }
+							}
 						}
 					}
 
@@ -435,10 +438,13 @@ quasarcraft_destruction_effects = {
 					if = {
 						limit = {
 							NOT = { any_system_planet = { has_planet_flag = qsc_no_more_damage } }
-							is_planet_habitable = yes
 						}
 						every_system_planet = {
+							limit = {
+								is_planet_habitable = yes
+							}
 							add_modifier = { modifier = "quasarmod_qsc_destroyed_nearby2" days = 3600 }
+							add_planet_devastation = 50
 						}
 					}
 				}
@@ -499,22 +505,4 @@ quasarcraft_destruction_effects = {
 	every_galaxy_planet = {
 		remove_planet_flag = qsc_no_more_damage
 	}
-}
-
-# Testing
-
-quasarmod_disable_everything = {
-	set_global_flag = quasarmod_teraforge_disabled
-	set_global_flag = quasarmod_manipulator_disabled
-	set_global_flag = quasarmod_shipyard_disabled
-	set_global_flag = quasarmod_mbrain_disabled
-	set_global_flag = quasarmod_quasarcraft_disabled
-}
-
-quasarmod_enable_everything = {
-	remove_global_flag = quasarmod_teraforge_disabled
-	remove_global_flag = quasarmod_manipulator_disabled
-	remove_global_flag = quasarmod_shipyard_disabled
-	remove_global_flag = quasarmod_mbrain_disabled
-	remove_global_flag = quasarmod_quasarcraft_disabled
 }

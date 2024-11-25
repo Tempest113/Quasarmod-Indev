@@ -1,6 +1,6 @@
 # Quasarcraft Wormhole
 ship_design = {
-	name = "Macrospacial Breach"
+	name = "NAME_Macrospacial_Breach"
 	is_event_design = yes
 	ship_size = quasarcraft_wormhole
 	section = {

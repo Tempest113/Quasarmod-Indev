@@ -13,6 +13,7 @@
  quasarmod_quasarcraft_wormholes_DESC: "The Quasarcraft is currently splitting it's output into several wormholes, severely hampering it's own combat capability for the time being."
 
  # Quasarcraft Wormholes
+ NAME_Macrospatial_Breach: "Macrospacial Breach"
  quasarcraft_wormhole: "Quasaric Fleet-Annihilator Wormhole"
  quasarcraft_wormhole_plural: "Quasaric Fleet-Annihilator Wormholes"
  QUASARWORM_GUN_ENTITY: "Quasaric Wormhole Spitter"
