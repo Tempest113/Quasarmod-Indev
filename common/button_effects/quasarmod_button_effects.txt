@@ -99,9 +99,8 @@ quasarmod_shipyard_disabled = {
         exists = from
         from = {
             has_country_flag = giga_menu_page_03
-            has_global_flag = quasarmod_teraforge_disabled
+            has_global_flag = quasarmod_shipyard_disabled
         }
-
     }
 
     allow = { always = yes }

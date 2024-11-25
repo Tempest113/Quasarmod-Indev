@@ -38,8 +38,10 @@ ap_hyperquasaric_megaconstruction = {
 		host_has_dlc = Utopia
 		is_ai = no
 		stellar_manip_is_active = yes
-		NOT = {
+
+		NOR = {
 			has_ascension_perk = ap_hyperquasaric_megaconstruction
+			has_global_flag = stellar_manip_manipulator_disabled
 		}
 		NAND = {
 			has_global_flag = quasarmod_teraforge_disabled
@@ -101,7 +103,11 @@ ap_hyperquasaric_megaconstruction_no_stellar_manip = {
 	potential = {
 		host_has_dlc = Utopia
 		is_ai = no
-		stellar_manip_is_active = no
+		or = {
+			stellar_manip_is_active = no
+			has_global_flag = stellar_manip_manipulator_disabled
+		}
+
 		NOT = {
 			has_ascension_perk = ap_hyperquasaric_megaconstruction_no_stellar_manip
 		}
