@@ -11,7 +11,7 @@ stellar_manip_manipulator_enabled = {
 
     allow = {
         custom_tooltip = {
-            fail_text = must_have_stellar_manip_mod
+            fail_text = giga_menu_must_have_stellar_manip_mod
             stellar_manip_is_active = yes
         }
     }
@@ -44,7 +44,7 @@ stellar_manip_manipulator_disabled = {
 
     allow = {
         custom_tooltip = {
-            fail_text = must_have_stellar_manip_mod
+            fail_text = giga_menu_must_have_stellar_manip_mod
             stellar_manip_is_active = yes
         }
     }
@@ -74,7 +74,7 @@ stellar_manip_assember_enabled = {
 
     allow = {
         custom_tooltip = {
-            fail_text = must_have_stellar_manip_mod
+            fail_text = giga_menu_must_have_stellar_manip_mod
             stellar_manip_is_active = yes
         }
     }
@@ -103,7 +103,7 @@ stellar_manip_assember_disabled = {
 
     allow = {
         custom_tooltip = {
-            fail_text = must_have_stellar_manip_mod
+            fail_text = giga_menu_must_have_stellar_manip_mod
             stellar_manip_is_active = yes
         }
     }
@@ -130,7 +130,7 @@ stellar_manip_o_systemcraft_enabled = {
 
     allow = {
         custom_tooltip = {
-            fail_text = must_have_stellar_manip_mod
+            fail_text = giga_menu_must_have_stellar_manip_mod
             stellar_manip_is_active = yes
         }
     }
@@ -153,7 +153,7 @@ stellar_manip_o_systemcraft_disabled = {
 
     allow = {
         custom_tooltip = {
-            fail_text = must_have_stellar_manip_mod
+            fail_text = giga_menu_must_have_stellar_manip_mod
             stellar_manip_is_active = yes
         }
     }
@@ -172,7 +172,7 @@ stellar_manip_stellar_manipulator_tt = {
     potential = { exists = from from = { has_country_flag = giga_menu_page_02 } }
     allow = {
         custom_tooltip = {
-            fail_text = must_have_stellar_manip_mod
+            fail_text = giga_menu_must_have_stellar_manip_mod
             stellar_manip_is_active = yes
         }
     }
@@ -184,7 +184,7 @@ stellar_manip_o_systemcraft_tt = {
     potential = { exists = from from = { has_country_flag = giga_menu_page_03 } }
     allow = {
         custom_tooltip = {
-            fail_text = must_have_stellar_manip_mod
+            fail_text = giga_menu_must_have_stellar_manip_mod
             stellar_manip_is_active = yes
         }
     }

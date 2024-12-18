@@ -1,6 +1,11 @@
 quasarmod_enabled = { always = yes }
 
-quasarmod_ap_taken = { has_ascension_perk = ap_hyperquasaric_megaconstruction}
+quasarmod_ap_taken = {
+    OR = {
+        has_ascension_perk = ap_hyperquasaric_megaconstruction
+        has_ascension_perk = ap_hyperquasaric_megaconstruction_no_stellar_manip
+    }
+}
 
 quasarmod_ap_taken_no_stellar_manip = { has_ascension_perk = ap_hyperquasaric_megaconstruction_no_stellar_manip }
 

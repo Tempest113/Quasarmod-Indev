@@ -12,4 +12,4 @@
  # Stellar Manipulator
  giga_menu_name_stellar_manipulator: "Stellar Manipulator"
 
- must_have_stellar_manip_mod: "$TRIGGER_FAIL$The mod \"Stellar Manipulation\" must be enabled to access this option."
+ giga_menu_must_have_stellar_manip_mod: "$TRIGGER_FAIL$The mod \"Stellar Manipulation\" must be enabled to access this option."
