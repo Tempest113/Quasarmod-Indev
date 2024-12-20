@@ -208,20 +208,45 @@ entity = {
 
 	attach = { "loc128" = "quasistellar_focus_ring_entity" }
 	attach = { "loc129" = "quasistellar_focus_ring_entity" }
-	
-	# attach = { "maiup" = "system_printer_megaart_entity" }
-	# attach = { "maidown" = "system_printer_megaart_entity" }
 
-    attach = { "ringa" = "glc_ringworld_entity" }
-	attach = { "ringb" = "glc_ringworld_entity" }
-
-    #attach = { loc041qsoarms = "qsc_qso_arms_entity" }	
-	
-	attach = { "outring" = "glc_ringworld_entity" }
+    attach = { "ringa" = "qsc_ringworld_entity" }
+	attach = { "ringb" = "qsc_ringworld_entity" }
+	attach = { "outring" = "qsc_ringworld_entity" }
 
 	playback_rate = 0.05
 
 	scale = 0.5
+}
+
+entity = {
+	name = "qsc_ringworld_section_entity"
+	cull_radius = 500.0
+	pdxmesh = "ringworld_tech_01_mesh"
+
+	state = { name = "construction"
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+	}
+
+	locator = { name = "locator1" 	position = { -225 	0 	-60.289 	} rotation ={ -30 0 0} 	}
+	locator = { name = "locator2" 	position = {  225 	0 	-60.289		} rotation ={ 30 0 0}	}
+
+	attach = { locator1 = "ringworld_tech_entity_01_entity" }
+	attach = { locator2 = "ringworld_tech_entity_01_entity" }
+}
+
+entity = {
+	name = "qsc_ringworld_entity"
+	cull_radius = 500.0
+
+	locator = { name = "loc11" 	position = { 300 0 300 } rotation ={ 45 0 0 } 	}
+	locator = { name = "loc10" 	position = { 300 0 -300 } rotation ={ 135 0 0 }	}
+	locator = { name = "loc01" 	position = { -300 0 -300 } rotation ={ 225 0 0 } 	}
+	locator = { name = "loc00" 	position = { -300 0 300 } rotation ={ 315 0 0 }	}
+
+	attach = { loc11 = "qsc_ringworld_section_entity" }
+	attach = { loc10 = "qsc_ringworld_section_entity" }
+	attach = { loc01 = "qsc_ringworld_section_entity" }
+	attach = { loc00 = "qsc_ringworld_section_entity" }
 }
 
 entity = {
@@ -250,12 +275,6 @@ entity = {
 }
 
 entity = {
-	name = "qsc_titstern_entity"
-	pdxmesh = "qsc_titstern_mesh"
-	scale = 5
-}
-
-entity = {
 	name = "qsc_infmac_entity"
 	pdxmesh = "technosphere_mesh"
 	
@@ -273,57 +292,6 @@ entity = {
 	}
 	
 	scale = 0.2
-}
-
-entity = {
-	name = "qsc_warped_entity"
-	pdxmesh = "qsc_warpqc_mesh"
-	
-#	attach = { "DreadL" = "reptilian_01_starbase_citadel_section_entity" }
-#	attach = { "DreadR" = "reptilian_01_starbase_citadel_section_entity" }
-#	attach = { "HumSciL" = "reptilian_01_starbase_citadel_section_entity" }
-#	attach = { "HumSciR" = "reptilian_01_starbase_citadel_section_entity" }
-#	attach = { "NemJugL" = "reptilian_01_starbase_citadel_section_entity" }
-#	attach = { "NemJugR" = "reptilian_01_starbase_citadel_section_entity" }
-#	attach = { "RepCorL" = "reptilian_01_starbase_citadel_section_entity" }
-#	attach = { "RepCorR" = "reptilian_01_starbase_citadel_section_entity" }
-	scale = 3
-}
-
-entity = {
-	name = "qsc_warped2_entity"
-	pdxmesh = "qsc_warpqc2_mesh"
-	
-	attach = { "InfMacL" = "qsc_infmac_entity" }
-	attach = { "InfMacR" = "qsc_infmac_entity" }
-	scale = 3
-}
-
-entity = {
-	name = "qsc_scc_wing_entity"
-	cull_radius = 1000
-	
-	locator = { name = "L1" position = { 334.5 -100 -334.5 } rotation = { -65 -60 0 } scale = 5 }
-	locator = { name = "L2" position = { 455 50 125 } rotation = { -115 0 135 } scale = 5 }
-	locator = { name = "L3" position = { 455 -50 125 } rotation = { -115 0 45 } scale = 5 }
-    locator = { name = "R1" position = { -334.5 -100 -334.5 } rotation = { 65 -60 0 } scale = 5 }	
-    locator = { name = "R2" position = { -455 50 125 } rotation = { 115 0 -135 } scale = 5 }	
-    locator = { name = "R3" position = { -455 -50 125 } rotation = { 115 0 -45 } scale = 5 }	
-	
-	locator = { name = "L11" position = { 334.5 -100 -334.5 } rotation = { -65 -60 180 } scale = 5 }
-    locator = { name = "R11" position = { -334.5 -100 -334.5 } rotation = { 65 -60 180 } scale = 5 }			
-	
-	attach = { "L1" = "qsc_scc_entity" }
-	attach = { "L2" = "qsc_scc_entity" }
-	attach = { "L3" = "qsc_scc_entity" }
-	attach = { "R1" = "qsc_scc_entity" }
-	attach = { "R2" = "qsc_scc_entity" }
-	attach = { "R3" = "qsc_scc_entity" }
-	
-	attach = { "L11" = "qsc_scc_entity" }
-	attach = { "R11" = "qsc_scc_entity" }
-	
-	scale = 1
 }
 
 entity = {
@@ -381,20 +349,6 @@ entity = {
 	}
 	
 	attach = { energy_source = "fallen_empire_01_colossus_energy_entity" }
-}
-
-entity = {
-	name = "qsc_qc_intass_entity"
-	pdxmesh = "interstellar_assembly_01_stage_1_mesh"
-	
-	meshsettings = {
-		name = "body_1Shape"
-		index = 0
-		texture_diffuse = "mammalian_01_interstellar_assembly_diffuse.dds"
-		texture_normal = "mammalian_01_interstellar_assembly_normal.dds"
-		texture_specular = "mammalian_01_interstellar_assembly_specular.dds"
-		shader = "PdxMeshShip"
-	}
 }
 
 entity = {
@@ -537,8 +491,8 @@ entity = {
 	
 	attach = { "qso" = "qsc_qso_entity" }
 
-	scale = 1.3
-	# scale = 3
+	# scale = 1.3
+	scale = 3.8
 }
 
 entity = {
@@ -553,8 +507,8 @@ entity = {
 	
 	attach = { "qso" = "qsc_qso_entity" }
 
-	scale = 1.3
-	# scale = 3
+	# scale = 1.3
+	scale = 3.8
 }
 
 #Mega Entities
@@ -574,8 +528,8 @@ entity = {
 	attach = { "qso" = "qsc_qso_entity" }
 	attach = { "citadel" = "qsc_citadel_entity" }
 
-	scale = 1.3
-	# scale = 3
+	# scale = 1.3
+	scale = 3.8
 }
 
 entity = {
@@ -592,8 +546,8 @@ entity = {
 	attach = { "mscore" = "qsc_mscore_entity" }
 	attach = { "citadel" = "qsc_citadel_entity" }
 
-	scale = 1.3
-	# scale = 3
+	# scale = 1.3
+	scale = 3.8
 }
 
 entity = {
@@ -616,8 +570,8 @@ entity = {
 	attach = { "crucible" = "qsc_qc1_entity" }
 	attach = { "halo" = "qsc_qc2_entity" }
 
-	scale = 1.3
-	# scale = 3
+	# scale = 1.3
+	scale = 3.8
 }
 
 entity = {
@@ -632,8 +586,8 @@ entity = {
 	
 	attach = { "halo" = "qsc_qc2_entity" }
 
-	scale = 1.3
-	# scale = 3
+	# scale = 1.3
+	scale = 3.8
 }
 
 entity = {
@@ -665,8 +619,8 @@ entity = {
 	attach = { "celfab3" = "qsc_printer_array" }
 	attach = { "celfab4" = "qsc_printer_array" }
 
-	scale = 1.3
-	# scale = 3
+	# scale = 1.3
+	scale = 3.8
 }
 
 entity = {
@@ -688,8 +642,8 @@ entity = {
 	attach = { "celfab3" = "qsc_printer_array" }
 	attach = { "celfab4" = "qsc_printer_array" }
 
-	scale = 1.3
-	# scale = 3
+	# scale = 1.3
+	scale = 3.8
 }
 
 entity = {
@@ -725,8 +679,8 @@ entity = {
 	attach = { "celfab3" = "qsc_printer_array" }
 	attach = { "celfab4" = "qsc_printer_array" }
 
-	scale = 1.3
-	# scale = 3
+	# scale = 1.3
+	scale = 3.8
 }
 
 entity = {
@@ -741,8 +695,8 @@ entity = {
 	
 	attach = { "engine" = "qsc_qc_engine_entity" }
 
-	scale = 1.3
-	# scale = 3
+	# scale = 1.3
+	scale = 3.8
 }
 
 entity = {
@@ -777,8 +731,8 @@ entity = {
 	attach = { "celfab3" = "qsc_printer_array" }
 	attach = { "celfab4" = "qsc_printer_array" }
 
-	scale = 1.3
-	# scale = 3
+	# scale = 1.3
+	scale = 3.8
 }
 
 entity = {
@@ -787,21 +741,17 @@ entity = {
 	cull_radius = 1000
 	
 	locator = { name = "root" }
-	                                       #x #z #y             #z #x #y
 
-	scale = 1.3
-	# scale = 3
+	scale = 3.8
 }
 
 entity = {
 	name = "qsc_strike_force_entity"
 	cull_radius = 100
 	
-	locator = { name = "root" }
-	                                       #x #z #y             #z #x #y
+	locator = { name = "root" }	            #x #z #y             #z #x #y
 	locator = { name = "planet" position = { 0 0 50 } rotation = { 0 0 0 } scale = 0.25 }
-	
-	
+
 	attach = { "planet" = "fungoid_01_war_planet_complete_entity" }
 	
 	scale = 1
@@ -818,54 +768,9 @@ entity = {
 }
 
 entity = {
-	name = "qsc_01_entity"
-	pdxmesh = "qsc_qcbloc_mesh"
-	cull_radius = 1000
-	
-	locator = { name = "root" }
-	                                       #x #z #y             #z #x #y
-	locator = { name = "quasar" position = { 0 0 0 } rotation = { 0 0 0 } scale = 1 }
-	locator = { name = "mscore" position = { 0 0 0 } rotation = { 180 0 0 } scale = 7.5 }
-	locator = { name = "qso" position = { 0 0 0 } rotation = { 0 0 0 } scale = 0.5 }
-	locator = { name = "citadel" position = { 0 500 0 } rotation = { 0 0 0 } scale = 1 }
-	locator = { name = "crucible" scale = 7.5 }
-	locator = { name = "halo" scale = 7.5 }
-	locator = { name = "armament" scale = 7.5 }
-	locator = { name = "engine" position = { 0 0 600 } rotation = { 0 0 0 } scale = 3 }
-	locator = { name = "enginecop" position = { 0 0 0 } rotation = { 0 0 0 } scale = 7.5 }
-	
-	attach = { "quasar" = "qsc_quasar_entity" }
-	attach = { "mscore" = "qsc_mscore_entity" }
-	attach = { "qso" = "qsc_qso_entity" }
-	attach = { "citadel" = "qsc_citadel_entity" }
-	attach = { "crucible" = "qsc_qc1_entity" }
-	attach = { "halo" = "qsc_qc2_entity" }
-	attach = { "armament" = "qsc_qc3_entity" }
-	attach = { "engine" = "qsc_qc_engine_entity" }
-	attach = { "enginecop" = "qsc_qc_engine_cop_entity" }
-	
-	attach = { "celfab1" = "qsc_printer_array" }
-	attach = { "celfab2" = "qsc_printer_array" }
-	attach = { "celfab3" = "qsc_printer_array" }
-	attach = { "celfab4" = "qsc_printer_array" }
-	
-	default_state = "idle"
-	state = { name = "idle" state_time = 5 
-		event = { time = 0 node = "exhaust01" particle = "giga_systemcraft_large1_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "exhaust02" particle = "giga_systemcraft_large1_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "escort1" particle = "giga_systemcraft_large1_idle_particle" trigger_once = yes keep_particle = yes }
-
-		start_event = { trigger_once = yes sound = { soundeffect = "juggernaut_mammalian_idle" } }
-	}
-	
-	scale = 1
-}
-
-entity = {
 	name = "qsc_01_ship_entity"
 	pdxmesh = "qsc_qcbloc_mesh"
-	#cull_radius = 100 #10000
-	
+
 	locator = { name = "root" }
 	                                       #x #z #y             #z #x #y
 	locator = { name = "quasar" position = { 0 0 0 } rotation = { 0 0 0 } scale = 1 }
@@ -902,7 +807,7 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "juggernaut_mammalian_idle" } }
 	}
 	
-	scale = 3
+	scale = 3.8
 	# scale = 1.3
 }
 

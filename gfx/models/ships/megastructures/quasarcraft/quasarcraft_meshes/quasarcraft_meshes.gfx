@@ -14,18 +14,6 @@ objectTypes = {
 		}
 	}
 	pdxmesh = {
-		name = "glc_titstern_mesh"
-		file = "gfx/models/ships/megastructures/quasarcraft/quasarcraft_meshes/ArthTitStern.mesh"
-	}
-	pdxmesh = {
-		name = "glc_warpqc_mesh"
-		file = "gfx/models/ships/megastructures/quasarcraft/quasarcraft_meshes/WarpdQuasar.mesh"
-	}	
-	pdxmesh = {
-		name = "glc_warpqc2_mesh"
-		file = "gfx/models/ships/megastructures/quasarcraft/quasarcraft_meshes/WarpdQuasarB.mesh"
-	}	
-	pdxmesh = {
 		name = "qsc_qcb1_mesh"
 		file = "gfx/models/ships/megastructures/quasarcraft/quasarcraft_meshes/QC-B1.mesh"
 	}	
@@ -44,14 +32,6 @@ objectTypes = {
     pdxmesh = {
 		name = "qsc_qcbeng_mesh"
 		file = "gfx/models/ships/megastructures/quasarcraft/quasarcraft_meshes/QC-B-Eng.mesh"
-	}	
-	pdxmesh = {
-		name = "qsc_qcb_xltur_mesh"
-		file = "gfx/models/ships/megastructures/quasarcraft/quasarcraft_meshes/QC-B-XLTUR.mesh"
-		animation = {
-			id = "idle"
-			type = "mega_shipyard_01_stage_3_idle_animation"
-		}
 	}
 	pdxmesh = {
 		name = "qsc_weapon_loc_mesh"

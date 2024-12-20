@@ -1,5 +1,0 @@
-entity = {
-	name = "strike_planet_entity"
-	pdxmesh = "planet_fighter_mesh"
-	scale = 1
-}
