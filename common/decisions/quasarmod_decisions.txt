@@ -8,13 +8,11 @@ decision_quasarmod_establish_core_mbrain_uplink = {
         planet = {
             is_colony = yes
             NOT = {
-                has_planet_flag = connected_to_core_mbrain
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
         planet.owner = {
-            any_owned_megastructure = {
-                is_megastructure_type = matrioshka_brain_5_core
-            }
+            owns_core_mbrain_finished = yes
         }
     }
     allow = {
@@ -66,7 +64,6 @@ decision_quasarmod_establish_core_mbrain_uplink = {
             days = -1
             clear_on_owner_change = yes
         }
-        set_planet_flag = connected_to_core_mbrain
     }
 }
 
@@ -79,7 +76,7 @@ decision_quasarmod_sever_core_mbrain_uplink = {
     potential = {
         planet = {
             is_colony = yes
-            has_planet_flag = connected_to_core_mbrain
+            has_modifier = quasarmod_connected_to_core_mbrain_mod
         }
         planet.owner = {
             any_owned_megastructure = {
@@ -102,6 +99,42 @@ decision_quasarmod_sever_core_mbrain_uplink = {
 
     effect = {
         remove_modifier = quasarmod_connected_to_core_mbrain_mod
-        remove_planet_flag = connected_to_core_mbrain
+    }
+}
+
+decision_quasarcraft_crew = {
+    owned_planets_only = yes
+    sound = event_administrative_work
+    icon = decision_binary_stars
+    ai_weight = { weight = 0 }
+    potential = {
+        owner = {
+            NOT = { has_country_flag = quasarcraft_crew_acquired }
+            OR = {
+                has_megastructure = quasarcraft_3
+                has_megastructure = quasarcraft_2_alt
+            }
+        }
+    }
+
+    resources = {
+        category = decisions
+        cost = { energy = 1500 }
+    }
+
+    allow = {
+        count_owned_pop = { count >= 61 }
+        owner = { resource_stockpile_compare = { resource = energy value >= 1500 } }
+    }
+
+    effect = {
+        owner = {
+            set_country_flag = quasarcraft_crew_acquired
+            country_event = { id = quasarmod_megastage_dialogue.406 }
+        }
+        while = {
+            count = 60
+            random_owned_pop = { kill_pop = yes }
+        }
     }
 }

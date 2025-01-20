@@ -46,23 +46,30 @@ building_giga_matrioshka_brain_uplink_research = {
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
             }
-
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
+            }
         }
+
         planet_researchers_produces_mult = @production_mult
         planet_researchers_upkeep_mult = @upkeep_mult
     }
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
+            }
             planet = {
-                has_planet_flag = connected_to_core_mbrain
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         multiplier = value:giga_job_scaling_plus_base
         planet_researchers_energy_upkeep_add = 2
         planet_researchers_exotic_gases_upkeep_add = 0.1
@@ -107,12 +114,15 @@ building_giga_matrioshka_brain_uplink_unity = {
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
             }
-
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
+            }
         }
+
         planet_administrators_produces_mult = @production_mult
         planet_administrators_upkeep_mult = @upkeep_mult
         planet_administrators_energy_upkeep_add = 1
@@ -162,12 +172,15 @@ building_giga_matrioshka_brain_uplink_sanctuary = {
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
             }
-
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
+            }
         }
+
         job_bio_trophy_add = 50
         planet_bio_trophies_produces_mult = @production_mult
         planet_bio_trophies_upkeep_mult = @upkeep_mult
@@ -175,24 +188,30 @@ building_giga_matrioshka_brain_uplink_sanctuary = {
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
             }
-
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
+            }
         }
+
         multiplier = value:giga_planet_density_count_bio_trophies
         planet_jobs_complex_drone_produces_mult = 0.0025
     }
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
             }
-
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
+            }
         }
+
         planet_bio_trophies_energy_upkeep_add = 0.5
         multiplier = value:giga_job_scaling_plus_base
     }
@@ -347,18 +366,19 @@ building_giga_matrioshka_brain_uplink_entertainment = {
     triggered_country_modifier = {
         potential = {
             exists = owner
-            owner_owns_core_mbrain = yes
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
-            }
             owner = {
                 is_gestalt = no
-                nand = {
+                NAND = {
                     is_fallen_empire_materialist = yes
                     has_civic = civic_disinterested_gamers
                 }
+                owns_core_mbrain_finished = yes
+            }
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         planet_culture_workers_unity_produces_add = 1
         planet_culture_workers_energy_upkeep_add = 1
         planet_entertainers_unity_produces_add = 1
@@ -368,43 +388,50 @@ building_giga_matrioshka_brain_uplink_entertainment = {
     triggered_planet_modifier = {
         potential = {
             exists = owner
-            owner_owns_core_mbrain = yes
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
-            }
             owner = {
                 is_gestalt = no
                 nand = {
                     is_fallen_empire_materialist = yes
                     has_civic = civic_disinterested_gamers
                 }
+                owns_core_mbrain_finished = yes
             }
-        }
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
+            } }
+
         job_giga_media_coordinator_add = 4
     }
     ######################################################
     # servitors
     triggered_country_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
             exists = owner
-            owner = { is_machine_empire = yes }
+            owner = {
+                is_machine_empire = yes
+                owns_core_mbrain_finished = yes
+            }
             planet = {
-                has_planet_flag = connected_to_core_mbrain
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         planet_bio_trophies_society_research_produces_add = 1
         planet_stability_add = 5
     }
+
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
-            }
             exists = owner
-            owner = { is_machine_empire = yes }
+            owner = {
+                is_machine_empire = yes
+                owns_core_mbrain_finished = yes
+            }
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
+            }
         }
+
         job_giga_media_coordination_drone_add = 8
     }
 
@@ -413,15 +440,16 @@ building_giga_matrioshka_brain_uplink_entertainment = {
     triggered_planet_modifier = {
         potential = {
             exists = owner
-            owner_owns_core_mbrain = yes
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
-            }
             owner = {
                 is_fallen_empire_materialist = yes
                 has_civic = civic_disinterested_gamers
+                owns_core_mbrain_finished = yes
+            }
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         job_giga_gamer_fe_game_master_add = 5
         job_giga_gamer_fe_npc_add = 20
     }
@@ -543,29 +571,32 @@ building_giga_matrioshka_brain_uplink_training = {
 
     triggered_country_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
-            }
             exists = owner
             owner = {
                 is_gestalt = no
+                owns_core_mbrain_finished = yes
+            }
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         country_naval_cap_add = 4
         multiplier = value:giga_count_jobs|JOB|soldier|
     }
     triggered_planet_modifier = {
+
         potential = {
-            owner_owns_core_mbrain = yes
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
-            }
             exists = owner
             owner = {
                 is_gestalt = no
+                owns_core_mbrain_finished = yes
+            }
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         job_giga_virtual_training_coordinator_add = 4
         job_soldier_add = 4
     }
@@ -575,29 +606,33 @@ building_giga_matrioshka_brain_uplink_training = {
 
     triggered_country_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
-            }
             exists = owner
             owner = {
                 is_gestalt = yes
+                owns_core_mbrain_finished = yes
+            }
+
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         country_naval_cap_add = @matrioshka_brain_uplink_training_bonus
         multiplier = value:giga_count_jobs|JOB|warrior_drone|
     }
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
-            }
             exists = owner
             owner = {
                 is_gestalt = yes
+                owns_core_mbrain_finished = yes
+            }
+
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         job_giga_virtual_training_coordination_drone_add = 4
         job_warrior_drone_add = 4
     }
@@ -632,9 +667,13 @@ building_giga_matrioshka_brain_uplink_diplomacy = {
         script = planet/virtual/giga_diplomat_job_swap
         jobs = 8
         condition = "
-            owner_owns_core_mbrain = yes
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
+            }
+
             planet = {
-                has_planet_flag = connected_to_core_mbrain
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         "
     }
@@ -668,11 +707,15 @@ building_giga_matrioshka_brain_uplink_hell = {
     # Quasarmod Additions
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
+            }
             planet = {
-                has_planet_flag = connected_to_core_mbrain
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         job_giga_virtual_hell_inmate_add = 20
     }
 
@@ -707,11 +750,15 @@ building_giga_matrioshka_brain_uplink_livestock = {
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
+            }
             planet = {
-                has_planet_flag = connected_to_core_mbrain
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         job_giga_virtual_livestock_add = 50
     }
 }
@@ -745,11 +792,15 @@ building_giga_matrioshka_brain_uplink_amalgamation = {
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
+            }
             planet = {
-                has_planet_flag = connected_to_core_mbrain
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         job_giga_virtual_organic_battery_add = 50
     }
 }
@@ -792,22 +843,30 @@ building_giga_matrioshka_brain_uplink_foundry = {
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
+            }
             planet = {
-                has_planet_flag = connected_to_core_mbrain
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         planet_metallurgists_produces_mult = @production_mult
         planet_metallurgists_upkeep_mult = @upkeep_mult
     }
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
+            }
             planet = {
-                has_planet_flag = connected_to_core_mbrain
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         multiplier = value:giga_job_scaling_plus_base
         planet_metallurgists_energy_upkeep_add = 2
         planet_metallurgists_engineering_research_upkeep_add = @research_upkeep
@@ -852,22 +911,30 @@ building_giga_matrioshka_brain_uplink_factory = {
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
+            }
             planet = {
-                has_planet_flag = connected_to_core_mbrain
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         planet_artisans_produces_mult = @production_mult
         planet_artisans_upkeep_mult = @upkeep_mult
     }
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
+            }
             planet = {
-                has_planet_flag = connected_to_core_mbrain
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         multiplier = value:giga_job_scaling_plus_base
         planet_artisans_energy_upkeep_add = 1
         planet_artisans_society_research_upkeep_add = @research_upkeep
@@ -933,11 +1000,15 @@ building_giga_matrioshka_brain_uplink_refinery = {
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
+            }
             planet = {
-                has_planet_flag = connected_to_core_mbrain
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         planet_chemists_produces_mult = @production_mult
         planet_chemists_upkeep_mult = @upkeep_mult
 
@@ -950,11 +1021,15 @@ building_giga_matrioshka_brain_uplink_refinery = {
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
+            }
             planet = {
-                has_planet_flag = connected_to_core_mbrain
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         multiplier = value:giga_job_scaling_plus_base
         planet_chemists_energy_upkeep_add = 2
         planet_chemists_physics_research_upkeep_add = @research_upkeep
@@ -1004,21 +1079,29 @@ building_giga_matrioshka_brain_uplink_anti_deviancy = {
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
+            }
             planet = {
-                has_planet_flag = connected_to_core_mbrain
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         planet_jobs_produces_mult = 0.1
         job_patrol_drone_add = 8
     }
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
+            }
             planet = {
-                has_planet_flag = connected_to_core_mbrain
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         planet_crime_no_happiness_add = -1
         multiplier = value:giga_mbrain_anti_deviancy
     }
@@ -1156,12 +1239,14 @@ building_giga_matrioshka_brain_uplink_robot = {
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
-            }
             exists = owner
-            owner = { is_regular_empire = yes }
+            owner = {
+                is_regular_empire = yes
+                owns_core_mbrain_finished = yes
+            }
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
+            }
         }
 
         planet_jobs_robot_worker_produces_mult = 0.1
@@ -1176,15 +1261,16 @@ building_giga_matrioshka_brain_uplink_robot = {
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
-            }
             exists = owner
             owner = {
                 is_regular_empire = yes
                 has_policy_flag = ai_full_rights
                 has_policy_flag = slavery_allowed
+                owns_core_mbrain_finished = yes
+            }
+
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
 
@@ -1196,15 +1282,14 @@ building_giga_matrioshka_brain_uplink_robot = {
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
-            exists = owner
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
-            }
             owner = {
                 is_regular_empire = yes
                 is_individual_machine = no
                 has_policy_flag = ai_servitude
+                owns_core_mbrain_finished = yes
+            }
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
 
@@ -1220,15 +1305,15 @@ building_giga_matrioshka_brain_uplink_robot = {
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
             exists = owner
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
-            }
             owner = {
                 is_regular_empire = yes
                 is_individual_machine = no
                 has_policy_flag = ai_outlawed
+                owns_core_mbrain_finished = yes
+            }
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
 
@@ -1246,12 +1331,14 @@ building_giga_matrioshka_brain_uplink_robot = {
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
             exists = owner
-            planet = {
-                has_planet_flag = connected_to_core_mbrain
+            owner = {
+                is_gestalt = yes
+                owns_core_mbrain_finished = yes
             }
-            owner = { is_gestalt = yes }
+            planet = {
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
+            }
         }
 
         planet_jobs_robot_worker_produces_mult = 0.25
@@ -1296,26 +1383,30 @@ building_giga_matrioshka_brain_uplink_virtual = {
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
+            }
             planet = {
-                has_planet_flag = connected_to_core_mbrain
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         giga_virtual_colony_size = -1
         multiplier = value:giga_matrioshka_brain_uplink_multiplicative_value|fraction|0.5|building|building_giga_matrioshka_brain_uplink_virtual|
     }
 
     triggered_planet_modifier = {
         potential = {
-            owner_owns_core_mbrain = yes
+            exists = owner
+            owner = {
+                owns_core_mbrain_finished = yes
+            }
             planet = {
-                has_planet_flag = connected_to_core_mbrain
+                has_modifier = quasarmod_connected_to_core_mbrain_mod
             }
         }
+
         planet_pops_energy_upkeep_mult = 0.5
     }
 }
-
-
-# it didn't initially work in testing, and in the process of trying to make it work i changed how the game checks for the core mbrain 3 times
-# this was not a fun experience

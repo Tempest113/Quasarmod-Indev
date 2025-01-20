@@ -2,6 +2,7 @@ quasarmod_connected_to_core_mbrain_mod = {
     icon = gfx/interface/icons/planet_modifiers/pm_assist_research.dds
     icon_frame = 1
     planet_giga_matrioshka_brain_uplinks_energy_upkeep_mult = 0.25
+
 }
 
 quasarmod_quasarcraft_wormholes = {
@@ -20,7 +21,7 @@ quasarmod_qsc_destroyed_nearby = {
     pop_happiness = -0.25
 }
 
-quasarmod_qsc_destroyed_nearby2 = {
+quasarmod_qsc_destroyed_nearby_2 = {
     icon = "gfx/interface/icons/planet_modifiers/pm_unstable_tectonics.dds"
     icon_frame = 3
 

@@ -10,8 +10,7 @@ on_ship_built = {
 
 on_monthly_pulse_country = {
      events = {
-          quasarmod_utility.3
-          # quasarmod_utility.9
+          # quasarmod_utility.3 - Optimized code, buildings now check for modifier which is cleared on planet ownership change, no longer need to check for/remove flag
      }
 }
 

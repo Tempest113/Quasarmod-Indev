@@ -133,26 +133,32 @@
  # Gargantuan Quasarcraft #
  ##########################
 
- quasarcraft_0: "Quasarcraft Foundation"
- quasarcraft_0_DESC: "The foundation upon which we shall assemble the greatest armament the galaxy has ever seen."
- quasarcraft_0_MEGASTRUCTURE_DETAILS: ""
+ quasarcraft_0: "$gc_tera$Quasarcraft Construction Site"
+ quasarcraft_0_DESC: "This construction site will facilitate the construction of the largest instrument of war that the galaxy has ever seen.."
+ quasarcraft_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_weaponry$\nConverts an §YActive Hyperquasar§! into a terastructural warship several dozen AU in diameter. Fielding a hyperweapon known as the Endsinger, the $quasarmod_quasarcraft$ is capable of destroying entire star clusters."
+ quasarcraft_0_CONSTRUCTION_INFO_DELAYED: "$giga_list_additional_data$ - The Quasarcraft is capable of destroying either singular §YPlanets§!, §YSolar Systems§! or entire §YStar Clusters§!. It is a roving hyperweapon of untold destruction, and your enemies might seek to disrupt it's construction process."
 
- quasarcraft_0_alt: "$gc_tera$Quasarcraft Foundation"
- quasarcraft_0_alt_DESC: "An altered form of the Quasi-Stellar-Obliterator's major components, computers, and power banks; Prefabricated directly for use as the foundation for the grandest warship this galaxy will ever see."
- quasarcraft_0_alt_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_weaponry$\nConverts an §YActive Hyperquasar§! into a terastructural warship several dozen AU in diameter. Fielding a hyperweapon known as the Endsinger, the $quasarmod_quasarcraft$ is capable of destroying entire star clusters."
- quasarcraft_0_alt_CONSTRUCTION_INFO_DELAYED: "$giga_list_additional_data$ - The Quasarcraft is capable of destroying either singular §YPlanets§!, §YSolar Systems§! or entire §YStar Clusters§!. It is a roving hyperweapon of untold destruction, and your enemies might seek to disrupt it's construction process."
-
- quasarcraft_1: "Quasi-Stellar Superstructure"
- quasarcraft_1_DESC: "The modified core of the former Quasi-Stellar Obliterator, the new core focuses on diversion of power evenly across a massive hull, filled to the brim with important circuitry and armaments."
+ quasarcraft_1: "Quasarcraft Superstructure"
+ quasarcraft_1_DESC: "The core of the $quasarmod_quasarcraft$, housing all of the future warships most vital subsystems, matrioshka targeting arrays and Hyperquasar confinement systems."
 
  quasarcraft_2: "Quasarcraft Halo"
- quasarcraft_2_DESC: "The great ring of the Quasarcraft, with integrated gravity adjusters and hyperdimensional hull stabilization, the halo will play the paramount role of the artillery foundation."
+ quasarcraft_2_DESC: "The Quasarcrafts signature polar-equatorial ring, with integrated gravity manipulation arrays and transdimensional anchors, the halo will play the all-important role of the weapons foundation."
 
- quasarcraft_3: "Quasarcraft Armaments Ring"
- quasarcraft_3_DESC: "The grandest armament, befitting the king of the celestial warships. The Quasarcraft will rend utter destruction upon our foes."
+ quasarcraft_3: "Quasarcraft Weapon Systems"
+ quasarcraft_3_DESC: "The incredible energy output of the Hyperquasar allows for the utilization of weapons several orders of magnitude more powerful than those found on a typical systemcraft, all we need to do is build them."
 
- quasarcraft_4: "Quasaric EHOF"
- quasarcraft_4_DESC: "The gargantuan wormhole projector that serves as the backbone of the Quasarcraft's transportation, it will facilitate transportation via Micro-Wormholes throughout the universe."
+ quasarcraft_4: "The $quasarmod_quasarcraft$"
+ quasarcraft_4_DESC: "The now completed Quasarcraft, ready to purge all that is evil from the universe."
 
- quasarcraft_5: "The Quasarcraft"
- quasarcraft_5_DESC: "The now completed Quasarcraft, ready to purge all that is evil from the universe."
+ # QSO Upgrade Version
+ quasarcraft_1_alt: "$quasarcraft_2$"
+ quasarcraft_1_alt_DESC: "The Quasarcrafts signature polar-equatorial ring, supported by the modified frame of the $quasi_stellar_obliterator_5$"
+
+ quasarcraft_2_alt: "$quasarcraft_3$"
+ quasarcraft_2_alt_DESC: "The quasaric energy that would have once been solely used for destruction on an interstellar scale will be redirected throughout the Quasarcraft itself, transforming the $quasi_stellar_obliterator_5$ into the ultimate mobile weapons platform."
+
+ quasarcraft_3_alt: "$quasarcraft_4$"
+ quasarcraft_3_alt_DESC: "The now completed Quasarcraft, ready to purge all that is evil from the universe."
+
+ decision_quasarcraft_crew: "Acquire Quasarcraft Crew"
+ decision_quasarcraft_crew_desc: "Extract 60 pops from this world to serve as the Quasarcraft's crew."

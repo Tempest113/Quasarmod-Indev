@@ -10,9 +10,9 @@
  ap_hyperquasaric_megaconstruction_desc: "The size and scale of our ambitions are rapidly outgrowing our ability to achieve them, we must reach a level of resource exploitation larger than has ever been seen in the history of our galaxy if we wish to ensure our unending prosperity."
  ap_hyperquasaric_megaconstruction_add_research: "\nResearch options gained:\n£physics_research£§Y$tech_smbh_manipulator$§!\n£physics_research£§Y$tech_core_mbrain$§!\n£society_research£§Y$tech_hyperquasaric_megashipyard$§!\n£society_research£§Y$tech_quasarcraft_1$§!\n£engineering_research£§Y$tech_hyperquasaric_teraforge$§!"
 
- ap_hyperquasaric_megaconstruction_no_stellar_manip: "Hyperquasaric Megaconstruction"
- ap_hyperquasaric_megaconstruction_no_stellar_manip_desc: "The size and scale of our ambitions are rapidly outgrowing our ability to achieve them, we must reach a level of resource exploitation larger than has ever been seen in the history of our galaxy if we wish to ensure our unending prosperity."
- ap_hyperquasaric_megaconstruction_no_stellar_manip_add_research: "\nResearch options gained:\n£physics_research£§Y$tech_core_mbrain$§!\n£society_research£§Y$tech_hyperquasaric_megashipyard$§!\n£society_research£§Y$tech_quasarcraft_1$§!\n£engineering_research£§Y$tech_hyperquasaric_teraforge$§!"
+ ap_hyperquasaric_megaconstruction_nsm: "$ap_hyperquasaric_megaconstruction$"
+ ap_hyperquasaric_megaconstruction_nsm_desc: "$ap_hyperquasaric_megaconstruction_desc$"
+ ap_hyperquasaric_megaconstruction_nsm_add_research: "\nResearch options gained:\n£physics_research£§Y$tech_core_mbrain$§!\n£society_research£§Y$tech_hyperquasaric_megashipyard$§!\n£society_research£§Y$tech_quasarcraft_1$§!\n£engineering_research£§Y$tech_hyperquasaric_teraforge$§!"
 
  ##############
  # Technology #
@@ -28,14 +28,14 @@
  # Megashipyard
 
  tech_hyperquasaric_megashipyard: "Hyperquasaric Shipbuilding Facilities"
- tech_hyperquasaric_megashipyard_desc: "Our ambitions are rapidly outgrowing our ability to produce the resources necessary to realize them, the cataclysmic power of an active hyperquasar may be able to help us with that"
+ tech_hyperquasaric_megashipyard_desc: "The raw power of the $hyperstructural_ass_4$ was once enough to sustain entire empires, yet these once impressive structures are struggling to keep up with the demands of a modern galactic navy, we must dream bigger."
  TECH_UNLOCK_HYPERQUASARIC_MEGASHIPYARD_TITLE: "§SUnlocks Megastructure:§! Hyperquasaric Megashipyard"
  TECH_UNLOCK_HYPERQUASARIC_MEGASHIPYARD_DESC: "Employing similar technology to the $hyperstructural_ass_4$, the $hyperquasaric_megashipyard_4$ is the natural progression of a galaxy spanning navy in the making."
 
  # SMBH Manipulator
 
  tech_smbh_manipulator: "Supermassive Black Hole Manipulation"
- tech_smbh_manipulator_desc: "Perhaps one of the largest megastructures we will build for the next several hundred years: The Supermassive Black Hole Manipulator, a gargantuan terastructure which will allow us to bend the galactic core to our very will"
+ tech_smbh_manipulator_desc: "Taking inspiration from our previous endeavours into Stellar Manipulation, our most talented engineers and physicists have devised plans for a similar celestial manipulation project on a scale several orders of magnitude larger than any before it; we shall transform the very heart of the galaxy to suit our needs."
  TECH_UNLOCK_BLACKHOLE_MANIPULATOR_TITLE: "§SUnlocks Megastructure:§! Supermassive Black Hole Manipulator"
  #TECH_UNLOCK_BLACKHOLE_MANIPULATOR_TITLE: "§SUnlocks Feature:§! Supermassive Black Hole Manipulation \n§SUnlocks Megastructure:§! Supermassive Black Hole Manipulator"
  TECH_UNLOCK_BLACKHOLE_MANIPULATOR_DESC: "The supermassive black hole residing within the galactic core no longer suits our needs, we shall reshape it to better serve our empire."
@@ -51,33 +51,34 @@
 
  tech_quasarcraft_1: "An Armament of Galactic Proportions"
  tech_quasarcraft_1_desc: "With the advent of mightier foes, even our most powerful ships are no longer strong enough. Our finest minds have thus began dreaming, we shall create a weapon to pierce the heavens. So begins the Quasarcraft Project."
- allow_quasarcraft_p0: "Unlocks the foundation of the Quasarcraft"
- desc_quasarcraft_p0: "We can now build the $quasarcraft_0$"
 
- tech_quasarcraft_2: "Quasaric Fortress Core"
- tech_quasarcraft_2_desc: "To lay the foundation upon which we will build the ultimate armament, we must first tear down the old. By refitting our Quasi-Stellar Obliterator, we can create not only a more defended facility, but an impenetrable fortress, a fully functional battlestation."
- allow_quasarcraft_p1: "Unlocks the First Stage of the Quasarcraft"
- desc_quasarcraft_p1: "The $quasarcraft_1$ can now be constructed."
+ tech_quasarcraft_2: "Pentadimensional Engineering"
+ tech_quasarcraft_2_desc: "The discovery and application of tetradimensional engineering techniques has enabled us to construct wonders spanning billions of kilometers, yet, the megastructures of tomorrow demand even greater innovation. In order to circumvent the limits of modern construction techniques, we must set our sights higher: Pentadimensional Engineering. By shifting entire structures five-dimensional space, we can drastically reduce their footprint in the third dimension, allowing for wonders greater in scale than any before them."
 
  tech_quasarcraft_3: "Galactic Halo"
  tech_quasarcraft_3_desc: "Our core already has great defence against enemy attacks, but we must also take into account our offense. To this effect, a great myriad of the strongest weaponry we can envision will be fitted onto a grand ring surrounding the core. A halo, if one wills."
- allow_quasarcraft_p2: "Unlocks the Second Stage of the Quasarcraft"
- desc_quasarcraft_p2: "The Halo of the Quasarcraft can now be constructed."
 
  tech_quasarcraft_4: "Trillion Suns Wrath"
  tech_quasarcraft_4_desc: "The development of the weaponry for the Quasarcraft has been staggering, in terms of the raw power available. Our great minds have thus designed several truly gargantuan weapons that use the enhanced power of the Quasar, even retrofitting the old QSO weapons into something anew, and creating an incredibly powerful prototype component blueprint known only as... §RThe Endsinger.§!"
- allow_quasarcraft_p3: "Unlocks the Third Stage of the Quasarcraft"
- desc_quasarcraft_p3: "The Halo can now be fitted with its armaments."
 
- tech_quasarcraft_5: "Quasaric Event Horizon Offsetting"
- tech_quasarcraft_5_desc: "Now that all of the main armaments have been installed, the question arises, 'How are we supposed to be able to transport such mass across the galaxy?' The answer lies in the past - the §HEvent Horizon Offset Facility§!. Using advancements made in both fields, we will construct a gigastructural EHOF on the back of the Quasarcraft, which will expand wormholes to allow the mobile terastructure to 'jump' immense distances."
- allow_quasarcraft_p4: "Unlocks the Fourth Stage of the Quasarcraft"
- desc_quasarcraft_p4: "The Q-EHOF can now be installed onto the Quasarcraft"
+ tech_quasarcraft_5: "E.H.O.F Retrofitting"
+ tech_quasarcraft_5_desc: "By tweaking and upscaling our existing $ehof_ehof_abr$ technologies, we can allow the Quasarcraft to create truly massive wormholes between systems, solving the issue of interstellar travel being otherwise impossible due to the sheer size of the structure eclipsing that of most hyperlanes"
 
- tech_quasarcraft_6: "A Weapon to Pierce The Heavens"
- tech_quasarcraft_6_desc: "The final designs and necessary facilities of the Quasarcraft are being finalized, and now the blueprint becomes available to us to design as we please. Engineers can barely contain their excitement, for the dream is almost fully realized."
- allow_quasarcraft_p5: "Unlocks the Final Stage of the Quasarcraft, and the ship itself in the Designer."
- desc_quasarcraft_p5: "§RDesign the Quasarcraft BEFORE finishing the final stage!§!"
+ tech_quasarcraft_5_swap: "Quasarcraft Alternative FTL Travel Methods"
+ tech_quasarcraft_5_swap_desc: "The Quasarcraft is simply too large to use typical hyperlanes; in order to prevent the largest instrument of war ever created from becoming a sitting duck, we must investigate alternative methods of FTL travel.\n\nFortunately, several alternative methods for us to explore, the most promising of which involves using the Hyperquasars cataclysmic energies to inflate artificial wormholes between star systems for the ship to utilize for interstellar travel."
+
+
+ allow_quasarcraft: "§HUnlocks Megastructure:§! $quasarmod_quasarcraft$"
+ allow_quasarcraft_p0: "$allow_quasarcraft$ Phase 0: Construction Site"
+ desc_quasarcraft_p0: "The $quasarmod_quasarcraft$"
+ allow_quasarcraft_p1: "$allow_quasarcraft$ Phase 1: $quasarcraft_1$"
+ desc_quasarcraft_p1: "Unlocks another stage of the Quasarcraft."
+ allow_quasarcraft_p2: "$allow_quasarcraft$ Phase 2: $quasarcraft_2$"
+ desc_quasarcraft_p2: "Unlocks another stage of the Quasarcraft."
+ allow_quasarcraft_p3: "$allow_quasarcraft$ Phase 3: $quasarcraft_3$"
+ desc_quasarcraft_p3: "Unlocks another stage of the Quasarcraft."
+ allow_quasarcraft_p4: "$allow_quasarcraft$"
+ desc_quasarcraft_p4: "Unlocks the final stage of the Quasarcraft."
 
  ##########
  # Edicts #
@@ -104,15 +105,15 @@
  requires_built_on_giga_active_core: "$TRIGGER_FAIL$Can only harvest plasma from an active hyperquasar"
  requires_built_on_giga_inactive_core: "$TRIGGER_FAIL$Can only inject plasma into an inactive supermassive black hole"
 
- requires_mbrain_uplink: "$TRIGGER_FAIL$Requires a ['building:building_giga_matrioshka_brain_uplink'] building."
+ requires_mbrain_uplink: "$TRIGGER_FAIL$Requires an specialized ['building:building_giga_matrioshka_brain_uplink'] building."
  already_have_quasarshipyard_uplink:"$TRIGGER_FAIL$There's already a Hyperquasaric Megashipyard Uplink here."
 
  no_qsc_wormholes: "$TRIGGER_FAIL$There are no wormholes to disband."
  wormholes_already_out: "$TRIGGER_FAIL$Must disband wormholes first."
+ requires_quasarcraft_crew: "$TRIGGER_FAIL$We must acquire 60 pops via a decision, to serve as the crew."
  cannot_target_empty_space: "$TRIGGER_FAIL$Cannot target $sc_empty_space$ with the Endsinger."
  cannot_target_core_black_hole: "$TRIGGER_FAIL$Cannot target a Supermassive Black Hole with the Endsinger."
  qsc_planet_target_requires_no_star: "Cannot target a star with Endsinger $qsc_endsinger.4$ targeting mode." # This one does not have the $TRIGGER_FAIL$ as it's automatically added
- cannot_target_aeternite_birch: "$TRIGGER_FAIL$Cannot target the Aeternite $birch_world_3$ with the Endsinger."
 
  #############
  # Modifiers #
@@ -129,7 +130,7 @@
  mod_building_teraforge_uplink_consumer_goods_max: "Max $building_teraforge_uplink_consumer_goods_plural$"
  mod_planet_building_teraforge_uplink_consumer_goods_build_speed_mult: "$building_teraforge_uplink_consumer_goods$ build speed"
 
- # Ships
+ # Ships - Half of this loc is here purely so intellij stops shouting at me lol
  mod_shipsize_quasarmod_quasarcraft_build_speed_mult: "$quasarmod_quasarcraft$ Build Speed"
  mod_shipsize_quasarmod_quasarcraft_hull_mult: "$quasarmod_quasarcraft$ Hull Points"
  mod_shipsize_quasarmod_quasarcraft_hull_add: "$mod_shipsize_quasarmod_quasarcraft_hull_mult$"
@@ -148,8 +149,8 @@
  quasarmod_qsc_destroyed_nearby: "Irradiated by Quasarcraft Destruction"
  quasarmod_qsc_destroyed_nearby_desc: "The destruction of a Quasarcraft in the immediate proximity of [from.GetName] has bathed the planet with incredible amounts of radiation, it's a miracle that this planet is still capable of supporting life."
 
- quasarmod_qsc_destroyed_nearby2: "Irradiated by Quasarcraft Destruction"
- quasarmod_qsc_destroyed_nearby2_desc: "The destruction of a nearby Quasarcraft has bathed the planet with radiation, leading to massive damage to the environment of [from.GetName]."
+ quasarmod_qsc_destroyed_nearby_2: "Irradiated by Quasarcraft Destruction"
+ quasarmod_qsc_destroyed_nearby_2_desc: "The destruction of a nearby Quasarcraft has bathed the planet with radiation, leading to massive damage to the environment of [from.GetName]."
 
  quasarmod_lost_quasarcraft: "Lost a Quasarcraft"
  quasarmod_lost_quasarcraft_desc: "A Quasarcraft owned by this empire was destroyed, causing a disaster spanning multiple systems. The damage caused by such an incident has caused the capabilities of the empire to be called into question."

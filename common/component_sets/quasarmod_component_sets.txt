@@ -1,5 +1,5 @@
 component_set = {
-	key = "QSC_LASER"
+	key = "QSC_DISRUPTOR"
 	icon = "GFX_qsc_starsplitter"
 	icon_frame = 1
 }

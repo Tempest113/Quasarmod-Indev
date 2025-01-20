@@ -85,6 +85,7 @@ utility_component_template = {
 	resources = {
 		category = ship_components
 	}
+	ai_weight = { weight = 10000 }
 	sensor_range = 500
 	hyperlane_range = 500
 

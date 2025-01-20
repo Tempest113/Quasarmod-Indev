@@ -1,119 +1,115 @@
 spriteTypes = {
-
-# Ascension Perk
-
-spriteType = {
-	name = GFX_ap_hyperquasaric_megaconstruction
-	textureFile = gfx/interface/icons/ascension_perks/ap_hyperquasaric_megaconstruction.dds
+	# Ascension Perk
+	spriteType = {
+		name = GFX_ap_hyperquasaric_megaconstruction
+		textureFile = gfx/interface/icons/ascension_perks/ap_hyperquasaric_megaconstruction.dds
 	}
 
-spriteType = {
-	name = GFX_ap_hyperquasaric_megaconstruction_no_stellar_manip
-	textureFile = gfx/interface/icons/ascension_perks/ap_hyperquasaric_megaconstruction.dds
-}
-
-# Hyperquasaric Teraforge
-
-spriteType = {
-	name = GFX_hyperquasaric_teraforge_0_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
-	}
-spriteType = {
-	name = GFX_hyperquasaric_teraforge_1_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
-	}
-spriteType = {
-	name = GFX_hyperquasaric_teraforge_2_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
-	}
-spriteType = {
-	name = GFX_hyperquasaric_teraforge_3_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
-	}
-spriteType = {
-	name = GFX_hyperquasaric_teraforge_4_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
-	}
-spriteType = {
-	name = GFX_quasaric_teraforge_5_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
+	spriteType = {
+		name = GFX_ap_hyperquasaric_megaconstruction_nsm
+		textureFile = gfx/interface/icons/ascension_perks/ap_hyperquasaric_megaconstruction.dds
 	}
 
-# Hyperquasaric Megashipyard
-
-spriteType = {
-	name = GFX_hyperquasaric_megashipyard_0_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
+	# Hyperquasaric Teraforge
+	spriteType = {
+		name = GFX_hyperquasaric_teraforge_0_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
 	}
-spriteType = {
-	name = GFX_hyperquasaric_megashipyard_1_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
+	spriteType = {
+		name = GFX_hyperquasaric_teraforge_1_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
 	}
-spriteType = {
-	name = GFX_hyperquasaric_megashipyard_2outliner_icon
-	textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
+	spriteType = {
+		name = GFX_hyperquasaric_teraforge_2_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
 	}
-spriteType = {
-	name = GFX_hyperquasaric_megashipyard_4_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
+	spriteType = {
+		name = GFX_hyperquasaric_teraforge_3_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
 	}
-spriteType = {
-	name = GFX_hyperquasaric_megashipyard_4_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
+	spriteType = {
+		name = GFX_hyperquasaric_teraforge_4_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
 	}
-
-# Gargantuan Matrioshka Brain
-
-spriteType = {
-	name = GFX_matrioshka_brain_0_core_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/core_mbrain.dds
-	}
-spriteType = {
-	name = GFX_matrioshka_brain_1_core_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/core_mbrain.dds
-	}
-spriteType = {
-	name = GFX_matrioshka_brain_2_core_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/core_mbrain.dds
-	}
-spriteType = {
-	name = GFX_matrioshka_brain_3_core_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/core_mbrain.dds
-}
-spriteType = {
-	name = GFX_matrioshka_brain_0_core_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/core_mbrain.dds
-	}
-spriteType = {
-	name = GFX_matrioshka_brain_5_core_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/core_mbrain.dds
+	spriteType = {
+		name = GFX_quasaric_teraforge_5_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
 	}
 
-# Supermassive Black Hole Manipulator
+	# Hyperquasaric Megashipyard
+	spriteType = {
+		name = GFX_hyperquasaric_megashipyard_0_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
+	}
+	spriteType = {
+		name = GFX_hyperquasaric_megashipyard_1_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
+	}
+	spriteType = {
+		name = GFX_hyperquasaric_megashipyard_2outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
+	}
+	spriteType = {
+		name = GFX_hyperquasaric_megashipyard_4_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
+	}
+	spriteType = {
+		name = GFX_hyperquasaric_megashipyard_4_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
+	}
 
-spriteType = {
-	name = GFX_blackhole_manipulator_0_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
+	# Gargantuan Matrioshka Brain
+
+	spriteType = {
+		name = GFX_matrioshka_brain_0_core_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/core_mbrain.dds
 	}
-spriteType = {
-	name = GFX_blackhole_manipulator_1_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
+	spriteType = {
+		name = GFX_matrioshka_brain_1_core_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/core_mbrain.dds
 	}
-spriteType = {
-	name = GFX_blackhole_manipulator_2_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
+	spriteType = {
+		name = GFX_matrioshka_brain_2_core_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/core_mbrain.dds
 	}
-spriteType = {
-	name = GFX_blackhole_manipulator_3_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
-}
-spriteType = {
-	name = GFX_blackhole_manipulator_4_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
-}
-spriteType = {
-	name = GFX_blackhole_manipulator_5_outliner_icon
-	textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
+	spriteType = {
+		name = GFX_matrioshka_brain_3_core_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/core_mbrain.dds
+	}
+	spriteType = {
+		name = GFX_matrioshka_brain_0_core_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/core_mbrain.dds
+	}
+	spriteType = {
+		name = GFX_matrioshka_brain_5_core_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/core_mbrain.dds
+	}
+
+	# Supermassive Black Hole Manipulator
+
+	spriteType = {
+		name = GFX_blackhole_manipulator_0_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
+	}
+	spriteType = {
+		name = GFX_blackhole_manipulator_1_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
+	}
+	spriteType = {
+		name = GFX_blackhole_manipulator_2_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
+	}
+	spriteType = {
+		name = GFX_blackhole_manipulator_3_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
+	}
+	spriteType = {
+		name = GFX_blackhole_manipulator_4_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
+	}
+	spriteType = {
+		name = GFX_blackhole_manipulator_5_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
 	}
 
 	# Quasarcraft
@@ -137,9 +133,19 @@ spriteType = {
 		name = GFX_quasarcraft_4_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
 	}
+
+	# Quasarcraft Alt
 	spriteType = {
-		name = GFX_quasarcraft_5_outliner_icon
+		name = GFX_quasarcraft_1_alt_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
 	}
-}
+	spriteType = {
+		name = GFX_quasarcraft_2_alt_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
+	}
+	spriteType = {
+		name = GFX_quasarcraft_3_alt_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
+	}
 
+}

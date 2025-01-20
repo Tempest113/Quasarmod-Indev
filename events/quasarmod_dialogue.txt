@@ -524,7 +524,7 @@ country_event = {
 	picture = GFX_evt_phenkka_quasar
 	show_sound = event_dyson_sphere_build_start
 	is_triggered_only = yes
-	location = event_target:giga_qsc_planet
+	location = event_target:giga_planet
 	option = { name = "quasarmod_megastage_dialogue.401.a" }
 }
 
@@ -536,11 +536,11 @@ country_event = {
 	picture = GFX_evt_phenkka_quasar
 	show_sound = event_dyson_sphere_build_upgrade_panel
 	is_triggered_only = yes
-	location = event_target:giga_qsc_planet
+	location = event_target:giga_planet
 	option = { name = "quasarmod_megastage_dialogue.402.a" }
 }
 
-# # Gargantuan Quasarcraft Ring Complete
+# Gargantuan Quasarcraft Halo Complete
 country_event = {
 	id = quasarmod_megastage_dialogue.403
 	title = "quasarmod_megastage_dialogue.403.name"
@@ -548,11 +548,11 @@ country_event = {
 	picture = GFX_evt_phenkka_quasar
 	show_sound = event_dyson_sphere_build_upgrade_panel
 	is_triggered_only = yes
-	location = event_target:giga_qsc_planet
+	location = event_target:giga_planet
 	option = { name = "quasarmod_megastage_dialogue.403.a" }
 }
 
-# # Gargantuan Quasarcraft idfk Complete
+# Gargantuan Quasarcraft Weapons Complete
 country_event = {
 	id = quasarmod_megastage_dialogue.404
 	title = "quasarmod_megastage_dialogue.404.name"
@@ -560,11 +560,11 @@ country_event = {
 	picture = GFX_evt_phenkka_quasar
 	show_sound = event_dyson_sphere_build_upgrade_panel
 	is_triggered_only = yes
-	location = event_target:giga_qsc_planet
+	location = event_target:giga_planet
 	option = { name = "quasarmod_megastage_dialogue.404.a" }
 }
 
-# # Gargantuan Quasarcraft i also have no idea Complete
+# Gargantuan Quasarcraft Complete
 country_event = {
 	id = quasarmod_megastage_dialogue.405
 	title = "quasarmod_megastage_dialogue.405.name"
@@ -572,11 +572,11 @@ country_event = {
 	picture = GFX_evt_phenkka_quasar
 	show_sound = event_dyson_sphere_build_upgrade_panel
 	is_triggered_only = yes
-	location = event_target:giga_qsc_planet
+	location = event_target:giga_planet
 	option = { name = "quasarmod_megastage_dialogue.405.a" }
 }
 
-# Complete
+# Quasarcraft Crew Acquired
 country_event = {
 	id = quasarmod_megastage_dialogue.406
 	title = "quasarmod_megastage_dialogue.406.name"

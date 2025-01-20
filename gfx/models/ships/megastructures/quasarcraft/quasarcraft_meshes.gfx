@@ -1,5 +1,3 @@
-# I have absolutely zero idea why some of these are getting flagged as broken
-
 objectTypes = {
 	pdxmesh = {
 		name = "glc_colwing_mesh"

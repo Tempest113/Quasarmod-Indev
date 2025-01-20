@@ -7,7 +7,6 @@
  ###########################################
 
  # Gargantuan Matrioshka Brain
-
  quasarmod_megastage_dialogue.1.name: "Gargantuan Matrioshka Brain Construction"
  quasarmod_megastage_dialogue.1.desc: "We are now ready to begin the colossal task of constructing a Gargantuan Matrioshka Brain. The first step will be the construction of the hawking capacitors around the black hole, which will increase the rate at which hawking radiation is emitted. As each layer is added, more and more research will be generated. Keep in mind that the efficiency of the Gargantuan Matrioshka Brain will skyrocket once we finish the last layer. The planetary bodies of the system will be dismantled in order to make room for the terastructure."
  quasarmod_megastage_dialogue.1.a: "Wonderful."
@@ -33,7 +32,6 @@
  quasarmod_megastage_dialogue.6.a: "Wonderful."
 
  # Supermassive Black Hole Manipulator
-
  quasarmod_megastage_dialogue.101.name: "Supermassive Black Hole Manipulator Construction"
  quasarmod_megastage_dialogue.101.desc: "With the completion of the construction site, we are now ready to begin the colossal task of constructing a Supermassive Black Hole Manipulator in [giga_system.GetName]. Upon this scaffold, we shall construct a massive frame for the rest of the structure to rest upon, completely encircling the black hole below.\n\nSoon, the very heart of the galaxy will bend to our will."
  quasarmod_megastage_dialogue.101.a: "Wonderful."
@@ -59,7 +57,6 @@
  quasarmod_megastage_dialogue.106.a: "Let us begin."
 
  # Hyperquasaric Teraforge
-
  quasarmod_megastage_dialogue.201.name: "Hyperquasaric Teraforge Construction"
  quasarmod_megastage_dialogue.201.desc: "With the completion of the construction site in the [giga_system.GetName] system, we are now ready to begin the colossal undertaking that is the construction of a Hyperquasaric Teraforge, perhaps the largest shipyard and source of military grade alloys in our corner of the universe."
  quasarmod_megastage_dialogue.201.a: "Excellent."
@@ -81,7 +78,6 @@
  quasarmod_megastage_dialogue.205.a: "Let us begin."
 
  # Hyperquasaric Megashipyard
-
  quasarmod_megastage_dialogue.301.name: "Hyperquasaric Megashipyard Construction"
  quasarmod_megastage_dialogue.301.desc: "The Hyperquasaric Megashipyard Construction Site in the [giga_system.GetName] system is complete. We will soon be cement ourselves as the owners of the most powerful navy in galactic history, surpassing even the empires of old."
  quasarmod_megastage_dialogue.301.a: "Understood."
@@ -104,34 +100,34 @@
  quasarmod_megastage_dialogue.305.a.tooltip: "Who are you fighting to need so many ships?"
 
  # Gargantuan Quasarcraft
+ quasarmod_megastage_dialogue.401.name: "$quasarmod_quasarcraft$ Construction"
+ quasarmod_megastage_dialogue.401.desc: "The construction site of the $quasarmod_quasarcraft$ is complete. Soon, [giga_planet.GetName] will be transformed into the greatest warship to ever grace our galaxy. The [this.GetName] will rule alongside those who wish to call us friend and reign above those who wish to call us foe."
+ quasarmod_megastage_dialogue.401.a: "Our might shall silence all that oppose us."
 
- quasarmod_megastage_dialogue.401.name: "The Great Ambition"
- quasarmod_megastage_dialogue.401.desc: "We have just finished the construction site of what is most certainly our mightiest warship yet - The Quasarcraft\n\nThough once a pipe dream, this foundation is the first step to making that dream reality."
- quasarmod_megastage_dialogue.401.a: "Let the great ambition be fulfilled, to the end!"
+ quasarmod_megastage_dialogue.402.name: "$quasarcraft_1$ Built"
+ quasarmod_megastage_dialogue.402.desc: "Our $quasarmod_quasarcraft$'s Superstructure has been completed. This frame hosts some of the future warships most vital subsystems, ranging from targeting computers to the hardware used to contain the Quasar residing in the ships center."
+ quasarmod_megastage_dialogue.402.a: "The power of a Quasar in the palms of our hands..."
 
- quasarmod_megastage_dialogue.402.name: "The Galactic Heart"
- quasarmod_megastage_dialogue.402.desc: "The central core of the §H$quasarmod_quasarcraft$§! has been completed, it will soon play host to the most powerful weapons platform to ever exist."
- quasarmod_megastage_dialogue.402.a: "And thus the great heart of the galaxy beats within in our grasp."
+ quasarmod_megastage_dialogue.403.name: "$quasarcraft_2$ Built"
+ quasarmod_megastage_dialogue.403.desc: "Our $quasarmod_quasarcraft$s polar-equatorial halo is complete. Serving as both an anchor point for future weapons installations and a home for many of the systems keeping the Quasarcraft stable, this massive construct dwarfs even the largest traditional stellar-scale megastructures."
+ quasarmod_megastage_dialogue.403.a: "Perfect."
 
- quasarmod_megastage_dialogue.403.name: "The Gargantuan Ring"
- quasarmod_megastage_dialogue.403.desc: "Our engineers have finished the first stages of the §H"Armaments Halo"§!, filled with power dividers to supplant countless cannons and lasers with Quasaric Energy, fueling the destructive power of our ultimate battle 'station'."
- quasarmod_megastage_dialogue.403.a: "Power! Unlimited Power!!!"
+ quasarmod_megastage_dialogue.404.name: "$quasarcraft_3$ Built"
+ quasarmod_megastage_dialogue.404.desc: "Our $quasarmod_quasarcraft$'s main weapons are now finished! The colossal weapons mounted to both the Halo and bow are capable of unleashing a never-before-seen display of force upon any target unlucky enough to cross its path. Only one step remains now, and it will require gathering 60 pops through a decision from any of our worlds in order to serve as the crew.\n\n§YThis decision will not destroy or uncolonize the planet it is used on§!\n\n§RWARNING: Ensure that you have a valid ship design for the Quasarcraft before constructing the next stage, if you have no design for the ship when the mega is complete, the Quasarcraft will fail to spawn.§!"
+ quasarmod_megastage_dialogue.404.a: "We are so close."
 
- quasarmod_megastage_dialogue.404.name: "One-Ringed Angel"
- quasarmod_megastage_dialogue.404.desc: "The power of a trillion suns, washing away the stains of time... Or, to put it more bluntly: Our enemies. The weaponry onboard the Quasarcraft dwarfs anything built before it."
- quasarmod_megastage_dialogue.404.a: "In the end, they won't even matter."
+ quasarmod_megastage_dialogue.405.name: "$quasarmod_quasarcraft$ Complete"
+ quasarmod_megastage_dialogue.405.desc: "At last. It is done. With the last of the vessel's dozens of billions of inhabitants finally moved in, and the finalization of the ships life support systems, the $quasarmod_quasarcraft$ has been completed.\n\nThis vessel of previously unheard of scale dwarfs anything and everything built before it, fielding such immense firepower that only another Quasarcraft could even hope to breach its shields. Its thrusters have been powered on, and the gigantic vessel is now awaiting orders.\n\nNothing can oppose our might now."
+ quasarmod_megastage_dialogue.405.a: "It is beautiful."
 
- quasarmod_megastage_dialogue.405.name: "Providence"
- quasarmod_megastage_dialogue.405.desc: "No matter where in the cosmos, we will be able to find and pass judgement upon those who would wish to do us and our allies harm.\n\n§RWARNING: Design the Quasarcraft in the Ship Designer before constructing the next stage, if you have no design for the Quasarcraft when it's mega is complete, the Quasarcraft WILL NOT SPAWN§!"
- quasarmod_megastage_dialogue.405.a: "Our foes will be just a burning memory."
+ quasarmod_megastage_dialogue.406.name: "Quasarcraft Crew Acquired"
+ quasarmod_megastage_dialogue.406.desc: "We have now designated several billion individuals to serve as the crew for the $quasarmod_quasarcraft$. We may now begin the colossal task of upgrading the Quasarcraft to its completed form, as well as relocating its crew to the vessel itself."
+ quasarmod_megastage_dialogue.406.a: "Acknowledged."
 
- quasarmod_megastage_dialogue.406.name: "§MThe Gargantuan of the Heavens§!"
- quasarmod_megastage_dialogue.406.desc: "After all this time, it is finally complete. The greatest weapon the galaxy has ever known.\n\nThe Gargantuan Quasarcraft.\n\nIt has shifted from its position in the galactic core, the feed of the vessel's first movement bringing tears to our engineer's eyes. It is said the mountains don't give back what they take, but this 'mountain' we have surpassed has instilled a ferocious pride throughout our empire. Admirals are already clamoring for the fabled spot of the Quasaric Commander. \n\nThe Quasarcraft is on standby, awaiting orders."
- quasarmod_megastage_dialogue.406.a: "We are the Alpha and the Omega, your beginning and your end."
 
  # Quasarcraft Destroyed
  qsc_destroyed.1.name: "Hope's End"
- qsc_destroyed.1.desc: "The impossible has happened... The $quasarmod_quasarcraft$, the sword and shield of the empire has been defeated in the [event_target:qsc_destroyed_here.System.GetName] system.\n\nThe resulting damage following the ships destruction was catastrophic, [event_target:qsc_destroyed_here.GetName] as well as the Quasarcraft itself have been completely consumed by the $pc_core_quasar$ that once powered the ship.\n\nSystems adjacent to [event_target:qsc_destroyed_here.GetName] have been utterly destroyed by the subspace backlash following the Quasarcrafts destruction. Even systems beyond those adjacent to [event_target:qsc_destroyed_here.GetName] have been impacted, such a disaster caused by one of our own ships is surely going to hurt our diplomatic standing with those effected by the damage.\n\nAll we can do now is hope that our remaining forces will be enough to fend off the coming threat."
+ qsc_destroyed.1.desc: "The impossible has happened; our $quasarmod_quasarcraft$, the sword and shield of the empire has been destroyed in the [event_target:qsc_destroyed_here.System.GetName] system.\n\nThe resulting damage following the ships destruction was catastrophic, [event_target:qsc_destroyed_here.GetName] as well as the Quasarcraft itself have been completely consumed by the $pc_core_quasar$ that once powered the ship.\n\nSystems adjacent to [event_target:qsc_destroyed_here.GetName] have been utterly destroyed by the subspace backlash following the Quasarcrafts destruction. Even systems beyond those adjacent to [event_target:qsc_destroyed_here.GetName] have been impacted, such a disaster caused by one of our own ships is surely going to hurt our diplomatic standing with those effected by the damage.\n\nAll we can do now is hope that our remaining forces will be enough to fend off the coming threat."
  qsc_destroyed.1.a: "What do we do now?"
 
  qsc_destroyed.2.name: "Quasarcraft Self Destructed!"
@@ -140,7 +136,7 @@
 
  # Endsinger Event Loc
  qsc_endsinger.1.title: "§MThe Endsinger's Quasaric Melody§!"
- qsc_endsinger.1.desc: "You have used the Endsinger to mark a planet and its system for potential expulsion. To do so, pick from one of the following options.\n\n§MStar Cluster§! will not only obliterate the targeted system, but any systems directly connected to it.\n\n§YSolar System§! will destroy the system that the Endsinger was fired upon, without requiring the star itself to have been picked initially.\n\n§EPlanet§! will simply completely expunge the body the Endsinger was targeting from existence, a most precise application of our ultimate war machine.\n\n§BMulti-Instance Fire Support§! will split the output of our majestic Quasar into several wormholes, however it will cause the main Quasarcraft's weaponry to be much less effective for this time.\n\n$qsc_self_destruct.1$ will have the Quasarcraft disable all systems that are actively compressing the $pc_core_quasar$, allowing it to rapidly expand, destroying the ship and nearby systems.\n\n§RWARNING: Under certain conditions, the $qsc_endsinger.2$ targeting mode may cause bugs and/or crashes.§!"
+ qsc_endsinger.1.desc: "You have used the Endsinger to mark a planet and its system for potential expulsion. To do so, pick from one of the following options.\n\n$qsc_endsinger.2$ will not only obliterate the targeted system, but any systems directly connected to it.\n\n$qsc_endsinger.3$ will destroy the system that the Endsinger was fired upon, without requiring the star itself to have been picked initially.\n\n$qsc_endsinger.4$ will simply completely expunge the body the Endsinger was targeting from existence, a most precise application of our ultimate war machine.\n\n$qsc_endsinger.6$ will split the output of our majestic Quasar into several wormholes, however it will cause the main Quasarcraft's weaponry to be much less effective for this time.\n\n$qsc_self_destruct.1$ will have the Quasarcraft disable all systems that are actively compressing the $pc_core_quasar$, allowing it to rapidly expand, destroying the ship and nearby systems.\n\n§RWARNING: Under certain conditions, the $qsc_endsinger.2$ targeting mode may cause bugs and/or crashes.§!"
  qsc_endsinger.2: "§MStar Cluster§!"
  qsc_endsinger.3: "§YSolar System§!"
  qsc_endsinger.4: "§EPlanet§!"
@@ -175,31 +171,26 @@
  ###########################
 
  # Black Hole Injector Complete
-
  quasarmod_dialogue.1.name: "Mass Injector: Online"
  quasarmod_dialogue.1.desc: "After many years of construction, we have completed and activated the Supermassive Black Hole Manipulator and we are now injecting incredible amounts of stellar plasma into [target.GetName] \n\nIt will only be a matter of time before an accretion disk begins to form around the equator."
  quasarmod_dialogue.1.a: "Hopefully we have enough stellar plasma to keep up..."
 
  # Injection Complete Notification
-
  quasarmod_dialogue.102.name: "Injection Complete"
  quasarmod_dialogue.102.desc: "After several years of stellar plasma injection we have massively increased the mass of [root.from.GetName]. Burning with a brightness more intense than every star in the galaxy combined, the newly formed accretion disk stands as a testament to [root.species.GetName] engineering.\n\nThe Supermassive Black Hole Manipulator has been dismantled and recycled for any usable materials."
  quasarmod_dialogue.102.a: "Perfect."
 
  # Black Hole Harvester Complete
-
  quasarmod_dialogue.2.name: "Mass Harvester: Online"
  quasarmod_dialogue.2.desc: "After many years of construction, we have completed and activated the Supermassive Black Hole Manipulator and we are now harvesting incredible amounts of stellar plasma from [target.GetName] \n \nIt will only be a matter of time before the violence and immense heat of the accretion disk surrounding the quasar is little more than a faded memory."
  quasarmod_dialogue.2.a: "I wonder how many O-Class stars we could create with all this stellar plasma..."
 
  # Harvesting Complete Notification
-
  quasarmod_dialogue.202.name: "Harvesting Complete"
  quasarmod_dialogue.202.desc: "After several years of constant harvesting we have successfully managed to completely deplete the accretion disk of [root.from.GetName], a feat which has never been achieved before. It can now be now considered safe for us to begin work on other projects around the now \"dead\" black hole.\n\nThe Supermassive Black Hole Manipulator has been dismantled and recycled for any usable materials.\n \n§RNOTE TO PLAYER: If the system icon does not change from the quasar icon to the inactive icon, run the \"reload_graphical_map\" command, or save and reload your game.§!"
  quasarmod_dialogue.202.a: "Perfect."
 
 # The destruction of Aiondia
-
  quasarmod_dialogue.3.name: "The Destruction of Aiondia"
  quasarmod_dialogue.3.desc: "After quite possibly one of the most devastating wars in galactic history, §YAiondia§! has fallen to the §Y[aeternite_conqueror.GetName]§!.\n\nFollowing a horrifying demonstration of their flagship $quasarmod_quasarcraft$s offensive capabilities, the §Y[aeternite_conqueror.GetName]§! has utterly annihilated the Aeternite defenders who, despite their incredible technologies, were not able to withstand the power of their quasar powered hyperweapon.\n\nWith the loss of their one and only permanent settlement, the Aeternites can no longer sustain their war effort, and whatever remains of their empire will soon disappear."
  quasarmod_dialogue.3.a: "Another precursor empire bites the dust."

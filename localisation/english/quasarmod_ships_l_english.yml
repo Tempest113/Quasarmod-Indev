@@ -23,8 +23,8 @@
  QUASARWORM_SPRAY_1: "Quasaric Multi-Prism"
 
  # Quasarcraft Components/Actions
- QSC_LASER: "Quasaric Sunsplitter"
- QSC_LASER_DESC: "Similar to the Nicoll-Dyson Beam, the Sunsplitter focuses the diverted power of the Hyperquasar into a beam, which is then split into a myriad of rays by a star-sized prism."
+ QSC_DISRUPTOR: "Quasaric Sunsplitter"
+ QSC_DISRUPTOR_DESC: "Similar to the Nicoll-Dyson Beam, the Sunsplitter focuses the diverted power of the Hyperquasar into a beam, which is then split into a myriad of rays by a star-sized prism."
  QSC_LASER_L: "Jupiter Annihilator"
  QSC_LASER_L_DESC: "These massive lances mounted on the Quasarcraft's Jupiter Arrays rain hell upon your foes, shattering the atoms of their very being."
  QSC_ENERGY_LANCE: "Quasaric Skyripper"

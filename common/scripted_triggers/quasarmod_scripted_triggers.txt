@@ -1,20 +1,61 @@
+# Mod Detection
+
 quasarmod_enabled = { always = yes }
 
+# AP Detection
+
 quasarmod_ap_taken = {
-    OR = {
-        has_ascension_perk = ap_hyperquasaric_megaconstruction
-        has_ascension_perk = ap_hyperquasaric_megaconstruction_no_stellar_manip
-    }
+    has_ascension_perk = ap_hyperquasaric_megaconstruction
 }
 
-quasarmod_ap_taken_no_stellar_manip = { has_ascension_perk = ap_hyperquasaric_megaconstruction_no_stellar_manip }
+quasarmod_ap_taken_no_stellar_nsm = {
+    has_ascension_perk = ap_hyperquasaric_megaconstruction_nsm
+}
 
 any_quasarmod_ap_taken = {
     OR = {
         has_ascension_perk = ap_hyperquasaric_megaconstruction
-        has_ascension_perk = ap_hyperquasaric_megaconstruction_no_stellar_manip
+        has_ascension_perk = ap_hyperquasaric_megaconstruction_nsm
     }
 }
+
+# Megastructure Detection
+
+owns_teraforge_finished = {
+    any_owned_megastructure = {
+        is_megastructure_type = hyperquasaric_teraforge_4
+    }
+}
+
+owns_quasarshipyard_finished = {
+    any_owned_megastructure = {
+        is_megastructure_type = hyperquasaric_megashipyard_4
+    }
+}
+
+owns_smbh_manipulator_finished = {
+    OR = {
+        any_owned_megastructure = {
+            is_megastructure_type = blackhole_manipulator_b6
+        }
+        any_owned_megastructure = {
+            is_megastructure_type = blackhole_manipulator_a6
+        }
+    }
+}
+
+owns_quasarcraft_finished = {
+    any_owned_ship = {
+        is_ship_size = quasarmod_quasarcraft
+    }
+}
+owns_core_mbrain_finished = {
+    any_owned_megastructure = {
+        is_megastructure_type = matrioshka_brain_5_core
+    }
+}
+
+# Misc
 
 quasarmod_is_core_class = {
     OR = {
@@ -31,15 +72,8 @@ planet_has_quasarmod_teraforge_uplink = {
     }
 }
 
-owner_owns_core_mbrain = {
-    owner = {
-        any_owned_megastructure = {
-            is_megastructure_type = matrioshka_brain_5_core
-        }
-    }
-}
-
 can_destroy_planet_with_QSC_ENDSINGER = {
+    optimize_memory
     custom_tooltip = {
         fail_text = is_your_megastructure_system
         NOT = {
@@ -63,12 +97,4 @@ can_destroy_planet_with_QSC_ENDSINGER = {
             quasarmod_is_core_class = yes
         }
     }
-
-    # custom_tooltip = {
-    #     fail_text = cannot_target_aeternite_birch
-    #     NAND = {
-    #         owner = { is_aeternum = yes }
-    #         giga_is_birch_world = yes
-    #     }
-    # }
 }

@@ -443,7 +443,7 @@ quasarcraft_destruction_effects = {
 							limit = {
 								is_planet_habitable = yes
 							}
-							add_modifier = { modifier = "quasarmod_qsc_destroyed_nearby2" days = 3600 }
+							add_modifier = { modifier = "quasarmod_qsc_destroyed_nearby_2" days = 3600 }
 							add_planet_devastation = 50
 						}
 					}

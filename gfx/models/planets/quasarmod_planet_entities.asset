@@ -1,5 +1,3 @@
-# This file is a mess, i know. Most of what i did here was testing, and when things started working i didn't want to try and "clean up" and risk breaking everything
-
 entity = {
     name = "quasar_small_disk_entity"
     scale = 220
