@@ -7,7 +7,7 @@ ap_hyperquasaric_megaconstruction = {
 
 	possible = {
 		custom_tooltip = { fail_text = "requires_ap_gigastructural_constructs"      	has_gigastructural_constructs = yes }
-		custom_tooltip = { fail_text = "requires_ap_stellar_manipulation"				has_ascension_perk = ap_stellar_manipulation }
+		custom_tooltip = { fail_text = "requires_ap_stellar_manipulation"				has_ascension_perk = ap_stellar_manip }
 		custom_tooltip = { fail_text = "requires_tetraengineering"				    has_technology = giga_tech_tetradimensional_engineering }
 		custom_tooltip = { fail_text = "requires_dark_matter"						has_technology = tech_mine_dark_matter }
 		custom_tooltip = { fail_text = "requires_advanced_stellar_manipulation"		has_technology = tech_gigas_stellar_manip_2 }

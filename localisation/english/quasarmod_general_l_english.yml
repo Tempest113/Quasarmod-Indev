@@ -95,7 +95,7 @@
  # Tooltips/Fails #
  ##################
 
- requires_ap_stellar_manipulation: "$TRIGGER_FAIL$Requires the §Y$ap_stellar_manipulation$§! ascension perk."
+ requires_ap_stellar_manipulation: "$TRIGGER_FAIL$Requires the §Y$ap_stellar_manip$§! ascension perk."
  requires_ap_hyperquasaric_megaconstruction: "$TRIGGER_FAIL$Requires the §Y$ap_hyperquasaric_megaconstruction$§! ascension perk."
  requires_advanced_stellar_manipulation: "$TRIGGER_FAIL$Requires the £engineering_research£ §Y$tech_gigas_stellar_manip_2$§! technology."
  requires_discovered_giga_core: "$TRIGGER_FAIL$Requires the discovery of the §YGalactic Core§! or an $ehof_ehofp4$ to find one."
