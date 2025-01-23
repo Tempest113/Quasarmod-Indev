@@ -1,0 +1,164 @@
+﻿l_simp_chinese:
+
+ ###########################
+ # Hyperquasaric Teraforge #
+ ###########################
+
+ hyperquasaric_teraforge_0: "$gc_tera$Hyperquasaric Teraforge Site"
+ hyperquasaric_teraforge_0_DESC: "This construction site will act as the staging ground for the largest source of alloys and ships in galactic history."
+ hyperquasaric_teraforge_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_advanced_resource_production$ \nUses a §MHyperquasar§! to forge £minerals£ §Y$minerals$§! into £alloys£ §Y$alloys$§! and increases overall §YAlloy Production§! - $giga_list_removes_system_planets$\n§LA massive forge built around a Hyperquasar, utilizing its energies to produce alloys.§!"
+
+ hyperquasaric_teraforge_1: "Hyperquasaric Teraforge Inner Ring"
+ hyperquasaric_teraforge_1_DESC: "This gargantuan ring will act serve as the foundation for the rest of the structure to be built upon, as well as generating a magnetic field powerful enough to protect the terastructure from the accretion disk of the quasar which it encircles." #quasars accretion disk which can reach temperatures exceeding 1 billion kelvin.
+
+ hyperquasaric_teraforge_2: "Hyperquasaric Teraforge Mass Collectors"
+ hyperquasaric_teraforge_2_DESC: "Employing advanced gravitational manipulation technology, these structures extract raw materials from the quasar. Their sole purpose is to supply the alloy processors with the essential materials used in alloy production."
+
+ hyperquasaric_teraforge_3: "Hyperquasaric Teraforge Alloy Processing"
+ hyperquasaric_teraforge_3_DESC: "Within the teraforges alloy processing arrays, advanced nanoforges and fusion smelters transform raw minerals captured from the hyperquasar into pristine, ultra-dense neutronium alloys, harnessing the quasar's energy to forge alloys of a higher quality than anywhere else in the galaxy."
+
+ hyperquasaric_teraforge_4: "Hyperquasaric Teraforge"
+ hyperquasaric_teraforge_4_DESC: "An active Hyperquasaric Teraforge. Its immensely powerful mass harvesters siphon incredible amounts of raw materials from the quasar, providing the material required to forge an amount of alloys so large that we could construct entire planets out of pure neutronium if we so choose."
+
+ quasaric_teraforge_5: "Hyperquasaric Megashipyard"
+ quasaric_teraforge_5_DESC: "An active Hyperquasaric Megashipyard. While we had to sacrifice a significant amount of alloy processing power, the Hyperquasaric Megashipyard is undoubtedly a worthy upgrade to the Teraforge. Grants +250 shipyard capacity, +250% ship build speed and -25% build cost."
+
+ building_teraforge_uplink_base: "Hyperquasaric Teraforge Uplink"
+ building_teraforge_uplink_base_plural: "Hyperquasaric Teraforge Uplinks"
+ building_teraforge_uplink_base_desc: "Upon being upgraded and specialized, the Hyperquasaric Teraforge Uplink will provide powerful buffs to industry across the entire planet."
+
+ building_teraforge_uplink_alloys: "Quasaric Alloy Plants"
+ building_teraforge_uplink_alloys_plural: "Quasaric Alloy Plants"
+ building_teraforge_uplink_alloys_desc: "By allowing planetside industry to coordinate with and outsource work to the Hyperquasaric Teraforge, alloy production on the planet can be greatly increased."
+
+ building_teraforge_uplink_consumer_goods: "Quasaric Factory Uplink"
+ building_teraforge_uplink_consumer_goods_plural: "Quasaric Factory Uplinks"
+ building_teraforge_uplink_consumer_goods_desc: "While the primary focus of the Hyperquasaric Teraforge is alloy production, allowing planetary industry to repurpose even 1% of the structure towards assisting in planetside consumer goods production, output can be massively increased."
+
+
+
+ #######################################
+ # Supermassive Black Hole Manipulator #
+ #######################################
+
+ blackhole_manipulator_0: "$gc_tera$Supermassive Black Hole Manipulator Site"
+ blackhole_manipulator_0_DESC: "This construction site will act as the staging ground for one of our most recent and largest stellar manipulation projects, the Supermassive Black Hole Manipulator."
+ blackhole_manipulator_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_miscellaneous$ \nCan change the type of supermassive black hole in the galactic core by harvesting or injecting £sr_stellar_plasma£ §Y$sr_stellar_plasma$§!"
+
+ blackhole_manipulator_1: "Black Hole Manipulator Frame"
+ blackhole_manipulator_1_DESC: "This gargantuan frame will soon support a mass injection and harvesting array so incredibly large that entire stars worth of mass will be moved every day. Also capable from generating an immense magnetic field, the frame restricts the accretion disk of the quasar to a more manageable size."
+
+ blackhole_manipulator_2: "Black Hole Manipulator Tetradimensional Supports"
+ blackhole_manipulator_2_DESC: "These structural supports, partially constructed in a higher dimension will prevent the structure from collapsing from underneath its immense weight which is greater than many of the stars in our galaxy."
+
+ blackhole_manipulator_3: "Black Hole Manipulator Plasma Redirection Array"
+ blackhole_manipulator_3_DESC: "The plasma redirection array is the main focus of the entire megastructure, allowing us to feed the black hole below with incredible amounts of stellar plasma. We also have the ability to do the exact opposite, harvesting the hyperquasar's accretion disk and slowing its rotation, as well as capturing energy from its relativistic jets, effectively killing the active core, although this does not mean that we will be unable to revive it..."
+
+ blackhole_manipulator_4: "Black Hole Manipulator Worker Drone Habitation Ring"
+ blackhole_manipulator_4_DESC: "Until we are able to construct radiation shielding around the black hole, automated drones will have to conduct internal maintenance and on-site management."
+
+ blackhole_manipulator_5: "Black Hole Manipulator Radiation Shielding"
+ blackhole_manipulator_5_DESC: "The process of injecting mass into a black hole, as well as harvesting it releases an incredible amount of energy, much of which is in the form of ionizing radiation. In order to prevent our Supermassive Black Hole Manipulator from sterilizing the inner systems of the galaxy, this stage of the megastructure prevents radiation from escaping and causing harm to life, both biological and synthetic."
+
+ blackhole_manipulator_a6: "Supermassive Black Hole Stellar Mass Injector"
+ blackhole_manipulator_a6_DESC: "We have begun injecting stellar mass into the inactive core in order to transform it to better suit our needs as a hyperquasar."
+
+ blackhole_manipulator_b6: "Hyperquasar Stellar Mass Harvester"
+ blackhole_manipulator_b6_DESC: "We have begun harvesting the accretion disk and relativistic jets of the hyperquasar in order to change its status from an active core to an inactive one."
+
+
+
+ ###############################
+ # Gargantuan Matrioshka Brain #
+ ###############################
+
+ matrioshka_brain_0_core: "$gc_tera$Gargantuan Matrioshka Brain Site"
+ matrioshka_brain_0_core_DESC: "This construction site will serve as a staging depot to host the large amounts of resources and personnel needed to construct a Gargantuan Matrioshka Brain."
+ matrioshka_brain_0_core_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_science_production$ \nHarvests a §YSupermassive Black Hole§!'s energy to power the largest computing complex in the galaxy, producing £physics_research£ £society_research£ £engineering_research£ §YResearch§! - $giga_list_removes_system_planets$"
+
+ matrioshka_brain_1_core: "Gargantuan Matrioshka Brain Hawking Capacitors"
+ matrioshka_brain_1_core_DESC: "Employing similar technology to the $name_hraemc$, albeit on a much larger scale, this array of Capacitors and Chrono-Accelerators accelerate the emission of hawking radiation from the black hole below, collecting and storing energy for later use."
+
+ matrioshka_brain_2_core: "Gargantuan Matrioshka Brain Main Databank"
+ matrioshka_brain_2_core_DESC: "The main databanks are now in place around the black hole, and top-of-the-line computers have been installed to manage the raw amount of data generated by scientific research. Most of the data we've gathered so far has been stored and is currently being studied here."
+
+ matrioshka_brain_3_core: "Gargantuan Matrioshka Brain Central Processor"
+ matrioshka_brain_3_core_DESC: "The central processors are huge computers stretching around the entire black hole, reaching tens of AU in diameter. The heat generated from the main databanks is used to power the central processors, greatly increasing the efficiency of the device. These computers are extremely powerful."
+
+ matrioshka_brain_4_core: "Gargantuan Matrioshka Brain Quantum Calculators"
+ matrioshka_brain_4_core_DESC: "Complex calculations pertaining to the very nature of the universe are being processed in these quantum calculators. They use the heat from the central processor to function, making them incredibly efficient."
+
+ matrioshka_brain_5_core: "Gargantuan Matrioshka Brain"
+ matrioshka_brain_5_core_DESC: "A fully operational Gargantuan Matrioshka Brain, including the outermost layer consisting of the cross-referential archives which coordinate the other components, boosting efficiency to its maximum."
+
+ decision_quasarmod_establish_core_mbrain_uplink: "Establish $matrioshka_brain_5_core$ Uplink"
+ decision_quasarmod_establish_core_mbrain_uplink_desc: "Establish a connection to our §Y$matrioshka_brain_5_core$§! in the galactic core, massively increasing the potency of all $building_giga_matrioshka_brain_uplink$ buildings on the planet."
+
+ decision_quasarmod_sever_core_mbrain_uplink: "Sever $matrioshka_brain_5_core$ Uplink"
+ decision_quasarmod_sever_core_mbrain_uplink_desc: "Sever this planets connection to our $matrioshka_brain_5_core$."
+ 
+ quasarmod_connected_to_core_mbrain_mod: "Gargantuan Matrioshka Brain Uplink"
+ quasarmod_connected_to_core_mbrain_mod_desc: "This planet is connected to a $matrioshka_brain_5_core$ via advanced tachyon relays, this increase in available processing power results in a massive increase in potency for our $building_giga_matrioshka_brain_uplink$ buildings."
+ mod_planet_giga_matrioshka_brain_uplinks_energy_upkeep_mult: "Matrioshka Brain Uplink Energy Credits Upkeep"
+
+
+
+ ##############################
+ # Hyperquasaric Megashipyard #
+ ##############################
+
+ hyperquasaric_megashipyard_0: "$gc_tera$Hyperquasaric Megashipyard Site"
+ hyperquasaric_megashipyard_0_DESC: "This construction site will act as the staging ground for the largest and most powerful shipbuilding facility in our corner of the universe."
+ hyperquasaric_megashipyard_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_ship_production$ §H(250 Shipyards)§!\nUses a §MHyperquasar§! to assemble §YShips§!, produce £minerals£ §YMinerals§!, §YNaval Capacity§! and §YShip Build Speed§! - $giga_list_removes_system_planets$ - $giga_list_category_requires_starbase_uplink$\n§LA facility capable of both creating and managing entire galaxy spanning armadas.§!"
+
+ hyperquasaric_megashipyard_1: "Hyperquasaric Megashipyard Accretion Harvester"
+ hyperquasaric_megashipyard_1_DESC: "Employing immensely powerful magnetic fields to reshape the accretion disk below, the Accretion Harvester exists to gather raw materials and transport them to the not yet built Purification Ring for further refinement."
+
+ hyperquasaric_megashipyard_2: "Hyperquasaric Megashipyard Purification Ring"
+ hyperquasaric_megashipyard_2_DESC: "The Purification Ring takes the raw materials gathered by the Accretion Harvester and refines it into usable minerals, a large portion of which is used purely to maintain the structure. While not appearing to be physically connected to the Accretion Harvester, the Purification Ring is anchored to the structure in a higher dimension through the use of tetradimensional engineering."
+
+ hyperquasaric_megashipyard_3: "Hyperquasaric Megashipyard Distribution Ring"
+ hyperquasaric_megashipyard_3_DESC: "Acting as both structural and logistical support, the distribution ring manages the movement of materials and components throughout the structure as a whole."
+
+ hyperquasaric_megashipyard_4: "Hyperquasaric Megashipyard"
+ hyperquasaric_megashipyard_4_DESC: "An active Hyperquasaric Megashipyard, capable of both building and handling the logistics of a fleet larger than any ever built before."
+
+ sm_quasarshipyard_shipyard_uplink: "Hyperquasaric Megashipyard Uplink"
+ sm_quasarshipyard_shipyard_uplink_desc: "An uplink connecting the starbase to the hyperquasaric teraforge. Grants 250 shipyard slots and the ability to construct celestial warships."
+ sm_quasarshipyard_shipyard_uplink_modifier: "Ship Modifier:$TABBED_NEW_LINE$ Ship Starting Experience: §G+250§! \nStarbase Modifier:$TABBED_NEW_LINE$Shipyard Capacity: §G+250§!$TABBED_NEW_LINE$Ship Build Speed: §G+250%§!\nShipyards: §YCelestial Warship Construction Enabled§!"
+
+
+
+ ##########################
+ # Gargantuan Quasarcraft #
+ ##########################
+
+ quasarcraft_0: "$gc_tera$Quasarcraft Construction Site"
+ quasarcraft_0_DESC: "This construction site will facilitate the construction of the largest instrument of war that the galaxy has ever seen.."
+ quasarcraft_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_weaponry$\nConverts an §YActive Hyperquasar§! into a terastructural warship several dozen AU in diameter. Fielding a hyperweapon known as the Endsinger, the $quasarmod_quasarcraft$ is capable of destroying entire star clusters."
+ quasarcraft_0_CONSTRUCTION_INFO_DELAYED: "$giga_list_additional_data$ - The Quasarcraft is capable of destroying either singular §YPlanets§!, §YSolar Systems§! or entire §YStar Clusters§!. It is a roving hyperweapon of untold destruction, and your enemies might seek to disrupt it's construction process."
+
+ quasarcraft_1: "Quasarcraft Superstructure"
+ quasarcraft_1_DESC: "The core of the $quasarmod_quasarcraft$, housing all of the future warships most vital subsystems, matrioshka targeting arrays and Hyperquasar confinement systems."
+
+ quasarcraft_2: "Quasarcraft Halo"
+ quasarcraft_2_DESC: "The Quasarcrafts signature polar-equatorial ring, with integrated gravity manipulation arrays and transdimensional anchors, the halo will play the all-important role of the weapons foundation."
+
+ quasarcraft_3: "Quasarcraft Weapon Systems"
+ quasarcraft_3_DESC: "The incredible energy output of the Hyperquasar allows for the utilization of weapons several orders of magnitude more powerful than those found on a typical systemcraft, all we need to do is build them."
+
+ quasarcraft_4: "The $quasarmod_quasarcraft$"
+ quasarcraft_4_DESC: "The now completed Quasarcraft, ready to purge all that is evil from the universe."
+
+ # QSO Upgrade Version
+ quasarcraft_1_alt: "$quasarcraft_2$"
+ quasarcraft_1_alt_DESC: "The Quasarcrafts signature polar-equatorial ring, supported by the modified frame of the $quasi_stellar_obliterator_5$"
+
+ quasarcraft_2_alt: "$quasarcraft_3$"
+ quasarcraft_2_alt_DESC: "The quasaric energy that would have once been solely used for destruction on an interstellar scale will be redirected throughout the Quasarcraft itself, transforming the $quasi_stellar_obliterator_5$ into the ultimate mobile weapons platform."
+
+ quasarcraft_3_alt: "$quasarcraft_4$"
+ quasarcraft_3_alt_DESC: "The now completed Quasarcraft, ready to purge all that is evil from the universe."
+
+ decision_quasarcraft_crew: "Acquire Quasarcraft Crew"
+ decision_quasarcraft_crew_desc: "Extract 60 pops from this world to serve as the Quasarcraft's crew."
