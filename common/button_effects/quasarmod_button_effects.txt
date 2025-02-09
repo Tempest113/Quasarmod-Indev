@@ -189,7 +189,8 @@ quasarmod_quasarcraft_disabled = {
 quasarmod_quasarcraft_tt = {
     potential = { exists = from from = { has_country_flag = giga_menu_page_03 } }
     allow = { always = yes }
-    effect = { custom_tooltip = quasarcraft_0_alt_MEGASTRUCTURE_DETAILS }
+    effect = { custom_tooltip = quasarcraft_0_MEGASTRUCTURE_DETAILS
+    }
 }
 
 quasarmod_teraforge_tt = {
@@ -197,6 +198,7 @@ quasarmod_teraforge_tt = {
     allow = { always = yes }
     effect = { custom_tooltip = hyperquasaric_teraforge_0_MEGASTRUCTURE_DETAILS }
 }
+
 quasarmod_hyperquasaric_megashipyard_tt = {
     potential = { exists = from from = { has_country_flag = giga_menu_page_03 } }
     allow = { always = yes }
