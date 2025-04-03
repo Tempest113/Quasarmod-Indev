@@ -40,7 +40,7 @@ building_teraforge_uplink_base = {
     }
 
     prerequisites = {
-        tech_hyperquasaric_teraforge
+        tech_quasarmod_hyperquasaric_teraforge
     }
     show_tech_unlock_if = { always = no }
 
@@ -131,7 +131,7 @@ building_teraforge_uplink_alloys = {
     }
 
     prerequisites = {
-        tech_hyperquasaric_teraforge
+        tech_quasarmod_hyperquasaric_teraforge
     }
     show_tech_unlock_if = { always = no }
 
@@ -268,7 +268,7 @@ building_teraforge_uplink_consumer_goods = {
     }
 
     prerequisites = {
-        tech_hyperquasaric_teraforge
+        tech_quasarmod_hyperquasaric_teraforge
     }
     show_tech_unlock_if = { always = no }
 

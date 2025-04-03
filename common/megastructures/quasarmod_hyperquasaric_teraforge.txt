@@ -7,7 +7,7 @@ hyperquasaric_teraforge_0 = {
 	construction_entity = "construction_platform_entity"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -150 y = -7 }
-	prerequisites = { tech_hyperquasaric_teraforge }
+	prerequisites = { tech_quasarmod_hyperquasaric_teraforge }
 	show_prereqs = no
 
 	build_time = 1800
@@ -27,8 +27,8 @@ hyperquasaric_teraforge_0 = {
 	}
 
 	potential = {
-		any_quasarmod_ap_taken = yes
-		has_technology = tech_hyperquasaric_teraforge
+		quasarmod_ap_taken = yes
+		has_technology = tech_quasarmod_hyperquasaric_teraforge
 	}
 
 	possible = {
@@ -70,7 +70,7 @@ hyperquasaric_teraforge_1 = {
 
 	possible = {
 		from = {
-			has_technology = tech_hyperquasaric_teraforge
+			has_technology = tech_quasarmod_hyperquasaric_teraforge
 		}
 	}
 
@@ -117,7 +117,7 @@ hyperquasaric_teraforge_2 = {
 
 	possible = {
 		from = {
-			has_technology = tech_hyperquasaric_teraforge
+			has_technology = tech_quasarmod_hyperquasaric_teraforge
 		}
 	}
 
@@ -158,7 +158,7 @@ hyperquasaric_teraforge_3 = {
 
 	possible = {
 		from = {
-			has_technology = tech_hyperquasaric_teraforge
+			has_technology = tech_quasarmod_hyperquasaric_teraforge
 		}
 	}
 
@@ -198,7 +198,7 @@ hyperquasaric_teraforge_4 = {
 
 	possible = {
 		from = {
-			has_technology = tech_hyperquasaric_teraforge
+			has_technology = tech_quasarmod_hyperquasaric_teraforge
 		}
 	}
 

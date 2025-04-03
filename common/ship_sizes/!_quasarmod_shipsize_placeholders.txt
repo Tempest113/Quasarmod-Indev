@@ -1,4 +1,5 @@
 # Irony this is a placeholder file please ignore it
+# These only exist so the game doesn't throw a tantrum when acot is disabled
 acot_precusor_starbase = {
     resources = { category = starbase_stations }
     potential_construction = { always = no }

@@ -6,7 +6,7 @@ blackhole_manipulator_0 = {
 	entity = "construction_platform_entity"
 	construction_entity = "construction_platform_entity"
 	entity_offset = { x = -150 y = -7 }
-	prerequisites = { tech_smbh_manipulator }
+	prerequisites = { tech_quasarmod_smbh_manipulator }
 	show_prereqs = no
 	construction_blocks_and_blocked_by = none
 
@@ -27,8 +27,8 @@ blackhole_manipulator_0 = {
 	}
 
 	potential = {
-		any_quasarmod_ap_taken = yes
-		has_technology = tech_smbh_manipulator
+		quasarmod_ap_taken = yes
+		has_technology = tech_quasarmod_smbh_manipulator
 	}
 
 	possible = {
@@ -73,7 +73,7 @@ blackhole_manipulator_1 = {
 
 	possible = {
 		from = {
-			has_technology = tech_smbh_manipulator
+			has_technology = tech_quasarmod_smbh_manipulator
 		}
 	}
 
@@ -117,7 +117,7 @@ blackhole_manipulator_2 = {
 
 	possible = {
 		from = {
-			has_technology = tech_smbh_manipulator
+			has_technology = tech_quasarmod_smbh_manipulator
 		}
 	}
 	
@@ -154,7 +154,7 @@ blackhole_manipulator_3 = {
 
 	possible = {
 		from = {
-			has_technology = tech_smbh_manipulator
+			has_technology = tech_quasarmod_smbh_manipulator
 		}
 	}
 
@@ -196,7 +196,7 @@ blackhole_manipulator_4 = {
 
 	possible = {
 		from = {
-			has_technology = tech_smbh_manipulator
+			has_technology = tech_quasarmod_smbh_manipulator
 		}
 	}
 
@@ -233,7 +233,7 @@ blackhole_manipulator_5 = {
 
 	possible = {
 		from = {
-			has_technology = tech_smbh_manipulator
+			has_technology = tech_quasarmod_smbh_manipulator
 		}
 	}
 
@@ -292,7 +292,7 @@ blackhole_manipulator_a6 = {
 			}
 		}
 		from = {
-			has_technology = tech_smbh_manipulator
+			has_technology = tech_quasarmod_smbh_manipulator
 		}
 
 	}
@@ -343,7 +343,7 @@ blackhole_manipulator_b6 = {
 			}
 		}
 		from = {
-			has_technology = tech_smbh_manipulator
+			has_technology = tech_quasarmod_smbh_manipulator
 		}
 	}
 

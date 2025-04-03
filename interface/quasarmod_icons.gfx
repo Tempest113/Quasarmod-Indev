@@ -5,11 +5,6 @@ spriteTypes = {
 		textureFile = gfx/interface/icons/ascension_perks/ap_hyperquasaric_megaconstruction.dds
 	}
 
-	spriteType = {
-		name = GFX_ap_hyperquasaric_megaconstruction_nsm
-		textureFile = gfx/interface/icons/ascension_perks/ap_hyperquasaric_megaconstruction.dds
-	}
-
 	# Hyperquasaric Teraforge
 	spriteType = {
 		name = GFX_hyperquasaric_teraforge_0_outliner_icon
