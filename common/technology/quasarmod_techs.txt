@@ -1,48 +1,113 @@
-tech_hyperquasaric_teraforge = {
-	cost = @giga_tier8cost1
-	area = engineering
-	tier = 5
-	category = { industry }
-	is_rare = yes
-	weight = 0
+#####################
+### Gateway Techs ###
+#####################
 
-	potential = {
-		any_quasarmod_ap_taken = yes
-		NOT = { has_global_flag = quasarmod_teraforge_disabled }
-	}
-
-	prereqfor_desc = {
-		custom = { title = "header_04_lud_insane" desc = "header_04_lud_insane_desc" }
-		custom = { title = "TECH_UNLOCK_HYPERQUASARIC_TERAFORGE_TITLE" desc = "TECH_UNLOCK_HYPERQUASARIC_TERAFORGE_DESC" }
-	}
-}
-
-tech_hyperquasaric_megashipyard = {
-	cost = @giga_tier8cost1
-	area = society
-	tier = 5
-	category = { military_theory }
-	is_rare = yes
-	weight = @giga_tier7weight3
-
-	potential = {
-		any_quasarmod_ap_taken = yes
-		NOT = { has_global_flag = quasarmod_shipyard_disabled }
-	}
-
-	prereqfor_desc = {
-		custom = { title = "header_04_lud_insane" desc = "header_04_lud_insane_desc" }
-		custom = { title = "TECH_UNLOCK_HYPERQUASARIC_MEGASHIPYARD_TITLE" desc = "TECH_UNLOCK_HYPERQUASARIC_MEGASHIPYARD_DESC" }
-	}
-}
-
-tech_smbh_manipulator ={
-	cost = @giga_tier7cost3
+tech_quasarmod_pentadimensional_engineering = {
+	cost = @giga_tier8cost3
 	area = physics
 	tier = 5
 	category = { field_manipulation }
 	is_rare = yes
 	weight = 0
+	modifier = { megastructure_build_speed_mult = 0.15 }
+
+	icon = tech_quasarcraft_2
+
+	potential = {
+		has_any_galactic_wonders_dlc = yes
+		quasarmod_ap_taken = yes
+	}
+}
+
+tech_quasarmod_gigakelvin_resistant_alloys = {
+	cost = @giga_tier8cost3
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	is_rare = yes
+	weight = 0
+	modifier = { country_alloys_produces_mult = 0.1 }
+
+	icon = tech_quasarcraft_3 # Temp, to be replaced when i can find a better icon
+
+	potential = {
+		has_any_galactic_wonders_dlc = yes
+		quasarmod_ap_taken = yes
+	}
+}
+
+###########################
+### Megastructure Techs ###
+###########################
+
+tech_quasarmod_hyperquasaric_teraforge = {
+	cost = @giga_tier8cost1
+	area = engineering
+	tier = 5
+	category = { industry }
+	is_rare = yes
+	weight = @giga_tier7weight1
+
+	potential = {
+		quasarmod_ap_taken = yes
+		NOT = { has_global_flag = quasarmod_teraforge_disabled }
+	}
+
+	prerequisites = { tech_quasarmod_pentadimensional_engineering tech_quasarmod_gigakelvin_resistant_alloys }
+
+	prereqfor_desc = {
+		custom = { title = "header_04_lud_insane" desc = "header_04_lud_insane_desc" }
+		custom = { title = "TECH_UNLOCK_HYPERQUASARIC_TERAFORGE_TITLE" desc = "TECH_UNLOCK_HYPERQUASARIC_TERAFORGE_DESC" }
+	}
+
+	weight_modifier = {
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_quasarmod_hyperquasaric_teraforge
+		}
+	}
+
+}
+
+tech_quasarmod_hyperquasaric_megashipyard = {
+	cost = @giga_tier8cost1
+	area = society
+	tier = 5
+	category = { military_theory }
+	is_rare = yes
+	weight = @giga_tier7weight1
+
+	potential = {
+		quasarmod_ap_taken = yes
+		NOT = { has_global_flag = quasarmod_shipyard_disabled }
+	}
+
+	prerequisites = { tech_quasarmod_pentadimensional_engineering tech_quasarmod_gigakelvin_resistant_alloys }
+
+	prereqfor_desc = {
+		custom = { title = "header_04_lud_insane" desc = "header_04_lud_insane_desc" }
+		custom = { title = "TECH_UNLOCK_HYPERQUASARIC_MEGASHIPYARD_TITLE" desc = "TECH_UNLOCK_HYPERQUASARIC_MEGASHIPYARD_DESC" }
+	}
+
+	weight_modifier = {
+		inline_script = technology/tech_weight_boni/militarist_tech_weight_bonus
+		inline_script = technology/tech_weight_boni/shipbuilding_tech_weight_bonus
+
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_quasarmod_hyperquasaric_megashipyard
+		}
+	}
+
+}
+
+tech_quasarmod_smbh_manipulator ={
+	cost = @giga_tier7cost3
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	is_rare = yes
+	weight = @giga_tier7weight1
 
 	potential = {
 		quasarmod_ap_taken = yes
@@ -52,218 +117,131 @@ tech_smbh_manipulator ={
 		}
 	}
 
+	prerequisites = { tech_quasarmod_pentadimensional_engineering tech_quasarmod_gigakelvin_resistant_alloys }
+
 	prereqfor_desc = {
 		custom = { title = "header_02_tetra"	desc = "header_02_tetra_desc" }
 		custom = { title = "TECH_UNLOCK_BLACKHOLE_MANIPULATOR_TITLE" desc = "TECH_UNLOCK_BLACKHOLE_MANIPULATOR_DESC" }
 	}
+
+	weight_modifier = {
+		inline_script = technology/tech_weight_boni/expansionist_tech_weight_bonus
+		inline_script = technology/tech_weight_boni/exploitative_tech_weight_bonus
+
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_quasarmod_smbh_manipulator
+		}
+	}
+
 }
 
-tech_core_mbrain ={
+tech_quasarmod_core_mbrain ={
 	cost = @giga_tier8cost1
 	area = physics
 	tier = 5
 	category = { computing }
 	is_rare = yes
-	weight = 0
+	weight = @giga_tier7weight1
 
 	potential = {
-		any_quasarmod_ap_taken = yes
+		quasarmod_ap_taken = yes
 		NOT = { has_global_flag = quasarmod_mbrain_disabled }
 	}
+
+	prerequisites = { tech_quasarmod_pentadimensional_engineering }
 
 	prereqfor_desc = {
 		custom = { title = "header_04_lud_insane" desc = "header_04_lud_insane_desc" }
 		custom = { title = "TECH_UNLOCK_GARGANTUAN_MBRAIN_TITLE" desc = "TECH_UNLOCK_GARGANTUAN_MBRAIN_DESC" }
 	}
+
+	weight_modifier = {
+		inline_script = technology/tech_weight_boni/scientist_tech_weight_bonus
+
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_quasarmod_core_mbrain
+		}
+	}
+
 }
 
 # Quasarcraft Techs
-tech_quasarcraft_1 = {
+
+tech_quasarmod_quasarcraft = {
 	cost = @giga_tier8cost1
 	area = society
 	tier = 5
 	category = { military_theory }
 	is_rare = yes
-	weight = 0
-	prereqfor_desc = {
-		custom = { title = "allow_quasarcraft_p0" desc = "desc_quasarcraft_p0" }
-	}
-
-	potential = {
-		any_quasarmod_ap_taken = yes
-		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
-	}
-}
-
-tech_quasarcraft_2 = {
-	cost = @giga_tier8cost1
-	area = physics
-	tier = 5
-	category = { field_manipulation }
-	is_rare = yes
-	prerequisites = { "tech_quasarcraft_1" }
 	weight = @giga_tier7weight1
-	prereqfor_desc = {
-		hide_prereq_for_desc = ship
-		hide_prereq_for_desc = component
-		hide_prereq_for_desc = feature
-		hide_prereq_for_desc = resource
-		custom = { title = "allow_quasarcraft_p1" desc = "desc_quasarcraft_p1" }
-	}
 
 	potential = {
-		any_quasarmod_ap_taken = yes
-		has_technology = tech_quasarcraft_1
+		quasarmod_ap_taken = yes
+		host_has_dlc = "Apocalypse"
 		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
+	}
+
+	prerequisites = { tech_quasarmod_pentadimensional_engineering tech_quasarmod_gigakelvin_resistant_alloys }
+
+	prereqfor_desc = {
+		custom = { title = "header_04_lud_insane" desc = "header_04_lud_insane_desc" }
+		custom = { title = "TECH_UNLOCK_QUASARCRAFT_TITLE" desc = "TECH_UNLOCK_QUASARCRAFT_DESC"}
 	}
 
 	weight_modifier = {
 		inline_script = technology/tech_weight_boni/militarist_tech_weight_bonus
-
 		inline_script = {
 			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_quasarcraft_2
+			TECHNOLOGY = tech_quasarmod_quasarcraft
 		}
 	}
 }
 
-tech_quasarcraft_3 = {
-	cost = @giga_tier8cost2
-	area = engineering
-	tier = 5
-	category = { voidcraft }
-	is_rare = yes
-	prerequisites = { "tech_quasarcraft_2" }
-	weight = @giga_tier7weight1
-	prereqfor_desc = {
-		hide_prereq_for_desc = ship
-		hide_prereq_for_desc = component
-		hide_prereq_for_desc = feature
-		hide_prereq_for_desc = resource
-		custom = { title = "allow_quasarcraft_p2"	desc = "desc_quasarcraft_p2" }
-	}
-
-	potential = {
-		any_quasarmod_ap_taken = yes
-		has_technology = tech_quasarcraft_2
-		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
-	}
-
-	weight_modifier = {
-		inline_script = technology/tech_weight_boni/militarist_tech_weight_bonus
-
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_quasarcraft_3
-		}
-	}
-}
-
-tech_quasarcraft_4 = {
-	cost = @giga_tier8cost2
-	area = physics
-	tier = 5
-	category = { particles }
-	is_rare = yes
-	prerequisites = { "tech_quasarcraft_3" }
-	weight = @giga_tier7weight2
-	prereqfor_desc = {
-		hide_prereq_for_desc = ship
-		hide_prereq_for_desc = component
-		hide_prereq_for_desc = feature
-		hide_prereq_for_desc = resource
-		custom = { title = "allow_quasarcraft_p3"	desc = "desc_quasarcraft_p3" }
-	}
-
-	potential = {
-		any_quasarmod_ap_taken = yes
-		has_technology = tech_quasarcraft_3
-		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
-	}
-
-	weight_modifier = {
-		inline_script = technology/tech_weight_boni/militarist_tech_weight_bonus
-
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_quasarcraft_4
-		}
-	}
-}
-
-tech_quasarcraft_5 = {
-	cost = @giga_tier8cost3
-	area = physics
-	tier = 5
-	category = { field_manipulation }
-	is_rare = yes
-	prerequisites = { "tech_quasarcraft_4" }
-	weight = @giga_tier7weight2
-
-	technology_swap = {
-		inherit_icon = yes
-		name = tech_quasarcraft_5_swap
-		trigger = {
-			has_global_flag = ehof_disabled
-		}
-
-		prereqfor_desc = {
-			hide_prereq_for_desc = ship
-			hide_prereq_for_desc = component
-			hide_prereq_for_desc = feature
-			hide_prereq_for_desc = resource
-			custom = { title = "allow_quasarcraft_p4"	desc = "desc_quasarcraft_p4" }
-		}
-
-	}
-
-	prereqfor_desc = {
-		hide_prereq_for_desc = ship
-		hide_prereq_for_desc = component
-		hide_prereq_for_desc = feature
-		hide_prereq_for_desc = resource
-		custom = { title = "allow_quasarcraft_p4"	desc = "desc_quasarcraft_p4" }
-	}
-
-	potential = {
-		any_quasarmod_ap_taken = yes
-		has_technology = tech_quasarcraft_4
-		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
-	}
-
-	weight_modifier = {
-		inline_script = technology/tech_weight_boni/militarist_tech_weight_bonus
-
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_quasarcraft_5
-		}
-	}
-}
-
-# tech_quasarcraft_6 = {
-# 	cost = @giga_tier8cost3
-# 	area = engineering
+# tech_quasarcraft_1 = {
+# 	cost = @giga_tier8cost1
+# 	area = society
 # 	tier = 5
-# 	category = { voidcraft }
-# 	is_dangerous = yes
+# 	category = { military_theory }
 # 	is_rare = yes
-# 	prerequisites = { "tech_quasarcraft_5" }
-# 	weight = @giga_tier7weight3
+# 	weight = @giga_tier7weight1
 #
 # 	potential = {
-# 		any_quasarmod_ap_taken = yes
-# 		has_technology = tech_quasarcraft_5
+# 		quasarmod_ap_taken = yes
+# 		host_has_dlc = "Apocalypse"
 # 		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
 # 	}
+#
+# 	prerequisites = { tech_quasarmod_pentadimensional_engineering tech_quasarmod_gigakelvin_resistant_alloys }
+#
+# 	prereqfor_desc = {
+# 		custom = { title = "allow_quasarcraft_p0" desc = "desc_quasarcraft_p0" }
+# 	}
+# }
+#
+# tech_quasarcraft_2 = {
+# 	cost = @giga_tier8cost1
+# 	area = physics
+# 	tier = 5
+# 	category = { field_manipulation }
+# 	is_rare = yes
+# 	prerequisites = { "tech_quasarcraft_1" }
+# 	weight = @giga_tier7weight1
 #
 # 	prereqfor_desc = {
 # 		hide_prereq_for_desc = ship
 # 		hide_prereq_for_desc = component
 # 		hide_prereq_for_desc = feature
 # 		hide_prereq_for_desc = resource
-# 		custom = { title = "header_04_lud_insane"	desc = "header_04_lud_insane_desc" }
-# 		custom = { title = "allow_quasarcraft_p5"	desc = "desc_quasarcraft_p5" }
+# 		custom = { title = "allow_quasarcraft_p1" desc = "desc_quasarcraft_p1" }
+# 	}
+#
+# 	potential = {
+# 		quasarmod_ap_taken = yes
+# 		host_has_dlc = "Apocalypse"
+# 		has_technology = tech_quasarcraft_1
+# 		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
 # 	}
 #
 # 	weight_modifier = {
@@ -271,7 +249,124 @@ tech_quasarcraft_5 = {
 #
 # 		inline_script = {
 # 			script = technologies/rare_technologies_weight_modifiers
-# 			TECHNOLOGY = tech_quasarcraft_6
+# 			TECHNOLOGY = tech_quasarcraft_2
+# 		}
+# 	}
+# }
+#
+# tech_quasarcraft_3 = {
+# 	cost = @giga_tier8cost2
+# 	area = engineering
+# 	tier = 5
+# 	category = { voidcraft }
+# 	is_rare = yes
+# 	prerequisites = { "tech_quasarcraft_2" }
+# 	weight = @giga_tier7weight1
+# 	prereqfor_desc = {
+# 		hide_prereq_for_desc = ship
+# 		hide_prereq_for_desc = component
+# 		hide_prereq_for_desc = feature
+# 		hide_prereq_for_desc = resource
+# 		custom = { title = "allow_quasarcraft_p2"	desc = "desc_quasarcraft_p2" }
+# 	}
+#
+# 	potential = {
+# 		quasarmod_ap_taken = yes
+# 		host_has_dlc = "Apocalypse"
+# 		has_technology = tech_quasarcraft_2
+# 		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
+# 	}
+#
+# 	weight_modifier = {
+# 		inline_script = technology/tech_weight_boni/militarist_tech_weight_bonus
+#
+# 		inline_script = {
+# 			script = technologies/rare_technologies_weight_modifiers
+# 			TECHNOLOGY = tech_quasarcraft_3
+# 		}
+# 	}
+# }
+#
+# tech_quasarcraft_4 = {
+# 	cost = @giga_tier8cost2
+# 	area = physics
+# 	tier = 5
+# 	category = { particles }
+# 	is_rare = yes
+# 	prerequisites = { "tech_quasarcraft_3" }
+# 	weight = @giga_tier7weight2
+# 	prereqfor_desc = {
+# 		hide_prereq_for_desc = ship
+# 		hide_prereq_for_desc = component
+# 		hide_prereq_for_desc = feature
+# 		hide_prereq_for_desc = resource
+# 		custom = { title = "allow_quasarcraft_p3"	desc = "desc_quasarcraft_p3" }
+# 	}
+#
+# 	potential = {
+# 		quasarmod_ap_taken = yes
+# 		host_has_dlc = "Apocalypse"
+# 		has_technology = tech_quasarcraft_3
+# 		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
+# 	}
+#
+# 	weight_modifier = {
+# 		inline_script = technology/tech_weight_boni/militarist_tech_weight_bonus
+#
+# 		inline_script = {
+# 			script = technologies/rare_technologies_weight_modifiers
+# 			TECHNOLOGY = tech_quasarcraft_4
+# 		}
+# 	}
+# }
+#
+# tech_quasarcraft_5 = {
+# 	cost = @giga_tier8cost3
+# 	area = physics
+# 	tier = 5
+# 	category = { field_manipulation }
+# 	is_rare = yes
+# 	prerequisites = { "tech_quasarcraft_4" }
+# 	weight = @giga_tier7weight2
+#
+# 	technology_swap = {
+# 		inherit_icon = yes
+# 		name = tech_quasarcraft_5_swap
+# 		trigger = {
+# 			has_global_flag = ehof_disabled
+# 		}
+#
+# 		prereqfor_desc = {
+# 			hide_prereq_for_desc = ship
+# 			hide_prereq_for_desc = component
+# 			hide_prereq_for_desc = feature
+# 			hide_prereq_for_desc = resource
+# 			custom = { title = "allow_quasarcraft_p4"	desc = "desc_quasarcraft_p4" }
+# 		}
+#
+# 	}
+#
+# 	prereqfor_desc = {
+# 		hide_prereq_for_desc = ship
+# 		hide_prereq_for_desc = component
+# 		hide_prereq_for_desc = feature
+# 		hide_prereq_for_desc = resource
+# 		custom = { title = "allow_quasarcraft_p4"	desc = "desc_quasarcraft_p4" }
+# 	}
+#
+# 	potential = {
+# 		quasarmod_ap_taken = yes
+# 		host_has_dlc = "Apocalypse"
+# 		has_technology = tech_quasarcraft_4
+# 		NOT = { has_global_flag = quasarmod_quasarcraft_disabled }
+# 	}
+#
+# 	weight_modifier = {
+# 		inline_script = technology/tech_weight_boni/militarist_tech_weight_bonus
+#
+# 		inline_script = {
+# 			script = technologies/rare_technologies_weight_modifiers
+# 			TECHNOLOGY = tech_quasarcraft_5
 # 		}
 # 	}
 # }

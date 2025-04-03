@@ -6,7 +6,7 @@ matrioshka_brain_0_core = {
     entity = "giga_consite_7_7_entity"
     construction_entity = "giga_consite_7_7_entity"
     entity_offset = { x = -150 y = -7 }
-    prerequisites = { tech_core_mbrain }
+    prerequisites = { tech_quasarmod_core_mbrain }
     show_prereqs = no
     portrait = GFX_megastructure_construction_background
 
@@ -27,8 +27,8 @@ matrioshka_brain_0_core = {
     }
 
     potential = {
-        any_quasarmod_ap_taken = yes
-        has_technology = tech_core_mbrain
+        quasarmod_ap_taken = yes
+        has_technology = tech_quasarmod_core_mbrain
     }
 
     possible = {
@@ -71,7 +71,7 @@ matrioshka_brain_1_core = {
 
     possible = {
         from = {
-            has_technology = tech_core_mbrain
+            has_technology = tech_quasarmod_core_mbrain
         }
     }
 
@@ -119,7 +119,7 @@ matrioshka_brain_2_core = {
 
     possible = {
         from = {
-            has_technology = tech_core_mbrain
+            has_technology = tech_quasarmod_core_mbrain
         }
     }
 
@@ -161,7 +161,7 @@ matrioshka_brain_3_core = {
 
     possible = {
         from = {
-            has_technology = tech_core_mbrain
+            has_technology = tech_quasarmod_core_mbrain
         }
     }
 
@@ -209,7 +209,7 @@ matrioshka_brain_4_core = {
 
     possible = {
         from = {
-            has_technology = tech_core_mbrain
+            has_technology = tech_quasarmod_core_mbrain
         }
     }
 
@@ -249,7 +249,7 @@ matrioshka_brain_5_core = {
     scales_with_planet = no
     portrait = GFX_megastructure_construction_background
     upgrade_from = { matrioshka_brain_4_core }
-    prerequisites = { tech_core_mbrain }
+    prerequisites = { tech_quasarmod_core_mbrain }
     show_prereqs = no
 
     outliner_trigger = {
@@ -259,7 +259,7 @@ matrioshka_brain_5_core = {
 
     possible = {
         from = {
-            has_technology = tech_core_mbrain
+            has_technology = tech_quasarmod_core_mbrain
         }
     }
 

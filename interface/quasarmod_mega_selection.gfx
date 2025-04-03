@@ -3,25 +3,25 @@ spriteTypes = {
     # SMBH Manipulator
     spriteType = {
         name = "GFX_blackhole_manipulator_0_build_icon"
-        textureFile = "gfx/interface/icons/technologies/tech_smbh_manipulator.dds"
+        textureFile = gfx/interface/icons/technologies/tech_quasarmod_smbh_manipulator.dds
     }
 
     # Hyperquasaric Teraforge
     spriteType = {
         name = "GFX_hyperquasaric_teraforge_0_build_icon"
-        textureFile = "gfx/interface/icons/technologies/tech_hyperquasaric_teraforge.dds"
+        textureFile = "gfx/interface/icons/technologies/tech_quasarmod_hyperquasaric_teraforge.dds"
     }
 
     # Hyperquasaric Megashipyard
     spriteType = {
         name = "GFX_hyperquasaric_megashipyard_0_build_icon"
-        textureFile = "gfx/interface/icons/technologies/tech_hyperquasaric_megashipyard.dds"
+        textureFile = gfx/interface/icons/technologies/tech_quasarmod_hyperquasaric_megashipyard.dds
     }
 
     # Gargantuan Matriohska Brain
     spriteType = {
         name = "GFX_matrioshka_brain_0_core_build_icon"
-        textureFile = "gfx/interface/icons/technologies/tech_core_mbrain.dds"
+        textureFile = gfx/interface/icons/technologies/tech_quasarmod_core_mbrain.dds
     }
 
     # Quasarcraft

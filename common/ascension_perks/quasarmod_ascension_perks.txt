@@ -7,42 +7,20 @@ ap_hyperquasaric_megaconstruction = {
 
 	possible = {
 		custom_tooltip = { fail_text = "requires_ap_gigastructural_constructs"      	has_gigastructural_constructs = yes }
-		custom_tooltip = { fail_text = "requires_ap_stellar_manipulation"				has_ascension_perk = ap_stellar_manip }
+		custom_tooltip = { fail_text = "requires_ap_stellar_manipulation"				if = { limit = { stellar_manip_is_active = yes } has_ascension_perk = ap_stellar_manip } else = {} } # Prereq is disabled if stellar manipulation is not present
 		custom_tooltip = { fail_text = "requires_tetraengineering"				    has_technology = giga_tech_tetradimensional_engineering }
 		custom_tooltip = { fail_text = "requires_dark_matter"						has_technology = tech_mine_dark_matter }
-		custom_tooltip = { fail_text = "requires_advanced_stellar_manipulation"		has_technology = tech_gigas_stellar_manip_2 }
-		custom_tooltip = {
-			fail_text = "requires_discovered_giga_core"
-			OR = {
-				has_country_flag = found_qso_candidate
-				has_country_flag = found_birch_candidate
-				OR = {
-					AND = {
-						any_system = { is_star_class = sc_birch }
-						NOT = { any_system = { is_star_class = sc_quasar } }
-						has_megastructure = ehof_megastructure_phase4
-						any_system_within_border = { cohesive_system = yes }
-					}
-					AND = {
-						any_system = { is_star_class = sc_quasar }
-						NOT = { any_system = { is_star_class = sc_birch } }
-						has_megastructure = ehof_megastructure_phase4
-						any_system_within_border = { cohesive_system = yes }
-					}
-				}
-			}
-		}
+		custom_tooltip = { fail_text = "requires_advanced_stellar_manipulation"		if = { limit = { stellar_manip_is_active = yes } has_technology = tech_gigas_stellar_manip_2 } else = {} } # Prereq is disabled if the stellar manipulator is disabled (the smbh manipulator is also disabled when the manipulator is)
 	}
 
 	potential = {
 		host_has_dlc = Utopia
 		is_ai = no
-		stellar_manip_is_active = yes
 
 		NOR = {
 			has_ascension_perk = ap_hyperquasaric_megaconstruction
-			has_global_flag = stellar_manip_manipulator_disabled
 		}
+
 		NAND = {
 			has_global_flag = quasarmod_teraforge_disabled
 			has_global_flag = quasarmod_manipulator_disabled
@@ -55,76 +33,11 @@ ap_hyperquasaric_megaconstruction = {
 	on_enabled = {
 		custom_tooltip = "ap_hyperquasaric_megaconstruction_add_research"
 		hidden_effect = {
-			if = { limit = { NOT = { has_technology = tech_smbh_manipulator } } add_research_option = tech_smbh_manipulator }
-			if = { limit = { NOT = { has_technology = tech_core_mbrain } } add_research_option = tech_core_mbrain }
-			if = { limit = { NOT = { has_technology = tech_hyperquasaric_megashipyard } } add_research_option = tech_hyperquasaric_megashipyard }
-			if = { limit = { NOT = { has_technology = tech_hyperquasaric_teraforge } } add_research_option = tech_hyperquasaric_teraforge }
-			if = { limit = { NOT = { has_technology = tech_quasarcraft_1 } } add_research_option = tech_quasarcraft_1 }
-		}
-	}
-}
+			if = { limit = { NOT = { has_technology = tech_quasarmod_pentadimensional_engineering } }		add_research_option = tech_quasarmod_pentadimensional_engineering }
+			if = { limit = { NOT = { has_technology = tech_quasarmod_gigakelvin_resistant_alloys } } 		add_research_option = tech_quasarmod_gigakelvin_resistant_alloys }
+			if = { limit = { NOT = { has_country_flag = can_spawn_smbh } } 		set_country_flag = can_spawn_smbh }
+			if = { limit = { NOT = { has_country_flag = can_spawn_quasar } } 	set_country_flag = can_spawn_quasar }
 
-ap_hyperquasaric_megaconstruction_nsm = { #For players without stellar manipulation
-	modifier = {
-		country_megastructure_build_cap_add = 1
-		megastructure_build_speed_mult = 0.20
-		country_resource_max_add = 25000
-	}
-
-	possible = {
-		custom_tooltip = { fail_text = "requires_ap_gigastructural_constructs"      	has_gigastructural_constructs = yes }
-		custom_tooltip = { fail_text = "requires_tetraengineering"				    has_technology = giga_tech_tetradimensional_engineering }
-		custom_tooltip = { fail_text = "requires_dark_matter"						has_technology = tech_mine_dark_matter }
-		custom_tooltip = {
-			fail_text = "requires_discovered_giga_core"
-			OR = {
-				has_country_flag = found_qso_candidate
-				has_country_flag = found_birch_candidate
-				OR = {
-					AND = {
-						any_system = { is_star_class = sc_birch }
-						NOT = { any_system = { is_star_class = sc_quasar } }
-						has_megastructure = ehof_megastructure_phase4
-						any_system_within_border = { cohesive_system = yes }
-					}
-					AND = {
-						any_system = { is_star_class = sc_quasar }
-						NOT = { any_system = { is_star_class = sc_birch } }
-						has_megastructure = ehof_megastructure_phase4
-						any_system_within_border = { cohesive_system = yes }
-					}
-				}
-			}
-		}
-	}
-
-	potential = {
-		host_has_dlc = Utopia
-		is_ai = no
-		OR = {
-			stellar_manip_is_active = no
-			has_global_flag = stellar_manip_manipulator_disabled
-		}
-
-		NOT = {
-			has_ascension_perk = ap_hyperquasaric_megaconstruction_nsm
-		}
-		NAND = {
-			has_global_flag = quasarmod_teraforge_disabled
-			has_global_flag = quasarmod_shipyard_disabled
-			has_global_flag = quasarmod_mbrain_disabled
-			has_global_flag = quasarmod_quasarcraft_disabled
-		}
-	}
-
-	on_enabled = {
-		custom_tooltip = "ap_hyperquasaric_megaconstruction_nsm_add_research"
-		hidden_effect = {
-			#if = { limit = { NOT = { has_technology = tech_smbh_manipulator } } add_research_option = tech_smbh_manipulator }
-			if = { limit = { NOT = { has_technology = tech_core_mbrain } } add_research_option = tech_core_mbrain }
-			if = { limit = { NOT = { has_technology = tech_hyperquasaric_megashipyard } } add_research_option = tech_hyperquasaric_megashipyard }
-			if = { limit = { NOT = { has_technology = tech_hyperquasaric_teraforge } } add_research_option = tech_hyperquasaric_teraforge }
-			if = { limit = { NOT = { has_technology = tech_quasarcraft_1 } } add_research_option = tech_quasarcraft_1 }
 		}
 	}
 }

@@ -7,7 +7,7 @@ quasarcraft_0 = {
 	entity = "giga_consite_7_7_entity"
 	construction_entity = "giga_consite_7_7_entity"
 	entity_offset = { x = -150 y = -7 }
-	prerequisites = { tech_quasarcraft_1 }
+	prerequisites = { tech_quasarmod_quasarcraft }
 	show_prereqs = no
 	place_entity_on_planet_plane = no
 	portrait = GFX_megastructure_construction_background
@@ -24,8 +24,8 @@ quasarcraft_0 = {
 	}
 
 	potential = {
-		any_quasarmod_ap_taken = yes
-		has_technology = tech_quasarcraft_1
+		quasarmod_ap_taken = yes
+		has_technology = tech_quasarmod_quasarcraft
 	}
 
 	possible = {
@@ -87,11 +87,11 @@ quasarcraft_1 = {
 	}
 
 	potential = {
-		any_quasarmod_ap_taken = yes
+		quasarmod_ap_taken = yes
 	}
 
 	prerequisites = {
-		tech_quasarcraft_2
+		tech_quasarmod_quasarcraft
 	}
 
 	outliner_trigger = {
@@ -130,11 +130,11 @@ quasarcraft_2 = {
 	}
 
 	potential = {
-		any_quasarmod_ap_taken = yes
+		quasarmod_ap_taken = yes
 	}
 
 	prerequisites = {
-		tech_quasarcraft_3
+		tech_quasarmod_quasarcraft
 	}
 
 	outliner_trigger = {
@@ -174,11 +174,11 @@ quasarcraft_3 = {
 	}
 
 	potential = {
-		any_quasarmod_ap_taken = yes
+		quasarmod_ap_taken = yes
 	}
 
 	prerequisites = {
-		tech_quasarcraft_4
+		tech_quasarmod_quasarcraft
 	}
 
 	outliner_trigger = {
@@ -217,11 +217,11 @@ quasarcraft_4 = {
 	}
 
 	potential = {
-		any_quasarmod_ap_taken = yes
+		quasarmod_ap_taken = yes
 	}
 
 	prerequisites = {
-		tech_quasarcraft_5
+		tech_quasarmod_quasarcraft
 	}
 
 	outliner_trigger = {
@@ -278,11 +278,11 @@ quasarcraft_1_alt = {
 	}
 
 	potential = {
-		any_quasarmod_ap_taken = yes
+		quasarmod_ap_taken = yes
 	}
 
 	prerequisites = {
-		tech_quasarcraft_3
+		tech_quasarmod_quasarcraft
 	}
 
 	outliner_trigger = {
@@ -330,11 +330,11 @@ quasarcraft_2_alt = {
 	}
 
 	potential = {
-		any_quasarmod_ap_taken = yes
+		quasarmod_ap_taken = yes
 	}
 
 	prerequisites = {
-		tech_quasarcraft_4
+		tech_quasarmod_quasarcraft
 	}
 
 	outliner_trigger = {
@@ -373,7 +373,7 @@ quasarcraft_3_alt = {
 	}
 
 	potential = {
-		any_quasarmod_ap_taken = yes
+		quasarmod_ap_taken = yes
 	}
 
 	possible = {
@@ -381,7 +381,7 @@ quasarcraft_3_alt = {
 	}
 
 	prerequisites = {
-		tech_quasarcraft_5
+		tech_quasarmod_quasarcraft
 	}
 
 	outliner_trigger = {
