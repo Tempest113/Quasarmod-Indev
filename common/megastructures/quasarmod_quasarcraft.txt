@@ -15,8 +15,11 @@ quasarcraft_0 = {
 	build_time = 1800
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 100000
+		}
+		cost = {
 			influence = 300
 			unity = @giga_tera_start_unity_cost
 		}
@@ -79,8 +82,11 @@ quasarcraft_1 = {
 	build_time = 3600
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 1250000
+		}
+		cost = {
 			unity = @giga_tera_unity_cost
 		}
 		upkeep = { alloys = 50 }
@@ -119,8 +125,11 @@ quasarcraft_2 = {
 	build_time = 4800
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 1500000
+		}
+		cost = {
 			volatile_motes = 2500
 			exotic_gases = 2500
 			rare_crystals = 2500
@@ -163,8 +172,11 @@ quasarcraft_3 = {
 	build_time = 5400
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 1750000
+		}
+		cost = {
 			volatile_motes = 5000
 			exotic_gases = 5000
 			rare_crystals = 5000
@@ -206,8 +218,11 @@ quasarcraft_4 = {
 	build_time = 7200
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 2000000
+		}
+		cost = {
 			volatile_motes = 7500
 			exotic_gases = 7500
 			rare_crystals = 7500
@@ -267,8 +282,11 @@ quasarcraft_1_alt = {
 	build_time = 4800
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 1000000
+		}
+		cost = {
 			volatile_motes = 2500
 			exotic_gases = 2500
 			rare_crystals = 2500
@@ -319,8 +337,11 @@ quasarcraft_2_alt = {
 	build_time = 5400
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 1500000
+		}
+		cost = {
 			volatile_motes = 5000
 			exotic_gases = 5000
 			rare_crystals = 5000
@@ -362,8 +383,11 @@ quasarcraft_3_alt = {
 	build_time = 7200
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 1750000
+		}
+		cost = {
 			volatile_motes = 7500
 			exotic_gases = 7500
 			rare_crystals = 7500

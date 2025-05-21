@@ -14,8 +14,11 @@ hyperquasaric_megashipyard_0 = {
     build_time = 1800
     resources = {
         category = giga_gigastructures
+        inline_script = {
+            script = megastructures/generic_parts/giga_mega_alloy_cost
+            alloys = 100000
+        }
         cost = {
-            alloys = 100000 #20000
             influence = 300 #200
             unity = @giga_tera_start_unity_cost
         }
@@ -72,8 +75,11 @@ hyperquasaric_megashipyard_1 = {
     build_time = 3600
     resources = {
         category = giga_gigastructures
-        cost = {
+        inline_script = {
+            script = megastructures/generic_parts/giga_mega_alloy_cost
             alloys = 175000
+        }
+        cost = {
             unity = @giga_tera_unity_cost
         }
         upkeep = {
@@ -116,8 +122,11 @@ hyperquasaric_megashipyard_2 = {
     build_time = 4800
     resources = {
         category = giga_gigastructures
-        cost = {
+        inline_script = {
+            script = megastructures/generic_parts/giga_mega_alloy_cost
             alloys = 300000
+        }
+        cost = {
             unity = @giga_tera_unity_cost
         }
         upkeep = {
@@ -161,8 +170,11 @@ hyperquasaric_megashipyard_3 = {
     build_time = 5400
     resources = {
         category = giga_gigastructures
-        cost = {
+        inline_script = {
+            script = megastructures/generic_parts/giga_mega_alloy_cost
             alloys = 450000
+        }
+        cost = {
             unity = @giga_tera_unity_cost
         }
         upkeep = {
@@ -210,7 +222,10 @@ hyperquasaric_megashipyard_4 = {
     resources = {
         category = giga_gigastructures
         cost = {
-            alloys = 250000 #10000
+            inline_script = {
+                script = megastructures/generic_parts/giga_mega_alloy_cost
+                alloys = 250000
+            }
             unity = @giga_tera_unity_cost
         }
         upkeep = {

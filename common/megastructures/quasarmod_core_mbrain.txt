@@ -18,8 +18,11 @@ matrioshka_brain_0_core = {
     build_time = 1800
     resources = {
         category = giga_gigastructures
+        inline_script = {
+            script = megastructures/generic_parts/giga_mega_alloy_cost
+            alloys = 100000
+        }
         cost = {
-            alloys = 100000 #20000
             influence = 300 #400
             unity = @giga_tera_start_unity_cost
         }
@@ -78,8 +81,11 @@ matrioshka_brain_1_core = {
     build_time = 3600
     resources = {
         category = giga_gigastructures
-        cost = {
+        inline_script = {
+            script = megastructures/generic_parts/giga_mega_alloy_cost
             alloys = 150000
+        }
+        cost = {
             unity = @giga_tera_unity_cost
         }
         produces = {
@@ -126,8 +132,11 @@ matrioshka_brain_2_core = {
     build_time = 4800
     resources = {
         category = giga_gigastructures
-        cost = {
+        inline_script = {
+            script = megastructures/generic_parts/giga_mega_alloy_cost
             alloys = 250000
+        }
+        cost = {
             unity = @giga_tera_unity_cost
         }
         produces = {
@@ -168,8 +177,11 @@ matrioshka_brain_3_core = {
     build_time = 5400
     resources = {
         category = giga_gigastructures
-        cost = {
+        inline_script = {
+            script = megastructures/generic_parts/giga_mega_alloy_cost
             alloys = 350000
+        }
+        cost = {
             unity = @giga_tera_unity_cost
         }
         produces = {
@@ -216,8 +228,11 @@ matrioshka_brain_4_core = {
     build_time = 8100
     resources = {
         category = giga_gigastructures
-        cost = {
+        inline_script = {
+            script = megastructures/generic_parts/giga_mega_alloy_cost
             alloys = 450000
+        }
+        cost = {
             unity = @giga_tera_unity_cost
         }
         produces = {
@@ -266,8 +281,11 @@ matrioshka_brain_5_core = {
     build_time = 10800
     resources = {
         category = giga_gigastructures
+        inline_script = {
+            script = megastructures/generic_parts/giga_mega_alloy_cost
+            alloys = 500000
+        }
         cost = {
-            alloys = 500000 #562500
             unity = @giga_tera_unity_cost
         }
         produces = {

@@ -13,8 +13,11 @@ hyperquasaric_teraforge_0 = {
 	build_time = 1800
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 100000
+		}
+		cost = {
 			influence = 300
 			unity = @giga_tera_start_unity_cost
 		}
@@ -77,8 +80,11 @@ hyperquasaric_teraforge_1 = {
 	build_time = 3600
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 175000
+		}
+		cost = {
 			unity = @giga_tera_unity_cost
 		}
 		upkeep = {
@@ -124,8 +130,11 @@ hyperquasaric_teraforge_2 = {
 	build_time = 4800
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 300000
+		}
+		cost = {
 			unity = @giga_tera_unity_cost
 		}
 		upkeep = {
@@ -165,8 +174,11 @@ hyperquasaric_teraforge_3 = {
 	build_time = 5400
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 450000
+		}
+		cost = {
 			unity = @giga_tera_unity_cost
 		}
 		upkeep = {
@@ -205,8 +217,11 @@ hyperquasaric_teraforge_4 = {
 	build_time = 7200
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 500000
+		}
+		cost = {
 			unity = @giga_tera_unity_cost
 		}
 		upkeep = { 

@@ -177,7 +177,7 @@ building_teraforge_uplink_alloys = {
     }
 
     planet_modifier = {
-        pop_foundry_bonus_workforce_mult = 0.5
+        pop_foundry_bonus_workforce_mult = 0.25
     }
 
     triggered_planet_modifier = {
@@ -185,50 +185,52 @@ building_teraforge_uplink_alloys = {
             exists = owner
             owner = {
                 is_catalytic_empire = no
-            }
-        }
-        modifier = {
-            planet_metallurgists_alloys_produces_add = 3
-            planet_metallurgists_minerals_upkeep_add = 6
-        }
-    }
-
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                is_catalytic_empire = yes
-            }
-        }
-        modifier = {
-            planet_metallurgists_alloys_produces_add = 4
-            planet_metallurgists_food_upkeep_add = 9
-        }
-    }
-
-    triggered_planet_modifier = {
-        potential = {
-            has_ringworld_output_boost = yes
-            owner = {
-                is_catalytic_empire = no
-            }
-        }
-        modifier = {
-            planet_metallurgists_alloys_produces_add = 1.5
-            planet_metallurgists_minerals_upkeep_add = 3
-        }
-    }
-
-    triggered_planet_modifier = {
-        potential = {
-            has_ringworld_output_boost = yes
-            owner = {
-                is_catalytic_empire = yes
             }
         }
         modifier = {
             planet_metallurgists_alloys_produces_add = 2
-            planet_metallurgists_food_upkeep_add = 3
+            planet_metallurgists_minerals_upkeep_add = 4
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_catalytic_empire = yes
+            }
+        }
+        modifier = {
+            planet_metallurgists_alloys_produces_add = 3
+            planet_metallurgists_food_upkeep_add = 6
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            has_ringworld_output_boost = yes
+            owner = {
+                is_catalytic_empire = no
+            }
+        }
+        modifier = {
+            planet_metallurgists_alloys_produces_add = 1
+            planet_metallurgists_minerals_upkeep_add = 2
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            has_ringworld_output_boost = yes
+            owner = {
+                is_catalytic_empire = yes
+            }
+        }
+        modifier = {
+            planet_metallurgists_alloys_produces_add = 1
+            planet_metallurgists_food_upkeep_add = 2
         }
     }
 
@@ -321,26 +323,59 @@ building_teraforge_uplink_consumer_goods = {
     }
 
     planet_modifier = {
-        pop_artisan_bonus_workforce_mult = 0.5
+        pop_artisan_bonus_workforce_mult = 0.25
     }
 
     triggered_planet_modifier = {
         potential = {
             exists = owner
+            owner = {
+                is_catalytic_empire = no
+            }
         }
         modifier = {
             planet_artisans_consumer_goods_produces_add = 3
-            planet_artisans_minerals_upkeep_add = 5
+            planet_artisans_minerals_upkeep_add = 3
         }
     }
 
     triggered_planet_modifier = {
         potential = {
             has_ringworld_output_boost = yes
+            owner = {
+                is_catalytic_empire = no
+            }
         }
         modifier = {
-            planet_artisans_consumer_goods_produces_add = 1.5
+            planet_artisans_consumer_goods_produces_add = 2
             planet_artisans_minerals_upkeep_add = 2
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_catalytic_empire = yes
+            }
+
+        }
+        modifier = {
+            planet_artisans_consumer_goods_produces_add = 3
+            planet_artisans_food_upkeep_add = 3
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_catalytic_empire = yes
+            }
+            has_ringworld_output_boost = yes
+        }
+        modifier = {
+            planet_artisans_consumer_goods_produces_add = 2
+            planet_artisans_food_upkeep_add = 2
         }
     }
 }

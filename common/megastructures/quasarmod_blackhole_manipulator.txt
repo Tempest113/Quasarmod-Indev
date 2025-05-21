@@ -18,8 +18,11 @@ blackhole_manipulator_0 = {
 	build_time = 900
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 20000
+		}
+		cost = {
 			influence = 300
 			unity = @giga_tera_start_unity_cost
 		}
@@ -80,8 +83,11 @@ blackhole_manipulator_1 = {
 	build_time = 1800
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 50000
+		}
+		cost = {
 			unity = @giga_tera_unity_cost	
 		}
 		upkeep = {
@@ -124,8 +130,11 @@ blackhole_manipulator_2 = {
 	build_time = 2400
 	resources = {
 		category = giga_gigastructures
-		cost = { 
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 100000
+		}
+		cost = {
 			unity = @giga_tera_unity_cost
 		}
 		upkeep = {
@@ -161,8 +170,11 @@ blackhole_manipulator_3 = {
 	build_time = 2400
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 150000
+		}
+		cost = {
 			unity = @giga_tera_unity_cost
 		}
 		upkeep = {
@@ -203,8 +215,11 @@ blackhole_manipulator_4 = {
 	build_time = 2700
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 200000
+		}
+		cost = {
 			unity = @giga_tera_unity_cost
 		}
 		upkeep = {
@@ -240,8 +255,11 @@ blackhole_manipulator_5 = {
 	build_time = 3600
 	resources = {
 		category = giga_gigastructures
-		cost = {
+		inline_script = {
+			script = megastructures/generic_parts/giga_mega_alloy_cost
 			alloys = 250000
+		}
+		cost = {
 			unity = @giga_tera_unity_cost
 		}
 		upkeep = {
