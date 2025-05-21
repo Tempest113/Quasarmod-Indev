@@ -1349,64 +1349,68 @@ building_giga_matrioshka_brain_uplink_robot = {
 ###################################################################################################################################
 ###################################################################################################################################
 
-building_giga_matrioshka_brain_uplink_virtual = {
-    inline_script = {
-        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
-        name = virtual
-        category = government
-        resources = "
-			cost = {
-				sr_dark_matter = 500
-			}
-			upkeep = {
-				energy = 50 # extra energy upkeep
-				sr_dark_matter = 4
-			}
-		"
-    }
+# Core Mbrain no longer effects this one since i can't be bothered to work out a good implementation
 
-    triggered_planet_modifier = {
-        giga_virtual_colony_size = -1
-
-        multiplier = value:giga_matrioshka_brain_uplink_multiplicative_value|fraction|0.5|building|building_giga_matrioshka_brain_uplink_virtual|
-    }
-
-    triggered_planet_modifier = {
-        planet_pops_energy_upkeep_mult = 0.5
-    }
-
-    triggered_desc = {
-        text = building_giga_matrioshka_brain_uplink_virtual_effect
-    }
-
-    # Quasarmod Additions - The last one, if this doesn't work in testing i might die
-
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                owns_core_mbrain_finished = yes
-            }
-            planet = {
-                has_modifier = quasarmod_connected_to_core_mbrain_mod
-            }
-        }
-
-        giga_virtual_colony_size = -1
-        multiplier = value:giga_matrioshka_brain_uplink_multiplicative_value|fraction|0.5|building|building_giga_matrioshka_brain_uplink_virtual|
-    }
-
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                owns_core_mbrain_finished = yes
-            }
-            planet = {
-                has_modifier = quasarmod_connected_to_core_mbrain_mod
-            }
-        }
-
-        planet_pops_energy_upkeep_mult = 0.5
-    }
-}
+# building_giga_matrioshka_brain_uplink_virtual = {
+#     inline_script = {
+#         script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
+#         name = virtual
+#         category = government
+#         resources = "
+# 			cost = {
+# 				sr_dark_matter = 500
+# 			}
+# 			upkeep = {
+# 				energy = 50 # extra energy upkeep
+# 				sr_dark_matter = 4
+# 			}
+# 		"
+#     }
+#
+#     triggered_planet_modifier = {
+#         giga_virtual_colony_size = -1
+#
+#         multiplier = value:giga_matrioshka_brain_uplink_multiplicative_value|fraction|0.5|building|building_giga_matrioshka_brain_uplink_virtual|
+#     }
+#
+#     triggered_planet_modifier = {
+#         planet_pops_energy_upkeep_mult = 0.5
+#     }
+#
+#     triggered_desc = {
+#         text = building_giga_matrioshka_brain_uplink_virtual_effect
+#     }
+#
+#     # Quasarmod Additions - The last one, if this doesn't work in testing i might die
+#
+#
+#     ## Please revise this dear god
+#     triggered_planet_modifier = {
+#         potential = {
+#             exists = owner
+#             owner = {
+#                 owns_core_mbrain_finished = yes
+#             }
+#             planet = {
+#                 has_modifier = quasarmod_connected_to_core_mbrain_mod
+#             }
+#         }
+#
+#         giga_virtual_colony_size = -1
+#         multiplier = value:giga_matrioshka_brain_uplink_multiplicative_value|fraction|0.5|building|building_giga_matrioshka_brain_uplink_virtual|
+#     }
+#
+#     triggered_planet_modifier = {
+#         potential = {
+#             exists = owner
+#             owner = {
+#                 owns_core_mbrain_finished = yes
+#             }
+#             planet = {
+#                 has_modifier = quasarmod_connected_to_core_mbrain_mod
+#             }
+#         }
+#
+#         planet_pops_energy_upkeep_mult = 0.5
+#     }
+# }

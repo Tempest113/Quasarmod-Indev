@@ -3,6 +3,8 @@
  # Main Ship
  quasarmod_quasarcraft: "Gargantuan Quasarcraft"
  quasarmod_quasarcraft_plural: "$quasarmod_quasarcraft$"
+ quasarmod_quasarcraft_cap: "Gargantuan Quasarcraft"
+ quasarmod_quasarcraft_plural_cap: "$quasarmod_quasarcraft$"
  quasarcraft_main_01_key: "Forward Quasaric Projector"
  quasarcraft_main_02_key: "Main Quasaric Body"
  quasarcraft_halo1_key: "Halo Armaments - First Demicircle"

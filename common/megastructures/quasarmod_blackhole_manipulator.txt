@@ -250,10 +250,42 @@ blackhole_manipulator_5 = {
 		}
 	}
 
+	dismantle_cost = {
+		category = giga_gigastructures
+		cost = {
+			energy = 50000
+		}
+	}
+
+	dismantle_time = 720
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_possible = {
+		can_dismantle_megastructure = {
+			TECH = tech_quasarmod_smbh_manipulator
+		}
+	}
+
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				alloys = 250000
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+		}
+		every_system_planet = {
+			if = { limit = { is_planet_class = pc_core_quasar } set_planet_entity = { entity = core_quasar_entity } set_planet_size = 10 }
+			if = { limit = { is_planet_class = pc_core_black_hole } set_planet_entity = { entity = core_black_hole_entity } set_planet_size = 20 }
+		}
+	}
+
 	on_build_complete = {
 		save_event_target_as = giga_system
 		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
-		from = { country_event = { id = quasarmod_megastage_dialogue.106 } }
+		if = { limit = { fromfrom = { NOT = { has_megastructure_flag = quasarmod_smbh_manipulator_used } } } from = { country_event = { id = quasarmod_megastage_dialogue.106 } } }
 	}
 
 }
@@ -299,6 +331,7 @@ blackhole_manipulator_a6 = {
 
 	on_build_complete = {
 		fromfrom.solar_system =  { save_event_target_as = blackhole_manip_system}
+		fromfrom = { set_megastructure_flag = quasarmod_smbh_manipulator_used }
 		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = blackhole_manip_system } }
 		from = {
 			start_situation = {
@@ -349,6 +382,7 @@ blackhole_manipulator_b6 = {
 
 	on_build_complete = {
 		fromfrom.solar_system =  { save_event_target_as = blackhole_manip_system}
+		fromfrom = { set_megastructure_flag = quasarmod_smbh_manipulator_used }
 		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = blackhole_manip_system } }
 		from = { 
 			start_situation = {

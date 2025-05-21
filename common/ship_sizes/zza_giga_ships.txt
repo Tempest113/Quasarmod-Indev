@@ -70,6 +70,8 @@ giga_massive_planet = {
 
     construction_type = starbase_shipyard
     base_buildtime = 13500 #5400 adjusted to compensate for buffs provided by the uplink
+
+    available_to_everyone = yes
 }
 
 giga_planet_behemoth = {
@@ -143,4 +145,6 @@ giga_planet_behemoth = {
 
     construction_type = starbase_shipyard
     base_buildtime = 27000 #10800 adjusted to compensate for buffs provided by the uplink
+
+    available_to_everyone = yes
 }

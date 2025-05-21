@@ -60,9 +60,8 @@ convert_to_inactive_core = {
 		set_star_class = sc_birch
 		every_system_planet = {
 			remove_planet_flag = has_megastructure
-
 			limit = {
-				nor = {
+				NOR = {
 					is_planet_class = pc_core_quasar
 					is_planet_class = pc_core_black_hole
 				}
@@ -72,17 +71,25 @@ convert_to_inactive_core = {
 
 		every_system_megastructure = {
 			limit = {
-				nor = {
+				NOR = {
 					is_megastructure_type = lgate_base
 					is_megastructure_type = gateway_final
 					is_megastructure_type = gateway_restored
 					is_megastructure_type = ehof_pgate_gateway
 					is_megastructure_type = hyper_relay
 					is_megastructure_type = hyper_relay_restored
+					is_megastructure_type = blackhole_manipulator_b6
 				}
 			}
 			remove_megastructure = this
 		}
+		every_system_megastructure = {
+			limit = {
+				is_megastructure_type = blackhole_manipulator_b6
+			}
+			upgrade_megastructure_to = blackhole_manipulator_5
+		}
+
 
 		star = {
 			giga_clear_has_mega_flag = yes
@@ -117,7 +124,7 @@ convert_to_hyperquasar = {
 			remove_planet_flag = has_megastructure
 
 			limit = {
-				nor = {
+				NOR = {
 					is_planet_class = pc_core_quasar
 					is_planet_class = pc_core_black_hole
 				}
@@ -127,16 +134,23 @@ convert_to_hyperquasar = {
 
 		every_system_megastructure = {
 			limit = {
-				nor = {
+				NOR = {
 					is_megastructure_type = lgate_base
 					is_megastructure_type = gateway_final
 					is_megastructure_type = gateway_restored
 					is_megastructure_type = ehof_pgate_gateway
 					is_megastructure_type = hyper_relay
 					is_megastructure_type = hyper_relay_restored
+					is_megastructure_type = blackhole_manipulator_a6
 				}
 			}
 			remove_megastructure = this
+		}
+		every_system_megastructure = {
+			limit = {
+				is_megastructure_type = blackhole_manipulator_a6
+			}
+			upgrade_megastructure_to = blackhole_manipulator_5
 		}
 
 		star = {
