@@ -13,7 +13,7 @@ quasarmod_quasarcraft = {
 		ship_hull_regen_add_static = 22500000
 		ship_armor_regen_add_static = 22500000
 		ship_shield_regen_add_static = 22500000
-		ship_evasion_mult = -0.9
+		ship_evasion_mult = -1
 		ship_armor_add = 200000000
 		ship_shield_add = 200000000
 		ship_starting_experience_add = 5000
@@ -40,9 +40,6 @@ quasarmod_quasarcraft = {
 	can_have_federation_design = no
 	potential_construction = { always = no }
 	possible_construction = { always = no }
-
-	construction_type = starbase_shipyard
-
 	is_civilian = no
 	is_designable = yes
 	components_add_to_cost = no
@@ -53,13 +50,11 @@ quasarmod_quasarcraft = {
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
 	required_component_set = "ship_aura_components"
-	# required_component_set = "ship_aura_components"
-	# required_component_set = "ship_aura_components"
 
 	resources = {
 		category = ships
 		produces = {
-			sr_magical_neutronium = 50
+			giga_sr_quasaric_energy = 50
 			energy = 12500
 		}
 		produces = {

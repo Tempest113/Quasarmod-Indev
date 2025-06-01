@@ -32,29 +32,26 @@
  quasarmod_megastage_dialogue.6.a: "Wonderful."
 
  # Supermassive Black Hole Manipulator
- quasarmod_megastage_dialogue.101.name: "Supermassive Black Hole Manipulator Construction"
- quasarmod_megastage_dialogue.101.desc: "With the completion of the construction site, we are now ready to begin the colossal task of constructing a Supermassive Black Hole Manipulator in [giga_system.GetName]. Upon this scaffold, we shall construct a massive frame for the rest of the structure to rest upon, completely encircling the black hole below.\n\nSoon, the very heart of the galaxy will bend to our will."
+ quasarmod_megastage_dialogue.101.name: "S.M.B.H Manipulator Construction"
+ quasarmod_megastage_dialogue.101.desc: "With the construction site complete, we stand ready to begin the task of constructing a S.M.B.H Manipulator in [giga_system.GetName]. Upon this scaffold, we shall construct a massive frame on which the remainder of the structure will rest, completely encircling the black hole below.\n\nSoon, the very heart of the galaxy will bend to our will."
  quasarmod_megastage_dialogue.101.a: "Wonderful."
 
- quasarmod_megastage_dialogue.102.name: "Black Hole Manipulator Frame Built"
- quasarmod_megastage_dialogue.102.desc: "Construction of the Black Hole Manipulator Frame in the [giga_system.GetName] system has concluded. With a circumference of nearly six billion kilometers, this grandiose frame will one day support one of the largest terastructures the galaxy has ever seen. We must now begin work on the rest of the structure."
+ quasarmod_megastage_dialogue.102.name: "S.M.B.H Manipulator Supports Built"
+ quasarmod_megastage_dialogue.102.desc: "We have finalized the construction of the pentadimensional supports for our S.M.B.H Manipulator in the [giga_system.GetName] system. With this, the supporting structure is complete and we can now move on to constructing the $smbh_manipulator_3$."
  quasarmod_megastage_dialogue.102.a: "Excellent."
 
- quasarmod_megastage_dialogue.103.name: "Tetradimensional Supports Built" #Black Hole Manipulator Tetradimensional Supports Built
- quasarmod_megastage_dialogue.103.desc: "We have successfully constructed the tetradimensional supports of the Supermassive Black Hole Manipulator, reaching a diameter larger than most solar systems, there is nothing in this galaxy which could possibly hope to disrupt this truly massive support system from completing its task of upholding what is perhaps the largest structure ever built in our galaxy."
+ quasarmod_megastage_dialogue.103.name: "S.M.B.H Manipulator Magnetic Confinement Built"
+ quasarmod_megastage_dialogue.103.desc: "The installation of the Magnetic Confinement rings around [giga_planet.GetName] marks a critical milestone in the construction of our S.M.B.H Manipulator. Designed to contain the accretion disk and relativistic jets of a Hyperquasar, these rings play a vital supporting role in the greater structure."
  quasarmod_megastage_dialogue.103.a: "Marvelous."
 
- quasarmod_megastage_dialogue.104.name: "Plasma Redirection Array Built" #Black Hole Manipulator Plasma Redirection Array Built
- quasarmod_megastage_dialogue.104.desc: "Construction of the plasma redirection array for the supermassive black hole manipulator in the [giga_system.GetName] system has been finalized, gargantuan plasma pumps and harvesters capable of moving entire stars worth of mass in only a matter of months now sit idly above the black hole below, waiting for us to complete the rest of the structure."
- quasarmod_megastage_dialogue.104.a: "Great."
+ quasarmod_megastage_dialogue.104.name: "S.M.B.H Manipulator Plasma Redirection Array Built"
+ quasarmod_megastage_dialogue.104.desc: "Construction of the plasma redirection array for the S.M.B.H Manipulator in the [giga_system.GetName] system has been finalized, gargantuan plasma pumps and harvesters capable of processing entire stars worth of mass in only a matter of months now sit idly above the black hole below, waiting for us to complete the rest of the structure. All that remains now is the construction of the Plasma Redirection Array and custom radiation shielding."
+ quasarmod_megastage_dialogue.104.a: "Good, we are almost there.."
 
- quasarmod_megastage_dialogue.105.name: "Worker Drone Habitation Ring Built" #Black Hole Manipulator Worker Drone Habitation Ring Built
- quasarmod_megastage_dialogue.105.desc: "With the completion of the worker drone habitation ring, the Supermassive Black Hole Manipulator is almost complete. Now all that awaits is the installation of the radiation shielding and we will be able to bend the heart of the galaxy to our whim."
- quasarmod_megastage_dialogue.105.a: "Good, we are almost there."
+ quasarmod_megastage_dialogue.105.name: "S.M.B.H Manipulator Complete"
+ quasarmod_megastage_dialogue.105.desc: "At long last, our S.M.B.H Manipulator in the [giga_system.GetName] system is complete! We now possess the capability to transform [giga_planet.GetName] into an [QuasarmodGetCoreOpposite], all we must do now is give the go-ahead to begin."
+ quasarmod_megastage_dialogue.105.a: "Perfect."
 
- quasarmod_megastage_dialogue.106.name: "Radiation Shielding Built" #Black Hole Manipulator Radiation Shielding Built
- quasarmod_megastage_dialogue.106.desc: "Construction of the Black Hole Manipulator's radiation shielding has come to an end, we are now able to safely activate and use the Supermassive Black Hole Manipulator without risking damage to life throughout the galaxy. While this colossal terastructure is a true marvel of engineering, it will pale in comparison to our future projects."
- quasarmod_megastage_dialogue.106.a: "Let us begin."
 
  # Hyperquasaric Teraforge
  quasarmod_megastage_dialogue.201.name: "Hyperquasaric Teraforge Construction"
@@ -97,7 +94,6 @@
  quasarmod_megastage_dialogue.305.name: "Hyperquasaric Megashipyard Complete"
  quasarmod_megastage_dialogue.305.desc: "The Hyperquasaric Megashipyard in the [giga_system.GetName] system is complete! We now possess the ability to create an armada so large that we will not only blot out the stars, but the galaxy itself."
  quasarmod_megastage_dialogue.305.a: "It is beautiful."
- quasarmod_megastage_dialogue.305.a.tooltip: "Who are you fighting to need so many ships?"
 
  # Gargantuan Quasarcraft
  quasarmod_megastage_dialogue.401.name: "$quasarmod_quasarcraft$ Construction"
@@ -113,7 +109,7 @@
  quasarmod_megastage_dialogue.403.a: "Perfect."
 
  quasarmod_megastage_dialogue.404.name: "$quasarcraft_3$ Built"
- quasarmod_megastage_dialogue.404.desc: "Our $quasarmod_quasarcraft$'s main weapons are now finished! The colossal weapons mounted to both the Halo and bow are capable of unleashing a never-before-seen display of force upon any target unlucky enough to cross its path. Only one step remains now, and it will require gathering 60 pops through a decision from any of our worlds in order to serve as the crew.\n\n§YThis decision will not destroy or uncolonize the planet it is used on§!\n\n§RWARNING: Ensure that you have a valid ship design for the Quasarcraft before constructing the next stage, if you have no design for the ship when the mega is complete, the Quasarcraft will fail to spawn.§!"
+ quasarmod_megastage_dialogue.404.desc: "Our $quasarmod_quasarcraft$'s main weapons are now finished! The colossal weapons mounted to both the Halo and bow are capable of unleashing a never-before-seen display of force upon any target unlucky enough to cross its path. Only one step remains now, and it will require gathering 6000 pops through a decision from any of our worlds in order to serve as the crew.\n\n§YThis decision will not destroy or uncolonize the planet it is used on§!\n\n§RWARNING: Ensure that you have a valid ship design for the Quasarcraft before constructing the next stage, if you have no design for the ship when the mega is complete, the Quasarcraft will fail to spawn.§!"
  quasarmod_megastage_dialogue.404.a: "We are so close."
 
  quasarmod_megastage_dialogue.405.name: "$quasarmod_quasarcraft$ Complete"
@@ -172,25 +168,30 @@
 
  # Black Hole Injector Complete
  quasarmod_dialogue.1.name: "Mass Injector: Online"
- quasarmod_dialogue.1.desc: "After many years of construction, we have completed and activated the Supermassive Black Hole Manipulator and we are now injecting incredible amounts of stellar plasma into [target.GetName] \n\nIt will only be a matter of time before an accretion disk begins to form around the equator."
+ quasarmod_dialogue.1.desc: "After many years of construction, we have completed and activated the S.M.B.H Manipulator and we are now injecting incredible amounts of stellar plasma into [target.GetName] \n\nIt will only be a matter of time before an accretion disk begins to form around the equator."
  quasarmod_dialogue.1.a: "Hopefully we have enough stellar plasma to keep up..."
 
  # Injection Complete Notification
  quasarmod_dialogue.102.name: "Injection Complete"
- quasarmod_dialogue.102.desc: "After several years of stellar plasma injection we have massively increased the mass of [root.from.GetName]. Burning with a brightness more intense than every star in the galaxy combined, the newly formed accretion disk stands as a testament to [root.species.GetName] engineering.\n\nThe Supermassive Black Hole Manipulator has been dismantled and recycled for any usable materials."
+ quasarmod_dialogue.102.desc: "After several years of stellar plasma injection we have massively increased the mass of [root.from.GetName]. Burning with a brightness more intense than every star in the galaxy combined, the newly formed accretion disk stands as a testament to [root.species.GetName] engineering.\n\nThe S.M.B.H Manipulator can now dismantled and recycled for any usable materials."
  quasarmod_dialogue.102.a: "Perfect."
 
  # Black Hole Harvester Complete
  quasarmod_dialogue.2.name: "Mass Harvester: Online"
- quasarmod_dialogue.2.desc: "After many years of construction, we have completed and activated the Supermassive Black Hole Manipulator and we are now harvesting incredible amounts of stellar plasma from [target.GetName] \n \nIt will only be a matter of time before the violence and immense heat of the accretion disk surrounding the quasar is little more than a faded memory."
+ quasarmod_dialogue.2.desc: "After many years of construction, we have completed and activated the S.M.B.H Manipulator and we are now harvesting incredible amounts of stellar plasma from [target.GetName] \n \nIt will only be a matter of time before the violence and immense heat of the accretion disk surrounding the quasar is little more than a faded memory."
  quasarmod_dialogue.2.a: "I wonder how many O-Class stars we could create with all this stellar plasma..."
 
  # Harvesting Complete Notification
  quasarmod_dialogue.202.name: "Harvesting Complete"
- quasarmod_dialogue.202.desc: "After several years of constant harvesting we have successfully managed to completely deplete the accretion disk of [root.from.GetName], a feat which has never been achieved before. It can now be now considered safe for us to begin work on other projects around the now \"dead\" black hole.\n\nThe Supermassive Black Hole Manipulator has been dismantled and recycled for any usable materials.\n \n§RNOTE TO PLAYER: If the system icon does not change from the quasar icon to the inactive icon, run the \"reload_graphical_map\" command, or save and reload your game.§!"
+ quasarmod_dialogue.202.desc: "After several years of constant harvesting we have successfully managed to completely deplete the accretion disk of [root.from.GetName], a feat which has never been achieved before. It can now be now considered safe for us to begin work on other projects around the now \"dead\" black hole.\n\nThe S.M.B.H Manipulator can now dismantled and recycled for any usable materials.\n \n§RNOTE TO PLAYER: If the system icon does not change from the quasar icon to the inactive icon, run the \"reload_graphical_map\" command, or save and reload your game.§!"
  quasarmod_dialogue.202.a: "Perfect."
 
-# The destruction of Aiondia
+ # The destruction of Aiondia
  quasarmod_dialogue.3.name: "The Destruction of Aiondia"
  quasarmod_dialogue.3.desc: "After quite possibly one of the most devastating wars in galactic history, §YAiondia§! has fallen to the §Y[aeternite_conqueror.GetName]§!.\n\nFollowing a horrifying demonstration of their flagship $quasarmod_quasarcraft$s offensive capabilities, the §Y[aeternite_conqueror.GetName]§! has utterly annihilated the Aeternite defenders who, despite their incredible technologies, were not able to withstand the power of their quasar powered hyperweapon.\n\nWith the loss of their one and only permanent settlement, the Aeternites can no longer sustain their war effort, and whatever remains of their empire will soon disappear."
  quasarmod_dialogue.3.a: "Another precursor empire bites the dust."
+
+ # SMBH Manipulator Dismantled
+ quasarmod_dialogue.5.name: "S.M.B.H Manipulator Dismantled"
+ quasarmod_dialogue.5.desc: "We have finished dismantling our S.M.B.H Manipulator in the [quasarmod_smbh_manipulator_dismantling.System.GetName] system, it has served its purpose well but it is time for us to move on to bigger things."
+ quasarmod_dialogue.5.a: "Excellent."

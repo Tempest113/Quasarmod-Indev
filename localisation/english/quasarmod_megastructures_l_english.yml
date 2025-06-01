@@ -41,30 +41,27 @@
  # Supermassive Black Hole Manipulator #
  #######################################
 
- blackhole_manipulator_0: "$gc_tera$Supermassive Black Hole Manipulator Site"
- blackhole_manipulator_0_DESC: "This construction site will act as the staging ground for one of our most recent and largest stellar manipulation projects, the Supermassive Black Hole Manipulator."
- blackhole_manipulator_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_miscellaneous$ \nCan change the type of supermassive black hole in the galactic core by harvesting or injecting £sr_stellar_plasma£ §Y$sr_stellar_plasma$§!"
+ smbh_manipulator_0: "$gc_tera$S.M.B.H Manipulator Site"
+ smbh_manipulator_0_DESC: "This construction site will act as the staging ground for one of our most recent and largest stellar manipulation projects, the Supermassive Black Hole Manipulator."
+ smbh_manipulator_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_miscellaneous$ \nCan change the type of supermassive black hole in the galactic core by harvesting or injecting £sr_stellar_plasma£ §Y$sr_stellar_plasma$§!"
 
- blackhole_manipulator_1: "Black Hole Manipulator Frame"
- blackhole_manipulator_1_DESC: "This gargantuan frame will soon support a mass injection and harvesting array so incredibly large that entire stars worth of mass will be moved every day. Also capable from generating an immense magnetic field, the frame restricts the accretion disk of the quasar to a more manageable size."
+ smbh_manipulator_1: "S.M.B.H Manipulator Pentadimensional Supports"
+ smbh_manipulator_1_DESC: "This support frame extends into five dimensional space, providing reinforcement against the stresses inherent to a structure of its size. Without them, the S.M.B.H Manipulator would collapse under its own mass, greatly outclassing that of entire stars."
 
- blackhole_manipulator_2: "Black Hole Manipulator Tetradimensional Supports"
- blackhole_manipulator_2_DESC: "These structural supports, partially constructed in a higher dimension will prevent the structure from collapsing from underneath its immense weight which is greater than many of the stars in our galaxy."
+ smbh_manipulator_2: "S.M.B.H Manipulator Magnetic Confinement"
+ smbh_manipulator_2_DESC: "A vast array of magnetic field generator rings encircles the supermassive black hole below, containing its accretion disk and relativistic jets to allow safer manipulation of the black holes composition."
 
- blackhole_manipulator_3: "Black Hole Manipulator Plasma Redirection Array"
- blackhole_manipulator_3_DESC: "The plasma redirection array is the main focus of the entire megastructure, allowing us to feed the black hole below with incredible amounts of stellar plasma. We also have the ability to do the exact opposite, harvesting the hyperquasar's accretion disk and slowing its rotation, as well as capturing energy from its relativistic jets, effectively killing the active core, although this does not mean that we will be unable to revive it..."
+ smbh_manipulator_3: "S.M.B.H Manipulator Plasma Redirection Array"
+ smbh_manipulator_3_DESC: "The plasma redirection array is the main focus of the entire megastructure, allowing us to feed the black hole below with incredible amounts of stellar plasma. We also have the ability to do the exact opposite, harvesting the hyperquasar's accretion disk and slowing its rotation, as well as capturing energy from its relativistic jets, effectively killing the active core, although this does not mean that we will be unable to revive it..."
 
- blackhole_manipulator_4: "Black Hole Manipulator Worker Drone Habitation Ring"
- blackhole_manipulator_4_DESC: "Until we are able to construct radiation shielding around the black hole, automated drones will have to conduct internal maintenance and on-site management."
+ smbh_manipulator_4: "Inactive S.M.B.H Manipulator"
+ smbh_manipulator_4_DESC: "A complete yet inactive S.M.B.H Manipulator, ready to reshape the very heart of the galaxy to our needs. All that remains is to give the go ahead."
 
- blackhole_manipulator_5: "Black Hole Manipulator Radiation Shielding"
- blackhole_manipulator_5_DESC: "The process of injecting mass into a black hole, as well as harvesting it releases an incredible amount of energy, much of which is in the form of ionizing radiation. In order to prevent our Supermassive Black Hole Manipulator from sterilizing the inner systems of the galaxy, this stage of the megastructure prevents radiation from escaping and causing harm to life, both biological and synthetic."
+ smbh_manipulator_a5: "S.M.B.H Manipulator - Mass Injection"
+ smbh_manipulator_a5_DESC: "We have begun injecting £sr_stellar_plasma£§Y$sr_stellar_plasma$§! into the inactive core in order to transform it to better suit our needs as a $sc_quasar|M$."
 
- blackhole_manipulator_a6: "Supermassive Black Hole Stellar Mass Injector"
- blackhole_manipulator_a6_DESC: "We have begun injecting stellar mass into the inactive core in order to transform it to better suit our needs as a hyperquasar."
-
- blackhole_manipulator_b6: "Hyperquasar Stellar Mass Harvester"
- blackhole_manipulator_b6_DESC: "We have begun harvesting the accretion disk and relativistic jets of the hyperquasar in order to change its status from an active core to an inactive one."
+ smbh_manipulator_b5: "S.M.B.H Manipulator - Mass Harvesting"
+ smbh_manipulator_b5_DESC: "We have begun harvesting incredible amounts of £sr_stellar_plasma£§Y$sr_stellar_plasma$§! from the hyperquasar's accretion disk, it will soon fit our needs as an $sc_birch|M$."
 
 
 

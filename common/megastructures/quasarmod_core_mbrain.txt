@@ -201,9 +201,9 @@ matrioshka_brain_3_core = {
         from = { country_event = { id = quasarmod_megastage_dialogue.4 } }
     }
 
-    country_modifier = {
-        building_giga_matrioshka_brain_uplink_country_max = 12
-    }
+    # country_modifier = { Temp disabled for 4.0
+    #     building_giga_matrioshka_brain_uplink_country_max = 12
+    # }
 
 }
 
@@ -252,9 +252,9 @@ matrioshka_brain_4_core = {
         from = { country_event = { id = quasarmod_megastage_dialogue.5 } }
     }
 
-    country_modifier = {
-        building_giga_matrioshka_brain_uplink_country_max = 25
-    }
+    # country_modifier = { Temp disabled for 4.0
+    #     building_giga_matrioshka_brain_uplink_country_max = 25
+    # }
 
 }
 
@@ -308,7 +308,7 @@ matrioshka_brain_5_core = {
         from = { country_event = { id = quasarmod_megastage_dialogue.6 } }
     }
 
-    country_modifier = {
-        building_giga_matrioshka_brain_uplink_country_max = 50
-    }
+    # country_modifier = { Temp disabled for 4.0
+    #     building_giga_matrioshka_brain_uplink_country_max = 50
+    # }
 }

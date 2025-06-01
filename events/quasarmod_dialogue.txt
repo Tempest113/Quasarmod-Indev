@@ -1,6 +1,5 @@
 namespace = quasarmod_dialogue
-# eventname.10xxx = injector related event
-# eventname.20xxx = harvester related event
+# comment on line 25 explains event numbering logic, x02 events relate to the event above them, (typically events relating to the inactive/active cores respectively)
 
 ###############################
 ### General Dialogue Events ###
@@ -53,6 +52,23 @@ situation_event = {
 	}
 }
 
+#Harvesting Complete
+country_event = {
+	id = quasarmod_dialogue.202
+	title = quasarmod_dialogue.202.name
+	desc = quasarmod_dialogue.202.desc
+	picture = GFX_evt_black_hole
+	hide_window = no
+	is_triggered_only = yes
+
+	option = {
+		name = quasarmod_dialogue.202.a
+		# add_resource = {
+		# 	alloys = 3500000
+		# }
+	}
+}
+
 # The destruction of Aiondia
 country_event = {
 	id = quasarmod_dialogue.3
@@ -96,20 +112,21 @@ country_event = {
 	}
 }
 
-#Harvesting Complete
+# SMBH Manipulator Dismantled
 country_event = {
-	id = quasarmod_dialogue.202
-	title = quasarmod_dialogue.202.name
-	desc = quasarmod_dialogue.202.desc
-	picture = GFX_evt_black_hole
-	hide_window = no
+	id = quasarmod_dialogue.5
+	title = quasarmod_dialogue.5.name
+	desc = quasarmod_dialogue.5.desc
+	picture = GFX_evt_megastructure_construction
+	location = event_target:quasarmod_smbh_manipulator_dismantling
+
 	is_triggered_only = yes
 
 	option = {
-		name = quasarmod_dialogue.202.a
-		# add_resource = {
-		# 	alloys = 3500000
-		# }
+		name = quasarmod_dialogue.5.a
+		hidden_effect = {
+			clear_global_event_target = quasarmod_smbh_manipulator_dismantling
+		}
 	}
 }
 
@@ -254,7 +271,7 @@ country_event = {
   # Supermassive Black Hole Manipulator #
 ############################################
 
-# Construction Site Built
+# S.M.B.H Manipulator Construction Site Built
 country_event = {
 	id = quasarmod_megastage_dialogue.101
 	title = quasarmod_megastage_dialogue.101.name
@@ -269,7 +286,7 @@ country_event = {
 	}
 }
 
-# Black Hole Manipulator Frame Built
+# S.M.B.H Manipulator Pentadimensional Supports Built
 country_event = {
 	id = quasarmod_megastage_dialogue.102
 	title = quasarmod_megastage_dialogue.102.name
@@ -284,7 +301,7 @@ country_event = {
 	}
 }
 
-# Black Hole Manipulator Tetradimensional Supports Built
+# S.M.B.H Manipulator Magnetic Confinement Built
 country_event = {
 	id = quasarmod_megastage_dialogue.103
 	title = quasarmod_megastage_dialogue.103.name
@@ -299,7 +316,7 @@ country_event = {
 	}
 }
 
-# Black Hole Manipulator Plasma Redirection Array Built
+# S.M.B.H Manipulator Plasma Redirection Array Built
 country_event = {
 	id = quasarmod_megastage_dialogue.104
 	title = quasarmod_megastage_dialogue.104.name
@@ -314,7 +331,7 @@ country_event = {
 	}
 }
 
-# Black Hole Manipulator Worker Drone Habitation Ring built
+# S.M.B.H Manipulator Radiation Shielding Built / Mega Complete
 country_event = {
 	id = quasarmod_megastage_dialogue.105
 	title = quasarmod_megastage_dialogue.105.name
@@ -329,20 +346,6 @@ country_event = {
 	}
 }
 
-# Black Hole Manipulator Radiation Shielding Built
-country_event = {
-	id = quasarmod_megastage_dialogue.106
-	title = quasarmod_megastage_dialogue.106.name
-	desc = quasarmod_megastage_dialogue.106.desc
-	picture = GFX_evt_black_hole
-	show_sound = event_dyson_sphere_build_start
-	is_triggered_only = yes
-	location = event_target:giga_planet
-
-	option = {
-		name = quasarmod_megastage_dialogue.106.a
-	}
-}
 
 
 ### Hyperquasaric Teraforge ###

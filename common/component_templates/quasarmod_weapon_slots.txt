@@ -31,7 +31,7 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		upkeep = {
-			sr_magical_neutronium = 1
+			giga_sr_quasaric_energy = 1
 		}
 	}
 }
@@ -61,7 +61,7 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		upkeep = {
-			sr_magical_neutronium = 1
+			giga_sr_quasaric_energy = 1
 		}
 	}
 }
@@ -93,7 +93,7 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		upkeep = {
-			sr_magical_neutronium = 1
+			giga_sr_quasaric_energy = 1
 		}
 	}
 }
@@ -199,7 +199,7 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		upkeep = {
-			sr_magical_neutronium = 5
+			giga_sr_quasaric_energy = 5
 		}
 	}
 }

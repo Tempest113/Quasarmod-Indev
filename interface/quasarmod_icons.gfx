@@ -83,27 +83,31 @@ spriteTypes = {
 	# Supermassive Black Hole Manipulator
 
 	spriteType = {
-		name = GFX_blackhole_manipulator_0_outliner_icon
+		name = GFX_smbh_manipulator_0_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
 	}
 	spriteType = {
-		name = GFX_blackhole_manipulator_1_outliner_icon
+		name = GFX_smbh_manipulator_1_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
 	}
 	spriteType = {
-		name = GFX_blackhole_manipulator_2_outliner_icon
+		name = GFX_smbh_manipulator_2_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
 	}
 	spriteType = {
-		name = GFX_blackhole_manipulator_3_outliner_icon
+		name = GFX_smbh_manipulator_3_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
 	}
 	spriteType = {
-		name = GFX_blackhole_manipulator_4_outliner_icon
+		name = GFX_smbh_manipulator_4_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
 	}
 	spriteType = {
-		name = GFX_blackhole_manipulator_5_outliner_icon
+		name = GFX_smbh_manipulator_a5_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
+	}
+	spriteType = {
+		name = GFX_smbh_manipulator_b5_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
 	}
 

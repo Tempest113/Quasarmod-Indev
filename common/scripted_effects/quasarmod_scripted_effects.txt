@@ -64,6 +64,8 @@ convert_to_inactive_core = {
 				NOR = {
 					is_planet_class = pc_core_quasar
 					is_planet_class = pc_core_black_hole
+					is_star = yes # no idea how you'd get a star in a SMBH system but nvm :clueless:
+					has_planet_flag = edge_of_eternity
 				}
 			}
 			change_pc = pc_barren
@@ -78,16 +80,24 @@ convert_to_inactive_core = {
 					is_megastructure_type = ehof_pgate_gateway
 					is_megastructure_type = hyper_relay
 					is_megastructure_type = hyper_relay_restored
-					is_megastructure_type = blackhole_manipulator_b6
+					is_megastructure_type = smbh_manipulator_b5
 				}
 			}
 			remove_megastructure = this
 		}
 		every_system_megastructure = {
 			limit = {
-				is_megastructure_type = blackhole_manipulator_b6
+				is_megastructure_type = smbh_manipulator_b5
 			}
-			upgrade_megastructure_to = blackhole_manipulator_5
+			solar_system = {
+				spawn_megastructure = {
+					type = smbh_manipulator_4
+					coords_from = prev
+					owner = prev.owner
+					planet = system_star
+				}
+			}
+			remove_megastructure = this
 		}
 
 
@@ -121,12 +131,14 @@ convert_to_hyperquasar = {
 	solar_system = {
 		set_star_class = sc_quasar
 		every_system_planet = {
-			remove_planet_flag = has_megastructure
+			giga_clear_has_mega_flag = yes
 
 			limit = {
 				NOR = {
 					is_planet_class = pc_core_quasar
 					is_planet_class = pc_core_black_hole
+					is_star = yes # no idea how you'd get a star in a SMBH system but nvm :clueless:
+
 				}
 			}
 			change_pc = pc_molten
@@ -141,22 +153,33 @@ convert_to_hyperquasar = {
 					is_megastructure_type = ehof_pgate_gateway
 					is_megastructure_type = hyper_relay
 					is_megastructure_type = hyper_relay_restored
-					is_megastructure_type = blackhole_manipulator_a6
+					is_megastructure_type = smbh_manipulator_a5
 				}
 			}
 			remove_megastructure = this
 		}
 		every_system_megastructure = {
 			limit = {
-				is_megastructure_type = blackhole_manipulator_a6
+				is_megastructure_type = smbh_manipulator_a5
 			}
-			upgrade_megastructure_to = blackhole_manipulator_5
+			solar_system = {
+				spawn_megastructure = {
+					type = smbh_manipulator_4
+					coords_from = prev
+					owner = prev.owner
+					planet = system_star
+				}
+			}
+			remove_megastructure = this
 		}
 
 		star = {
 			giga_clear_has_mega_flag = yes
 			change_pc = pc_core_quasar
 			set_planet_size = 10
+			set_planet_entity = {
+				entity = quasar_small_disk_no_jets
+			}
 			#test fix for EHOF bug
 			if = {
 				limit = {

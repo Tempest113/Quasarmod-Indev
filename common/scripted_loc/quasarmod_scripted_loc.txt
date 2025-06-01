@@ -1,0 +1,11 @@
+defined_text = {
+    name = QuasarmodGetCoreOpposite
+    text = {
+        trigger = {
+            is_star_class = sc_quasar
+        }
+        localization_key = QuasarmodInactiveSMBH
+    }
+
+    default = QuasarmodActiveHyperquasar
+}

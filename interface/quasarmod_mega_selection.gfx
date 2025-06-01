@@ -2,7 +2,7 @@ spriteTypes = {
 
     # SMBH Manipulator
     spriteType = {
-        name = "GFX_blackhole_manipulator_0_build_icon"
+        name = "GFX_smbh_manipulator_0_build_icon"
         textureFile = gfx/interface/icons/technologies/tech_quasarmod_smbh_manipulator.dds
     }
 

@@ -8,11 +8,11 @@ on_ship_built = {
 
 }
 
-on_monthly_pulse_country = {
-     events = {
-          # quasarmod_utility.3 - Optimized code, buildings now check for modifier which is cleared on planet ownership change, no longer need to check for/remove flag
-     }
-}
+# on_monthly_pulse_country = {
+#      events = {
+#         quasarmod_utility.3 - Optimized code, buildings now check for modifier which is cleared on planet ownership change, no longer need to check for/remove flag
+#      }
+# }
 
 on_destroy_planet_with_QSC_ENDSINGER = {
      events = {

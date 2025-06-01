@@ -25,10 +25,10 @@ owns_quasarshipyard_finished = {
 owns_smbh_manipulator_finished = {
     OR = {
         any_owned_megastructure = {
-            is_megastructure_type = blackhole_manipulator_b6
+            is_megastructure_type = smbh_manipulator_b5
         }
         any_owned_megastructure = {
-            is_megastructure_type = blackhole_manipulator_a6
+            is_megastructure_type = smbh_manipulator_a5
         }
     }
 }

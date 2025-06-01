@@ -88,10 +88,10 @@
 
  no_qsc_wormholes: "$TRIGGER_FAIL$There are no wormholes to disband."
  wormholes_already_out: "$TRIGGER_FAIL$Must disband wormholes first."
- requires_quasarcraft_crew: "$TRIGGER_FAIL$We must acquire 60 pops via a decision, to serve as the crew."
+ requires_quasarcraft_crew: "$TRIGGER_FAIL$We must acquire 6000 pops via a decision, to serve as the crew."
  cannot_target_empty_space: "$TRIGGER_FAIL$Cannot target $sc_empty_space$ with the Endsinger."
  cannot_target_core_black_hole: "$TRIGGER_FAIL$Cannot target a Supermassive Black Hole with the Endsinger."
- qsc_planet_target_requires_no_star: "Cannot target a star with Endsinger $qsc_endsinger.4$ targeting mode." # This one does not have the $TRIGGER_FAIL$ as it's automatically added
+ qsc_planet_target_requires_no_star: "Cannot target a star with Endsinger $qsc_endsinger.4$ targeting mode." # This one does not have the $TRIGGER_FAIL$ as it appears to be automatically added
 
  #############
  # Modifiers #
