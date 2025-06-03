@@ -10,10 +10,12 @@
 
 - Update/re-add loc for non-English languages
 
+- Tidy up component code, revise stats :husk:
+
 - [DONE] Revise SMBH Manipulator costs now that it has one less stage
 
 - Work out exactly how the SMBH manipulator works with the EHOF's ability to spawn new galactic core systems and edit things accordingly :husk: (i should have done this a long time ago lol)
 
 - [DONE] Add an actual dismantle mechanic for the SMBH manipulator instead of the current system (also allows users to convert between core types without rebuilding the manipulator if they wanted to do that for some reason)
 
-- Get the galactic core restriction on taking the AP actually functional, third (maybe more) time's the charm I guess lol
+- [DONE - DO MORE TESTING] Get the galactic core restriction on taking the AP actually functional, third (maybe more) time's the charm I guess lol

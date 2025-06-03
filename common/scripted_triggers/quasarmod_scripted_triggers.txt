@@ -61,6 +61,13 @@ planet_has_quasarmod_teraforge_uplink = {
     }
 }
 
+ship_uses_quasarcraft_components = {
+    is_ship_size = quasarmod_quasarcraft
+}
+ship_uses_quasarcraft_wormhole_components = {
+    is_ship_size = quasarcraft_wormhole
+}
+
 can_destroy_planet_with_QSC_ENDSINGER = {
     optimize_memory
     custom_tooltip = {

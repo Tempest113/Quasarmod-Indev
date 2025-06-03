@@ -111,6 +111,7 @@ planet_event = {
         convert_to_inactive_core = yes
 
         space_owner = {
+            set_country_flag = found_birch_candidate
             country_event = {
                 id = quasarmod_dialogue.202
             }
@@ -128,6 +129,7 @@ planet_event = {
         convert_to_hyperquasar = yes
 
         space_owner = {
+            set_country_flag = found_qso_candidate
             country_event = {
                 id = quasarmod_dialogue.102
             }

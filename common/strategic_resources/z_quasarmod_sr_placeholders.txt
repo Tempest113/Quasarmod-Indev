@@ -1,0 +1,8 @@
+sr_stellar_plasma = {
+    category = other
+    tradable = no
+
+    visibility_prerequisite = {
+        always = no
+    }
+}

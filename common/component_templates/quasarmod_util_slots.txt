@@ -10,7 +10,7 @@ utility_component_template = {
 
 	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "power_core"
-	size_restriction = { quasarmod_quasarcraft }
+	potential = { ship_uses_quasarcraft_components = yes }
 	class_restriction = { shipclass_military }
 
 }
@@ -31,7 +31,7 @@ utility_component_template = {
 
 	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "thruster_components"
-	size_restriction = { quasarmod_quasarcraft }
+	potential = { ship_uses_quasarcraft_components = yes }
 	class_restriction = { shipclass_military }
 }
 
@@ -54,7 +54,7 @@ utility_component_template = {
 
 	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "ftl_components"
-	size_restriction = { quasarmod_quasarcraft }
+	potential = { ship_uses_quasarcraft_components = yes }
 	class_restriction = { shipclass_military }
 }
 
@@ -71,7 +71,7 @@ utility_component_template = {
 
 	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "combat_computers"
-	size_restriction = { quasarmod_quasarcraft }
+	potential = { ship_uses_quasarcraft_components = yes }
 	class_restriction = { shipclass_military }
 
 }
@@ -95,7 +95,7 @@ utility_component_template = {
 
 	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "sensor_components"
-	size_restriction = { quasarmod_quasarcraft }
+	potential = { ship_uses_quasarcraft_components = yes }
 	class_restriction = { shipclass_military }
 }
 
@@ -108,7 +108,7 @@ utility_component_template = {
 
 	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "ship_aura_components"
-	size_restriction = { quasarmod_quasarcraft }
+	potential = { ship_uses_quasarcraft_components = yes }
 	class_restriction = { shipclass_military }
 
 	hostile_aura = {
@@ -149,7 +149,7 @@ utility_component_template = {
 
 	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "ship_aura_components"
-	size_restriction = { quasarmod_quasarcraft }
+	potential = { ship_uses_quasarcraft_components = yes }
 	class_restriction = { shipclass_military }
 
 	friendly_aura = {
@@ -191,7 +191,7 @@ utility_component_template = {
 
 	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "ship_aura_components"
-	size_restriction = { quasarmod_quasarcraft }
+	potential = { ship_uses_quasarcraft_components = yes }
 	class_restriction = { shipclass_military }
 
 	friendly_aura = {
@@ -233,7 +233,7 @@ utility_component_template = {
 
 	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "ship_aura_components"
-	size_restriction = { quasarmod_quasarcraft }
+	potential = { ship_uses_quasarcraft_components = yes }
 	class_restriction = { shipclass_military }
 
 	hostile_aura = {

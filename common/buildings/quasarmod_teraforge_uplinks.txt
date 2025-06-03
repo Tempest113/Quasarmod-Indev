@@ -15,7 +15,6 @@ building_teraforge_uplink_base = {
         industrial
     }
 
-
     resources = {
         category = planet_buildings
         cost = {
@@ -60,15 +59,12 @@ building_teraforge_uplink_base = {
                  }
             }
         }
-        NOR = {
-            has_modifier = resort_colony
-            has_modifier = slave_colony
-        }
+        is_special_colony_type = no
         OR = {
             owner = {
                 is_ai = no
             }
-            has_any_industry_district = yes
+            has_any_industrial_zone = yes
         }
     }
 
@@ -80,8 +76,7 @@ building_teraforge_uplink_base = {
     destroy_trigger = {
         exists = owner
         OR = {
-            has_modifier = resort_colony
-            has_modifier = slave_colony
+            is_special_colony_type = yes
             owner = { is_wilderness_empire = yes }
         }
     }
@@ -154,7 +149,7 @@ building_teraforge_uplink_alloys = {
             owner = {
                 is_ai = no
             }
-            has_any_industry_district = yes
+            has_any_industrial_zone = yes
         }
     }
 
@@ -165,8 +160,7 @@ building_teraforge_uplink_alloys = {
     destroy_trigger = {
         exists = owner
         OR = {
-            has_modifier = resort_colony
-            has_modifier = slave_colony
+            is_special_colony_type = yes
             owner = { is_wilderness_empire = yes }
         }
     }
@@ -292,15 +286,12 @@ building_teraforge_uplink_consumer_goods = {
     show_tech_unlock_if = { always = no }
 
     potential = {
-        NOR = {
-            has_modifier = resort_colony
-            has_modifier = slave_colony
-        }
+        is_special_colony_type = no
         OR = {
             owner = {
                 is_ai = no
             }
-            has_any_industry_district = yes
+            has_any_industrial_zone = yes
         }
     }
 
@@ -311,8 +302,7 @@ building_teraforge_uplink_consumer_goods = {
     destroy_trigger = {
         exists = owner
         OR = {
-            has_modifier = resort_colony
-            has_modifier = slave_colony
+            is_special_colony_type = yes
             owner = { is_wilderness_empire = yes }
         }
     }

@@ -221,11 +221,11 @@ hyperquasaric_megashipyard_4 = {
     build_time = 7200
     resources = {
         category = giga_gigastructures
+        inline_script = {
+            script = megastructures/generic_parts/giga_mega_alloy_cost
+            alloys = 250000
+        }
         cost = {
-            inline_script = {
-                script = megastructures/generic_parts/giga_mega_alloy_cost
-                alloys = 250000
-            }
             unity = @giga_tera_unity_cost
         }
         upkeep = {

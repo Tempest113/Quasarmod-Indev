@@ -76,6 +76,7 @@ quasarcraft_wormhole = {
 	max_speed = 250
 	acceleration = 5
 	graphical_culture = no
+	entity = "quasarcraft_mifs_wormhole_entity"
 	rotation_speed = 10
 	modifier = {
 		ships_upkeep_mult = -1
