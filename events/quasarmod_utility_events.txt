@@ -114,7 +114,12 @@ planet_event = {
             set_country_flag = found_birch_candidate
             country_event = {
                 id = quasarmod_dialogue.202
+
             }
+            country_event = {
+                id = quasarmod_utility.13
+            }
+
         }
     }
 }
@@ -132,6 +137,9 @@ planet_event = {
             set_country_flag = found_qso_candidate
             country_event = {
                 id = quasarmod_dialogue.102
+            }
+            country_event = {
+                id = quasarmod_utility.13
             }
         }
     }
@@ -371,6 +379,86 @@ event = {
             set_global_flag = stellar_manip_manipulator_disabled
             set_global_flag = stellar_manip_assembler_disabled
             set_global_flag = stellar_manip_o_systemcraft_disabled
+        }
+    }
+}
+
+country_event = {
+    id = quasarmod_utility.13
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                OR = {
+                    AND = { # Quasar + Inactive Core
+                        any_system = { is_star_class = sc_quasar }
+                        OR = {
+                            any_system = { is_star_class = sc_birch }
+                            any_system = { is_star_class = sc_birch_built }
+                            any_system = { is_star_class = sc_void_birch_built }
+                        }
+                    }
+
+                    count_system = { # Quasar + Quasar
+                        limit = {
+                            is_star_class = sc_quasar
+                        }
+                        count >= 2
+                    }
+
+                    count_system = { # Inactive + Inactive
+                        limit = {
+                            OR = {
+                                is_star_class = sc_birch
+                                is_star_class = sc_birch_built
+                                is_star_class = sc_void_birch_built
+                            }
+                        }
+                        count >= 2
+                    }
+                }
+            }
+            remove_country_flag = can_spawn_smbh
+            remove_country_flag = can_spawn_quasar
+        }
+    }
+}
+
+ship_event = {
+    id = quasarmod_utility.14
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        from = {
+            OR = {
+                has_star_flag = giga_birch_core_ehof
+                has_star_flag = giga_qso_core_ehof
+            }
+        }
+    }
+
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = { from = { has_star_flag = giga_birch_core_ehof } }
+                owner = {
+                    set_country_flag = found_birch_candidate
+                    # No more core spawning for you lol
+                    remove_country_flag = can_spawn_smbh
+                    remove_country_flag = can_spawn_quasar
+                }
+            }
+            else = {
+                owner = {
+                    set_country_flag = found_qso_candidate
+                    # No more core spawning for you lol
+                    remove_country_flag = can_spawn_smbh
+                    remove_country_flag = can_spawn_quasar
+                }
+            }
+            owner = { set_country_flag = found_galactic_core }
         }
     }
 }

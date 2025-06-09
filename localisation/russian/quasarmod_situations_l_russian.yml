@@ -1,0 +1,46 @@
+﻿l_russian:
+
+ ##############
+ # Situations #
+ ##############
+
+ # Injection Situation
+
+ situation_blackhole_injection: "Injection into [target.GetName]"
+ situation_blackhole_injection_desc: "We are currently injecting incredible amounts of stellar plasma into [target.GetName], it will only be a matter of time before it is completely transformed."
+
+ situation_blackhole_injection_low: "Reduced Injection Speed"
+ situation_blackhole_injection_low_effect: "We are injecting stellar plasma into [target.GetName] at a reduced rate of 525 £sr_stellar_plasma£ §YStellar Plasma§! per month. \n \n"
+
+ situation_blackhole_injection_standard: "Standard Injection Speed"
+ situation_blackhole_injection_standard_effect: "We are injecting stellar plasma into [target.GetName] at the standard rate of 1050 £sr_stellar_plasma£ §YStellar Plasma§! per month. \n \n"
+
+ situation_blackhole_injection_high: "Increased Injection Speed"
+ situation_blackhole_injection_high_effect: "We are injecting stellar plasma into [target.GetName] at an increased rate of 2100 £sr_stellar_plasma£ §YStellar Plasma§! per month. \n \n"
+
+ situation_blackhole_injection_monthly_change_tooltip: "The progress of this project depends on the §YApproach§! we pick, and increasing our investment shall hasten its speed"
+
+
+ # Harvesting Situation
+
+ situation_blackhole_harvesting: "Harvesting [target.GetName]"
+ situation_blackhole_harvesting_desc: "We are currently harvesting incredible amounts of stellar plasma from [target.GetName], it will not be long before the accretion disk is no more."
+
+ situation_blackhole_harvesting_standard: "Standard Harvesting Speed"
+ situation_blackhole_harvesting_standard_effect: "We are harvesting stellar plasma from [target.GetName] at the standard rate of 1050 £sr_stellar_plasma£ §YStellar Plasma§! per month. \n \n"
+
+ situation_blackhole_harvesting_monthly_change_tooltip: ""
+
+# Research The Perforator
+
+#situation_research_the_perforator: "Research the Reality Perforator"
+#situation_research_the_perforator_desc: "We have begun a project to research the §YVultaum Reality Perforator§!. The properties it exhibits have the potential to completely change our understanding of the universe we live in. We must also consider the very same thing that drove the Vultaum to extinction - the possibility that everything we know is merely a simulation. Hopefully, this project will uncover the truth."
+
+#situation_research_the_perforator_low: "Reduced Resource Allocation"
+#situation_research_the_perforator_low_effect: "Due to resource constraints, we are allocating fewer resources towards studding the artifact than we typically would, this has slowed down research considerably. \n \n"
+
+#situation_research_the_perforator_standard: "Standard Resource Allocation"
+#situation_research_the_perforator_standard_effect: "We are allocating the standard amount of resources towards studying the artifact, research is coming along nicely.\n \n"
+
+#situation_research_the_perforator_high: "Increased Resource Allocation"
+#situation_research_the_perforator_high_effect: "The importance of this study necessitates a large amount of resources to be allocated to it, research should not take long.\n \n"

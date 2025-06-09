@@ -38,3 +38,9 @@ on_press_begin = {
           quasarmod_utility.12
      }
 }
+
+on_entering_system_first_time = {
+     events = {
+          quasarmod_utility.14
+     }
+}
