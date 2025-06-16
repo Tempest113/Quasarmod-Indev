@@ -6,6 +6,8 @@
 
 - [DONE] Update the Teraforge uplinks
 
+- [DONE] Fix SMBH Manipulator menu option not requiring Stellar Manipulation
+
 - [DONE] Update/re-add loc for non-English languages
 
 - [DONE] Revise SMBH Manipulator costs now that it has one less stage
