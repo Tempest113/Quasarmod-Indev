@@ -134,6 +134,12 @@ decision_quasarcraft_crew = {
             set_country_flag = quasarcraft_crew_acquired
             country_event = { id = quasarmod_megastage_dialogue.406 }
         }
-        random_owned_pop_group = { kill_pop_group = { pop_group = this amount = 6100 } }
+        while = {
+            count = 60
+            random_owned_pop_group = {
+                kill_single_pop = yes
+            }
+        }
+
     }
 }
