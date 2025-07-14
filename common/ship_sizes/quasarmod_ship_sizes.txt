@@ -44,6 +44,7 @@ quasarmod_quasarcraft = {
 	is_civilian = no
 	is_designable = yes
 	components_add_to_cost = no
+	construction_type = starbase_shipyard
 
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
@@ -66,7 +67,9 @@ quasarmod_quasarcraft = {
 		}
 		upkeep = {
 			alloys = 12000
-
+		}
+		logistics = {
+			trade = 1000
 		}
 	}
 

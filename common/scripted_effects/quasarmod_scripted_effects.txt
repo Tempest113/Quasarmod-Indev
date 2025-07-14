@@ -540,6 +540,7 @@ quasarcraft_destruction_effects = {
 	}
 
 	every_galaxy_planet = {
+		limit = { has_planet_flag = qsc_no_more_damage }
 		remove_planet_flag = qsc_no_more_damage
 	}
 }
