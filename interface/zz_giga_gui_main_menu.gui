@@ -2549,7 +2549,35 @@ guiTypes = {
 						effect = "giga_presets_13"
 					}
 				}
-
+				####################################
+				### presets_18 #####################
+				####################################
+				containerWindowType = {
+					name = "presets_18_options"
+					position = { x = -412 y = 185 }
+					size = { width = 410 height = 34 }
+					orientation = upper_left
+					effectButtonType = {
+						name = "background_presets_18"
+						spriteType = "GFX_giga_menu_button_bg"
+						position = { x = 0 y = 0 }
+						format = left
+						no_clicksound = yes
+						borderSize = { x = 10 y = 0 }
+						font = "cg_16b"
+						text = "giga_menu_presets_18"
+						effect = "giga_page_presets"
+					}
+					effectButtonType = {
+						name = "presets_13_button"
+						spriteType = "GFX_button_116_24"
+						position = { x = 277 y = -7 }
+						font = "cg_16b"
+						text = "Enable Preset"
+						clicksound = interface
+						effect = "giga_presets_18"
+					}
+				}
 				####################################
 				### presets_20 #####################
 				####################################
@@ -5158,24 +5186,23 @@ guiTypes = {
 				####################################
 				### asteroid_manufactory ###########
 				####################################
-
-				effectButtonType = {
-					name = "background_asteroid_manufactory"
-					spriteType = "GFX_giga_menu_button_bg"
-					position = { x = 0 y = 0 }
-					format = left
-					no_clicksound = yes
-					borderSize = { x = 10 y = 0 }
-					font = "cg_16b"
-					text = "name_asteroid_manufactory"
-					effect = giga_asteroid_manufactory_tt
-				}
-
 				containerWindowType = {
 					name = "asteroid_manufactory_options"
 					position = { x = 20 y = -215 }
 					size = { width = 410 height = 34 }
 					orientation = upper_left
+
+					effectButtonType = {
+						name = "background_asteroid_manufactory"
+						spriteType = "GFX_giga_menu_button_bg"
+						position = { x = 0 y = 0 }
+						format = left
+						no_clicksound = yes
+						borderSize = { x = 10 y = 0 }
+						font = "cg_16b"
+						text = "name_asteroid_manufactory"
+						effect = giga_asteroid_manufactory_tt
+					}
 
 					effectButtonType = { name = "asteroid_manufactory_disabled" spriteType = "GFX_giga_menu_disabled" position = { x = 380 y = 5 } no_clicksound = yes effect = "giga_asteroid_manufactory_disabled" }
 					effectButtonType = { name = "asteroid_manufactory_r" spriteType = "GFX_giga_menu_r" position = { x = 350 y = 5 } no_clicksound = yes effect = "giga_asteroid_manufactory_r" }
@@ -5191,7 +5218,6 @@ guiTypes = {
 					effectButtonType = { name = "asteroid_manufactory_2_disabled" spriteType = "GFX_giga_menu_plus_5_disabled" position = { x = 260 y = 5 } clicksound = interface effect = "giga_asteroid_manufactory_2_disabled" }
 					effectButtonType = { name = "asteroid_manufactory_1_disabled" spriteType = "GFX_giga_menu_plus_0_disabled" position = { x = 230 y = 5 } clicksound = interface effect = "giga_asteroid_manufactory_1_disabled" }
 				}
-
 				####################################
 				### megabase #######################
 				####################################

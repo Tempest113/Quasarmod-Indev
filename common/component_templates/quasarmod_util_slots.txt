@@ -3,34 +3,15 @@ utility_component_template = {
 	size = small
 	icon = "GFX_qsc_reactor"
 	icon_frame = 1
-	power = 120000000
+	power = 60000
 	resources = {
 		category = ship_components
 	}
-
-	#prerequisites = { "tech_quasarcraft_6" }
-	component_set = "power_core"
-	potential = { ship_uses_quasarcraft_components = yes }
-	class_restriction = { shipclass_military }
-
-}
-
-utility_component_template = {
-	key = "QSC_THRUSTER"
-	size = small
-	icon = "GFX_qsc_drive"
-	icon_frame = 1
-	power = -5000000
-	resources = {
-		category = ship_components
-	}
-
 	modifier = {
-		ship_base_speed_mult = 1
+		ship_reactor_power_mult = 1750
 	}
 
-	#prerequisites = { "tech_quasarcraft_6" }
-	component_set = "thruster_components"
+	component_set = "power_core"
 	potential = { ship_uses_quasarcraft_components = yes }
 	class_restriction = { shipclass_military }
 }
@@ -51,7 +32,6 @@ utility_component_template = {
 		ship_jumpdrive_cooldown_mult = 2
 	}
 
-	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "ftl_components"
 	potential = { ship_uses_quasarcraft_components = yes }
 	class_restriction = { shipclass_military }
@@ -60,7 +40,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "QSC_COMPUTER"
 	size = small
-	icon = "GFX_ship_part_reactor_planet"
+	icon = "GFX_ship_part_computer_platform_sapient"
 	icon_frame = 1
 	power = -5000000
 	resources = {
@@ -68,17 +48,15 @@ utility_component_template = {
 	}
 	ship_behavior = "quasarcraft"
 
-	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "combat_computers"
 	potential = { ship_uses_quasarcraft_components = yes }
 	class_restriction = { shipclass_military }
-
 }
 
 utility_component_template = {
 	key = "QSC_SENSOR"
 	size = medium
-	icon = "GFX_compound_sensor"
+	icon = "GFX_qsc_sensor"
 	icon_frame = 1
 	power = -25000
 	resources = {
@@ -92,11 +70,14 @@ utility_component_template = {
 		ship_tracking_add = 75
 	}
 
-	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "sensor_components"
 	potential = { ship_uses_quasarcraft_components = yes }
 	class_restriction = { shipclass_military }
 }
+
+#############
+### Auras ###
+#############
 
 utility_component_template = {
 	key = "QSC_AURA_GRAVSNARE"
@@ -105,7 +86,6 @@ utility_component_template = {
 	icon_frame = 1
 	power = -5000000
 
-	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "ship_aura_components"
 	potential = { ship_uses_quasarcraft_components = yes }
 	class_restriction = { shipclass_military }
@@ -146,7 +126,6 @@ utility_component_template = {
 	icon_frame = 1
 	power = -5000000
 
-	#prerequisites = { "tech_quasarcraft_6" }
 	component_set = "ship_aura_components"
 	potential = { ship_uses_quasarcraft_components = yes }
 	class_restriction = { shipclass_military }

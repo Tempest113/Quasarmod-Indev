@@ -6,15 +6,13 @@ qsc_wkr_effect_gfx = {
 	color = { 1.0 1.0 1.0 6.0 }
 	planet_dissolve_color_mult = { 0.8 1.2 1.5 }
 
-	windup_entity = "star_eater_muzzle_windup_entity"
+	windup_entity = "colossus_shatter_planet_windup_entity"
 
-	ship_fire_entity = "star_eater_chargeup_entity"
+	ship_fire_entity = "colossus_shatter_planet_muzzle_entity"
 
-	planet_hit_entity = "colossus_god_ray_hit_entity"
+	planet_hit_entity = "colossus_shatter_planet_hit_entity"
 
-	star_hit_entity = "colossus_god_ray_hit_entity"
-
-	megastructure_hit_entity = "colossus_god_ray_megastructure_hit_entity"
+	megastructure_hit_entity = "colossus_shatter_planet_hit_entity"
 
 	hit_entity_positioning = entity_center
 

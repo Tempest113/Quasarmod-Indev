@@ -45,7 +45,7 @@
  QSC_THRUSTER: "Spacio-Gravitic Manuevering Array"
  QSC_THRUSTER_DESC: "An utterly gargantuan set of maneuvering devices capable of translating the mighty craft through systems with great haste."
  QSC_DRIVE: "Quasaric Event Horizon Projector"
- QSC_DRIVE_DESC: "Instead of warping the entire 2 lightyears worth of warship through hyperspace, our engineers took inspiration from the EHOF, creating a massive wormhole projector that stretches a wormhole behind the Quasarcraft, which the gargantuan starship then backs into."
+ QSC_DRIVE_DESC: "Instead of warping the entire hundreds of AU worth of warship through hyperspace, our engineers took inspiration from the EHOF, creating a massive wormhole projector that stretches a wormhole behind the Quasarcraft, which the gargantuan starship then backs into."
  QSC_SENSOR: "Spacio-Temporal Stringreader"
  QSC_SENSOR_DESC: "While not actually measuring cosmic string vibrations, the Stringreader still does amazing work through intense hyperspacial-reference mapping, precise enough to pinpoint a single person on a planet."
  QSC_COMPUTER: "Harbinger Starship Intelligence"

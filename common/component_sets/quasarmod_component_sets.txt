@@ -1,6 +1,6 @@
 component_set = {
 	key = "QSC_DISRUPTOR"
-	icon = "GFX_qsc_starsplitter"
+	icon = "GFX_qsc_sunsplitter"
 	icon_frame = 1
 }
 
@@ -25,14 +25,13 @@ component_set = {
 component_set = {
 	key = "QSC_TITANIC_GUN"
 
-	icon = "GFX_qsc_titanic"
+	icon = "GFX_qsc_obliterator"
 	icon_frame = 1
 }
 
 component_set = {
 	key = "QSC_PLANET_LANCE"
-
-	icon = "GFX_qsc_attraction"
+	icon = "GFX_qsc_eye"
 	icon_frame = 1
 }
 
@@ -40,41 +39,6 @@ component_set = {
 	key = "QSC_ENDSINGER"
 	icon = "GFX_ship_part_planet_lance_blokkat"
 	icon_frame = 1
-}
-
-component_set = {
-	key = "AGX_QSC_REACTOR"
-	icon = "GFX_qsc_reactor"
-	icon_frame = 1
-	required_component_set = yes
-}
-
-component_set = {
-	key = "AGX_QSC_THRUSTER"
-	icon = "GFX_qsc_drive"
-	icon_frame = 1
-	required_component_set = yes
-}
-
-component_set = {
-	key = "AGX_QSC_SENSOR"
-	icon = "GFX_compound_sensor"
-	icon_frame = 1
-	required_component_set = yes
-}
-
-component_set = {
-	key = "AGX_QSC_COMPUTER"
-	icon = "GFX_ship_part_reactor_planet"
-	icon_frame = 1
-	required_component_set = yes
-}
-
-component_set = {
-	key = "AGX_QSC_DRIVE"
-	icon = "GFX_qsc_drive"
-	icon_frame = 1
-	required_component_set = yes
 }
 
 component_set = {

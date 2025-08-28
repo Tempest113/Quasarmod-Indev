@@ -1,4 +1,5 @@
-spriteTypes = {	
+spriteTypes = {
+	# Quasarcraft
 	spriteType = {
 		name = "GFX_qsc_reactor"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_qsc_reactor.dds"
@@ -8,34 +9,39 @@ spriteTypes = {
 		name = "GFX_qsc_drive"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_qsc_ve.dds"
 	}
-	
 	spriteType = {
-		name = "GFX_qsc_titanic"
-		texturefile = "gfx/interface/icons/ship_parts/ship_part_qsc_nee.dds"
+		name = "GFX_qsc_sensor"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_qsc_sensor.dds"
+	}
+
+	# Quasarcraft Weapons
+	spriteType = {
+		name = "GFX_qsc_obliterator"
+		texturefile = gfx/interface/icons/ship_parts/ship_part_qsc_obliterator.dds
 	}	
-	
+
 	spriteType = {
 		name = "GFX_qsc_jupiter"
-		texturefile = "gfx/interface/icons/ship_parts/ship_part_qsc_ja.dds"
+		texturefile = gfx/interface/icons/ship_parts/ship_part_qsc_jupiter_annihilator.dds
 	}
 	
 	spriteType = {
-		name = "GFX_qsc_starsplitter"
-		texturefile = "gfx/interface/icons/ship_parts/ship_part_qsc_ss.dds"
+		name = "GFX_qsc_sunsplitter"
+		texturefile = gfx/interface/icons/ship_parts/ship_part_qsc_sunsplitter.dds
 	}
 
 	spriteType = {
 		name = "GFX_qsc_skyripper"
-		texturefile = "gfx/interface/icons/ship_parts/ship_part_qsc_sr.dds"
+		texturefile = gfx/interface/icons/ship_parts/ship_part_qsc_skyripper.dds
 	}
 	
 	spriteType = {
-		name = "GFX_qsc_attraction"
-		texturefile = "gfx/interface/icons/ship_parts/ship_part_qsc_tma.dds"
+		name = "GFX_qsc_eye"
+		texturefile = gfx/interface/icons/ship_parts/ship_part_qsc_eye.dds
 	}
 	
 	spriteType = {
 		name = "GFX_qsc_strike_force"
-		texturefile = "gfx/interface/icons/ship_parts/ship_part_qsc_csf.dds"
+		texturefile = gfx/interface/icons/ship_parts/ship_part_qsc_strikecraft.dds
 	}
 }
