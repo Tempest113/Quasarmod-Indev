@@ -536,6 +536,7 @@ quasarcraft_destruction_effects = {
 		star = {
 			change_pc = pc_core_quasar
 			set_planet_size = 10
+			if = { limit = { NOT = { has_planet_flag = shroud_storm_changed } } set_planet_flag = shroud_storm_changed }
 		}
 	}
 

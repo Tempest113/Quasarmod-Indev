@@ -146,5 +146,4 @@ spriteTypes = {
 		name = GFX_quasarcraft_3_alt_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
 	}
-
 }

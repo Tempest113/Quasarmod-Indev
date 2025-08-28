@@ -7,13 +7,14 @@ country_event = {
 	show_sound = event_mystic_reveal
 	is_triggered_only = yes
 	diplomatic = yes
+	custom_gui = "enclave_curator_window"
 	picture_event_data = {
 		portrait = root.species
 		room = quasarcraft_bridge_room
 	}
-	option = { name = "qsc_endsinger.2" hidden_effect = { country_event = { id = qsc_endsinger.300 } } } #cluster
+	option = { name = "qsc_endsinger.2" hidden_effect = { country_event = { id = qsc_endsinger.300 } } allow = { resource_stockpile_compare = { resource = giga_sr_quasaric_energy value >= 120 } }} #cluster
 
-	option = { name = "qsc_endsinger.3" hidden_effect = { country_event = { id = qsc_endsinger.200 } } } #star
+	option = { name = "qsc_endsinger.3" hidden_effect = { country_event = { id = qsc_endsinger.200 } } allow = { resource_stockpile_compare = { resource = giga_sr_quasaric_energy value >= 40 } } } #star
 
 	option = { #planet
 		name = "qsc_endsinger.4"
@@ -23,6 +24,7 @@ country_event = {
 				text = qsc_planet_target_requires_no_star
 				event_target:planet_targeted_by_endsinger = { is_star = no }
 			}
+			resource_stockpile_compare = { resource = giga_sr_quasaric_energy value >= 5 }
 		}
 
 		hidden_effect = {
@@ -38,7 +40,7 @@ country_event = {
 
 	option = { name = "qsc_self_destruct.1" hidden_effect = { country_event = { id = qsc_self_destruct.1 } } } # self destruct
 
-	option = { name = "qsc_endsinger.5" hidden_effect = { country_event = { id = qsc_endsinger.3 } } } #cancel
+	option = { name = "qsc_endsinger.5" hidden_effect = { country_event = { id = qsc_endsinger.3 } } default_hide_option = yes } #cancel
 }
 
 planet_event = { #sets the planet as the target on firing and the QSC as the firing fleet, then calls the menu event on the QSC owner's country
@@ -539,6 +541,7 @@ country_event = {
 			}
 
 			star = {
+				if = { limit = { NOT = { has_planet_flag = shroud_storm_changed } } set_planet_flag = shroud_storm_changed }
 				solar_system = {
 					if = {
 						limit = {
@@ -577,7 +580,7 @@ country_event = {
 							limit = { NOR = { quasarmod_is_core_class = yes root = { has_country_flag = endsinger_lowpower }}}
 							clear_deposits = yes
 							change_pc = pc_giga_empty_space
-							set_name = "Empty Space"
+							set_name = "sc_empty_space"
 							add_modifier = {
 								modifier = blokkat_can_repair_system
 								days = -1
@@ -694,7 +697,7 @@ country_event = {
 			value = 0
 		}
 		while = {
-			limit = { check_variable = {which = qsc_wormholes_count value < 5}}
+			limit = { check_variable = { which = qsc_wormholes_count value < 5 } }
 			qsc_wormhole_spawn = yes
 		}
 		every_system = {

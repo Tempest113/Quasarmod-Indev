@@ -2,7 +2,7 @@
 quasarmod_quasarcraft = {
 	graphical_culture = no
 	entity = "qsc_01_ship_entity"
-	max_speed = 250
+	max_speed = 30
 	acceleration = 0.01
 	rotation_speed = 0.1
 	collision_radius = 256
@@ -13,12 +13,13 @@ quasarmod_quasarcraft = {
 		ship_hull_regen_add_static = 22500000
 		ship_armor_regen_add_static = 22500000
 		ship_shield_regen_add_static = 22500000
-		ship_evasion_mult = -1
+		ship_evasion_mult = -999
 		ship_armor_add = 200000000
 		ship_shield_add = 200000000
 		ship_target_weight_mult = 1000
 		ship_starting_experience_add = 5000
 		ship_cloaking_strength_add = -10000
+		ship_speed_mult = 2
 	}
 	max_hitpoints = 200000000
 	size_multiplier = 500
@@ -43,15 +44,15 @@ quasarmod_quasarcraft = {
 	possible_construction = { always = no }
 	is_civilian = no
 	is_designable = yes
-	components_add_to_cost = no
+	# components_add_to_cost = no
 	construction_type = starbase_shipyard
 
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
-	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
 	required_component_set = "ship_aura_components"
+
 
 	resources = {
 		category = ships

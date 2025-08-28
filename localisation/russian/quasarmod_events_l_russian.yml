@@ -183,7 +183,7 @@
 
  # Harvesting Complete Notification
  quasarmod_dialogue.202.name: "Harvesting Complete"
- quasarmod_dialogue.202.desc: "After several years of constant harvesting we have successfully managed to completely deplete the accretion disk of [root.from.GetName], a feat which has never been achieved before. It can now be now considered safe for us to begin work on other projects around the now \"dead\" black hole.\n\nThe S.M.B.H Manipulator can now dismantled and recycled for any usable materials.\n \n§RNOTE TO PLAYER: If the system icon does not change from the quasar icon to the inactive icon, run the \"reload_graphical_map\" command, or save and reload your game.§!"
+ quasarmod_dialogue.202.desc: "After several years of constant harvesting we have successfully managed to completely deplete the accretion disk of [root.from.GetName], a feat which has never been achieved before. It can now be now considered safe for us to begin work on other projects around the now "dead" black hole.\n\nThe S.M.B.H Manipulator can now dismantled and recycled for any usable materials.\n \n§RNOTE TO PLAYER: If the system icon does not change from the quasar icon to the inactive icon, run the "reload_graphical_map" command, or save and reload your game.§!"
  quasarmod_dialogue.202.a: "Perfect."
 
  # The destruction of Aiondia

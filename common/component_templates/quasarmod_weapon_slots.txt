@@ -1,6 +1,96 @@
-# Min weapon damage is 7500x that of its vanilla counterparts maximum damage, max weapon damage is 10000x
+# Min weapon damage is 7500x that of its vanilla counterparts maximum damage, max weapon damage is 10000x - not sure if this is true anymore, be sure to check
 # Max range is tripled, min is unchanged
 # Firing arc, windup, total fire time, cooldown and pen/damage buffs are identical
+
+
+weapon_component_template = {
+	key = "QSC_ENDSINGER"
+	size = planet_killer
+	type = planet_killer
+	can_destroy_stars = yes
+	windup = { min = 0 max = 0 }
+	total_fire_time = 10
+
+	range = 2000
+
+	icon = GFX_ship_part_planet_killer_blokkat_harvester
+	icon_frame = 1
+
+	potential = { ship_uses_quasarcraft_components = yes }
+	component_set = "QSC_ENDSINGER"
+
+	planet_destruction_gfx = "qsc_wkr_effect_gfx"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 5000
+		}
+	}
+}
+
+# Based off of SYSTEMCRAFT_RAY_OF_DOOM_1 - Power is balanced so that you can only field three without sacrificing more than the weapon is worth
+weapon_component_template = {
+	key = "QSC_PLANET_LANCE"
+	size = titanic
+	component_set = "QSC_PLANET_LANCE"
+	type = instant
+	icon = "GFX_qsc_eye"
+	icon_frame = 1
+	power = -20000000
+	projectile_gfx = "qsc_planet_lance"
+	ai_tag_weight = 0
+	tags = { weapon_type_energy weapon_type_anticompound }
+	potential = { ship_uses_quasarcraft_components = yes }
+
+	min_range = 75
+	firing_arc = 10
+
+	damage = { min = 7500000000 max = 10000000000 }
+	total_fire_time = 150
+	windup = { min = 150 max = 150 }
+	range = 500
+	tracking = 0.1
+	accuracy = 1
+	resources = {
+		category = ship_components
+		cost = { alloys = 2500 }
+		upkeep = {
+			giga_sr_quasaric_energy = 5
+		}
+	}
+}
+
+# Based off of SYSTEMCRAFT_KATZENLAND_LANCE_1
+weapon_component_template = {
+	key = "QSC_TITANIC_GUN"
+	size = titanic
+	component_set = "QSC_TITANIC_GUN"
+	power = -500000
+	type = instant
+	icon = "GFX_qsc_obliterator"
+	icon_frame = 1
+	projectile_gfx = "giga_super_omega_laser_blokkat"
+	tags = { weapon_type_energy weapon_type_anticompound }
+	potential = { ship_uses_quasarcraft_components = yes }
+
+	damage = { min = 112500000 max = 150000000 }
+	total_fire_time = 100
+	firing_arc = 20
+	windup = { min = 25 max = 25 }
+	range = 250
+	min_range = 75
+	tracking = 0.1
+	accuracy = 1
+	armor_damage = 1.5
+	shield_penetration = 1
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1000
+		}
+	}
+}
 
 # Based off of MEDIUM_DISRUPTOR_3
 weapon_component_template = {
@@ -8,7 +98,7 @@ weapon_component_template = {
 	size = small
 	entity = "invisible_turret_entity"
 	type = instant
-	icon = "GFX_qsc_starsplitter"
+	icon = "GFX_qsc_sunsplitter"
 	icon_frame = 1
 	power = -20000
 	component_set = "QSC_DISRUPTOR"
@@ -29,8 +119,36 @@ weapon_component_template = {
 
 	resources = {
 		category = ship_components
-		upkeep = {
-			giga_sr_quasaric_energy = 1
+		cost = {
+			alloys = 750
+		}
+	}
+}
+
+# Based off of ENERGY_LANCE_2
+weapon_component_template = {
+	key = "QSC_ENERGY_LANCE"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_qsc_skyripper"
+	icon_frame = 1
+	power = -100000
+	component_set = "QSC_ENERGY_LANCE"
+	projectile_gfx = "projectile_titan_lance_aeternum"
+	tags = { weapon_type_energy weapon_type_anticompound }
+	potential = { ship_uses_quasarcraft_components = yes }
+
+	damage = { min = 14625000 max = 19500000 }
+	windup = { min = 50 max = 50 }
+	total_fire_time = 50
+	range = 1000
+	accuracy = 0.9
+	tracking = 0.8
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 500
 		}
 	}
 }
@@ -59,63 +177,10 @@ weapon_component_template = {
 	accuracy = 0.75
 	resources = {
 		category = ship_components
-		upkeep = {
-			giga_sr_quasaric_energy = 1
+		cost = {
+			alloys = 750
 		}
 	}
-}
-
-# Based off of ENERGY_LANCE_2
-weapon_component_template = {
-	key = "QSC_ENERGY_LANCE"
-	size = extra_large
-	entity = "invisible_turret_entity"
-	type = instant
-	icon = "GFX_qsc_skyripper"
-	icon_frame = 1
-	power = -100000
-	component_set = "QSC_ENERGY_LANCE"
-	projectile_gfx = "projectile_titan_lance_aeternum"
-	tags = { weapon_type_energy weapon_type_anticompound }
-	potential = { ship_uses_quasarcraft_components = yes }
-
-	damage = { min = 14625000 max = 19500000 }
-	windup = { min = 50 max = 50 }
-	total_fire_time = 50
-	range = 1000
-	accuracy = 0.9
-	tracking = 0.8
-	resources = {
-		category = ship_components
-		upkeep = {
-			giga_sr_quasaric_energy = 1
-		}
-	}
-}
-
-# Based off of SYSTEMCRAFT_KATZENLAND_LANCE_1
-weapon_component_template = {
-	key = "QSC_TITANIC_GUN"
-	size = titanic
-	component_set = "QSC_TITANIC_GUN"
-	power = -500000
-	type = instant
-	icon = "GFX_qsc_titanic"
-	icon_frame = 1
-	projectile_gfx = "giga_super_omega_laser_blokkat"
-	tags = { weapon_type_energy weapon_type_anticompound }
-	potential = { ship_uses_quasarcraft_components = yes }
-
-	damage = { min = 112500000 max = 150000000 }
-    total_fire_time = 100
-	firing_arc = 20
-	windup = { min = 25 max = 25 }
-	range = 250
-	min_range = 75
-	tracking = 0.1
-	accuracy = 1
-	armor_damage = 1.5
-	shield_penetration = 1
 }
 
 # Based off of STRIKE_CRAFT_SKRAND
@@ -130,9 +195,8 @@ strike_craft_component_template = {
 	power = -100000
 	resources = {
 		category = ship_components
-		upkeep = {
-			energy = 100
-			alloys = 50
+		cost = {
+			alloys = 250
 		}
 	}
 
@@ -162,59 +226,6 @@ strike_craft_component_template = {
 	icon_frame = 1
 	component_set = "QSC_STRIKE_FORCE"
 	potential = { ship_uses_quasarcraft_components = yes }
-}
-
-# Based off of SYSTEMCRAFT_RAY_OF_DOOM_1 - Power is balanced so that you can only field three without sacrificing more than the weapon is worth
-weapon_component_template = {
-	key = "QSC_PLANET_LANCE"
-	size = titanic
-	component_set = "QSC_PLANET_LANCE"
-	type = instant
-	icon = "GFX_qsc_attraction"
-	icon_frame = 1
-	power = -20000000
-	projectile_gfx = "qsc_planet_lance"
-	ai_tag_weight = 0
-	tags = { weapon_type_energy weapon_type_anticompound }
-	potential = { ship_uses_quasarcraft_components = yes }
-
-	min_range = 75
-	firing_arc = 10
-
-	damage = { min = 7500000000 max = 10000000000 }
-    total_fire_time = 150
-	windup = { min = 150 max = 150 }
-	range = 500
-	tracking = 0.1
-	accuracy = 1
-	resources = {
-		category = ship_components
-		upkeep = {
-			giga_sr_quasaric_energy = 5
-		}
-	}
-}
-
-weapon_component_template = {
-	key = "QSC_ENDSINGER"
-	size = planet_killer
-	type = planet_killer
-	can_destroy_stars = yes
-
-	#prerequisites = { "tech_quasarcraft_6" }
-
-	windup = { min = 0 max = 0 }
-	total_fire_time = 10
-
-	range = 2000
-
-	icon = GFX_ship_part_planet_killer_blokkat_harvester
-	icon_frame = 1
-
-	potential = { ship_uses_quasarcraft_components = yes }
-	component_set = "QSC_ENDSINGER"
-
-	planet_destruction_gfx = "qsc_wkr_effect_gfx"
 }
 
 ####################################################

@@ -777,6 +777,11 @@ entity = {
 entity = {
 	name = "qsc_01_ship_entity"
 	pdxmesh = "qsc_qcbloc_mesh"
+	cull_radius = 1200
+	game_data = {
+		size = 2000
+		shader_type = ship
+	}
 
 	locator = { name = "root" }
 	                                       #x #z #y             #z #x #y

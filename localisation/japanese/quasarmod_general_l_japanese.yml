@@ -54,7 +54,7 @@
  # Quasarcraft
 
  tech_quasarmod_quasarcraft: "Supermassive Warship Doctrine"
- tech_quasarmod_quasarcraft_desc: "As our engineering projects push the boundaries of scale and complexity, our existing naval practices are becoming increasingly obsolete. The sheer mass and logistical footprint of a vessel like the hypothesized \"$quasarmod_quasarcraft$\" defies conventional military planning. To bring such a warship into existence, we must overhaul our approach to fleet operations, supply networks, and maintenance infrastructure. Only then can the next step in the evolution of our navy take place."
+ tech_quasarmod_quasarcraft_desc: "As our engineering projects push the boundaries of scale and complexity, our existing naval practices are becoming increasingly obsolete. The sheer mass and logistical footprint of a vessel like the hypothesized "$quasarmod_quasarcraft$" defies conventional military planning. To bring such a warship into existence, we must overhaul our approach to fleet operations, supply networks, and maintenance infrastructure. Only then can the next step in the evolution of our navy take place."
  TECH_UNLOCK_QUASARCRAFT_TITLE: "§SUnlocks Megastructure:§! $quasarmod_quasarcraft$"
  TECH_UNLOCK_QUASARCRAFT_DESC: "Increasing in scale by several orders of magnitude from our last warship concepts, the $quasarmod_quasarcraft$ is by far the largest and most powerful ship to ever grace our galaxy."
 

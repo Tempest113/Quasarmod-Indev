@@ -27,16 +27,22 @@
  # Quasarcraft Components/Actions
  QSC_DISRUPTOR: "Quasaric Sunsplitter"
  QSC_DISRUPTOR_DESC: "Similar to the Nicoll-Dyson Beam, the Sunsplitter focuses the diverted power of the Hyperquasar into a beam, which is then split into a myriad of rays by a star-sized prism."
+
  QSC_LASER_L: "Jupiter Annihilator"
  QSC_LASER_L_DESC: "These massive lances mounted on the Quasarcraft's Jupiter Arrays rain hell upon your foes, shattering the atoms of their very being."
+
  QSC_ENERGY_LANCE: "Quasaric Skyripper"
  QSC_ENERGY_LANCE_DESC: "The Skyripper cannons are designed to deter larger, stronger vessels such as a Systemcraft, focusing Quasaric Energy on a macro-scale, enough to shred stars by themselves."
+
  QSC_STRIKE_FORCE: "Celestial Strike Forces"
  QSC_STRIKE_FORCE_DESC: "No capital ship fights alone. The Celestial Strike Forces emerge from their grand hangars to deter any hope of infiltrating the king of the celestial warships. A myriad of automated $giga_planet_behemoth_plural$ freshly fabricated, armed and ready."
+
  QSC_TITANIC_GUN: "Quasi-Stellar Obliterator"
  QSC_TITANIC_GUN_DESC: "An immense weapon based on the old QSO weapon, but adapted for use as a ship weapon. A firearm of fear to strike terror into the collective conscious of the enemy."
+
  QSC_PLANET_LANCE: "Quasarcraft's Eye"
  QSC_PLANET_LANCE_DESC: "The power of this weapon almost escapes words, but our engineers came up with an apt phrase: 'The Fury of a Trillion Suns'. This weapon draws upon massive portions of the Quasarcraft's full power to utterly obliterate the target."
+
  QSC_ENDSINGER: "§MThe Endsinger§!"
  QSC_ENDSINGER_DESC: "The only thing they know will be despair as this utterly powerful re-tooling of the original QSO's destructive power comes in a package anew. §MThe Endsinger§! allows the Quasarcraft to have fine control over the amount of destruction it unleashes."
 
@@ -45,7 +51,7 @@
  QSC_THRUSTER: "Spacio-Gravitic Manuevering Array"
  QSC_THRUSTER_DESC: "An utterly gargantuan set of maneuvering devices capable of translating the mighty craft through systems with great haste."
  QSC_DRIVE: "Quasaric Event Horizon Projector"
- QSC_DRIVE_DESC: "Instead of warping the entire 2 lightyears worth of warship through hyperspace, our engineers took inspiration from the EHOF, creating a massive wormhole projector that stretches a wormhole behind the Quasarcraft, which the gargantuan starship then backs into."
+ QSC_DRIVE_DESC: "Instead of warping the entire hundreds of AU worth of warship through hyperspace, our engineers took inspiration from the EHOF, creating a massive wormhole projector that stretches a wormhole behind the Quasarcraft, which the gargantuan starship then backs into."
  QSC_SENSOR: "Spacio-Temporal Stringreader"
  QSC_SENSOR_DESC: "While not actually measuring cosmic string vibrations, the Stringreader still does amazing work through intense hyperspacial-reference mapping, precise enough to pinpoint a single person on a planet."
  QSC_COMPUTER: "Harbinger Starship Intelligence"

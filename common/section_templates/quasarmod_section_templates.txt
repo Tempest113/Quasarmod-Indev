@@ -82,43 +82,6 @@ ship_section_template = {
 	entity = "qsc_01_locators_entity"
 	icon = "GFX_ship_part_core_mid"
 
-	component_slot = { name = "SMALL_GUN_01"		template = "small_turret"			locatorname = "ringgun_l1" }
-	component_slot = { name = "SMALL_GUN_02"		template = "small_turret"			locatorname = "ringgun_l2" }
-	component_slot = { name = "SMALL_GUN_03"		template = "small_turret"			locatorname = "ringgun_l3" }
-	component_slot = { name = "SMALL_GUN_04"		template = "small_turret"			locatorname = "ringgun_l4" }
-	component_slot = { name = "SMALL_GUN_05"		template = "small_turret"			locatorname = "ringgun_l5" }
-	component_slot = { name = "SMALL_GUN_06"		template = "small_turret"			locatorname = "ringgun_l6" }
-	component_slot = { name = "SMALL_GUN_07"		template = "small_turret"			locatorname = "ringgun_l7" }
-	component_slot = { name = "SMALL_GUN_08"		template = "small_turret"			locatorname = "ringgun_l8" }
-	component_slot = { name = "SMALL_GUN_09"		template = "small_turret"			locatorname = "ringgun_l9" }
-	component_slot = { name = "SMALL_GUN_10"		template = "small_turret"			locatorname = "ringgun_l10" }
-	component_slot = { name = "SMALL_GUN_11"		template = "small_turret"			locatorname = "ringgun_l11" }
-	component_slot = { name = "SMALL_GUN_12"		template = "small_turret"			locatorname = "ringgun_l12" }
-	component_slot = { name = "SMALL_GUN_13"		template = "small_turret"			locatorname = "ringgun_l13" }
-	component_slot = { name = "SMALL_GUN_14"		template = "small_turret"			locatorname = "ringgun_l14" }
-	component_slot = { name = "SMALL_GUN_15"		template = "small_turret"			locatorname = "ringgun_l15" }
-	component_slot = { name = "SMALL_GUN_16"		template = "small_turret"			locatorname = "ringgun_b1" }
-	component_slot = { name = "SMALL_GUN_17"		template = "small_turret"			locatorname = "ringgun_b2" }
-	component_slot = { name = "SMALL_GUN_18"		template = "small_turret"			locatorname = "ringgun_b3" }
-	component_slot = { name = "SMALL_GUN_19"		template = "small_turret"			locatorname = "ringgun_b4" }
-	component_slot = { name = "SMALL_GUN_20"		template = "small_turret"			locatorname = "ringgun_b5" }
-	component_slot = { name = "SMALL_GUN_21"		template = "small_turret"			locatorname = "ringgun_b6" }
-	component_slot = { name = "SMALL_GUN_22"		template = "small_turret"			locatorname = "ringgun_b7" }
-	component_slot = { name = "SMALL_GUN_23"		template = "small_turret"			locatorname = "ringgun_b8" }
-	component_slot = { name = "SMALL_GUN_24"		template = "small_turret"			locatorname = "ringgun_b9" }
-	component_slot = { name = "SMALL_GUN_25"		template = "small_turret"			locatorname = "ringgun_b10" }
-
-	large_utility_slots = 20
-	aux_utility_slots = 5
-}
-
-ship_section_template = {
-	key = "quasarcraft_halo2_key"
-	ship_size = quasarmod_quasarcraft
-	fits_on_slot = "halo2"
-	entity = "qsc_01_locators_entity"
-	icon = "GFX_ship_part_core_mid"
-
 	component_slot = { name = "XL_GUN_01"			template = "extra_large_turret"		locatorname = "ringgun_r1" }
 	component_slot = { name = "XL_GUN_02"			template = "extra_large_turret"		locatorname = "ringgun_r2" }
 	component_slot = { name = "XL_GUN_03"			template = "extra_large_turret"		locatorname = "ringgun_r3" }
@@ -144,6 +107,44 @@ ship_section_template = {
 	component_slot = { name = "XL_GUN_23"			template = "extra_large_turret"		locatorname = "ringgun_br8" }
 	component_slot = { name = "XL_GUN_24"			template = "extra_large_turret"		locatorname = "ringgun_br9" }
 	component_slot = { name = "XL_GUN_25"			template = "extra_large_turret"		locatorname = "ringgun_br10" }
+
+
+	large_utility_slots = 20
+	aux_utility_slots = 5
+}
+
+ship_section_template = {
+	key = "quasarcraft_halo2_key"
+	ship_size = quasarmod_quasarcraft
+	fits_on_slot = "halo2"
+	entity = "qsc_01_locators_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = { name = "SMALL_GUN_01"		template = "small_turret"			locatorname = "ringgun_l1" }
+	component_slot = { name = "SMALL_GUN_02"		template = "small_turret"			locatorname = "ringgun_l2" }
+	component_slot = { name = "SMALL_GUN_03"		template = "small_turret"			locatorname = "ringgun_l3" }
+	component_slot = { name = "SMALL_GUN_04"		template = "small_turret"			locatorname = "ringgun_l4" }
+	component_slot = { name = "SMALL_GUN_05"		template = "small_turret"			locatorname = "ringgun_l5" }
+	component_slot = { name = "SMALL_GUN_06"		template = "small_turret"			locatorname = "ringgun_l6" }
+	component_slot = { name = "SMALL_GUN_07"		template = "small_turret"			locatorname = "ringgun_l7" }
+	component_slot = { name = "SMALL_GUN_08"		template = "small_turret"			locatorname = "ringgun_l8" }
+	component_slot = { name = "SMALL_GUN_09"		template = "small_turret"			locatorname = "ringgun_l9" }
+	component_slot = { name = "SMALL_GUN_10"		template = "small_turret"			locatorname = "ringgun_l10" }
+	component_slot = { name = "SMALL_GUN_11"		template = "small_turret"			locatorname = "ringgun_l11" }
+	component_slot = { name = "SMALL_GUN_12"		template = "small_turret"			locatorname = "ringgun_l12" }
+	component_slot = { name = "SMALL_GUN_13"		template = "small_turret"			locatorname = "ringgun_l13" }
+	component_slot = { name = "SMALL_GUN_14"		template = "small_turret"			locatorname = "ringgun_l14" }
+	component_slot = { name = "SMALL_GUN_15"		template = "small_turret"			locatorname = "ringgun_l15" }
+	component_slot = { name = "SMALL_GUN_16"		template = "small_turret"			locatorname = "ringgun_b1" }
+	component_slot = { name = "SMALL_GUN_17"		template = "small_turret"			locatorname = "ringgun_b2" }
+	component_slot = { name = "SMALL_GUN_18"		template = "small_turret"			locatorname = "ringgun_b3" }
+	component_slot = { name = "SMALL_GUN_19"		template = "small_turret"			locatorname = "ringgun_b4" }
+	component_slot = { name = "SMALL_GUN_20"		template = "small_turret"			locatorname = "ringgun_b5" }
+	component_slot = { name = "SMALL_GUN_21"		template = "small_turret"			locatorname = "ringgun_b6" }
+	component_slot = { name = "SMALL_GUN_22"		template = "small_turret"			locatorname = "ringgun_b7" }
+	component_slot = { name = "SMALL_GUN_23"		template = "small_turret"			locatorname = "ringgun_b8" }
+	component_slot = { name = "SMALL_GUN_24"		template = "small_turret"			locatorname = "ringgun_b9" }
+	component_slot = { name = "SMALL_GUN_25"		template = "small_turret"			locatorname = "ringgun_b10" }
 
 	large_utility_slots = 20
 	aux_utility_slots = 5

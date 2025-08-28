@@ -1,3 +1,0 @@
-- [ON HOLD] Update MBrain Uplink overwrites when they are updated in gigas, be sure to add the uplink cap back to the core MBrain
-
-- Double check how the Heliostructural Reconstitution tech AP restriction interacts with all stellar manip content being disabled, not just the manipulator (depends on whether disabling stellar manip content disables the AP)
