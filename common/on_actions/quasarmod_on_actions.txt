@@ -27,11 +27,6 @@ on_ship_disabled = {
      }
 }
 
-on_press_begin = {
-     events = {
-          quasarmod_utility.12
-     }
-}
 
 on_entering_system_first_time = {
      events = {

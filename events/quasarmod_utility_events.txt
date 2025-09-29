@@ -117,7 +117,7 @@ planet_event = {
 
             }
             country_event = {
-                id = quasarmod_utility.13
+                id = quasarmod_utility.12
             }
 
         }
@@ -139,7 +139,7 @@ planet_event = {
                 id = quasarmod_dialogue.102
             }
             country_event = {
-                id = quasarmod_utility.13
+                id = quasarmod_utility.12
             }
         }
     }
@@ -367,24 +367,8 @@ country_event = {
     }
 }
 
-event = {
-    id = quasarmod_utility.12
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        if = {
-            limit = {
-                stellar_manip_is_active = no
-            }
-            set_global_flag = stellar_manip_manipulator_disabled
-            set_global_flag = stellar_manip_assembler_disabled
-            set_global_flag = stellar_manip_o_systemcraft_disabled
-        }
-    }
-}
-
 country_event = {
-    id = quasarmod_utility.13
+    id = quasarmod_utility.12
     hide_window = yes
     is_triggered_only = yes
     immediate = {
@@ -426,7 +410,7 @@ country_event = {
 }
 
 ship_event = {
-    id = quasarmod_utility.14
+    id = quasarmod_utility.13
     hide_window = yes
     is_triggered_only = yes
 

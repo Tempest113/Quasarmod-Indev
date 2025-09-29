@@ -146,4 +146,31 @@ spriteTypes = {
 		name = GFX_quasarcraft_3_alt_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
 	}
+
+	#######################################
+	### Placeholder Stellar Manip Icons ###
+	#######################################
+	# Systemcraft Printer Enabled
+	spriteType = {
+		name = "GFX_giga_menu_systemcraft_printing_enabled"
+		texturefile = "gfx/interface/menu_ui/giga_menu_systemcraft_printing_enabled.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/menu_ui/giga_menu_mask.dds"
+			animationtexturefile = "gfx/interface/icons/relics/crystal_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 1
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "rotating"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# Systemcraft Printer Disabled
+	spriteType = { name = "GFX_giga_menu_systemcraft_printing_disabled"					texturefile = "gfx/interface/menu_ui/giga_menu_systemcraft_printing_disabled.dds" }
+
 }
