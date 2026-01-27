@@ -14,6 +14,7 @@ building_teraforge_uplink_alloys = {
     building_sets = {
         foundry
         industrial
+        quasarmod_teraforge
     }
 
     prerequisites = {
@@ -124,6 +125,7 @@ building_teraforge_uplink_consumer_goods = {
     building_sets = {
         factory
         industrial
+        quasarmod_teraforge
     }
 
     prerequisites = {
