@@ -1,101 +1,13 @@
-building_teraforge_uplink_base = {
-    base_buildtime = @b3_time
-    category = manufacturing
-    base_cap_amount = 1
-    empire_limit = {
-        base = 0
-        modifier = {
-            exists = owner
-            weight = owner.modifier:building_quasarmod_teraforge_uplink_country_max
-        }
-    }
-    building_sets = {
-        foundry
-        factory
-        industrial
-    }
-
-    resources = {
-        category = planet_buildings
-        cost = {
-            trigger = {
-                has_ringworld_output_boost = no
-            }
-            minerals = @b3_minerals
-        }
-        cost = {
-            trigger = {
-                has_ringworld_output_boost = yes
-            }
-            minerals = 1500
-        }
-
-        upkeep = {
-            trigger = {
-                has_ringworld_output_boost = no
-            }
-            energy = 12
-        }
-        upkeep = {
-            trigger = {
-                has_ringworld_output_boost = yes
-            }
-            energy = 16
-        }
-    }
-
-    prerequisites = {
-        tech_quasarmod_hyperquasaric_teraforge
-    }
-    show_tech_unlock_if = { always = no }
-
-    potential = {
-        NOT = {
-            planet = {
-                or = {
-                    has_building = building_teraforge_uplink_base
-                    has_building = building_teraforge_uplink_alloys
-                    has_building = building_teraforge_uplink_consumer_goods
-                 }
-            }
-        }
-        is_special_colony_type = no
-        OR = {
-            owner = {
-                is_ai = no
-            }
-            has_any_industrial_zone = yes
-        }
-    }
-
-    allow = {
-        has_major_upgraded_capital = yes
-    }
-
-
-    destroy_trigger = {
-        exists = owner
-        OR = {
-            is_special_colony_type = yes
-            owner = { is_wilderness_empire = yes }
-        }
-    }
-
-    upgrades = {
-        building_teraforge_uplink_alloys
-        building_teraforge_uplink_consumer_goods
-    }
-
-}
-
 building_teraforge_uplink_alloys = {
     base_buildtime = @b3_time
+    planet_limit = 1
     category = manufacturing
-    can_build = no
+
     empire_limit = {
         base = 0
         modifier = {
             exists = owner
+            weight = owner.modifier:building_quasarmod_teraforge_uplink_country_max
             weight = owner.modifier:building_quasarmod_teraforge_uplink_country_max
         }
     }
@@ -105,135 +17,103 @@ building_teraforge_uplink_alloys = {
         industrial
     }
 
-    resources = {
-        category = planet_buildings
-        cost = {
-            trigger = {
-                has_ringworld_output_boost = no
-            }
-            minerals = @b4_minerals
-            volatile_motes = @b4_rare_cost
-        }
-        cost = {
-            trigger = {
-                has_ringworld_output_boost = yes
-            }
-            minerals = 2400
-            volatile_motes = 400
-        }
-
-        upkeep = {
-            trigger = {
-                has_ringworld_output_boost = no
-            }
-            energy = 50
-            volatile_motes = 18
-        }
-        upkeep = {
-            trigger = {
-                has_ringworld_output_boost = yes
-            }
-            energy = 75
-            volatile_motes = 24
-        }
-    }
-
     prerequisites = {
         tech_quasarmod_hyperquasaric_teraforge
     }
+
     show_tech_unlock_if = { always = no }
 
     potential = {
-        is_special_colony_type = no
-        OR = {
-            owner = {
-                is_ai = no
-            }
-            has_any_industrial_zone = yes
+        exists = owner
+        owner = { is_wilderness_empire = no }
+        NOR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
         }
-    }
-
-    allow = {
-        has_major_upgraded_capital = yes
     }
 
     destroy_trigger = {
         exists = owner
         OR = {
-            is_special_colony_type = yes
+            has_modifier = resort_colony
+            has_modifier = slave_colony
             owner = { is_wilderness_empire = yes }
+            owner = { owns_teraforge_finished = no }
         }
+    }
+
+    allow = {
+        has_major_upgraded_capital = yes
+        NOT = { has_building = building_teraforge_uplink_consumer_goods }
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b3_minerals
+            alloys = @b2_minerals
+        }
+        upkeep = {
+            energy = 50
+        }
+    }
+
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+                is_catalytic_empire = no
+            }
+        }
+        text = building_teraforge_uplink_alloys_triggered_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+                is_catalytic_empire = yes
+            }
+        }
+        text = building_teraforge_uplink_alloys_triggered_desc_catalytic
+    }
+
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+                is_catalytic_empire = no
+            }
+        }
+        text = building_teraforge_uplink_alloys_triggered_desc_gestalt
+    }
+
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+                is_catalytic_empire = yes
+            }
+        }
+        text = building_teraforge_uplink_alloys_triggered_desc_gestalt_catalytic
     }
 
     inline_script = {
-        script = planet/alloys/giga_foundry_job_swap
-        jobs = 1000
+        script = jobs/teraforge_overseer_alloys/jobs_add
+        JOBS = 0.1
+        MULT = modifier:job_foundry_add
+        MULT2 = modifier:job_fabricator_add
     }
-
-    planet_modifier = {
-        pop_foundry_bonus_workforce_mult = 0.25
-    }
-
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                is_catalytic_empire = no
-            }
-        }
-        modifier = {
-            planet_metallurgists_alloys_produces_add = 2
-            planet_metallurgists_minerals_upkeep_add = 4
-        }
-    }
-
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                is_catalytic_empire = yes
-            }
-        }
-        modifier = {
-            planet_metallurgists_alloys_produces_add = 3
-            planet_metallurgists_food_upkeep_add = 6
-        }
-    }
-
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            has_ringworld_output_boost = yes
-            owner = {
-                is_catalytic_empire = no
-            }
-        }
-        modifier = {
-            planet_metallurgists_alloys_produces_add = 1
-            planet_metallurgists_minerals_upkeep_add = 2
-        }
-    }
-
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            has_ringworld_output_boost = yes
-            owner = {
-                is_catalytic_empire = yes
-            }
-        }
-        modifier = {
-            planet_metallurgists_alloys_produces_add = 1
-            planet_metallurgists_food_upkeep_add = 2
-        }
-    }
-
 }
 
 building_teraforge_uplink_consumer_goods = {
     base_buildtime = @b3_time
+    planet_limit = 1
     category = manufacturing
-    can_build = no
+
     empire_limit = {
         base = 0
         modifier = {
@@ -243,129 +123,76 @@ building_teraforge_uplink_consumer_goods = {
     }
 
     building_sets = {
-        foundry
+        factory
         industrial
-    }
-
-    resources = {
-        category = planet_buildings
-        cost = {
-            trigger = {
-                has_ringworld_output_boost = no
-            }
-            minerals = @b4_minerals
-            rare_crystals = @b4_rare_cost
-        }
-        cost = {
-            trigger = {
-                has_ringworld_output_boost = yes
-            }
-            minerals = 2400
-            rare_crystals = 400
-        }
-
-        upkeep = {
-            trigger = {
-                has_ringworld_output_boost = no
-            }
-            energy = 50
-            rare_crystals = 18
-        }
-        upkeep = {
-            trigger = {
-                has_ringworld_output_boost = yes
-            }
-            energy = 75
-            rare_crystals = 24
-        }
     }
 
     prerequisites = {
         tech_quasarmod_hyperquasaric_teraforge
     }
+
     show_tech_unlock_if = { always = no }
 
     potential = {
-        is_special_colony_type = no
-        OR = {
-            owner = {
-                is_ai = no
-            }
-            has_any_industrial_zone = yes
+        exists = owner
+        owner = {
+            is_wilderness_empire = no
+            country_uses_consumer_goods = yes
         }
-    }
-
-    allow = {
-        has_major_upgraded_capital = yes
+        NOR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+        }
     }
 
     destroy_trigger = {
         exists = owner
         OR = {
-            is_special_colony_type = yes
+            has_modifier = resort_colony
+            has_modifier = slave_colony
             owner = { is_wilderness_empire = yes }
+            owner = { owns_teraforge_finished = no }
+            owner = { country_uses_consumer_goods = no }
         }
+    }
+
+    allow = {
+        has_major_upgraded_capital = yes
+        NOT = { has_building = building_teraforge_uplink_alloys }
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b3_minerals
+            alloys = @b2_minerals
+        }
+        upkeep = {
+            energy = 50
+        }
+    }
+
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+
+        text = building_teraforge_uplink_consumer_goods_triggered_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+
+        text = building_teraforge_uplink_consumer_goods_triggered_desc_gestalt
     }
 
     inline_script = {
-        script = planet/consumer_goods/giga_artisan_job_swap
-        jobs = 1000
-    }
-
-    planet_modifier = {
-        pop_artisan_bonus_workforce_mult = 0.25
-    }
-
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                is_catalytic_empire = no
-            }
-        }
-        modifier = {
-            planet_artisans_consumer_goods_produces_add = 3
-            planet_artisans_minerals_upkeep_add = 3
-        }
-    }
-
-    triggered_planet_modifier = {
-        potential = {
-            has_ringworld_output_boost = yes
-            owner = {
-                is_catalytic_empire = no
-            }
-        }
-        modifier = {
-            planet_artisans_consumer_goods_produces_add = 2
-            planet_artisans_minerals_upkeep_add = 2
-        }
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                is_catalytic_empire = yes
-            }
-
-        }
-        modifier = {
-            planet_artisans_consumer_goods_produces_add = 3
-            planet_artisans_food_upkeep_add = 3
-        }
-    }
-
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                is_catalytic_empire = yes
-            }
-            has_ringworld_output_boost = yes
-        }
-        modifier = {
-            planet_artisans_consumer_goods_produces_add = 2
-            planet_artisans_food_upkeep_add = 2
-        }
+        script = jobs/teraforge_overseer_consumer_goods/jobs_add
+        JOBS = 0.1
+        MULT = modifier:job_artisan_add
+        MULT2 = modifier:job_artisan_drone_add
     }
 }

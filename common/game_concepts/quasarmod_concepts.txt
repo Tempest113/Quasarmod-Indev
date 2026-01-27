@@ -1,0 +1,27 @@
+concept_quasarmod_teraforge_buildings = {}
+
+building_teraforge_uplink_alloys = {
+    icon = gfx/interface/icons/buildings/building_teraforge_uplink_alloys.dds
+}
+building_teraforge_uplink_consumer_goods = {
+    icon = gfx/interface/icons/buildings/building_teraforge_uplink_consumer_goods.dds
+}
+
+concept_job_teraforge_overseer_alloys = {
+    icon = gfx/interface/icons/jobs/job_teraforge_overseer_alloys.dds
+}
+concept_job_teraforge_overseer_alloys_catalytic = {
+    icon = gfx/interface/icons/jobs/job_teraforge_overseer_alloys.dds
+}
+concept_job_teraforge_overseer_consumer_goods = {
+    icon = gfx/interface/icons/jobs/job_teraforge_overseer_consumer_goods.dds
+}
+concept_job_teraforge_overseer_alloys_gestalt = {
+    icon = gfx/interface/icons/jobs/job_teraforge_overseer_alloys_gestalt.dds
+}
+concept_job_teraforge_overseer_alloys_gestalt_catalytic = {
+    icon = gfx/interface/icons/jobs/job_teraforge_overseer_alloys_gestalt.dds
+}
+concept_job_teraforge_overseer_consumer_goods_gestalt = {
+    icon = gfx/interface/icons/jobs/job_teraforge_overseer_consumer_goods_gestalt.dds
+}

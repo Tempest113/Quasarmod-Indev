@@ -1,0 +1,168 @@
+#################
+### Teraforge ###
+#################
+
+## Regular Empires ##
+
+# Alloys #
+teraforge_overseer_alloys = {
+    category = specialist
+
+    swappable_data = {
+        default = {
+            condition_string = SPECIALIST_JOB_TRIGGER
+            building_icon = building_teraforge_uplink_alloys
+        }
+
+        swap_type = {
+            trigger = {
+                industrial_jobs_are_catalytic_trigger = yes
+            }
+            name = teraforge_overseer_alloys_catalytic
+            desc = job_teraforge_overseer_alloys_catalytic_desc
+            building_icon = building_teraforge_uplink_alloys
+            icon = teraforge_overseer_alloys
+            weight = 5
+        }
+    }
+
+    tags = { alloys }
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+    }
+
+    possible_precalc = can_fill_specialist_job
+    possible = {
+        hidden_trigger = { exists = owner }
+        owner = {
+            is_gestalt = no
+        }
+    }
+
+    resources = {
+        upkeep = {
+            trade = 4
+        }
+    }
+
+    triggered_planet_modifier = {
+        pop_foundry_bonus_workforce_mult = 0.02
+    }
+}
+
+teraforge_overseer_consumer_goods = {
+    category = specialist
+
+    swappable_data = {
+        default = {
+            condition_string = SPECIALIST_JOB_TRIGGER
+            building_icon = building_teraforge_uplink_consumer_goods
+        }
+    }
+
+    tags = { alloys }
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+    }
+
+    possible_precalc = can_fill_specialist_job
+    possible = {
+        hidden_trigger = { exists = owner }
+        owner = {
+            is_gestalt = no
+        }
+    }
+
+    resources = {
+        upkeep = {
+            trade = 4
+        }
+    }
+
+    triggered_planet_modifier = {
+        pop_artisan_bonus_workforce_mult = 0.02
+    }
+}
+
+## Gestalt Empires ##
+
+teraforge_overseer_alloys_gestalt = {
+    category = complex_drone
+
+    swappable_data = {
+        default = {
+            condition_string = DRONE_JOB_TRIGGER
+            building_icon = building_teraforge_uplink_alloys
+        }
+
+        swap_type = {
+            trigger = {
+                industrial_jobs_are_catalytic_trigger = yes
+            }
+            name = teraforge_overseer_alloys_catalytic_gestalt
+            desc = job_teraforge_overseer_alloys_catalytic_gestalt_desc
+            building_icon = building_teraforge_uplink_alloys
+            icon = teraforge_overseer_alloys_gestalt
+            weight = 5
+        }
+    }
+
+    tags = { consumer_goods }
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+    }
+
+    possible_precalc = can_fill_specialist_job
+    possible = { can_think = yes }
+
+    resources = {
+        upkeep = {
+            trade = 4
+        }
+    }
+
+    triggered_planet_modifier = {
+        pop_fabricator_bonus_workforce_mult = 0.02
+    }
+}
+
+teraforge_overseer_consumer_goods_gestalt = {
+    category = complex_drone
+
+    swappable_data = {
+        default = {
+            condition_string = DRONE_JOB_TRIGGER
+            building_icon = building_teraforge_uplink_consumer_goods
+        }
+    }
+
+    tags = { alloys }
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+    }
+
+    possible_precalc = can_fill_specialist_job
+    possible = { can_think = yes }
+
+    resources = {
+        upkeep = {
+            trade = 4
+        }
+    }
+
+    triggered_planet_modifier = {
+        pop_artisan_drone_bonus_workforce_mult = 0.02
+    }
+}

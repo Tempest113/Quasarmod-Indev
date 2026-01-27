@@ -1,0 +1,2 @@
+# Bug Branch
+civic_bugged_ornamentarian = { potential = { always = no } }

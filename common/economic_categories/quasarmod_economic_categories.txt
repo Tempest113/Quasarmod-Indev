@@ -1,0 +1,4 @@
+planet_teraforge_overseers = {
+    parent = planet_jobs_specialist
+    modifier_category = pop_job
+}

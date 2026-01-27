@@ -1,0 +1,22 @@
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_regular_empire = yes
+        }
+    }
+    job_teraforge_overseer_alloys_add = $JOBS$
+    mult = $MULT$
+}
+
+
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_gestalt = yes
+        }
+    }
+    job_teraforge_overseer_alloys_gestalt_add = $JOBS$
+    mult = $MULT2$
+}

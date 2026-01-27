@@ -4,6 +4,7 @@
  # Hyperquasaric Teraforge #
  ###########################
 
+ ## Megastructure ##
  hyperquasaric_teraforge_0: "$gc_tera$Hyperquasaric Teraforge Site"
  hyperquasaric_teraforge_0_DESC: "This construction site will act as the staging ground for the largest source of alloys and ships in galactic history."
  hyperquasaric_teraforge_0_MEGASTRUCTURE_DETAILS: "$giga_list_category_terastructure$ - $giga_list_category_advanced_resource_production$ \nUses a §MHyperquasar§! to forge £minerals£ §Y$minerals$§! into £alloys£ §Y$alloys$§! and increases overall §YAlloy Production§! - $giga_list_removes_system_planets$\n§LA massive forge built around a Hyperquasar, utilizing its energies to produce alloys.§!"
@@ -20,21 +21,70 @@
  hyperquasaric_teraforge_4: "Hyperquasaric Teraforge"
  hyperquasaric_teraforge_4_DESC: "An active Hyperquasaric Teraforge. Its immensely powerful mass harvesters siphon incredible amounts of raw materials from the quasar, providing the material required to forge an amount of alloys so large that we could construct entire planets out of pure neutronium if we so choose."
 
- quasaric_teraforge_5: "Hyperquasaric Megashipyard"
- quasaric_teraforge_5_DESC: "An active Hyperquasaric Megashipyard. While we had to sacrifice a significant amount of alloy processing power, the Hyperquasaric Megashipyard is undoubtedly a worthy upgrade to the Teraforge. Grants +250 shipyard capacity, +250% ship build speed and -25% build cost."
+ ## Buildings ##
+ building_teraforge_uplink_alloys: "Hyperquasaric Teraforge Integration Complex"
+ building_teraforge_uplink_alloys_plural: "Hyperquasaric Teraforge Integration Complexes"
+ building_teraforge_uplink_alloys_desc: "Specialist overseers coordinate the integration of alloy precursors processed by the Hyperquasaric Teraforge, the mitigation of bottlenecks and the reduction in tooling complexity allow for great improvements to be made in planetside alloy processing."
+ building_teraforge_uplink_alloys_triggered_desc: "\n§G+1§! £mod_job_teraforge_overseer_alloys_add£['concept_job_teraforge_overseer_alloys'] per 100 £job_foundry£ §Y[GetAlloyProducerPlural]§!"
+ building_teraforge_uplink_alloys_triggered_desc_catalytic: "\n§G+1§! £mod_job_teraforge_overseer_alloys_add£['concept_job_teraforge_overseer_alloys_catalytic'] per 100 £job_foundry£ §Y[GetAlloyProducerPlural]§!"
+ building_teraforge_uplink_alloys_triggered_desc_gestalt: "\n§G+1§! £mod_job_teraforge_overseer_alloys_gestalt_add£['concept_job_teraforge_overseer_alloys_gestalt'] per 100 £job_foundry£ §Y[GetAlloyProducerPlural]§!"
+ building_teraforge_uplink_alloys_triggered_desc_gestalt_catalytic: "\n§G+1§! £mod_job_teraforge_overseer_alloys_gestalt_add£['concept_job_teraforge_overseer_alloys_gestalt_catalytic'] per 100 £job_foundry£ §Y[GetAlloyProducerPlural]§!"
 
- building_teraforge_uplink_base: "Hyperquasaric Teraforge Uplink"
- building_teraforge_uplink_base_plural: "Hyperquasaric Teraforge Uplinks"
- building_teraforge_uplink_base_desc: "Upon being upgraded and specialized, the Hyperquasaric Teraforge Uplink will provide powerful buffs to industry across the entire planet."
+ building_teraforge_uplink_consumer_goods: "Teraforge-Aligned Civilian Design Centers"
+ building_teraforge_uplink_consumer_goods_plural: "Teraforge-Aligned Civilian Design Centers"
+ building_teraforge_uplink_consumer_goods_desc: "By integrating civilian product designs with a limited set of Hyperquasaric Teraforge compatible material standards, manufacturers can reduce tooling complexity and eliminate redundant manufacturing methods, increasing efficiency across the board."
+ building_teraforge_uplink_consumer_goods_triggered_desc: "\n§G+1§! £mod_job_teraforge_overseer_consumer_goods_add£['concept_job_teraforge_overseer_consumer_goods'] per 100 [GetArtisanIcon] §Y[GetArtisanPlural]§!"
+ building_teraforge_uplink_consumer_goods_triggered_desc_gestalt: "\n§G+1§! £mod_job_teraforge_overseer_consumer_goods_gestalt_add£['concept_job_teraforge_overseer_consumer_goods_gestalt'] per 100 [GetArtisanIcon] §Y[GetArtisanPlural]§!"
 
- building_teraforge_uplink_alloys: "Quasaric Alloy Plants"
- building_teraforge_uplink_alloys_plural: "Quasaric Alloy Plants"
- building_teraforge_uplink_alloys_desc: "By allowing planetside industry to coordinate with and outsource work to the Hyperquasaric Teraforge, alloy production on the planet can be greatly increased."
+ ## Jobs ##
 
- building_teraforge_uplink_consumer_goods: "Quasaric Factory Uplink"
- building_teraforge_uplink_consumer_goods_plural: "Quasaric Factory Uplinks"
- building_teraforge_uplink_consumer_goods_desc: "While the primary focus of the Hyperquasaric Teraforge is alloy production, allowing planetary industry to repurpose even 1% of the structure towards assisting in planetside consumer goods production, output can be massively increased."
+ # Alloys - Regular #
+ job_teraforge_overseer_alloys: "Teraforge Integration Overseer"
+ job_teraforge_overseer_alloys_plural: "Teraforge Integration Overseers"
+ job_teraforge_overseer_alloys_plural_with_icon: "[teraforge_overseer_alloys.GetIcon] [teraforge_overseer_alloys.GetNamePlural]"
+ job_teraforge_overseer_alloys_desc: "Specialists responsible for the integration of Teraforge-derived alloy precursors into planetary foundries, ensuring production lines operate at peak efficiency."
+ job_teraforge_overseer_alloys_effect_desc: "[teraforge_overseer_alloys.GetIcon] [teraforge_overseer_alloys.GetNamePlural] turn £trade£ §Y$trade$§! into £mod_pop_bonus_workforce_mult£ §Y$mod_pop_foundry_bonus_workforce_mult$§!"
+ mod_job_teraforge_overseer_alloys_add: "[teraforge_overseer_alloys.GetName] Jobs"
 
+ # Alloys - Regular - Catalytic #
+ job_teraforge_overseer_alloys_catalytic: "Teraforge Catalytic Integration Overseer"
+ job_teraforge_overseer_alloys_catalytic_plural: "Teraforge Catalytic Integration Overseers"
+ job_teraforge_overseer_alloys_catalytic_plural_with_icon: "[teraforge_overseer_alloys.GetIcon] [teraforge_overseer_alloys.GetNamePlural]"
+ job_teraforge_overseer_alloys_catalytic_desc: "Specialists responsible for the integration of Teraforge-derived organic alloy precursors into planetary foundries, ensuring production lines operate at peak efficiency."
+ job_teraforge_overseer_alloys_catalytic_effect_desc: "[teraforge_overseer_alloys.GetIcon] [teraforge_overseer_alloys.GetNamePlural] turn £trade£ §Y$trade$§! into £mod_pop_bonus_workforce_mult£ §Y$mod_pop_foundry_bonus_workforce_mult$§!"
+ mod_job_teraforge_overseer_alloys_catalytic_add: "[teraforge_overseer_alloys.GetName] Jobs"
+
+ # Alloys - Gestalt #
+ job_teraforge_overseer_alloys_gestalt: "Teraforge Integration Overseer Drone"
+ job_teraforge_overseer_alloys_gestalt_plural: "Teraforge Integration Overseer Drones"
+ job_teraforge_overseer_alloys_gestalt_plural_with_icon: "[teraforge_overseer_alloys_gestalt.GetIcon] [teraforge_overseer_alloys_gestalt.GetNamePlural]"
+ job_teraforge_overseer_alloys_gestalt_desc: "Specialist drones responsible for the integration of Teraforge-derived alloy precursors into planetary foundries, ensuring production lines operate at peak efficiency."
+ job_teraforge_overseer_alloys_gestalt_effect_desc: "[teraforge_overseer_alloys_gestalt.GetIcon] [teraforge_overseer_alloys_gestalt.GetNamePlural] turn £trade£ §Y$trade$§! into £mod_pop_bonus_workforce_mult£ §Y$mod_pop_fabricator_bonus_workforce_mult$§!"
+ mod_job_teraforge_overseer_alloys_gestalt_add: "[teraforge_overseer_alloys_gestalt.GetName] Jobs"
+
+ # Alloys - Gestalt - Catalytic #
+ job_teraforge_overseer_alloys_catalytic_gestalt: "Teraforge Catalytic Integration Overseer Drone"
+ job_teraforge_overseer_alloys_catalytic_gestalt_plural: "Teraforge Catalytic Integration Overseers Drones"
+ job_teraforge_overseer_alloys_catalytic_gestalt_plural_with_icon: "[teraforge_overseer_alloys_catalytic_gestalt.GetIcon] [teraforge_overseer_alloys_catalytic_gestalt.GetNamePlural]"
+ job_teraforge_overseer_alloys_catalytic_gestalt_desc: "Specialist drones responsible for the integration of Teraforge-derived organic alloy precursors into planetary foundries, ensuring production lines operate at peak efficiency."
+ job_teraforge_overseer_alloys_catalytic_gestalt_effect_desc: "[teraforge_overseer_alloys_catalytic_gestalt.GetIcon] [teraforge_overseer_alloys_catalytic_gestalt.GetNamePlural] turn £trade£ §Y$trade$§! into £mod_pop_bonus_workforce_mult£ §Y$mod_pop_foundry_bonus_workforce_mult$§!"
+ mod_job_teraforge_overseer_alloys_catalytic_gestalt_add: "[teraforge_overseer_alloys_catalytic_gestalt.GetName] Jobs"
+
+ # Consumer Goods - Regular #
+ job_teraforge_overseer_consumer_goods: "Teraforge Civilian Integration Overseer"
+ job_teraforge_overseer_consumer_goods_plural: "Teraforge Civilian Integration Overseers"
+ job_teraforge_overseer_consumer_goods_plural_with_icon: "[teraforge_overseer_consumer_goods.GetIcon] [teraforge_overseer_consumer_goods.GetNamePlural]"
+ job_teraforge_overseer_consumer_goods_desc: "Highly trained specialists who oversee the application of Teraforge-derived material standards within civilian manufacturing, allowing our [artisan.GetNamePlural] to maintain high output with minimal waste by reducing tooling complexity and simplifying production lines."
+ job_teraforge_overseer_consumer_goods_effect_desc: "[teraforge_overseer_consumer_goods.GetIcon] [teraforge_overseer_consumer_goods.GetNamePlural] turn £trade£ §Y$trade$§! into £mod_pop_bonus_workforce_mult£ §Y$mod_pop_artisan_bonus_workforce_mult$§!"
+ mod_job_teraforge_overseer_consumer_goods_add: "[teraforge_overseer_consumer_goods.GetName] Jobs"
+
+ # Consumer Goods - Gestalt #
+ job_teraforge_overseer_consumer_goods_gestalt: "Teraforge Civilian Integration Overseer Drone"
+ job_teraforge_overseer_consumer_goods_gestalt_plural: "Teraforge Civilian Integration Overseer Drones"
+ job_teraforge_overseer_consumer_goods_gestalt_plural_with_icon: "[teraforge_overseer_consumer_goods_gestalt.GetIcon] [teraforge_overseer_consumer_goods_gestalt.GetNamePlural]"
+ job_teraforge_overseer_consumer_goods_gestalt_desc: "Specialist drones who oversee the application of Teraforge-derived material standards within civilian manufacturing, allowing our [artisan_drone.GetNamePlural] to maintain high output with minimal waste by reducing tooling complexity and simplifying production lines."
+ job_teraforge_overseer_consumer_goods_gestalt_effect_desc: "[teraforge_overseer_consumer_goods_gestalt.GetIcon] [teraforge_overseer_consumer_goods_gestalt.GetNamePlural] turn £trade£ §Y$trade$§! into £mod_pop_bonus_workforce_mult£ §Y$mod_pop_artisan_drone_bonus_workforce_mult$§!"
+ mod_job_teraforge_overseer_consumer_goods_gestalt_add: "[teraforge_overseer_consumer_goods_gestalt.GetName] Jobs"
 
 
  #######################################

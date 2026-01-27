@@ -1,11 +1,11 @@
 spriteTypes = {
-	# Ascension Perk
+	## Ascension Perk ##
 	spriteType = {
 		name = GFX_ap_hyperquasaric_megaconstruction
 		textureFile = gfx/interface/icons/ascension_perks/ap_hyperquasaric_megaconstruction.dds
 	}
 
-	# Hyperquasaric Teraforge
+	## Hyperquasaric Teraforge ##
 	spriteType = {
 		name = GFX_hyperquasaric_teraforge_0_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
@@ -26,12 +26,47 @@ spriteTypes = {
 		name = GFX_hyperquasaric_teraforge_4_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
 	}
+
+	## Teraforge Jobs ##
+
+	# Alloys - Regular #
 	spriteType = {
-		name = GFX_quasaric_teraforge_5_outliner_icon
-		textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
+		name = "GFX_job_teraforge_overseer_alloys"
+		textureFile = "gfx/interface/icons/jobs/job_teraforge_overseer_alloys.dds"
+	}
+	spriteType = {
+		name = "GFX_mod_job_teraforge_overseer_alloys_add"
+		textureFile = "gfx/interface/icons/jobs/mod_job_teraforge_overseer_alloys_add.dds"
+	}
+	# Alloys - Gestalt #
+	spriteType = {
+		name = "GFX_job_teraforge_overseer_alloys_gestalt"
+		textureFile = "gfx/interface/icons/jobs/job_teraforge_overseer_alloys_gestalt.dds"
+	}
+	spriteType = {
+		name = "GFX_mod_job_teraforge_overseer_alloys_gestalt_add"
+		textureFile = gfx/interface/icons/jobs/mod_job_teraforge_overseer_alloys_gestalt_add.dds
+	}
+	# Consumer Goods - Regular #
+	spriteType = {
+		name = "GFX_job_teraforge_overseer_consumer_goods"
+		textureFile = gfx/interface/icons/jobs/job_teraforge_overseer_consumer_goods.dds
+	}
+	spriteType = {
+		name = "GFX_mod_job_teraforge_overseer_consumer_goods_add"
+		textureFile = "gfx/interface/icons/jobs/mod_job_teraforge_overseer_consumer_goods_add.dds"
+	}
+	# Consumer Goods - Gestalt #
+	spriteType = {
+		name = "GFX_job_teraforge_overseer_consumer_goods_gestalt"
+		textureFile = gfx/interface/icons/jobs/job_teraforge_overseer_consumer_goods_gestalt.dds
+	}
+	spriteType = {
+		name = "GFX_mod_job_teraforge_overseer_consumer_goods_gestalt_add"
+		textureFile = gfx/interface/icons/jobs/mod_job_teraforge_overseer_consumer_goods_gestalt_add.dds
 	}
 
-	# Hyperquasaric Megashipyard
+	## Hyperquasaric Megashipyard ##
 	spriteType = {
 		name = GFX_hyperquasaric_megashipyard_0_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
@@ -53,8 +88,7 @@ spriteTypes = {
 		textureFile = gfx/interface/icons/megastructures/quasaric_teraforge.dds
 	}
 
-	# Gargantuan Matrioshka Brain
-
+	## Gargantuan Matrioshka Brain ##
 	spriteType = {
 		name = GFX_matrioshka_brain_0_core_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/core_mbrain.dds
@@ -80,8 +114,7 @@ spriteTypes = {
 		textureFile = gfx/interface/icons/megastructures/core_mbrain.dds
 	}
 
-	# Supermassive Black Hole Manipulator
-
+	## Supermassive Black Hole Manipulator ##
 	spriteType = {
 		name = GFX_smbh_manipulator_0_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
@@ -111,7 +144,7 @@ spriteTypes = {
 		textureFile = gfx/interface/icons/megastructures/supermassive_blackhole_manipulator.dds
 	}
 
-	# Quasarcraft
+	## Quasarcraft ##
 	spriteType = {
 		name = GFX_quasarcraft_0_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
@@ -133,7 +166,7 @@ spriteTypes = {
 		textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
 	}
 
-	# Quasarcraft Alt
+	## Quasarcraft Alt ##
 	spriteType = {
 		name = GFX_quasarcraft_1_alt_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/quasarcraft.dds
@@ -150,7 +183,8 @@ spriteTypes = {
 	#######################################
 	### Placeholder Stellar Manip Icons ###
 	#######################################
-	# Systemcraft Printer Enabled
+
+	## Systemcraft Printer Enabled ##
 	spriteType = {
 		name = "GFX_giga_menu_systemcraft_printing_enabled"
 		texturefile = "gfx/interface/menu_ui/giga_menu_systemcraft_printing_enabled.dds"
@@ -170,7 +204,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	# Systemcraft Printer Disabled
+	## Systemcraft Printer Disabled ##
 	spriteType = { name = "GFX_giga_menu_systemcraft_printing_disabled"					texturefile = "gfx/interface/menu_ui/giga_menu_systemcraft_printing_disabled.dds" }
 
 }

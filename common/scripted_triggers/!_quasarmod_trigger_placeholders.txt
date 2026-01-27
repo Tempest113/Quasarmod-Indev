@@ -2,3 +2,4 @@
 merg_is_empty_space = { always = no }
 stellar_manip_is_active = { always = no }
 has_stellar_manip_tech_2 = { always = no }
+is_ecocentric = { always = no }

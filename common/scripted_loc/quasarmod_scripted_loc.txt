@@ -9,3 +9,13 @@ defined_text = {
 
     default = QuasarmodActiveHyperquasar
 }
+
+defined_text = {
+    name = QuasarmodTeraforgeBuildingConcept
+    text = {
+        trigger = { is_gestalt = yes }
+        localization_key = concept_quasarmod_teraforge_buildings_desc_gestalt
+    }
+
+    default = concept_quasarmod_teraforge_buildings_desc_regular
+}

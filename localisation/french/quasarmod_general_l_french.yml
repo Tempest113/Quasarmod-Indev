@@ -1,6 +1,6 @@
 ﻿l_french:
 
-# This file handles general loc such as ascension perks, technologies, edicts, modifiers or tooltips
+# This file handles general loc such as ascension perks, technologies, edicts, modifiers, tooltips or concepts
 
  ##################
  # Ascension Perk #
@@ -98,7 +98,7 @@
  #############
 
  # Buildings
- mod_building_quasarmod_teraforge_uplink_country_max: "Max $building_teraforge_uplink_base$ Buildings"
+ mod_building_quasarmod_teraforge_uplink_country_max: "Max ['concept_quasarmod_teraforge_buildings']"
  mod_building_teraforge_uplink_base_max: "Max $building_teraforge_uplink_base_plural$"
  mod_planet_building_teraforge_uplink_base_build_speed_mult: "$building_teraforge_uplink_base$ build speed"
 
@@ -132,3 +132,22 @@
 
  quasarmod_lost_quasarcraft: "Lost a Quasarcraft"
  quasarmod_lost_quasarcraft_desc: "A Quasarcraft owned by this empire was destroyed, causing a disaster spanning multiple systems. The damage caused by such an incident has caused the capabilities of the empire to be called into question."
+
+# Concepts
+ concept_quasarmod_teraforge_buildings: "$giga_menu_name_teraforge$ Integration Buildings"
+ concept_quasarmod_teraforge_buildings_desc: "[QuasarmodTeraforgeBuildingConcept]"
+ concept_quasarmod_teraforge_buildings_desc_regular: "Teraforge Integration Buildings include the ['building:building_teraforge_uplink_alloys'] and the ['building:building_teraforge_uplink_consumer_goods']. These buildings provide a scaling amount of powerful Teraforge Integration Overseer jobs based on the amount of [foundry.GetIcon] [foundry.GetNamePlural] or [artisan.GetIcon] [artisan.GetNamePlural] present."
+ concept_quasarmod_teraforge_buildings_desc_gestalt: "Teraforge Integration Buildings include the ['building:building_teraforge_uplink_alloys'] and the ['building:building_teraforge_uplink_consumer_goods']. These buildings provide a scaling amount of powerful Teraforge Integration Overseer jobs based on the amount of [fabricator.GetIcon] [fabricator.GetNamePlural] or [artisan_drone.GetIcon] [artisan_drone.GetNamePlural] present."
+
+ concept_job_teraforge_overseer_alloys: "$job_teraforge_overseer_alloys$"
+ concept_job_teraforge_overseer_alloys_desc: "$job_teraforge_overseer_alloys_desc$"
+ concept_job_teraforge_overseer_alloys_catalytic: "$job_teraforge_overseer_alloys_catalytic$"
+ concept_job_teraforge_overseer_alloys_catalytic_desc: "$job_teraforge_overseer_alloys_catalytic_desc$"
+ concept_job_teraforge_overseer_consumer_goods: "$job_teraforge_overseer_consumer_goods$"
+ concept_job_teraforge_overseer_consumer_goods_desc: "$job_teraforge_overseer_consumer_goods_desc$"
+ concept_job_teraforge_overseer_alloys_gestalt: "$job_teraforge_overseer_alloys_gestalt$"
+ concept_job_teraforge_overseer_alloys_gestalt_desc: "$job_teraforge_overseer_alloys_gestalt_desc$"
+ concept_job_teraforge_overseer_alloys_gestalt_catalytic: "$job_teraforge_overseer_alloys_catalytic_gestalt$"
+ concept_job_teraforge_overseer_alloys_gestalt_catalytic_desc: "$job_teraforge_overseer_alloys_catalytic_gestalt_desc$"
+ concept_job_teraforge_overseer_consumer_goods_gestalt: "$job_teraforge_overseer_consumer_goods_gestalt$"
+ concept_job_teraforge_overseer_consumer_goods_gestalt_desc: "$job_teraforge_overseer_consumer_goods_gestalt_desc$"
