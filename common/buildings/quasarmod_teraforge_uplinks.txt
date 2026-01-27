@@ -8,7 +8,6 @@ building_teraforge_uplink_alloys = {
         modifier = {
             exists = owner
             weight = owner.modifier:building_quasarmod_teraforge_uplink_country_max
-            weight = owner.modifier:building_quasarmod_teraforge_uplink_country_max
         }
     }
 

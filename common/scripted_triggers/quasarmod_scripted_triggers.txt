@@ -55,7 +55,6 @@ quasarmod_is_core_class = {
 
 planet_has_quasarmod_teraforge_uplink = {
     OR = {
-        has_building = building_teraforge_uplink_base
         has_building = building_teraforge_uplink_alloys
         has_building = building_teraforge_uplink_consumer_goods
     }
