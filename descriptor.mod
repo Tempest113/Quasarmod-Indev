@@ -7,7 +7,7 @@ tags={
 	"Gigastructures"
 	"Situations"
 }
-name="[4.2] Hyperquasaric Megaconstruction"
+name="[4.3] Hyperquasaric Megaconstruction"
 picture="thumbnail.png"
-supported_version="v4.2.*"
+supported_version="v4.3.*"
 remote_file_id="3094458137"
