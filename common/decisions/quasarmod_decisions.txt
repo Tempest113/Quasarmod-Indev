@@ -5,7 +5,6 @@ decision_quasarmod_establish_core_mbrain_uplink = {
     show_tech_unlock_if = { always = no }
     prerequisites = { giga_tech_matrioshka_brain_1 }
     potential = {
-        always = no #Temp disabled for 4.0
         planet = {
             is_colony = yes
             NOT = {
@@ -75,7 +74,6 @@ decision_quasarmod_sever_core_mbrain_uplink = {
     show_tech_unlock_if = { always = no }
     prerequisites = { giga_tech_matrioshka_brain_1 }
     potential = {
-        always = no #Temp disabled for 4.0
         planet = {
             is_colony = yes
             has_modifier = quasarmod_connected_to_core_mbrain_mod
