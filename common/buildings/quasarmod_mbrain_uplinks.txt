@@ -14,7 +14,13 @@
 # READ ME
 ###################################
 # for the inlines to work, the variables above MUST be copy pasted into the following inlines
-
+#   buildings/quasarmod_uplink.txt
+#   buildings/quasarmod_uplink_no_pot_only_planet.txt
+#   buildings/quasarmod_uplink_only_planet.txt
+# This is because the file-scope scripted variables above are not passed into the inlines
+# unless you surround them in the math operator [], (like in the refinery inlines) but then every line
+# needs to be surrounded like that.
+# The lesser evil is to just copy the damn lines into each file
 
 ###################################################################################################################################
 
