@@ -1,0 +1,13 @@
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            $OWNER_POTENTIAL$
+            owns_core_mbrain_finished = yes
+        }
+        planet = {
+            has_modifier = quasarmod_connected_to_core_mbrain_mod
+        }
+    }
+    $PLANET_MODIFIER$
+}

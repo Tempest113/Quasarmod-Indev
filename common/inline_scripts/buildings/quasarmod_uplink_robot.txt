@@ -1,0 +1,56 @@
+
+inline_script = {
+    script = buildings/quasarmod_uplink_only_planet
+    OWNER_POTENTIAL = "
+        is_regular_empire = yes
+    "
+    PLANET_MODIFIER = "
+        $ALWAYS_MODIFIER$
+    "
+}
+
+inline_script = {
+    script = buildings/quasarmod_uplink_only_planet
+    OWNER_POTENTIAL = "
+        is_regular_empire = yes
+        has_policy_flag = ai_full_rights
+        has_policy_flag = slavery_allowed
+    "
+    PLANET_MODIFIER = "
+        $SLAVERY_AI_MODIFIER$
+    "
+}
+
+inline_script = {
+    script = buildings/quasarmod_uplink_only_planet
+    OWNER_POTENTIAL = "
+        is_regular_empire = yes
+        is_individual_machine = no
+        has_policy_flag = ai_servitude
+    "
+    PLANET_MODIFIER = "
+        $SERVITUDE_AI_MODIFIER$
+    "
+}
+
+inline_script = {
+    script = buildings/quasarmod_uplink_only_planet
+    OWNER_POTENTIAL = "
+        is_regular_empire = yes
+        is_individual_machine = no
+        has_policy_flag = ai_outlawed
+    "
+    PLANET_MODIFIER = "
+        $OUTLAWED_AI_MODIFIER$
+    "
+}
+
+inline_script = {
+    script = buildings/quasarmod_uplink_only_planet
+    OWNER_POTENTIAL = "
+        is_gestalt = yes
+    "
+    PLANET_MODIFIER = "
+        $GESTALT_MODIFIER$
+    "
+}

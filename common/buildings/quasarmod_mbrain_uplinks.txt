@@ -42,11 +42,7 @@ building_giga_matrioshka_brain_uplink_research = {
 
     # Quasarmod Additions
     inline_script = {
-        script = buildings/quasarmod_uplink_extra_effects
-        OWNER_POTENTIAL = "
-        "
-        COUNTRY_MODIFIER = "
-        "
+        script = buildings/quasarmod_uplink_no_pot_only_planet
         PLANET_MODIFIER = "
             planet_researchers_produces_mult = @production_mult
             planet_researchers_upkeep_mult = @upkeep_mult
@@ -93,11 +89,7 @@ building_giga_matrioshka_brain_uplink_unity = {
 
     # Quasarmod Additions
     inline_script = {
-        script = buildings/quasarmod_uplink_extra_effects
-        OWNER_POTENTIAL = "
-        "
-        COUNTRY_MODIFIER = "
-        "
+        script = buildings/quasarmod_uplink_no_pot_only_planet
         PLANET_MODIFIER = "
             planet_bureaucrats_produces_mult = @production_mult
             planet_bureaucrats_upkeep_mult = @upkeep_mult
@@ -140,13 +132,8 @@ building_giga_matrioshka_brain_uplink_sanctuary = {
     }
 
     # Quasarmod Additions
-
     inline_script = {
-        script = buildings/quasarmod_uplink_extra_effects
-        OWNER_POTENTIAL = "
-        "
-        COUNTRY_MODIFIER = "
-        "
+        script = buildings/quasarmod_uplink_no_pot_only_planet
         PLANET_MODIFIER = "
             job_bio_trophy_add = 5000
             pop_bio_trophy_bonus_workforce_mult = 0.25
@@ -262,7 +249,7 @@ building_giga_matrioshka_brain_uplink_entertainment = {
     ######################################################
     # normal empires
     inline_script = {
-        script = buildings/quasarmod_uplink_extra_effects
+        script = buildings/quasarmod_uplink
         OWNER_POTENTIAL = "
             is_gestalt = no
             NAND = {
@@ -283,7 +270,7 @@ building_giga_matrioshka_brain_uplink_entertainment = {
 
     # servitors
     inline_script = {
-        script = buildings/quasarmod_uplink_extra_effects
+        script = buildings/quasarmod_uplink
         OWNER_POTENTIAL = "
             is_machine_empire = yes
         "
@@ -298,7 +285,7 @@ building_giga_matrioshka_brain_uplink_entertainment = {
 
     # the GAMERS
     inline_script = {
-        script = buildings/quasarmod_uplink_extra_effects
+        script = buildings/quasarmod_uplink
         OWNER_POTENTIAL = "
             is_fallen_empire_materialist = yes
             has_civic = civic_disinterested_gamers
@@ -376,7 +363,7 @@ building_giga_matrioshka_brain_uplink_training = {
     # normal empires
 
     inline_script = {
-        script = buildings/quasarmod_uplink_extra_effects
+        script = buildings/quasarmod_uplink
         OWNER_POTENTIAL = "
             is_gestalt = no
         "
@@ -389,7 +376,7 @@ building_giga_matrioshka_brain_uplink_training = {
 
     # gestalt
     inline_script = {
-        script = buildings/quasarmod_uplink_extra_effects
+        script = buildings/quasarmod_uplink
         OWNER_POTENTIAL = "
             is_gestalt = yes
         "
@@ -485,11 +472,7 @@ building_giga_matrioshka_brain_uplink_hell = {
 
     # Quasarmod Additions
     inline_script = {
-        script = buildings/quasarmod_uplink_extra_effects
-        OWNER_POTENTIAL = "
-        "
-        COUNTRY_MODIFIER = "
-        "
+        script = buildings/quasarmod_uplink_no_pot_only_planet
         PLANET_MODIFIER = "
             job_giga_virtual_hell_inmate_add = 2000
         "
@@ -535,11 +518,7 @@ building_giga_matrioshka_brain_uplink_livestock = {
 
     # Quasarmod Additions
     inline_script = {
-        script = buildings/quasarmod_uplink_extra_effects
-        OWNER_POTENTIAL = "
-        "
-        COUNTRY_MODIFIER = "
-        "
+        script = buildings/quasarmod_uplink_no_pot_only_planet
         PLANET_MODIFIER = "
             planet_jobs_energy_upkeep_mult = -0.005
             planet_pops_energy_upkeep_mult = -0.005
@@ -548,193 +527,150 @@ building_giga_matrioshka_brain_uplink_livestock = {
         "
     }
 }
-#
-# ###################################################################################################################################
-# ###################################################################################################################################
-#
-# building_giga_matrioshka_brain_uplink_amalgamation = {
-#     inline_script = {
-#         script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
-#         name = amalgamation
-#         category = resources
-#         resources = "
-# 			cost = {
-# 				minerals = 400
-# 			}
-# 			upkeep = {
-# 				alloys = 2
-# 			}
-# 		"
-#     }
-#     building_sets = {
-#         urban
-#     }
-#     triggered_planet_modifier = {
-#         job_giga_virtual_organic_battery_add = 5000
-#     }
-#     triggered_desc = {
-#         text = job_giga_virtual_organic_battery_effect_desc
-#     }
-#
-#     # Quasarmod Additions
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = {
-#                 owns_core_mbrain_finished = yes
-#             }
-#             planet = {
-#                 has_modifier = quasarmod_connected_to_core_mbrain_mod
-#             }
-#         }
-#
-#         job_giga_virtual_organic_battery_add = 5000
-#     }
-# }
-#
-# ###################################################################################################################################
-# ###################################################################################################################################
-#
-# building_giga_matrioshka_brain_uplink_foundry = {
-#     inline_script = {
-#         script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
-#         name = foundry
-#         category = manufacturing
-#         resources = "
-# 			cost = {
-# 				volatile_motes = 500
-# 			}
-# 			upkeep = {
-# 				volatile_motes = 4
-# 			}
-# 		"
-#     }
-#
-#     inline_script = {
-#         script = planet/alloys/giga_foundry_job_swap
-#         jobs = 800
-#     }
-#     building_sets = {
-#         urban
-#     }
-#     triggered_planet_modifier = {
-#         planet_metallurgists_produces_mult = @production_mult
-#         planet_metallurgists_upkeep_mult = @upkeep_mult
-#     }
-#
-#     triggered_planet_modifier = {
-#         multiplier = value:giga_job_scaling_plus_base
-#         planet_metallurgists_energy_upkeep_add = 2
-#         planet_metallurgists_engineering_research_upkeep_add = @research_upkeep
-#     }
-#
-#     # Quasarmod Additions
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = {
-#                 owns_core_mbrain_finished = yes
-#             }
-#             planet = {
-#                 has_modifier = quasarmod_connected_to_core_mbrain_mod
-#             }
-#         }
-#
-#         planet_metallurgists_produces_mult = @production_mult
-#         planet_metallurgists_upkeep_mult = @upkeep_mult
-#     }
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = {
-#                 owns_core_mbrain_finished = yes
-#             }
-#             planet = {
-#                 has_modifier = quasarmod_connected_to_core_mbrain_mod
-#             }
-#         }
-#
-#         multiplier = value:giga_job_scaling_plus_base
-#         planet_metallurgists_energy_upkeep_add = 2
-#         planet_metallurgists_engineering_research_upkeep_add = @research_upkeep
-#     }
-# }
-#
-# ###################################################################################################################################
-# ###################################################################################################################################
-#
-# building_giga_matrioshka_brain_uplink_factory = {
-#     inline_script = {
-#         script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
-#         name = factory
-#         category = manufacturing
-#         resources = "
-# 			cost = {
-# 				rare_crystals = 500
-# 			}
-# 			upkeep = {
-# 				rare_crystals = 4
-# 			}
-# 		"
-# 	}
-# 	building_sets = {
-# 		urban
-# 	}
-# 	inline_script = {
-# 		script = planet/consumer_goods/giga_artisan_job_swap
-# 		jobs = 800
-# 	}
-#
-#     triggered_planet_modifier = {
-#         planet_artisans_produces_mult = @production_mult
-#         planet_artisans_upkeep_mult = @upkeep_mult
-#     }
-#
-#     triggered_planet_modifier = {
-#         multiplier = value:giga_job_scaling_plus_base
-#         planet_artisans_energy_upkeep_add = 1
-#         planet_artisans_society_research_upkeep_add = @research_upkeep
-#     }
-#
-#     # Quasarmod Additions
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = {
-#                 owns_core_mbrain_finished = yes
-#             }
-#             planet = {
-#                 has_modifier = quasarmod_connected_to_core_mbrain_mod
-#             }
-#         }
-#
-#         planet_artisans_produces_mult = @production_mult
-#         planet_artisans_upkeep_mult = @upkeep_mult
-#     }
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = {
-#                 owns_core_mbrain_finished = yes
-#             }
-#             planet = {
-#                 has_modifier = quasarmod_connected_to_core_mbrain_mod
-#             }
-#         }
-#
-#         multiplier = value:giga_job_scaling_plus_base
-#         planet_artisans_energy_upkeep_add = 1
-#         planet_artisans_society_research_upkeep_add = @research_upkeep
-#     }
-# }
-#
-# ###################################################################################################################################
-# ###################################################################################################################################
+
+###################################################################################################################################
+###################################################################################################################################
+
+building_giga_matrioshka_brain_uplink_amalgamation = {
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
+        name = amalgamation
+        category = resources
+        resources = "
+			cost = {
+				minerals = 400
+			}
+			upkeep = {
+				alloys = 2
+			}
+		"
+    }
+
+    planet_modifier = {
+        pop_organic_battery_bonus_workforce_mult = 0.4
+    }
+    triggered_planet_modifier = {
+        planet_jobs_energy_upkeep_mult = -0.05
+        planet_pops_energy_upkeep_mult = -0.05
+    }
+
+    triggered_planet_modifier = {
+        planet_jobs_energy_upkeep_mult = -0.005
+        planet_pops_energy_upkeep_mult = -0.005
+
+        mult = value:giga_count_jobs|JOB|organic_battery|
+    }
+
+    triggered_desc = {
+        text = building_giga_matrioshka_brain_uplink_amalgamation_effect
+    }
+
+    # Quasarmod Additions
+    inline_script = {
+        script = buildings/quasarmod_uplink_no_pot_only_planet
+        PLANET_MODIFIER = "
+            planet_jobs_energy_upkeep_mult = -0.005
+            planet_pops_energy_upkeep_mult = -0.005
+
+            mult = value:giga_count_jobs|JOB|organic_battery|
+        "
+    }
+}
+
+###################################################################################################################################
+###################################################################################################################################
+
+building_giga_matrioshka_brain_uplink_foundry = {
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
+        name = foundry
+        category = manufacturing
+        resources = "
+			cost = {
+				volatile_motes = 500
+			}
+			upkeep = {
+				volatile_motes = 4
+			}
+		"
+    }
+
+    inline_script = {
+        script = planet/alloys/giga_foundry_job_swap
+        jobs = 800
+    }
+
+    triggered_planet_modifier = {
+        planet_metallurgists_produces_mult = @production_mult
+        planet_metallurgists_upkeep_mult = @upkeep_mult
+    }
+
+    triggered_planet_modifier = {
+        planet_metallurgists_energy_upkeep_add = 2
+        planet_metallurgists_engineering_research_upkeep_add = @research_upkeep
+    }
+
+    # Quasarmod Additions
+    inline_script = {
+        script = buildings/quasarmod_uplink_no_pot_only_planet
+        PLANET_MODIFIER = "
+            planet_metallurgists_produces_mult = @production_mult
+            planet_metallurgists_upkeep_mult = @upkeep_mult
+
+            planet_metallurgists_energy_upkeep_add = 2
+            planet_metallurgists_engineering_research_upkeep_add = @research_upkeep
+        "
+    }
+}
+
+###################################################################################################################################
+###################################################################################################################################
+
+building_giga_matrioshka_brain_uplink_factory = {
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
+        name = factory
+        category = manufacturing
+        resources = "
+			cost = {
+				rare_crystals = 500
+			}
+			upkeep = {
+				rare_crystals = 4
+			}
+		"
+    }
+
+    inline_script = {
+        script = planet/consumer_goods/giga_artisan_job_swap
+        jobs = 800
+    }
+
+    triggered_planet_modifier = {
+        planet_artisans_produces_mult = @production_mult
+        planet_artisans_upkeep_mult = @upkeep_mult
+    }
+
+    triggered_planet_modifier = {
+        planet_artisans_energy_upkeep_add = 1
+        planet_artisans_society_research_upkeep_add = @research_upkeep
+    }
+
+    # Quasarmod Additions
+    inline_script = {
+        script = buildings/quasarmod_uplink_no_pot_only_planet
+        PLANET_MODIFIER = "
+            planet_artisans_produces_mult = @production_mult
+            planet_artisans_upkeep_mult = @upkeep_mult
+
+            planet_artisans_energy_upkeep_add = 1
+            planet_artisans_society_research_upkeep_add = @research_upkeep
+        "
+    }
+}
+
+###################################################################################################################################
+###################################################################################################################################
 #
 # building_giga_matrioshka_brain_uplink_refinery = {
 #     inline_script = {
@@ -833,376 +769,248 @@ building_giga_matrioshka_brain_uplink_livestock = {
 #         planet_translucers_engineering_research_upkeep_add = @research_upkeep
 #     }
 # }
-#
-# ###################################################################################################################################
-# ###################################################################################################################################
-#
-# building_giga_matrioshka_brain_uplink_anti_deviancy = {
-#     inline_script = {
-#         script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
-#         name = anti_deviancy
-#         category = government
-#         resources = "
-# 			cost = {
-# 				volatile_motes = 500
-# 			}
-# 			upkeep = {
-# 				volatile_motes = 2
-# 			}
-# 		"
-#     }
-#
-#     triggered_planet_modifier = {
-#         planet_jobs_produces_mult = 0.1
-#         job_patrol_drone_add = 8
-#     }
-#     triggered_planet_modifier = {
-#         planet_crime_no_happiness_add = -1
-#         multiplier = value:giga_mbrain_anti_deviancy
-#     }
-#     triggered_desc = {
-#         text = building_giga_matrioshka_brain_uplink_anti_deviancy_effect
-#     }
-#     triggered_desc = {
-#         text = job_patrol_drone_effect_desc
-#     }
-#
-#     # Quasarmod Additions
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = {
-#                 owns_core_mbrain_finished = yes
-#             }
-#             planet = {
-#                 has_modifier = quasarmod_connected_to_core_mbrain_mod
-#             }
-#         }
-#
-#         planet_jobs_produces_mult = 0.1
-#         job_patrol_drone_add = 8
-#     }
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = {
-#                 owns_core_mbrain_finished = yes
-#             }
-#             planet = {
-#                 has_modifier = quasarmod_connected_to_core_mbrain_mod
-#             }
-#         }
-#
-#         planet_crime_no_happiness_add = -1
-#         multiplier = value:giga_mbrain_anti_deviancy
-#     }
-# }
-#
-# ###################################################################################################################################
-# ###################################################################################################################################
-#
-# building_giga_matrioshka_brain_uplink_robot = {
-#     inline_script = {
-#         script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
-#         name = robot
-#         category = manufacturing
-#         resources = "
-# 			cost = {
-# 				rare_crystals = 500
-# 			}
-# 			upkeep = {
-# 				rare_crystals = 4
-# 			}
-# 		"
-#     }
-#
-#     # regular empires, getting more potent as you get more strict
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = { is_regular_empire = yes }
-#         }
-#
-#         planet_jobs_robot_worker_produces_mult = 0.1
-#         planet_jobs_robot_specialist_produces_mult = 0.05
-#
-#         pop_category_workers_robotic_energy_upkeep_add = 0.5
-#         pop_category_specialists_robotic_energy_upkeep_add = 1
-#
-#         pop_robot_worker_happiness = -0.2
-#         pop_robot_specialist_happiness = -0.1
-#     }
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = {
-#                 is_regular_empire = yes
-#                 has_policy_flag = ai_full_rights
-#                 has_policy_flag = slavery_allowed
-#             }
-#         }
-#
-#         planet_jobs_robot_slave_produces_mult = 0.2
-#         pop_category_slave_robotic_energy_upkeep_add = 0.5
-#         pop_robot_slave_happiness = -0.1
-#
-#     }
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = {
-#                 is_regular_empire = yes
-#                 is_individual_machine = no
-#                 has_policy_flag = ai_servitude
-#             }
-#         }
-#
-#         planet_jobs_robot_worker_produces_mult = 0.2
-#         planet_jobs_robot_specialist_produces_mult = 0.05
-#
-#         pop_category_workers_robotic_energy_upkeep_add = 0.5
-#         pop_category_specialists_robotic_energy_upkeep_add = 1
-#
-#         pop_robot_worker_happiness = -0.2
-#         pop_robot_specialist_happiness = -0.1
-#     }
-#     triggered_desc = {
-#         trigger = {
-#             exists = owner
-#             owner = {
-#                 is_regular_empire = yes
-#                 is_individual_machine = no
-#                 is_materialist = yes
-#             }
-#         }
-#         text = building_giga_matrioshka_brain_uplink_robot_effect_servitude
-#     }
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = {
-#                 is_regular_empire = yes
-#                 is_individual_machine = no
-#                 has_policy_flag = ai_outlawed
-#             }
-#         }
-#
-#         planet_jobs_robot_worker_produces_mult = 0.3
-#         planet_jobs_robot_specialist_produces_mult = 0.05
-#
-#         pop_category_workers_robotic_energy_upkeep_add = 0.5
-#         pop_category_specialists_robotic_energy_upkeep_add = 1
-#
-#         pop_robot_worker_happiness = -0.3
-#         pop_robot_specialist_happiness = -0.2
-#     }
-#     triggered_desc = {
-#         trigger = {
-#             exists = owner
-#             owner = {
-#                 is_regular_empire = yes
-#                 is_individual_machine = no
-#                 is_materialist = no
-#             }
-#         }
-#         text = building_giga_matrioshka_brain_uplink_robot_effect_servitude_or_ban
-#     }
-#
-#     # gestalts
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = { is_gestalt = yes }
-#         }
-#
-#         planet_jobs_robot_worker_produces_mult = 0.25
-#         pop_category_workers_robotic_energy_upkeep_add = 1
-#     }
-#
-#     # Quasarmod Additions - Oh god
-#
-#     # regular empires, getting more potent as you get more strict
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = {
-#                 is_regular_empire = yes
-#                 owns_core_mbrain_finished = yes
-#             }
-#             planet = {
-#                 has_modifier = quasarmod_connected_to_core_mbrain_mod
-#             }
-#         }
-#
-#         planet_jobs_robot_worker_produces_mult = 0.1
-#         planet_jobs_robot_specialist_produces_mult = 0.05
-#
-#         pop_category_workers_robotic_energy_upkeep_add = 0.5
-#         pop_category_specialists_robotic_energy_upkeep_add = 1
-#
-#         pop_robot_worker_happiness = -0.2
-#         pop_robot_specialist_happiness = -0.1
-#     }
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = {
-#                 is_regular_empire = yes
-#                 has_policy_flag = ai_full_rights
-#                 has_policy_flag = slavery_allowed
-#                 owns_core_mbrain_finished = yes
-#             }
-#
-#             planet = {
-#                 has_modifier = quasarmod_connected_to_core_mbrain_mod
-#             }
-#         }
-#
-#         planet_jobs_robot_slave_produces_mult = 0.2
-#         pop_category_slave_robotic_energy_upkeep_add = 0.5
-#         pop_robot_slave_happiness = -0.1
-#
-#     }
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             owner = {
-#                 is_regular_empire = yes
-#                 is_individual_machine = no
-#                 has_policy_flag = ai_servitude
-#                 owns_core_mbrain_finished = yes
-#             }
-#             planet = {
-#                 has_modifier = quasarmod_connected_to_core_mbrain_mod
-#             }
-#         }
-#
-#         planet_jobs_robot_worker_produces_mult = 0.2
-#         planet_jobs_robot_specialist_produces_mult = 0.05
-#
-#         pop_category_workers_robotic_energy_upkeep_add = 0.5
-#         pop_category_specialists_robotic_energy_upkeep_add = 1
-#
-#         pop_robot_worker_happiness = -0.2
-#         pop_robot_specialist_happiness = -0.1
-#     }
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = {
-#                 is_regular_empire = yes
-#                 is_individual_machine = no
-#                 has_policy_flag = ai_outlawed
-#                 owns_core_mbrain_finished = yes
-#             }
-#             planet = {
-#                 has_modifier = quasarmod_connected_to_core_mbrain_mod
-#             }
-#         }
-#
-#         planet_jobs_robot_worker_produces_mult = 0.3
-#         planet_jobs_robot_specialist_produces_mult = 0.05
-#
-#         pop_category_workers_robotic_energy_upkeep_add = 0.5
-#         pop_category_specialists_robotic_energy_upkeep_add = 1
-#
-#         pop_robot_worker_happiness = -0.3
-#         pop_robot_specialist_happiness = -0.2
-#     }
-#
-#     # gestalts
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = {
-#                 is_gestalt = yes
-#                 owns_core_mbrain_finished = yes
-#             }
-#             planet = {
-#                 has_modifier = quasarmod_connected_to_core_mbrain_mod
-#             }
-#         }
-#
-#         planet_jobs_robot_worker_produces_mult = 0.25
-#         pop_category_workers_robotic_energy_upkeep_add = 1
-#     }
-# }
-#
-# ###################################################################################################################################
-# ###################################################################################################################################
-#
-# # Core Mbrain no longer effects this one since i can't be bothered to work out a good implementation
-#
-# # building_giga_matrioshka_brain_uplink_virtual = {
-# #     inline_script = {
-# #         script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
-# #         name = virtual
-# #         category = government
-# #         resources = "
-# # 			cost = {
-# # 				sr_dark_matter = 500
-# # 			}
-# # 			upkeep = {
-# # 				energy = 50 # extra energy upkeep
-# # 				sr_dark_matter = 4
-# # 			}
-# # 		"
-# #     }
-# #
-# #     triggered_planet_modifier = {
-# #         giga_virtual_colony_size = -1
-# #
-# #         multiplier = value:giga_matrioshka_brain_uplink_multiplicative_value|fraction|0.5|building|building_giga_matrioshka_brain_uplink_virtual|
-# #     }
-# #
-# #     triggered_planet_modifier = {
-# #         planet_pops_energy_upkeep_mult = 0.5
-# #     }
-# #
-# #     triggered_desc = {
-# #         text = building_giga_matrioshka_brain_uplink_virtual_effect
-# #     }
-# #
-# #     # Quasarmod Additions - The last one, if this doesn't work in testing i might die
-# #
-# #
-# #     ## Please revise this dear god
-# #     triggered_planet_modifier = {
-# #         potential = {
-# #             exists = owner
-# #             owner = {
-# #                 owns_core_mbrain_finished = yes
-# #             }
-# #             planet = {
-# #                 has_modifier = quasarmod_connected_to_core_mbrain_mod
-# #             }
-# #         }
-# #
-# #         giga_virtual_colony_size = -1
-# #         multiplier = value:giga_matrioshka_brain_uplink_multiplicative_value|fraction|0.5|building|building_giga_matrioshka_brain_uplink_virtual|
-# #     }
-# #
-# #     triggered_planet_modifier = {
-# #         potential = {
-# #             exists = owner
-# #             owner = {
-# #                 owns_core_mbrain_finished = yes
-# #             }
-# #             planet = {
-# #                 has_modifier = quasarmod_connected_to_core_mbrain_mod
-# #             }
-# #         }
-# #
-# #         planet_pops_energy_upkeep_mult = 0.5
-# #     }
-# # }
+
+###################################################################################################################################
+###################################################################################################################################
+
+building_giga_matrioshka_brain_uplink_anti_deviancy = {
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
+        name = anti_deviancy
+        category = government
+        resources = "
+			cost = {
+				volatile_motes = 500
+			}
+			upkeep = {
+				volatile_motes = 2
+			}
+		"
+    }
+
+    planet_modifier = {
+
+    }
+    triggered_planet_modifier = {
+
+    }
+
+    # Quasarmod Additions
+    inline_script = {
+        script = buildings/quasarmod_uplink_no_pot_only_planet
+        PLANET_MODIFIER = "
+            enforcer_jobs_bonus_workforce_mult = 0.4
+            planet_jobs_produces_mult = 0.1
+            job_patrol_drone_add = 800
+        "
+    }
+}
+
+###################################################################################################################################
+###################################################################################################################################
+
+building_giga_matrioshka_brain_uplink_robot = {
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
+        name = robot
+        category = manufacturing
+        resources = "
+			cost = {
+				rare_crystals = 500
+			}
+			upkeep = {
+				rare_crystals = 4
+			}
+		"
+    }
+
+    # regular empires, getting more potent as you get more strict
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+        }
+
+        robotic_worker_pop_bonus_workforce_mult = 0.1
+        robotic_specialist_pop_bonus_workforce_mult = 0.05
+
+        pop_category_workers_robotic_energy_upkeep_add = 0.5
+        pop_category_specialists_robotic_energy_upkeep_add = 1
+
+        pop_robot_worker_happiness = -0.2
+        pop_robot_specialist_happiness = -0.1
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+                has_policy_flag = ai_full_rights
+                has_policy_flag = slavery_allowed
+            }
+        }
+
+        robotic_slave_pop_bonus_workforce_mult = 0.2
+        pop_category_slave_robotic_energy_upkeep_add = 0.5
+        pop_robot_slave_happiness = -0.1
+
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+                is_individual_machine = no
+                has_policy_flag = ai_servitude
+            }
+        }
+
+        robotic_worker_pop_bonus_workforce_mult = 0.2
+        robotic_specialist_pop_bonus_workforce_mult = 0.05
+
+        pop_category_workers_robotic_energy_upkeep_add = 0.5
+        pop_category_specialists_robotic_energy_upkeep_add = 1
+
+        pop_robot_worker_happiness = -0.2
+        pop_robot_specialist_happiness = -0.1
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+                is_individual_machine = no
+                is_materialist = yes
+            }
+        }
+        text = building_giga_matrioshka_brain_uplink_robot_effect_servitude
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+                is_individual_machine = no
+                has_policy_flag = ai_outlawed
+            }
+        }
+
+        robotic_worker_pop_bonus_workforce_mult = 0.3
+        robotic_specialist_pop_bonus_workforce_mult = 0.05
+
+        pop_category_workers_robotic_energy_upkeep_add = 0.5
+        pop_category_specialists_robotic_energy_upkeep_add = 1
+
+        pop_robot_worker_happiness = -0.3
+        pop_robot_specialist_happiness = -0.2
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+                is_individual_machine = no
+                is_materialist = no
+            }
+        }
+        text = building_giga_matrioshka_brain_uplink_robot_effect_servitude_or_ban
+    }
+
+    # gestalts
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        robotic_worker_pop_bonus_workforce_mult = 0.25
+        pop_category_workers_robotic_energy_upkeep_add = 1
+    }
+
+    # Quasarmod Additions
+    inline_script = {
+        script = buildings/quasarmod_uplink_robot
+        ALWAYS_MODIFIER = "
+            robotic_worker_pop_bonus_workforce_mult = 0.1
+            robotic_specialist_pop_bonus_workforce_mult = 0.05
+            pop_category_workers_robotic_energy_upkeep_add = 0.5
+            pop_category_specialists_robotic_energy_upkeep_add = 1
+            pop_robot_worker_happiness = -0.2
+            pop_robot_specialist_happiness = -0.1
+        "
+        SLAVERY_AI_MODIFIER = "
+            robotic_slave_pop_bonus_workforce_mult = 0.2
+            pop_category_slave_robotic_energy_upkeep_add = 0.5
+            pop_robot_slave_happiness = -0.1
+        "
+        SERVITUDE_AI_MODIFIER = "
+            robotic_worker_pop_bonus_workforce_mult = 0.2
+            robotic_specialist_pop_bonus_workforce_mult = 0.05
+
+            pop_category_workers_robotic_energy_upkeep_add = 0.5
+            pop_category_specialists_robotic_energy_upkeep_add = 1
+
+            pop_robot_worker_happiness = -0.2
+            pop_robot_specialist_happiness = -0.1
+        "
+        OUTLAWED_AI_MODIFIER = "
+            robotic_worker_pop_bonus_workforce_mult = 0.3
+            robotic_specialist_pop_bonus_workforce_mult = 0.05
+            pop_category_workers_robotic_energy_upkeep_add = 0.5
+            pop_category_specialists_robotic_energy_upkeep_add = 1
+            pop_robot_worker_happiness = -0.3
+            pop_robot_specialist_happiness = -0.2
+        "
+        GESTALT_MODIFIER = "
+            robotic_worker_pop_bonus_workforce_mult = 0.25
+            pop_category_workers_robotic_energy_upkeep_add = 1
+        "
+    }
+}
+
+###################################################################################################################################
+###################################################################################################################################
+
+building_giga_matrioshka_brain_uplink_virtual = {
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
+        name = virtual
+        category = government
+        resources = "
+			cost = {
+				sr_dark_matter = 500
+			}
+			upkeep = {
+			    energy = 50
+			    sr_dark_matter = 4
+			}
+			# scaling to colony size
+			upkeep = {
+				energy = 100
+				sr_dark_matter = 2
+				multiplier = modifier:giga_virtual_colony_size
+			}
+		"
+    }
+
+    triggered_planet_modifier = {
+        giga_virtual_colony_efficiency = 0.3
+        planet_pops_energy_upkeep_mult = 0.5
+    }
+
+    triggered_desc = {
+        text = building_giga_matrioshka_brain_uplink_virtual_effect
+    }
+
+    # Quasarmod Additions
+    inline_script = {
+        script = buildings/quasarmod_uplink_no_pot_only_planet
+        PLANET_MODIFIER = "
+            giga_virtual_colony_efficiency = 0.3
+            planet_pops_energy_upkeep_mult = 0.5
+        "
+    }
+}
