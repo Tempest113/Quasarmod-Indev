@@ -1,3 +1,9 @@
+# DONT ASK ME WHY THESE NEED TO ALSO BE IN HERE AHHHHHHHHH
+@production_mult = 0.5
+@upkeep_mult = 0.25
+
+@research_upkeep = 2
+
 triggered_planet_modifier = {
     potential = {
         exists = owner

@@ -8,6 +8,14 @@
 
 @research_upkeep = 2
 
+###################################
+# READ ME
+# READ ME
+# READ ME
+###################################
+# for the inlines to work, the variables above MUST be copy pasted into the following inlines
+
+
 ###################################################################################################################################
 
 building_giga_matrioshka_brain_uplink_research = {
@@ -671,104 +679,125 @@ building_giga_matrioshka_brain_uplink_factory = {
 
 ###################################################################################################################################
 ###################################################################################################################################
-#
-# building_giga_matrioshka_brain_uplink_refinery = {
-#     inline_script = {
-#         script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
-#         name = refinery
-#         category = manufacturing
-#         resources = "
-# 			cost = {
-# 				minerals = 400
-# 			}
-# 			upkeep = {
-# 				alloys = 4
-# 			}
-# 		"
-#     }
-#
-#     inline_script = {
-#         script = planet/refiners/giga_chemist_job_swap
-#         jobs = 3
-#     }
-#     inline_script = {
-#         script = planet/refiners/giga_gas_refiner_job_swap
-#         jobs = 3
-#     }
-#     inline_script = {
-#         script = planet/refiners/giga_translucer_job_swap
-#         jobs = 3
-#     }
-#
-#     triggered_planet_modifier = {
-#         planet_chemists_produces_mult = @production_mult
-#         planet_chemists_upkeep_mult = @upkeep_mult
-#
-#         planet_refiners_produces_mult = @production_mult
-#         planet_refiners_upkeep_mult = @upkeep_mult
-#
-#         planet_translucers_produces_mult = @production_mult
-#         planet_translucers_upkeep_mult = @upkeep_mult
-#     }
-#
-#     triggered_planet_modifier = {
-#         multiplier = value:giga_job_scaling_plus_base
-#         planet_chemists_energy_upkeep_add = 2
-#         planet_chemists_physics_research_upkeep_add = @research_upkeep
-#
-#         planet_refiners_energy_upkeep_add = 2
-#         planet_refiners_society_research_upkeep_add = @research_upkeep
-#
-#         planet_translucers_energy_upkeep_add = 2
-#         planet_translucers_engineering_research_upkeep_add = @research_upkeep
-#     }
-#
-#     # Quasarmod Additions
-#
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = {
-#                 owns_core_mbrain_finished = yes
-#             }
-#             planet = {
-#                 has_modifier = quasarmod_connected_to_core_mbrain_mod
-#             }
-#         }
-#
-#         planet_chemists_produces_mult = @production_mult
-#         planet_chemists_upkeep_mult = @upkeep_mult
-#
-#         planet_refiners_produces_mult = @production_mult
-#         planet_refiners_upkeep_mult = @upkeep_mult
-#
-#         planet_translucers_produces_mult = @production_mult
-#         planet_translucers_upkeep_mult = @upkeep_mult
-#     }
-#
-#     triggered_planet_modifier = {
-#         potential = {
-#             exists = owner
-#             owner = {
-#                 owns_core_mbrain_finished = yes
-#             }
-#             planet = {
-#                 has_modifier = quasarmod_connected_to_core_mbrain_mod
-#             }
-#         }
-#
-#         multiplier = value:giga_job_scaling_plus_base
-#         planet_chemists_energy_upkeep_add = 2
-#         planet_chemists_physics_research_upkeep_add = @research_upkeep
-#
-#         planet_refiners_energy_upkeep_add = 2
-#         planet_refiners_society_research_upkeep_add = @research_upkeep
-#
-#         planet_translucers_energy_upkeep_add = 2
-#         planet_translucers_engineering_research_upkeep_add = @research_upkeep
-#     }
-# }
+
+building_giga_matrioshka_brain_uplink_refinery = {
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
+        name = refinery
+        category = manufacturing
+        resources = "
+			cost = {
+				minerals = 400
+			}
+			upkeep = {
+				alloys = 4
+			}
+		"
+    }
+
+    inline_script = {
+        script = planet/refiners/giga_chemist_job_swap
+        jobs = 300
+    }
+    inline_script = {
+        script = planet/refiners/giga_gas_refiner_job_swap
+        jobs = 300
+    }
+    inline_script = {
+        script = planet/refiners/giga_translucer_job_swap
+        jobs = 300
+    }
+
+    triggered_planet_modifier = {
+        planet_chemists_produces_mult = @production_mult
+        planet_chemists_upkeep_mult = @upkeep_mult
+
+        planet_refiners_produces_mult = @production_mult
+        planet_refiners_upkeep_mult = @upkeep_mult
+
+        planet_translucers_produces_mult = @production_mult
+        planet_translucers_upkeep_mult = @upkeep_mult
+    }
+
+    triggered_planet_modifier = {
+        planet_chemists_energy_upkeep_add = 2
+        planet_chemists_physics_research_upkeep_add = @research_upkeep
+
+        planet_refiners_energy_upkeep_add = 2
+        planet_refiners_society_research_upkeep_add = @research_upkeep
+
+        planet_translucers_energy_upkeep_add = 2
+        planet_translucers_engineering_research_upkeep_add = @research_upkeep
+    }
+
+    # scaled bonuses for refineries on industrial jobs
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink_refinery_boost
+        category = planet_metallurgists
+
+        produces_mult = @production_mult
+        upkeep_mult = @[ upkeep_mult * 0.5 ]
+        energy_upkeep_add = 1
+        research_upkeep_add = @[ research_upkeep * 0.5 ]
+    }
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink_refinery_boost
+        category = planet_artisans
+
+        produces_mult = @production_mult
+        upkeep_mult = @[ upkeep_mult * 0.5 ]
+        energy_upkeep_add = 1
+        research_upkeep_add = @[ research_upkeep * 0.5 ]
+    }
+
+    triggered_desc = {
+        text = building_giga_matrioshka_brain_uplink_refinery_effect
+    }
+
+    # Quasarmod Additions
+    inline_script = {
+        script = buildings/quasarmod_uplink_no_pot_only_planet
+        PLANET_MODIFIER = "
+            planet_chemists_produces_mult = @production_mult
+            planet_chemists_upkeep_mult = @upkeep_mult
+
+            planet_refiners_produces_mult = @production_mult
+            planet_refiners_upkeep_mult = @upkeep_mult
+
+            planet_translucers_produces_mult = @production_mult
+            planet_translucers_upkeep_mult = @upkeep_mult
+
+            planet_chemists_energy_upkeep_add = 2
+            planet_chemists_physics_research_upkeep_add = @research_upkeep
+
+            planet_refiners_energy_upkeep_add = 2
+            planet_refiners_society_research_upkeep_add = @research_upkeep
+
+            planet_translucers_energy_upkeep_add = 2
+            planet_translucers_engineering_research_upkeep_add = @research_upkeep
+        "
+    }
+    # oh god not the math
+    # these inlines are duplicates of ttfts original mbrain stuff, but with the doubling potential built in
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink_refinery_boost_with_pot
+        category = planet_metallurgists
+
+        produces_mult = @production_mult
+        upkeep_mult = @[ upkeep_mult * 0.5 ]
+        energy_upkeep_add = 1
+        research_upkeep_add = @[ research_upkeep * 0.5 ]
+    }
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink_refinery_boost_with_pot
+        category = planet_artisans
+
+        produces_mult = @production_mult
+        upkeep_mult = @[ upkeep_mult * 0.5 ]
+        energy_upkeep_add = 1
+        research_upkeep_add = @[ research_upkeep * 0.5 ]
+    }
+}
 
 ###################################################################################################################################
 ###################################################################################################################################
