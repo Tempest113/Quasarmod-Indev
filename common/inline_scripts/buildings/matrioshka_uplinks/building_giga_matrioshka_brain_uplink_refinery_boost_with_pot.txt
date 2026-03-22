@@ -1,5 +1,5 @@
 inline_script = {
-    script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink_refinery_boost_single
+    script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink_refinery_boost_single_with_pot
     category = $category$
     produced_resource = volatile_motes
     upkeep_resource = physics_research
@@ -10,7 +10,7 @@ inline_script = {
     energy_upkeep_add = $energy_upkeep_add$
 }
 inline_script = {
-    script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink_refinery_boost_single
+    script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink_refinery_boost_single_with_pot
     category = $category$
     produced_resource = exotic_gases
     upkeep_resource = society_research
@@ -21,7 +21,7 @@ inline_script = {
     energy_upkeep_add = $energy_upkeep_add$
 }
 inline_script = {
-    script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink_refinery_boost_single
+    script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink_refinery_boost_single_with_pot
     category = $category$
     produced_resource = rare_crystals
     upkeep_resource = engineering_research
