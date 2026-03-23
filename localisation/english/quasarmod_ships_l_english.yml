@@ -39,9 +39,11 @@
 
  QSC_TITANIC_GUN: "Quasi-Stellar Obliterator"
  QSC_TITANIC_GUN_DESC: "An immense weapon based on the old QSO weapon, but adapted for use as a ship weapon. A firearm of fear to strike terror into the collective conscious of the enemy."
+ QSC_TITANIC_GUN_FLEET_EFFECT: "§YCollateral Damage:§! Deals §G1125000§! damage to all ships within §G40§! of the target."
 
  QSC_PLANET_LANCE: "Quasarcraft's Eye"
  QSC_PLANET_LANCE_DESC: "The power of this weapon almost escapes words, but our engineers came up with an apt phrase: 'The Fury of a Trillion Suns'. This weapon draws upon massive portions of the Quasarcraft's full power to utterly obliterate the target."
+ QSC_PLANET_LANCE_FLEET_EFFECT: "§YCollateral Damage:§! Deals §G75000000§! damage to all ships within §G50§! of the target."
 
  QSC_ENDSINGER: "§MThe Endsinger§!"
  QSC_ENDSINGER_DESC: "The only thing they know will be despair as this utterly powerful re-tooling of the original QSO's destructive power comes in a package anew. §MThe Endsinger§! allows the Quasarcraft to have fine control over the amount of destruction it unleashes."
