@@ -58,6 +58,17 @@ weapon_component_template = {
 			giga_sr_quasaric_energy = 5
 		}
 	}
+
+	ship_limit = 3
+
+	on_hit = {
+		inline_script = {
+			script = ship_components/collateral_damage
+			RANGE = 50
+			DAMAGE = 7500000 # dear god, this is just .1% the lower base damage value
+		}
+		custom_tooltip = "QSC_PLANET_LANCE_FLEET_EFFECT"
+	}
 }
 
 # Based off of SYSTEMCRAFT_KATZENLAND_LANCE_1
@@ -89,6 +100,14 @@ weapon_component_template = {
 		cost = {
 			alloys = 1000
 		}
+	}
+	on_hit = {
+		inline_script = {
+			script = ship_components/collateral_damage
+			RANGE = 40
+			DAMAGE = 1125000
+		}
+		custom_tooltip = "QSC_TITANIC_GUN_FLEET_EFFECT"
 	}
 }
 
@@ -256,6 +275,15 @@ weapon_component_template = {
 	total_fire_time = 50
 	armor_penetration = 1.00
 	shield_penetration = 1.00
+
+	on_hit = {
+		inline_script = {
+			script = ship_components/collateral_damage
+			RANGE = 20
+			DAMAGE = 1000000
+		}
+	}
+
 }
 
 strike_craft_component_template = {
@@ -292,7 +320,7 @@ strike_craft_component_template = {
 	acceleration = 0.75
 	shield_penetration = 1
  	armor_damage = 2
-                    hull_damage = 1.5
+	hull_damage = 1.5
 }
 
 weapon_component_template = {
@@ -321,6 +349,15 @@ weapon_component_template = {
 	missile_health = 10000.00
 	shield_penetration = 1.00
 	missile_retarget_range = 200
+
+	on_hit = {
+		inline_script = {
+			script = ship_components/collateral_damage
+			RANGE = 20
+			DAMAGE = 100000
+		}
+	}
+
 }
 
 weapon_component_template = {

@@ -1,0 +1,18 @@
+# DONT ASK ME WHY THESE NEED TO ALSO BE IN HERE AHHHHHHHHH
+@production_mult = 0.5
+@upkeep_mult = 0.25
+
+@research_upkeep = 2
+
+triggered_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            owns_core_mbrain_finished = yes
+        }
+        planet = {
+            has_modifier = quasarmod_connected_to_core_mbrain_mod
+        }
+    }
+    $PLANET_MODIFIER$
+}

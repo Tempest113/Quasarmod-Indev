@@ -22,8 +22,8 @@ quasarmod_quasarcraft = {
 		ship_speed_mult = 2
 	}
 	max_hitpoints = 200000000
-	size_multiplier = 500
-	fleet_slot_size = 256
+	size_multiplier = 1750
+	fleet_slot_size = 512
 	section_slots = {
 		"main1" =			    { locator = "root" }
 		"main2" =				{ locator = "root" }
@@ -70,7 +70,7 @@ quasarmod_quasarcraft = {
 			alloys = 12000
 		}
 		logistics = {
-			trade = 1000
+			trade = 750
 		}
 	}
 
