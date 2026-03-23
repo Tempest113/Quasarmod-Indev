@@ -49,7 +49,7 @@ teraforge_overseer_alloys = {
     }
 
     triggered_planet_modifier = {
-        pop_foundry_bonus_workforce_mult = 0.02
+        pop_foundry_bonus_workforce_mult = 0.1
     }
 }
 
@@ -86,7 +86,7 @@ teraforge_overseer_consumer_goods = {
     }
 
     triggered_planet_modifier = {
-        pop_artisan_bonus_workforce_mult = 0.02
+        pop_artisan_bonus_workforce_mult = 0.1
     }
 }
 

@@ -103,9 +103,13 @@ building_teraforge_uplink_alloys = {
 
     inline_script = {
         script = jobs/teraforge_overseer_alloys/jobs_add
-        JOBS = 0.1
+        JOBS = 0.02
         MULT = modifier:job_foundry_add
         MULT2 = modifier:job_fabricator_add
+    }
+
+    planet_modifier = {
+        planet_metallurgists_upkeep_mult = -0.15
     }
 }
 
@@ -192,8 +196,12 @@ building_teraforge_uplink_consumer_goods = {
 
     inline_script = {
         script = jobs/teraforge_overseer_consumer_goods/jobs_add
-        JOBS = 0.1
+        JOBS = 0.02
         MULT = modifier:job_artisan_add
         MULT2 = modifier:job_artisan_drone_add
+    }
+
+    planet_modifier = {
+        planet_artisans_upkeep_mult = -0.15
     }
 }

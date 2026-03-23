@@ -25,16 +25,16 @@
  building_teraforge_uplink_alloys: "Hyperquasaric Teraforge Integration Complex"
  building_teraforge_uplink_alloys_plural: "Hyperquasaric Teraforge Integration Complexes"
  building_teraforge_uplink_alloys_desc: "Specialist overseers coordinate the integration of alloy precursors processed by the Hyperquasaric Teraforge, the mitigation of bottlenecks and the reduction in tooling complexity allow for great improvements to be made in planetside alloy processing."
- building_teraforge_uplink_alloys_triggered_desc: "\n§G+1§! £mod_job_teraforge_overseer_alloys_add£['concept_job_teraforge_overseer_alloys'] per 100 £job_foundry£ §Y[GetAlloyProducerPlural]§!"
- building_teraforge_uplink_alloys_triggered_desc_catalytic: "\n§G+1§! £mod_job_teraforge_overseer_alloys_add£['concept_job_teraforge_overseer_alloys_catalytic'] per 100 £job_foundry£ §Y[GetAlloyProducerPlural]§!"
- building_teraforge_uplink_alloys_triggered_desc_gestalt: "\n§G+1§! £mod_job_teraforge_overseer_alloys_gestalt_add£['concept_job_teraforge_overseer_alloys_gestalt'] per 100 £job_foundry£ §Y[GetAlloyProducerPlural]§!"
- building_teraforge_uplink_alloys_triggered_desc_gestalt_catalytic: "\n§G+1§! £mod_job_teraforge_overseer_alloys_gestalt_add£['concept_job_teraforge_overseer_alloys_gestalt_catalytic'] per 100 £job_foundry£ §Y[GetAlloyProducerPlural]§!"
+ building_teraforge_uplink_alloys_triggered_desc: "\n§G+1§! £mod_job_teraforge_overseer_alloys_add£['concept_job_teraforge_overseer_alloys'] per 50 £job_foundry£ §Y[GetAlloyProducerPlural]§!"
+ building_teraforge_uplink_alloys_triggered_desc_catalytic: "\n§G+1§! £mod_job_teraforge_overseer_alloys_add£['concept_job_teraforge_overseer_alloys_catalytic'] per 50 £job_foundry£ §Y[GetAlloyProducerPlural]§!"
+ building_teraforge_uplink_alloys_triggered_desc_gestalt: "\n§G+1§! £mod_job_teraforge_overseer_alloys_gestalt_add£['concept_job_teraforge_overseer_alloys_gestalt'] per 50 £job_foundry£ §Y[GetAlloyProducerPlural]§!"
+ building_teraforge_uplink_alloys_triggered_desc_gestalt_catalytic: "\n§G+1§! £mod_job_teraforge_overseer_alloys_gestalt_add£['concept_job_teraforge_overseer_alloys_gestalt_catalytic'] per 500 £job_foundry£ §Y[GetAlloyProducerPlural]§!"
 
  building_teraforge_uplink_consumer_goods: "Teraforge-Aligned Civilian Design Centers"
  building_teraforge_uplink_consumer_goods_plural: "Teraforge-Aligned Civilian Design Centers"
  building_teraforge_uplink_consumer_goods_desc: "By integrating civilian product designs with a limited set of Hyperquasaric Teraforge compatible material standards, manufacturers can reduce tooling complexity and eliminate redundant manufacturing methods, increasing efficiency across the board."
- building_teraforge_uplink_consumer_goods_triggered_desc: "\n§G+1§! £mod_job_teraforge_overseer_consumer_goods_add£['concept_job_teraforge_overseer_consumer_goods'] per 100 [GetArtisanIcon] §Y[GetArtisanPlural]§!"
- building_teraforge_uplink_consumer_goods_triggered_desc_gestalt: "\n§G+1§! £mod_job_teraforge_overseer_consumer_goods_gestalt_add£['concept_job_teraforge_overseer_consumer_goods_gestalt'] per 100 [GetArtisanIcon] §Y[GetArtisanPlural]§!"
+ building_teraforge_uplink_consumer_goods_triggered_desc: "\n§G+1§! £mod_job_teraforge_overseer_consumer_goods_add£['concept_job_teraforge_overseer_consumer_goods'] per 50 [GetArtisanIcon] §Y[GetArtisanPlural]§!"
+ building_teraforge_uplink_consumer_goods_triggered_desc_gestalt: "\n§G+1§! £mod_job_teraforge_overseer_consumer_goods_gestalt_add£['concept_job_teraforge_overseer_consumer_goods_gestalt'] per 50 [GetArtisanIcon] §Y[GetArtisanPlural]§!"
 
  ## Jobs ##
 
