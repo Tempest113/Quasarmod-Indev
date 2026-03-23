@@ -197,4 +197,8 @@ tech_quasarmod_quasarcraft = {
 			TECHNOLOGY = tech_quasarmod_quasarcraft
 		}
 	}
+
+	modifier = {
+		command_limit_add = 750
+	}
 }

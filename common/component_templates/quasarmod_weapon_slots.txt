@@ -65,7 +65,7 @@ weapon_component_template = {
 		inline_script = {
 			script = ship_components/collateral_damage
 			RANGE = 50
-			DAMAGE = 75000000 # dear god, this is just 1% the lower base damage value
+			DAMAGE = 7500000 # dear god, this is just .1% the lower base damage value
 		}
 		custom_tooltip = "QSC_PLANET_LANCE_FLEET_EFFECT"
 	}

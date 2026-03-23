@@ -27,6 +27,7 @@ giga_massive_planet = {
     is_space_station = no
     icon = ship_size_atk_moon
     combat_disengage_chance = 0.5
+    construction_type = starbase_shipyard
     class = shipclass_military
     is_designable = yes
     enable_default_design = yes
@@ -37,19 +38,7 @@ giga_massive_planet = {
     required_component_set = "ftl_components"
     required_component_set = "sensor_components"
     required_component_set = "combat_computers"
-    potential_construction = {
-        NOT = {
-            has_global_flag = warmoon_disabled
-        }
-        starbase = {
-            solar_system = {
-                any_system_megastructure = {
-                    is_megastructure_type = hyperquasaric_megashipyard_4
-                }
-            }
-        }
 
-    }
     prerequisites = { "giga_tech_war_moon_1" }
 
     resources = {
@@ -66,13 +55,25 @@ giga_massive_planet = {
         }
     }
 
+    potential_construction = {
+        NOT = {
+            has_global_flag = warmoon_disabled
+        }
+        starbase = {
+            solar_system = {
+                any_system_megastructure = {
+                    is_megastructure_type = hyperquasaric_megashipyard_4
+                }
+            }
+        }
+    }
+
     possible_construction = {
         starbase = {
             has_starbase_building = quasarshipyard_shipyard_uplink
         }
     }
 
-    construction_type = starbase_shipyard
     base_buildtime = 13500 #5400 adjusted to compensate for buffs provided by the uplink
 
     available_to_everyone = yes
@@ -109,20 +110,10 @@ giga_planet_behemoth = {
     is_designable = yes
     combat_disengage_chance = 0
     prerequisites = { "giga_tech_war_planet" }
-    potential_construction = {
-        NOT = {
-            has_global_flag = warplanet_disabled
-        }
-        starbase = {
-            solar_system = {
-                any_system_megastructure = {
-                    is_megastructure_type = hyperquasaric_megashipyard_4
-                }
-            }
-        }
-    }
     class = shipclass_military
-
+    possible_construction = { always = no }
+    potential_construction = { always = no }
+    construction_type = starbase_shipyard
     ship_roles = { gunship artillery }
 
     required_component_set = "power_core"
@@ -145,13 +136,25 @@ giga_planet_behemoth = {
         }
     }
 
+    potential_construction = {
+        NOT = {
+            has_global_flag = warplanet_disabled
+        }
+        starbase = {
+            solar_system = {
+                any_system_megastructure = {
+                    is_megastructure_type = hyperquasaric_megashipyard_4
+                }
+            }
+        }
+    }
+
     possible_construction = {
         starbase = {
             has_starbase_building = quasarshipyard_shipyard_uplink
         }
     }
 
-    construction_type = starbase_shipyard
     base_buildtime = 27000 #10800 adjusted to compensate for buffs provided by the uplink
 
     available_to_everyone = yes
