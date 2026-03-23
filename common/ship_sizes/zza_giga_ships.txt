@@ -111,8 +111,6 @@ giga_planet_behemoth = {
     combat_disengage_chance = 0
     prerequisites = { "giga_tech_war_planet" }
     class = shipclass_military
-    possible_construction = { always = no }
-    potential_construction = { always = no }
     construction_type = starbase_shipyard
     ship_roles = { gunship artillery }
 
