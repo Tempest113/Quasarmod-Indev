@@ -824,10 +824,11 @@ building_giga_matrioshka_brain_uplink_anti_deviancy = {
     }
 
     planet_modifier = {
-
+        enforcer_jobs_bonus_workforce_mult = 0.4
     }
     triggered_planet_modifier = {
-
+        planet_jobs_produces_mult = 0.1
+        job_patrol_drone_add = 800
     }
 
     # Quasarmod Additions
