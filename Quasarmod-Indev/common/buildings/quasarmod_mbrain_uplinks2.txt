@@ -1,0 +1,631 @@
+
+###################################################################################################################################
+###################################################################################################################################
+###################################################################################################################################
+
+@production_mult = 0.5
+@upkeep_mult = 0.25
+
+@research_upkeep = 2
+
+###################################
+# READ ME
+# READ ME
+# READ ME
+###################################
+# for the inlines to work, the variables above MUST be copy pasted into the following inlines
+#   buildings/quasarmod_uplink.txt
+#   buildings/quasarmod_uplink_no_pot_only_planet.txt
+#   buildings/quasarmod_uplink_only_planet.txt
+# This is because the file-scope scripted variables above are not passed into the inlines
+# unless you surround them in the math operator [], (like in the refinery inlines) but then every line
+# needs to be surrounded like that.
+# The lesser evil is to just copy the damn lines into each file
+
+
+building_giga_matrioshka_brain_uplink_hell = {
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
+        name = hell
+        category = government
+        resources = "
+			cost = {
+				volatile_motes = 500
+			}
+			upkeep = {
+				volatile_motes = 4
+			}
+		"
+    }
+
+    triggered_planet_modifier = {
+        job_giga_virtual_hell_inmate_add = 2000
+    }
+
+    # replace the auto-generated tooltip because it doesn't cover everything properly
+    auto_generate_description = no
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_twisted_experimenters_empire = no
+            }
+        }
+        text = job_giga_virtual_hell_inmate_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_twisted_experimenters_empire = yes
+            }
+        }
+        text = job_giga_virtual_hell_inmate_effect_desc_twisted
+    }
+
+    # Quasarmod Additions
+    inline_script = {
+        script = buildings/quasarmod_uplink_no_pot_only_planet
+        PLANET_MODIFIER = "
+            job_giga_virtual_hell_inmate_add = 2000
+        "
+    }
+}
+
+###################################################################################################################################
+###################################################################################################################################
+
+building_giga_matrioshka_brain_uplink_livestock = {
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
+        name = livestock
+        category = resources
+        resources = "
+			cost = {
+				minerals = 400
+			}
+			upkeep = {
+				alloys = 2
+			}
+		"
+    }
+
+    planet_modifier = {
+        livestock_jobs_bonus_workforce_mult = 0.4
+    }
+    triggered_planet_modifier = {
+        planet_jobs_energy_upkeep_mult = -0.05
+        planet_pops_energy_upkeep_mult = -0.05
+    }
+
+    triggered_planet_modifier = {
+        planet_jobs_energy_upkeep_mult = -0.005
+        planet_pops_energy_upkeep_mult = -0.005
+
+        mult = value:giga_count_jobs|JOB|livestock|JOB2|livestock_lithoid|JOB3|livestock_infernal|
+    }
+
+    triggered_desc = {
+        text = building_giga_matrioshka_brain_uplink_livestock_effect
+    }
+
+    # Quasarmod Additions
+    inline_script = {
+        script = buildings/quasarmod_uplink_no_pot_only_planet
+        PLANET_MODIFIER = "
+            planet_jobs_energy_upkeep_mult = -0.005
+            planet_pops_energy_upkeep_mult = -0.005
+
+            mult = value:giga_count_jobs|JOB|livestock|JOB2|livestock_lithoid|JOB3|livestock_infernal|
+        "
+    }
+}
+
+###################################################################################################################################
+###################################################################################################################################
+
+building_giga_matrioshka_brain_uplink_amalgamation = {
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
+        name = amalgamation
+        category = resources
+        resources = "
+			cost = {
+				minerals = 400
+			}
+			upkeep = {
+				alloys = 2
+			}
+		"
+    }
+
+    planet_modifier = {
+        pop_organic_battery_bonus_workforce_mult = 0.4
+    }
+    triggered_planet_modifier = {
+        planet_jobs_energy_upkeep_mult = -0.05
+        planet_pops_energy_upkeep_mult = -0.05
+    }
+
+    triggered_planet_modifier = {
+        planet_jobs_energy_upkeep_mult = -0.005
+        planet_pops_energy_upkeep_mult = -0.005
+
+        mult = value:giga_count_jobs|JOB|organic_battery|
+    }
+
+    triggered_desc = {
+        text = building_giga_matrioshka_brain_uplink_amalgamation_effect
+    }
+
+    # Quasarmod Additions
+    inline_script = {
+        script = buildings/quasarmod_uplink_no_pot_only_planet
+        PLANET_MODIFIER = "
+            planet_jobs_energy_upkeep_mult = -0.005
+            planet_pops_energy_upkeep_mult = -0.005
+
+            mult = value:giga_count_jobs|JOB|organic_battery|
+        "
+    }
+}
+
+###################################################################################################################################
+###################################################################################################################################
+
+building_giga_matrioshka_brain_uplink_foundry = {
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
+        name = foundry
+        category = manufacturing
+        resources = "
+			cost = {
+				volatile_motes = 500
+			}
+			upkeep = {
+				volatile_motes = 4
+			}
+		"
+    }
+
+    inline_script = {
+        script = planet/alloys/giga_foundry_job_swap
+        jobs = 800
+    }
+
+    triggered_planet_modifier = {
+        planet_metallurgists_produces_mult = @production_mult
+        planet_metallurgists_upkeep_mult = @upkeep_mult
+    }
+
+    triggered_planet_modifier = {
+        planet_metallurgists_energy_upkeep_add = 2
+        planet_metallurgists_engineering_research_upkeep_add = @research_upkeep
+    }
+
+    # Quasarmod Additions
+    inline_script = {
+        script = buildings/quasarmod_uplink_no_pot_only_planet
+        PLANET_MODIFIER = "
+            planet_metallurgists_produces_mult = @production_mult
+            planet_metallurgists_upkeep_mult = @upkeep_mult
+
+            planet_metallurgists_energy_upkeep_add = 2
+            planet_metallurgists_engineering_research_upkeep_add = @research_upkeep
+        "
+    }
+}
+
+###################################################################################################################################
+###################################################################################################################################
+
+building_giga_matrioshka_brain_uplink_factory = {
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
+        name = factory
+        category = manufacturing
+        resources = "
+			cost = {
+				rare_crystals = 500
+			}
+			upkeep = {
+				rare_crystals = 4
+			}
+		"
+    }
+
+    inline_script = {
+        script = planet/consumer_goods/giga_artisan_job_swap
+        jobs = 800
+    }
+
+    triggered_planet_modifier = {
+        planet_artisans_produces_mult = @production_mult
+        planet_artisans_upkeep_mult = @upkeep_mult
+    }
+
+    triggered_planet_modifier = {
+        planet_artisans_energy_upkeep_add = 1
+        planet_artisans_society_research_upkeep_add = @research_upkeep
+    }
+
+    # Quasarmod Additions
+    inline_script = {
+        script = buildings/quasarmod_uplink_no_pot_only_planet
+        PLANET_MODIFIER = "
+            planet_artisans_produces_mult = @production_mult
+            planet_artisans_upkeep_mult = @upkeep_mult
+
+            planet_artisans_energy_upkeep_add = 1
+            planet_artisans_society_research_upkeep_add = @research_upkeep
+        "
+    }
+}
+
+###################################################################################################################################
+###################################################################################################################################
+
+building_giga_matrioshka_brain_uplink_refinery = {
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
+        name = refinery
+        category = manufacturing
+        resources = "
+			cost = {
+				minerals = 400
+			}
+			upkeep = {
+				alloys = 4
+			}
+		"
+    }
+
+    inline_script = {
+        script = planet/refiners/giga_chemist_job_swap
+        jobs = 300
+    }
+    inline_script = {
+        script = planet/refiners/giga_gas_refiner_job_swap
+        jobs = 300
+    }
+    inline_script = {
+        script = planet/refiners/giga_translucer_job_swap
+        jobs = 300
+    }
+
+    triggered_planet_modifier = {
+        planet_chemists_produces_mult = @production_mult
+        planet_chemists_upkeep_mult = @upkeep_mult
+
+        planet_refiners_produces_mult = @production_mult
+        planet_refiners_upkeep_mult = @upkeep_mult
+
+        planet_translucers_produces_mult = @production_mult
+        planet_translucers_upkeep_mult = @upkeep_mult
+    }
+
+    triggered_planet_modifier = {
+        planet_chemists_energy_upkeep_add = 2
+        planet_chemists_physics_research_upkeep_add = @research_upkeep
+
+        planet_refiners_energy_upkeep_add = 2
+        planet_refiners_society_research_upkeep_add = @research_upkeep
+
+        planet_translucers_energy_upkeep_add = 2
+        planet_translucers_engineering_research_upkeep_add = @research_upkeep
+    }
+
+    # scaled bonuses for refineries on industrial jobs
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink_refinery_boost
+        category = planet_metallurgists
+
+        produces_mult = @production_mult
+        upkeep_mult = @[ upkeep_mult * 0.5 ]
+        energy_upkeep_add = 1
+        research_upkeep_add = @[ research_upkeep * 0.5 ]
+    }
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink_refinery_boost
+        category = planet_artisans
+
+        produces_mult = @production_mult
+        upkeep_mult = @[ upkeep_mult * 0.5 ]
+        energy_upkeep_add = 1
+        research_upkeep_add = @[ research_upkeep * 0.5 ]
+    }
+
+    triggered_desc = {
+        text = building_giga_matrioshka_brain_uplink_refinery_effect
+    }
+
+    # Quasarmod Additions
+    inline_script = {
+        script = buildings/quasarmod_uplink_no_pot_only_planet
+        PLANET_MODIFIER = "
+            planet_chemists_produces_mult = @production_mult
+            planet_chemists_upkeep_mult = @upkeep_mult
+
+            planet_refiners_produces_mult = @production_mult
+            planet_refiners_upkeep_mult = @upkeep_mult
+
+            planet_translucers_produces_mult = @production_mult
+            planet_translucers_upkeep_mult = @upkeep_mult
+
+            planet_chemists_energy_upkeep_add = 2
+            planet_chemists_physics_research_upkeep_add = @research_upkeep
+
+            planet_refiners_energy_upkeep_add = 2
+            planet_refiners_society_research_upkeep_add = @research_upkeep
+
+            planet_translucers_energy_upkeep_add = 2
+            planet_translucers_engineering_research_upkeep_add = @research_upkeep
+        "
+    }
+    # oh god not the math
+    # these inlines are duplicates of ttfts original mbrain stuff, but with the doubling potential built in
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink_refinery_boost_with_pot
+        category = planet_metallurgists
+
+        produces_mult = @production_mult
+        upkeep_mult = @[ upkeep_mult * 0.5 ]
+        energy_upkeep_add = 1
+        research_upkeep_add = @[ research_upkeep * 0.5 ]
+    }
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink_refinery_boost_with_pot
+        category = planet_artisans
+
+        produces_mult = @production_mult
+        upkeep_mult = @[ upkeep_mult * 0.5 ]
+        energy_upkeep_add = 1
+        research_upkeep_add = @[ research_upkeep * 0.5 ]
+    }
+}
+
+###################################################################################################################################
+###################################################################################################################################
+
+building_giga_matrioshka_brain_uplink_anti_deviancy = {
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
+        name = anti_deviancy
+        category = government
+        resources = "
+			cost = {
+				volatile_motes = 500
+			}
+			upkeep = {
+				volatile_motes = 2
+			}
+		"
+    }
+
+    planet_modifier = {
+        enforcer_jobs_bonus_workforce_mult = 0.4
+    }
+    triggered_planet_modifier = {
+        planet_jobs_produces_mult = 0.1
+        job_patrol_drone_add = 800
+    }
+
+    # Quasarmod Additions
+    inline_script = {
+        script = buildings/quasarmod_uplink_no_pot_only_planet
+        PLANET_MODIFIER = "
+            enforcer_jobs_bonus_workforce_mult = 0.4
+            planet_jobs_produces_mult = 0.1
+            job_patrol_drone_add = 800
+        "
+    }
+}
+
+###################################################################################################################################
+###################################################################################################################################
+
+building_giga_matrioshka_brain_uplink_robot = {
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
+        name = robot
+        category = manufacturing
+        resources = "
+			cost = {
+				rare_crystals = 500
+			}
+			upkeep = {
+				rare_crystals = 4
+			}
+		"
+    }
+
+    # regular empires, getting more potent as you get more strict
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+        }
+
+        robotic_worker_pop_bonus_workforce_mult = 0.1
+        robotic_specialist_pop_bonus_workforce_mult = 0.05
+
+        pop_category_workers_robotic_energy_upkeep_add = 0.5
+        pop_category_specialists_robotic_energy_upkeep_add = 1
+
+        pop_robot_worker_happiness = -0.2
+        pop_robot_specialist_happiness = -0.1
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+                has_policy_flag = ai_full_rights
+                has_policy_flag = slavery_allowed
+            }
+        }
+
+        robotic_slave_pop_bonus_workforce_mult = 0.2
+        pop_category_slave_robotic_energy_upkeep_add = 0.5
+        pop_robot_slave_happiness = -0.1
+
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+                is_individual_machine = no
+                has_policy_flag = ai_servitude
+            }
+        }
+
+        robotic_worker_pop_bonus_workforce_mult = 0.2
+        robotic_specialist_pop_bonus_workforce_mult = 0.05
+
+        pop_category_workers_robotic_energy_upkeep_add = 0.5
+        pop_category_specialists_robotic_energy_upkeep_add = 1
+
+        pop_robot_worker_happiness = -0.2
+        pop_robot_specialist_happiness = -0.1
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+                is_individual_machine = no
+                is_materialist = yes
+            }
+        }
+        text = building_giga_matrioshka_brain_uplink_robot_effect_servitude
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+                is_individual_machine = no
+                has_policy_flag = ai_outlawed
+            }
+        }
+
+        robotic_worker_pop_bonus_workforce_mult = 0.3
+        robotic_specialist_pop_bonus_workforce_mult = 0.05
+
+        pop_category_workers_robotic_energy_upkeep_add = 0.5
+        pop_category_specialists_robotic_energy_upkeep_add = 1
+
+        pop_robot_worker_happiness = -0.3
+        pop_robot_specialist_happiness = -0.2
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+                is_individual_machine = no
+                is_materialist = no
+            }
+        }
+        text = building_giga_matrioshka_brain_uplink_robot_effect_servitude_or_ban
+    }
+
+    # gestalts
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        robotic_worker_pop_bonus_workforce_mult = 0.25
+        pop_category_workers_robotic_energy_upkeep_add = 1
+    }
+
+    # Quasarmod Additions
+    inline_script = {
+        script = buildings/quasarmod_uplink_robot
+        ALWAYS_MODIFIER = "
+            robotic_worker_pop_bonus_workforce_mult = 0.1
+            robotic_specialist_pop_bonus_workforce_mult = 0.05
+            pop_category_workers_robotic_energy_upkeep_add = 0.5
+            pop_category_specialists_robotic_energy_upkeep_add = 1
+            pop_robot_worker_happiness = -0.2
+            pop_robot_specialist_happiness = -0.1
+        "
+        SLAVERY_AI_MODIFIER = "
+            robotic_slave_pop_bonus_workforce_mult = 0.2
+            pop_category_slave_robotic_energy_upkeep_add = 0.5
+            pop_robot_slave_happiness = -0.1
+        "
+        SERVITUDE_AI_MODIFIER = "
+            robotic_worker_pop_bonus_workforce_mult = 0.2
+            robotic_specialist_pop_bonus_workforce_mult = 0.05
+
+            pop_category_workers_robotic_energy_upkeep_add = 0.5
+            pop_category_specialists_robotic_energy_upkeep_add = 1
+
+            pop_robot_worker_happiness = -0.2
+            pop_robot_specialist_happiness = -0.1
+        "
+        OUTLAWED_AI_MODIFIER = "
+            robotic_worker_pop_bonus_workforce_mult = 0.3
+            robotic_specialist_pop_bonus_workforce_mult = 0.05
+            pop_category_workers_robotic_energy_upkeep_add = 0.5
+            pop_category_specialists_robotic_energy_upkeep_add = 1
+            pop_robot_worker_happiness = -0.3
+            pop_robot_specialist_happiness = -0.2
+        "
+        GESTALT_MODIFIER = "
+            robotic_worker_pop_bonus_workforce_mult = 0.25
+            pop_category_workers_robotic_energy_upkeep_add = 1
+        "
+    }
+}
+
+###################################################################################################################################
+###################################################################################################################################
+
+building_giga_matrioshka_brain_uplink_virtual = {
+    inline_script = {
+        script = buildings/matrioshka_uplinks/building_giga_matrioshka_brain_uplink
+        name = virtual
+        category = government
+        resources = "
+			cost = {
+				sr_dark_matter = 500
+			}
+			upkeep = {
+			    energy = 50
+			    sr_dark_matter = 4
+			}
+			# scaling to colony size
+			upkeep = {
+				energy = 100
+				sr_dark_matter = 2
+				multiplier = modifier:giga_virtual_colony_size
+			}
+		"
+    }
+
+    triggered_planet_modifier = {
+        giga_virtual_colony_efficiency = 0.3
+        planet_pops_energy_upkeep_mult = 0.5
+    }
+
+    triggered_desc = {
+        text = building_giga_matrioshka_brain_uplink_virtual_effect
+    }
+
+    # Quasarmod Additions
+    inline_script = {
+        script = buildings/quasarmod_uplink_no_pot_only_planet
+        PLANET_MODIFIER = "
+            giga_virtual_colony_efficiency = 0.3
+            planet_pops_energy_upkeep_mult = 0.5
+        "
+    }
+}
