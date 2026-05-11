@@ -1,0 +1,80 @@
+﻿l_simp_chinese:
+  
+  # Main Ship
+  quasarmod_quasarcraft:0 "Gargantuan Quasarcraft"
+  quasarmod_quasarcraft_plural:0 "$quasarmod_quasarcraft$"
+  quasarmod_quasarcraft_cap:0 "Gargantuan Quasarcraft"
+  quasarmod_quasarcraft_plural_cap:0 "$quasarmod_quasarcraft$"
+  quasarcraft_main_01_key:0 "Forward Quasaric Projector"
+  quasarcraft_main_02_key:0 "Main Quasaric Body"
+  quasarcraft_halo1_key:0 "Halo Armaments - First Demicircle"
+  quasarcraft_halo2_key:0 "Halo Armaments - Second Demicircle"
+  quasarcraft_jupiters_key:0 "Esoteric Jupiter Satellites"
+  quasarcraft_celfab_key:0 "Celestial Fabri-Hangars"
+  quasarmod_quasarcraft_wormholes:0 "Quasaric Wormhole Power-Split"
+  quasarmod_quasarcraft_wormholes_DESC:0 "The Quasarcraft is currently splitting it's output into several wormholes, severely hampering it's own combat capability for the time being."
+  
+  # Quasarcraft Wormholes
+  NAME_Macrospatial_Breach:0 "Macrospacial Breach"
+  quasarcraft_wormhole:0 "Quasaric Fleet-Annihilator Wormhole"
+  quasarcraft_wormhole_plural:0 "Quasaric Fleet-Annihilator Wormholes"
+  QUASARWORM_GUN_ENTITY:0 "Quasaric Wormhole Spitter"
+  QUASARWORM_MINION_1:0 "Worm Guardian"
+  QUASARWORM_PARTICLES_1:0 "Quasaric Wormhole Energy Field"
+  QUASARWORM_LANCE_1:0 "Eye of Obliteration"
+  QUASARWORM_SPRAY_1:0 "Quasaric Multi-Prism"
+  
+  # Quasarcraft Components/Actions
+  QSC_DISRUPTOR:0 "Quasaric Sunsplitter"
+  QSC_DISRUPTOR_DESC:0 "Similar to the Nicoll-Dyson Beam, the Sunsplitter focuses the diverted power of the Hyperquasar into a beam, which is then split into a myriad of rays by a star-sized prism."
+  
+  QSC_LASER_L:0 "Jupiter Annihilator"
+  QSC_LASER_L_DESC:0 "These massive lances mounted on the Quasarcraft's Jupiter Arrays rain hell upon your foes, shattering the atoms of their very being."
+  
+  QSC_ENERGY_LANCE:0 "Quasaric Skyripper"
+  QSC_ENERGY_LANCE_DESC:0 "The Skyripper cannons are designed to deter larger, stronger vessels such as a Systemcraft, focusing Quasaric Energy on a macro-scale, enough to shred stars by themselves."
+  
+  QSC_STRIKE_FORCE:0 "Celestial Strike Forces"
+  QSC_STRIKE_FORCE_DESC:0 "No capital ship fights alone. The Celestial Strike Forces emerge from their grand hangars to deter any hope of infiltrating the king of the celestial warships. A myriad of automated $giga_planet_behemoth_plural$ freshly fabricated, armed and ready."
+  
+  QSC_TITANIC_GUN:0 "Quasi-Stellar Obliterator"
+  QSC_TITANIC_GUN_DESC:0 "An immense weapon based on the old QSO weapon, but adapted for use as a ship weapon. A firearm of fear to strike terror into the collective conscious of the enemy."
+  QSC_TITANIC_GUN_FLEET_EFFECT:99 "§YCollateral Damage:§! Deals §G1125000§! damage to all ships within §G40§! of the target."
+  
+  QSC_PLANET_LANCE:0 "Quasarcraft's Eye"
+  QSC_PLANET_LANCE_DESC:0 "The power of this weapon almost escapes words, but our engineers came up with an apt phrase: 'The Fury of a Trillion Suns'. This weapon draws upon massive portions of the Quasarcraft's full power to utterly obliterate the target."
+  QSC_PLANET_LANCE_FLEET_EFFECT:99 "§YCollateral Damage:§! Deals §G75000000§! damage to all ships within §G50§! of the target."
+  
+  QSC_ENDSINGER:0 "§MThe Endsinger§!"
+  QSC_ENDSINGER_DESC:0 "The only thing they know will be despair as this utterly powerful re-tooling of the original QSO's destructive power comes in a package anew. §MThe Endsinger§! allows the Quasarcraft to have fine control over the amount of destruction it unleashes."
+  
+  QSC_REACTOR:0 "Enslaved Hyperquasar"
+  QSC_REACTOR_DESC:0 "The heart of the Galaxy beats within the gentle cage of the Quasarcraft, providing immense amounts of energy."
+  QSC_THRUSTER:0 "Spacio-Gravitic Manuevering Array"
+  QSC_THRUSTER_DESC:0 "An utterly gargantuan set of maneuvering devices capable of translating the mighty craft through systems with great haste."
+  QSC_DRIVE:0 "Quasaric Event Horizon Projector"
+  QSC_DRIVE_DESC:0 "Instead of warping the entire hundreds of AU worth of warship through hyperspace, our engineers took inspiration from the EHOF, creating a massive wormhole projector that stretches a wormhole behind the Quasarcraft, which the gargantuan starship then backs into."
+  QSC_SENSOR:0 "Spacio-Temporal Stringreader"
+  QSC_SENSOR_DESC:0 "While not actually measuring cosmic string vibrations, the Stringreader still does amazing work through intense hyperspacial-reference mapping, precise enough to pinpoint a single person on a planet."
+  QSC_COMPUTER:0 "Harbinger Starship Intelligence"
+  QSC_COMPUTER_DESC:0 "The Harbinger System coordinates and synchronizes actions and commands from across the gargantuan machine, allowing for deadly efficiency in dispatching hostile forces."
+  QUASARCRAFT_BEHAVIOR_DESC:0 "The Quasarcraft will stay at the edge of the system and target anything hostile in the star system."
+  
+  QSC_AURA_GRAVSNARE:0 "Gravitic Flux Field"
+  QSC_AURA_GRAVSNARE_DESC:0 "Utilizing the immense gravity around the Hyperquasar, we can project and manipulate a field of spacetime around the quasarcraft, desynchronising hostile chronology and also trapping them to assure their untimely demise."
+  QSC_AURA_EYE:0 "Eye of Hawking"
+  QSC_AURA_EYE_DESC:0 "With the great precision of our Quasarcraft's Stringreader, we can further utilize the data by relaying them to our additional forces, allowing them to have greatly increased efficiency in firepower."
+  QSC_AURA_GRAVSPEED:0 "Slipstream Field"
+  QSC_AURA_GRAVSPEED_DESC:0 "The Slipstream Field smoothens the journeys of friendly interlopers, giving them incredible speed across the system and streamlining hyperspace travel."
+  QSC_AURA_DEATHFIELD:0 "Quasaric Presence"
+  QSC_AURA_DEATHFIELD_DESC:0 "The aspects of the Quasarcraft's immense size can quite simply be used to crush less resilient vessels with emitted ambient energy and manipulated gravity."
+  
+  FLEETORDER_DESTROY_PLANET_WITH_QSC_ENDSINGER:0 "Firing Endsinger at $PLANET|Y$"
+  MESSAGE_DESC_FOR_QSC_ENDSINGER:0 "$PLANET|Y$ was erased by"
+  QSC_ENDSINGER_ACTION:0 "Fire Endsinger"
+  
+  aura_ship_quasar_snare:0 "Gravitic Snare"
+  aura_quasar_eye:0 "Eye of Hawking"
+  aura_quasar_speed:0 "Slipstream Field"
+  aura_quasar_dot:0 "Quasar Energetic Deathfield"
+  
