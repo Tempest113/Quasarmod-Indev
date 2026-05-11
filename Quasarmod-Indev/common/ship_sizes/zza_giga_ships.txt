@@ -9,7 +9,7 @@ giga_massive_planet = {
     formation_priority = 32
     base_buildtime = 1800
     modifier = {
-        ship_evasion_mult = -999
+        ship_evasion_mult = -1
         ship_armor_add = 150000
         ship_shield_add = 100000
         ship_speed_mult = 2
@@ -75,8 +75,6 @@ giga_massive_planet = {
         }
     }
 
-    base_buildtime = 13500 #5400 adjusted to compensate for buffs provided by the uplink
-
     available_to_everyone = yes
 }
 
@@ -89,13 +87,13 @@ giga_planet_behemoth = {
     formation_priority = 48
     base_buildtime = 2700
     modifier = {
-        ship_evasion_mult = -999
-        ship_armor_add = 2500000
-        ship_shield_add = 2500000
+        ship_evasion_mult = -1
+        ship_armor_add = 1250000
+        ship_shield_add = 1250000
         ship_speed_mult = 2
     }
     cloaking_forbidden = yes
-    max_hitpoints = 5000000
+    max_hitpoints = 2500000
     size_multiplier = 750
     fleet_slot_size = 250
     section_slots = {
@@ -154,8 +152,6 @@ giga_planet_behemoth = {
             has_starbase_building = quasarshipyard_shipyard_uplink
         }
     }
-
-    base_buildtime = 27000 #10800 adjusted to compensate for buffs provided by the uplink
 
     available_to_everyone = yes
 }
