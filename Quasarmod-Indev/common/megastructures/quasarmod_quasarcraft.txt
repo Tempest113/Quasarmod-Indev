@@ -58,8 +58,8 @@ quasarcraft_0 = {
 		fromfrom.planet = {
 			save_event_target_as = giga_planet
 			if = { limit = { exists = orbital_station } orbital_station = { dismantle = yes } }
-			set_planet_flag = megastructure
-			set_planet_flag = has_megastructure
+			set_carrier_flag = megastructure
+			set_carrier_flag = has_megastructure
 			set_planet_flag = cant_build_here
 			set_planet_flag = cant_target_this_planet
 
