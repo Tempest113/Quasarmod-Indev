@@ -12,28 +12,23 @@ Usage:
 Defaults:
     SOURCE  = z_giga_gui_main_menu.gui
     OUTPUT  = zz_giga_gui_main_menu.gui
-
-Changes encoded in this script
-───────────────────────────────
-1. Indentation: leading tabs → 4-space indentation, trailing whitespace stripped.
-
-2. Insert four new containerWindowType blocks (smbh_manipulator, core_mbrain,
-   teraforge, quasarshipyard) after the closing "}" of the
-   "supermassive_ehof" button container, immediately before the
-   "### Right ###" section separator.
-
-3. Insert the "quasarcraft_options" containerWindowType block after the
-   closing "}" of the "o_systemcraft_options" container.
 """
 
-import re
 import sys
+import re
 from pathlib import Path
 
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Helpers
 # ─────────────────────────────────────────────────────────────────────────────
+
+def detect_line_ending(text: str) -> str:
+    """Detect the dominant line ending in the file."""
+    crlf = text.count('\r\n')
+    lf   = text.count('\n') - crlf
+    return '\r\n' if crlf >= lf else '\n'
+
 
 def expand_leading_whitespace(line: str, tab_width: int = 4) -> str:
     stripped = line.lstrip('\t')
@@ -57,8 +52,7 @@ def safe_replace(text: str, old: str, new: str, label: str) -> str:
         print(f"  WARNING: anchor not found for change '{label}' – skipping.")
         return text
     if count > 1:
-        print(f"  WARNING: anchor for '{label}' found {count} times – "
-              "replacing first occurrence only.")
+        print(f"  WARNING: anchor for '{label}' found {count} times – replacing first occurrence only.")
         return text.replace(old, new, 1)
     return text.replace(old, new)
 
@@ -67,8 +61,7 @@ def safe_replace(text: str, old: str, new: str, label: str) -> str:
 # All hardcoded changes
 # ─────────────────────────────────────────────────────────────────────────────
 
-def apply_changes(text: str) -> str:
-    NL = '\r\n'
+def apply_changes(text: str, NL: str) -> str:
 
     # ── Change 2 ─────────────────────────────────────────────────────────────
     # Insert smbh_manipulator, core_mbrain, teraforge, quasarshipyard blocks
@@ -272,8 +265,8 @@ def apply_changes(text: str) -> str:
 
 # run this from the repo root
 def main():
-    hqm_ui = Path.cwd() / "Quasarmod-Indev" / "interface" / "zz_giga_gui_main_menu.gui"
-    stellar_manip_ui = Path.cwd().parent / "Gigas-Stellar-Manipulation" / "Gigas-Stellar-Manipulation" / "interface" / "z_giga_gui_main_menu.gui"
+    hqm_ui = Path.cwd().parent / "Quasarmod-Indev" / "interface" / "zz_giga_gui_main_menu.gui"
+    stellar_manip_ui = Path("/var/home/Tempest1273/.local/share/Paradox Interactive/Stellaris/mod/Stellar Manip Dev/Gigas-Stellar-Manipulation/interface/z_giga_gui_main_menu.gui")
 
     src = sys.argv[1] if len(sys.argv) > 1 else stellar_manip_ui
     dst = sys.argv[2] if len(sys.argv) > 2 else hqm_ui
@@ -282,13 +275,17 @@ def main():
     with open(src, 'r', newline='', encoding='utf-8') as f:
         text = f.read()
 
+    NL = detect_line_ending(text)
+    print(f"Detected line endings: {'CRLF' if NL == chr(13)+chr(10) else 'LF'}")
+
     print("Converting leading tabs to spaces ...")
     text = convert_leading_tabs(text)
 
     print("Applying changes ...")
-    text = apply_changes(text)
+    text = apply_changes(text, NL)
 
     print(f"Writing output: {dst}")
+    dst.parent.mkdir(parents=True, exist_ok=True)
     with open(dst, 'w', newline='', encoding='utf-8') as f:
         f.write(text)
 

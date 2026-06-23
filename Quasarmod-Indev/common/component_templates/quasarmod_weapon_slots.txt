@@ -61,15 +61,8 @@ weapon_component_template = {
 
 	ship_limit = 3
 
-	on_hit = {
-		inline_script = {
-			script = ship_components/collateral_damage
-			RANGE = 50
-			DAMAGE = 7500000 # dear god, this is just .1% the lower base damage value
-		}
-		custom_tooltip = "QSC_PLANET_LANCE_FLEET_EFFECT"
-	}
-}
+	collateral_damage = 7500000
+	collateral_range = 50 }
 
 # Based off of SYSTEMCRAFT_KATZENLAND_LANCE_1
 weapon_component_template = {
@@ -101,14 +94,9 @@ weapon_component_template = {
 			alloys = 1000
 		}
 	}
-	on_hit = {
-		inline_script = {
-			script = ship_components/collateral_damage
-			RANGE = 40
-			DAMAGE = 1125000
-		}
-		custom_tooltip = "QSC_TITANIC_GUN_FLEET_EFFECT"
-	}
+
+	collateral_damage = 1125000
+	collateral_range = 40
 }
 
 # Based off of MEDIUM_DISRUPTOR_3
@@ -276,14 +264,8 @@ weapon_component_template = {
 	armor_penetration = 1.00
 	shield_penetration = 1.00
 
-	on_hit = {
-		inline_script = {
-			script = ship_components/collateral_damage
-			RANGE = 20
-			DAMAGE = 1000000
-		}
-	}
-
+	collateral_damage = 1000000
+	collateral_range = 20
 }
 
 strike_craft_component_template = {
@@ -350,14 +332,8 @@ weapon_component_template = {
 	shield_penetration = 1.00
 	missile_retarget_range = 200
 
-	on_hit = {
-		inline_script = {
-			script = ship_components/collateral_damage
-			RANGE = 20
-			DAMAGE = 100000
-		}
-	}
-
+	collateral_damage = 100000
+	collateral_range = 20
 }
 
 weapon_component_template = {

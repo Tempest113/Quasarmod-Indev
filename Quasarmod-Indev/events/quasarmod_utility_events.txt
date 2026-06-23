@@ -11,7 +11,7 @@ event  = {
     }
 }
 
-# Replace Planetcraft built at the Teraforge with a version that shouldn't have the fleet splitting bug
+# Properly apply printed warship modifiers
 ship_event = {
     id = quasarmod_utility.2
     hide_window = yes
@@ -21,44 +21,29 @@ ship_event = {
         if = {
             limit = {
                 is_ship_size = giga_planet_behemoth
-                not = {
+                NOT = {
                     has_ship_flag = giga_planet
-
                 }
             }
-            create_fleet = {
-                name = "Behemoth Planetcraft"
-                settings = {
-                    spawn_debris = no
-                    #is_boss = yes
-                    can_change_composition = no
-                }
-                effect = {
-                    set_owner = prev
-                    create_ship = {
-                        name = "Behemoth Planetcraft"
-                        random_existing_design = giga_planet_behemoth
-                        effect = {
-                            set_ship_flag = random
-                            add_modifier = {
-                                modifier = printed_celestial_warship
-                                days = -1
-                            }
-                            set_name = {
-                                key = "war_planet_printed_ship_name"
-                            }
-                        }
-                    }
-                    set_formation_scale = 10
-                    set_location = {
-                        target = fromfrom
-                        distance = 20
-                        angle = 0
-                    }
+            set_ship_flag = giga_planet
+            add_modifier = {
+                modifier = printed_celestial_warship
+                days = -1
+            }
+        }
+
+        else_if = {
+            limit = {
+                is_ship_size = giga_war_moon
+                NOT = {
+                    has_ship_flag = random
                 }
             }
-
-            delete_ship = this
+            set_ship_flag = random
+            add_modifier = {
+                modifier = printed_celestial_warship
+                days = -1
+            }
         }
     }
 }

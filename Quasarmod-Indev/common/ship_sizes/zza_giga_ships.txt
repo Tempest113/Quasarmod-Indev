@@ -1,6 +1,6 @@
 # File has zza_ prefix to allow easy overwrite by playable katzenartig imperium
 
-giga_massive_planet = {
+giga_war_moon = {
     graphical_culture = no
     max_speed = 50
     acceleration = 0.15

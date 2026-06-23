@@ -38,10 +38,8 @@ ap_hyperquasaric_megaconstruction = {
 	potential = {
 		host_has_dlc = Utopia
 		is_ai = no
-
-		NOR = {
-			has_ascension_perk = ap_hyperquasaric_megaconstruction
-		}
+		is_nomadic = no
+		NOT = { quasarmod_ap_taken = yes }
 
 		NAND = {
 			has_global_flag = quasarmod_teraforge_disabled

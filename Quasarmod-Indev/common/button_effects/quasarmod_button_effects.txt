@@ -219,7 +219,7 @@ quasarmod_hyperquasaric_megashipyard_tt = {
 
 quasarmod_smbh_manipulator_tt = {
     potential = { exists = from from = { has_country_flag = giga_menu_page_03 } }
-    allow = { always = yes }
+    allow = { custom_tooltip = { fail_text = giga_menu_must_have_stellar_manip_mod stellar_manip_is_active = yes } }
     effect = { custom_tooltip = smbh_manipulator_0_MEGASTRUCTURE_DETAILS }
 }
 

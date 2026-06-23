@@ -1,6 +1,5 @@
 spriteTypes = {
 
-
 	spriteType = {
 		name = "GFX_evt_glc_menu"
 		texturefile = "gfx/event_pictures/ring_destruction.dds"

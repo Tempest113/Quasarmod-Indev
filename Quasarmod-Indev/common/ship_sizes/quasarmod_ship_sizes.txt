@@ -35,6 +35,7 @@ quasarmod_quasarcraft = {
     cloaking_forbidden = yes
 	num_target_locators = 0
 	icon = ship_size_atk_system
+	map_counter_icon = ship_counter_500
 	ship_class_icon_frame = 28
 	prerequisites = { "tech_quasarmod_quasarcraft" }
 	enable_default_design = yes
@@ -45,6 +46,7 @@ quasarmod_quasarcraft = {
 	possible_construction = { always = no }
 	is_civilian = no
 	is_designable = yes
+	can_be_inspected = yes
 	# components_add_to_cost = no
 	construction_type = starbase_shipyard
 
@@ -99,6 +101,7 @@ quasarcraft_wormhole = {
 	num_target_locators = 0
 	is_space_station = no
 	icon = ship_size_space_monster
+	map_counter_icon = ship_counter_128
 	potential_construction = { always = no }
 	possible_construction = { always = no }
 	class = shipclass_military
