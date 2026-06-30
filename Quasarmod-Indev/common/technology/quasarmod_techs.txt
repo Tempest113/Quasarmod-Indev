@@ -14,7 +14,6 @@ tech_quasarmod_pentadimensional_engineering = {
 	icon = tech_quasarcraft_2
 
 	potential = {
-		has_any_galactic_wonders_dlc = yes
 		quasarmod_ap_taken = yes
 	}
 }
@@ -31,7 +30,6 @@ tech_quasarmod_gigakelvin_resistant_alloys = {
 	icon = tech_quasarcraft_3 # Temp, to be replaced when i can find a better icon
 
 	potential = {
-		has_any_galactic_wonders_dlc = yes
 		quasarmod_ap_taken = yes
 	}
 }
