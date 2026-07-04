@@ -80,14 +80,14 @@ convert_to_inactive_core = {
 					is_megastructure_type = ehof_pgate_gateway
 					is_megastructure_type = hyper_relay
 					is_megastructure_type = hyper_relay_restored
-					is_megastructure_type = smbh_manipulator_b5
+					is_megastructure_type = smbh_manipulator_5
 				}
 			}
 			remove_megastructure = this
 		}
 		every_system_megastructure = {
 			limit = {
-				is_megastructure_type = smbh_manipulator_b5
+				is_megastructure_type = smbh_manipulator_5
 			}
 			solar_system = {
 				spawn_megastructure = {
@@ -153,14 +153,14 @@ convert_to_hyperquasar = {
 					is_megastructure_type = ehof_pgate_gateway
 					is_megastructure_type = hyper_relay
 					is_megastructure_type = hyper_relay_restored
-					is_megastructure_type = smbh_manipulator_a5
+					is_megastructure_type = smbh_manipulator_5
 				}
 			}
 			remove_megastructure = this
 		}
 		every_system_megastructure = {
 			limit = {
-				is_megastructure_type = smbh_manipulator_a5
+				is_megastructure_type = smbh_manipulator_5
 			}
 			solar_system = {
 				spawn_megastructure = {

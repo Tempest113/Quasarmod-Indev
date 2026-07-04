@@ -36,7 +36,6 @@ ap_hyperquasaric_megaconstruction = {
 	}
 
 	potential = {
-		host_has_dlc = Utopia
 		is_ai = no
 		is_nomadic = no
 		NOT = { quasarmod_ap_taken = yes }

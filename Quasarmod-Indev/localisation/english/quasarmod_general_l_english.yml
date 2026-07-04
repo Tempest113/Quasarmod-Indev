@@ -80,8 +80,6 @@
 
  requires_inactive_core_fail_tooltip: "$TRIGGER_FAIL$Must build around a supermassive black hole."
  requires_quasar_fail_tooltip: "$TRIGGER_FAIL$Must build around an active hyperquasar."
- requires_built_on_giga_active_core: "$TRIGGER_FAIL$Can only harvest plasma from an active hyperquasar"
- requires_built_on_giga_inactive_core: "$TRIGGER_FAIL$Can only inject plasma into an inactive supermassive black hole"
 
  requires_mbrain_uplink: "$TRIGGER_FAIL$Requires an specialized ['building:building_giga_matrioshka_brain_uplink'] building."
  already_have_quasarshipyard_uplink:"$TRIGGER_FAIL$There's already a Hyperquasaric Megashipyard Uplink here."

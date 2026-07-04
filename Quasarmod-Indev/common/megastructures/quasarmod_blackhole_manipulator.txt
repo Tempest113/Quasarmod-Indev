@@ -282,7 +282,7 @@ smbh_manipulator_4 = {
 
 # Injector
 
-smbh_manipulator_a5 = {
+smbh_manipulator_5 = {
 	entity = "smbh_manipulator_5_entity"
 	# construction_entity = "smbh_manipulator_5_construction_entity"
 	portrait = GFX_megastructure_construction_background
@@ -308,63 +308,6 @@ smbh_manipulator_a5 = {
 	}
 
 	possible = {
-		custom_tooltip = { fail_text = "requires_built_on_giga_inactive_core"
-		root = {
-			star = { is_star_class = sc_birch }
-			}
-		}
-		from = {
-			has_technology = tech_quasarmod_smbh_manipulator
-		}
-
-	}
-
-	on_build_complete = {
-		fromfrom.solar_system =  { save_event_target_as = smbh_manipulator_system}
-		fromfrom.planet = { set_planet_flag = quasarmod_smbh_manipulator_used_here }
-		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = smbh_manipulator_system } }
-		from = {
-			start_situation = {
-				type = situation_blackhole_injection
-				target = root.fromfrom.planet
-			}
-		}
-	}
-}
-
-# Harvester
-
-smbh_manipulator_b5 = {
-	entity = "smbh_manipulator_5_entity"
-	# construction_entity = "smbh_manipulator_5_construction_entity"
-	portrait = GFX_megastructure_construction_background
-	upgrade_from = { smbh_manipulator_4 }
-	upgrade_desc = hide
-
-	outliner_trigger = {
-		exists = owner
-		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
-	}
-
-	build_time = 1
-	resources = {
-		category = giga_gigastructures
-		cost = {
-			energy = 1000
-			unity = 5000
-		}
-		upkeep = {
-			energy = 400
-			alloys = 160
-		}
-	}
-
-	possible = {
-		custom_tooltip = { fail_text = "requires_built_on_giga_active_core"
-		root = {
-			star = { is_star_class = sc_quasar }
-			}
-		}
 		from = {
 			has_technology = tech_quasarmod_smbh_manipulator
 		}
@@ -372,12 +315,24 @@ smbh_manipulator_b5 = {
 
 	on_build_complete = {
 		fromfrom.solar_system =  { save_event_target_as = smbh_manipulator_system}
-		fromfrom = { set_megastructure_flag = quasarmod_smbh_manipulator_used_here }
-		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = smbh_manipulator_system } }
-		from = { 
-			start_situation = {
-				type = situation_blackhole_harvesting
-				target = root.fromfrom.planet
+		fromfrom.planet? = { set_planet_flag = quasarmod_smbh_manipulator_used_here save_event_target_as = smbh_manipulator_system }
+		from = {
+			if = {
+				limit = {
+					from.star = {
+						is_star_class_sc_quasar = yes
+					}
+				}
+				start_situation = {
+					type = situation_blackhole_harvesting
+					target = root.fromfrom.planet
+				}
+			}
+			else = {
+				start_situation = {
+					type = situation_blackhole_injection
+					target = root.fromfrom.planet
+				}
 			}
 		}
 	}
