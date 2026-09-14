@@ -1,0 +1,35 @@
+giga_war_moon_potential_construction = {
+	NOT = {
+		has_global_flag = warmoon_disabled
+	}
+	starbase = {
+		solar_system = {
+			any_system_megastructure = {
+				is_megastructure_type = hyperquasaric_megashipyard_4
+			}
+		}
+	}
+}
+giga_war_moon_possible_construction = {
+	starbase = {
+		has_starbase_building = quasarshipyard_shipyard_uplink
+	}
+}
+
+giga_planet_behemoth_potential_construction = {
+	NOT = {
+		has_global_flag = warplanet_disabled
+	}
+	starbase = {
+		solar_system = {
+			any_system_megastructure = {
+				is_megastructure_type = hyperquasaric_megashipyard_4
+			}
+		}
+	}
+}
+giga_planet_behemoth_possible_construction = {
+	starbase = {
+		has_starbase_building = quasarshipyard_shipyard_uplink
+	}
+}
