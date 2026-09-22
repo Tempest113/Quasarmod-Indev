@@ -107,12 +107,8 @@
   smbh_manipulator_4:0 "Inactive S.M.B.H Manipulator"
   smbh_manipulator_4_DESC:0 "A complete yet inactive S.M.B.H Manipulator, ready to reshape the very heart of the galaxy to our needs. All that remains is to give the go ahead."
   
-  smbh_manipulator_a5:0 "S.M.B.H Manipulator - Mass Injection"
-  smbh_manipulator_a5_DESC:0 "We have begun injecting £sr_stellar_plasma£§Y$sr_stellar_plasma$§! into the inactive core in order to transform it to better suit our needs as an §MActive Hyperquasar§!."
-  
-  smbh_manipulator_b5:0 "S.M.B.H Manipulator - Mass Harvesting"
-  smbh_manipulator_b5_DESC:0 "We have begun harvesting incredible amounts of £sr_stellar_plasma£§Y$sr_stellar_plasma$§! from the hyperquasar's accretion disk, it will soon fit our needs as an §MInactive Supermassive Black Hole§!."
-  
+  smbh_manipulator_5:99 "Active S.M.B.H Manipulator"
+  smbh_manipulator_5_DESC:99 "We have begun the long and arduous process of transforming the very center of the galaxy to match our design, there is little left to do now besides wait for the manipulator to complete its work."
   
   
   ###############################
