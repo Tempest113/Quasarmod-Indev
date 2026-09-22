@@ -1,0 +1,8 @@
+l_spanish:
+  # These entries were in the previous [spanish] loc files but are not present in the current [english] files.
+  requires_built_on_giga_active_core:0 "$TRIGGER_FAIL$Can only harvest plasma from an active hyperquasar"
+  requires_built_on_giga_inactive_core:0 "$TRIGGER_FAIL$Can only inject plasma into an inactive supermassive black hole"
+  smbh_manipulator_a5:0 "S.M.B.H Manipulator - Mass Injection"
+  smbh_manipulator_a5_DESC:0 "We have begun injecting £sr_stellar_plasma£§Y$sr_stellar_plasma$§! into the inactive core in order to transform it to better suit our needs as an §MActive Hyperquasar§!."
+  smbh_manipulator_b5:0 "S.M.B.H Manipulator - Mass Harvesting"
+  smbh_manipulator_b5_DESC:0 "We have begun harvesting incredible amounts of £sr_stellar_plasma£§Y$sr_stellar_plasma$§! from the hyperquasar's accretion disk, it will soon fit our needs as an §MInactive Supermassive Black Hole§!."
