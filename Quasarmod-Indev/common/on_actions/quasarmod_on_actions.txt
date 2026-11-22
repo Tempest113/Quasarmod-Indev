@@ -30,6 +30,15 @@ on_ship_disabled = {
 
 on_entering_system_first_time = {
      events = {
-          quasarmod_utility.14
+          quasarmod_utility.13
      }
+}
+
+# preset hooks
+giga_preset_vanillaplus_selected = {
+     events = { quasarmod_utility.14 }
+}
+
+giga_preset_gigaexp_selected = {
+     events = { quasarmod_utility.15 }
 }

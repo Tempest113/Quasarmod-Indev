@@ -431,3 +431,25 @@ ship_event = {
         }
     }
 }
+
+# triggered by the on actions for the preset selections
+event = {
+    id = quasarmod_utility.14
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        set_global_flag = quasarmod_manipulator_disabled
+        set_global_flag = quasarmod_quasarcraft_disabled
+    }
+}
+
+event = {
+    id = quasarmod_utility.15
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        set_global_flag = quasarmod_quasarcraft_disabled
+    }
+}

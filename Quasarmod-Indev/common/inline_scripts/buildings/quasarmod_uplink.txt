@@ -2,7 +2,9 @@
 @production_mult = 0.5
 @upkeep_mult = 0.25
 
-@research_upkeep = 2
+@basic_upkeep = 0.5
+@research_upkeep = 0.225
+@rare_upkeep = 0.15
 
 triggered_country_modifier = {
     potential = {
