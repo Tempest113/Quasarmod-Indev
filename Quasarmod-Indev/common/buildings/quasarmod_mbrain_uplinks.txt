@@ -6,7 +6,9 @@
 @production_mult = 0.5
 @upkeep_mult = 0.25
 
-@research_upkeep = 2
+@basic_upkeep = 0.5
+@research_upkeep = 0.225
+@rare_upkeep = 0.15
 
 ###################################
 # READ ME
@@ -47,11 +49,8 @@ building_giga_matrioshka_brain_uplink_research = {
     triggered_planet_modifier = {
         planet_researchers_produces_mult = @production_mult
         planet_researchers_upkeep_mult = @upkeep_mult
-    }
-
-    triggered_planet_modifier = {
-        planet_researchers_energy_upkeep_add = 2
-        planet_researchers_exotic_gases_upkeep_add = 0.1
+        planet_researchers_energy_upkeep_add = @basic_upkeep
+        planet_researchers_exotic_gases_upkeep_add = @rare_upkeep
     }
 
     # Quasarmod Additions
@@ -60,9 +59,8 @@ building_giga_matrioshka_brain_uplink_research = {
         PLANET_MODIFIER = "
             planet_researchers_produces_mult = @production_mult
             planet_researchers_upkeep_mult = @upkeep_mult
-
-            planet_researchers_energy_upkeep_add = 2
-            planet_researchers_exotic_gases_upkeep_add = 0.1
+            planet_researchers_energy_upkeep_add = @basic_upkeep
+            planet_researchers_exotic_gases_upkeep_add = @rare_upkeep
         "
     }
 }
@@ -97,7 +95,7 @@ building_giga_matrioshka_brain_uplink_unity = {
     triggered_planet_modifier = {
         planet_bureaucrats_produces_mult = @production_mult
         planet_bureaucrats_upkeep_mult = @upkeep_mult
-        planet_bureaucrats_energy_upkeep_add = 1
+        planet_bureaucrats_energy_upkeep_add = @basic_upkeep
         planet_bureaucrats_society_research_upkeep_add = @research_upkeep
     }
 
@@ -107,7 +105,7 @@ building_giga_matrioshka_brain_uplink_unity = {
         PLANET_MODIFIER = "
             planet_bureaucrats_produces_mult = @production_mult
             planet_bureaucrats_upkeep_mult = @upkeep_mult
-            planet_bureaucrats_energy_upkeep_add = 1
+            planet_bureaucrats_energy_upkeep_add = @basic_upkeep
             planet_bureaucrats_society_research_upkeep_add = @research_upkeep
         "
     }
@@ -234,8 +232,8 @@ building_giga_matrioshka_brain_uplink_entertainment = {
             exists = owner
             owner = { is_machine_empire = yes }
         }
-        planet_bio_trophies_society_research_produces_add = 1
-        planet_stability_add = 5
+        planet_bio_trophies_society_research_produces_add = 0.25
+        planet_stability_add = 2
     }
     triggered_planet_modifier = {
         potential = {
@@ -272,8 +270,8 @@ building_giga_matrioshka_brain_uplink_entertainment = {
             }
         "
         COUNTRY_MODIFIER = "
-            planet_culture_workers_unity_produces_add = 1
-            planet_culture_workers_energy_upkeep_add = 1
+            planet_civilians_unity_produces_add = 0.25
+            planet_civilians_energy_upkeep_add = 0.25
             planet_entertainers_unity_produces_add = 1
             planet_entertainers_energy_upkeep_add = 1
         "
@@ -289,11 +287,11 @@ building_giga_matrioshka_brain_uplink_entertainment = {
             is_machine_empire = yes
         "
         COUNTRY_MODIFIER = "
-            planet_bio_trophies_society_research_produces_add = 1
-            planet_stability_add = 5
+            planet_bio_trophies_society_research_produces_add = 0.25
+            planet_stability_add = 2
         "
         PLANET_MODIFIER = "
-            job_giga_media_coordinator_add = 400
+            job_giga_media_coordination_drone_add = 800
         "
     }
 
@@ -335,7 +333,13 @@ building_giga_matrioshka_brain_uplink_training = {
 		command_limit_add = 50
 	}
     planet_modifier = {
-        giga_soldier_jobs_bonus_workforce_mult = 0.4
+        giga_soldier_jobs_bonus_workforce_mult = 0.5
+    }
+
+    # not doubled by the core mbrain boost, since the boost doesn't double the workforce bonus either
+    triggered_planet_modifier = {
+        planet_soldiers_alloys_upkeep_add = @rare_upkeep
+        planet_soldiers_volatile_motes_upkeep_add = @rare_upkeep
     }
 
 	######################################################
@@ -368,8 +372,8 @@ building_giga_matrioshka_brain_uplink_training = {
 	# both
 
     inline_script = {
-        script = planet/soldiers/giga_soldier_job_swap
-        jobs = 400
+        script = jobs/soldiers_add
+        AMOUNT = 400
     }
 
     # Quasarmod Additions
