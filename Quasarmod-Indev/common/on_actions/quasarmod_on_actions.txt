@@ -3,10 +3,6 @@ on_game_start = {
 
 }
 
-on_ship_built = {
-     events = { quasarmod_utility.2 }
-
-}
 
 on_destroy_planet_with_QSC_ENDSINGER = {
      events = {

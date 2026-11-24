@@ -11,42 +11,6 @@ event  = {
     }
 }
 
-# Properly apply printed warship modifiers
-ship_event = {
-    id = quasarmod_utility.2
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = {
-            limit = {
-                is_ship_size = giga_planet_behemoth
-                NOT = {
-                    has_ship_flag = giga_planet
-                }
-            }
-            set_ship_flag = giga_planet
-            add_modifier = {
-                modifier = printed_celestial_warship
-                days = -1
-            }
-        }
-
-        else_if = {
-            limit = {
-                is_ship_size = giga_war_moon
-                NOT = {
-                    has_ship_flag = random
-                }
-            }
-            set_ship_flag = random
-            add_modifier = {
-                modifier = printed_celestial_warship
-                days = -1
-            }
-        }
-    }
-}
 
 # Monthly pulse event to remove the core mbrain flag/modifier under certain conditions - Optimized code, buildings now check for modifier which is cleared on planet ownership change, no longer need to check for/remove flag
 # country_event = {
